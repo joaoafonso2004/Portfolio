@@ -310,7 +310,15 @@ const count = String(APPS.length).padStart(2, '0');
    * directamente. Mais lento e sujeito a 60 pedidos/hora por IP, mas evita
    * uma secção vazia enquanto a Action não corre pela primeira vez.
    */
+  let cachedVersions: VersionsFile | null = null;
+  let versionsFetched = false;
+  const fallbackCache: Record<string, Record<string, PlatformRelease | null>> = {};
+
   async function fallbackToApi(app: AppConfig) {
+    if (fallbackCache[app.id]) {
+      paintApp(app, fallbackCache[app.id]);
+      return;
+    }
     const res = await fetch(releasesApi(app), {
       headers: { Accept: 'application/vnd.github+json' },
     });
@@ -348,20 +356,23 @@ const count = String(APPS.length).padStart(2, '0');
         install: asset ? asset.browser_download_url : rel.html_url,
       };
     }
+    fallbackCache[app.id] = platforms;
     paintApp(app, platforms);
   }
 
-  (async () => {
-    let versions: VersionsFile | null = null;
-    try {
-      const res = await fetch(VERSIONS_PATH, { cache: 'no-cache' });
-      if (res.ok) versions = await res.json();
-    } catch {
-      /* tratado a seguir, por app */
+  document.addEventListener('astro:page-load', async () => {
+    if (!document.getElementById('apps')) return;
+
+    if (!versionsFetched) {
+      try {
+        const res = await fetch(VERSIONS_PATH, { cache: 'no-cache' });
+        if (res.ok) cachedVersions = await res.json();
+      } catch {}
+      versionsFetched = true;
     }
 
     for (const app of APPS) {
-      const entry = versions?.apps?.[app.id];
+      const entry = cachedVersions?.apps?.[app.id];
       if (entry) {
         paintApp(app, entry);
         continue;
@@ -372,7 +383,7 @@ const count = String(APPS.length).padStart(2, '0');
         failApp(app, 'Could not load release data. Downloads are on GitHub.');
       }
     }
-  })();
+  });
 
   document.addEventListener('astro:page-load', () => {
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
