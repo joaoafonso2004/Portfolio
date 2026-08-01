@@ -339,6 +339,8 @@ const {
 
       /* ---------- Initialize everything on page load ---------- */
       document.addEventListener('astro:page-load', () => {
+        // Enforce top scroll immediately on render before Lenis captures it
+        window.scrollTo(0, 0);
         
         /* ---------- Smooth scroll ---------- */
         if (!reduced) {
