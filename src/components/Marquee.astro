@@ -9,21 +9,47 @@ const words = [
 ];
 ---
 
-<div class="relative overflow-hidden border-y border-line bg-ink py-5" aria-hidden="true">
-  <div class="marquee-track">
-    {
-      [0, 1].map(() => (
-        <div class="flex shrink-0 items-center">
-          {words.map((word) => (
-            <>
-              <span class="mx-7 whitespace-nowrap font-display text-2xl font-medium uppercase tracking-tight text-paper/85 md:text-4xl">
-                {word}
-              </span>
-              <span class="text-xl text-accent md:text-2xl">✦</span>
-            </>
-          ))}
-        </div>
-      ))
-    }
+<div class="relative overflow-hidden border-y border-line bg-ink py-8" aria-hidden="true" style="perspective: 800px;">
+  <div style="transform: rotateX(20deg) rotateY(-2deg) scale(1.05); transform-style: preserve-3d;">
+    <div class="marquee-track">
+      {
+        [0, 1].map(() => (
+          <div class="flex shrink-0 items-center">
+            {words.map((word) => (
+              <>
+                <span class="text-3d mx-7 whitespace-nowrap font-display text-[1.75rem] font-medium uppercase tracking-tight text-paper/85 md:text-[2.75rem]" data-skew>
+                  {word}
+                </span>
+                <span class="text-3d-accent text-xl text-accent md:text-2xl" data-skew>✦</span>
+              </>
+            ))}
+          </div>
+        ))
+      }
+    </div>
   </div>
 </div>
+
+<style>
+  .text-3d {
+    text-shadow: 
+      0 1px 0 #858591,
+      0 2px 0 #737380,
+      0 3px 0 #61616f,
+      0 4px 0 #4f4f5e,
+      0 5px 0 #3d3d4d,
+      0 6px 0 #2a2a3b,
+      0 7px 0 #18182a,
+      0 15px 20px rgba(0, 0, 0, 0.6);
+  }
+
+  .text-3d-accent {
+    text-shadow: 
+      0 1px 0 #7a6be0,
+      0 2px 0 #675ac2,
+      0 3px 0 #554aa3,
+      0 4px 0 #433985,
+      0 5px 0 #312966,
+      0 10px 15px rgba(140, 123, 255, 0.4);
+  }
+</style>

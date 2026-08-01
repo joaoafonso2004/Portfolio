@@ -1,4 +1,11 @@
 ---
+import { Image } from 'astro:assets';
+import imgWebDesign from '../assets/images/Duotone1.png';
+import imgDevelopment from '../assets/images/3DWebsite1.png';
+import imgPizzaria from '../assets/images/work_pizzaria.png';
+import imgBranding from '../assets/images/work_redbull.png';
+import imgLiminal from '../assets/images/liminal1_up.jpg';
+
 const capabilities = [
   {
     title: 'Web Design & UX',
@@ -21,6 +28,14 @@ const capabilities = [
       'Visual worlds for digital brands — typography, color, imagery and the rules that bind them into something memorable.',
   },
 ];
+
+const images = [
+  imgWebDesign,
+  imgDevelopment,
+  imgPizzaria,
+  imgBranding,
+  imgLiminal
+];
 ---
 
 <section id="capabilities" class="relative border-t border-line px-5 py-24 md:px-10 md:py-36">
@@ -40,12 +55,13 @@ const capabilities = [
     </div>
 
     <!-- Rows -->
-    <div>
+    <div class="relative" id="capabilities-list">
       {
         capabilities.map((cap, i) => (
           <div
             class="group relative overflow-hidden border-t border-line last:border-b"
             data-reveal
+            data-cap-row={i}
           >
             <div class="absolute inset-0 translate-y-full bg-accent transition-transform duration-500 ease-out-expo group-hover:translate-y-0" />
             <div class="relative px-1 py-8 transition-colors duration-300 group-hover:text-ink md:py-10">
@@ -68,6 +84,88 @@ const capabilities = [
           </div>
         ))
       }
+
+      <!-- Floating Media -->
+      <div id="cap-floater" class="pointer-events-none fixed left-0 top-0 z-[100] h-64 w-80 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-xl opacity-0 scale-90 transition-[opacity,transform] duration-500 ease-out-expo will-change-transform hidden md:block">
+        {images.map((img, i) => (
+          <Image 
+            src={img} 
+            alt="Portfolio Work"
+            widths={[320, 640]}
+            sizes="320px"
+            class="absolute inset-0 h-full w-full object-cover transition-opacity duration-300 opacity-0"
+            data-cap-img
+          />
+        ))}
+      </div>
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+    if (finePointer && !reduced) {
+      import('gsap').then(({ gsap }) => {
+        const floater = document.getElementById('cap-floater');
+        const rows = document.querySelectorAll<HTMLElement>('[data-cap-row]');
+        if (!floater || !rows.length) return;
+
+        const xTo = gsap.quickTo(floater, "x", { duration: 0.4, ease: "power3.out" });
+        const yTo = gsap.quickTo(floater, "y", { duration: 0.4, ease: "power3.out" });
+        const imgs = floater.querySelectorAll<HTMLImageElement>('[data-cap-img]');
+
+        let isHovering = false;
+        let lastRandom = -1;
+
+        window.addEventListener('mousemove', (e) => {
+          if (isHovering) {
+            xTo(e.clientX);
+            yTo(e.clientY);
+          }
+        });
+
+        rows.forEach((row) => {
+          row.addEventListener('mouseenter', (e) => {
+            // Instantly snap to cursor on first enter
+            if (!isHovering) {
+              xTo(e.clientX);
+              yTo(e.clientY);
+            }
+            isHovering = true;
+            
+            // Pick a random image that is different from the last one
+            let randomIdx;
+            if (imgs.length > 1) {
+              do {
+                randomIdx = Math.floor(Math.random() * imgs.length);
+              } while (randomIdx === lastRandom);
+            } else {
+              randomIdx = 0;
+            }
+            lastRandom = randomIdx;
+
+            // Show floater
+            floater.style.opacity = '1';
+            floater.style.transform = 'translate(-50%, -50%) scale(1) rotate(2deg)';
+            
+            // Switch images
+            imgs.forEach((img, i) => {
+              img.style.opacity = i === randomIdx ? '1' : '0';
+            });
+          });
+
+          row.addEventListener('mouseleave', () => {
+            isHovering = false;
+            
+            // Hide floater
+            floater.style.opacity = '0';
+            floater.style.transform = 'translate(-50%, -50%) scale(0.9) rotate(0deg)';
+          });
+        });
+      });
+    }
+  });
+</script>

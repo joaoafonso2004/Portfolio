@@ -24,7 +24,7 @@ const count = String(APPS.length).padStart(2, '0');
     <div class="flex flex-col gap-8 md:gap-12">
       {
         APPS.map((app) => (
-          <article class="app-card group relative overflow-hidden rounded-xl border border-line bg-coal p-6 md:p-10 transition-colors duration-500 hover:border-accent/30" data-app={app.id} data-reveal>
+          <article class="app-card group relative overflow-hidden rounded-xl border border-line bg-coal p-6 md:p-10" data-app={app.id} data-reveal>
             <!-- Hover Glow -->
             <div class="pointer-events-none absolute -inset-px opacity-0 transition-opacity duration-300 group-hover:opacity-100" style="background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(140, 123, 255, 0.08), transparent 40%);"></div>
             
@@ -335,4 +335,44 @@ const count = String(APPS.length).padStart(2, '0');
       }
     }
   })();
+
+  document.addEventListener('astro:page-load', () => {
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+    if (finePointer && !reduced) {
+      import('gsap').then(({ gsap }) => {
+        document.querySelectorAll<HTMLElement>('.app-card').forEach((card) => {
+          const xTo = gsap.quickTo(card, "rotationY", { duration: 0.4, ease: "power3.out" });
+          const yTo = gsap.quickTo(card, "rotationX", { duration: 0.4, ease: "power3.out" });
+
+          gsap.set(card, { transformPerspective: 1000, transformOrigin: "center center" });
+
+          card.addEventListener("mousemove", (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            // Set CSS vars for the glow
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+
+            // Calculate tilt (max 3 degrees)
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateY = ((x - centerX) / centerX) * 3;
+            const rotateX = -((y - centerY) / centerY) * 3;
+
+            xTo(rotateY);
+            yTo(rotateX);
+          });
+
+          card.addEventListener("mouseleave", () => {
+            xTo(0);
+            yTo(0);
+          });
+        });
+      });
+    }
+  });
 </script>
