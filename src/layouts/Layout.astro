@@ -101,6 +101,9 @@ const {
       <span class="cursor-label font-mono"></span>
     </div>
 
+    <!-- Page Transition Curtain -->
+    <div id="page-curtain" class="fixed inset-0 z-[200] bg-ink pointer-events-none origin-bottom scale-y-0" aria-hidden="true" transition:persist="curtain"></div>
+
     <slot />
 
     <!-- Contact modal -->
@@ -229,9 +232,57 @@ const {
       const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
+      /* ---------- Web Audio UI Sounds ---------- */
+      let audioCtx: AudioContext | null = null;
+      const initAudio = () => {
+        if (!audioCtx) audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+      };
+      
+      let lastTickTime = 0;
+      const playTick = () => {
+        if (!audioCtx || audioCtx.state === 'suspended') return;
+        const now = performance.now();
+        if (now - lastTickTime < 100) return; // Throttle to prevent machine-gun effect
+        lastTickTime = now;
+        
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(800, audioCtx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(300, audioCtx.currentTime + 0.04);
+        gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.04);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + 0.04);
+      };
+
+      const playThud = () => {
+        if (!audioCtx || audioCtx.state === 'suspended') return;
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(150, audioCtx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(40, audioCtx.currentTime + 0.1);
+        gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.1);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + 0.1);
+      };
+
+      // Initialize audio on first click anywhere
+      window.addEventListener('click', initAudio, { once: true });
+
       /* ---------- Always start at the top ---------- */
       if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
       window.scrollTo(0, 0);
+      if (window.location.hash) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
       window.addEventListener('pageshow', () => window.scrollTo(0, 0));
       window.addEventListener('beforeunload', () => window.scrollTo(0, 0));
 
@@ -246,6 +297,19 @@ const {
       });
       gsap.ticker.lagSmoothing(0);
 
+      /* ---------- Custom Page Transitions ---------- */
+      document.addEventListener('astro:before-preparation', (ev) => {
+        const originalLoader = (ev as any).loader;
+        (ev as any).loader = async function() {
+          const curtain = document.getElementById('page-curtain');
+          if (curtain && !reduced) {
+            gsap.set(curtain, { transformOrigin: 'bottom' });
+            await gsap.to(curtain, { scaleY: 1, duration: 0.5, ease: 'power4.inOut' });
+          }
+          await originalLoader();
+        };
+      });
+
       /* ---------- Cleanup before swapping pages ---------- */
       document.addEventListener('astro:before-swap', () => {
         // Kill all scroll triggers
@@ -259,6 +323,15 @@ const {
         if (lenis) {
           lenis.destroy();
           lenis = null;
+        }
+      });
+
+      document.addEventListener('astro:after-swap', () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        const curtain = document.getElementById('page-curtain');
+        if (curtain && !reduced) {
+          gsap.set(curtain, { transformOrigin: 'top' });
+          gsap.to(curtain, { scaleY: 0, duration: 0.6, ease: 'power4.inOut', delay: 0.1 });
         }
       });
 
@@ -301,7 +374,7 @@ const {
           ScrollTrigger.refresh();
         };
 
-        if (preloader && counter && !reduced) {
+        if (preloader && counter && !reduced && !(window as any).__preloaderComplete) {
           lenis?.stop();
           const bar = document.getElementById('preloader-bar');
           const spin = gsap.to('#preloader-spinner', {
@@ -553,10 +626,16 @@ const {
 
             document.querySelectorAll<HTMLElement>('a, button, [data-cursor-label]').forEach((el) => {
               el.addEventListener('mouseenter', () => {
+                initAudio();
+                playTick();
                 const text =
                   el.closest('[data-cursor-label]')?.getAttribute('data-cursor-label') ?? '';
                 label.textContent = text;
                 ring.classList.add(text ? 'is-label' : 'is-hover');
+              });
+              el.addEventListener('mousedown', () => {
+                initAudio();
+                playThud();
               });
               el.addEventListener('mouseleave', () => {
                 ring.classList.remove('is-label', 'is-hover');
@@ -677,6 +756,20 @@ const {
           });
         }
       }); // End of astro:page-load wrapper
+
+      /* ---------- Easter Egg (Wireframe Mode) ---------- */
+      let konami = '';
+      const secret = 'awwwards';
+      window.addEventListener('keydown', (e) => {
+        konami += e.key.toLowerCase();
+        if (konami.length > secret.length) konami = konami.slice(1);
+        if (konami === secret) {
+          document.body.classList.toggle('wireframe-mode');
+          initAudio();
+          playThud();
+          konami = '';
+        }
+      });
 
       /* ---------- Disable right click ---------- */
       document.addEventListener('contextmenu', (e) => e.preventDefault());
