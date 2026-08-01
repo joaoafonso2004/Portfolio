@@ -13,7 +13,7 @@ const links = [
     <!-- Brand -->
     <a
       href="/"
-      data-astro-reload
+      id="brand-logo"
       class="font-display text-sm font-semibold uppercase tracking-[0.08em]"
       data-magnetic
     >
@@ -136,6 +136,17 @@ const links = [
 
       toggle.addEventListener('click', () => setOpen(!open));
       closers.forEach((item) => item.addEventListener('click', () => setOpen(false)));
+
+      const logo = document.getElementById('brand-logo');
+      logo?.addEventListener('click', (e) => {
+        if (window.location.pathname === '/') {
+          e.preventDefault();
+          const lenis = (window as any).__lenis;
+          if (lenis) lenis.scrollTo(0, { duration: 1.4 });
+          else window.scrollTo({ top: 0, behavior: 'smooth' });
+          history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+      });
     }
   });
 </script>

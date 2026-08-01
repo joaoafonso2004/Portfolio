@@ -146,7 +146,7 @@ import { PROJECTS } from '../data/projects';
     }
 
     /* ---------- Movimento do anel ---------- */
-    const BASE_SPEED = 0.10;
+    const BASE_SPEED = 0.22;
     const SCROLL_PUSH = 0.0016;
     const RETURN_RATE = 0.6;
     const MAX_SPEED = 1.4;
@@ -196,16 +196,33 @@ import { PROJECTS } from '../data/projects';
       });
     }
 
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    }, { passive: true });
+
     let last = performance.now();
     function tick(now: number) {
       const dt = Math.min((now - last) / 1000, 0.05);
       last = now;
 
-      if (!paused) angle += speed * dt;
-      
       if (!transitioning) {
         speed += (BASE_SPEED - speed) * RETURN_RATE * dt;
+        
+        // Stationary mouse hit-testing for moving 3D elements
+        if (finePointer) {
+          const hit = document.elementFromPoint(mouseX, mouseY);
+          const hitItem = (hit?.closest('[data-ring-item]') as HTMLElement) || null;
+          if (hitItem !== hovered) {
+            if (hovered) hovered.dispatchEvent(new MouseEvent('mouseleave'));
+            if (hitItem) hitItem.dispatchEvent(new MouseEvent('mouseenter'));
+          }
+        }
       }
+
+      angle += speed * dt;
 
       items.forEach((item, i) => {
         const target = item === hovered ? 1 : 0;
@@ -282,27 +299,42 @@ import { PROJECTS } from '../data/projects';
         });
 
         item.addEventListener('click', (e) => {
-          if (transitioning) {
-              e.preventDefault();
-              return;
-          }
-          transitioning = true;
-          e.preventDefault();
-
-          if (lenis?.on) lenis.destroy();
-          else window.removeEventListener('wheel', onWheel);
-
-          speed = (Math.sign(speed) || 1) * MAX_SPEED * 1.5;
+          if (transitioning) return e.preventDefault();
           
-          gsap.to(stage, {
-            opacity: 0,
-            duration: 0.8,
-            ease: 'power2.inOut',
-            onComplete: () => {
-              const href = item.getAttribute('href');
-              if (href) navigate(href);
-            }
+          const href = item.getAttribute('href');
+          if (!href) return;
+          
+          e.preventDefault();
+          transitioning = true;
+
+          // Sound effect
+          if ((window as any).audioCtx && (window as any).audioCtx.state === 'running') {
+            const osc = (window as any).audioCtx.createOscillator();
+            const gain = (window as any).audioCtx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(150, (window as any).audioCtx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(40, (window as any).audioCtx.currentTime + 0.1);
+            gain.gain.setValueAtTime(0.1, (window as any).audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, (window as any).audioCtx.currentTime + 0.1);
+            osc.connect(gain);
+            gain.connect((window as any).audioCtx.destination);
+            osc.start();
+            osc.stop((window as any).audioCtx.currentTime + 0.1);
+          }
+
+          // Shrink items locally
+          gsap.to(items, {
+            scale: 0.85,
+            autoAlpha: 0,
+            duration: 0.4,
+            stagger: { amount: 0.1, from: 'center' },
+            ease: 'power3.inOut'
           });
+          
+          // Trigger global router immediately to run parallel with the curtain
+          setTimeout(() => {
+            if (href) navigate(href);
+          }, 50);
         });
       });
     } else {

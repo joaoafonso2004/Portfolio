@@ -15,6 +15,10 @@
     text-rendering: optimizeLegibility;
   }
 
+  .font-serif {
+    font-family: 'Instrument Serif', serif;
+  }
+
   ::selection {
     background: #8C7BFF;
     color: #0A0A0F;
@@ -126,15 +130,16 @@ html.lenis body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 95;
+  z-index: 9999;
   display: none;
   width: 34px;
   height: 34px;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(242, 241, 236, 0.35);
+  border: 1.5px solid #fff;
   border-radius: 50%;
   pointer-events: none;
+  mix-blend-mode: difference;
   transition:
     width 0.35s cubic-bezier(0.16, 1, 0.3, 1),
     height 0.35s cubic-bezier(0.16, 1, 0.3, 1),
@@ -147,7 +152,7 @@ html.lenis body {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #0A0A0F;
+  color: #000;
   opacity: 0;
   transition: opacity 0.25s ease 0.05s;
   white-space: nowrap;
@@ -156,14 +161,14 @@ html.lenis body {
 #cursor-ring.is-hover {
   width: 56px;
   height: 56px;
-  border-color: rgba(140, 123, 255, 0.9);
+  border-color: #fff;
 }
 
 #cursor-ring.is-label {
   width: 76px;
   height: 76px;
-  border-color: transparent;
-  background: #8C7BFF;
+  border-color: #fff;
+  background: #fff;
 }
 
 #cursor-ring.is-label .cursor-label {
@@ -238,4 +243,24 @@ html.has-cursor #cursor-ring {
 }
 #menu-toggle.is-open .menu-line:last-child {
   transform: translateY(-4.25px) rotate(-45deg);
+}
+
+/* ---------- Easter Egg Wireframe Mode ---------- */
+body.wireframe-mode {
+  background: #000 !important;
+  color: #0f0 !important;
+}
+
+body.wireframe-mode * {
+  background: transparent !important;
+  border: 1px solid rgba(0, 255, 0, 0.4) !important;
+  box-shadow: none !important;
+  color: #0f0 !important;
+}
+
+body.wireframe-mode img, 
+body.wireframe-mode video, 
+body.wireframe-mode canvas {
+  opacity: 0.2 !important;
+  filter: grayscale(100%) contrast(200%) !important;
 }
