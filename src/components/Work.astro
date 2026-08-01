@@ -1,0 +1,329 @@
+---
+import { Image } from 'astro:assets';
+import { PROJECTS } from '../data/projects';
+---
+
+<section id="work" class="relative">
+  <div
+    data-ring-stage
+    class="relative flex h-[100svh] w-full items-center justify-center overflow-hidden"
+  >
+    <!-- Cabeçalho -->
+    <div class="pointer-events-none absolute left-5 right-5 top-24 z-[60] flex items-start justify-between md:left-10 md:right-10 md:top-28">
+      <h2
+        data-split
+        class="font-display text-[clamp(1.8rem,4vw,3.6rem)] font-semibold uppercase leading-[0.95] tracking-[-0.02em]"
+      >
+        Selected<br />Work
+      </h2>
+      <div class="text-right font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+        <span class="block text-accent">({String(PROJECTS.length).padStart(2, '0')})</span>
+        <span>Projects</span>
+      </div>
+    </div>
+
+    <!-- Centro do anel: mostra o projeto sob o cursor -->
+    <div class="pointer-events-none absolute inset-0 z-[55] flex flex-col items-center justify-center text-center">
+      <span
+        data-ring-title
+        class="font-display text-[clamp(1.4rem,3vw,2.6rem)] font-medium uppercase leading-none tracking-[-0.01em] opacity-0 transition-opacity duration-500 ease-out-expo"
+      ></span>
+      <span
+        data-ring-category
+        class="mt-3 font-mono text-[10px] uppercase tracking-[0.18em] text-accent opacity-0 transition-opacity duration-500 ease-out-expo"
+      ></span>
+    </div>
+
+    <!-- O anel. Cada cartão é posicionado por transform no ticker. -->
+    <div data-ring class="absolute inset-0 [&[data-focusing]_[data-ring-item]:not([data-focused])_[data-frame]]:blur-[2px] [&[data-focusing]_[data-ring-item]:not([data-focused])_[data-frame]]:grayscale">
+      {
+        PROJECTS.map((project, i) => (
+          <a
+            href={`/work/${project.slug}`}
+            class="group absolute left-1/2 top-1/2 block will-change-transform"
+            style={`width: clamp(220px, 60vw, ${Math.round(320 * (project.weight ?? 1))}px)`}
+            data-ring-item
+            data-title={project.title}
+            data-category={project.category}
+            data-cursor-label="View"
+          >
+            <div data-slot class="relative aspect-video">
+              <div
+                data-frame
+                class="absolute inset-0 overflow-hidden bg-coal transition-[filter] duration-500 ease-out-expo"
+              >
+                <Image
+                  src={project.img}
+                  alt={`${project.title} — designed and built by João Afonso`}
+                  widths={[320, 640, 960]}
+                  sizes="(max-width: 768px) 45vw, 22vw"
+                  class="h-full w-full object-cover object-top"
+                />
+
+                {project.video && (
+                  <video
+                    data-work-video
+                    src={project.video}
+                    preload="auto"
+                    muted
+                    loop
+                    autoplay
+                    playsinline
+                    aria-hidden="true"
+                    tabindex="-1"
+                    class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 ease-out-expo data-[playing]:opacity-100"
+                  />
+                )}
+
+                <span class="pointer-events-none absolute inset-0 bg-ink/0 transition-colors duration-500 group-hover:bg-ink/10" />
+              </div>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+
+    <!-- Instrução -->
+    <div class="pointer-events-none absolute bottom-10 left-1/2 z-[60] -translate-x-1/2">
+      <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
+        Scroll to spin
+      </span>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { gsap } from 'gsap';
+  import { navigate } from 'astro:transitions/client';
+
+  let tickId: number;
+  let lenisScrollFn: any;
+
+  document.addEventListener('astro:before-swap', () => {
+    cancelAnimationFrame(tickId);
+    const lenis = (window as any).__lenis;
+    if (lenis && lenisScrollFn) {
+      lenis.off('scroll', lenisScrollFn);
+    }
+  });
+
+  document.addEventListener('astro:page-load', () => {
+    const stage = document.querySelector<HTMLElement>('[data-ring-stage]');
+    if (!stage) return; // Not on the page with the ring
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+    const ring = document.querySelector<HTMLElement>('[data-ring]');
+    const items = [...document.querySelectorAll<HTMLElement>('[data-ring-item]')];
+    const titleEl = document.querySelector<HTMLElement>('[data-ring-title]');
+    const categoryEl = document.querySelector<HTMLElement>('[data-ring-category]');
+
+    const play = (video: HTMLVideoElement) => {
+      video.play().catch(() => {});
+    };
+
+    items.forEach((item) => {
+      const video = item.querySelector<HTMLVideoElement>('[data-work-video]');
+      video?.addEventListener('playing', () => {
+        video.dataset.playing = '';
+      });
+    });
+
+    const videos = items
+      .map((item) => item.querySelector<HTMLVideoElement>('[data-work-video]'))
+      .filter((v): v is HTMLVideoElement => !!v);
+
+    if (!reduced) {
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(
+          ([entry]) => videos.forEach((v) => (entry.isIntersecting ? play(v) : v.pause())),
+          { threshold: 0.05 }
+        ).observe(stage);
+      } else {
+        videos.forEach(play);
+      }
+    }
+
+    /* ---------- Movimento do anel ---------- */
+    const BASE_SPEED = 0.055;
+    const SCROLL_PUSH = 0.0016;
+    const RETURN_RATE = 0.6;
+    const MAX_SPEED = 1.4;
+
+    let angle = 0;
+    let speed = BASE_SPEED;
+    let paused = false;
+
+    const boosts = items.map(() => 0);
+    let hovered: HTMLElement | null = null;
+    let lastHovered: HTMLElement | null = null;
+    let transitioning = false;
+
+    function radii() {
+      const w = stage?.clientWidth ?? window.innerWidth;
+      const h = stage?.clientHeight ?? window.innerHeight;
+      // Use Math.max to guarantee a minimum radius on mobile so cards don't overlap entirely
+      return { 
+        rx: Math.min(Math.max(w * 0.28, 140), 400), 
+        ry: Math.min(Math.max(h * 0.18, 100), 180) 
+      };
+    }
+
+    function layout() {
+      if (!items.length) return;
+      const { rx, ry } = radii();
+      const step = (Math.PI * 2) / items.length;
+
+      items.forEach((item, i) => {
+        const theta = angle + i * step;
+        const x = Math.cos(theta) * rx;
+        const y = Math.sin(theta) * ry;
+
+        const depth = (Math.sin(theta) + 1) / 2;
+        // Keep scale more consistent front-to-back so overlapping is dense everywhere
+        const scale = (0.82 + depth * 0.18) * (1 + boosts[i] * 0.32);
+
+        const isHovered = item === hovered;
+        const isLastHovered = item === lastHovered;
+        const baseZ = 10 + Math.round(depth * 40);
+        
+        item.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px) scale(${scale})`;
+        
+        const baseOpacity = 0.95 + depth * 0.05; // Almost fully solid everywhere
+        item.style.opacity = String(baseOpacity + (1 - baseOpacity) * boosts[i]);
+        item.style.zIndex = String(baseZ + (isHovered ? 100 : (isLastHovered ? 80 : Math.round(boosts[i] * 20))));
+      });
+    }
+
+    let last = performance.now();
+    function tick(now: number) {
+      const dt = Math.min((now - last) / 1000, 0.05);
+      last = now;
+
+      if (!paused) angle += speed * dt;
+      
+      if (!transitioning) {
+        speed += (BASE_SPEED - speed) * RETURN_RATE * dt;
+      }
+
+      items.forEach((item, i) => {
+        const target = item === hovered ? 1 : 0;
+        boosts[i] += (target - boosts[i]) * Math.min(1, 8 * dt);
+      });
+
+      layout();
+      tickId = requestAnimationFrame(tick);
+    }
+
+    if (items.length && !reduced) {
+      tickId = requestAnimationFrame((t) => {
+        last = t;
+        tick(t);
+      });
+    } else {
+      layout();
+    }
+
+    const push = (delta: number) => {
+      if (transitioning) return;
+      speed = gsap.utils.clamp(-MAX_SPEED, MAX_SPEED, speed + delta * SCROLL_PUSH);
+    };
+
+    const lenis = (window as any).__lenis;
+    const onWheel = (e: WheelEvent) => push(e.deltaY * 0.1);
+    
+    if (lenis?.on) {
+      lenisScrollFn = (e: any) => push(e.velocity ?? 0);
+      lenis.on('scroll', lenisScrollFn);
+    } else {
+      window.addEventListener('wheel', onWheel, { passive: true });
+    }
+
+    window.addEventListener('resize', layout);
+
+    function setCentre(item: HTMLElement | null) {
+      if (!titleEl || !categoryEl) return;
+      if (item) {
+        titleEl.textContent = item.dataset.title ?? '';
+        categoryEl.textContent = item.dataset.category ?? '';
+        titleEl.style.opacity = '1';
+        categoryEl.style.opacity = '1';
+      } else {
+        titleEl.style.opacity = '0';
+        categoryEl.style.opacity = '0';
+      }
+    }
+
+    /* ---------- Ligação aos cartões ---------- */
+    if (finePointer && !reduced) {
+      items.forEach((item) => {
+        const video = item.querySelector<HTMLVideoElement>('[data-work-video]');
+        const frame = item.querySelector<HTMLElement>('[data-frame]');
+
+        item.addEventListener('mouseenter', () => {
+          if (transitioning) return;
+          hovered = item;
+          lastHovered = item;
+          item.setAttribute('data-focused', '');
+          ring?.setAttribute('data-focusing', '');
+          setCentre(item);
+          if (video) play(video);
+          if (frame) gsap.to(frame, { scale: 1.05, duration: 0.4, ease: 'power2.out' });
+        });
+
+        item.addEventListener('mouseleave', () => {
+          if (transitioning) return;
+          hovered = null;
+          item.removeAttribute('data-focused');
+          ring?.removeAttribute('data-focusing');
+          setCentre(null);
+          if (frame) gsap.to(frame, { scale: 1, duration: 0.4, ease: 'power2.out' });
+        });
+
+        item.addEventListener('click', (e) => {
+          if (transitioning) {
+              e.preventDefault();
+              return;
+          }
+          transitioning = true;
+          e.preventDefault();
+
+          if (lenis?.on) lenis.destroy();
+          else window.removeEventListener('wheel', onWheel);
+
+          speed = MAX_SPEED * 1.5;
+          
+          gsap.to(stage, {
+            opacity: 0,
+            duration: 0.8,
+            ease: 'power2.inOut',
+            onComplete: () => {
+              const href = item.getAttribute('href');
+              if (href) navigate(href);
+            }
+          });
+        });
+      });
+    } else {
+        items.forEach((item) => {
+            item.addEventListener('click', (e) => {
+                if (transitioning) {
+                    e.preventDefault();
+                    return;
+                }
+                transitioning = true;
+                e.preventDefault();
+                gsap.to(stage, {
+                  opacity: 0,
+                  duration: 0.5,
+                  onComplete: () => {
+                    const href = item.getAttribute('href');
+                    if (href) navigate(href);
+                  }
+                });
+            });
+        });
+    }
+  });
+</script>

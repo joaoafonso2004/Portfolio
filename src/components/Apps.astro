@@ -1,0 +1,338 @@
+---
+import { APPS } from '../data/apps';
+
+const count = String(APPS.length).padStart(2, '0');
+---
+
+<section id="apps" class="relative border-t border-line px-5 py-24 md:px-10 md:py-36">
+  <div class="mx-auto max-w-[1600px]">
+    <!-- Section header -->
+    <div class="mb-14 flex items-end justify-between border-b border-line pb-6 md:mb-20">
+      <h2
+        data-split
+        data-hslide="-1"
+        class="font-display text-[clamp(2.6rem,7vw,6.5rem)] font-semibold uppercase leading-[0.95] tracking-[-0.02em]"
+      >
+        Apps<br />&amp; Releases
+      </h2>
+      <div class="text-right font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+        <span class="block text-accent">({count})</span>
+        <span>Downloads</span>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-8 md:gap-12">
+      {
+        APPS.map((app) => (
+          <article class="app-card group relative overflow-hidden rounded-xl border border-line bg-coal p-6 md:p-10 transition-colors duration-500 hover:border-accent/30" data-app={app.id} data-reveal>
+            <!-- Hover Glow -->
+            <div class="pointer-events-none absolute -inset-px opacity-0 transition-opacity duration-300 group-hover:opacity-100" style="background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(140, 123, 255, 0.08), transparent 40%);"></div>
+            
+            <div class="relative z-10">
+              <!-- Title -->
+              <div class="flex flex-wrap items-start justify-between gap-x-6 gap-y-4">
+                <div>
+                  <h3 class="font-display text-[clamp(2rem,4.5vw,3.4rem)] font-medium uppercase leading-none tracking-[-0.01em]">
+                    {app.name}
+                  </h3>
+                  <p class="mt-4 max-w-xl text-sm leading-relaxed text-muted">{app.tagline}</p>
+                </div>
+                <a
+                  href={`https://github.com/${app.owner}/${app.repo}/releases`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-muted transition-colors duration-300 hover:text-accent"
+                >
+                  History
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3 w-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7m0 0H8m9 0v9" />
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Tags -->
+              <div class="mt-5 flex flex-wrap gap-2">
+                {app.tags.map((tag) => (
+                  <span class="rounded-full border border-line/60 bg-ink/30 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.12em] text-muted backdrop-blur-sm">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <!-- Uma coluna por plataforma: versões independentes, lado a lado -->
+              <div class="mt-8 grid gap-8 border-t border-line/60 pt-8 md:mt-10 md:grid-cols-2 md:gap-12 md:pt-10">
+                {Object.entries(app.platforms).map(([platformId, platform]) => (
+                  <div data-platform={platformId} class="flex flex-col">
+                    <div class="flex items-center justify-between gap-4">
+                      <span class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-paper">
+                        {platformId === 'ios' ? (
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+                            <path d="M17.05 12.94c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.9-1.74.03-3.35 1.01-4.24 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.89 2.65 3.24 2.6 1.3-.05 1.79-.84 3.36-.84s2.01.84 3.39.81c1.4-.02 2.28-1.27 3.13-2.53.99-1.45 1.4-2.85 1.42-2.92-.03-.01-2.72-1.04-2.74-4.12zM14.6 5.3c.72-.87 1.2-2.08 1.07-3.3-1.03.04-2.28.69-3.02 1.56-.66.77-1.24 2-1.09 3.18 1.15.09 2.32-.58 3.04-1.44z" />
+                          </svg>
+                        ) : (
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+                            <path d="M3 5.6l7.3-1v6.9H3V5.6zm0 12.8l7.3 1v-6.8H3v5.8zm8.2 1.1L21 21V12h-9.8v7.5zM11.2 4L21 2.6V11h-9.8V4z" />
+                          </svg>
+                        )}
+                        {platform.label}
+                      </span>
+                      <span
+                        data-version
+                        class="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.15em] text-accent"
+                      >
+                        <span data-pulse class="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" aria-hidden="true" />
+                        <span data-version-text>…</span>
+                      </span>
+                    </div>
+
+                    <span data-published class="mt-2 font-mono text-[10px] uppercase tracking-[0.15em] text-muted" />
+
+                    <div
+                      data-notes
+                      class="mt-4 flex-1 space-y-1.5 text-sm leading-relaxed text-muted [&_li]:relative [&_li]:pl-4 [&_li]:before:absolute [&_li]:before:left-0 [&_li]:before:text-accent [&_li]:before:content-['—']"
+                    >
+                      <p class="text-muted/60">Loading…</p>
+                    </div>
+
+                    <a
+                      data-dl
+                      href="#"
+                      class="btn-pill pointer-events-none mt-6 justify-between opacity-40 btn-ghost"
+                      aria-disabled="true"
+                      data-magnetic
+                    >
+                      <span data-dl-label>Download</span>
+                      <span data-dl-size class="font-mono text-[10px] normal-case tracking-normal opacity-70" />
+                    </a>
+
+                    <p data-hint class="mt-2 font-mono text-[10px] leading-relaxed tracking-[0.05em] text-muted/70" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  import { APPS, VERSIONS_PATH, releasesApi } from '../data/apps';
+  import type { AppConfig, PlatformRelease, VersionsFile } from '../data/apps';
+
+  const isIOS = () =>
+    /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+  const formatSize = (bytes: number) => {
+    if (!bytes) return '';
+    const mb = bytes / 1024 / 1024;
+    return mb >= 1 ? `${mb.toFixed(1)} MB` : `${Math.round(bytes / 1024)} KB`;
+  };
+
+  const formatDate = (iso: string) =>
+    new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).format(
+      new Date(iso)
+    );
+
+  /**
+   * As notas vêm em Markdown e são conteúdo externo à página: construídas
+   * com textContent, nunca innerHTML — sem parser completo, mas também sem
+   * superfície de injeção de HTML.
+   */
+  function renderNotes(container: HTMLElement, body: string) {
+    container.textContent = '';
+    const lines = body
+      .split('\n')
+      .map((l) => l.trim())
+      .filter((l) => l && !l.startsWith('<!--'))
+      .slice(0, 5);
+
+    if (!lines.length) {
+      const p = document.createElement('p');
+      p.className = 'text-muted/60';
+      p.textContent = 'No notes for this release.';
+      container.appendChild(p);
+      return;
+    }
+
+    const list = document.createElement('ul');
+    list.className = 'space-y-1.5';
+    for (const line of lines) {
+      const li = document.createElement('li');
+      li.textContent = line
+        .replace(/^#{1,6}\s*/, '')
+        .replace(/^[-*+]\s+/, '')
+        .replace(/\*\*(.+?)\*\*/g, '$1')
+        .replace(/`(.+?)`/g, '$1');
+      list.appendChild(li);
+    }
+    container.appendChild(list);
+  }
+
+  function paintPlatform(
+    col: HTMLElement,
+    app: AppConfig,
+    platformId: string,
+    release: PlatformRelease | null
+  ) {
+    const versionText = col.querySelector<HTMLElement>('[data-version-text]');
+    const badge = col.querySelector<HTMLElement>('[data-version]');
+    const published = col.querySelector<HTMLElement>('[data-published]');
+    const notes = col.querySelector<HTMLElement>('[data-notes]');
+    const btn = col.querySelector<HTMLAnchorElement>('[data-dl]');
+    const label = col.querySelector<HTMLElement>('[data-dl-label]');
+    const size = col.querySelector<HTMLElement>('[data-dl-size]');
+    const hint = col.querySelector<HTMLElement>('[data-hint]');
+
+    col.querySelector('[data-pulse]')?.classList.remove('animate-pulse');
+
+    const dim = () => {
+      badge?.classList.remove('border-accent/40', 'bg-accent/10', 'text-accent');
+      badge?.classList.add('border-line', 'text-muted');
+    };
+
+    if (!release) {
+      if (versionText) versionText.textContent = 'No release';
+      dim();
+      if (notes) {
+        notes.textContent = '';
+        const p = document.createElement('p');
+        p.className = 'text-muted/60';
+        p.textContent = 'No release published for this platform yet.';
+        notes.appendChild(p);
+      }
+      if (label) label.textContent = 'Unavailable';
+      return;
+    }
+
+    if (versionText) versionText.textContent = `v${release.version}`;
+    if (published) published.textContent = `Released ${formatDate(release.publishedAt)}`;
+    if (notes) renderNotes(notes, release.notes);
+
+    if (!release.asset) {
+      dim();
+      if (label) label.textContent = 'File missing';
+      if (hint) hint.textContent = 'The release exists but has no file attached.';
+      return;
+    }
+
+    const ota = platformId === 'ios' && app.platforms.ios.ota === true;
+
+    if (btn) {
+      btn.href = release.install;
+      btn.classList.remove('opacity-40', 'pointer-events-none');
+      btn.removeAttribute('aria-disabled');
+      if (platformId === 'ios') btn.classList.replace('btn-ghost', 'btn-accent');
+    }
+    if (size) size.textContent = formatSize(release.asset.size);
+
+    if (label) {
+      label.textContent =
+        platformId === 'ios' ? (ota ? 'Install on iPhone' : 'Download .ipa') : 'Download';
+    }
+
+    if (hint) {
+      if (ota && !isIOS()) hint.textContent = 'Open this page on your iPhone to install.';
+      else if (platformId === 'ios' && !ota)
+        hint.textContent = 'Installs via sideload (Sideloadly or AltStore).';
+      else hint.textContent = '';
+    }
+  }
+
+  function paintApp(app: AppConfig, platforms: Record<string, PlatformRelease | null>) {
+    const card = document.querySelector<HTMLElement>(`[data-app="${app.id}"]`);
+    if (!card) return;
+    for (const platformId of Object.keys(app.platforms)) {
+      const col = card.querySelector<HTMLElement>(`[data-platform="${platformId}"]`);
+      if (col) paintPlatform(col, app, platformId, platforms[platformId] ?? null);
+    }
+  }
+
+  function failApp(app: AppConfig, message: string) {
+    const card = document.querySelector<HTMLElement>(`[data-app="${app.id}"]`);
+    card?.querySelectorAll<HTMLElement>('[data-platform]').forEach((col) => {
+      col.querySelector('[data-pulse]')?.classList.remove('animate-pulse');
+      const v = col.querySelector<HTMLElement>('[data-version-text]');
+      if (v) v.textContent = 'Unavailable';
+      const notes = col.querySelector<HTMLElement>('[data-notes]');
+      if (notes) {
+        notes.textContent = '';
+        const p = document.createElement('p');
+        p.className = 'text-muted/60';
+        p.textContent = message;
+        notes.appendChild(p);
+      }
+    });
+  }
+
+  /**
+   * Plano B: se o versions.json ainda não foi gerado, lê-se a API do GitHub
+   * directamente. Mais lento e sujeito a 60 pedidos/hora por IP, mas evita
+   * uma secção vazia enquanto a Action não corre pela primeira vez.
+   */
+  async function fallbackToApi(app: AppConfig) {
+    const res = await fetch(releasesApi(app), {
+      headers: { Accept: 'application/vnd.github+json' },
+    });
+    if (!res.ok) throw new Error(String(res.status));
+    const releases = await res.json();
+
+    const platforms: Record<string, PlatformRelease | null> = {};
+    for (const [platformId, platform] of Object.entries(app.platforms)) {
+      const rel = releases
+        .filter((r: any) => !r.draft && r.tag_name.startsWith(platform.tagPrefix))
+        .sort(
+          (a: any, b: any) =>
+            new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
+        )[0];
+      if (!rel) {
+        platforms[platformId] = null;
+        continue;
+      }
+      const asset = rel.assets.find((a: any) => a.name === platform.asset) ?? null;
+      platforms[platformId] = {
+        version: rel.tag_name.slice(platform.tagPrefix.length),
+        tag: rel.tag_name,
+        notes: rel.body ?? '',
+        publishedAt: rel.published_at,
+        releaseUrl: rel.html_url,
+        prerelease: rel.prerelease,
+        asset: asset
+          ? {
+              name: asset.name,
+              size: asset.size,
+              url: asset.browser_download_url,
+              downloads: asset.download_count,
+            }
+          : null,
+        install: asset ? asset.browser_download_url : rel.html_url,
+      };
+    }
+    paintApp(app, platforms);
+  }
+
+  (async () => {
+    let versions: VersionsFile | null = null;
+    try {
+      const res = await fetch(VERSIONS_PATH, { cache: 'no-cache' });
+      if (res.ok) versions = await res.json();
+    } catch {
+      /* tratado a seguir, por app */
+    }
+
+    for (const app of APPS) {
+      const entry = versions?.apps?.[app.id];
+      if (entry) {
+        paintApp(app, entry);
+        continue;
+      }
+      try {
+        await fallbackToApi(app);
+      } catch {
+        failApp(app, 'Could not load release data. Downloads are on GitHub.');
+      }
+    }
+  })();
+</script>

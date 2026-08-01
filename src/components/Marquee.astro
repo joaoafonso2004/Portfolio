@@ -1,0 +1,29 @@
+---
+const words = [
+  'Web Design',
+  'Development',
+  'UI / UX',
+  'Motion',
+  'Branding',
+  'Performance',
+];
+---
+
+<div class="relative overflow-hidden border-y border-line bg-ink py-5" aria-hidden="true">
+  <div class="marquee-track">
+    {
+      [0, 1].map(() => (
+        <div class="flex shrink-0 items-center">
+          {words.map((word) => (
+            <>
+              <span class="mx-7 whitespace-nowrap font-display text-2xl font-medium uppercase tracking-tight text-paper/85 md:text-4xl">
+                {word}
+              </span>
+              <span class="text-xl text-accent md:text-2xl">✦</span>
+            </>
+          ))}
+        </div>
+      ))
+    }
+  </div>
+</div>

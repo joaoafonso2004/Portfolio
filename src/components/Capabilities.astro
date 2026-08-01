@@ -1,0 +1,73 @@
+---
+const capabilities = [
+  {
+    title: 'Web Design & UX',
+    description:
+      'From discovery to polished flows — research, information architecture and interfaces that ship. Every layout starts with a purpose and ends with a detail.',
+  },
+  {
+    title: 'Development',
+    description:
+      'Fast, modern front-ends built with clean, scalable code. Performance is part of the design — sites that load instantly and score where it matters.',
+  },
+  {
+    title: 'Interaction & Motion',
+    description:
+      'Micro-interactions, smooth scroll and a motion language that makes products feel alive — never decoration for its own sake.',
+  },
+  {
+    title: 'Branding & Art Direction',
+    description:
+      'Visual worlds for digital brands — typography, color, imagery and the rules that bind them into something memorable.',
+  },
+];
+---
+
+<section id="capabilities" class="relative border-t border-line px-5 py-24 md:px-10 md:py-36">
+  <div class="mx-auto max-w-[1600px]">
+    <!-- Section header -->
+    <div class="mb-14 flex items-end justify-between md:mb-20">
+      <h2
+        data-split
+        data-hslide="1"
+        class="font-display text-[clamp(2.6rem,7vw,6.5rem)] font-semibold uppercase leading-[0.95] tracking-[-0.02em]"
+      >
+        What<br />I do
+      </h2>
+      <span class="font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+        Capabilities — (04)
+      </span>
+    </div>
+
+    <!-- Rows -->
+    <div>
+      {
+        capabilities.map((cap, i) => (
+          <div
+            class="group relative overflow-hidden border-t border-line last:border-b"
+            data-reveal
+          >
+            <div class="absolute inset-0 translate-y-full bg-accent transition-transform duration-500 ease-out-expo group-hover:translate-y-0" />
+            <div class="relative px-1 py-8 transition-colors duration-300 group-hover:text-ink md:py-10">
+              <div class="flex items-center gap-6 md:gap-10">
+                <span class="font-mono text-[11px] tracking-[0.2em] text-accent transition-colors duration-300 group-hover:text-ink">
+                  (0{i + 1})
+                </span>
+                <h3 class="font-display text-[clamp(1.7rem,4vw,3.6rem)] font-medium uppercase leading-none tracking-[-0.01em]">
+                  {cap.title}
+                </h3>
+              </div>
+              <div class="grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-out-expo md:grid-rows-[0fr] md:group-hover:grid-rows-[1fr]">
+                <div class="overflow-hidden">
+                  <p class="max-w-2xl pt-4 text-sm leading-relaxed text-muted transition-colors duration-300 group-hover:text-ink/75 md:pl-16 md:pt-5 md:text-base">
+                    {cap.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
