@@ -146,7 +146,14 @@ const count = String(APPS.length).padStart(2, '0');
     const lines = body
       .split('\n')
       .map((l) => l.trim())
-      .filter((l) => l && !l.startsWith('<!--'))
+      .filter((l) => {
+        if (!l) return false;
+        if (l.startsWith('<!--')) return false;
+        const low = l.toLowerCase();
+        if (low.includes('changelog')) return false;
+        if (low.includes("what's changed")) return false;
+        return true;
+      })
       .slice(0, 5);
 
     if (!lines.length) {
@@ -165,7 +172,9 @@ const count = String(APPS.length).padStart(2, '0');
         .replace(/^#{1,6}\s*/, '')
         .replace(/^[-*+]\s+/, '')
         .replace(/\*\*(.+?)\*\*/g, '$1')
-        .replace(/`(.+?)`/g, '$1');
+        .replace(/`(.+?)`/g, '$1')
+        .replace(/by @[\w-]+ in https:\/\/\S+/g, '') // remove PR attribution
+        .trim();
       list.appendChild(li);
     }
     container.appendChild(list);
