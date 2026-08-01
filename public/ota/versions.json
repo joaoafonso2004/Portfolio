@@ -1,8 +1,22 @@
 {
-  "generatedAt": "2026-08-01T17:59:20.823Z",
+  "generatedAt": "2026-08-01T18:06:32.779Z",
   "apps": {
     "duotone": {
-      "ios": null,
+      "ios": {
+        "version": "1.0.0",
+        "tag": "ios-v1.0.0",
+        "notes": "**Full Changelog**: https://github.com/joaoafonso2004/duotone/commits/ios-v1.0.0",
+        "publishedAt": "2026-08-01T18:06:12Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.0.0",
+        "prerelease": false,
+        "asset": {
+          "name": "Duotone.ipa",
+          "size": 15033952,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.0/Duotone.ipa",
+          "downloads": 0
+        },
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.0/Duotone.ipa"
+      },
       "windows": {
         "version": "1.0.0",
         "tag": "win-v1.0.0",
