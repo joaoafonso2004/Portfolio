@@ -1,0 +1,699 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = 'João Afonso is a web & UI/UX designer from Viana do Castelo, Portugal — crafting fast, modern websites and digital experiences with intent and motion.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="bg-ink">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#0A0A0F" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <ViewTransitions />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&f[]=satoshi@400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+  </head>
+
+  <body class="overflow-x-clip bg-ink text-paper">
+    <!-- Preloader -->
+    <div
+      id="preloader"
+      transition:persist="preloader"
+      class="fixed inset-0 z-[100] flex items-end justify-between bg-ink px-5 pb-8 md:px-10"
+    >
+      <!-- Spinning brand mark -->
+      <div
+        class="pointer-events-none absolute inset-0 flex items-center justify-center"
+        aria-hidden="true"
+      >
+        <span id="preloader-spinner" class="inline-block text-5xl text-accent md:text-7xl">✦</span>
+      </div>
+
+      <!-- Progress line -->
+      <div
+        id="preloader-bar"
+        class="absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0 bg-accent"
+        aria-hidden="true"
+      >
+      </div>
+
+      <span class="mb-3 font-mono text-[11px] uppercase tracking-[0.22em] text-muted">
+        João Afonso — Folio ©2026
+      </span>
+      <span
+        id="preloader-count"
+        class="font-display text-[clamp(4rem,12vw,9rem)] font-semibold leading-none text-paper"
+      >0</span>
+    </div>
+    <noscript>
+      <style>
+        #preloader {
+          display: none !important;
+        }
+      </style>
+    </noscript>
+
+    <!-- Scroll progress -->
+    <div
+      id="scroll-progress"
+      class="fixed left-0 top-0 z-[60] h-[2px] w-full origin-left scale-x-0 bg-accent"
+      aria-hidden="true"
+    >
+    </div>
+
+    <!-- Film grain -->
+    <div class="noise" aria-hidden="true"></div>
+
+    <!-- Custom cursor -->
+    <div id="cursor-ring" aria-hidden="true">
+      <span class="cursor-label font-mono"></span>
+    </div>
+
+    <slot />
+
+    <!-- Contact modal -->
+    <div
+      id="contact-modal"
+      class="invisible fixed inset-0 z-[90] flex items-center justify-center px-5"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="contact-modal-title"
+    >
+      <div id="contact-backdrop" class="absolute inset-0 bg-ink/85 backdrop-blur-md" aria-hidden="true"></div>
+
+      <div
+        id="contact-panel"
+        data-lenis-prevent
+        class="relative max-h-[90svh] w-full max-w-xl overflow-y-auto border border-line bg-coal p-7 md:p-10"
+      >
+        <button
+          id="contact-close"
+          aria-label="Close contact form"
+          class="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full border border-line text-muted transition-colors duration-300 hover:border-accent hover:text-accent md:right-6 md:top-6"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+
+        <span class="eyebrow">Contact — Start a project</span>
+        <h3
+          id="contact-modal-title"
+          class="mt-4 font-display text-3xl font-semibold uppercase leading-[0.95] tracking-[-0.01em] md:text-4xl"
+        >
+          Let's build<br />something rare<span class="text-accent">.</span>
+        </h3>
+
+        <form id="contact-form" class="mt-9 flex flex-col gap-7">
+          <!-- Web3Forms honeypot (spam protection) -->
+          <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" />
+
+          <div class="grid gap-7 md:grid-cols-2">
+            <label class="flex flex-col gap-2">
+              <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">Name *</span>
+              <input
+                required
+                type="text"
+                name="name"
+                placeholder="Your name"
+                autocomplete="name"
+                class="w-full border-b border-line bg-transparent pb-3 text-sm text-paper transition-colors placeholder:text-muted/50 focus:border-accent focus:outline-none"
+              />
+            </label>
+            <label class="flex flex-col gap-2">
+              <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">Company</span>
+              <input
+                type="text"
+                name="company"
+                placeholder="Company or project"
+                autocomplete="organization"
+                class="w-full border-b border-line bg-transparent pb-3 text-sm text-paper transition-colors placeholder:text-muted/50 focus:border-accent focus:outline-none"
+              />
+            </label>
+          </div>
+
+          <label class="flex flex-col gap-2">
+            <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">Email *</span>
+            <input
+              required
+              type="email"
+              name="email"
+              placeholder="you@email.com"
+              autocomplete="email"
+              class="w-full border-b border-line bg-transparent pb-3 text-sm text-paper transition-colors placeholder:text-muted/50 focus:border-accent focus:outline-none"
+            />
+          </label>
+
+          <label class="flex flex-col gap-2">
+            <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">Budget</span>
+            <select
+              name="budget"
+              class="w-full appearance-none border-b border-line bg-transparent pb-3 text-sm text-paper transition-colors focus:border-accent focus:outline-none"
+            >
+              <option value="Not sure yet">Not sure yet</option>
+              <option value="€250 — €500">€250 — €500</option>
+              <option value="€500 — €1.000">€500 — €1.000</option>
+              <option value="€1.000+">€1.000+</option>
+            </select>
+          </label>
+
+          <label class="flex flex-col gap-2">
+            <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">Message *</span>
+            <textarea
+              required
+              name="message"
+              rows="4"
+              placeholder="Tell me about your project…"
+              class="w-full resize-none border-b border-line bg-transparent pb-3 text-sm text-paper transition-colors placeholder:text-muted/50 focus:border-accent focus:outline-none"
+            ></textarea>
+          </label>
+
+          <button type="submit" class="btn-pill btn-accent justify-center" data-magnetic>
+            <span class="contact-btn-label flex items-center gap-2">
+              Send message
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7m0 0H8m9 0v9"></path>
+              </svg>
+            </span>
+          </button>
+          <p
+            id="contact-status"
+            class="-mt-3 text-center font-mono text-[10px] uppercase tracking-[0.15em] text-muted"
+          >
+            I usually reply within 24 hours
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      import { gsap } from 'gsap';
+      import { ScrollTrigger } from 'gsap/ScrollTrigger';
+      import { SplitText } from 'gsap/SplitText';
+      import Lenis from 'lenis';
+
+      gsap.registerPlugin(ScrollTrigger, SplitText);
+
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+      /* ---------- Always start at the top ---------- */
+      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+      window.scrollTo(0, 0);
+      window.addEventListener('pageshow', () => window.scrollTo(0, 0));
+      window.addEventListener('beforeunload', () => window.scrollTo(0, 0));
+
+      /* ---------- Global state for cleanup ---------- */
+      let lenis: Lenis | null = null;
+      const velocity = { v: 0 };
+      let scrollFxTicker: any = null;
+
+      // Update lenis tick globally
+      gsap.ticker.add((time) => {
+        if (lenis) lenis.raf(time * 1000);
+      });
+      gsap.ticker.lagSmoothing(0);
+
+      /* ---------- Cleanup before swapping pages ---------- */
+      document.addEventListener('astro:before-swap', () => {
+        // Kill all scroll triggers
+        ScrollTrigger.getAll().forEach((t) => t.kill());
+        // Remove old ticker
+        if (scrollFxTicker) {
+          gsap.ticker.remove(scrollFxTicker);
+          scrollFxTicker = null;
+        }
+        // Destroy old lenis
+        if (lenis) {
+          lenis.destroy();
+          lenis = null;
+        }
+      });
+
+      /* ---------- Initialize everything on page load ---------- */
+      document.addEventListener('astro:page-load', () => {
+        
+        /* ---------- Smooth scroll ---------- */
+        if (!reduced) {
+          lenis = new Lenis({
+            duration: 1.25,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+          });
+          lenis.on('scroll', ScrollTrigger.update);
+          lenis.on('scroll', (e: any) => (velocity.v = e.velocity ?? 0));
+        }
+        (window as any).__lenis = lenis;
+
+        /* ---------- Anchor scrolling ---------- */
+        document.querySelectorAll<HTMLAnchorElement>('a[href^="#"], a[href^="/#"]').forEach((anchor) => {
+          anchor.addEventListener('click', (e) => {
+            const href = anchor.getAttribute('href') || '';
+            if (href.startsWith('/#') && window.location.pathname !== '/') return; 
+            const id = href.substring(href.indexOf('#'));
+            if (!id || id.length < 2) return;
+            const target = document.querySelector<HTMLElement>(id);
+            if (!target) return;
+            e.preventDefault();
+            if (lenis) lenis.scrollTo(target, { duration: 1.4 });
+            else target.scrollIntoView({ behavior: 'smooth' });
+          });
+        });
+
+        /* ---------- Preloader ---------- */
+        const preloader = document.getElementById('preloader');
+        const counter = document.getElementById('preloader-count');
+
+        const finishPreload = () => {
+          (window as any).__preloaderComplete = true;
+          document.dispatchEvent(new CustomEvent('preloader:done'));
+          ScrollTrigger.refresh();
+        };
+
+        if (preloader && counter && !reduced) {
+          lenis?.stop();
+          const bar = document.getElementById('preloader-bar');
+          const spin = gsap.to('#preloader-spinner', {
+            rotation: 360,
+            duration: 1.6,
+            ease: 'none',
+            repeat: -1,
+          });
+          const state = { v: 0 };
+          gsap
+            .timeline()
+            .to(state, {
+              v: 100,
+              duration: 1.0,
+              ease: 'power2.inOut',
+              onUpdate: () => {
+                counter.textContent = String(Math.round(state.v));
+                if (bar) bar.style.transform = `scaleX(${state.v / 100})`;
+              },
+            })
+            .to(preloader, {
+              yPercent: -100,
+              duration: 0.85,
+              ease: 'power4.inOut',
+              onStart: () => {
+                lenis?.start();
+                finishPreload();
+              },
+              onComplete: () => {
+                preloader.style.display = 'none';
+                spin.kill();
+              },
+            }, '+=0.1');
+        } else {
+          preloader?.remove();
+          finishPreload();
+        }
+
+        /* ---------- Scroll reveals ---------- */
+        const initReveals = () => {
+          if (reduced) return;
+
+          document.querySelectorAll<HTMLElement>('[data-split]').forEach((el) => {
+            const split = new SplitText(el, { type: 'lines', mask: 'lines' });
+            gsap.from(split.lines, {
+              yPercent: 115,
+              duration: 1.2,
+              ease: 'power4.out',
+              stagger: 0.09,
+              scrollTrigger: { trigger: el, start: 'top 88%', once: true },
+            });
+          });
+
+          document.querySelectorAll<HTMLElement>('[data-reveal]').forEach((el) => {
+            gsap.from(el, {
+              y: 44,
+              autoAlpha: 0,
+              duration: 1.1,
+              ease: 'power3.out',
+              scrollTrigger: { trigger: el, start: 'top 90%', once: true },
+            });
+          });
+
+          document.querySelectorAll<HTMLElement>('[data-parallax]').forEach((el) => {
+            gsap.fromTo(
+              el,
+              { yPercent: -7, scale: 1.12 },
+              {
+                yPercent: 7,
+                scale: 1.12,
+                ease: 'none',
+                scrollTrigger: {
+                  trigger: el.parentElement,
+                  start: 'top bottom',
+                  end: 'bottom top',
+                  scrub: 0.4,
+                },
+              }
+            );
+          });
+        };
+        document.fonts.ready.then(initReveals);
+
+        /* ---------- Force videos to play ---------- */
+        // Browser autoplay often fails during Astro View Transitions
+        // Also, reusing the exact same video src (from the ring to the project page) 
+        // can cause the browser media engine to stall. video.load() unsticks it.
+        document.querySelectorAll('video').forEach(video => {
+          video.load();
+          video.play().catch(() => {});
+        });
+
+        /* ---------- Scroll experience (scrubbed FX) ---------- */
+        const initScrollFX = () => {
+          if (reduced) return;
+
+          const progress = document.getElementById('scroll-progress');
+          if (progress) {
+            gsap.to(progress, {
+              scaleX: 1,
+              ease: 'none',
+              scrollTrigger: { start: 0, end: 'max', scrub: 0.3 },
+            });
+          }
+
+          if (document.querySelector('.hero-content')) {
+            gsap.to('.hero-content', {
+              yPercent: -12,
+              opacity: 0,
+              ease: 'none',
+              scrollTrigger: { trigger: '#hero', start: 'top top', end: '85% top', scrub: true },
+            });
+            gsap.to('#hero-canvas', {
+              scale: 1.18,
+              ease: 'none',
+              scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true },
+            });
+            gsap.utils.toArray<HTMLElement>('.hero-line').forEach((el, i) => {
+              gsap.to(el, {
+                xPercent: i % 2 ? 7 : -7,
+                ease: 'none',
+                scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true },
+              });
+            });
+          }
+
+          document.querySelectorAll<HTMLElement>('[data-hslide]').forEach((el) => {
+            const dir = parseFloat(el.getAttribute('data-hslide') || '1');
+            gsap.fromTo(
+              el,
+              { xPercent: 9 * dir },
+              {
+                xPercent: 0,
+                ease: 'none',
+                scrollTrigger: { trigger: el, start: 'top bottom', end: 'top 40%', scrub: 0.4 },
+              }
+            );
+          });
+
+          document.querySelectorAll<HTMLElement>('[data-clip]').forEach((el) => {
+            gsap.fromTo(
+              el,
+              { clipPath: 'inset(10% 5% 10% 5%)' },
+              {
+                clipPath: 'inset(0% 0% 0% 0%)',
+                ease: 'none',
+                scrollTrigger: { trigger: el, start: 'top 95%', end: 'top 45%', scrub: 0.4 },
+              }
+            );
+          });
+
+          const footerInner = document.querySelector('.footer-inner');
+          if (footerInner) {
+            gsap.fromTo(
+              footerInner,
+              { yPercent: 16 },
+              {
+                yPercent: 0,
+                ease: 'none',
+                scrollTrigger: { trigger: '#contact', start: 'top bottom', end: 'top 35%', scrub: 0.5 },
+              }
+            );
+          }
+
+          document.querySelectorAll<HTMLElement>('[data-counter]').forEach((el) => {
+            const end = parseFloat(el.getAttribute('data-counter') || '0');
+            const suffix = el.getAttribute('data-counter-suffix') ?? '';
+            const pad = el.hasAttribute('data-counter-pad');
+            const state = { v: 0 };
+            gsap.to(state, {
+              v: end,
+              duration: 1.8,
+              ease: 'power3.out',
+              scrollTrigger: { trigger: el, start: 'top 88%', once: true },
+              onUpdate: () => {
+                const n = String(Math.round(state.v));
+                el.textContent = (pad ? n.padStart(2, '0') : n) + suffix;
+              },
+            });
+          });
+
+          const track = document.querySelector<HTMLElement>('.marquee-track');
+          const setTrackX = track ? gsap.quickSetter(track, 'xPercent') : null;
+          if (track) track.classList.add('js-driven');
+
+          const skewSetters = gsap.utils
+            .toArray<HTMLElement>('[data-skew]')
+            .map((el) => gsap.quickSetter(el, 'skewY', 'deg'));
+
+          let marqueePos = 0;
+          let marqueeSpeed = 1;
+          let skew = 0;
+
+          scrollFxTicker = (_time: number, deltaMS: number) => {
+            const v = velocity.v;
+            if (setTrackX) {
+              const dir = v < -0.5 ? -1 : 1;
+              const target = dir * Math.min(1 + Math.abs(v) * 0.08, 4);
+              marqueeSpeed += (target - marqueeSpeed) * 0.06;
+              marqueePos = (marqueePos + ((deltaMS / 1000) * marqueeSpeed) / 22) % 1;
+              if (marqueePos < 0) marqueePos += 1;
+              setTrackX(-50 * marqueePos);
+            }
+            if (skewSetters.length) {
+              const target = gsap.utils.clamp(-3.5, 3.5, v * 0.06);
+              skew += (target - skew) * 0.1;
+              skewSetters.forEach((set) => set(skew));
+            }
+            velocity.v *= 0.92;
+          };
+          gsap.ticker.add(scrollFxTicker);
+        };
+        initScrollFX();
+
+        /* ---------- Magnetic buttons ---------- */
+        if (finePointer && !reduced) {
+          document.querySelectorAll<HTMLElement>('[data-magnetic]').forEach((el) => {
+            const xTo = gsap.quickTo(el, 'x', { duration: 0.45, ease: 'power3' });
+            const yTo = gsap.quickTo(el, 'y', { duration: 0.45, ease: 'power3' });
+            el.addEventListener('mousemove', (e) => {
+              const r = el.getBoundingClientRect();
+              xTo((e.clientX - (r.left + r.width / 2)) * 0.32);
+              yTo((e.clientY - (r.top + r.height / 2)) * 0.32);
+            });
+            el.addEventListener('mouseleave', () => {
+              xTo(0);
+              yTo(0);
+            });
+          });
+        }
+
+        /* ---------- Custom cursor ring ---------- */
+        if (finePointer) {
+          const ring = document.getElementById('cursor-ring');
+          const label = ring?.querySelector<HTMLElement>('.cursor-label');
+          if (ring && label) {
+            document.documentElement.classList.add('has-cursor');
+            gsap.set(ring, { xPercent: -50, yPercent: -50, x: -100, y: -100 });
+            const xTo = gsap.quickTo(ring, 'x', { duration: 0.1, ease: 'power3' });
+            const yTo = gsap.quickTo(ring, 'y', { duration: 0.1, ease: 'power3' });
+            window.addEventListener(
+              'mousemove',
+              (e) => {
+                xTo(e.clientX);
+                yTo(e.clientY);
+              },
+              { passive: true }
+            );
+
+            document.querySelectorAll<HTMLElement>('a, button, [data-cursor-label]').forEach((el) => {
+              el.addEventListener('mouseenter', () => {
+                const text =
+                  el.closest('[data-cursor-label]')?.getAttribute('data-cursor-label') ?? '';
+                label.textContent = text;
+                ring.classList.add(text ? 'is-label' : 'is-hover');
+              });
+              el.addEventListener('mouseleave', () => {
+                ring.classList.remove('is-label', 'is-hover');
+              });
+            });
+          }
+        }
+
+        /* ---------- Contact modal ---------- */
+        const contactModal = document.getElementById('contact-modal');
+        const contactPanel = document.getElementById('contact-panel');
+        const contactBackdrop = document.getElementById('contact-backdrop');
+        const contactClose = document.getElementById('contact-close');
+        const contactForm = document.getElementById('contact-form') as HTMLFormElement | null;
+
+        if (contactModal && contactPanel && contactForm) {
+          let modalOpen = false;
+          const modalTl = gsap
+            .timeline({ paused: true })
+            .set(contactModal, { autoAlpha: 1 })
+            .from(contactBackdrop, { autoAlpha: 0, duration: 0.35, ease: 'power2.out' })
+            .from(
+              contactPanel,
+              { y: 44, autoAlpha: 0, scale: 0.97, duration: 0.55, ease: 'power4.out' },
+              '-=0.15'
+            );
+
+          const setModal = (next: boolean) => {
+            if (modalOpen === next) return;
+            modalOpen = next;
+            document.body.classList.toggle('overflow-hidden', next);
+            if (next) {
+              lenis?.stop();
+              modalTl.timeScale(1).play();
+              contactPanel.querySelector<HTMLInputElement>('input')?.focus();
+            } else {
+              lenis?.start();
+              modalTl.timeScale(1.6).reverse();
+            }
+          };
+
+          document.querySelectorAll<HTMLElement>('[data-contact-trigger]').forEach((el) => {
+            el.addEventListener('click', (e) => {
+              e.preventDefault();
+              setModal(true);
+            });
+          });
+          contactClose?.addEventListener('click', () => setModal(false));
+          contactBackdrop?.addEventListener('click', () => setModal(false));
+          window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') setModal(false);
+          });
+
+          const WEB3FORMS_ACCESS_KEY = '1accd3f1-1dbe-4078-83e7-f35b5b9a3e51';
+
+          const status = document.getElementById('contact-status');
+          const submitBtn = contactForm.querySelector<HTMLButtonElement>('button[type="submit"]');
+          const btnLabel = contactForm.querySelector<HTMLElement>('.contact-btn-label');
+          const defaultStatus = status?.textContent ?? '';
+
+          const setStatus = (msg: string, tone: 'muted' | 'ok' | 'error' = 'muted') => {
+            if (!status) return;
+            status.textContent = msg;
+            status.classList.remove('text-muted', 'text-accent');
+            status.style.color =
+              tone === 'error' ? '#ff6b6b' : tone === 'ok' ? '#8C7BFF' : '';
+            if (tone === 'muted') status.classList.add('text-muted');
+          };
+
+          contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            if (!contactForm.reportValidity()) return;
+
+            const data = new FormData(contactForm);
+            const name = String(data.get('name') ?? '').trim();
+            const company = String(data.get('company') ?? '').trim();
+
+            data.set('access_key', WEB3FORMS_ACCESS_KEY);
+            data.set('subject', `Project inquiry — ${name}${company ? ` (${company})` : ''}`);
+            data.set('from_name', name || 'Portfolio contact');
+
+            if (submitBtn) submitBtn.disabled = true;
+            if (btnLabel) btnLabel.textContent = 'Sending…';
+            setStatus('Sending your message…', 'muted');
+
+            if (WEB3FORMS_ACCESS_KEY === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+              if (btnLabel) btnLabel.textContent = 'Send message';
+              if (submitBtn) submitBtn.disabled = false;
+              setStatus('Form not connected yet — add your Web3Forms key.', 'error');
+              return;
+            }
+
+            try {
+              const res = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: { Accept: 'application/json' },
+                body: data,
+              });
+              const json = await res.json();
+              if (json.success) {
+                if (btnLabel) btnLabel.textContent = 'Message sent ✓';
+                setStatus("Thanks — I'll be in touch shortly.", 'ok');
+                contactForm.reset();
+                setTimeout(() => {
+                  setModal(false);
+                  if (btnLabel) btnLabel.textContent = 'Send message';
+                  if (submitBtn) submitBtn.disabled = false;
+                  setStatus(defaultStatus, 'muted');
+                }, 2200);
+              } else {
+                throw new Error(json.message || 'Submission failed');
+              }
+            } catch (err) {
+              if (btnLabel) btnLabel.textContent = 'Send message';
+              if (submitBtn) submitBtn.disabled = false;
+              setStatus('Something went wrong — email joaorsafonsoapple@gmail.com directly.', 'error');
+            }
+          });
+        }
+      }); // End of astro:page-load wrapper
+
+      /* ---------- Disable right click ---------- */
+      document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+      /* ---------- Lisbon local time ---------- */
+      const timeEl = document.getElementById('local-time');
+      if (timeEl) {
+        const fmt = new Intl.DateTimeFormat('en-GB', {
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          timeZone: 'Europe/Lisbon',
+        });
+        const tick = () => (timeEl.textContent = fmt.format(new Date()));
+        tick();
+        setInterval(tick, 1000);
+      }
+    </script>
+  </body>
+</html>

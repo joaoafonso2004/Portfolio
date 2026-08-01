@@ -1,0 +1,141 @@
+---
+const links = [
+  { href: '/#work', label: 'Work' },
+  { href: '/#apps', label: 'Apps' },
+  { href: '/#about', label: 'About' },
+  { href: '/#capabilities', label: 'Capabilities' },
+  { href: '/#contact', label: 'Contact' },
+];
+---
+
+<header class="fixed left-0 top-0 z-50 w-full mix-blend-difference">
+  <nav class="flex items-center justify-between px-5 py-5 text-paper md:px-10">
+    <!-- Brand -->
+    <a
+      href="/"
+      data-astro-reload
+      class="font-display text-sm font-semibold uppercase tracking-[0.08em]"
+      data-magnetic
+    >
+      João Afonso<span class="text-accent">®</span>
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="hidden items-center gap-9 font-mono text-[11px] uppercase tracking-[0.18em] md:flex">
+      {
+        links.map((link) => (
+          <li>
+            <a href={link.href} class="nav-link">
+              {link.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <!-- Contact button (desktop) -->
+    <a
+      href="mailto:joaorsafonsoapple@gmail.com"
+      class="hidden items-center rounded-full border border-paper/25 px-5 py-2 font-mono text-[10px] uppercase tracking-[0.15em] transition-colors duration-300 hover:border-accent hover:text-accent lg:inline-flex"
+      data-magnetic
+      data-contact-trigger
+    >
+      Let's talk
+    </a>
+
+    <!-- Hamburger (mobile) -->
+    <button id="menu-toggle" class="md:hidden" aria-label="Open menu" aria-expanded="false">
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+    </button>
+  </nav>
+</header>
+
+<!-- Mobile full-screen menu -->
+<div
+  id="mobile-menu"
+  class="invisible fixed inset-0 z-40 flex flex-col justify-between bg-coal px-5 pb-10 pt-28"
+>
+  <nav>
+    <ul class="flex flex-col gap-2">
+      {
+        links.map((link, i) => (
+          <li class="overflow-hidden border-b border-line py-4">
+            <a
+              href={link.href}
+              class="mobile-link flex items-baseline gap-4 font-display text-[clamp(2.1rem,9.5vw,3.5rem)] font-medium uppercase leading-none"
+            >
+              <span class="font-mono text-[11px] tracking-[0.2em] text-accent">0{i + 1}</span>
+              {link.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+
+  <div class="flex items-end justify-between">
+    <div class="flex flex-col gap-3 font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+      <span>Viana do Castelo, PT</span>
+      <a
+        href="mailto:joaorsafonsoapple@gmail.com"
+        class="inline-flex w-fit items-center rounded-full bg-accent px-5 py-2.5 text-[10px] font-medium tracking-[0.15em] text-ink"
+        data-contact-trigger
+      >
+        Let's talk
+      </a>
+    </div>
+    <div class="flex flex-col items-end gap-1 font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+      <a href="https://github.com/joaoafonso2004" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.instagram.com/joao.afonso31/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://wa.me/351968467102" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  import { gsap } from 'gsap';
+
+  document.addEventListener('astro:page-load', () => {
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+
+    if (toggle && menu) {
+      const items = menu.querySelectorAll('.mobile-link');
+      const closers = menu.querySelectorAll('.mobile-link, [data-contact-trigger]');
+      let open = false;
+
+      const tl = gsap
+        .timeline({ paused: true })
+        .set(menu, { autoAlpha: 1 })
+        .fromTo(
+          menu,
+          { clipPath: 'inset(0 0 100% 0)' },
+          { clipPath: 'inset(0 0 0% 0)', duration: 0.7, ease: 'power4.inOut' }
+        )
+        .from(
+          items,
+          { yPercent: 130, duration: 0.7, stagger: 0.07, ease: 'power3.out' },
+          '-=0.25'
+        );
+
+      const setOpen = (next: boolean) => {
+        open = next;
+        toggle.classList.toggle('is-open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        const lenis = (window as any).__lenis;
+        if (open) {
+          lenis?.stop();
+          tl.timeScale(1).play();
+        } else {
+          lenis?.start();
+          tl.timeScale(1.4).reverse();
+        }
+      };
+
+      toggle.addEventListener('click', () => setOpen(!open));
+      closers.forEach((item) => item.addEventListener('click', () => setOpen(false)));
+    }
+  });
+</script>

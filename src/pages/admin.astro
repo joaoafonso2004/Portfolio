@@ -1,0 +1,476 @@
+---
+import '../styles/global.css';
+import { APPS } from '../data/apps';
+---
+
+<!doctype html>
+<html lang="pt" class="bg-ink">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fora do índice: é uma ferramenta interna, não uma página do portfólio -->
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Releases — Admin</title>
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&f[]=satoshi@400,500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+  </head>
+
+  <body class="min-h-screen bg-ink font-sans text-paper antialiased">
+    <div class="mx-auto max-w-5xl px-5 py-12 md:px-8 md:py-16">
+      <header class="flex flex-wrap items-end justify-between gap-4 border-b border-line pb-6">
+        <div>
+          <span class="eyebrow">Painel interno</span>
+          <h1 class="mt-2 font-display text-4xl font-semibold uppercase tracking-[-0.02em] md:text-5xl">
+            Releases
+          </h1>
+        </div>
+        <div class="flex items-center gap-3">
+          <span id="who" class="font-mono text-[11px] uppercase tracking-[0.15em] text-muted"></span>
+          <a href="/" class="font-mono text-[11px] uppercase tracking-[0.15em] text-muted transition-colors hover:text-accent">
+            ← Site
+          </a>
+          <button
+            id="logout"
+            class="hidden rounded-full border border-line px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-muted transition-colors hover:border-accent hover:text-accent"
+          >
+            Sair
+          </button>
+        </div>
+      </header>
+
+      <!-- Login -->
+      <section id="login" class="mt-12 max-w-lg">
+        <h2 class="font-display text-2xl font-medium uppercase tracking-[-0.01em]">Autenticação</h2>
+        <p class="mt-3 text-sm leading-relaxed text-muted">
+          Cola um <strong class="text-paper">fine-grained personal access token</strong> com acesso
+          ao repositório das apps. Quem valida o token é o GitHub — este site não tem servidor nem
+          guarda nada.
+        </p>
+
+        <div class="mt-5 border border-line bg-coal p-4">
+          <p class="font-mono text-[10px] uppercase tracking-[0.15em] text-accent">Permissões necessárias</p>
+          <ul class="mt-2 space-y-1 font-mono text-[11px] leading-relaxed text-muted">
+            <li>— Repository access: apenas <span class="text-paper">joaoafonso2004/duotone</span></li>
+            <li>— Contents: <span class="text-paper">Read and write</span></li>
+            <li>— Actions: <span class="text-paper">Read and write</span> (para forçar o sync)</li>
+          </ul>
+        </div>
+
+        <form id="login-form" class="mt-6 flex flex-col gap-4">
+          <label class="flex flex-col gap-2">
+            <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">Token</span>
+            <input
+              id="token"
+              type="password"
+              required
+              autocomplete="off"
+              placeholder="github_pat_…"
+              class="w-full border border-line bg-transparent px-4 py-3 font-mono text-sm text-paper transition-colors placeholder:text-muted/40 focus:border-accent focus:outline-none"
+            />
+          </label>
+          <label class="flex items-start gap-2.5 text-xs leading-relaxed text-muted">
+            <input id="remember" type="checkbox" class="mt-0.5 accent-accent" />
+            <span>
+              Manter durante a sessão do separador. Sem isto, o token vive só em memória e
+              desaparece se recarregares a página.
+            </span>
+          </label>
+          <button type="submit" class="btn-pill btn-accent justify-center">Entrar</button>
+          <p id="login-error" class="font-mono text-[11px] text-[#ff6b6b]"></p>
+        </form>
+
+        <p class="mt-8 border-l-2 border-line pl-4 text-xs leading-relaxed text-muted/80">
+          O token fica em <code class="font-mono text-paper">sessionStorage</code>, acessível a
+          qualquer script desta página. É o compromisso de não haver backend. Usa um token
+          fine-grained limitado a este repositório e revoga-o em
+          <span class="text-paper">github.com/settings/tokens</span> se houver dúvidas.
+        </p>
+      </section>
+
+      <!-- Dashboard -->
+      <section id="dash" class="mt-10 hidden">
+        <div id="apps-root" class="flex flex-col gap-10"></div>
+
+        <div class="mt-12 flex flex-wrap items-center gap-3 border-t border-line pt-6">
+          <button id="resync" class="btn-pill btn-ghost">Forçar sync do portfólio</button>
+          <span id="resync-status" class="font-mono text-[11px] text-muted"></span>
+        </div>
+      </section>
+    </div>
+
+    <script define:vars={{ APPS }}>
+      window.__APPS = APPS;
+    </script>
+
+    <script>
+      const API = 'https://api.github.com';
+      const apps = (window as any).__APPS as Array<{
+        id: string;
+        name: string;
+        owner: string;
+        repo: string;
+        platforms: Record<string, { label: string; tagPrefix: string; asset: string }>;
+      }>;
+
+      let token = '';
+
+      const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
+
+      const loginSection = $('login');
+      const dash = $('dash');
+      const root = $('apps-root');
+
+      async function gh(path: string, init: RequestInit = {}) {
+        const res = await fetch(path.startsWith('http') ? path : `${API}${path}`, {
+          ...init,
+          headers: {
+            Accept: 'application/vnd.github+json',
+            Authorization: `Bearer ${token}`,
+            'X-GitHub-Api-Version': '2022-11-28',
+            ...(init.body ? { 'Content-Type': 'application/json' } : {}),
+            ...init.headers,
+          },
+        });
+        if (!res.ok) {
+          const detail = await res.text();
+          throw new Error(`${res.status} — ${detail.slice(0, 200)}`);
+        }
+        return res.status === 204 ? null : res.json();
+      }
+
+      const fmtSize = (b: number) =>
+        b >= 1024 * 1024 ? `${(b / 1024 / 1024).toFixed(1)} MB` : `${Math.round(b / 1024)} KB`;
+
+      const fmtDate = (iso: string) =>
+        new Intl.DateTimeFormat('pt-PT', {
+          day: '2-digit',
+          month: 'short',
+          year: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+        }).format(new Date(iso));
+
+      /** Todo o texto vindo da API entra por textContent — nunca innerHTML. */
+      function el<K extends keyof HTMLElementTagNameMap>(
+        tag: K,
+        className = '',
+        text?: string
+      ): HTMLElementTagNameMap[K] {
+        const node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      function chip(text: string, tone: 'accent' | 'muted' | 'warn' = 'muted') {
+        const cls = {
+          accent: 'border-accent/40 bg-accent/10 text-accent',
+          muted: 'border-line text-muted',
+          warn: 'border-[#ff6b6b]/40 bg-[#ff6b6b]/10 text-[#ff6b6b]',
+        }[tone];
+        return el(
+          'span',
+          `inline-flex items-center rounded-full border px-3 py-1 font-mono text-[10px] uppercase tracking-[0.12em] ${cls}`,
+          text
+        );
+      }
+
+      function button(label: string, onClick: () => void, tone = 'ghost') {
+        const b = el(
+          'button',
+          tone === 'danger'
+            ? 'rounded-full border border-[#ff6b6b]/40 px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-[#ff6b6b] transition-colors hover:bg-[#ff6b6b]/10'
+            : 'rounded-full border border-line px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-muted transition-colors hover:border-accent hover:text-accent',
+          label
+        );
+        b.addEventListener('click', onClick);
+        return b;
+      }
+
+      function status(node: HTMLElement, msg: string, ok = true) {
+        node.textContent = msg;
+        node.style.color = ok ? '#8C7BFF' : '#ff6b6b';
+      }
+
+      async function renderApp(app: (typeof apps)[number]) {
+        const card = el('article', 'border border-line bg-coal p-5 md:p-7');
+        const head = el('div', 'flex flex-wrap items-center justify-between gap-3 border-b border-line pb-4');
+        head.appendChild(
+          el('h2', 'font-display text-2xl font-medium uppercase tracking-[-0.01em]', app.name)
+        );
+        const repoLink = el(
+          'a',
+          'font-mono text-[11px] text-muted transition-colors hover:text-accent',
+          `${app.owner}/${app.repo}`
+        ) as HTMLAnchorElement;
+        repoLink.href = `https://github.com/${app.owner}/${app.repo}/releases`;
+        repoLink.target = '_blank';
+        repoLink.rel = 'noopener noreferrer';
+        head.appendChild(repoLink);
+        card.appendChild(head);
+
+        const body = el('div', 'mt-5 flex flex-col gap-7');
+        card.appendChild(body);
+        root.appendChild(card);
+
+        let releases: any[];
+        try {
+          releases = await gh(`/repos/${app.owner}/${app.repo}/releases?per_page=100`);
+        } catch (err) {
+          body.appendChild(
+            el(
+              'p',
+              'font-mono text-[11px] text-[#ff6b6b]',
+              `Não foi possível ler os releases: ${(err as Error).message}`
+            )
+          );
+          return;
+        }
+
+        for (const [platformId, platform] of Object.entries(app.platforms)) {
+          const group = el('div');
+          const groupHead = el('div', 'flex items-center gap-3');
+          groupHead.appendChild(
+            el(
+              'span',
+              'font-mono text-[11px] uppercase tracking-[0.18em] text-paper',
+              platform.label
+            )
+          );
+          groupHead.appendChild(
+            el('span', 'font-mono text-[10px] text-muted', `tag: ${platform.tagPrefix}X.Y.Z`)
+          );
+          group.appendChild(groupHead);
+
+          const mine = releases
+            .filter((r) => r.tag_name.startsWith(platform.tagPrefix))
+            .sort(
+              (a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
+            );
+
+          if (!mine.length) {
+            group.appendChild(
+              el(
+                'p',
+                'mt-3 font-mono text-[11px] text-muted',
+                `Sem releases com o prefixo "${platform.tagPrefix}".`
+              )
+            );
+            body.appendChild(group);
+            continue;
+          }
+
+          // O primeiro release não-rascunho e não-prerelease é o que o site
+          // distribui — os outros ficam no histórico.
+          const liveTag = mine.find((r) => !r.draft && !r.prerelease)?.tag_name;
+
+          const list = el('div', 'mt-3 flex flex-col divide-y divide-[rgba(242,241,236,0.08)]');
+          for (const rel of mine) {
+            const row = el('div', 'flex flex-col gap-3 py-4');
+
+            const top = el('div', 'flex flex-wrap items-center gap-2');
+            top.appendChild(
+              el('span', 'font-mono text-sm text-paper', rel.tag_name)
+            );
+            if (rel.tag_name === liveTag) top.appendChild(chip('no site', 'accent'));
+            if (rel.draft) top.appendChild(chip('rascunho', 'warn'));
+            if (rel.prerelease) top.appendChild(chip('escondido', 'warn'));
+            top.appendChild(
+              el('span', 'font-mono text-[10px] text-muted', fmtDate(rel.published_at ?? rel.created_at))
+            );
+            row.appendChild(top);
+
+            // Assets
+            const assets = el('div', 'flex flex-col gap-1.5');
+            const expected = rel.assets.find((a: any) => a.name === platform.asset);
+            if (!rel.assets.length) {
+              assets.appendChild(
+                el('span', 'font-mono text-[11px] text-[#ff6b6b]', 'Sem ficheiros anexados.')
+              );
+            }
+            for (const asset of rel.assets) {
+              const line = el('div', 'flex flex-wrap items-center gap-2');
+              line.appendChild(
+                el(
+                  'span',
+                  `font-mono text-[11px] ${asset.name === platform.asset ? 'text-paper' : 'text-muted'}`,
+                  asset.name
+                )
+              );
+              line.appendChild(
+                el('span', 'font-mono text-[10px] text-muted', fmtSize(asset.size))
+              );
+              line.appendChild(
+                el(
+                  'span',
+                  'font-mono text-[10px] text-muted',
+                  `${asset.download_count} download${asset.download_count === 1 ? '' : 's'}`
+                )
+              );
+              if (asset.name !== platform.asset && !expected) {
+                line.appendChild(
+                  button(`renomear → ${platform.asset}`, async () => {
+                    try {
+                      await gh(`/repos/${app.owner}/${app.repo}/releases/assets/${asset.id}`, {
+                        method: 'PATCH',
+                        body: JSON.stringify({ name: platform.asset }),
+                      });
+                      refresh();
+                    } catch (err) {
+                      alert(`Falhou: ${(err as Error).message}`);
+                    }
+                  })
+                );
+              }
+              assets.appendChild(line);
+            }
+            if (rel.assets.length && !expected) {
+              assets.appendChild(
+                el(
+                  'span',
+                  'font-mono text-[10px] text-[#ff6b6b]',
+                  `O portfólio procura "${platform.asset}" — renomeia ou o download não aparece.`
+                )
+              );
+            }
+            row.appendChild(assets);
+
+            // Ações
+            const actions = el('div', 'flex flex-wrap items-center gap-2');
+            actions.appendChild(
+              button(rel.prerelease ? 'publicar no site' : 'esconder do site', async () => {
+                try {
+                  await gh(`/repos/${app.owner}/${app.repo}/releases/${rel.id}`, {
+                    method: 'PATCH',
+                    body: JSON.stringify({ prerelease: !rel.prerelease }),
+                  });
+                  refresh();
+                } catch (err) {
+                  alert(`Falhou: ${(err as Error).message}`);
+                }
+              })
+            );
+            actions.appendChild(
+              button('editar notas', async () => {
+                const next = prompt('Notas da versão (Markdown):', rel.body ?? '');
+                if (next === null) return;
+                try {
+                  await gh(`/repos/${app.owner}/${app.repo}/releases/${rel.id}`, {
+                    method: 'PATCH',
+                    body: JSON.stringify({ body: next }),
+                  });
+                  refresh();
+                } catch (err) {
+                  alert(`Falhou: ${(err as Error).message}`);
+                }
+              })
+            );
+            const open = el(
+              'a',
+              'rounded-full border border-line px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-muted transition-colors hover:border-accent hover:text-accent',
+              'abrir'
+            ) as HTMLAnchorElement;
+            open.href = rel.html_url;
+            open.target = '_blank';
+            open.rel = 'noopener noreferrer';
+            actions.appendChild(open);
+            actions.appendChild(
+              button(
+                'apagar',
+                async () => {
+                  if (!confirm(`Apagar o release ${rel.tag_name}? Não há forma de desfazer.`)) return;
+                  try {
+                    await gh(`/repos/${app.owner}/${app.repo}/releases/${rel.id}`, {
+                      method: 'DELETE',
+                    });
+                    refresh();
+                  } catch (err) {
+                    alert(`Falhou: ${(err as Error).message}`);
+                  }
+                },
+                'danger'
+              )
+            );
+            row.appendChild(actions);
+            list.appendChild(row);
+          }
+          group.appendChild(list);
+          body.appendChild(group);
+        }
+      }
+
+      function refresh() {
+        root.textContent = '';
+        apps.forEach(renderApp);
+      }
+
+      async function signIn(value: string, remember: boolean) {
+        token = value;
+        const user = await gh('/user');
+        if (remember) sessionStorage.setItem('gh_token', value);
+        $('who').textContent = `@${user.login}`;
+        $('logout').classList.remove('hidden');
+        loginSection.classList.add('hidden');
+        dash.classList.remove('hidden');
+        refresh();
+      }
+
+      $<HTMLFormElement>('login-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const error = $('login-error');
+        error.textContent = '';
+        try {
+          await signIn(
+            $<HTMLInputElement>('token').value.trim(),
+            $<HTMLInputElement>('remember').checked
+          );
+        } catch (err) {
+          token = '';
+          error.textContent = `Token inválido ou sem permissões (${(err as Error).message})`;
+        }
+      });
+
+      $('logout').addEventListener('click', () => {
+        token = '';
+        sessionStorage.removeItem('gh_token');
+        location.reload();
+      });
+
+      $('resync').addEventListener('click', async () => {
+        const out = $('resync-status');
+        status(out, 'A pedir…');
+        // O sync vive no repositório do portfólio; sem saber qual é, o mais
+        // honesto é mandar o utilizador ao sítio certo.
+        try {
+          const repo = prompt(
+            'Repositório do portfólio (owner/repo):',
+            localStorage.getItem('portfolio_repo') ?? 'joaoafonso2004/portfolio'
+          );
+          if (!repo) return status(out, 'Cancelado.', false);
+          localStorage.setItem('portfolio_repo', repo);
+          await gh(`/repos/${repo}/actions/workflows/sync-releases.yml/dispatches`, {
+            method: 'POST',
+            body: JSON.stringify({ ref: 'main' }),
+          });
+          status(out, 'Sync pedido — demora ~1 min a aparecer no site.');
+        } catch (err) {
+          status(out, `Falhou: ${(err as Error).message}`, false);
+        }
+      });
+
+      const saved = sessionStorage.getItem('gh_token');
+      if (saved) {
+        signIn(saved, true).catch(() => {
+          sessionStorage.removeItem('gh_token');
+        });
+      }
+    </script>
+  </body>
+</html>
