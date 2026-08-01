@@ -1,0 +1,37 @@
+{
+  "name": "João Afonso",
+  "identifier": "com.joaoafonso.altstore",
+  "subtitle": "Apps próprias, distribuídas a partir do portfólio",
+  "description": "Fonte oficial das apps do João Afonso. As versões vêm dos GitHub Releases e são atualizadas automaticamente a cada lançamento.",
+  "iconURL": "https://joaoafonso.vercel.app/favicon.svg",
+  "website": "https://joaoafonso.vercel.app",
+  "tintColor": "8C7BFF",
+  "apps": [
+    {
+      "name": "Duotone",
+      "bundleIdentifier": "com.joao.duotone",
+      "developerName": "João Afonso",
+      "subtitle": "YouTube e Spotify numa só biblioteca",
+      "localizedDescription": "Everything Spotify and YouTube Premium do — in one app, without either subscription. Both catalogues in a single library: search, playlists, offline downloads and a persistent player, synced to your account across iPhone and PC.",
+      "iconURL": "https://joaoafonso.vercel.app/ota/duotone/icon-512.png",
+      "tintColor": "8B5CF6",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-08-01T18:06:12Z",
+          "localizedDescription": "**Full Changelog**: https://github.com/joaoafonso2004/duotone/commits/ios-v1.0.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.0/Duotone.ipa",
+          "size": 15033952,
+          "minOSVersion": "16.4"
+        }
+      ],
+      "version": "1.0.0",
+      "versionDate": "2026-08-01T18:06:12Z",
+      "versionDescription": "**Full Changelog**: https://github.com/joaoafonso2004/duotone/commits/ios-v1.0.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.0/Duotone.ipa",
+      "size": 15033952
+    }
+  ],
+  "news": []
+}

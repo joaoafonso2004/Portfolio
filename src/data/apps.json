@@ -14,7 +14,9 @@
           "label": "iOS",
           "tagPrefix": "ios-v",
           "asset": "Duotone.ipa",
-          "ota": false
+          "ota": false,
+          "minOSVersion": "16.4",
+          "tintColor": "8B5CF6"
         },
         "windows": {
           "label": "Windows",
