@@ -273,24 +273,7 @@
 
   gsap.registerPlugin(ScrollTrigger, SplitText);
 
-  /* Scrubbed exit — content drifts up & fades while the canvas pushes in */
-  if (!reducedMotion) {
-    gsap.to('#hero-content', {
-      yPercent: -12,
-      autoAlpha: 0,
-      ease: 'none',
-      scrollTrigger: { trigger: '#hero', start: 'top top', end: '80% top', scrub: true },
-    });
-    gsap.fromTo(
-      '#hero-canvas',
-      { scale: 1 },
-      {
-        scale: 1.14,
-        ease: 'none',
-        scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true },
-      }
-    );
-  }
+  // Scrubbed exit animations are handled globally in Layout.astro to prevent conflicts.
 
   const startIntro = () => {
     if (reducedMotion) return;

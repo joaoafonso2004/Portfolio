@@ -138,11 +138,13 @@ const otherProjects = PROJECTS.filter((p) => p.slug !== project.slug)
         {otherProjects.map((p) => (
           <a href={`/work/${p.slug}`} class="group block cursor-pointer">
             <div class="relative aspect-[4/3] overflow-hidden rounded-lg bg-coal mb-4">
-              <Image
-                src={p.img}
-                alt={p.title}
-                class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
-              />
+              <div class="absolute inset-0 h-full w-full" data-parallax>
+                <Image
+                  src={p.img}
+                  alt={p.title}
+                  class="h-full w-full object-cover transition-transform duration-700 opacity-80 group-hover:opacity-100 group-hover:scale-105"
+                />
+              </div>
               <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
             </div>
             <h3 class="font-display text-xl font-medium uppercase tracking-tight transition-transform duration-500 group-hover:translate-x-2">{p.title}</h3>

@@ -146,7 +146,7 @@ import { PROJECTS } from '../data/projects';
     }
 
     /* ---------- Movimento do anel ---------- */
-    const BASE_SPEED = 0.055;
+    const BASE_SPEED = 0.10;
     const SCROLL_PUSH = 0.0016;
     const RETURN_RATE = 0.6;
     const MAX_SPEED = 1.4;
@@ -292,7 +292,7 @@ import { PROJECTS } from '../data/projects';
           if (lenis?.on) lenis.destroy();
           else window.removeEventListener('wheel', onWheel);
 
-          speed = MAX_SPEED * 1.5;
+          speed = (Math.sign(speed) || 1) * MAX_SPEED * 1.5;
           
           gsap.to(stage, {
             opacity: 0,
