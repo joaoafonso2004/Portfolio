@@ -1,9 +1,23 @@
 {
-  "generatedAt": "2026-08-01T15:28:26.838Z",
+  "generatedAt": "2026-08-01T17:59:20.823Z",
   "apps": {
     "duotone": {
       "ios": null,
-      "windows": null
+      "windows": {
+        "version": "1.0.0",
+        "tag": "win-v1.0.0",
+        "notes": "**Full Changelog**: https://github.com/joaoafonso2004/duotone/commits/win-v1.0.0",
+        "publishedAt": "2026-08-01T17:59:06Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.0.0",
+        "prerelease": false,
+        "asset": {
+          "name": "Duotone-Setup.exe",
+          "size": 95731422,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.0.0/Duotone-Setup.exe",
+          "downloads": 0
+        },
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.0.0/Duotone-Setup.exe"
+      }
     }
   }
 }
