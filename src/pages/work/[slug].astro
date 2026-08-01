@@ -6,10 +6,39 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 
 export async function getStaticPaths() {
-  return PROJECTS.map((project) => ({
-    params: { slug: project.slug },
-    props: { project },
-  }));
+  const apiKey = import.meta.env.ITCH_API_KEY;
+  let liveStats = null;
+  
+  if (apiKey) {
+    try {
+      const res = await fetch(`https://itch.io/api/1/${apiKey}/my-games`);
+      if (res.ok) {
+        const data = await res.json();
+        // ID do LIMINAL é 4838162
+        const liminal = data.games?.find((g: any) => String(g.id) === '4838162');
+        if (liminal) {
+          liveStats = [
+            { label: 'Views (Live)', value: String(liminal.views_count || 0) },
+            { label: 'Downloads', value: String(liminal.downloads_count || 0) }
+          ];
+        }
+      }
+    } catch (e) {
+      console.error('Error fetching Itch.io stats:', e);
+    }
+  }
+
+  return PROJECTS.map((project) => {
+    let p = project;
+    // Inject live stats into Liminal project if fetch was successful
+    if (p.slug === 'liminal' && liveStats) {
+      p = { ...p, stats: liveStats };
+    }
+    return {
+      params: { slug: p.slug },
+      props: { project: p },
+    };
+  });
 }
 
 const { project } = Astro.props;
@@ -45,7 +74,7 @@ const otherProjects = PROJECTS.filter((p) => p.slug !== project.slug)
             <div class="grid grid-cols-3 gap-4 py-4 border-y border-white/10 my-2">
               {project.stats.map(stat => (
                 <div class="flex flex-col gap-1">
-                  <span class="font-display text-2xl font-medium text-paper tracking-tight">{stat.value}</span>
+                  <span class="font-display text-2xl font-medium text-paper tracking-tight stat-value" data-value={stat.value}>0</span>
                   <span class="font-mono text-[9px] uppercase tracking-[0.15em] text-muted">{stat.label}</span>
                 </div>
               ))}
@@ -180,5 +209,37 @@ const otherProjects = PROJECTS.filter((p) => p.slug !== project.slug)
     }
   }
 </style>
+
+<script>
+  import { gsap } from 'gsap';
+
+  document.addEventListener('astro:page-load', () => {
+    const stats = document.querySelectorAll('.stat-value');
+    stats.forEach((el) => {
+      const targetStr = el.getAttribute('data-value') || '0';
+      const isK = targetStr.toLowerCase().includes('k');
+      let targetNum = parseFloat(targetStr.replace(/[^0-9.]/g, ''));
+      
+      if (isNaN(targetNum)) return;
+      if (isK) targetNum *= 1000;
+
+      const format = (v: number) => {
+        if (isK || v >= 1000) return (v / 1000).toFixed(1).replace('.0', '') + 'k';
+        return Math.round(v).toString();
+      };
+
+      const obj = { v: 0 };
+      gsap.to(obj, {
+        v: targetNum,
+        duration: 2.5,
+        ease: 'power3.out',
+        delay: 0.3,
+        onUpdate: () => {
+          el.textContent = format(obj.v);
+        }
+      });
+    });
+  });
+</script>
 
 
