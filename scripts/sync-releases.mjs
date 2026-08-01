@@ -143,7 +143,75 @@ function buildManifest(app, ios) {
 `;
 }
 
+/**
+ * Entrada da app numa fonte do AltStore/SideStore.
+ *
+ * É isto que permite instalar e atualizar a partir do próprio iPhone: o
+ * AltStore lê esta lista, vê que há uma versão mais recente que a instalada
+ * e oferece o botão de atualizar — sem cabo e sem PC.
+ *
+ * A assinatura continua a ser feita pelo AltStore com o Apple ID do próprio
+ * utilizador. Esta fonte é só o catálogo, não assina nada.
+ */
+function buildAltStoreApp(app, platform, releases) {
+  const versions = releases
+    .filter((r) => !r.draft && !r.prerelease && r.tag_name.startsWith(platform.tagPrefix))
+    .sort((a, b) => new Date(b.published_at) - new Date(a.published_at))
+    .map((r) => {
+      const asset = r.assets.find((a) => a.name === platform.asset);
+      if (!asset) return null;
+      return {
+        version: r.tag_name.slice(platform.tagPrefix.length),
+        date: r.published_at,
+        localizedDescription: (r.body ?? '').trim() || 'Sem notas nesta versão.',
+        downloadURL: `https://github.com/${app.owner}/${app.repo}/releases/download/${r.tag_name}/${platform.asset}`,
+        size: asset.size,
+        minOSVersion: platform.minOSVersion ?? '15.0',
+      };
+    })
+    .filter(Boolean)
+    // Histórico completo tornaria o ficheiro enorme sem utilidade: o AltStore
+    // só usa a mais recente e mostra as outras como histórico.
+    .slice(0, 10);
+
+  if (!versions.length) return null;
+
+  const latest = versions[0];
+  const icon = `${siteUrl}/ota/${app.id}/icon-512.png`;
+
+  return {
+    name: app.name,
+    bundleIdentifier: app.bundleId,
+    developerName: 'João Afonso',
+    subtitle: 'YouTube e Spotify numa só biblioteca',
+    localizedDescription: app.tagline,
+    iconURL: icon,
+    tintColor: platform.tintColor ?? '8B5CF6',
+    category: 'entertainment',
+    versions,
+    // Campos no topo para compatibilidade com versões mais antigas do
+    // AltStore, que ainda não liam o array `versions`.
+    version: latest.version,
+    versionDate: latest.date,
+    versionDescription: latest.localizedDescription,
+    downloadURL: latest.downloadURL,
+    size: latest.size,
+  };
+}
+
 const out = { generatedAt: new Date().toISOString(), apps: {} };
+const altstore = {
+  name: 'João Afonso',
+  identifier: 'com.joaoafonso.altstore',
+  subtitle: 'Apps próprias, distribuídas a partir do portfólio',
+  description:
+    'Fonte oficial das apps do João Afonso. As versões vêm dos GitHub Releases e são atualizadas automaticamente a cada lançamento.',
+  iconURL: `${siteUrl}/favicon.svg`,
+  website: siteUrl,
+  tintColor: '8C7BFF',
+  apps: [],
+  news: [],
+};
 const files = [];
 
 for (const app of apps) {
@@ -175,7 +243,19 @@ for (const app of apps) {
   } else if (app.platforms.ios) {
     console.log('  · manifest.plist ignorado (ota desligado ou sem .ipa)');
   }
+
+  if (app.platforms.ios) {
+    const entry = buildAltStoreApp(app, app.platforms.ios, releases);
+    if (entry) {
+      altstore.apps.push(entry);
+      console.log(`  ✓ altstore: ${entry.version} (${entry.versions.length} versões)`);
+    } else {
+      console.log('  · altstore: sem .ipa publicado');
+    }
+  }
 }
+
+files.push([join(ROOT, 'public/ota/altstore.json'), JSON.stringify(altstore, null, 2) + '\n']);
 
 files.push([join(ROOT, 'public/ota/versions.json'), JSON.stringify(out, null, 2) + '\n']);
 
