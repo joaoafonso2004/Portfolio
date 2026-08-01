@@ -265,6 +265,7 @@ const count = String(APPS.length).padStart(2, '0');
       col.querySelector('[data-pulse]')?.classList.remove('animate-pulse');
       const v = col.querySelector<HTMLElement>('[data-version-text]');
       if (v) v.textContent = 'Unavailable';
+      
       const notes = col.querySelector<HTMLElement>('[data-notes]');
       if (notes) {
         notes.textContent = '';
@@ -272,6 +273,33 @@ const count = String(APPS.length).padStart(2, '0');
         p.className = 'text-muted/60';
         p.textContent = message;
         notes.appendChild(p);
+
+        const retryBtn = document.createElement('button');
+        retryBtn.className = 'mt-3 flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-accent hover:text-paper transition-colors';
+        retryBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3 w-3"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg> Retry Fetch';
+        retryBtn.onclick = async (e) => {
+          e.preventDefault();
+          retryBtn.innerHTML = '<span class="h-1.5 w-1.5 animate-pulse rounded-full bg-accent"></span> Loading...';
+          try {
+            await fallbackToApi(app);
+          } catch {
+            retryBtn.textContent = 'Rate limited (Try later)';
+          }
+        };
+        notes.appendChild(retryBtn);
+      }
+
+      const btn = col.querySelector<HTMLAnchorElement>('[data-dl]');
+      const label = col.querySelector<HTMLElement>('[data-dl-label]');
+      const hint = col.querySelector<HTMLElement>('[data-hint]');
+      if (btn && label) {
+        btn.href = `https://github.com/${app.owner}/${app.repo}/releases`;
+        btn.classList.remove('opacity-40', 'pointer-events-none');
+        btn.removeAttribute('aria-disabled');
+        label.textContent = 'Get from GitHub';
+      }
+      if (hint) {
+        hint.textContent = 'API limit reached. Download directly from the repository.';
       }
     });
   }
