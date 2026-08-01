@@ -235,7 +235,10 @@ const {
       /* ---------- Web Audio UI Sounds ---------- */
       let audioCtx: AudioContext | null = null;
       const initAudio = () => {
-        if (!audioCtx) audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
+          (window as any).audioCtx = audioCtx;
+        }
         if (audioCtx.state === 'suspended') audioCtx.resume();
       };
       
