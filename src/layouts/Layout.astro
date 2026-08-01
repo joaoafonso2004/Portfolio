@@ -54,22 +54,21 @@ const {
       class="fixed inset-0 z-[100] flex items-end justify-between bg-ink px-5 pb-8 md:px-10"
     >
       <!-- Spinning brand mark -->
-      <div
-        class="pointer-events-none absolute inset-0 flex items-center justify-center"
-        aria-hidden="true"
-      >
+      <div id="preloader-spinner-wrapper" class="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden="true">
         <span id="preloader-spinner" class="inline-block text-5xl text-accent md:text-7xl">✦</span>
       </div>
 
-      <!-- Progress line -->
-      <div
-        id="preloader-bar"
-        class="absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0 bg-accent"
-        aria-hidden="true"
-      >
+      <!-- Enter button (initially hidden) -->
+      <div id="preloader-enter" class="pointer-events-none absolute inset-0 z-20 flex items-center justify-center opacity-0">
+        <button id="btn-enter" class="font-mono text-xs md:text-sm tracking-[0.3em] uppercase text-paper hover:text-accent transition-colors" data-magnetic>
+          ( Click to Enter )
+        </button>
       </div>
 
-      <span class="mb-3 font-mono text-[11px] uppercase tracking-[0.22em] text-muted">
+      <!-- Progress line -->
+      <div id="preloader-bar" class="absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0 bg-accent" aria-hidden="true"></div>
+
+      <span id="preloader-text" class="mb-3 font-mono text-[11px] uppercase tracking-[0.22em] text-muted">
         João Afonso — Folio ©2026
       </span>
       <span
@@ -398,10 +397,50 @@ const {
                 if (bar) bar.style.transform = `scaleX(${state.v / 100})`;
               },
             })
-            .to(preloader, {
+            .to(['#preloader-text', '#preloader-count', '#preloader-bar', '#preloader-spinner-wrapper'], {
+              autoAlpha: 0,
+              duration: 0.5,
+              ease: 'power2.inOut',
+              stagger: 0.05
+            }, '+=0.2')
+            .to('#preloader-enter', {
+              autoAlpha: 1,
+              duration: 0.6,
+              ease: 'power3.out',
+              pointerEvents: 'auto',
+            }, '-=0.2');
+
+          const enterBtn = document.getElementById('btn-enter');
+          enterBtn?.addEventListener('click', () => {
+            initAudio(); // User interaction unlocks audio!
+            
+            // Play a small click sound manually for feedback
+            if (audioCtx && audioCtx.state === 'running') {
+              const osc = audioCtx.createOscillator();
+              const gain = audioCtx.createGain();
+              osc.type = 'sine';
+              osc.frequency.setValueAtTime(600, audioCtx.currentTime);
+              osc.frequency.exponentialRampToValueAtTime(100, audioCtx.currentTime + 0.1);
+              gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+              gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.1);
+              osc.connect(gain);
+              gain.connect(audioCtx.destination);
+              osc.start();
+              osc.stop(audioCtx.currentTime + 0.1);
+            }
+
+            gsap.to('#preloader-enter', {
+              autoAlpha: 0,
+              scale: 0.95,
+              duration: 0.3,
+              ease: 'power2.inOut'
+            });
+
+            gsap.to(preloader, {
               yPercent: -100,
-              duration: 0.85,
+              duration: 0.9,
               ease: 'power4.inOut',
+              delay: 0.15,
               onStart: () => {
                 lenis?.start();
                 finishPreload();
@@ -410,7 +449,8 @@ const {
                 preloader.style.display = 'none';
                 spin.kill();
               },
-            }, '+=0.1');
+            });
+          });
         } else {
           preloader?.remove();
           finishPreload();
