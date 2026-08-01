@@ -67,6 +67,7 @@ import { PROJECTS } from '../data/projects';
                     preload="auto"
                     muted
                     loop
+                    autoplay
                     playsinline
                     aria-hidden="true"
                     tabindex="-1"
@@ -129,9 +130,20 @@ import { PROJECTS } from '../data/projects';
       });
     });
 
-    // Removido: O IntersectionObserver que disparava o play() em todos os vídeos simultaneamente
-    // porque estava a asfixiar a GPU com 8 vídeos HD a correr ao mesmo tempo.
-    // Agora os vídeos só tocam no `mouseenter`.
+    const videos = items
+      .map((item) => item.querySelector<HTMLVideoElement>('[data-work-video]'))
+      .filter((v): v is HTMLVideoElement => !!v);
+
+    if (!reduced) {
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(
+          ([entry]) => videos.forEach((v) => (entry.isIntersecting ? play(v) : v.pause())),
+          { threshold: 0.05 }
+        ).observe(stage);
+      } else {
+        videos.forEach(play);
+      }
+    }
 
     /* ---------- Movimento do anel ---------- */
     const BASE_SPEED = 0.22;
@@ -297,10 +309,6 @@ import { PROJECTS } from '../data/projects';
           item.removeAttribute('data-focused');
           ring?.removeAttribute('data-focusing');
           setCentre(null);
-          if (video) {
-            video.pause();
-            delete video.dataset.playing;
-          }
           if (frame) gsap.to(frame, { scale: 1, duration: 0.4, ease: 'power2.out' });
         });
 
