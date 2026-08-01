@@ -6,39 +6,10 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 
 export async function getStaticPaths() {
-  const apiKey = import.meta.env.ITCH_API_KEY;
-  let liveStats = null;
-  
-  if (apiKey) {
-    try {
-      const res = await fetch(`https://itch.io/api/1/${apiKey}/my-games`);
-      if (res.ok) {
-        const data = await res.json();
-        // ID do LIMINAL é 4838162
-        const liminal = data.games?.find((g: any) => String(g.id) === '4838162');
-        if (liminal) {
-          liveStats = [
-            { label: 'Views (Live)', value: String(liminal.views_count || 0) },
-            { label: 'Downloads', value: String(liminal.downloads_count || 0) }
-          ];
-        }
-      }
-    } catch (e) {
-      console.error('Error fetching Itch.io stats:', e);
-    }
-  }
-
-  return PROJECTS.map((project) => {
-    let p = project;
-    // Inject live stats into Liminal project if fetch was successful
-    if (p.slug === 'liminal' && liveStats) {
-      p = { ...p, stats: liveStats };
-    }
-    return {
-      params: { slug: p.slug },
-      props: { project: p },
-    };
-  });
+  return PROJECTS.map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
 }
 
 const { project } = Astro.props;
@@ -213,10 +184,32 @@ const otherProjects = PROJECTS.filter((p) => p.slug !== project.slug)
 <script>
   import { gsap } from 'gsap';
 
-  document.addEventListener('astro:page-load', () => {
+  document.addEventListener('astro:page-load', async () => {
     const stats = document.querySelectorAll('.stat-value');
+    if (stats.length === 0) return;
+
+    let liveData = null;
+    // Puxa as estatísticas ao vivo da nossa API secreta (apenas se estivermos no projeto LIMINAL ou se a API existir)
+    try {
+      const res = await fetch('/api/itch');
+      if (res.ok) liveData = await res.json();
+    } catch (e) {
+      // Falha silenciosa, usa os valores por defeito
+    }
+
     stats.forEach((el) => {
-      const targetStr = el.getAttribute('data-value') || '0';
+      let targetStr = el.getAttribute('data-value') || '0';
+      
+      // Override with live data if available
+      const labelEl = el.nextElementSibling;
+      if (liveData && labelEl) {
+        if (labelEl.textContent?.toLowerCase().includes('view')) {
+          targetStr = String(liveData.views);
+        } else if (labelEl.textContent?.toLowerCase().includes('download')) {
+          targetStr = String(liveData.downloads);
+        }
+      }
+
       const isK = targetStr.toLowerCase().includes('k');
       let targetNum = parseFloat(targetStr.replace(/[^0-9.]/g, ''));
       
