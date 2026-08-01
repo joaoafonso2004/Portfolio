@@ -203,16 +203,30 @@ import { PROJECTS } from '../data/projects';
       mouseY = e.clientY;
     }, { passive: true });
 
+    let inView = true;
+    new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+    }).observe(stage);
+
     let last = performance.now();
+    let lastHitTest = 0;
+
     function tick(now: number) {
+      if (!inView) {
+        last = now;
+        tickId = requestAnimationFrame(tick);
+        return;
+      }
+
       const dt = Math.min((now - last) / 1000, 0.05);
       last = now;
 
       if (!transitioning) {
         speed += (BASE_SPEED - speed) * RETURN_RATE * dt;
         
-        // Stationary mouse hit-testing for moving 3D elements
-        if (finePointer) {
+        // Stationary mouse hit-testing (throttled to 100ms for massive performance gain)
+        if (finePointer && now - lastHitTest > 100) {
+          lastHitTest = now;
           const hit = document.elementFromPoint(mouseX, mouseY);
           const hitItem = (hit?.closest('[data-ring-item]') as HTMLElement) || null;
           if (hitItem !== hovered) {
