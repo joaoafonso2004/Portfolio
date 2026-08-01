@@ -96,7 +96,6 @@ const count = String(APPS.length).padStart(2, '0');
 
                     <a
                       data-dl
-                      href="#"
                       class="btn-pill pointer-events-none mt-6 justify-between opacity-40 btn-ghost"
                       aria-disabled="true"
                       data-magnetic
@@ -294,6 +293,8 @@ const count = String(APPS.length).padStart(2, '0');
       const hint = col.querySelector<HTMLElement>('[data-hint]');
       if (btn && label) {
         btn.href = `https://github.com/${app.owner}/${app.repo}/releases`;
+        btn.target = '_blank';
+        btn.rel = 'noopener noreferrer';
         btn.classList.remove('opacity-40', 'pointer-events-none');
         btn.removeAttribute('aria-disabled');
         label.textContent = 'Get from GitHub';
