@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T08:10:35.880Z",
+  "generatedAt": "2026-08-02T16:51:09.073Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.0/Duotone.ipa"
       },
       "windows": {
-        "version": "1.0.0",
-        "tag": "win-v1.0.0",
-        "notes": "**Full Changelog**: https://github.com/joaoafonso2004/duotone/commits/win-v1.0.0",
-        "publishedAt": "2026-08-01T17:59:06Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.0.0",
+        "version": "1.1.0",
+        "tag": "win-v1.1.0",
+        "notes": "- feat(desktop): importar playlists do Spotify por CSV\n- fix(ci): notas de versao a partir dos commits em vez do Full Changelog\n\nComparar com win-v1.0.0: https://github.com/joaoafonso2004/duotone/compare/win-v1.0.0...win-v1.1.0",
+        "publishedAt": "2026-08-02T16:50:50Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.1.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95731422,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.0.0/Duotone-Setup.exe",
-          "downloads": 2
+          "size": 95760982,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.1.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.0.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.1.0/Duotone-Setup.exe"
       }
     }
   }
