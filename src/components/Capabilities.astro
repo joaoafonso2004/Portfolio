@@ -86,6 +86,7 @@ const capabilities = [
         {media.map((src, i) => (
           <video 
             src={src} 
+            preload="auto"
             autoplay 
             loop 
             muted 
@@ -113,6 +114,17 @@ const capabilities = [
         const xTo = gsap.quickTo(floater, "x", { duration: 0.4, ease: "power3.out" });
         const yTo = gsap.quickTo(floater, "y", { duration: 0.4, ease: "power3.out" });
         const mediaElements = floater.querySelectorAll<HTMLVideoElement>('[data-cap-media]');
+
+        // Garante que os vídeos reproduzem quando a secção está visível
+        const capSection = document.getElementById('capabilities');
+        if (capSection && 'IntersectionObserver' in window) {
+          new IntersectionObserver(([entry]) => {
+            mediaElements.forEach(v => {
+              if (entry.isIntersecting) v.play().catch(() => {});
+              else v.pause();
+            });
+          }).observe(capSection);
+        }
 
         let isHovering = false;
         let lastRandom = -1;
