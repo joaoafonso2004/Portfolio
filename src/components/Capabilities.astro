@@ -1,10 +1,12 @@
 ---
-import { Image } from 'astro:assets';
-import imgWebDesign from '../assets/images/Duotone1.png';
-import imgDevelopment from '../assets/images/3DWebsite1.png';
-import imgPizzaria from '../assets/images/work_pizzaria.png';
-import imgBranding from '../assets/images/work_redbull.png';
-import imgLiminal from '../assets/images/liminal1_up.jpg';
+  // Images replaced by compressed videos
+  const media = [
+    '/work/duotone.mp4',
+    '/work/3d-asset-website.mp4',
+    '/work/mog.mp4',
+    '/work/red-bull-editions.mp4',
+    '/work/liminal.mp4'
+  ];
 
 const capabilities = [
   {
@@ -29,13 +31,7 @@ const capabilities = [
   },
 ];
 
-const images = [
-  imgWebDesign,
-  imgDevelopment,
-  imgPizzaria,
-  imgBranding,
-  imgLiminal
-];
+
 ---
 
 <section id="capabilities" class="relative border-t border-line px-5 py-24 md:px-10 md:py-36">
@@ -86,15 +82,16 @@ const images = [
       }
 
       <!-- Floating Media -->
-      <div id="cap-floater" class="pointer-events-none fixed left-0 top-0 z-[100] h-64 w-80 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-xl opacity-0 scale-90 transition-[opacity,transform] duration-500 ease-out-expo will-change-transform hidden md:block">
-        {images.map((img, i) => (
-          <Image 
-            src={img} 
-            alt="Portfolio Work"
-            widths={[320, 640]}
-            sizes="320px"
+      <div id="cap-floater" class="pointer-events-none fixed left-0 top-0 z-[100] h-64 w-80 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-xl opacity-0 scale-90 transition-[opacity,transform] duration-500 ease-out-expo will-change-transform hidden md:block bg-ink">
+        {media.map((src, i) => (
+          <video 
+            src={src} 
+            autoplay 
+            loop 
+            muted 
+            playsinline
             class="absolute inset-0 h-full w-full object-cover transition-opacity duration-300 opacity-0"
-            data-cap-img
+            data-cap-media
           />
         ))}
       </div>
@@ -115,7 +112,7 @@ const images = [
 
         const xTo = gsap.quickTo(floater, "x", { duration: 0.4, ease: "power3.out" });
         const yTo = gsap.quickTo(floater, "y", { duration: 0.4, ease: "power3.out" });
-        const imgs = floater.querySelectorAll<HTMLImageElement>('[data-cap-img]');
+        const mediaElements = floater.querySelectorAll<HTMLVideoElement>('[data-cap-media]');
 
         let isHovering = false;
         let lastRandom = -1;
@@ -136,11 +133,11 @@ const images = [
             }
             isHovering = true;
             
-            // Pick a random image that is different from the last one
+            // Pick a random media that is different from the last one
             let randomIdx;
-            if (imgs.length > 1) {
+            if (mediaElements.length > 1) {
               do {
-                randomIdx = Math.floor(Math.random() * imgs.length);
+                randomIdx = Math.floor(Math.random() * mediaElements.length);
               } while (randomIdx === lastRandom);
             } else {
               randomIdx = 0;
@@ -151,9 +148,9 @@ const images = [
             floater.style.opacity = '1';
             floater.style.transform = 'translate(-50%, -50%) scale(1) rotate(2deg)';
             
-            // Switch images
-            imgs.forEach((img, i) => {
-              img.style.opacity = i === randomIdx ? '1' : '0';
+            // Switch media
+            mediaElements.forEach((vid, i) => {
+              vid.style.opacity = i === randomIdx ? '1' : '0';
             });
           });
 
