@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T18:42:41.161Z",
+  "generatedAt": "2026-08-25T18:56:37.308Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.0/Duotone.ipa"
       },
       "windows": {
-        "version": "1.1.1",
-        "tag": "win-v1.1.1",
-        "notes": "- fix: musicas nao descarregadas deixavam de tocar — 403 do CDN sem recuperacao e hang silencioso no desktop\n\nComparar com win-v1.1.0: https://github.com/joaoafonso2004/duotone/compare/win-v1.1.0...win-v1.1.1",
-        "publishedAt": "2026-08-25T15:24:48Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.1.1",
+        "version": "1.2.0",
+        "tag": "win-v1.2.0",
+        "notes": "- fix(desktop): importacao de playlists grandes criava playlist VAZIA; barra de progresso\n- feat(social): notificacoes locais para mensagens e pedidos de amizade\n- fix(offline): usar moveSync na migracao — o move assincrono escapava ao try/catch\n- fix(offline): guardar as musicas em Documents em vez de Caches\n- fix(ios): mudar para o cliente VISIONOS — o substituto do android_vr\n- fix(ios): desligar as fases mortas e cair depressa para o embed\n- fix(ios): usar HLS (cliente IOS) em vez de mp4 progressivo — o teto de 1MB nao se aplica\n- fix(ios): carregar o interpretador do BotGuard com <script> em vez de fetch (CORS)\n- fix(ios): reativar o PO Token on-device e aplica-lo aos clientes android\n- fix(ios): ligar a fase 1 (harvest) que nunca foi montada e adaptar o download ao 403 por tamanho\n\nComparar com win-v1.1.1: https://github.com/joaoafonso2004/duotone/compare/win-v1.1.1...win-v1.2.0",
+        "publishedAt": "2026-08-25T18:56:21Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.2.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95763313,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.1.1/Duotone-Setup.exe",
-          "downloads": 2
+          "size": 95775521,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.2.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.1.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.2.0/Duotone-Setup.exe"
       }
     }
   }
