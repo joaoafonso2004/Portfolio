@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-25T16:06:05.661Z",
+  "generatedAt": "2026-08-25T16:24:01.032Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.0.2",
-        "tag": "ios-v1.0.2",
-        "notes": "- fix(ios): ligar a fase 1 (harvest) que nunca foi montada e adaptar o download ao 403 por tamanho\n\nComparar com ios-v1.0.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.1...ios-v1.0.2",
-        "publishedAt": "2026-08-25T16:05:36Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.0.2",
+        "version": "1.0.3",
+        "tag": "ios-v1.0.3",
+        "notes": "- fix(ios): reativar o PO Token on-device e aplica-lo aos clientes android\n\nComparar com ios-v1.0.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.2...ios-v1.0.3",
+        "publishedAt": "2026-08-25T16:23:24Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.0.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15038257,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.2/Duotone.ipa",
+          "size": 15041489,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.3/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.2/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.3/Duotone.ipa"
       },
       "windows": {
         "version": "1.1.1",

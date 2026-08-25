@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.0.3",
+          "date": "2026-08-25T16:23:24Z",
+          "localizedDescription": "- fix(ios): reativar o PO Token on-device e aplica-lo aos clientes android\n\nComparar com ios-v1.0.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.2...ios-v1.0.3",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.3/Duotone.ipa",
+          "size": 15041489,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.0.2",
           "date": "2026-08-25T16:05:36Z",
           "localizedDescription": "- fix(ios): ligar a fase 1 (harvest) que nunca foi montada e adaptar o download ao 403 por tamanho\n\nComparar com ios-v1.0.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.1...ios-v1.0.2",
@@ -42,11 +50,11 @@
           "minOSVersion": "16.4"
         }
       ],
-      "version": "1.0.2",
-      "versionDate": "2026-08-25T16:05:36Z",
-      "versionDescription": "- fix(ios): ligar a fase 1 (harvest) que nunca foi montada e adaptar o download ao 403 por tamanho\n\nComparar com ios-v1.0.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.1...ios-v1.0.2",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.2/Duotone.ipa",
-      "size": 15038257
+      "version": "1.0.3",
+      "versionDate": "2026-08-25T16:23:24Z",
+      "versionDescription": "- fix(ios): reativar o PO Token on-device e aplica-lo aos clientes android\n\nComparar com ios-v1.0.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.2...ios-v1.0.3",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.3/Duotone.ipa",
+      "size": 15041489
     }
   ],
   "news": []
