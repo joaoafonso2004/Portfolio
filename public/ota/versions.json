@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-25T18:29:30.122Z",
+  "generatedAt": "2026-08-25T18:42:41.161Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.0.8",
-        "tag": "ios-v1.0.8",
-        "notes": "- fix(offline): usar moveSync na migracao — o move assincrono escapava ao try/catch\n- fix(offline): guardar as musicas em Documents em vez de Caches\n\nComparar com ios-v1.0.7: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.7...ios-v1.0.8",
-        "publishedAt": "2026-08-25T18:29:15Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.0.8",
+        "version": "1.1.0",
+        "tag": "ios-v1.1.0",
+        "notes": "- feat(social): notificacoes locais para mensagens e pedidos de amizade\n\nComparar com ios-v1.0.8: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.8...ios-v1.1.0",
+        "publishedAt": "2026-08-25T18:42:25Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.1.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15038764,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.8/Duotone.ipa",
+          "size": 15228024,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.0/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.8/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.0/Duotone.ipa"
       },
       "windows": {
         "version": "1.1.1",
