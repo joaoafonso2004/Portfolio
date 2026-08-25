@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.0.5",
+          "date": "2026-08-25T17:20:28Z",
+          "localizedDescription": "- fix(ios): usar HLS (cliente IOS) em vez de mp4 progressivo — o teto de 1MB nao se aplica\n\nComparar com ios-v1.0.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.4...ios-v1.0.5",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.5/Duotone.ipa",
+          "size": 15043280,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.0.4",
           "date": "2026-08-25T16:55:16Z",
           "localizedDescription": "- fix(ios): carregar o interpretador do BotGuard com <script> em vez de fetch (CORS)\n\nComparar com ios-v1.0.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.3...ios-v1.0.4",
@@ -58,11 +66,11 @@
           "minOSVersion": "16.4"
         }
       ],
-      "version": "1.0.4",
-      "versionDate": "2026-08-25T16:55:16Z",
-      "versionDescription": "- fix(ios): carregar o interpretador do BotGuard com <script> em vez de fetch (CORS)\n\nComparar com ios-v1.0.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.3...ios-v1.0.4",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.4/Duotone.ipa",
-      "size": 15042089
+      "version": "1.0.5",
+      "versionDate": "2026-08-25T17:20:28Z",
+      "versionDescription": "- fix(ios): usar HLS (cliente IOS) em vez de mp4 progressivo — o teto de 1MB nao se aplica\n\nComparar com ios-v1.0.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.4...ios-v1.0.5",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.5/Duotone.ipa",
+      "size": 15043280
     }
   ],
   "news": []
