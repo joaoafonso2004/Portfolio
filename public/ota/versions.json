@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-25T17:20:45.916Z",
+  "generatedAt": "2026-08-25T17:34:05.479Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.0.5",
-        "tag": "ios-v1.0.5",
-        "notes": "- fix(ios): usar HLS (cliente IOS) em vez de mp4 progressivo — o teto de 1MB nao se aplica\n\nComparar com ios-v1.0.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.4...ios-v1.0.5",
-        "publishedAt": "2026-08-25T17:20:28Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.0.5",
+        "version": "1.0.6",
+        "tag": "ios-v1.0.6",
+        "notes": "- fix(ios): desligar as fases mortas e cair depressa para o embed\n\nComparar com ios-v1.0.5: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.5...ios-v1.0.6",
+        "publishedAt": "2026-08-25T17:33:50Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.0.6",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15043280,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.5/Duotone.ipa",
+          "size": 15038002,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.6/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.5/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.6/Duotone.ipa"
       },
       "windows": {
         "version": "1.1.1",
