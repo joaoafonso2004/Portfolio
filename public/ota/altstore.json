@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.0.7",
+          "date": "2026-08-25T18:09:34Z",
+          "localizedDescription": "- fix(ios): mudar para o cliente VISIONOS — o substituto do android_vr\n\nComparar com ios-v1.0.6: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.6...ios-v1.0.7",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.7/Duotone.ipa",
+          "size": 15038343,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.0.6",
           "date": "2026-08-25T17:33:50Z",
           "localizedDescription": "- fix(ios): desligar as fases mortas e cair depressa para o embed\n\nComparar com ios-v1.0.5: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.5...ios-v1.0.6",
@@ -74,11 +82,11 @@
           "minOSVersion": "16.4"
         }
       ],
-      "version": "1.0.6",
-      "versionDate": "2026-08-25T17:33:50Z",
-      "versionDescription": "- fix(ios): desligar as fases mortas e cair depressa para o embed\n\nComparar com ios-v1.0.5: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.5...ios-v1.0.6",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.6/Duotone.ipa",
-      "size": 15038002
+      "version": "1.0.7",
+      "versionDate": "2026-08-25T18:09:34Z",
+      "versionDescription": "- fix(ios): mudar para o cliente VISIONOS — o substituto do android_vr\n\nComparar com ios-v1.0.6: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.6...ios-v1.0.7",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.7/Duotone.ipa",
+      "size": 15038343
     }
   ],
   "news": []
