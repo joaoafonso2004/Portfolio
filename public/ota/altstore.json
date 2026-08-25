@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.0.1",
+          "date": "2026-08-25T15:29:51Z",
+          "localizedDescription": "- fix: musicas nao descarregadas deixavam de tocar — 403 do CDN sem recuperacao e hang silencioso no desktop\n- feat(desktop): importar playlists do Spotify por CSV\n- fix(ci): notas de versao a partir dos commits em vez do Full Changelog\n\nComparar com ios-v1.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.0...ios-v1.0.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.1/Duotone.ipa",
+          "size": 15035744,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.0.0",
           "date": "2026-08-01T18:06:12Z",
           "localizedDescription": "**Full Changelog**: https://github.com/joaoafonso2004/duotone/commits/ios-v1.0.0",
@@ -26,11 +34,11 @@
           "minOSVersion": "16.4"
         }
       ],
-      "version": "1.0.0",
-      "versionDate": "2026-08-01T18:06:12Z",
-      "versionDescription": "**Full Changelog**: https://github.com/joaoafonso2004/duotone/commits/ios-v1.0.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.0/Duotone.ipa",
-      "size": 15033952
+      "version": "1.0.1",
+      "versionDate": "2026-08-25T15:29:51Z",
+      "versionDescription": "- fix: musicas nao descarregadas deixavam de tocar — 403 do CDN sem recuperacao e hang silencioso no desktop\n- feat(desktop): importar playlists do Spotify por CSV\n- fix(ci): notas de versao a partir dos commits em vez do Full Changelog\n\nComparar com ios-v1.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.0...ios-v1.0.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.1/Duotone.ipa",
+      "size": 15035744
     }
   ],
   "news": []
