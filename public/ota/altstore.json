@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.0.2",
+          "date": "2026-08-25T16:05:36Z",
+          "localizedDescription": "- fix(ios): ligar a fase 1 (harvest) que nunca foi montada e adaptar o download ao 403 por tamanho\n\nComparar com ios-v1.0.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.1...ios-v1.0.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.2/Duotone.ipa",
+          "size": 15038257,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.0.1",
           "date": "2026-08-25T15:29:51Z",
           "localizedDescription": "- fix: musicas nao descarregadas deixavam de tocar — 403 do CDN sem recuperacao e hang silencioso no desktop\n- feat(desktop): importar playlists do Spotify por CSV\n- fix(ci): notas de versao a partir dos commits em vez do Full Changelog\n\nComparar com ios-v1.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.0...ios-v1.0.1",
@@ -34,11 +42,11 @@
           "minOSVersion": "16.4"
         }
       ],
-      "version": "1.0.1",
-      "versionDate": "2026-08-25T15:29:51Z",
-      "versionDescription": "- fix: musicas nao descarregadas deixavam de tocar — 403 do CDN sem recuperacao e hang silencioso no desktop\n- feat(desktop): importar playlists do Spotify por CSV\n- fix(ci): notas de versao a partir dos commits em vez do Full Changelog\n\nComparar com ios-v1.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.0...ios-v1.0.1",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.1/Duotone.ipa",
-      "size": 15035744
+      "version": "1.0.2",
+      "versionDate": "2026-08-25T16:05:36Z",
+      "versionDescription": "- fix(ios): ligar a fase 1 (harvest) que nunca foi montada e adaptar o download ao 403 por tamanho\n\nComparar com ios-v1.0.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.1...ios-v1.0.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.2/Duotone.ipa",
+      "size": 15038257
     }
   ],
   "news": []
