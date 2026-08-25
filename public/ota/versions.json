@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-25T18:56:37.308Z",
+  "generatedAt": "2026-08-25T19:52:01.545Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.1.0",
-        "tag": "ios-v1.1.0",
-        "notes": "- feat(social): notificacoes locais para mensagens e pedidos de amizade\n\nComparar com ios-v1.0.8: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.8...ios-v1.1.0",
-        "publishedAt": "2026-08-25T18:42:25Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.1.0",
+        "version": "1.1.1",
+        "tag": "ios-v1.1.1",
+        "notes": "- fix(ios): voltar a guardar as musicas para offline — o HLS nao deixa ficheiro\n- fix(desktop): importacao de playlists grandes criava playlist VAZIA; barra de progresso\n\nComparar com ios-v1.1.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.1.0...ios-v1.1.1",
+        "publishedAt": "2026-08-25T19:51:22Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.1.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15228024,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.0/Duotone.ipa",
+          "size": 15229895,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.1/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.1/Duotone.ipa"
       },
       "windows": {
         "version": "1.2.0",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 95775521,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.2.0/Duotone-Setup.exe",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.2.0/Duotone-Setup.exe"
       }

@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.1.1",
+          "date": "2026-08-25T19:51:22Z",
+          "localizedDescription": "- fix(ios): voltar a guardar as musicas para offline — o HLS nao deixa ficheiro\n- fix(desktop): importacao de playlists grandes criava playlist VAZIA; barra de progresso\n\nComparar com ios-v1.1.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.1.0...ios-v1.1.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.1/Duotone.ipa",
+          "size": 15229895,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.1.0",
           "date": "2026-08-25T18:42:25Z",
           "localizedDescription": "- feat(social): notificacoes locais para mensagens e pedidos de amizade\n\nComparar com ios-v1.0.8: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.8...ios-v1.1.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.1/Duotone.ipa",
           "size": 15035744,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.0.0",
-          "date": "2026-08-01T18:06:12Z",
-          "localizedDescription": "**Full Changelog**: https://github.com/joaoafonso2004/duotone/commits/ios-v1.0.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.0/Duotone.ipa",
-          "size": 15033952,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.1.0",
-      "versionDate": "2026-08-25T18:42:25Z",
-      "versionDescription": "- feat(social): notificacoes locais para mensagens e pedidos de amizade\n\nComparar com ios-v1.0.8: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.8...ios-v1.1.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.0/Duotone.ipa",
-      "size": 15228024
+      "version": "1.1.1",
+      "versionDate": "2026-08-25T19:51:22Z",
+      "versionDescription": "- fix(ios): voltar a guardar as musicas para offline — o HLS nao deixa ficheiro\n- fix(desktop): importacao de playlists grandes criava playlist VAZIA; barra de progresso\n\nComparar com ios-v1.1.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.1.0...ios-v1.1.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.1/Duotone.ipa",
+      "size": 15229895
     }
   ],
   "news": []
