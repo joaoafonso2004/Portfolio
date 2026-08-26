@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T19:52:01.545Z",
+  "generatedAt": "2026-08-26T06:36:09.553Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,7 +13,7 @@
           "name": "Duotone.ipa",
           "size": 15229895,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.1/Duotone.ipa",
-          "downloads": 0
+          "downloads": 3
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.1/Duotone.ipa"
       },
