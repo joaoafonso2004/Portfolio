@@ -208,7 +208,7 @@ const altstore = {
     'Fonte oficial das apps do João Afonso. As versões vêm dos GitHub Releases e são atualizadas automaticamente a cada lançamento.',
   iconURL: `${siteUrl}/favicon.svg`,
   website: siteUrl,
-  tintColor: '8C7BFF',
+  tintColor: 'C8A96B',
   apps: [],
   news: [],
 };
