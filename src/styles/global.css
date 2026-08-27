@@ -2,17 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ==========================================================================
+   Design tokens
+   One source of truth for rhythm. Mobile values are deliberate, not the
+   desktop ones scaled down; the md breakpoint restores the desktop numbers
+   exactly (40px gutter / 144px section padding), so desktop is untouched.
+   ========================================================================== */
+:root {
+  --gutter: 1.25rem;       /* px-5  → px-10 on md */
+  --section-y: 5.5rem;     /* py-22 → py-36 on md */
+  --stack: 2.25rem;        /* vertical rhythm inside a section */
+  --nav-h: 4.25rem;
+  --tap: 44px;             /* minimum comfortable touch target */
+  --safe-l: env(safe-area-inset-left, 0px);
+  --safe-r: env(safe-area-inset-right, 0px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 2.5rem;
+    --section-y: 9rem;
+    --stack: 3.5rem;
+    --nav-h: 4.75rem;
+  }
+}
+
 @layer base {
   html {
-    background: #0A0A0F;
+    background: #090A0C;
     /* Keep the scrollbar gutter reserved while the modal/menu locks scroll,
        otherwise the page shifts horizontally when the scrollbar vanishes */
     scrollbar-gutter: stable;
+    /* Landscape iOS otherwise inflates text on rotation */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 
   body {
     @apply bg-ink font-sans text-paper antialiased;
     text-rendering: optimizeLegibility;
+    /* No grey flash on tap; :active states below give the feedback instead */
+    -webkit-tap-highlight-color: transparent;
+    /* Stops the pull-to-refresh / scroll-chaining bounce fighting Lenis */
+    overscroll-behavior-y: none;
+  }
+
+  /* iOS zooms the whole page when a focused field is under 16px. Keeping the
+     visual scale requires the real font-size to stay at 16 on touch. */
+  @media (max-width: 767px) {
+    input,
+    select,
+    textarea {
+      font-size: 16px;
+    }
   }
 
   .font-serif {
@@ -20,12 +65,12 @@
   }
 
   ::selection {
-    background: #8C7BFF;
-    color: #0A0A0F;
+    background: #C8A96B;
+    color: #090A0C;
   }
 
   :focus-visible {
-    outline: 2px solid #8C7BFF;
+    outline: 2px solid #C8A96B;
     outline-offset: 3px;
   }
 
@@ -33,18 +78,20 @@
     width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #0A0A0F;
+    background: #090A0C;
   }
   ::-webkit-scrollbar-thumb {
-    background: #2A2A35;
+    background: #2A2926;
     border-radius: 8px;
-    border: 3px solid #0A0A0F;
+    border: 3px solid #090A0C;
   }
 }
 
 @layer components {
   .btn-pill {
     @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 font-mono text-[11px] uppercase tracking-[0.15em] transition-colors duration-300;
+    /* Never below the comfortable touch height, whatever the label */
+    min-height: var(--tap);
   }
   .btn-accent {
     @apply bg-accent text-ink hover:bg-paper;
@@ -55,6 +102,51 @@
 
   .eyebrow {
     @apply font-mono text-[11px] uppercase tracking-[0.22em] text-accent;
+  }
+
+  /* ---------- Layout primitives ----------
+     Used instead of repeating px-5/md:px-10 and py-24/md:py-36 so every
+     section shares one rhythm and one place to tune it. */
+  .section-x {
+    padding-left: max(var(--gutter), var(--safe-l));
+    padding-right: max(var(--gutter), var(--safe-r));
+  }
+  .section-y {
+    padding-top: var(--section-y);
+    padding-bottom: var(--section-y);
+  }
+  .shell {
+    @apply mx-auto w-full max-w-[1600px];
+  }
+
+  /* ---------- Touch targets ----------
+     Expands the hit area to 44px without touching the visual box, so small
+     mono links stay small but stop being a coin toss to tap.
+     Uses ::before deliberately: .nav-link already owns ::after for its
+     underline, and the two would silently cancel each other out. */
+  @media (pointer: coarse) {
+    .tap {
+      position: relative;
+    }
+    .tap::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: max(100%, var(--tap));
+      height: max(100%, var(--tap));
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  /* Touch has no hover, so pressed states carry the feedback instead. */
+  @media (hover: none) {
+    .btn-pill:active,
+    .tap:active,
+    a:active {
+      opacity: 0.62;
+      transition-duration: 60ms;
+    }
   }
 }
 
@@ -92,6 +184,17 @@ html.lenis body {
   62.5% { transform: translate(-3%, -1%); }
   75% { transform: translate(1%, 3%); }
   87.5% { transform: translate(3%, -2%); }
+}
+
+/* A 3x-viewport composited layer is cheap on desktop and expensive on a
+   phone GPU. 1.5x still covers the 3% grain drift with room to spare. */
+@media (max-width: 767px) {
+  .noise {
+    inset: -25%;
+    width: 150%;
+    height: 150%;
+    opacity: 0.035;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -185,13 +288,28 @@ html.has-cursor #cursor-ring {
   }
 }
 
+/* ---------- Short viewports (phone in landscape) ----------
+   Width-based type scales assume the screen is taller than it is wide. At
+   812x375 they are not wrong, they are simply answering the wrong axis. */
+@media (max-height: 520px) and (orientation: landscape) {
+  #hero h1 {
+    font-size: clamp(2rem, 11vh, 3.5rem);
+  }
+  #hero .hero-content {
+    padding-top: calc(var(--nav-h) + var(--safe-t) + 1rem);
+  }
+  #contact h2 {
+    font-size: clamp(2.5rem, 16vh, 5rem);
+  }
+}
+
 /* ---------- Contact form select ---------- */
 #contact-form select {
   color-scheme: dark;
 }
 #contact-form select option {
-  background: #12121a;
-  color: #f2f1ec;
+  background: #141516;
+  color: #f2efe8;
 }
 
 /* ---------- Nav link underline ---------- */
@@ -205,7 +323,7 @@ html.has-cursor #cursor-ring {
   bottom: -4px;
   width: 100%;
   height: 1px;
-  background: #8C7BFF;
+  background: #C8A96B;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
@@ -223,14 +341,48 @@ html.has-cursor #cursor-ring {
   align-items: center;
   justify-content: center;
   gap: 7px;
-  width: 44px;
-  height: 44px;
+  width: var(--tap);
+  height: var(--tap);
+  /* Pull the button flush with the gutter without shrinking its hit area */
+  margin-right: -10px;
 }
 @media (min-width: 768px) {
   #menu-toggle {
     display: none;
   }
 }
+/* Sized in CSS rather than with a utility because it has to answer to the
+   viewport HEIGHT too: a phone in landscape is 812px wide and 375px tall, and
+   a width-only clamp puts five 56px links into a 375px column. */
+.mobile-link {
+  font-size: clamp(2rem, 8.5vw, 3.25rem);
+}
+/* Landscape: the panel has ~375px of height for five links plus a footer.
+   Compressed here rather than left to scroll, because a menu you have to
+   scroll to find "Contact" in is a menu that failed. */
+@media (max-height: 560px) {
+  /* The links keep their 44px floor — compression comes out of the chrome
+     around them, never out of the thing being tapped. */
+  .mobile-link {
+    min-height: var(--tap);
+    padding-block: 0.35rem;
+    font-size: clamp(1.35rem, 5vh, 1.9rem);
+  }
+  #mobile-menu {
+    padding-top: calc(var(--nav-h) + var(--safe-t) - 1rem);
+    padding-bottom: max(1rem, var(--safe-b));
+  }
+  #mobile-menu > div:last-child {
+    margin-top: 1rem;
+  }
+  /* Three stacked social links cost 87px of a 375px screen; a row costs 29. */
+  [data-menu-socials] {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+  }
+}
+
 .menu-line {
   display: block;
   width: 26px;
@@ -263,4 +415,141 @@ body.wireframe-mode video,
 body.wireframe-mode canvas {
   opacity: 0.2 !important;
   filter: grayscale(100%) contrast(200%) !important;
+}
+
+/* ==========================================================================
+   Mobile scroll rails
+   Touch gets a snapping rail wherever the desktop relies on hover or on a
+   pointer-driven composition. One shared implementation, two consumers:
+   the Work ring (below `ring:`) and the device gallery on project pages.
+   ========================================================================== */
+@layer components {
+  .rail {
+    display: flex;
+    gap: 0.875rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    /* Bleed to the screen edges, but keep the first/last card on the grid */
+    margin-inline: calc(var(--gutter) * -1);
+    padding-inline: var(--gutter);
+    padding-block: 0.25rem;
+    /* Snapping to `start` against this padding is what lets the first card
+       rest at scrollLeft 0 — centre-snapping fights the edges instead. */
+    scroll-padding-inline: var(--gutter);
+  }
+  .rail::-webkit-scrollbar {
+    display: none;
+  }
+  .rail > * {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+  }
+  /* The rail is edge-to-edge, so the last card needs its own trailing gutter */
+  .rail::after {
+    content: '';
+    flex: 0 0 calc(var(--gutter) - 0.875rem);
+  }
+
+  /* Progress dots shared by both rails */
+  .rail-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+  .rail-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 999px;
+    background: rgba(242, 239, 232, 0.22);
+    transition:
+      width 0.45s var(--ease-expo),
+      background-color 0.45s var(--ease-expo);
+  }
+  .rail-dot[data-active] {
+    width: 22px;
+    background: #c8a96b;
+  }
+
+  /* ---------- Device frame (phone screenshots) ----------
+     A screenshot of a phone, shown full-bleed on a phone, reads as the page
+     itself rather than as the app being presented. The bezel is what restores
+     the "this is a product shot" frame — and it is why the whole block lives
+     inside a max-width query: the desktop grid already has that context and
+     must stay exactly as it was. */
+  @media (max-width: 767px) {
+    .device {
+      position: relative;
+      border-radius: 1.85rem;
+      padding: 5px;
+      background: linear-gradient(160deg, #3C3A35 0%, #171613 42%, #2C2A26 100%);
+      box-shadow:
+        0 1px 0 rgba(242, 239, 232, 0.16) inset,
+        0 18px 40px -18px rgba(0, 0, 0, 0.9);
+    }
+    .device-screen {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1.5rem;
+      background: #090a0c;
+    }
+    .device-screen img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    /* Dynamic-island cue — small, but it is what sells the bezel */
+    .device::before {
+      content: '';
+      position: absolute;
+      top: 13px;
+      left: 50%;
+      z-index: 2;
+      width: 30%;
+      max-width: 78px;
+      height: 16px;
+      transform: translateX(-50%);
+      border-radius: 999px;
+      background: #060504;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rail {
+    scroll-behavior: auto;
+  }
+}
+
+/* ---------- Project page entrance ---------- */
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+.animation-delay-200 {
+  animation-delay: 0.15s;
+}
+.animation-delay-400 {
+  animation-delay: 0.3s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in {
+    opacity: 1;
+    animation: none;
+  }
 }

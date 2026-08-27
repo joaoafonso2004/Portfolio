@@ -8,13 +8,13 @@ const links = [
 ];
 ---
 
-<header class="fixed left-0 top-0 z-50 w-full mix-blend-difference">
-  <nav class="flex items-center justify-between px-5 py-5 text-paper md:px-10">
+<header class="fixed left-0 top-0 z-50 w-full pt-[var(--safe-t)] mix-blend-difference">
+  <nav class="section-x flex items-center justify-between py-4 text-paper md:py-5">
     <!-- Brand -->
     <a
       href="/"
       id="brand-logo"
-      class="font-display text-sm font-semibold uppercase tracking-[0.08em]"
+      class="tap font-display text-sm font-semibold uppercase tracking-[0.08em]"
       data-magnetic
     >
       João Afonso<span class="text-accent">®</span>
@@ -25,7 +25,7 @@ const links = [
       {
         links.map((link) => (
           <li>
-            <a href={link.href} class="nav-link">
+            <a href={link.href} class="nav-link tap">
               {link.label}
             </a>
           </li>
@@ -36,7 +36,7 @@ const links = [
     <!-- Contact button (desktop) -->
     <a
       href="mailto:joaorsafonsoapple@gmail.com"
-      class="hidden items-center rounded-full border border-paper/25 px-5 py-2 font-mono text-[10px] uppercase tracking-[0.15em] transition-colors duration-300 hover:border-accent hover:text-accent lg:inline-flex"
+      class="hidden min-h-[2.25rem] items-center rounded-full border border-paper/25 px-5 py-2 font-mono text-[10px] uppercase tracking-[0.15em] transition-colors duration-300 hover:border-accent hover:text-accent lg:inline-flex"
       data-magnetic
       data-contact-trigger
     >
@@ -44,7 +44,13 @@ const links = [
     </a>
 
     <!-- Hamburger (mobile) -->
-    <button id="menu-toggle" class="md:hidden" aria-label="Open menu" aria-expanded="false">
+    <button
+      id="menu-toggle"
+      class="md:hidden"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
       <span class="menu-line"></span>
       <span class="menu-line"></span>
     </button>
@@ -54,16 +60,18 @@ const links = [
 <!-- Mobile full-screen menu -->
 <div
   id="mobile-menu"
-  class="invisible fixed inset-0 z-40 flex flex-col justify-between bg-coal px-5 pb-10 pt-28"
+  data-lenis-prevent
+  aria-hidden="true"
+  class="invisible fixed inset-x-0 top-0 z-40 flex h-[100svh] flex-col justify-between overflow-y-auto overscroll-contain bg-coal pb-[max(1.75rem,var(--safe-b))] pt-[calc(var(--nav-h)+var(--safe-t))]"
 >
-  <nav>
-    <ul class="flex flex-col gap-2">
+  <nav class="section-x">
+    <ul class="flex flex-col">
       {
         links.map((link, i) => (
-          <li class="overflow-hidden border-b border-line py-4">
+          <li class="overflow-hidden border-b border-line">
             <a
               href={link.href}
-              class="mobile-link flex items-baseline gap-4 font-display text-[clamp(2.1rem,9.5vw,3.5rem)] font-medium uppercase leading-none"
+              class="mobile-link flex min-h-[3.5rem] items-baseline gap-4 py-[0.9rem] font-display font-medium uppercase leading-none"
             >
               <span class="font-mono text-[11px] tracking-[0.2em] text-accent">0{i + 1}</span>
               {link.label}
@@ -74,22 +82,31 @@ const links = [
     </ul>
   </nav>
 
-  <div class="flex items-end justify-between">
-    <div class="flex flex-col gap-3 font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+  <div class="section-x mt-10 flex items-end justify-between gap-6">
+    <div class="flex flex-col items-start gap-4 font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
       <span>Viana do Castelo, PT</span>
       <a
         href="mailto:joaorsafonsoapple@gmail.com"
-        class="inline-flex w-fit items-center rounded-full bg-accent px-5 py-2.5 text-[10px] font-medium tracking-[0.15em] text-ink"
+        class="inline-flex min-h-[2.75rem] w-fit items-center rounded-full bg-accent px-6 text-[10px] font-medium tracking-[0.15em] text-ink"
         data-contact-trigger
       >
         Let's talk
       </a>
     </div>
-    <div class="flex flex-col items-end gap-1 font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
-      <a href="https://github.com/joaoafonso2004" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.instagram.com/joao.afonso31/" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="https://wa.me/351968467102" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-    </div>
+    <ul
+      data-menu-socials
+      class="flex flex-col items-end gap-1 font-mono text-[11px] uppercase tracking-[0.18em] text-muted"
+    >
+      <li>
+        <a class="tap inline-block py-1.5" href="https://github.com/joaoafonso2004" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </li>
+      <li>
+        <a class="tap inline-block py-1.5" href="https://www.instagram.com/joao.afonso31/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </li>
+      <li>
+        <a class="tap inline-block py-1.5" href="https://wa.me/351968467102" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </li>
+    </ul>
   </div>
 </div>
 
@@ -101,8 +118,9 @@ const links = [
     const menu = document.getElementById('mobile-menu');
 
     if (toggle && menu) {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       const items = menu.querySelectorAll('.mobile-link');
-      const closers = menu.querySelectorAll('.mobile-link, [data-contact-trigger]');
+      const closers = menu.querySelectorAll('a[href]');
       let open = false;
 
       const tl = gsap
@@ -120,22 +138,51 @@ const links = [
         );
 
       const setOpen = (next: boolean) => {
+        if (open === next) return;
         open = next;
         toggle.classList.toggle('is-open', open);
         toggle.setAttribute('aria-expanded', String(open));
         toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        menu.setAttribute('aria-hidden', String(!open));
+        // Lenis alone does not stop a native touch scroll behind a fixed
+        // overlay on iOS; the body lock is what actually pins the page.
+        document.body.classList.toggle('overflow-hidden', open);
         const lenis = (window as any).__lenis;
         if (open) {
           lenis?.stop();
-          tl.timeScale(1).play();
+          if (reduced) {
+            tl.progress(1).pause();
+            gsap.set(menu, { autoAlpha: 1, clipPath: 'none' });
+          } else {
+            tl.timeScale(1).play();
+          }
         } else {
           lenis?.start();
-          tl.timeScale(1.4).reverse();
+          if (reduced) {
+            tl.progress(0).pause();
+            gsap.set(menu, { autoAlpha: 0 });
+          } else {
+            tl.timeScale(1.4).reverse();
+          }
         }
       };
 
       toggle.addEventListener('click', () => setOpen(!open));
       closers.forEach((item) => item.addEventListener('click', () => setOpen(false)));
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && open) {
+          setOpen(false);
+          toggle.focus();
+        }
+      });
+
+      // Rotating to landscape-tablet width leaves the panel open over a
+      // desktop nav that has no way to close it.
+      const wide = window.matchMedia('(min-width: 768px)');
+      wide.addEventListener('change', (e) => {
+        if (e.matches) setOpen(false);
+      });
 
       const logo = document.getElementById('brand-logo');
       logo?.addEventListener('click', (e) => {

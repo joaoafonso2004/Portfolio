@@ -20,7 +20,7 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="theme-color" content="#0A0A0F" />
+    <meta name="theme-color" content="#090A0C" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <ViewTransitions />
@@ -51,7 +51,7 @@ const {
     <div
       id="preloader"
       transition:persist="preloader"
-      class="fixed inset-0 z-[100] flex items-end justify-between bg-ink px-5 pb-8 md:px-10"
+      class="section-x fixed inset-0 z-[100] flex items-end justify-between gap-4 bg-ink pb-[max(2rem,var(--safe-b))] pt-[var(--safe-t)]"
     >
       <!-- Spinning brand mark -->
       <div id="preloader-spinner-wrapper" class="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden="true">
@@ -60,7 +60,11 @@ const {
 
       <!-- Enter button (initially hidden) -->
       <div id="preloader-enter" class="pointer-events-none absolute inset-0 z-20 flex items-center justify-center opacity-0">
-        <button id="btn-enter" class="font-mono text-xs md:text-sm tracking-[0.3em] uppercase text-paper hover:text-accent transition-colors" data-magnetic>
+        <button
+          id="btn-enter"
+          class="inline-flex min-h-[3.25rem] items-center px-6 font-mono text-xs uppercase tracking-[0.3em] text-paper transition-colors hover:text-accent md:text-sm"
+          data-magnetic
+        >
           ( Click to Enter )
         </button>
       </div>
@@ -68,7 +72,7 @@ const {
       <!-- Progress line -->
       <div id="preloader-bar" class="absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0 bg-accent" aria-hidden="true"></div>
 
-      <span id="preloader-text" class="mb-3 font-mono text-[11px] uppercase tracking-[0.22em] text-muted">
+      <span id="preloader-text" class="mb-3 font-mono text-[10px] uppercase leading-relaxed tracking-[0.18em] text-muted sm:text-[11px] sm:tracking-[0.22em]">
         João Afonso — Folio ©2026
       </span>
       <span
@@ -108,7 +112,7 @@ const {
     <!-- Contact modal -->
     <div
       id="contact-modal"
-      class="invisible fixed inset-0 z-[90] flex items-center justify-center px-5"
+      class="invisible fixed inset-0 z-[90] flex items-end justify-center px-[max(var(--gutter),var(--safe-l))] pb-[max(1rem,var(--safe-b))] pt-[max(1rem,var(--safe-t))] sm:items-center"
       role="dialog"
       aria-modal="true"
       aria-labelledby="contact-modal-title"
@@ -118,12 +122,12 @@ const {
       <div
         id="contact-panel"
         data-lenis-prevent
-        class="relative max-h-[90svh] w-full max-w-xl overflow-y-auto border border-line bg-coal p-7 md:p-10"
+        class="relative max-h-[88svh] w-full max-w-xl overflow-y-auto overscroll-contain rounded-t-xl border border-line bg-coal p-6 sm:rounded-xl sm:p-7 md:p-10"
       >
         <button
           id="contact-close"
           aria-label="Close contact form"
-          class="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full border border-line text-muted transition-colors duration-300 hover:border-accent hover:text-accent md:right-6 md:top-6"
+          class="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full border border-line text-muted transition-colors duration-300 hover:border-accent hover:text-accent md:right-6 md:top-6"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
@@ -133,16 +137,16 @@ const {
         <span class="eyebrow">Contact — Start a project</span>
         <h3
           id="contact-modal-title"
-          class="mt-4 font-display text-3xl font-semibold uppercase leading-[0.95] tracking-[-0.01em] md:text-4xl"
+          class="mt-3 max-w-[15ch] font-display text-[clamp(1.75rem,7.5vw,2.25rem)] font-semibold uppercase leading-[0.95] tracking-[-0.01em] md:max-w-none md:text-4xl"
         >
           Let's build<br />something rare<span class="text-accent">.</span>
         </h3>
 
-        <form id="contact-form" class="mt-9 flex flex-col gap-7">
+        <form id="contact-form" class="mt-7 flex flex-col gap-6 md:mt-9 md:gap-7">
           <!-- Web3Forms honeypot (spam protection) -->
           <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" />
 
-          <div class="grid gap-7 md:grid-cols-2">
+          <div class="grid gap-6 md:grid-cols-2 md:gap-7">
             <label class="flex flex-col gap-2">
               <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">Name *</span>
               <input
@@ -151,7 +155,7 @@ const {
                 name="name"
                 placeholder="Your name"
                 autocomplete="name"
-                class="w-full border-b border-line bg-transparent pb-3 text-sm text-paper transition-colors placeholder:text-muted/50 focus:border-accent focus:outline-none"
+                class="min-h-[2.75rem] w-full border-b border-line bg-transparent pb-3 text-sm text-paper transition-colors placeholder:text-muted/50 focus:border-accent focus:outline-none"
               />
             </label>
             <label class="flex flex-col gap-2">
@@ -161,7 +165,7 @@ const {
                 name="company"
                 placeholder="Company or project"
                 autocomplete="organization"
-                class="w-full border-b border-line bg-transparent pb-3 text-sm text-paper transition-colors placeholder:text-muted/50 focus:border-accent focus:outline-none"
+                class="min-h-[2.75rem] w-full border-b border-line bg-transparent pb-3 text-sm text-paper transition-colors placeholder:text-muted/50 focus:border-accent focus:outline-none"
               />
             </label>
           </div>
@@ -174,7 +178,7 @@ const {
               name="email"
               placeholder="you@email.com"
               autocomplete="email"
-              class="w-full border-b border-line bg-transparent pb-3 text-sm text-paper transition-colors placeholder:text-muted/50 focus:border-accent focus:outline-none"
+              class="min-h-[2.75rem] w-full border-b border-line bg-transparent pb-3 text-sm text-paper transition-colors placeholder:text-muted/50 focus:border-accent focus:outline-none"
             />
           </label>
 
@@ -182,7 +186,7 @@ const {
             <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">Budget</span>
             <select
               name="budget"
-              class="w-full appearance-none border-b border-line bg-transparent pb-3 text-sm text-paper transition-colors focus:border-accent focus:outline-none"
+              class="min-h-[2.75rem] w-full appearance-none border-b border-line bg-transparent pb-3 text-sm text-paper transition-colors focus:border-accent focus:outline-none"
             >
               <option value="Not sure yet">Not sure yet</option>
               <option value="€250 — €500">€250 — €500</option>
@@ -212,7 +216,7 @@ const {
           </button>
           <p
             id="contact-status"
-            class="-mt-3 text-center font-mono text-[10px] uppercase tracking-[0.15em] text-muted"
+            class="-mt-2 text-center font-mono text-[11px] uppercase leading-relaxed tracking-[0.12em] text-muted md:-mt-3 md:tracking-[0.15em]"
           >
             I usually reply within 24 hours
           </p>
@@ -293,6 +297,78 @@ const {
       const velocity = { v: 0 };
       let scrollFxTicker: any = null;
 
+      /* ---------- Landing at the top after a navigation ----------
+         A view transition swaps the document while the window is still parked
+         at the outgoing page's offset, and three separate things can put that
+         offset back on the new page: the browser's own restoration, Lenis
+         (it adopts window.scrollY when constructed), and ScrollTrigger —
+         refresh() records the scroll position before it measures and restores
+         it when it finishes, out of a module-level cache that killing the
+         triggers does not clear.
+
+         The two calls to clearScrollMemory() at the swap boundaries and the
+         Lenis sync below close the first two off outright. pinTop is the
+         backstop for the third: ScrollTrigger's first refresh lands a frame
+         after the new page builds its triggers, which is later than every
+         scrollTo(0, 0) here. The window is short and any real scroll input
+         cancels it, so it cannot pull the page from under someone reading. */
+      let pinTopUntil = 0;
+      let pinFrame = 0;
+
+      const pinTop = () => {
+        if (performance.now() > pinTopUntil) return;
+        window.scrollTo(0, 0);
+        // `force` because the preloader leaves Lenis stopped, and a stopped
+        // instance ignores scrollTo — which would desync it from the window.
+        lenis?.scrollTo(0, { immediate: true, force: true });
+      };
+
+      /* Chrome runs the swap inside document.startViewTransition(), and a
+         scroll performed while that transition is still live can be applied
+         to the snapshot and then reverted once it settles — which is why the
+         page lands mid-document only *sometimes*, and only in Chrome (Firefox
+         and Safari take Astro's non-native fallback path). Watching for it
+         over a few frames is the only reliable answer: the revert happens
+         after every scrollTo(0, 0) we can schedule directly. */
+      const pinTimers: number[] = [];
+      const watchTopPin = () => {
+        cancelAnimationFrame(pinFrame);
+        pinTimers.splice(0).forEach(clearTimeout);
+
+        const check = () => {
+          if (performance.now() > pinTopUntil) return false;
+          if (window.scrollY !== 0) pinTop();
+          return true;
+        };
+        const step = () => {
+          if (check()) pinFrame = requestAnimationFrame(step);
+        };
+        pinFrame = requestAnimationFrame(step);
+        // Timers as well as frames: rAF is throttled or suspended in a
+        // backgrounded tab, which is precisely when a transition can settle
+        // without us watching.
+        [0, 60, 150, 320, 600, 1000].forEach((delay) =>
+          pinTimers.push(window.setTimeout(check, delay))
+        );
+      };
+
+      const armTopPin = () => {
+        pinTopUntil = performance.now() + 1200;
+        watchTopPin();
+      };
+
+      /** Anything that means "the visitor chose to be somewhere else". */
+      const cancelTopPin = () => {
+        pinTopUntil = 0;
+        cancelAnimationFrame(pinFrame);
+        pinTimers.splice(0).forEach(clearTimeout);
+      };
+
+      ['wheel', 'touchmove', 'keydown', 'pointerdown'].forEach((type) =>
+        window.addEventListener(type, cancelTopPin, { passive: true })
+      );
+      ScrollTrigger.addEventListener('refresh', pinTop);
+
       // Update lenis tick globally
       gsap.ticker.add((time) => {
         if (lenis) lenis.raf(time * 1000);
@@ -313,9 +389,19 @@ const {
       });
 
       /* ---------- Cleanup before swapping pages ---------- */
-      document.addEventListener('astro:before-swap', () => {
+      document.addEventListener('astro:before-swap', (ev) => {
+        // The native transition object is only present in browsers that have
+        // the API; its `finished` promise is the exact moment the snapshot is
+        // released and a suppressed scroll would snap back.
+        const vt = (ev as any).viewTransition;
+        vt?.finished?.then(pinTop).catch(() => {});
+
         // Kill all scroll triggers
         ScrollTrigger.getAll().forEach((t) => t.kill());
+        // kill() leaves the recorded scroll positions behind; this is what
+        // actually stops the old page's offset following us to the new one.
+        ScrollTrigger.clearScrollMemory('manual');
+        armTopPin();
         // Remove old ticker
         if (scrollFxTicker) {
           gsap.ticker.remove(scrollFxTicker);
@@ -330,6 +416,10 @@ const {
 
       document.addEventListener('astro:after-swap', () => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        // Swapping <body> resizes the document, which schedules a refresh of
+        // its own — clear again so that one measures from zero.
+        ScrollTrigger.clearScrollMemory('manual');
+        armTopPin();
         const curtain = document.getElementById('page-curtain');
         if (curtain && !reduced) {
           gsap.set(curtain, { transformOrigin: 'top' });
@@ -340,8 +430,9 @@ const {
       /* ---------- Initialize everything on page load ---------- */
       document.addEventListener('astro:page-load', () => {
         // Enforce top scroll immediately on render before Lenis captures it
+        armTopPin();
         window.scrollTo(0, 0);
-        
+
         /* ---------- Smooth scroll ---------- */
         if (!reduced) {
           lenis = new Lenis({
@@ -352,6 +443,9 @@ const {
           lenis.on('scroll', (e: any) => (velocity.v = e.velocity ?? 0));
         }
         (window as any).__lenis = lenis;
+        // Lenis reads window.scrollY when constructed; this keeps its internal
+        // target and the real position agreeing from the very first frame.
+        pinTop();
 
         /* ---------- Anchor scrolling ---------- */
         document.querySelectorAll<HTMLAnchorElement>('a[href^="#"], a[href^="/#"]').forEach((anchor) => {
@@ -363,6 +457,7 @@ const {
             const target = document.querySelector<HTMLElement>(id);
             if (!target) return;
             e.preventDefault();
+            cancelTopPin();
             if (lenis) lenis.scrollTo(target, { duration: 1.4 });
             else target.scrollIntoView({ behavior: 'smooth' });
           });
@@ -461,6 +556,7 @@ const {
         /* ---------- Scroll reveals ---------- */
         const initReveals = () => {
           if (reduced) return;
+          const compact = window.matchMedia('(max-width: 767px)').matches;
 
           document.querySelectorAll<HTMLElement>('[data-split]').forEach((el) => {
             const split = new SplitText(el, { type: 'lines', mask: 'lines' });
@@ -475,7 +571,7 @@ const {
 
           document.querySelectorAll<HTMLElement>('[data-reveal]').forEach((el) => {
             gsap.from(el, {
-              y: 44,
+              y: compact ? 26 : 44,
               autoAlpha: 0,
               duration: 1.1,
               ease: 'power3.out',
@@ -483,13 +579,17 @@ const {
             });
           });
 
+          // A 12% zoom is invisible on a wide card and a visible crop on a
+          // 335px one, so phones get a gentler push.
+          const travel = compact ? 3 : 7;
+          const zoom = compact ? 1.06 : 1.12;
           document.querySelectorAll<HTMLElement>('[data-parallax]').forEach((el) => {
             gsap.fromTo(
               el,
-              { yPercent: -7, scale: 1.12 },
+              { yPercent: -travel, scale: zoom },
               {
-                yPercent: 7,
-                scale: 1.12,
+                yPercent: travel,
+                scale: zoom,
                 ease: 'none',
                 scrollTrigger: {
                   trigger: el.parentElement,
@@ -507,7 +607,10 @@ const {
         // Browser autoplay often fails during Astro View Transitions
         // Also, reusing the exact same video src (from the ring to the project page) 
         // can cause the browser media engine to stall. video.load() unsticks it.
-        document.querySelectorAll('video').forEach(video => {
+        // `[data-lazy-video]` opts out: those are fetched by their own component
+        // only when they are about to be seen, which is what keeps a phone from
+        // downloading every showreel at once.
+        document.querySelectorAll<HTMLVideoElement>('video:not([data-lazy-video])').forEach(video => {
           video.load();
           video.play().catch(() => {});
         });
@@ -515,6 +618,12 @@ const {
         /* ---------- Scroll experience (scrubbed FX) ---------- */
         const initScrollFX = () => {
           if (reduced) return;
+
+          /* Parallax and slide amounts are tuned for a wide viewport. At phone
+             width the same numbers crop image content and shove headlines into
+             the gutter, so every scrubbed effect below is scaled by `fx`. */
+          const compact = window.matchMedia('(max-width: 767px)').matches;
+          const fx = compact ? 0.45 : 1;
 
           const progress = document.getElementById('scroll-progress');
           if (progress) {
@@ -537,20 +646,24 @@ const {
               ease: 'none',
               scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true },
             });
-            gsap.utils.toArray<HTMLElement>('.hero-line').forEach((el, i) => {
-              gsap.to(el, {
-                xPercent: i % 2 ? 7 : -7,
-                ease: 'none',
-                scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true },
+            // Only on wide screens: at 320px the headline already fills the
+            // measure, and a 7% shove clips it against the section's overflow.
+            if (!compact) {
+              gsap.utils.toArray<HTMLElement>('.hero-line').forEach((el, i) => {
+                gsap.to(el, {
+                  xPercent: i % 2 ? 7 : -7,
+                  ease: 'none',
+                  scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true },
+                });
               });
-            });
+            }
           }
 
           document.querySelectorAll<HTMLElement>('[data-hslide]').forEach((el) => {
             const dir = parseFloat(el.getAttribute('data-hslide') || '1');
             gsap.fromTo(
               el,
-              { xPercent: 9 * dir },
+              { xPercent: 9 * dir * fx },
               {
                 xPercent: 0,
                 ease: 'none',
@@ -575,7 +688,7 @@ const {
           if (footerInner) {
             gsap.fromTo(
               footerInner,
-              { yPercent: 16 },
+              { yPercent: 16 * fx },
               {
                 yPercent: 0,
                 ease: 'none',
@@ -633,6 +746,48 @@ const {
           gsap.ticker.add(scrollFxTicker);
         };
         initScrollFX();
+
+        /* ---------- Snap rails ----------
+           Any `[data-rail="x"]` gets its `[data-rail-dots="x"]` kept in sync.
+           Shared so a new touch carousel is markup, not another script. */
+        document.querySelectorAll<HTMLElement>('[data-rail]').forEach((rail) => {
+          const key = rail.dataset.rail;
+          const dotsHost = document.querySelector<HTMLElement>(`[data-rail-dots="${key}"]`);
+          if (!dotsHost) return;
+          const dots = [...dotsHost.querySelectorAll<HTMLElement>('.rail-dot')];
+          const cards = [...rail.children].filter((c): c is HTMLElement => c instanceof HTMLElement);
+          if (!dots.length || !cards.length) return;
+
+          let raf = 0;
+          const sync = () => {
+            raf = 0;
+            // Cards snap to `start`, i.e. against the rail's own left padding.
+            const snapLine = rail.scrollLeft + parseFloat(getComputedStyle(rail).paddingLeft || '0');
+            let nearest = 0;
+            let best = Infinity;
+            cards.forEach((card, i) => {
+              const d = Math.abs(card.offsetLeft - snapLine);
+              if (d < best) {
+                best = d;
+                nearest = i;
+              }
+            });
+            dots.forEach((dot, i) =>
+              i === nearest
+                ? dot.setAttribute('data-active', '')
+                : dot.removeAttribute('data-active')
+            );
+          };
+
+          rail.addEventListener(
+            'scroll',
+            () => {
+              if (!raf) raf = requestAnimationFrame(sync);
+            },
+            { passive: true }
+          );
+          sync();
+        });
 
         /* ---------- Magnetic buttons ---------- */
         if (finePointer && !reduced) {
@@ -746,7 +901,7 @@ const {
             status.textContent = msg;
             status.classList.remove('text-muted', 'text-accent');
             status.style.color =
-              tone === 'error' ? '#ff6b6b' : tone === 'ok' ? '#8C7BFF' : '';
+              tone === 'error' ? '#ff6b6b' : tone === 'ok' ? '#C8A96B' : '';
             if (tone === 'muted') status.classList.add('text-muted');
           };
 

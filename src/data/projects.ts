@@ -36,6 +36,20 @@ export interface Project {
   video?: string;
   /** Layout da galeria. Default é grid-2 com Bento Box. grid-3 é melhor para imagens verticais. */
   galleryLayout?: 'default' | 'grid-3';
+  /**
+   * A galeria é feita de capturas de ecrã de telemóvel. Só afecta o telemóvel:
+   * a moldura de dispositivo e o carrossel horizontal evitam que uma captura
+   * de um telemóvel, vista num telemóvel, se confunda com a própria página.
+   * No desktop a grelha mantém-se exactamente como está.
+   */
+  galleryDevice?: boolean;
+  /**
+   * Proporção da imagem de cartaz em ecrãs pequenos. `tall` é para posters e
+   * renders com o assunto ao centro — um 16:9 encolhido para 188px de altura
+   * não é um herói, é uma miniatura. Vídeos ficam em `wide`: recortar uma
+   * gravação de ecrã esconde justamente aquilo que ela mostra.
+   */
+  heroCrop?: 'wide' | 'tall';
   /** Estatísticas de destaque para exibir na página do projeto */
   stats?: { label: string; value: string }[];
   /** Peso visual no anel — nem todos os projetos merecem o mesmo espaço. */
@@ -85,6 +99,8 @@ export const PROJECTS: Project[] = [
     img: duotoneImg,
     gallery: [duo1, duo2, duo3, duo4, duo5],
     galleryLayout: 'grid-3',
+    galleryDevice: true,
+    heroCrop: 'tall',
     weight: 1.15,
   },
   {

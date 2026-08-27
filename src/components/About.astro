@@ -3,8 +3,8 @@ import { Image } from 'astro:assets';
 import portrait from '../assets/images/profile.jpg';
 ---
 
-<section id="about" class="relative border-t border-line bg-coal px-5 py-24 md:px-10 md:py-36">
-  <div class="mx-auto grid max-w-[1600px] grid-cols-1 gap-14 md:grid-cols-12">
+<section id="about" class="section-x section-y relative border-t border-line bg-coal">
+  <div class="shell grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-14">
     <!-- Portrait with cursor-reveal effect -->
     <div class="md:col-span-4" data-reveal>
       <div class="md:sticky md:top-28">
@@ -15,7 +15,7 @@ import portrait from '../assets/images/profile.jpg';
             alt="Portrait of João Afonso"
             widths={[480, 768]}
             sizes="(max-width: 768px) 100vw, 33vw"
-            class="aspect-[3/4] w-full object-cover"
+            class="aspect-[4/5] w-full object-cover sm:aspect-[3/4]"
           />
           <canvas
             id="portrait-canvas"
@@ -24,7 +24,7 @@ import portrait from '../assets/images/profile.jpg';
           >
           </canvas>
         </div>
-        <div class="mt-4 flex justify-between font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+        <div class="mt-4 flex justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.16em] text-muted sm:text-[11px] sm:tracking-[0.18em]">
           <span>João Afonso</span>
           <span>Viana do Castelo, PT</span>
         </div>
@@ -37,26 +37,26 @@ import portrait from '../assets/images/profile.jpg';
 
       <p
         data-split
-        class="mt-7 font-display text-[clamp(1.6rem,3.2vw,2.9rem)] font-medium leading-[1.15] tracking-[-0.01em]"
+        class="mt-6 font-display text-[clamp(1.65rem,6vw,2.9rem)] font-medium leading-[1.15] tracking-[-0.01em] md:mt-7"
       >
         The moment an interface stops being a screen and starts being
         <span class="font-serif italic text-accent">an experience.</span>
       </p>
 
-      <p data-reveal class="mt-9 max-w-xl leading-relaxed text-paper/65">
+      <p data-reveal class="mt-8 max-w-xl text-[0.95rem] leading-relaxed text-paper/65 sm:text-base md:mt-9">
         For the past five years I've been designing and building digital products — from brand
         concepts to booking platforms — that are fast, intentional and quietly beautiful. I
         believe craft is a feature: the difference between products people use and products
         people love lives in milliseconds, microcopy and motion.
       </p>
 
-      <p data-reveal class="mt-5 max-w-xl leading-relaxed text-paper/65">
+      <p data-reveal class="mt-5 max-w-xl text-[0.95rem] leading-relaxed text-paper/65 sm:text-base">
         I work end-to-end — from first sketch to shipped pixel — with systems thinking and an
         unreasonable attention to detail.
       </p>
 
       <!-- Stat -->
-      <div class="mt-16 border-t border-line pt-8" data-reveal>
+      <div class="mt-12 border-t border-line pt-7 md:mt-16 md:pt-8" data-reveal>
         <span class="block font-display text-5xl font-semibold text-paper md:text-7xl">
           <span data-counter="5" data-counter-pad data-counter-suffix="+">05+</span>
         </span>
@@ -70,14 +70,20 @@ import portrait from '../assets/images/profile.jpg';
 
 <script>
   /* Cursor-reveal portrait: hovered areas show a violet duotone version
-     of the photo through a soft brush trail that fades out over ~2s. */
+     of the photo through a soft brush trail that fades out over ~2s.
 
+     Deliberately hover-only. On a touch screen the trail would either need a
+     drag the user has no reason to make, or it would fire while they scroll —
+     and it costs two extra full-size canvases to set up either way. */
+
+  document.addEventListener('astro:page-load', () => {
   const wrap = document.getElementById('portrait-fx');
   const imgEl = document.getElementById('portrait-img') as HTMLImageElement | null;
   const view = document.getElementById('portrait-canvas') as HTMLCanvasElement | null;
   const reducedFx = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-  if (wrap && imgEl && view && !reducedFx) {
+  if (wrap && imgEl && view && !reducedFx && finePointer) {
     const ctx = view.getContext('2d')!;
     const DPR = Math.min(window.devicePixelRatio || 1, 2);
 
@@ -114,10 +120,12 @@ import portrait from '../assets/images/profile.jpg';
       drawCover(s, styled.width, styled.height);
       s.filter = 'none';
       s.globalCompositeOperation = 'multiply';
-      s.fillStyle = '#8C7BFF';
+      s.fillStyle = '#C8A96B';
       s.fillRect(0, 0, styled.width, styled.height);
       s.globalCompositeOperation = 'screen';
-      s.fillStyle = '#16102E';
+      // Lifts the shadows into warm brown rather than the blue-black the
+      // multiply leaves behind, which is what makes it read as gold.
+      s.fillStyle = '#17120A';
       s.fillRect(0, 0, styled.width, styled.height);
       s.globalCompositeOperation = 'source-over';
 
@@ -197,9 +205,21 @@ import portrait from '../assets/images/profile.jpg';
     else imgEl.addEventListener('load', init, { once: true });
 
     let resizeTimer = 0;
-    new ResizeObserver(() => {
+    const ro = new ResizeObserver(() => {
       window.clearTimeout(resizeTimer);
       resizeTimer = window.setTimeout(build, 150);
-    }).observe(wrap);
+    });
+    ro.observe(wrap);
+
+    document.addEventListener(
+      'astro:before-swap',
+      () => {
+        ro.disconnect();
+        cancelAnimationFrame(raf);
+        wrap.removeEventListener('pointermove', onMove);
+      },
+      { once: true }
+    );
   }
+  });
 </script>

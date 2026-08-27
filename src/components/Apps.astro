@@ -4,44 +4,44 @@ import { APPS } from '../data/apps';
 const count = String(APPS.length).padStart(2, '0');
 ---
 
-<section id="apps" class="relative border-t border-line px-5 py-24 md:px-10 md:py-36">
-  <div class="mx-auto max-w-[1600px]">
+<section id="apps" class="section-x section-y relative border-t border-line">
+  <div class="shell">
     <!-- Section header -->
-    <div class="mb-14 flex items-end justify-between border-b border-line pb-6 md:mb-20">
+    <div class="mb-12 flex items-end justify-between gap-4 border-b border-line pb-6 md:mb-20">
       <h2
         data-split
         data-hslide="-1"
-        class="font-display text-[clamp(2.6rem,7vw,6.5rem)] font-semibold uppercase leading-[0.95] tracking-[-0.02em]"
+        class="font-display text-[clamp(2.2rem,7vw,6.5rem)] font-semibold uppercase leading-[0.95] tracking-[-0.02em]"
       >
         Apps<br />&amp; Releases
       </h2>
-      <div class="text-right font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+      <div class="shrink-0 text-right font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
         <span class="block text-accent">({count})</span>
         <span>Downloads</span>
       </div>
     </div>
 
-    <div class="flex flex-col gap-8 md:gap-12">
+    <div class="flex flex-col gap-6 md:gap-12">
       {
         APPS.map((app) => (
-          <article class="app-card group relative overflow-hidden rounded-xl border border-line bg-coal p-6 md:p-10" data-app={app.id} data-reveal>
+          <article class="app-card group relative overflow-hidden rounded-xl border border-line bg-coal p-5 sm:p-6 md:p-10" data-app={app.id} data-reveal>
             <!-- Hover Glow -->
-            <div class="pointer-events-none absolute -inset-px opacity-0 transition-opacity duration-300 group-hover:opacity-100" style="background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(140, 123, 255, 0.08), transparent 40%);"></div>
+            <div class="pointer-events-none absolute -inset-px opacity-0 transition-opacity duration-300 group-hover:opacity-100" style="background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(200, 169, 107, 0.09), transparent 40%);"></div>
             
             <div class="relative z-10">
               <!-- Title -->
-              <div class="flex flex-wrap items-start justify-between gap-x-6 gap-y-4">
-                <div>
-                  <h3 class="font-display text-[clamp(2rem,4.5vw,3.4rem)] font-medium uppercase leading-none tracking-[-0.01em]">
+              <div class="flex flex-wrap items-start justify-between gap-x-6 gap-y-3">
+                <div class="min-w-0 flex-1">
+                  <h3 class="font-display text-[clamp(1.9rem,4.5vw,3.4rem)] font-medium uppercase leading-none tracking-[-0.01em]">
                     {app.name}
                   </h3>
-                  <p class="mt-4 max-w-xl text-sm leading-relaxed text-muted">{app.tagline}</p>
+                  <p class="mt-3.5 max-w-xl text-sm leading-relaxed text-muted">{app.tagline}</p>
                 </div>
                 <a
                   href={`https://github.com/${app.owner}/${app.repo}/releases`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-muted transition-colors duration-300 hover:text-accent"
+                  class="tap order-first inline-flex shrink-0 items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-muted transition-colors duration-300 hover:text-accent sm:order-none"
                 >
                   History
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3 w-3">
@@ -51,7 +51,7 @@ const count = String(APPS.length).padStart(2, '0');
               </div>
 
               <!-- Tags -->
-              <div class="mt-5 flex flex-wrap gap-2">
+              <div class="mt-5 flex flex-wrap gap-1.5 sm:gap-2">
                 {app.tags.map((tag) => (
                   <span class="rounded-full border border-line/60 bg-ink/30 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.12em] text-muted backdrop-blur-sm">
                     {tag}
@@ -60,9 +60,14 @@ const count = String(APPS.length).padStart(2, '0');
               </div>
 
               <!-- Uma coluna por plataforma: versões independentes, lado a lado -->
-              <div class="mt-8 grid gap-8 border-t border-line/60 pt-8 md:mt-10 md:grid-cols-2 md:gap-12 md:pt-10">
+              {/* Divided rather than merely spaced: stacked on a phone, two
+                  independent release columns need a visible seam. */}
+              <div class="mt-7 grid gap-7 border-t border-line/60 pt-7 md:mt-10 md:grid-cols-2 md:gap-12 md:pt-10">
                 {Object.entries(app.platforms).map(([platformId, platform]) => (
-                  <div data-platform={platformId} class="flex flex-col">
+                  <div
+                    data-platform={platformId}
+                    class="flex flex-col border-t border-line/40 pt-7 first:border-0 first:pt-0 md:border-0 md:pt-0"
+                  >
                     <div class="flex items-center justify-between gap-4">
                       <span class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-paper">
                         {platformId === 'ios' ? (
@@ -96,14 +101,14 @@ const count = String(APPS.length).padStart(2, '0');
 
                     <a
                       data-dl
-                      class="btn-pill pointer-events-none mt-6 justify-between opacity-40 btn-ghost"
+                      class="btn-pill btn-ghost pointer-events-none mt-6 justify-between gap-4 opacity-40"
                       aria-disabled="true"
                     >
                       <span data-dl-label>Download</span>
                       <span data-dl-size class="font-mono text-[10px] normal-case tracking-normal opacity-70" />
                     </a>
 
-                    <p data-hint class="mt-2 font-mono text-[10px] leading-relaxed tracking-[0.05em] text-muted/70" />
+                    <p data-hint class="mt-2 font-mono text-[11px] leading-relaxed tracking-[0.04em] text-muted/70" />
                   </div>
                 ))}
               </div>

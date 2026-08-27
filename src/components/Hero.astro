@@ -13,7 +13,7 @@
 
   <div
     id="hero-content"
-    class="hero-content relative z-10 flex min-h-svh flex-col justify-between px-5 pb-8 pt-28 md:px-10 md:pt-36"
+    class="hero-content section-x relative z-10 flex min-h-svh flex-col justify-between pb-[max(1.5rem,var(--safe-b))] pt-[calc(var(--nav-h)+var(--safe-t)+2rem)] md:pb-8 md:pt-36"
   >
     <!-- Availability badge -->
     <div
@@ -24,23 +24,25 @@
     </div>
 
     <!-- Headline -->
-    <div class="py-10">
+    <div class="py-9 md:py-10">
       <h1
-        class="font-display text-[clamp(2.55rem,11.5vw,11rem)] font-semibold uppercase leading-[0.93] tracking-[-0.02em]"
+        class="font-display text-[clamp(2.4rem,11.5vw,11rem)] font-semibold uppercase leading-[0.93] tracking-[-0.02em]"
       >
-        <span class="hero-line block">Crafting</span>
-        <span class="hero-line block whitespace-nowrap">Interfaces<span class="text-accent">*</span></span>
+        <span class="hero-line block whitespace-nowrap">You name it.</span>
+        <span class="hero-line block whitespace-nowrap">I build it<span class="text-accent">*</span></span>
         <span
           class="hero-line block font-serif font-normal normal-case italic tracking-normal text-accent"
-        >that feel alive</span>
+        >usually alone</span>
       </h1>
 
-      <div class="mt-10 flex flex-col gap-8 md:mt-14 md:flex-row md:items-end md:justify-between">
-        <p class="hero-fade max-w-md text-base leading-relaxed text-paper/70 md:text-lg">
-          Web &amp; UI/UX designer from Viana do Castelo. I turn ideas into fast, modern
-          digital experiences — designed with intent and built to last.
+      <div class="mt-9 flex flex-col gap-7 md:mt-14 md:flex-row md:items-end md:justify-between">
+        <p class="hero-fade max-w-md text-[0.95rem] leading-relaxed text-paper/70 sm:text-base md:text-lg">
+          Designer and developer from Viana do Castelo. SaaS, brand sites, mobile
+          apps, a computer-vision tool — and yes, a horror game.
         </p>
-        <div class="hero-fade flex flex-wrap items-center gap-4">
+        <!-- Two pills side by side wrap raggedly under 400px; full width reads
+             as a deliberate stack and doubles the target size. -->
+        <div class="hero-fade flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
           <a href="#work" class="btn-pill btn-accent" data-magnetic>
             Selected work
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5">
@@ -61,7 +63,7 @@
 
     <!-- Bottom meta row -->
     <div
-      class="hero-fade flex items-center justify-between gap-4 border-t border-line pt-5 font-mono text-[10px] uppercase tracking-[0.18em] text-muted md:text-[11px]"
+      class="hero-fade flex items-center justify-between gap-3 border-t border-line pt-5 font-mono text-[10px] uppercase tracking-[0.16em] text-muted md:tracking-[0.18em] md:text-[11px]"
     >
       <span class="flex items-center gap-2">
         Scroll
@@ -70,7 +72,7 @@
         </svg>
       </span>
       <span class="hidden sm:block">Viana do Castelo — 41.69°N, 8.83°W</span>
-      <span>UI/UX — Interaction — Motion</span>
+      <span>Design — Front end — Back end</span>
     </div>
   </div>
 </section>
@@ -194,19 +196,21 @@
           float f = fbm(vec3(p * 1.2 + 2.0 * r, t));
           f = f * 0.5 + 0.5;
 
-          // deep cool ink base
-          vec3 col = vec3(0.038, 0.038, 0.055);
-          vec3 indigo = vec3(0.13, 0.12, 0.30);
-          vec3 violet = vec3(0.36, 0.30, 0.78);
-          vec3 sheen  = vec3(0.55, 0.50, 1.00);
+          // Obsidian base with a smoky champagne drift. Gold reads brighter
+          // than violet at the same value, so every term is pulled back —
+          // the point is a black screen that catches light, not a gold one.
+          vec3 col    = vec3(0.035, 0.038, 0.047);
+          vec3 bronze = vec3(0.17, 0.14, 0.10);
+          vec3 champ  = vec3(0.60, 0.50, 0.31);
+          vec3 sheen  = vec3(0.86, 0.79, 0.62);
 
-          col = mix(col, indigo, smoothstep(0.3, 0.95, f) * 0.8);
-          col += violet * pow(f, 3.5) * 0.26;
-          col += sheen * pow(max(q.y * 0.5 + 0.5, 0.0), 4.0) * 0.04;
+          col = mix(col, bronze, smoothstep(0.3, 0.95, f) * 0.8);
+          col += champ * pow(f, 3.5) * 0.22;
+          col += sheen * pow(max(q.y * 0.5 + 0.5, 0.0), 4.0) * 0.035;
 
           // mouse glow
           float d = length(p - m * 1.2);
-          col += violet * exp(-d * 3.2) * 0.10;
+          col += champ * exp(-d * 3.2) * 0.085;
 
           // vignette
           col *= 1.0 - dot(p, p) * 0.5;
@@ -240,10 +244,13 @@
         )
       );
 
+      // The aurora is all low-frequency noise, so rendering it under 1:1 and
+      // letting the compositor upscale is free visually and cheap on a phone.
+      const compact = window.matchMedia('(max-width: 767px)').matches;
       const setSize = () => {
         const w = canvas.clientWidth || window.innerWidth;
         const h = canvas.clientHeight || window.innerHeight;
-        const dpr = Math.min(window.devicePixelRatio || 1, 1.0);
+        const dpr = Math.min(window.devicePixelRatio || 1, compact ? 0.7 : 1.0);
         renderer.setPixelRatio(dpr);
         renderer.setSize(w, h, false);
         uniforms.uRes.value.set(w * dpr, h * dpr);
@@ -286,7 +293,8 @@
       }
     };
 
-    initWebGL(canvas);
+    // A refused WebGL context must not take the hero copy down with it.
+    initWebGL(canvas).catch(() => canvas.remove());
   });
 
   /* ================= Intro timeline (after preloader) ================= */

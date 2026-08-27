@@ -10,43 +10,50 @@
 
 const capabilities = [
   {
-    title: 'Web Design & UX',
+    title: 'Product Design & UX',
     description:
-      'From discovery to polished flows — research, information architecture and interfaces that ship. Every layout starts with a purpose and ends with a detail.',
+      'Research, user flows, information architecture and the screens themselves. I design in the browser as often as in Figma, so what gets specced is what can actually be built.',
   },
   {
-    title: 'Development',
+    title: 'Front End & Motion',
     description:
-      'Fast, modern front-ends built with clean, scalable code. Performance is part of the design — sites that load instantly and score where it matters.',
+      'Astro, React and Three.js. Scroll-driven interfaces and WebGL when the idea calls for it — animated where it earns the frame, never where it only costs one.',
   },
   {
-    title: 'Interaction & Motion',
+    title: 'Back End & Data',
     description:
-      'Micro-interactions, smooth scroll and a motion language that makes products feel alive — never decoration for its own sake.',
+      'APIs, auth, databases and the scheduled jobs that keep them current. Supabase and serverless functions, plus the scrapers and pipelines that gather whatever a product needs to be useful.',
   },
   {
-    title: 'Branding & Art Direction',
+    title: 'Apps & Distribution',
     description:
-      'Visual worlds for digital brands — typography, color, imagery and the rules that bind them into something memorable.',
+      'iOS and Windows builds with Expo and Electron — code signing, over-the-air installs, and a release pipeline that updates this site on its own the moment a version ships.',
+  },
+  {
+    title: 'Brand & Art Direction',
+    description:
+      'Type, colour, imagery and the rules that bind them — enough system that the tenth page still looks like it belongs to the first.',
   },
 ];
+
+const count = String(capabilities.length).padStart(2, '0');
 
 
 ---
 
-<section id="capabilities" class="relative border-t border-line px-5 py-24 md:px-10 md:py-36">
-  <div class="mx-auto max-w-[1600px]">
+<section id="capabilities" class="section-x section-y relative border-t border-line">
+  <div class="shell">
     <!-- Section header -->
-    <div class="mb-14 flex items-end justify-between md:mb-20">
+    <div class="mb-12 flex items-end justify-between gap-4 md:mb-20">
       <h2
         data-split
         data-hslide="1"
-        class="font-display text-[clamp(2.6rem,7vw,6.5rem)] font-semibold uppercase leading-[0.95] tracking-[-0.02em]"
+        class="font-display text-[clamp(2.2rem,7vw,6.5rem)] font-semibold uppercase leading-[0.95] tracking-[-0.02em]"
       >
         What<br />I do
       </h2>
-      <span class="font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
-        Capabilities — (04)
+      <span class="shrink-0 text-right font-mono text-[10px] uppercase leading-relaxed tracking-[0.16em] text-muted sm:text-[11px] sm:tracking-[0.18em]">
+        Capabilities<br class="sm:hidden" /><span class="hidden sm:inline"> — </span>({count})
       </span>
     </div>
 
@@ -60,18 +67,20 @@ const capabilities = [
             data-cap-row={i}
           >
             <div class="absolute inset-0 translate-y-full bg-accent transition-transform duration-500 ease-out-expo group-hover:translate-y-0" />
-            <div class="relative px-1 py-8 transition-colors duration-300 group-hover:text-ink md:py-10">
-              <div class="flex items-center gap-6 md:gap-10">
-                <span class="font-mono text-[11px] tracking-[0.2em] text-accent transition-colors duration-300 group-hover:text-ink">
-                  (0{i + 1})
+            <div class="relative px-1 py-7 transition-colors duration-300 group-hover:text-ink md:py-10">
+              {/* 24px of gap plus the marker leaves ~215px of measure at 320px,
+                  which breaks every title onto two cramped lines. */}
+              <div class="flex items-baseline gap-3 md:items-center md:gap-10">
+                <span class="shrink-0 font-mono text-[10px] tracking-[0.2em] text-accent transition-colors duration-300 group-hover:text-ink md:text-[11px]">
+                  ({String(i + 1).padStart(2, '0')})
                 </span>
-                <h3 class="font-display text-[clamp(1.7rem,4vw,3.6rem)] font-medium uppercase leading-none tracking-[-0.01em]">
+                <h3 class="font-display text-[clamp(1.55rem,7vw,3.6rem)] font-medium uppercase leading-[0.95] tracking-[-0.01em] md:leading-none">
                   {cap.title}
                 </h3>
               </div>
               <div class="grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-out-expo md:grid-rows-[0fr] md:group-hover:grid-rows-[1fr]">
                 <div class="overflow-hidden">
-                  <p class="max-w-2xl pt-4 text-sm leading-relaxed text-muted transition-colors duration-300 group-hover:text-ink/75 md:pl-16 md:pt-5 md:text-base">
+                  <p class="max-w-2xl pt-3.5 text-[0.9rem] leading-relaxed text-muted transition-colors duration-300 group-hover:text-ink/75 md:pl-16 md:pt-5 md:text-base">
                     {cap.description}
                   </p>
                 </div>
@@ -84,14 +93,14 @@ const capabilities = [
       <!-- Floating Media -->
       <div id="cap-floater" class="pointer-events-none fixed left-0 top-0 z-[100] h-64 w-80 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-xl opacity-0 scale-90 transition-[opacity,transform] duration-500 ease-out-expo will-change-transform hidden md:block bg-ink">
         {media.map((src, i) => (
-          <video 
-            src={src} 
-            preload="auto"
-            autoplay 
-            loop 
-            muted 
+          <video
+            src={src}
+            preload="none"
+            data-lazy-video
+            loop
+            muted
             playsinline
-            class="absolute inset-0 h-full w-full object-cover transition-opacity duration-300 opacity-0"
+            class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-300"
             data-cap-media
           />
         ))}
@@ -115,13 +124,21 @@ const capabilities = [
         const yTo = gsap.quickTo(floater, "y", { duration: 0.4, ease: "power3.out" });
         const mediaElements = floater.querySelectorAll<HTMLVideoElement>('[data-cap-media]');
 
-        // Garante que os vídeos reproduzem quando a secção está visível
+        // Só aqui — dentro do ramo `finePointer` — é que os vídeos passam a
+        // valer o download. Num telemóvel o floater nunca aparece.
         const capSection = document.getElementById('capabilities');
         if (capSection && 'IntersectionObserver' in window) {
           new IntersectionObserver(([entry]) => {
             mediaElements.forEach(v => {
-              if (entry.isIntersecting) v.play().catch(() => {});
-              else v.pause();
+              if (entry.isIntersecting) {
+                if (v.preload !== 'auto') {
+                  v.preload = 'auto';
+                  v.load();
+                }
+                v.play().catch(() => {});
+              } else {
+                v.pause();
+              }
             });
           }).observe(capSection);
         }

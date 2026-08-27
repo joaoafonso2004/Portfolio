@@ -3,27 +3,40 @@ import { Image } from 'astro:assets';
 import { PROJECTS } from '../data/projects';
 ---
 
-<section id="work" class="relative">
+{/*
+  One set of cards, two compositions.
+
+  `orbit:` (>=768px wide AND >=620px tall) keeps the desktop ellipse exactly as
+  it was — absolutely positioned cards driven by the ticker below.
+  Everything narrower or shorter — phones in both orientations — gets a
+  snapping touch rail instead: the ring depends on hover to reveal a project's
+  name, and on a phone eight cards on an ellipse land on top of each other.
+*/}
+<section id="work" class="relative overflow-hidden">
   <div
     data-ring-stage
-    class="relative flex h-[100svh] w-full items-center justify-center overflow-hidden"
+    class="section-x relative w-full py-[var(--section-y)] orbit:flex orbit:h-[100svh] orbit:items-center orbit:justify-center orbit:overflow-hidden orbit:p-0"
   >
     <!-- Cabeçalho -->
-    <div class="pointer-events-none absolute left-5 right-5 top-24 z-[60] flex items-start justify-between md:left-10 md:right-10 md:top-28">
+    <div
+      class="flex items-end justify-between gap-4 orbit:pointer-events-none orbit:absolute orbit:left-10 orbit:right-10 orbit:top-28 orbit:z-[60] orbit:items-start"
+    >
       <h2
         data-split
-        class="font-display text-[clamp(1.8rem,4vw,3.6rem)] font-semibold uppercase leading-[0.95] tracking-[-0.02em]"
+        class="font-display text-[clamp(2.1rem,9vw,3.6rem)] font-semibold uppercase leading-[0.95] tracking-[-0.02em]"
       >
         Selected<br />Work
       </h2>
-      <div class="text-right font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+      <div class="shrink-0 text-right font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
         <span class="block text-accent">({String(PROJECTS.length).padStart(2, '0')})</span>
         <span>Projects</span>
       </div>
     </div>
 
-    <!-- Centro do anel: mostra o projeto sob o cursor -->
-    <div class="pointer-events-none absolute inset-0 z-[55] flex flex-col items-center justify-center text-center">
+    <!-- Centro do anel: mostra o projeto sob o cursor (só no anel) -->
+    <div
+      class="pointer-events-none absolute inset-0 z-[55] hidden flex-col items-center justify-center text-center orbit:flex"
+    >
       <span
         data-ring-title
         class="font-display text-[clamp(1.4rem,3vw,2.6rem)] font-medium uppercase leading-none tracking-[-0.01em] opacity-0 transition-opacity duration-500 ease-out-expo"
@@ -34,15 +47,19 @@ import { PROJECTS } from '../data/projects';
       ></span>
     </div>
 
-    <!-- O anel. Cada cartão é posicionado por transform no ticker. -->
-    <div data-ring class="absolute inset-0 [&[data-focusing]_[data-ring-item]:not([data-focused])_[data-frame]]:blur-[2px] [&[data-focusing]_[data-ring-item]:not([data-focused])_[data-frame]]:grayscale">
+    <!-- Os cartões. Rail por toque; anel posicionado pelo ticker em `orbit:`. -->
+    <div
+      data-ring
+      class="rail mt-9 items-start orbit:absolute orbit:inset-0 orbit:m-0 orbit:block orbit:overflow-visible orbit:p-0 orbit:[&::after]:content-none [&[data-focusing]_[data-ring-item]:not([data-focused])_[data-frame]]:blur-[2px] [&[data-focusing]_[data-ring-item]:not([data-focused])_[data-frame]]:grayscale"
+    >
       {
         PROJECTS.map((project, i) => (
           <a
             href={`/work/${project.slug}`}
-            class="group absolute left-1/2 top-1/2 block will-change-transform"
-            style={`width: clamp(220px, 60vw, ${Math.round(320 * (project.weight ?? 1))}px)`}
+            class="group block w-[min(78vw,340px)] will-change-transform orbit:absolute orbit:left-1/2 orbit:top-1/2 orbit:w-[var(--ring-w)]"
+            style={`--ring-w: ${Math.round(320 * (project.weight ?? 1))}px`}
             data-ring-item
+            data-index={i}
             data-title={project.title}
             data-category={project.category}
             data-cursor-label="View"
@@ -50,24 +67,24 @@ import { PROJECTS } from '../data/projects';
             <div data-slot class="relative aspect-video">
               <div
                 data-frame
-                class="absolute inset-0 overflow-hidden bg-coal transition-[filter] duration-500 ease-out-expo"
+                class="absolute inset-0 overflow-hidden rounded-lg bg-coal transition-[filter] duration-500 ease-out-expo orbit:rounded-none"
               >
                 <Image
                   src={project.img}
                   alt={`${project.title} — designed and built by João Afonso`}
-                  widths={[320, 640, 960]}
-                  sizes="(max-width: 768px) 45vw, 22vw"
+                  widths={[320, 480, 640, 960]}
+                  sizes="(max-width: 767px) 78vw, 22vw"
                   class="h-full w-full object-cover object-top"
                 />
 
                 {project.video && (
                   <video
                     data-work-video
+                    data-lazy-video
                     src={project.video}
-                    preload="auto"
+                    preload="none"
                     muted
                     loop
-                    autoplay
                     playsinline
                     aria-hidden="true"
                     tabindex="-1"
@@ -78,13 +95,40 @@ import { PROJECTS } from '../data/projects';
                 <span class="pointer-events-none absolute inset-0 bg-ink/0 transition-colors duration-500 group-hover:bg-ink/10" />
               </div>
             </div>
+
+            {/* O anel revela o título ao passar o rato. Sem rato, o cartão
+                tem de dizer o que é por si próprio. */}
+            <div class="orbit:hidden">
+              <div class="mt-4 flex items-baseline justify-between gap-3">
+                <h3 class="font-display text-[1.05rem] font-medium uppercase leading-none tracking-[-0.01em]">
+                  {project.title}
+                </h3>
+                <span class="shrink-0 font-mono text-[10px] tracking-[0.18em] text-muted">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+              </div>
+              <span class="mt-2 block font-mono text-[10px] uppercase leading-relaxed tracking-[0.16em] text-accent">
+                {project.category}
+              </span>
+            </div>
           </a>
         ))
       }
     </div>
 
-    <!-- Instrução -->
-    <div class="pointer-events-none absolute bottom-10 left-1/2 z-[60] -translate-x-1/2">
+    <!-- Indicador de posição (toque) -->
+    <div class="mt-9 flex items-center justify-between gap-4 orbit:hidden">
+      <div class="rail-dots" data-rail-dots aria-hidden="true">
+        {PROJECTS.map(() => <span class="rail-dot" />)}
+      </div>
+      <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
+        Swipe
+        <span class="ml-1 inline-block text-accent">→</span>
+      </span>
+    </div>
+
+    <!-- Instrução (anel) -->
+    <div class="pointer-events-none absolute bottom-10 left-1/2 z-[60] hidden -translate-x-1/2 orbit:block">
       <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
         Scroll to spin
       </span>
@@ -96,15 +140,27 @@ import { PROJECTS } from '../data/projects';
   import { gsap } from 'gsap';
   import { navigate } from 'astro:transitions/client';
 
-  let tickId: number;
-  let lenisScrollFn: any;
+  /** Tem de espelhar o screen `ring` do tailwind.config.mjs. */
+  const RING_QUERY =
+    '(min-width: 768px) and (min-height: 620px) and (hover: hover) and (pointer: fine)';
+
+  let tickId = 0;
+  let lenisScrollFn: any = null;
+  let teardown: (() => void)[] = [];
+  /** Fora do `teardown`: sobrevive a cada remontagem, morre na troca de página. */
+  let unbindMedia: (() => void) | null = null;
+
+  const cleanup = () => {
+    cancelAnimationFrame(tickId);
+    tickId = 0;
+    teardown.forEach((fn) => fn());
+    teardown = [];
+  };
 
   document.addEventListener('astro:before-swap', () => {
-    cancelAnimationFrame(tickId);
-    const lenis = (window as any).__lenis;
-    if (lenis && lenisScrollFn) {
-      lenis.off('scroll', lenisScrollFn);
-    }
+    cleanup();
+    unbindMedia?.();
+    unbindMedia = null;
   });
 
   document.addEventListener('astro:page-load', () => {
@@ -113,39 +169,99 @@ import { PROJECTS } from '../data/projects';
 
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    const ringMQ = window.matchMedia(RING_QUERY);
 
     const ring = document.querySelector<HTMLElement>('[data-ring]');
     const items = [...document.querySelectorAll<HTMLElement>('[data-ring-item]')];
     const titleEl = document.querySelector<HTMLElement>('[data-ring-title]');
     const categoryEl = document.querySelector<HTMLElement>('[data-ring-category]');
+    if (!ring || !items.length) return;
+
+    const videoOf = (item: HTMLElement) =>
+      item.querySelector<HTMLVideoElement>('[data-work-video]');
 
     const play = (video: HTMLVideoElement) => {
+      // preload="none" no HTML: só se paga o vídeo quando ele é mesmo preciso.
+      if (video.preload !== 'auto') {
+        video.preload = 'auto';
+        video.load();
+      }
       video.play().catch(() => {});
     };
 
     items.forEach((item) => {
-      const video = item.querySelector<HTMLVideoElement>('[data-work-video]');
+      const video = videoOf(item);
       video?.addEventListener('playing', () => {
         video.dataset.playing = '';
       });
     });
 
     const videos = items
-      .map((item) => item.querySelector<HTMLVideoElement>('[data-work-video]'))
+      .map(videoOf)
       .filter((v): v is HTMLVideoElement => !!v);
 
-    if (!reduced) {
-      if ('IntersectionObserver' in window) {
-        new IntersectionObserver(
-          ([entry]) => videos.forEach((v) => (entry.isIntersecting ? play(v) : v.pause())),
-          { threshold: 0.05 }
-        ).observe(stage);
-      } else {
-        videos.forEach(play);
-      }
-    }
+    /* ==================== Rail por toque ==================== */
 
-    /* ---------- Movimento do anel ---------- */
+    const initRail = () => {
+      const dots = [...document.querySelectorAll<HTMLElement>('[data-rail-dots] .rail-dot')];
+      let raf = 0;
+      // Nothing streams until the section is actually on screen — otherwise
+      // the first card's showreel starts downloading during page load, four
+      // screens above where anyone can see it.
+      let stageVisible = !('IntersectionObserver' in window);
+
+      const sync = () => {
+        raf = 0;
+        // Os cartões encostam à linha de snap (scrollLeft + padding), não ao centro.
+        const snapLine = ring.scrollLeft + parseFloat(getComputedStyle(ring).paddingLeft || '0');
+        let nearest = 0;
+        let best = Infinity;
+        items.forEach((item, i) => {
+          const d = Math.abs(item.offsetLeft - snapLine);
+          if (d < best) {
+            best = d;
+            nearest = i;
+          }
+        });
+        dots.forEach((dot, i) =>
+          i === nearest ? dot.setAttribute('data-active', '') : dot.removeAttribute('data-active')
+        );
+        // Um vídeo de cada vez: o do cartão centrado. Cinco decoders em
+        // paralelo derrubam o scroll num telemóvel.
+        items.forEach((item, i) => {
+          const video = videoOf(item);
+          if (!video) return;
+          if (i === nearest && stageVisible && !reduced) play(video);
+          else if (!video.paused) video.pause();
+        });
+      };
+
+      const onScroll = () => {
+        if (!raf) raf = requestAnimationFrame(sync);
+      };
+
+      ring.addEventListener('scroll', onScroll, { passive: true });
+      teardown.push(() => ring.removeEventListener('scroll', onScroll));
+
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(
+          ([entry]) => {
+            stageVisible = entry.isIntersecting;
+            sync();
+          },
+          { threshold: 0.25 }
+        );
+        io.observe(stage);
+        teardown.push(() => io.disconnect());
+      }
+
+      // O rail é edge-to-edge: alinhar o primeiro cartão à esquerda, não ao centro.
+      ring.scrollLeft = 0;
+      sync();
+    };
+
+    /* ==================== Anel (rato) ==================== */
+
     const BASE_SPEED = 0.22;
     const SCROLL_PUSH = 0.0016;
     const RETURN_RATE = 0.6;
@@ -153,7 +269,6 @@ import { PROJECTS } from '../data/projects';
 
     let angle = 0;
     let speed = BASE_SPEED;
-    let paused = false;
 
     const boosts = items.map(() => 0);
     let hovered: HTMLElement | null = null;
@@ -161,17 +276,15 @@ import { PROJECTS } from '../data/projects';
     let transitioning = false;
 
     function radii() {
-      const w = stage?.clientWidth ?? window.innerWidth;
-      const h = stage?.clientHeight ?? window.innerHeight;
-      // Use Math.max to guarantee a minimum radius on mobile so cards don't overlap entirely
-      return { 
-        rx: Math.min(Math.max(w * 0.28, 140), 400), 
-        ry: Math.min(Math.max(h * 0.18, 100), 180) 
+      const w = stage!.clientWidth || window.innerWidth;
+      const h = stage!.clientHeight || window.innerHeight;
+      return {
+        rx: Math.min(Math.max(w * 0.28, 140), 400),
+        ry: Math.min(Math.max(h * 0.18, 100), 180),
       };
     }
 
     function layout() {
-      if (!items.length) return;
       const { rx, ry } = radii();
       const step = (Math.PI * 2) / items.length;
 
@@ -187,27 +300,20 @@ import { PROJECTS } from '../data/projects';
         const isHovered = item === hovered;
         const isLastHovered = item === lastHovered;
         const baseZ = 10 + Math.round(depth * 40);
-        
+
         item.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px) scale(${scale})`;
-        
+
         const baseOpacity = 0.95 + depth * 0.05; // Almost fully solid everywhere
         item.style.opacity = String(baseOpacity + (1 - baseOpacity) * boosts[i]);
-        item.style.zIndex = String(baseZ + (isHovered ? 100 : (isLastHovered ? 80 : Math.round(boosts[i] * 20))));
+        item.style.zIndex = String(
+          baseZ + (isHovered ? 100 : isLastHovered ? 80 : Math.round(boosts[i] * 20))
+        );
       });
     }
 
     let mouseX = window.innerWidth / 2;
     let mouseY = window.innerHeight / 2;
-    window.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    }, { passive: true });
-
     let inView = true;
-    new IntersectionObserver(([entry]) => {
-      inView = entry.isIntersecting;
-    }).observe(stage);
-
     let last = performance.now();
     let lastHitTest = 0;
 
@@ -223,7 +329,7 @@ import { PROJECTS } from '../data/projects';
 
       if (!transitioning) {
         speed += (BASE_SPEED - speed) * RETURN_RATE * dt;
-        
+
         // Stationary mouse hit-testing (throttled to 100ms for massive performance gain)
         if (finePointer && now - lastHitTest > 100) {
           lastHitTest = now;
@@ -247,32 +353,6 @@ import { PROJECTS } from '../data/projects';
       tickId = requestAnimationFrame(tick);
     }
 
-    if (items.length && !reduced) {
-      tickId = requestAnimationFrame((t) => {
-        last = t;
-        tick(t);
-      });
-    } else {
-      layout();
-    }
-
-    const push = (delta: number) => {
-      if (transitioning) return;
-      speed = gsap.utils.clamp(-MAX_SPEED, MAX_SPEED, speed + delta * SCROLL_PUSH);
-    };
-
-    const lenis = (window as any).__lenis;
-    const onWheel = (e: WheelEvent) => push(e.deltaY * 0.1);
-    
-    if (lenis?.on) {
-      lenisScrollFn = (e: any) => push(e.velocity ?? 0);
-      lenis.on('scroll', lenisScrollFn);
-    } else {
-      window.addEventListener('wheel', onWheel, { passive: true });
-    }
-
-    window.addEventListener('resize', layout);
-
     function setCentre(item: HTMLElement | null) {
       if (!titleEl || !categoryEl) return;
       if (item) {
@@ -286,90 +366,167 @@ import { PROJECTS } from '../data/projects';
       }
     }
 
-    /* ---------- Ligação aos cartões ---------- */
-    if (finePointer && !reduced) {
-      items.forEach((item) => {
-        const video = item.querySelector<HTMLVideoElement>('[data-work-video]');
-        const frame = item.querySelector<HTMLElement>('[data-frame]');
+    const initRing = () => {
+      const onMouseMove = (e: MouseEvent) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      };
+      window.addEventListener('mousemove', onMouseMove, { passive: true });
+      teardown.push(() => window.removeEventListener('mousemove', onMouseMove));
 
-        item.addEventListener('mouseenter', () => {
-          if (transitioning) return;
-          hovered = item;
-          lastHovered = item;
-          item.setAttribute('data-focused', '');
-          ring?.setAttribute('data-focusing', '');
-          setCentre(item);
-          if (video) play(video);
-          if (frame) gsap.to(frame, { scale: 1.05, duration: 0.4, ease: 'power2.out' });
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(([entry]) => (inView = entry.isIntersecting));
+        io.observe(stage);
+        teardown.push(() => io.disconnect());
+
+        if (!reduced) {
+          const videoIO = new IntersectionObserver(
+            ([entry]) => videos.forEach((v) => (entry.isIntersecting ? play(v) : v.pause())),
+            { threshold: 0.05 }
+          );
+          videoIO.observe(stage);
+          teardown.push(() => videoIO.disconnect());
+        }
+      } else if (!reduced) {
+        videos.forEach(play);
+      }
+
+      if (!reduced) {
+        tickId = requestAnimationFrame((t) => {
+          last = t;
+          tick(t);
         });
+      } else {
+        layout();
+      }
 
-        item.addEventListener('mouseleave', () => {
-          if (transitioning) return;
-          hovered = null;
-          item.removeAttribute('data-focused');
-          ring?.removeAttribute('data-focusing');
-          setCentre(null);
-          if (frame) gsap.to(frame, { scale: 1, duration: 0.4, ease: 'power2.out' });
+      const push = (delta: number) => {
+        if (transitioning) return;
+        speed = gsap.utils.clamp(-MAX_SPEED, MAX_SPEED, speed + delta * SCROLL_PUSH);
+      };
+
+      const lenis = (window as any).__lenis;
+      const onWheel = (e: WheelEvent) => push(e.deltaY * 0.1);
+
+      if (lenis?.on) {
+        lenisScrollFn = (e: any) => push(e.velocity ?? 0);
+        lenis.on('scroll', lenisScrollFn);
+        teardown.push(() => {
+          lenis.off('scroll', lenisScrollFn);
+          lenisScrollFn = null;
         });
+      } else {
+        window.addEventListener('wheel', onWheel, { passive: true });
+        teardown.push(() => window.removeEventListener('wheel', onWheel));
+      }
 
-        item.addEventListener('click', (e) => {
-          if (transitioning) return e.preventDefault();
-          
-          const href = item.getAttribute('href');
-          if (!href) return;
-          
-          e.preventDefault();
-          transitioning = true;
+      const onResize = () => layout();
+      window.addEventListener('resize', onResize);
+      teardown.push(() => window.removeEventListener('resize', onResize));
 
-          // Sound effect
-          if ((window as any).audioCtx && (window as any).audioCtx.state === 'running') {
-            const osc = (window as any).audioCtx.createOscillator();
-            const gain = (window as any).audioCtx.createGain();
-            osc.type = 'sine';
-            osc.frequency.setValueAtTime(150, (window as any).audioCtx.currentTime);
-            osc.frequency.exponentialRampToValueAtTime(40, (window as any).audioCtx.currentTime + 0.1);
-            gain.gain.setValueAtTime(0.1, (window as any).audioCtx.currentTime);
-            gain.gain.exponentialRampToValueAtTime(0.001, (window as any).audioCtx.currentTime + 0.1);
-            osc.connect(gain);
-            gain.connect((window as any).audioCtx.destination);
-            osc.start();
-            osc.stop((window as any).audioCtx.currentTime + 0.1);
-          }
+      if (finePointer && !reduced) {
+        items.forEach((item) => {
+          const video = videoOf(item);
+          const frame = item.querySelector<HTMLElement>('[data-frame]');
 
-          // Shrink items locally
+          const onEnter = () => {
+            if (transitioning) return;
+            hovered = item;
+            lastHovered = item;
+            item.setAttribute('data-focused', '');
+            ring.setAttribute('data-focusing', '');
+            setCentre(item);
+            if (video) play(video);
+            if (frame) gsap.to(frame, { scale: 1.05, duration: 0.4, ease: 'power2.out' });
+          };
+          const onLeave = () => {
+            if (transitioning) return;
+            hovered = null;
+            item.removeAttribute('data-focused');
+            ring.removeAttribute('data-focusing');
+            setCentre(null);
+            if (frame) gsap.to(frame, { scale: 1, duration: 0.4, ease: 'power2.out' });
+          };
+
+          item.addEventListener('mouseenter', onEnter);
+          item.addEventListener('mouseleave', onLeave);
+          teardown.push(() => {
+            item.removeEventListener('mouseenter', onEnter);
+            item.removeEventListener('mouseleave', onLeave);
+          });
+        });
+      }
+    };
+
+    /* ---------- Transição para a página do projeto ---------- */
+    items.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        if (transitioning) return e.preventDefault();
+        const href = item.getAttribute('href');
+        if (!href) return;
+        e.preventDefault();
+        transitioning = true;
+
+        if ((window as any).audioCtx?.state === 'running') {
+          const ctx = (window as any).audioCtx as AudioContext;
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(150, ctx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(40, ctx.currentTime + 0.1);
+          gain.gain.setValueAtTime(0.1, ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.1);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start();
+          osc.stop(ctx.currentTime + 0.1);
+        }
+
+        if (ringMQ.matches && !reduced) {
           gsap.to(items, {
             scale: 0.85,
             autoAlpha: 0,
             duration: 0.4,
             stagger: { amount: 0.1, from: 'center' },
-            ease: 'power3.inOut'
+            ease: 'power3.inOut',
           });
-          
-          // Trigger global router immediately to run parallel with the curtain
-          setTimeout(() => {
-            if (href) navigate(href);
-          }, 50);
-        });
+          setTimeout(() => navigate(href), 50);
+        } else if (reduced) {
+          navigate(href);
+        } else {
+          // No rail, o cartão tocado é o assunto: só ele sai de cena.
+          gsap.to(item, { scale: 0.96, opacity: 0.5, duration: 0.28, ease: 'power2.in' });
+          gsap.to(stage, { opacity: 0, duration: 0.36, onComplete: () => navigate(href) });
+        }
       });
-    } else {
+    });
+
+    /* ---------- Escolher a composição, e refazê-la ao rodar o ecrã ---------- */
+    const mount = () => {
+      cleanup();
+      if (ringMQ.matches) {
+        initRing();
+      } else {
+        // Limpa o que o anel possa ter deixado inline antes de o rail assumir:
+        // posição no ticker, e a escala que o hover deixou no frame.
+        hovered = null;
+        lastHovered = null;
+        ring.removeAttribute('data-focusing');
         items.forEach((item) => {
-            item.addEventListener('click', (e) => {
-                if (transitioning) {
-                    e.preventDefault();
-                    return;
-                }
-                transitioning = true;
-                e.preventDefault();
-                gsap.to(stage, {
-                  opacity: 0,
-                  duration: 0.5,
-                  onComplete: () => {
-                    const href = item.getAttribute('href');
-                    if (href) navigate(href);
-                  }
-                });
-            });
+          item.style.transform = '';
+          item.style.opacity = '';
+          item.style.zIndex = '';
+          item.removeAttribute('data-focused');
+          const frame = item.querySelector<HTMLElement>('[data-frame]');
+          if (frame) frame.style.transform = '';
         });
-    }
+        initRail();
+      }
+    };
+
+    mount();
+    unbindMedia?.();
+    ringMQ.addEventListener('change', mount);
+    unbindMedia = () => ringMQ.removeEventListener('change', mount);
   });
 </script>

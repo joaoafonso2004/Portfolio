@@ -8,8 +8,11 @@ const socials = [
 ];
 ---
 
-<footer id="contact" class="relative overflow-hidden border-t border-line px-5 pb-10 pt-24 md:px-10 md:pt-36">
-  <div class="footer-inner mx-auto max-w-[1600px]">
+<footer
+  id="contact"
+  class="section-x relative overflow-hidden border-t border-line pb-[max(2.5rem,var(--safe-b))] pt-[var(--section-y)]"
+>
+  <div class="footer-inner shell">
     <span class="eyebrow" data-reveal>Contact — Let's build something rare</span>
 
     <a
@@ -21,19 +24,19 @@ const socials = [
     >
       <h2
         data-split
-        class="font-display text-[clamp(3.4rem,13vw,12rem)] font-semibold uppercase leading-[0.9] tracking-[-0.02em] transition-colors duration-500 group-hover:text-accent"
+        class="font-display text-[clamp(3.2rem,13vw,12rem)] font-semibold uppercase leading-[0.9] tracking-[-0.02em] transition-colors duration-500 group-hover:text-accent"
       >
         Let's<br />Talk<span class="text-accent transition-colors duration-500 group-hover:text-paper">.</span>
       </h2>
     </a>
 
     <div
-      class="mt-14 flex flex-col justify-between gap-6 border-t border-line pt-8 md:flex-row md:items-center"
+      class="mt-12 flex flex-col justify-between gap-7 border-t border-line pt-8 md:mt-14 md:flex-row md:items-center md:gap-6"
       data-reveal
     >
       <a
         href="mailto:joaorsafonsoapple@gmail.com"
-        class="btn-pill btn-accent w-fit"
+        class="btn-pill btn-accent w-full sm:w-fit"
         data-magnetic
         data-contact-trigger
       >
@@ -42,7 +45,7 @@ const socials = [
           <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7m0 0H8m9 0v9" />
         </svg>
       </a>
-      <ul class="flex flex-wrap items-center gap-7 font-mono text-[11px] uppercase tracking-[0.18em]">
+      <ul class="flex flex-wrap items-center gap-x-7 gap-y-1 font-mono text-[11px] uppercase tracking-[0.18em]">
         {
           socials.map((social) => (
             <li>
@@ -50,7 +53,7 @@ const socials = [
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="nav-link text-muted transition-colors duration-300 hover:text-paper"
+                class="nav-link tap inline-block py-2 text-muted transition-colors duration-300 hover:text-paper"
               >
                 {social.label}
               </a>
@@ -61,11 +64,13 @@ const socials = [
     </div>
 
     <div
-      class="mt-12 flex flex-col gap-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted sm:flex-row sm:items-center sm:justify-between"
+      class="mt-12 flex flex-col gap-2 font-mono text-[10px] uppercase leading-relaxed tracking-[0.16em] text-muted sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:tracking-[0.18em]"
     >
       <span>© {year} João Afonso — All rights reserved</span>
       <span>Viana do Castelo — <span id="local-time">00:00:00</span></span>
-      <a href="#hero" class="w-fit transition-colors duration-300 hover:text-accent">Back to top ↑</a>
+      <a href="#hero" class="tap w-fit py-2 transition-colors duration-300 hover:text-accent sm:py-0">
+        Back to top ↑
+      </a>
     </div>
   </div>
 </footer>

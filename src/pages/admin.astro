@@ -196,7 +196,7 @@ import { APPS } from '../data/apps';
 
       function status(node: HTMLElement, msg: string, ok = true) {
         node.textContent = msg;
-        node.style.color = ok ? '#8C7BFF' : '#ff6b6b';
+        node.style.color = ok ? '#C8A96B' : '#ff6b6b';
       }
 
       async function renderApp(app: (typeof apps)[number]) {
@@ -271,7 +271,7 @@ import { APPS } from '../data/apps';
           // distribui — os outros ficam no histórico.
           const liveTag = mine.find((r) => !r.draft && !r.prerelease)?.tag_name;
 
-          const list = el('div', 'mt-3 flex flex-col divide-y divide-[rgba(242,241,236,0.08)]');
+          const list = el('div', 'mt-3 flex flex-col divide-y divide-[rgba(242,239,232,0.08)]');
           for (const rel of mine) {
             const row = el('div', 'flex flex-col gap-3 py-4');
 

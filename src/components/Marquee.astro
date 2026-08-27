@@ -9,18 +9,18 @@ const words = [
 ];
 ---
 
-<div class="relative overflow-hidden border-y border-line bg-ink py-8" aria-hidden="true" style="perspective: 800px;">
-  <div style="transform: rotateX(20deg) rotateY(-2deg) scale(1.05); transform-style: preserve-3d;">
+<div class="marquee-stage relative overflow-hidden border-y border-line bg-ink py-7 md:py-8" aria-hidden="true">
+  <div class="marquee-tilt">
     <div class="marquee-track">
       {
         [0, 1].map(() => (
           <div class="flex shrink-0 items-center">
             {words.map((word) => (
               <>
-                <span class="text-3d mx-7 whitespace-nowrap font-display text-[1.75rem] font-medium uppercase tracking-tight text-paper/85 md:text-[2.75rem]" data-skew>
+                <span class="text-3d mx-5 whitespace-nowrap font-display text-[1.6rem] font-medium uppercase tracking-tight text-paper/85 sm:mx-7 sm:text-[1.75rem] md:text-[2.75rem]" data-skew>
                   {word}
                 </span>
-                <span class="text-3d-accent text-xl text-accent md:text-2xl" data-skew>✦</span>
+                <span class="text-3d-accent text-lg text-accent sm:text-xl md:text-2xl" data-skew>✦</span>
               </>
             ))}
           </div>
@@ -31,25 +31,51 @@ const words = [
 </div>
 
 <style>
+  /* The tilt is a flourish at 44px. At 26px it eats the counters, so the
+     phone gets a shallower angle and no extra scale. */
+  .marquee-stage {
+    perspective: 800px;
+  }
+  .marquee-tilt {
+    transform: rotateX(9deg) rotateY(-1deg);
+    transform-style: preserve-3d;
+  }
+  @media (min-width: 768px) {
+    .marquee-tilt {
+      transform: rotateX(20deg) rotateY(-2deg) scale(1.05);
+    }
+  }
+
   .text-3d {
-    text-shadow: 
-      0 1px 0 #858591,
-      0 2px 0 #737380,
-      0 3px 0 #61616f,
-      0 4px 0 #4f4f5e,
-      0 5px 0 #3d3d4d,
-      0 6px 0 #2a2a3b,
-      0 7px 0 #18182a,
-      0 15px 20px rgba(0, 0, 0, 0.6);
+    text-shadow:
+      0 1px 0 #8A8781,
+      0 2px 0 #787570,
+      0 3px 0 #66635E,
+      0 4px 0 #55524D,
+      0 5px 0 #43403C,
+      0 15px 20px rgba(0, 0, 0, 0.55);
+  }
+  @media (min-width: 768px) {
+    .text-3d {
+      text-shadow:
+        0 1px 0 #8A8781,
+        0 2px 0 #787570,
+        0 3px 0 #66635E,
+        0 4px 0 #55524D,
+        0 5px 0 #43403C,
+        0 6px 0 #2F2C29,
+        0 7px 0 #1C1A17,
+        0 15px 20px rgba(0, 0, 0, 0.6);
+    }
   }
 
   .text-3d-accent {
     text-shadow: 
-      0 1px 0 #7a6be0,
-      0 2px 0 #675ac2,
-      0 3px 0 #554aa3,
-      0 4px 0 #433985,
-      0 5px 0 #312966,
-      0 10px 15px rgba(140, 123, 255, 0.4);
+      0 1px 0 #B0955F,
+      0 2px 0 #9A8153,
+      0 3px 0 #836D46,
+      0 4px 0 #6C5939,
+      0 5px 0 #55452C,
+      0 10px 15px rgba(200, 169, 107, 0.35);
   }
 </style>
