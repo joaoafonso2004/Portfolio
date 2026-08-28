@@ -16,6 +16,7 @@ import mog2 from '../assets/images/mog2.png';
 import mog3 from '../assets/images/mog3.png';
 import mog4 from '../assets/images/mog4.png';
 import radarImg from '../assets/images/work_radar.png';
+import jarvisImg from '../assets/images/work_jarvis.png';
 import liminal1 from '../assets/images/liminal1_up.jpg';
 import liminal2 from '../assets/images/liminal2_up.jpg';
 import liminal3 from '../assets/images/liminal3.jpg';
@@ -68,6 +69,17 @@ export const PROJECTS: Project[] = [
     gallery: [],
     video: '/work/RedBull.mp4',
     weight: 1.15,
+  },
+  {
+    slug: 'jarvis',
+    title: 'JARVIS',
+    category: 'AI Assistant — Windows Desktop',
+    description:
+      'A Windows desktop assistant that listens for a wake word, holds conversation memory and operates the machine itself. Tauri and React on the surface, with a Node agent server, local Whisper transcription and Piper speech underneath.',
+    github: 'https://github.com/joaoafonso2004/JARVIS',
+    img: jarvisImg,
+    gallery: [],
+    weight: 1.1,
   },
   {
     slug: 'neapolitan-space',
