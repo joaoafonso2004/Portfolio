@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.2.2",
+          "date": "2026-08-28T23:19:13Z",
+          "localizedDescription": "- fix(settings): remover as opcoes mortas do PC, implementar as uteis, tapar lacunas\n\nComparar com ios-v1.2.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.2.1...ios-v1.2.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.2.2/Duotone.ipa",
+          "size": 15261344,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.2.1",
           "date": "2026-08-28T23:13:31Z",
           "localizedDescription": "- fix(ci): aspas numa mensagem de commit partiam o passo de publicar a release\n- fix(settings): tres opcoes que nao faziam o que diziam\n\nComparar com ios-v1.2.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.2.0...ios-v1.2.1",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.3/Duotone.ipa",
           "size": 15041489,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.0.2",
-          "date": "2026-08-25T16:05:36Z",
-          "localizedDescription": "- fix(ios): ligar a fase 1 (harvest) que nunca foi montada e adaptar o download ao 403 por tamanho\n\nComparar com ios-v1.0.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.1...ios-v1.0.2",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.2/Duotone.ipa",
-          "size": 15038257,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.2.1",
-      "versionDate": "2026-08-28T23:13:31Z",
-      "versionDescription": "- fix(ci): aspas numa mensagem de commit partiam o passo de publicar a release\n- fix(settings): tres opcoes que nao faziam o que diziam\n\nComparar com ios-v1.2.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.2.0...ios-v1.2.1",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.2.1/Duotone.ipa",
-      "size": 15260096
+      "version": "1.2.2",
+      "versionDate": "2026-08-28T23:19:13Z",
+      "versionDescription": "- fix(settings): remover as opcoes mortas do PC, implementar as uteis, tapar lacunas\n\nComparar com ios-v1.2.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.2.1...ios-v1.2.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.2.2/Duotone.ipa",
+      "size": 15261344
     }
   ],
   "news": []
