@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T12:06:34.083Z",
+  "generatedAt": "2026-08-29T14:00:46.592Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.2.2/Duotone.ipa"
       },
       "windows": {
-        "version": "1.4.0",
-        "tag": "win-v1.4.0",
-        "notes": "- feat(desktop): improve playback visuals and library UX\n- fix(desktop): tirar o Ctrl+K da Search, que nunca existiu\n- feat(desktop): Now Playing refeito e o glitch equalizer\n- feat(desktop): fase 5 — recomendacoes na Search, e o vinil sai\n- feat(desktop): fase 4 — os separadores, a serio\n- feat(desktop): fase 4 do redesenho — tipografia em todos os separadores\n- feat(desktop): fase 3 do redesenho — componentes partilhados\n- feat(desktop): fase 2 do redesenho — a casca\n- feat(desktop): fase 1 do redesenho — fontes embutidas e sistema de tokens\n- fix(audit): normalizacao de volume nao funcionava; limpar logs de debug\n\nComparar com win-v1.3.0: https://github.com/joaoafonso2004/duotone/compare/win-v1.3.0...win-v1.4.0",
-        "publishedAt": "2026-08-29T12:06:15Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.4.0",
+        "version": "1.4.1",
+        "tag": "win-v1.4.1",
+        "notes": "- fix(desktop): restore playback reliably in 1.4.1\n\nComparar com win-v1.4.0: https://github.com/joaoafonso2004/duotone/compare/win-v1.4.0...win-v1.4.1",
+        "publishedAt": "2026-08-29T14:00:32Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.4.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95947298,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.4.0/Duotone-Setup.exe",
+          "size": 95949725,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.4.1/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.4.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.4.1/Duotone-Setup.exe"
       }
     }
   }
