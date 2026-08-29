@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T14:00:46.592Z",
+  "generatedAt": "2026-08-29T19:32:09.667Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.2.2/Duotone.ipa"
       },
       "windows": {
-        "version": "1.4.1",
-        "tag": "win-v1.4.1",
-        "notes": "- fix(desktop): restore playback reliably in 1.4.1\n\nComparar com win-v1.4.0: https://github.com/joaoafonso2004/duotone/compare/win-v1.4.0...win-v1.4.1",
-        "publishedAt": "2026-08-29T14:00:32Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.4.1",
+        "version": "1.4.2",
+        "tag": "win-v1.4.2",
+        "notes": "- design(desktop): pagina Social no mesmo sistema do resto da app\n- feat(desktop): reordenar a fila a arrastar, e fora o efeito Waves\n- chore: 1.4.2\n- refactor(player): maquina de estados para a reproducao\n- refactor(player): tirar fila, recuperacao, sleep timer e sessao da store\n- refactor(desktop): partir o RootNavigator.web.tsx em paginas\n- feat(playback): diagnostico de reproducao — classificar, recuperar, relatar\n\nComparar com win-v1.4.1: https://github.com/joaoafonso2004/duotone/compare/win-v1.4.1...win-v1.4.2",
+        "publishedAt": "2026-08-29T19:31:53Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.4.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95949725,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.4.1/Duotone-Setup.exe",
+          "size": 95955475,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.4.2/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.4.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.4.2/Duotone-Setup.exe"
       }
     }
   }
