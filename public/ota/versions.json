@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T19:32:09.667Z",
+  "generatedAt": "2026-08-29T19:50:10.647Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.2.2/Duotone.ipa"
       },
       "windows": {
-        "version": "1.4.2",
-        "tag": "win-v1.4.2",
-        "notes": "- design(desktop): pagina Social no mesmo sistema do resto da app\n- feat(desktop): reordenar a fila a arrastar, e fora o efeito Waves\n- chore: 1.4.2\n- refactor(player): maquina de estados para a reproducao\n- refactor(player): tirar fila, recuperacao, sleep timer e sessao da store\n- refactor(desktop): partir o RootNavigator.web.tsx em paginas\n- feat(playback): diagnostico de reproducao — classificar, recuperar, relatar\n\nComparar com win-v1.4.1: https://github.com/joaoafonso2004/duotone/compare/win-v1.4.1...win-v1.4.2",
-        "publishedAt": "2026-08-29T19:31:53Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.4.2",
+        "version": "1.4.3",
+        "tag": "win-v1.4.3",
+        "notes": "- chore: 1.4.3\n- design(social): tirar as pastilhas das linhas e acabar as outras duas abas\n\nComparar com win-v1.4.2: https://github.com/joaoafonso2004/duotone/compare/win-v1.4.2...win-v1.4.3",
+        "publishedAt": "2026-08-29T19:49:57Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.4.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95955475,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.4.2/Duotone-Setup.exe",
+          "size": 95953517,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.4.3/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.4.2/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.4.3/Duotone-Setup.exe"
       }
     }
   }
