@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.5.3",
+          "date": "2026-08-31T22:37:53Z",
+          "localizedDescription": "- chore: 1.5.3\n- Shuffle alternavel, \"Discover new\", e recomendacoes que sao mesmo musica\n\nComparar com ios-v1.5.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.2...ios-v1.5.3",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.3/Duotone.ipa",
+          "size": 15315422,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.5.2",
           "date": "2026-08-31T21:53:57Z",
           "localizedDescription": "- chore: 1.5.2\n- Pesquisa: o \"Daily flow\" passa a descobrir por afinidade\n- Sugestoes que se parecem com a playlist, e nao com o catalogo\n- Shuffle: um botao so, e as particulas a atravessar\n- Smart shuffle: sugestoes que nao repetem, nao interrompem, e nao queimam quota\n- chore: nao versionar videos de referencia largados na raiz\n- Shuffle inteligente: marca na fila, botoes nas listas, e uma animacao\n- Shuffle inteligente: de quatro em quatro faixas entra uma nova\n- Reverter a limpeza do titulo no ecra bloqueado\n- Telemovel: EQ que \"nao guardava\", e o ecra bloqueado com o nome a dobrar\n\nComparar com ios-v1.5.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.1...ios-v1.5.2",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.7/Duotone.ipa",
           "size": 15038343,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.0.6",
-          "date": "2026-08-25T17:33:50Z",
-          "localizedDescription": "- fix(ios): desligar as fases mortas e cair depressa para o embed\n\nComparar com ios-v1.0.5: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.5...ios-v1.0.6",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.6/Duotone.ipa",
-          "size": 15038002,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.5.2",
-      "versionDate": "2026-08-31T21:53:57Z",
-      "versionDescription": "- chore: 1.5.2\n- Pesquisa: o \"Daily flow\" passa a descobrir por afinidade\n- Sugestoes que se parecem com a playlist, e nao com o catalogo\n- Shuffle: um botao so, e as particulas a atravessar\n- Smart shuffle: sugestoes que nao repetem, nao interrompem, e nao queimam quota\n- chore: nao versionar videos de referencia largados na raiz\n- Shuffle inteligente: marca na fila, botoes nas listas, e uma animacao\n- Shuffle inteligente: de quatro em quatro faixas entra uma nova\n- Reverter a limpeza do titulo no ecra bloqueado\n- Telemovel: EQ que \"nao guardava\", e o ecra bloqueado com o nome a dobrar\n\nComparar com ios-v1.5.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.1...ios-v1.5.2",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.2/Duotone.ipa",
-      "size": 15313343
+      "version": "1.5.3",
+      "versionDate": "2026-08-31T22:37:53Z",
+      "versionDescription": "- chore: 1.5.3\n- Shuffle alternavel, \"Discover new\", e recomendacoes que sao mesmo musica\n\nComparar com ios-v1.5.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.2...ios-v1.5.3",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.3/Duotone.ipa",
+      "size": 15315422
     }
   ],
   "news": []
