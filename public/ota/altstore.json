@@ -20,6 +20,7 @@
         {
           "version": "1.5.0",
           "date": "2026-08-31T02:52:59Z",
+          "localizedDescription": "- Equalizador com os mesmos perfis e dez controlos do PC\n- Velocidade contínua de 0,5× a 2× com memória por faixa\n- Bass boost e treble reais, sem baixar o volume geral\n- Equalizador inicia sempre Flat e protege apenas os picos\n- Painel EQ acessível no Currently Playing\n- Artistas inteligentes e pesquisa por lupa\n- Títulos completos no Currently Playing",
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.0/Duotone.ipa",
           "size": 15301340,
           "minOSVersion": "16.4"
@@ -99,6 +100,7 @@
       ],
       "version": "1.5.0",
       "versionDate": "2026-08-31T02:52:59Z",
+      "versionDescription": "- Equalizador com os mesmos perfis e dez controlos do PC\n- Velocidade contínua de 0,5× a 2× com memória por faixa\n- Bass boost e treble reais, sem baixar o volume geral\n- Equalizador inicia sempre Flat e protege apenas os picos\n- Painel EQ acessível no Currently Playing\n- Artistas inteligentes e pesquisa por lupa\n- Títulos completos no Currently Playing",
       "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.0/Duotone.ipa",
       "size": 15301340
     }

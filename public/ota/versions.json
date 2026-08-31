@@ -1,10 +1,11 @@
 {
-  "generatedAt": "2026-08-31T02:53:12.575Z",
+  "generatedAt": "2026-08-31T02:53:51.035Z",
   "apps": {
     "duotone": {
       "ios": {
         "version": "1.5.0",
         "tag": "ios-v1.5.0",
+        "notes": "- Equalizador com os mesmos perfis e dez controlos do PC\n- Velocidade contínua de 0,5× a 2× com memória por faixa\n- Bass boost e treble reais, sem baixar o volume geral\n- Equalizador inicia sempre Flat e protege apenas os picos\n- Painel EQ acessível no Currently Playing\n- Artistas inteligentes e pesquisa por lupa\n- Títulos completos no Currently Playing",
         "publishedAt": "2026-08-31T02:52:59Z",
         "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.0",
         "prerelease": false,
