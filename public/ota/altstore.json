@@ -20,7 +20,7 @@
         {
           "version": "1.5.1",
           "date": "2026-08-31T03:20:43Z",
-          "localizedDescription": "- fix(ios): manter etiquetas do EQ numa linha\n\nComparar com ios-v1.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.0...ios-v1.5.1",
+          "localizedDescription": "- Corrige as etiquetas do equalizador no telemóvel\n- BASS, PUNCH, CLEAR e TREBLE ficam centrados numa única linha",
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.1/Duotone.ipa",
           "size": 15301084,
           "minOSVersion": "16.4"
@@ -100,7 +100,7 @@
       ],
       "version": "1.5.1",
       "versionDate": "2026-08-31T03:20:43Z",
-      "versionDescription": "- fix(ios): manter etiquetas do EQ numa linha\n\nComparar com ios-v1.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.0...ios-v1.5.1",
+      "versionDescription": "- Corrige as etiquetas do equalizador no telemóvel\n- BASS, PUNCH, CLEAR e TREBLE ficam centrados numa única linha",
       "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.1/Duotone.ipa",
       "size": 15301084
     }

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-31T03:21:01.207Z",
+  "generatedAt": "2026-08-31T03:21:29.484Z",
   "apps": {
     "duotone": {
       "ios": {
         "version": "1.5.1",
         "tag": "ios-v1.5.1",
-        "notes": "- fix(ios): manter etiquetas do EQ numa linha\n\nComparar com ios-v1.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.0...ios-v1.5.1",
+        "notes": "- Corrige as etiquetas do equalizador no telemóvel\n- BASS, PUNCH, CLEAR e TREBLE ficam centrados numa única linha",
         "publishedAt": "2026-08-31T03:20:43Z",
         "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.1",
         "prerelease": false,
