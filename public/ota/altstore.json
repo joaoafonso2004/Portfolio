@@ -18,6 +18,13 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.5.0",
+          "date": "2026-08-31T02:52:59Z",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.0/Duotone.ipa",
+          "size": 15301340,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.2.2",
           "date": "2026-08-28T23:19:13Z",
           "localizedDescription": "- fix(settings): remover as opcoes mortas do PC, implementar as uteis, tapar lacunas\n\nComparar com ios-v1.2.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.2.1...ios-v1.2.2",
@@ -88,21 +95,12 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.4/Duotone.ipa",
           "size": 15042089,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.0.3",
-          "date": "2026-08-25T16:23:24Z",
-          "localizedDescription": "- fix(ios): reativar o PO Token on-device e aplica-lo aos clientes android\n\nComparar com ios-v1.0.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.2...ios-v1.0.3",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.3/Duotone.ipa",
-          "size": 15041489,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.2.2",
-      "versionDate": "2026-08-28T23:19:13Z",
-      "versionDescription": "- fix(settings): remover as opcoes mortas do PC, implementar as uteis, tapar lacunas\n\nComparar com ios-v1.2.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.2.1...ios-v1.2.2",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.2.2/Duotone.ipa",
-      "size": 15261344
+      "version": "1.5.0",
+      "versionDate": "2026-08-31T02:52:59Z",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.0/Duotone.ipa",
+      "size": 15301340
     }
   ],
   "news": []
