@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-08-31T12:21:37.870Z",
+  "generatedAt": "2026-08-31T22:03:35.517Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.5.1",
-        "tag": "ios-v1.5.1",
-        "notes": "- Corrige as etiquetas do equalizador no telemóvel\n- BASS, PUNCH, CLEAR e TREBLE ficam centrados numa única linha",
-        "publishedAt": "2026-08-31T03:20:43Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.1",
+        "version": "1.5.2",
+        "tag": "ios-v1.5.2",
+        "notes": "- chore: 1.5.2\n- Pesquisa: o \"Daily flow\" passa a descobrir por afinidade\n- Sugestoes que se parecem com a playlist, e nao com o catalogo\n- Shuffle: um botao so, e as particulas a atravessar\n- Smart shuffle: sugestoes que nao repetem, nao interrompem, e nao queimam quota\n- chore: nao versionar videos de referencia largados na raiz\n- Shuffle inteligente: marca na fila, botoes nas listas, e uma animacao\n- Shuffle inteligente: de quatro em quatro faixas entra uma nova\n- Reverter a limpeza do titulo no ecra bloqueado\n- Telemovel: EQ que \"nao guardava\", e o ecra bloqueado com o nome a dobrar\n\nComparar com ios-v1.5.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.1...ios-v1.5.2",
+        "publishedAt": "2026-08-31T21:53:57Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15301084,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.1/Duotone.ipa",
-          "downloads": 1
+          "size": 15313343,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.2/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.1/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.2/Duotone.ipa"
       },
       "windows": {
-        "version": "1.5.0",
-        "tag": "win-v1.5.0",
-        "notes": "- Bass boost e treble reais, aditivos e sem baixar o volume geral\n- Equalizador inicia sempre Flat e usa limiter apenas para proteger picos\n- Artistas inteligentes corrigem canais falsos e reconhecem títulos sem espaços no hífen\n- Pesquisa por lupa na página de Artistas\n- Mais músicas e álbuns dentro de cada artista\n- Títulos completos no Currently Playing\n- Novo logótipo da aplicação e do instalador Windows",
-        "publishedAt": "2026-08-31T02:41:44Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.5.0",
+        "version": "1.5.2",
+        "tag": "win-v1.5.2",
+        "notes": "- chore: 1.5.2\n- Pesquisa: o \"Daily flow\" passa a descobrir por afinidade\n- Sugestoes que se parecem com a playlist, e nao com o catalogo\n- Shuffle: um botao so, e as particulas a atravessar\n- Smart shuffle: sugestoes que nao repetem, nao interrompem, e nao queimam quota\n- chore: nao versionar videos de referencia largados na raiz\n- Shuffle inteligente: marca na fila, botoes nas listas, e uma animacao\n- Shuffle inteligente: de quatro em quatro faixas entra uma nova\n- Reverter a limpeza do titulo no ecra bloqueado\n- Telemovel: EQ que \"nao guardava\", e o ecra bloqueado com o nome a dobrar\n- fix(ios): manter etiquetas do EQ numa linha\n\nComparar com win-v1.5.0: https://github.com/joaoafonso2004/duotone/compare/win-v1.5.0...win-v1.5.2",
+        "publishedAt": "2026-08-31T21:49:45Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.5.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 96783129,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.0/Duotone-Setup.exe",
+          "size": 96788537,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.2/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.2/Duotone-Setup.exe"
       }
     }
   }
