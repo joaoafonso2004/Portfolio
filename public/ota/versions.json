@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-31T02:53:51.035Z",
+  "generatedAt": "2026-08-31T03:21:01.207Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.5.0",
-        "tag": "ios-v1.5.0",
-        "notes": "- Equalizador com os mesmos perfis e dez controlos do PC\n- Velocidade contínua de 0,5× a 2× com memória por faixa\n- Bass boost e treble reais, sem baixar o volume geral\n- Equalizador inicia sempre Flat e protege apenas os picos\n- Painel EQ acessível no Currently Playing\n- Artistas inteligentes e pesquisa por lupa\n- Títulos completos no Currently Playing",
-        "publishedAt": "2026-08-31T02:52:59Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.0",
+        "version": "1.5.1",
+        "tag": "ios-v1.5.1",
+        "notes": "- fix(ios): manter etiquetas do EQ numa linha\n\nComparar com ios-v1.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.0...ios-v1.5.1",
+        "publishedAt": "2026-08-31T03:20:43Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15301340,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.0/Duotone.ipa",
+          "size": 15301084,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.1/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.1/Duotone.ipa"
       },
       "windows": {
         "version": "1.5.0",

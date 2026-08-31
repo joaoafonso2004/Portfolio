@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.5.1",
+          "date": "2026-08-31T03:20:43Z",
+          "localizedDescription": "- fix(ios): manter etiquetas do EQ numa linha\n\nComparar com ios-v1.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.0...ios-v1.5.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.1/Duotone.ipa",
+          "size": 15301084,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.5.0",
           "date": "2026-08-31T02:52:59Z",
           "localizedDescription": "- Equalizador com os mesmos perfis e dez controlos do PC\n- Velocidade contínua de 0,5× a 2× com memória por faixa\n- Bass boost e treble reais, sem baixar o volume geral\n- Equalizador inicia sempre Flat e protege apenas os picos\n- Painel EQ acessível no Currently Playing\n- Artistas inteligentes e pesquisa por lupa\n- Títulos completos no Currently Playing",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.5/Duotone.ipa",
           "size": 15043280,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.0.4",
-          "date": "2026-08-25T16:55:16Z",
-          "localizedDescription": "- fix(ios): carregar o interpretador do BotGuard com <script> em vez de fetch (CORS)\n\nComparar com ios-v1.0.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.3...ios-v1.0.4",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.4/Duotone.ipa",
-          "size": 15042089,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.5.0",
-      "versionDate": "2026-08-31T02:52:59Z",
-      "versionDescription": "- Equalizador com os mesmos perfis e dez controlos do PC\n- Velocidade contínua de 0,5× a 2× com memória por faixa\n- Bass boost e treble reais, sem baixar o volume geral\n- Equalizador inicia sempre Flat e protege apenas os picos\n- Painel EQ acessível no Currently Playing\n- Artistas inteligentes e pesquisa por lupa\n- Títulos completos no Currently Playing",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.0/Duotone.ipa",
-      "size": 15301340
+      "version": "1.5.1",
+      "versionDate": "2026-08-31T03:20:43Z",
+      "versionDescription": "- fix(ios): manter etiquetas do EQ numa linha\n\nComparar com ios-v1.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.0...ios-v1.5.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.1/Duotone.ipa",
+      "size": 15301084
     }
   ],
   "news": []
