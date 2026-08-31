@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T02:41:59.498Z",
+  "generatedAt": "2026-08-31T02:42:48.239Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -20,6 +20,7 @@
       "windows": {
         "version": "1.5.0",
         "tag": "win-v1.5.0",
+        "notes": "- Bass boost e treble reais, aditivos e sem baixar o volume geral\n- Equalizador inicia sempre Flat e usa limiter apenas para proteger picos\n- Artistas inteligentes corrigem canais falsos e reconhecem títulos sem espaços no hífen\n- Pesquisa por lupa na página de Artistas\n- Mais músicas e álbuns dentro de cada artista\n- Títulos completos no Currently Playing\n- Novo logótipo da aplicação e do instalador Windows",
         "publishedAt": "2026-08-31T02:41:44Z",
         "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.5.0",
         "prerelease": false,
