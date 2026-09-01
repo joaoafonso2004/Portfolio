@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.5.6",
+          "date": "2026-09-01T20:04:54Z",
+          "localizedDescription": "- chore: 1.5.6\n- Artista: destrocar titulos ao contrario, e o repeat dizer qual dos modos\n- docs: o brilho do shuffle nao tem tamanho proprio\n\nComparar com ios-v1.5.5: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.5...ios-v1.5.6",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.6/Duotone.ipa",
+          "size": 15331274,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.5.5",
           "date": "2026-09-01T03:17:17Z",
           "localizedDescription": "- Shuffle: o brilho preenche o botao, e o normal mostra que esta ligado\n- chore: 1.5.5\n- Discover new: faixas de quem ele ja ouve deixam de entrar\n- Recomendacoes que pesam o que ele ouve, e seis arranjos na interface\n- chore: 1.5.4\n- Alvos: so vao procurar nomes que a biblioteca dele confirma\n- Recomendacoes: perguntar a um catalogo quem se parece, em vez de adivinhar\n\nComparar com ios-v1.5.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.3...ios-v1.5.5",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.0/Duotone.ipa",
           "size": 15228024,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.0.8",
-          "date": "2026-08-25T18:29:15Z",
-          "localizedDescription": "- fix(offline): usar moveSync na migracao — o move assincrono escapava ao try/catch\n- fix(offline): guardar as musicas em Documents em vez de Caches\n\nComparar com ios-v1.0.7: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.7...ios-v1.0.8",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.8/Duotone.ipa",
-          "size": 15038764,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.5.5",
-      "versionDate": "2026-09-01T03:17:17Z",
-      "versionDescription": "- Shuffle: o brilho preenche o botao, e o normal mostra que esta ligado\n- chore: 1.5.5\n- Discover new: faixas de quem ele ja ouve deixam de entrar\n- Recomendacoes que pesam o que ele ouve, e seis arranjos na interface\n- chore: 1.5.4\n- Alvos: so vao procurar nomes que a biblioteca dele confirma\n- Recomendacoes: perguntar a um catalogo quem se parece, em vez de adivinhar\n\nComparar com ios-v1.5.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.3...ios-v1.5.5",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.5/Duotone.ipa",
-      "size": 15331184
+      "version": "1.5.6",
+      "versionDate": "2026-09-01T20:04:54Z",
+      "versionDescription": "- chore: 1.5.6\n- Artista: destrocar titulos ao contrario, e o repeat dizer qual dos modos\n- docs: o brilho do shuffle nao tem tamanho proprio\n\nComparar com ios-v1.5.5: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.5...ios-v1.5.6",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.6/Duotone.ipa",
+      "size": 15331274
     }
   ],
   "news": []
