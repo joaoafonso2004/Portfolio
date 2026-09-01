@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.5.5",
+          "date": "2026-09-01T03:17:17Z",
+          "localizedDescription": "- Shuffle: o brilho preenche o botao, e o normal mostra que esta ligado\n- chore: 1.5.5\n- Discover new: faixas de quem ele ja ouve deixam de entrar\n- Recomendacoes que pesam o que ele ouve, e seis arranjos na interface\n- chore: 1.5.4\n- Alvos: so vao procurar nomes que a biblioteca dele confirma\n- Recomendacoes: perguntar a um catalogo quem se parece, em vez de adivinhar\n\nComparar com ios-v1.5.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.3...ios-v1.5.5",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.5/Duotone.ipa",
+          "size": 15331184,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.5.3",
           "date": "2026-08-31T22:37:53Z",
           "localizedDescription": "- chore: 1.5.3\n- Shuffle alternavel, \"Discover new\", e recomendacoes que sao mesmo musica\n\nComparar com ios-v1.5.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.2...ios-v1.5.3",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.8/Duotone.ipa",
           "size": 15038764,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.0.7",
-          "date": "2026-08-25T18:09:34Z",
-          "localizedDescription": "- fix(ios): mudar para o cliente VISIONOS — o substituto do android_vr\n\nComparar com ios-v1.0.6: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.6...ios-v1.0.7",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.0.7/Duotone.ipa",
-          "size": 15038343,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.5.3",
-      "versionDate": "2026-08-31T22:37:53Z",
-      "versionDescription": "- chore: 1.5.3\n- Shuffle alternavel, \"Discover new\", e recomendacoes que sao mesmo musica\n\nComparar com ios-v1.5.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.2...ios-v1.5.3",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.3/Duotone.ipa",
-      "size": 15315422
+      "version": "1.5.5",
+      "versionDate": "2026-09-01T03:17:17Z",
+      "versionDescription": "- Shuffle: o brilho preenche o botao, e o normal mostra que esta ligado\n- chore: 1.5.5\n- Discover new: faixas de quem ele ja ouve deixam de entrar\n- Recomendacoes que pesam o que ele ouve, e seis arranjos na interface\n- chore: 1.5.4\n- Alvos: so vao procurar nomes que a biblioteca dele confirma\n- Recomendacoes: perguntar a um catalogo quem se parece, em vez de adivinhar\n\nComparar com ios-v1.5.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.3...ios-v1.5.5",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.5/Duotone.ipa",
+      "size": 15331184
     }
   ],
   "news": []

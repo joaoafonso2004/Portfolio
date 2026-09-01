@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-08-31T22:38:20.204Z",
+  "generatedAt": "2026-09-01T03:18:20.432Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.5.3",
-        "tag": "ios-v1.5.3",
-        "notes": "- chore: 1.5.3\n- Shuffle alternavel, \"Discover new\", e recomendacoes que sao mesmo musica\n\nComparar com ios-v1.5.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.2...ios-v1.5.3",
-        "publishedAt": "2026-08-31T22:37:53Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.3",
+        "version": "1.5.5",
+        "tag": "ios-v1.5.5",
+        "notes": "- Shuffle: o brilho preenche o botao, e o normal mostra que esta ligado\n- chore: 1.5.5\n- Discover new: faixas de quem ele ja ouve deixam de entrar\n- Recomendacoes que pesam o que ele ouve, e seis arranjos na interface\n- chore: 1.5.4\n- Alvos: so vao procurar nomes que a biblioteca dele confirma\n- Recomendacoes: perguntar a um catalogo quem se parece, em vez de adivinhar\n\nComparar com ios-v1.5.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.3...ios-v1.5.5",
+        "publishedAt": "2026-09-01T03:17:17Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15315422,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.3/Duotone.ipa",
+          "size": 15331184,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.5/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.3/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.5/Duotone.ipa"
       },
       "windows": {
-        "version": "1.5.3",
-        "tag": "win-v1.5.3",
-        "notes": "- chore: 1.5.3\n- Shuffle alternavel, \"Discover new\", e recomendacoes que sao mesmo musica\n\nComparar com win-v1.5.2: https://github.com/joaoafonso2004/duotone/compare/win-v1.5.2...win-v1.5.3",
-        "publishedAt": "2026-08-31T22:31:32Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.5.3",
+        "version": "1.5.5",
+        "tag": "win-v1.5.5",
+        "notes": "- Shuffle: o brilho preenche o botao, e o normal mostra que esta ligado\n- chore: 1.5.5\n- Discover new: faixas de quem ele ja ouve deixam de entrar\n- Recomendacoes que pesam o que ele ouve, e seis arranjos na interface\n- chore: 1.5.4\n- Alvos: so vao procurar nomes que a biblioteca dele confirma\n- Recomendacoes: perguntar a um catalogo quem se parece, em vez de adivinhar\n\nComparar com win-v1.5.3: https://github.com/joaoafonso2004/duotone/compare/win-v1.5.3...win-v1.5.5",
+        "publishedAt": "2026-09-01T03:14:07Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.5.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 96788714,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.3/Duotone-Setup.exe",
+          "size": 96791207,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.5/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.3/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.5/Duotone-Setup.exe"
       }
     }
   }
