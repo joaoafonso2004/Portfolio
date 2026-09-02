@@ -24,7 +24,7 @@ const count = String(APPS.length).padStart(2, '0');
     <div class="flex flex-col gap-6 md:gap-12">
       {
         APPS.map((app) => (
-          <article class="app-card group relative overflow-hidden rounded-xl border border-line bg-coal p-5 sm:p-6 md:p-10" data-app={app.id} data-reveal>
+          <article class="app-card group relative overflow-hidden rounded-xl border border-line bg-coal p-5 sm:p-6 md:p-10" data-app={app.id} data-project={app.projectSlug} data-name={app.name} data-reveal>
             <!-- Hover Glow -->
             <div class="pointer-events-none absolute -inset-px opacity-0 transition-opacity duration-300 group-hover:opacity-100" style="background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(200, 169, 107, 0.09), transparent 40%);"></div>
             
@@ -121,6 +121,7 @@ const count = String(APPS.length).padStart(2, '0');
 </section>
 
 <script>
+  import { navigate } from 'astro:transitions/client';
   import { APPS, VERSIONS_PATH, releasesApi } from '../data/apps';
   import type { AppConfig, PlatformRelease, VersionsFile } from '../data/apps';
 
@@ -364,8 +365,78 @@ const count = String(APPS.length).padStart(2, '0');
     paintApp(app, platforms);
   }
 
+  /**
+   * O ficheiro entra por um iframe em vez de `location.href` porque a seguir
+   * ha uma navegacao: mudar o location arrancaria o download e cancelaria a
+   * ida para a pagina do projeto, ou o contrario, conforme o browser.
+   *
+   * O iframe vai para `#download-frames`, que persiste entre paginas. No body
+   * seria destruido no swap, e um download apanhado a meio do redirecto do
+   * GitHub nunca chegaria a comecar.
+   */
+  function startDownload(url: string) {
+    const host = document.getElementById('download-frames') ?? document.body;
+    const frame = document.createElement('iframe');
+    frame.src = url;
+    host.appendChild(frame);
+    // Depois de o browser assumir o ficheiro o iframe nao serve para nada, e
+    // um por cada clique acumulava-se durante toda a visita.
+    window.setTimeout(() => frame.remove(), 30000);
+  }
+
+  /**
+   * Cliques no download de uma app que tenha pagina de projeto: o ficheiro
+   * arranca, a espiral fecha, e o visitante aterra na pagina dessa app.
+   */
+  function armSpiralDownloads() {
+    document.querySelectorAll<HTMLElement>('.app-card[data-project]').forEach((card) => {
+      const slug = card.dataset.project;
+      const name = card.dataset.name ?? '';
+      if (!slug) return;
+
+      card.querySelectorAll<HTMLAnchorElement>('[data-dl]').forEach((btn) => {
+        // `astro:page-load` pode correr mais do que uma vez sobre o mesmo DOM,
+        // e um segundo ouvinte no mesmo botao dava dois downloads e duas
+        // navegacoes por clique.
+        if (btn.dataset.spiralArmed) return;
+        btn.dataset.spiralArmed = '1';
+
+        btn.addEventListener('click', (ev) => {
+          // Abrir noutro separador, ou com o botao do meio, e uma escolha
+          // explicita de quem clica: nao ha nada aqui que valha reescreve-la.
+          if (ev.defaultPrevented || ev.button !== 0) return;
+          if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+
+          const href = btn.getAttribute('href');
+          if (!href || btn.hasAttribute('aria-disabled')) return;
+
+          // Duas saidas que a espiral so estragaria: `target="_blank"` e o
+          // plano B para a pagina de releases, que nao descarrega nada; e
+          // `itms-services:` so instala a partir de uma navegacao directa.
+          if (btn.target === '_blank' || href.startsWith('itms-services:')) return;
+
+          ev.preventDefault();
+
+          // Antes da animacao, de proposito: adiado, o download deixa de ser
+          // consequencia directa do clique e ha browsers que o bloqueiam.
+          startDownload(href);
+
+          document.dispatchEvent(
+            new CustomEvent('portfolio:spiral', {
+              detail: { title: name, note: 'Download started' },
+            })
+          );
+
+          navigate(`/work/${slug}`);
+        });
+      });
+    });
+  }
+
   document.addEventListener('astro:page-load', async () => {
     if (!document.getElementById('apps')) return;
+
+    armSpiralDownloads();
 
     if (!versionsFetched) {
       try {

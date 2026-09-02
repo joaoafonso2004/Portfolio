@@ -28,6 +28,12 @@ export interface AppConfig {
   owner: string;
   repo: string;
   bundleId: string;
+  /**
+   * Slug da página do projeto em `/work/`. Só isto liga o botão de download
+   * à transição em espiral — uma app sem página de projeto descarrega sem
+   * animação nenhuma, que é o comportamento certo e não uma falha.
+   */
+  projectSlug?: string;
   tags: string[];
   platforms: Record<PlatformId, Platform>;
 }

@@ -553,3 +553,58 @@ body.wireframe-mode canvas {
     animation: none;
   }
 }
+
+/* ---------- Transição em espiral (botões de download) ----------
+   Oito lâminas em cunha, cada uma com o vértice no centro do ecrã, que
+   crescem desfasadas enquanto o conjunto roda — um diafragma a fechar.
+
+   Só `transform` anima. O `clip-path` é estático, o que deixa cada lâmina
+   ser rasterizada uma vez e depois apenas transformada; animar o próprio
+   recorte, ou um conic-gradient de ecrã inteiro, repintava tudo a cada
+   fotograma e dava para sentir num telemóvel.
+
+   As lâminas são criadas e destruídas em JS: oito camadas desta dimensão
+   ficariam a ocupar memória de vídeo o resto da visita, para uma animação
+   que dura um segundo e meio. */
+#page-spiral {
+  display: none;
+}
+#page-spiral.is-active {
+  display: block;
+}
+
+.spiral-blade {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* 75vmax chega ao canto mais distante de qualquer viewport: a meia
+     diagonal máxima é 100vmax·√2/2 ≈ 70.7vmax. */
+  width: 75vmax;
+  height: 40.2vmax; /* 2 · 75 · tan(22.5°) — a altura que fecha 45° */
+  margin-top: -20.1vmax;
+  background: theme('colors.ink');
+  /* Vértice à esquerda, ao centro: é aí que o transform-origin o prende. */
+  clip-path: polygon(0 50%, 100% 0, 100% 100%);
+  transform-origin: 0 50%;
+  backface-visibility: hidden;
+}
+
+/* Um fio champanhe no bordo de fuga: a única cor no meio do preto, e o que
+   faz a rotação ler-se como rotação em vez de um escurecer. */
+.spiral-edge {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 75vmax;
+  height: 1px;
+  margin-top: -0.5px;
+  background: linear-gradient(90deg, theme('colors.accent') 0%, transparent 75%);
+  transform-origin: 0 50%;
+  opacity: 0.55;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #page-spiral {
+    display: none !important;
+  }
+}

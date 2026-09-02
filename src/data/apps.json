@@ -8,6 +8,7 @@
       "owner": "joaoafonso2004",
       "repo": "duotone",
       "bundleId": "com.joao.duotone",
+      "projectSlug": "duotone",
       "tags": ["React Native", "Expo", "Electron", "Supabase"],
       "platforms": {
         "ios": {

@@ -107,6 +107,42 @@ const {
     <!-- Page Transition Curtain -->
     <div id="page-curtain" class="fixed inset-0 z-[200] bg-ink pointer-events-none origin-bottom scale-y-0" aria-hidden="true" transition:persist="curtain"></div>
 
+    <!-- Os iframes que arrancam os downloads vivem aqui, e não no body,
+         porque o body é substituído no swap: um iframe apanhado a meio do
+         redirecto do GitHub seria destruído antes de o browser assumir o
+         ficheiro. Fica com dimensão zero em vez de `display:none` — um iframe
+         escondido assim continua garantidamente a carregar. -->
+    <div
+      id="download-frames"
+      class="pointer-events-none fixed left-0 top-0 h-0 w-0 overflow-hidden opacity-0"
+      aria-hidden="true"
+      transition:persist="downloads"
+    ></div>
+
+    <!-- Espiral: a transição própria dos botões de download. Persiste no swap
+         pela mesma razão que a cortina — sem isto desapareceria a meio da
+         navegação e o ecrã piscava a branco entre as duas páginas. -->
+    <div
+      id="page-spiral"
+      class="pointer-events-none fixed inset-0 z-[201] overflow-hidden"
+      aria-hidden="true"
+      transition:persist="spiral"
+    >
+      <div data-spiral-blades class="absolute inset-0"></div>
+      <div data-spiral-label class="absolute inset-0 grid place-items-center px-6 opacity-0">
+        <div class="text-center">
+          <span
+            data-spiral-title
+            class="block font-display text-[clamp(1.9rem,6vw,3.4rem)] font-medium uppercase leading-none tracking-[0.06em] text-paper"
+          ></span>
+          <span
+            data-spiral-note
+            class="mt-4 block font-mono text-[10px] uppercase tracking-[0.22em] text-accent"
+          ></span>
+        </div>
+      </div>
+    </div>
+
     <slot />
 
     <!-- Contact modal -->
@@ -375,14 +411,164 @@ const {
       });
       gsap.ticker.lagSmoothing(0);
 
+      /* ---------- Spiral transition ----------
+         Uma segunda transicao, pedida por quem clica num botao de download em
+         vez de num link normal. As laminas estao explicadas no global.css;
+         aqui esta so a coreografia.
+
+         Vive neste modulo, e nao no Apps.astro, porque e aqui que os ganchos
+         do Astro estao registados: o fecho tem de correr *dentro* do loader da
+         navegacao, senao a pagina nova entra antes de o ecra estar tapado. */
+      const SPIRAL_BLADES = 8;
+      const SPIRAL_STEP = 360 / SPIRAL_BLADES;
+
+      type SpiralLabel = { title: string; note: string };
+
+      /** Pedido feito pelo clique; consumido pela navegacao que se lhe segue. */
+      let spiralPending: SpiralLabel | null = null;
+      /** O mesmo pedido ja em curso: sobrevive ao swap, para o abrir do outro lado. */
+      let spiralActive: SpiralLabel | null = null;
+
+      document.addEventListener('portfolio:spiral', (ev) => {
+        const detail = (ev as CustomEvent).detail ?? {};
+        spiralPending = {
+          title: String(detail.title ?? ''),
+          note: String(detail.note ?? ''),
+        };
+      });
+
+      function spiralParts() {
+        const root = document.getElementById('page-spiral');
+        const stage = root?.querySelector<HTMLElement>('[data-spiral-blades]');
+        const labelBox = root?.querySelector<HTMLElement>('[data-spiral-label]');
+        return root && stage ? { root, stage, labelBox } : null;
+      }
+
+      function closeSpiral(label: SpiralLabel) {
+        const parts = spiralParts();
+        if (!parts) return Promise.resolve();
+        const { root, stage, labelBox } = parts;
+
+        stage.textContent = '';
+        const blades: HTMLElement[] = [];
+        const edges: HTMLElement[] = [];
+        for (let i = 0; i < SPIRAL_BLADES; i++) {
+          const blade = document.createElement('div');
+          blade.className = 'spiral-blade';
+          stage.appendChild(blade);
+          blades.push(blade);
+
+          const edge = document.createElement('div');
+          edge.className = 'spiral-edge';
+          stage.appendChild(edge);
+          edges.push(edge);
+        }
+
+        const title = root.querySelector<HTMLElement>('[data-spiral-title]');
+        const note = root.querySelector<HTMLElement>('[data-spiral-note]');
+        if (title) title.textContent = label.title;
+        if (note) note.textContent = label.note;
+
+        // O conjunto entra ja a rodar: as laminas abrem enquanto ele roda, e e
+        // a soma dos dois que se le como espiral e nao como um diafragma.
+        gsap.set(stage, { rotate: -55 });
+        gsap.set(blades, { rotate: (i: number) => i * SPIRAL_STEP - 34, scale: 0 });
+        gsap.set(edges, {
+          rotate: (i: number) => i * SPIRAL_STEP + SPIRAL_STEP / 2 - 34,
+          scaleX: 0,
+          opacity: 0.55,
+        });
+        if (labelBox) gsap.set(labelBox, { opacity: 0, scale: 0.94 });
+        root.classList.add('is-active');
+
+        const tl = gsap.timeline();
+        tl.to(stage, { rotate: 0, duration: 0.85, ease: 'power3.inOut' }, 0)
+          .to(
+            blades,
+            {
+              rotate: (i: number) => i * SPIRAL_STEP,
+              scale: 1,
+              duration: 0.5,
+              ease: 'power2.out',
+              stagger: 0.04,
+            },
+            0
+          )
+          .to(
+            edges,
+            {
+              rotate: (i: number) => i * SPIRAL_STEP + SPIRAL_STEP / 2,
+              scaleX: 1,
+              duration: 0.5,
+              ease: 'power2.out',
+              stagger: 0.04,
+            },
+            0
+          )
+          // O champanhe apaga-se antes do fim: o ecra tapado tem de ser preto
+          // limpo, senao o texto por cima assenta num fundo as riscas.
+          .to(edges, { opacity: 0, duration: 0.28, ease: 'power1.in' }, 0.52);
+
+        if (labelBox) {
+          tl.to(labelBox, { opacity: 1, scale: 1, duration: 0.35, ease: 'power2.out' }, 0.5);
+        }
+
+        return tl.then();
+      }
+
+      function openSpiral() {
+        const parts = spiralParts();
+        if (!parts) return;
+        const { root, stage, labelBox } = parts;
+
+        const blades = Array.from(stage.querySelectorAll<HTMLElement>('.spiral-blade'));
+        const teardown = () => {
+          root.classList.remove('is-active');
+          stage.textContent = ''; // Liberta as camadas: ver global.css.
+        };
+
+        if (!blades.length) {
+          teardown();
+          return;
+        }
+
+        const tl = gsap.timeline({ onComplete: teardown });
+        if (labelBox) {
+          tl.to(labelBox, { opacity: 0, scale: 0.96, duration: 0.25, ease: 'power2.in' }, 0);
+        }
+        // Continua a rodar no mesmo sentido: inverter aqui daria a sensacao de
+        // recuar, quando o visitante acabou de avancar de pagina.
+        tl.to(stage, { rotate: 55, duration: 0.8, ease: 'power3.inOut' }, 0.1).to(
+          blades,
+          {
+            rotate: (i: number) => i * SPIRAL_STEP + 34,
+            scale: 0,
+            duration: 0.5,
+            ease: 'power2.in',
+            stagger: { each: 0.04, from: 'end' },
+          },
+          0.2
+        );
+      }
+
       /* ---------- Custom Page Transitions ---------- */
       document.addEventListener('astro:before-preparation', (ev) => {
         const originalLoader = (ev as any).loader;
+        // Consumir aqui e nao no clique: se a navegacao nunca chegar a
+        // acontecer, o pedido morre com ela em vez de sobrar para o link
+        // seguinte, que apanharia uma espiral que ninguem pediu.
+        spiralActive = spiralPending;
+        spiralPending = null;
+
         (ev as any).loader = async function() {
-          const curtain = document.getElementById('page-curtain');
-          if (curtain && !reduced) {
-            gsap.set(curtain, { transformOrigin: 'bottom' });
-            await gsap.to(curtain, { scaleY: 1, duration: 0.5, ease: 'power4.inOut' });
+          if (spiralActive && !reduced) {
+            await closeSpiral(spiralActive);
+          } else {
+            const curtain = document.getElementById('page-curtain');
+            if (curtain && !reduced) {
+              gsap.set(curtain, { transformOrigin: 'bottom' });
+              await gsap.to(curtain, { scaleY: 1, duration: 0.5, ease: 'power4.inOut' });
+            }
           }
           await originalLoader();
         };
@@ -420,6 +606,12 @@ const {
         // its own — clear again so that one measures from zero.
         ScrollTrigger.clearScrollMemory('manual');
         armTopPin();
+        if (spiralActive) {
+          spiralActive = null;
+          if (!reduced) openSpiral();
+          return;
+        }
+
         const curtain = document.getElementById('page-curtain');
         if (curtain && !reduced) {
           gsap.set(curtain, { transformOrigin: 'top' });
