@@ -464,6 +464,11 @@ const {
           edges.push(edge);
         }
 
+        // Depois das laminas, para ficar por cima delas no centro.
+        const core = document.createElement('div');
+        core.className = 'spiral-core';
+        stage.appendChild(core);
+
         const title = root.querySelector<HTMLElement>('[data-spiral-title]');
         const note = root.querySelector<HTMLElement>('[data-spiral-note]');
         if (title) title.textContent = label.title;
@@ -478,6 +483,7 @@ const {
           scaleX: 0,
           opacity: 0.55,
         });
+        gsap.set(core, { scale: 0 });
         if (labelBox) gsap.set(labelBox, { opacity: 0, scale: 0.94 });
         root.classList.add('is-active');
 
@@ -507,7 +513,9 @@ const {
           )
           // O champanhe apaga-se antes do fim: o ecra tapado tem de ser preto
           // limpo, senao o texto por cima assenta num fundo as riscas.
-          .to(edges, { opacity: 0, duration: 0.28, ease: 'power1.in' }, 0.52);
+          .to(edges, { opacity: 0, duration: 0.28, ease: 'power1.in' }, 0.52)
+          // Cedo: o buraco tem de estar tapado antes de as laminas chegarem.
+          .to(core, { scale: 1, duration: 0.3, ease: 'power2.out' }, 0);
 
         if (labelBox) {
           tl.to(labelBox, { opacity: 1, scale: 1, duration: 0.35, ease: 'power2.out' }, 0.5);
@@ -522,6 +530,7 @@ const {
         const { root, stage, labelBox } = parts;
 
         const blades = Array.from(stage.querySelectorAll<HTMLElement>('.spiral-blade'));
+        const core = stage.querySelector<HTMLElement>('.spiral-core');
         const teardown = () => {
           root.classList.remove('is-active');
           stage.textContent = ''; // Liberta as camadas: ver global.css.
@@ -549,6 +558,7 @@ const {
           },
           0.2
         );
+        if (core) tl.to(core, { scale: 0, duration: 0.45, ease: 'power2.in' }, 0.2);
       }
 
       /* ---------- Custom Page Transitions ---------- */

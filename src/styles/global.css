@@ -580,13 +580,31 @@ body.wireframe-mode canvas {
   /* 75vmax chega ao canto mais distante de qualquer viewport: a meia
      diagonal máxima é 100vmax·√2/2 ≈ 70.7vmax. */
   width: 75vmax;
-  height: 40.2vmax; /* 2 · 75 · tan(22.5°) — a altura que fecha 45° */
-  margin-top: -20.1vmax;
+  /* A cunha de cada lâmina tem de ser mais larga do que a fatia que lhe cabe,
+     senão sobram fendas: 8 × 45° só fecha o círculo se cada uma abrir 45°.
+     Abrem 48° (2 · 75 · tan 24°), e os 3° a mais sobrepõem-se à vizinha para
+     não ficar uma costura de um pixel entre lâminas do mesmo preto. */
+  height: 66.8vmax;
+  margin-top: -33.4vmax;
   background: theme('colors.ink');
   /* Vértice à esquerda, ao centro: é aí que o transform-origin o prende. */
   clip-path: polygon(0 50%, 100% 0, 100% 100%);
   transform-origin: 0 50%;
   backface-visibility: hidden;
+}
+
+/* Os oito vertices encontram-se todos no mesmo ponto matematico, e o
+   rasterizador deixa ai alguns pixeis meio transparentes: um asterisco do
+   fundo a espreitar no centro do ecra tapado. Este disco tapa-o. */
+.spiral-core {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6vmax;
+  height: 6vmax;
+  margin: -3vmax 0 0 -3vmax;
+  background: theme('colors.ink');
+  border-radius: 50%;
 }
 
 /* Um fio champanhe no bordo de fuga: a única cor no meio do preto, e o que
