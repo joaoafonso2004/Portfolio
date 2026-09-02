@@ -56,12 +56,17 @@ const tallHero = project.heroCrop === 'tall';
           </p>
 
           {project.stats && project.stats.length > 0 && (
-            <div class="my-1 grid grid-cols-3 gap-3 border-y border-white/10 py-5 sm:gap-4 md:my-2 md:py-4">
+            <div
+              class="my-1 grid grid-cols-3 gap-3 border-y border-white/10 py-5 sm:gap-4 md:my-2 md:py-4"
+              data-stats
+              data-itch-id={project.itchGameId}
+            >
               {project.stats.map((stat) => (
                 <div class="flex flex-col gap-1">
                   <span
                     class="stat-value font-display text-xl font-medium tracking-tight text-paper sm:text-2xl"
                     data-value={stat.value}
+                    data-live={stat.live}
                   >
                     0
                   </span>
@@ -237,33 +242,50 @@ const tallHero = project.heroCrop === 'tall';
 <script>
   import { gsap } from 'gsap';
 
+  /** Formata para o estilo do painel: 912, 1.2k, 3.4k. */
+  function format(v: number, forceK: boolean) {
+    if (forceK || v >= 1000) return (v / 1000).toFixed(1).replace('.0', '') + 'k';
+    return Math.round(v).toString();
+  }
+
+  /**
+   * Vai buscar as estatísticas ao vivo do itch.io, mas nunca faz a página
+   * esperar por elas: ao fim de 2,5 s desiste e deixa entrar os valores
+   * escritos à mão. Um itch.io lento deixaria os contadores a zero, que é pior
+   * do que um número de ontem.
+   */
+  async function fetchLive(gameId: string) {
+    try {
+      const res = await fetch(`/api/itch?id=${encodeURIComponent(gameId)}`, {
+        signal: AbortSignal.timeout(2500),
+      });
+      if (!res.ok) return null;
+      const data = await res.json();
+      return data && typeof data === 'object' && !data.error ? data : null;
+    } catch {
+      return null; // Falha em silêncio: os valores manuais chegam.
+    }
+  }
+
   document.addEventListener('astro:page-load', async () => {
-    const stats = document.querySelectorAll('.stat-value');
+    const container = document.querySelector<HTMLElement>('[data-stats]');
+    if (!container) return;
+
+    const stats = Array.from(container.querySelectorAll<HTMLElement>('.stat-value'));
     if (stats.length === 0) return;
 
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    let liveData = null;
-    // Puxa as estatísticas ao vivo da nossa API secreta (apenas se estivermos no projeto LIMINAL ou se a API existir)
-    try {
-      const res = await fetch('/api/itch');
-      if (res.ok) liveData = await res.json();
-    } catch (e) {
-      // Falha silenciosa, usa os valores por defeito
-    }
+    const gameId = container.dataset.itchId;
+    const wantsLive = stats.some((el) => el.dataset.live);
+    const live = gameId && wantsLive ? await fetchLive(gameId) : null;
 
     stats.forEach((el) => {
-      let targetStr = el.getAttribute('data-value') || '0';
-
-      // Override with live data if available
-      const labelEl = el.nextElementSibling;
-      if (liveData && labelEl) {
-        if (labelEl.textContent?.toLowerCase().includes('view')) {
-          targetStr = String(liveData.views);
-        } else if (labelEl.textContent?.toLowerCase().includes('download')) {
-          targetStr = String(liveData.downloads);
-        }
-      }
+      // O campo ao vivo ganha ao valor escrito à mão; sem ele, ou sem resposta
+      // da API, fica o último valor conhecido.
+      const key = el.dataset.live;
+      const liveValue = key && live ? live[key] : undefined;
+      const targetStr = typeof liveValue === 'number' ? String(liveValue) : el.dataset.value || '0';
 
       const isK = targetStr.toLowerCase().includes('k');
       let targetNum = parseFloat(targetStr.replace(/[^0-9.]/g, ''));
@@ -271,13 +293,8 @@ const tallHero = project.heroCrop === 'tall';
       if (isNaN(targetNum)) return;
       if (isK) targetNum *= 1000;
 
-      const format = (v: number) => {
-        if (isK || v >= 1000) return (v / 1000).toFixed(1).replace('.0', '') + 'k';
-        return Math.round(v).toString();
-      };
-
       if (reduced) {
-        el.textContent = format(targetNum);
+        el.textContent = format(targetNum, isK);
         return;
       }
 
@@ -288,8 +305,8 @@ const tallHero = project.heroCrop === 'tall';
         ease: 'power3.out',
         delay: 0.3,
         onUpdate: () => {
-          el.textContent = format(obj.v);
-        }
+          el.textContent = format(obj.v, isK);
+        },
       });
     });
   });

@@ -51,8 +51,20 @@ export interface Project {
    * gravação de ecrã esconde justamente aquilo que ela mostra.
    */
   heroCrop?: 'wide' | 'tall';
-  /** Estatísticas de destaque para exibir na página do projeto */
-  stats?: { label: string; value: string }[];
+  /**
+   * Estatísticas de destaque para exibir na página do projeto.
+   *
+   * `value` é sempre o último valor conhecido, escrito à mão. Serve de
+   * fallback: se a API cair, a página mostra um número real de uma data
+   * anterior em vez de um zero ou um traço.
+   *
+   * `live` liga a estatística a um campo da API do itch.io, que a substitui
+   * no browser. Sem `live`, o número é puramente manual — é o caso das
+   * impressões, que só existem no dashboard e não em API nenhuma.
+   */
+  stats?: { label: string; value: string; live?: 'views' | 'downloads' | 'purchases' }[];
+  /** ID do jogo no itch.io. Sem isto, nenhuma estatística é actualizada. */
+  itchGameId?: number;
   /** Peso visual no anel — nem todos os projetos merecem o mesmo espaço. */
   weight?: number;
 }
@@ -125,10 +137,12 @@ export const PROJECTS: Project[] = [
     img: liminal1,
     gallery: [liminal1, liminal2, liminal3],
     video: '/work/LIMINAL.mp4',
+    itchGameId: 4838162,
     stats: [
+      // As impressões vêm só do dashboard do itch.io — actualizar à mão.
       { label: 'Impressions', value: '3.4k' },
-      { label: 'Views', value: '270' },
-      { label: 'Downloads', value: '35' }
+      { label: 'Views', value: '912', live: 'views' },
+      { label: 'Downloads', value: '193', live: 'downloads' }
     ],
     weight: 1.1,
   },
