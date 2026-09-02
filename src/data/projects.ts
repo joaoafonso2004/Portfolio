@@ -140,7 +140,7 @@ export const PROJECTS: Project[] = [
     itchGameId: 4838162,
     stats: [
       // As impressões vêm só do dashboard do itch.io — actualizar à mão.
-      { label: 'Impressions', value: '3.4k' },
+      { label: 'Impressions', value: '9.7k' },
       { label: 'Views', value: '912', live: 'views' },
       { label: 'Downloads', value: '193', live: 'downloads' }
     ],
