@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T20:11:23.046Z",
+  "generatedAt": "2026-09-03T20:28:00.229Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.1/Duotone.ipa"
       },
       "windows": {
-        "version": "1.6.1",
-        "tag": "win-v1.6.1",
-        "notes": "- Player do iOS: a marca em vez do nome sozinho\n- Perfil: recarregar deixa de apagar o ecrã\n- Capa maior, letras sem moldura, e o Lock Screen com anterior/seguinte na pausa\n- Folhas do Social: tocar fora fecha\n- Chat: a playlist partilhada passa a mostrar-se, em vez de só \"Open playlist\"\n- Social: mensagens de texto outra vez legíveis, conversas por ordem, username fixo\n- Login por username outra vez, sem voltar a revelar emails\n\nComparar com win-v1.6.0: https://github.com/joaoafonso2004/duotone/compare/win-v1.6.0...win-v1.6.1",
-        "publishedAt": "2026-09-03T20:04:34Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.6.1",
+        "version": "1.6.2",
+        "tag": "win-v1.6.2",
+        "notes": "- Windows: a capa do perfil deixa de ser uma faixa solta ao meio\n\nComparar com win-v1.6.1: https://github.com/joaoafonso2004/duotone/compare/win-v1.6.1...win-v1.6.2",
+        "publishedAt": "2026-09-03T20:27:46Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.6.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 96833860,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.6.1/Duotone-Setup.exe",
+          "size": 96830800,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.6.2/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.6.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.6.2/Duotone-Setup.exe"
       }
     }
   }
