@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.5.7",
+          "date": "2026-09-03T00:16:01Z",
+          "localizedDescription": "- chore: 1.5.7\n- Interface: as ultimas frases em portugues passam a ingles\n- Social: a interface em ingles e com os tokens da app\n- SQL: pedidos de amizade antigos deixam de ficar impossiveis de aceitar\n- Social e perfis: trabalho em curso, por validar contra o Supabase\n- Versiona funções do Supabase e corrige data do histórico\n- Corrige pesquisa, artistas e grupos e integra funções do Windows\n- Social: conversas de grupo\n- sql: conversas de grupo (correr no Supabase antes da interface)\n- Social: fora a aba Inbox, e partilhar com varios de uma vez\n- Artista: destrocar titulos ao contrario, e o repeat dizer qual dos modos\n- Shuffle: o brilho preenche o botao, e o normal mostra que esta ligado\n- chore: 1.5.5\n- Discover new: faixas de quem ele ja ouve deixam de entrar\n- Recomendacoes que pesam o que ele ouve, e seis arranjos na interface\n- chore: 1.5.4\n- Alvos: so vao procurar nomes que a biblioteca dele confirma\n- Recomendacoes: perguntar a um catalogo quem se parece, em vez de adivinhar\n- chore: 1.5.3\n- Shuffle alternavel, \"Discover new\", e recomendacoes que sao mesmo musica\n\nComparar com ios-v1.5.6: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.6...ios-v1.5.7",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.7/Duotone.ipa",
+          "size": 15514886,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.5.6",
           "date": "2026-09-01T20:04:54Z",
           "localizedDescription": "- chore: 1.5.6\n- Artista: destrocar titulos ao contrario, e o repeat dizer qual dos modos\n- docs: o brilho do shuffle nao tem tamanho proprio\n\nComparar com ios-v1.5.5: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.5...ios-v1.5.6",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.1/Duotone.ipa",
           "size": 15229895,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.1.0",
-          "date": "2026-08-25T18:42:25Z",
-          "localizedDescription": "- feat(social): notificacoes locais para mensagens e pedidos de amizade\n\nComparar com ios-v1.0.8: https://github.com/joaoafonso2004/duotone/compare/ios-v1.0.8...ios-v1.1.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.1.0/Duotone.ipa",
-          "size": 15228024,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.5.6",
-      "versionDate": "2026-09-01T20:04:54Z",
-      "versionDescription": "- chore: 1.5.6\n- Artista: destrocar titulos ao contrario, e o repeat dizer qual dos modos\n- docs: o brilho do shuffle nao tem tamanho proprio\n\nComparar com ios-v1.5.5: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.5...ios-v1.5.6",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.6/Duotone.ipa",
-      "size": 15331274
+      "version": "1.5.7",
+      "versionDate": "2026-09-03T00:16:01Z",
+      "versionDescription": "- chore: 1.5.7\n- Interface: as ultimas frases em portugues passam a ingles\n- Social: a interface em ingles e com os tokens da app\n- SQL: pedidos de amizade antigos deixam de ficar impossiveis de aceitar\n- Social e perfis: trabalho em curso, por validar contra o Supabase\n- Versiona funções do Supabase e corrige data do histórico\n- Corrige pesquisa, artistas e grupos e integra funções do Windows\n- Social: conversas de grupo\n- sql: conversas de grupo (correr no Supabase antes da interface)\n- Social: fora a aba Inbox, e partilhar com varios de uma vez\n- Artista: destrocar titulos ao contrario, e o repeat dizer qual dos modos\n- Shuffle: o brilho preenche o botao, e o normal mostra que esta ligado\n- chore: 1.5.5\n- Discover new: faixas de quem ele ja ouve deixam de entrar\n- Recomendacoes que pesam o que ele ouve, e seis arranjos na interface\n- chore: 1.5.4\n- Alvos: so vao procurar nomes que a biblioteca dele confirma\n- Recomendacoes: perguntar a um catalogo quem se parece, em vez de adivinhar\n- chore: 1.5.3\n- Shuffle alternavel, \"Discover new\", e recomendacoes que sao mesmo musica\n\nComparar com ios-v1.5.6: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.6...ios-v1.5.7",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.7/Duotone.ipa",
+      "size": 15514886
     }
   ],
   "news": []
