@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.5.10",
+          "date": "2026-09-03T11:20:16Z",
+          "localizedDescription": "- Corrigir o perfil e sincronizar ajustes, com letras na capa em 3D\n\nComparar com ios-v1.5.9: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.9...ios-v1.5.10",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.10/Duotone.ipa",
+          "size": 15661958,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.5.9",
           "date": "2026-09-03T04:26:36Z",
           "localizedDescription": "- Adicionar destaques de perfil, preferências de sugestões e modo offline no iOS\n- Uniformizar o Social e o Perfil no Windows e no iOS\n- Concluir guardar playlists dos amigos com cópias seguras e navegação iOS\n- Playlists no perfil: mostrar as que se quiser, e guardar as dos outros\n- Imagens do perfil: o que se ve e o que fica, e ajusta-se a arrastar\n- Equalizador e velocidade: deixam de ser memoria de um aparelho so\n- Fecho do player: proteger o ramo de aborto, como o irmao dele ja estava\n- Pesquisa: cada prateleira aparece quando chega, e o refrescar sai da frente\n- Perfil no iOS: o Social volta a ter porta, e o ecra deixa de ser caixas\n\nComparar com ios-v1.5.8: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.8...ios-v1.5.9",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.0/Duotone.ipa",
           "size": 15301340,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.2.2",
-          "date": "2026-08-28T23:19:13Z",
-          "localizedDescription": "- fix(settings): remover as opcoes mortas do PC, implementar as uteis, tapar lacunas\n\nComparar com ios-v1.2.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.2.1...ios-v1.2.2",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.2.2/Duotone.ipa",
-          "size": 15261344,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.5.9",
-      "versionDate": "2026-09-03T04:26:36Z",
-      "versionDescription": "- Adicionar destaques de perfil, preferências de sugestões e modo offline no iOS\n- Uniformizar o Social e o Perfil no Windows e no iOS\n- Concluir guardar playlists dos amigos com cópias seguras e navegação iOS\n- Playlists no perfil: mostrar as que se quiser, e guardar as dos outros\n- Imagens do perfil: o que se ve e o que fica, e ajusta-se a arrastar\n- Equalizador e velocidade: deixam de ser memoria de um aparelho so\n- Fecho do player: proteger o ramo de aborto, como o irmao dele ja estava\n- Pesquisa: cada prateleira aparece quando chega, e o refrescar sai da frente\n- Perfil no iOS: o Social volta a ter porta, e o ecra deixa de ser caixas\n\nComparar com ios-v1.5.8: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.8...ios-v1.5.9",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.9/Duotone.ipa",
-      "size": 15633959
+      "version": "1.5.10",
+      "versionDate": "2026-09-03T11:20:16Z",
+      "versionDescription": "- Corrigir o perfil e sincronizar ajustes, com letras na capa em 3D\n\nComparar com ios-v1.5.9: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.9...ios-v1.5.10",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.10/Duotone.ipa",
+      "size": 15661958
     }
   ],
   "news": []

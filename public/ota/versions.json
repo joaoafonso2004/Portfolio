@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-03T11:17:05.649Z",
+  "generatedAt": "2026-09-03T11:20:33.540Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.5.9",
-        "tag": "ios-v1.5.9",
-        "notes": "- Adicionar destaques de perfil, preferências de sugestões e modo offline no iOS\n- Uniformizar o Social e o Perfil no Windows e no iOS\n- Concluir guardar playlists dos amigos com cópias seguras e navegação iOS\n- Playlists no perfil: mostrar as que se quiser, e guardar as dos outros\n- Imagens do perfil: o que se ve e o que fica, e ajusta-se a arrastar\n- Equalizador e velocidade: deixam de ser memoria de um aparelho so\n- Fecho do player: proteger o ramo de aborto, como o irmao dele ja estava\n- Pesquisa: cada prateleira aparece quando chega, e o refrescar sai da frente\n- Perfil no iOS: o Social volta a ter porta, e o ecra deixa de ser caixas\n\nComparar com ios-v1.5.8: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.8...ios-v1.5.9",
-        "publishedAt": "2026-09-03T04:26:36Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.9",
+        "version": "1.5.10",
+        "tag": "ios-v1.5.10",
+        "notes": "- Corrigir o perfil e sincronizar ajustes, com letras na capa em 3D\n\nComparar com ios-v1.5.9: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.9...ios-v1.5.10",
+        "publishedAt": "2026-09-03T11:20:16Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.10",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15633959,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.9/Duotone.ipa",
-          "downloads": 2
+          "size": 15661958,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.10/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.9/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.10/Duotone.ipa"
       },
       "windows": {
         "version": "1.5.10",
