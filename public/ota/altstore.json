@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.6.1",
+          "date": "2026-09-03T20:11:07Z",
+          "localizedDescription": "- Player do iOS: a marca em vez do nome sozinho\n- Perfil: recarregar deixa de apagar o ecrã\n- Capa maior, letras sem moldura, e o Lock Screen com anterior/seguinte na pausa\n- Folhas do Social: tocar fora fecha\n- Chat: a playlist partilhada passa a mostrar-se, em vez de só \"Open playlist\"\n- Social: mensagens de texto outra vez legíveis, conversas por ordem, username fixo\n- Login por username outra vez, sem voltar a revelar emails\n\nComparar com ios-v1.6.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.0...ios-v1.6.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.1/Duotone.ipa",
+          "size": 15966067,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.6.0",
           "date": "2026-09-03T17:57:54Z",
           "localizedDescription": "- CI: o teste das novas regras de SQL tem de ir no repositório\n- Segurança: fechar o catálogo, as playlists privadas e as mensagens dos outros\n\nComparar com ios-v1.5.12: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.12...ios-v1.6.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.5/Duotone.ipa",
           "size": 15331184,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.5.3",
-          "date": "2026-08-31T22:37:53Z",
-          "localizedDescription": "- chore: 1.5.3\n- Shuffle alternavel, \"Discover new\", e recomendacoes que sao mesmo musica\n\nComparar com ios-v1.5.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.2...ios-v1.5.3",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.3/Duotone.ipa",
-          "size": 15315422,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.6.0",
-      "versionDate": "2026-09-03T17:57:54Z",
-      "versionDescription": "- CI: o teste das novas regras de SQL tem de ir no repositório\n- Segurança: fechar o catálogo, as playlists privadas e as mensagens dos outros\n\nComparar com ios-v1.5.12: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.12...ios-v1.6.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.0/Duotone.ipa",
-      "size": 15678037
+      "version": "1.6.1",
+      "versionDate": "2026-09-03T20:11:07Z",
+      "versionDescription": "- Player do iOS: a marca em vez do nome sozinho\n- Perfil: recarregar deixa de apagar o ecrã\n- Capa maior, letras sem moldura, e o Lock Screen com anterior/seguinte na pausa\n- Folhas do Social: tocar fora fecha\n- Chat: a playlist partilhada passa a mostrar-se, em vez de só \"Open playlist\"\n- Social: mensagens de texto outra vez legíveis, conversas por ordem, username fixo\n- Login por username outra vez, sem voltar a revelar emails\n\nComparar com ios-v1.6.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.0...ios-v1.6.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.1/Duotone.ipa",
+      "size": 15966067
     }
   ],
   "news": []
