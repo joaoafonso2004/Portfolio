@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-03T17:52:35.677Z",
+  "generatedAt": "2026-09-03T17:58:07.937Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.5.12",
-        "tag": "ios-v1.5.12",
-        "notes": "- fix: restore original App.tsx entry point\n\nComparar com ios-v1.5.11: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.11...ios-v1.5.12",
-        "publishedAt": "2026-09-03T14:32:35Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.12",
+        "version": "1.6.0",
+        "tag": "ios-v1.6.0",
+        "notes": "- CI: o teste das novas regras de SQL tem de ir no repositório\n- Segurança: fechar o catálogo, as playlists privadas e as mensagens dos outros\n\nComparar com ios-v1.5.12: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.12...ios-v1.6.0",
+        "publishedAt": "2026-09-03T17:57:54Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.6.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15668065,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.12/Duotone.ipa",
+          "size": 15678037,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.0/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.12/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.0/Duotone.ipa"
       },
       "windows": {
         "version": "1.6.0",

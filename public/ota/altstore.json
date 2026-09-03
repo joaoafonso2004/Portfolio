@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.6.0",
+          "date": "2026-09-03T17:57:54Z",
+          "localizedDescription": "- CI: o teste das novas regras de SQL tem de ir no repositório\n- Segurança: fechar o catálogo, as playlists privadas e as mensagens dos outros\n\nComparar com ios-v1.5.12: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.12...ios-v1.6.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.0/Duotone.ipa",
+          "size": 15678037,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.5.12",
           "date": "2026-09-03T14:32:35Z",
           "localizedDescription": "- fix: restore original App.tsx entry point\n\nComparar com ios-v1.5.11: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.11...ios-v1.5.12",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.3/Duotone.ipa",
           "size": 15315422,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.5.2",
-          "date": "2026-08-31T21:53:57Z",
-          "localizedDescription": "- chore: 1.5.2\n- Pesquisa: o \"Daily flow\" passa a descobrir por afinidade\n- Sugestoes que se parecem com a playlist, e nao com o catalogo\n- Shuffle: um botao so, e as particulas a atravessar\n- Smart shuffle: sugestoes que nao repetem, nao interrompem, e nao queimam quota\n- chore: nao versionar videos de referencia largados na raiz\n- Shuffle inteligente: marca na fila, botoes nas listas, e uma animacao\n- Shuffle inteligente: de quatro em quatro faixas entra uma nova\n- Reverter a limpeza do titulo no ecra bloqueado\n- Telemovel: EQ que \"nao guardava\", e o ecra bloqueado com o nome a dobrar\n\nComparar com ios-v1.5.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.1...ios-v1.5.2",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.2/Duotone.ipa",
-          "size": 15313343,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.5.12",
-      "versionDate": "2026-09-03T14:32:35Z",
-      "versionDescription": "- fix: restore original App.tsx entry point\n\nComparar com ios-v1.5.11: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.11...ios-v1.5.12",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.12/Duotone.ipa",
-      "size": 15668065
+      "version": "1.6.0",
+      "versionDate": "2026-09-03T17:57:54Z",
+      "versionDescription": "- CI: o teste das novas regras de SQL tem de ir no repositório\n- Segurança: fechar o catálogo, as playlists privadas e as mensagens dos outros\n\nComparar com ios-v1.5.12: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.12...ios-v1.6.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.0/Duotone.ipa",
+      "size": 15678037
     }
   ],
   "news": []
