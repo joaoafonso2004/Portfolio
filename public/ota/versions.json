@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-03T04:21:05.822Z",
+  "generatedAt": "2026-09-03T04:26:50.648Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.5.8",
-        "tag": "ios-v1.5.8",
-        "notes": "- Aviso de atualizacao: um \"?\" que explica como se instala, por sistema\n- Interface: o portugues que ainda restava passa a ingles\n- Biblioteca: a lista deixa de esperar pela rede para aparecer\n- Grupos: o menu no padrao da app, e a criacao deixa de falhar as escuras\n- chore: 1.5.8\n- Fix: alinhar todas as versoes do SDK 57 para a app voltar a abrir no iOS\n- Perfil: a cor de destaque passa a ter funcao, e fora os dois botoes repetidos\n- Social: coerencia com a app, voltar no perfil, apagar conversas, e paginas rapidas\n- Interface: o ultimo 'Adicionar a fila' que faltava\n- Interface: o resto do portugues visivel passa a ingles\n\nComparar com ios-v1.5.7: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.7...ios-v1.5.8",
-        "publishedAt": "2026-09-03T01:30:50Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.8",
+        "version": "1.5.9",
+        "tag": "ios-v1.5.9",
+        "notes": "- Adicionar destaques de perfil, preferências de sugestões e modo offline no iOS\n- Uniformizar o Social e o Perfil no Windows e no iOS\n- Concluir guardar playlists dos amigos com cópias seguras e navegação iOS\n- Playlists no perfil: mostrar as que se quiser, e guardar as dos outros\n- Imagens do perfil: o que se ve e o que fica, e ajusta-se a arrastar\n- Equalizador e velocidade: deixam de ser memoria de um aparelho so\n- Fecho do player: proteger o ramo de aborto, como o irmao dele ja estava\n- Pesquisa: cada prateleira aparece quando chega, e o refrescar sai da frente\n- Perfil no iOS: o Social volta a ter porta, e o ecra deixa de ser caixas\n\nComparar com ios-v1.5.8: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.8...ios-v1.5.9",
+        "publishedAt": "2026-09-03T04:26:36Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.9",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15586856,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.8/Duotone.ipa",
-          "downloads": 1
+          "size": 15633959,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.9/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.8/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.9/Duotone.ipa"
       },
       "windows": {
         "version": "1.5.9",
