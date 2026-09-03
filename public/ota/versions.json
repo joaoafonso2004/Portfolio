@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T14:37:10.585Z",
+  "generatedAt": "2026-09-03T00:13:36.208Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15331274,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.6/Duotone.ipa",
-          "downloads": 2
+          "downloads": 6
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.6/Duotone.ipa"
       },
       "windows": {
-        "version": "1.5.6",
-        "tag": "win-v1.5.6",
-        "notes": "- chore: 1.5.6\n- Artista: destrocar titulos ao contrario, e o repeat dizer qual dos modos\n- docs: o brilho do shuffle nao tem tamanho proprio\n\nComparar com win-v1.5.5: https://github.com/joaoafonso2004/duotone/compare/win-v1.5.5...win-v1.5.6",
-        "publishedAt": "2026-09-01T19:59:04Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.5.6",
+        "version": "1.5.7",
+        "tag": "win-v1.5.7",
+        "notes": "- chore: 1.5.7\n- Interface: as ultimas frases em portugues passam a ingles\n- Social: a interface em ingles e com os tokens da app\n- SQL: pedidos de amizade antigos deixam de ficar impossiveis de aceitar\n- Social e perfis: trabalho em curso, por validar contra o Supabase\n- Versiona funções do Supabase e corrige data do histórico\n- Corrige pesquisa, artistas e grupos e integra funções do Windows\n- Social: conversas de grupo\n- sql: conversas de grupo (correr no Supabase antes da interface)\n- Social: fora a aba Inbox, e partilhar com varios de uma vez\n- Artista: destrocar titulos ao contrario, e o repeat dizer qual dos modos\n- Shuffle: o brilho preenche o botao, e o normal mostra que esta ligado\n- chore: 1.5.5\n- Discover new: faixas de quem ele ja ouve deixam de entrar\n- Recomendacoes que pesam o que ele ouve, e seis arranjos na interface\n- chore: 1.5.4\n- Alvos: so vao procurar nomes que a biblioteca dele confirma\n- Recomendacoes: perguntar a um catalogo quem se parece, em vez de adivinhar\n- chore: 1.5.3\n- Shuffle alternavel, \"Discover new\", e recomendacoes que sao mesmo musica\n\nComparar com win-v1.5.6: https://github.com/joaoafonso2004/duotone/compare/win-v1.5.6...win-v1.5.7",
+        "publishedAt": "2026-09-03T00:13:20Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.5.7",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 96789175,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.6/Duotone-Setup.exe",
-          "downloads": 1
+          "size": 96817256,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.7/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.6/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.7/Duotone-Setup.exe"
       }
     }
   }
