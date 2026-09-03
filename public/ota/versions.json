@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T14:33:21.160Z",
+  "generatedAt": "2026-09-03T17:52:35.677Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.12/Duotone.ipa"
       },
       "windows": {
-        "version": "1.5.12",
-        "tag": "win-v1.5.12",
-        "notes": "- fix: restore original App.tsx entry point\n\nComparar com win-v1.5.11: https://github.com/joaoafonso2004/duotone/compare/win-v1.5.11...win-v1.5.12",
-        "publishedAt": "2026-09-03T14:26:16Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.5.12",
+        "version": "1.6.0",
+        "tag": "win-v1.6.0",
+        "notes": "- CI: o teste das novas regras de SQL tem de ir no repositório\n- Segurança: fechar o catálogo, as playlists privadas e as mensagens dos outros\n\nComparar com win-v1.5.12: https://github.com/joaoafonso2004/duotone/compare/win-v1.5.12...win-v1.6.0",
+        "publishedAt": "2026-09-03T17:52:18Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.6.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 96831363,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.12/Duotone-Setup.exe",
+          "size": 96833370,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.6.0/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.12/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.6.0/Duotone-Setup.exe"
       }
     }
   }
