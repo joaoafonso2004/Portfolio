@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-03T01:25:34.653Z",
+  "generatedAt": "2026-09-03T01:31:05.949Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.5.7",
-        "tag": "ios-v1.5.7",
-        "notes": "- chore: 1.5.7\n- Interface: as ultimas frases em portugues passam a ingles\n- Social: a interface em ingles e com os tokens da app\n- SQL: pedidos de amizade antigos deixam de ficar impossiveis de aceitar\n- Social e perfis: trabalho em curso, por validar contra o Supabase\n- Versiona funções do Supabase e corrige data do histórico\n- Corrige pesquisa, artistas e grupos e integra funções do Windows\n- Social: conversas de grupo\n- sql: conversas de grupo (correr no Supabase antes da interface)\n- Social: fora a aba Inbox, e partilhar com varios de uma vez\n- Artista: destrocar titulos ao contrario, e o repeat dizer qual dos modos\n- Shuffle: o brilho preenche o botao, e o normal mostra que esta ligado\n- chore: 1.5.5\n- Discover new: faixas de quem ele ja ouve deixam de entrar\n- Recomendacoes que pesam o que ele ouve, e seis arranjos na interface\n- chore: 1.5.4\n- Alvos: so vao procurar nomes que a biblioteca dele confirma\n- Recomendacoes: perguntar a um catalogo quem se parece, em vez de adivinhar\n- chore: 1.5.3\n- Shuffle alternavel, \"Discover new\", e recomendacoes que sao mesmo musica\n\nComparar com ios-v1.5.6: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.6...ios-v1.5.7",
-        "publishedAt": "2026-09-03T00:16:01Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.7",
+        "version": "1.5.8",
+        "tag": "ios-v1.5.8",
+        "notes": "- Aviso de atualizacao: um \"?\" que explica como se instala, por sistema\n- Interface: o portugues que ainda restava passa a ingles\n- Biblioteca: a lista deixa de esperar pela rede para aparecer\n- Grupos: o menu no padrao da app, e a criacao deixa de falhar as escuras\n- chore: 1.5.8\n- Fix: alinhar todas as versoes do SDK 57 para a app voltar a abrir no iOS\n- Perfil: a cor de destaque passa a ter funcao, e fora os dois botoes repetidos\n- Social: coerencia com a app, voltar no perfil, apagar conversas, e paginas rapidas\n- Interface: o ultimo 'Adicionar a fila' que faltava\n- Interface: o resto do portugues visivel passa a ingles\n\nComparar com ios-v1.5.7: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.7...ios-v1.5.8",
+        "publishedAt": "2026-09-03T01:30:50Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.8",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15514886,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.7/Duotone.ipa",
-          "downloads": 1
+          "size": 15586856,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.8/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.7/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.8/Duotone.ipa"
       },
       "windows": {
         "version": "1.5.8",
