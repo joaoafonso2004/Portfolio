@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.6.3",
+          "date": "2026-09-03T21:30:14Z",
+          "localizedDescription": "- Perfil e partilha: tirar a música destacada, partilhar para grupos, e a capa até ao topo\n\nComparar com ios-v1.6.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.2...ios-v1.6.3",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.3/Duotone.ipa",
+          "size": 15967118,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.6.2",
           "date": "2026-09-03T20:32:49Z",
           "localizedDescription": "- Windows: a capa do perfil deixa de ser uma faixa solta ao meio\n\nComparar com ios-v1.6.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.1...ios-v1.6.2",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.7/Duotone.ipa",
           "size": 15514886,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.5.6",
-          "date": "2026-09-01T20:04:54Z",
-          "localizedDescription": "- chore: 1.5.6\n- Artista: destrocar titulos ao contrario, e o repeat dizer qual dos modos\n- docs: o brilho do shuffle nao tem tamanho proprio\n\nComparar com ios-v1.5.5: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.5...ios-v1.5.6",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.6/Duotone.ipa",
-          "size": 15331274,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.6.2",
-      "versionDate": "2026-09-03T20:32:49Z",
-      "versionDescription": "- Windows: a capa do perfil deixa de ser uma faixa solta ao meio\n\nComparar com ios-v1.6.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.1...ios-v1.6.2",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.2/Duotone.ipa",
-      "size": 15966038
+      "version": "1.6.3",
+      "versionDate": "2026-09-03T21:30:14Z",
+      "versionDescription": "- Perfil e partilha: tirar a música destacada, partilhar para grupos, e a capa até ao topo\n\nComparar com ios-v1.6.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.2...ios-v1.6.3",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.3/Duotone.ipa",
+      "size": 15967118
     }
   ],
   "news": []

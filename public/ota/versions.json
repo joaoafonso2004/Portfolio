@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-03T21:24:34.212Z",
+  "generatedAt": "2026-09-03T21:30:28.877Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.6.2",
-        "tag": "ios-v1.6.2",
-        "notes": "- Windows: a capa do perfil deixa de ser uma faixa solta ao meio\n\nComparar com ios-v1.6.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.1...ios-v1.6.2",
-        "publishedAt": "2026-09-03T20:32:49Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.6.2",
+        "version": "1.6.3",
+        "tag": "ios-v1.6.3",
+        "notes": "- Perfil e partilha: tirar a música destacada, partilhar para grupos, e a capa até ao topo\n\nComparar com ios-v1.6.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.2...ios-v1.6.3",
+        "publishedAt": "2026-09-03T21:30:14Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.6.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15966038,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.2/Duotone.ipa",
+          "size": 15967118,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.3/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.2/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.3/Duotone.ipa"
       },
       "windows": {
         "version": "1.6.3",
