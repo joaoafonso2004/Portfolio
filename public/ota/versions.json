@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T11:20:33.540Z",
+  "generatedAt": "2026-09-03T14:00:58.335Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15661958,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.10/Duotone.ipa",
-          "downloads": 0
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.10/Duotone.ipa"
       },
       "windows": {
-        "version": "1.5.10",
-        "tag": "win-v1.5.10",
-        "notes": "- Corrigir o perfil e sincronizar ajustes, com letras na capa em 3D\n\nComparar com win-v1.5.9: https://github.com/joaoafonso2004/duotone/compare/win-v1.5.9...win-v1.5.10",
-        "publishedAt": "2026-09-03T11:16:52Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.5.10",
+        "version": "1.5.11",
+        "tag": "win-v1.5.11",
+        "notes": "- fix: resolve black bars on cube rotation and keep seamless audio reaction\n- Escolher playlists do perfil: as linhas bloqueadas passam a parecer bloqueadas\n- Perfil: tirar os \"Try again\" das secções que falham\n- Grupos: quem falou fica à vista, e as opções saem de cima da conversa\n\nComparar com win-v1.5.10: https://github.com/joaoafonso2004/duotone/compare/win-v1.5.10...win-v1.5.11",
+        "publishedAt": "2026-09-03T14:00:42Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.5.11",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 96828462,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.10/Duotone-Setup.exe",
+          "size": 95802791,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.11/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.10/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.5.11/Duotone-Setup.exe"
       }
     }
   }
