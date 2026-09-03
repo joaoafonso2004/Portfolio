@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.5.12",
+          "date": "2026-09-03T14:32:35Z",
+          "localizedDescription": "- fix: restore original App.tsx entry point\n\nComparar com ios-v1.5.11: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.11...ios-v1.5.12",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.12/Duotone.ipa",
+          "size": 15668065,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.5.11",
           "date": "2026-09-03T14:05:51Z",
           "localizedDescription": "- fix: resolve black bars on cube rotation and keep seamless audio reaction\n- Escolher playlists do perfil: as linhas bloqueadas passam a parecer bloqueadas\n- Perfil: tirar os \"Try again\" das secções que falham\n- Grupos: quem falou fica à vista, e as opções saem de cima da conversa\n\nComparar com ios-v1.5.10: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.10...ios-v1.5.11",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.2/Duotone.ipa",
           "size": 15313343,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.5.1",
-          "date": "2026-08-31T03:20:43Z",
-          "localizedDescription": "- Corrige as etiquetas do equalizador no telemóvel\n- BASS, PUNCH, CLEAR e TREBLE ficam centrados numa única linha",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.1/Duotone.ipa",
-          "size": 15301084,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.5.11",
-      "versionDate": "2026-09-03T14:05:51Z",
-      "versionDescription": "- fix: resolve black bars on cube rotation and keep seamless audio reaction\n- Escolher playlists do perfil: as linhas bloqueadas passam a parecer bloqueadas\n- Perfil: tirar os \"Try again\" das secções que falham\n- Grupos: quem falou fica à vista, e as opções saem de cima da conversa\n\nComparar com ios-v1.5.10: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.10...ios-v1.5.11",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.11/Duotone.ipa",
-      "size": 14261866
+      "version": "1.5.12",
+      "versionDate": "2026-09-03T14:32:35Z",
+      "versionDescription": "- fix: restore original App.tsx entry point\n\nComparar com ios-v1.5.11: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.11...ios-v1.5.12",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.12/Duotone.ipa",
+      "size": 15668065
     }
   ],
   "news": []

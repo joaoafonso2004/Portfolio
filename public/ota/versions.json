@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-03T14:26:30.813Z",
+  "generatedAt": "2026-09-03T14:33:21.160Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.5.11",
-        "tag": "ios-v1.5.11",
-        "notes": "- fix: resolve black bars on cube rotation and keep seamless audio reaction\n- Escolher playlists do perfil: as linhas bloqueadas passam a parecer bloqueadas\n- Perfil: tirar os \"Try again\" das secções que falham\n- Grupos: quem falou fica à vista, e as opções saem de cima da conversa\n\nComparar com ios-v1.5.10: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.10...ios-v1.5.11",
-        "publishedAt": "2026-09-03T14:05:51Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.11",
+        "version": "1.5.12",
+        "tag": "ios-v1.5.12",
+        "notes": "- fix: restore original App.tsx entry point\n\nComparar com ios-v1.5.11: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.11...ios-v1.5.12",
+        "publishedAt": "2026-09-03T14:32:35Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.5.12",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 14261866,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.11/Duotone.ipa",
+          "size": 15668065,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.12/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.11/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.12/Duotone.ipa"
       },
       "windows": {
         "version": "1.5.12",
