@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.5.11",
+          "date": "2026-09-03T14:05:51Z",
+          "localizedDescription": "- fix: resolve black bars on cube rotation and keep seamless audio reaction\n- Escolher playlists do perfil: as linhas bloqueadas passam a parecer bloqueadas\n- Perfil: tirar os \"Try again\" das secções que falham\n- Grupos: quem falou fica à vista, e as opções saem de cima da conversa\n\nComparar com ios-v1.5.10: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.10...ios-v1.5.11",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.11/Duotone.ipa",
+          "size": 14261866,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.5.10",
           "date": "2026-09-03T11:20:16Z",
           "localizedDescription": "- Corrigir o perfil e sincronizar ajustes, com letras na capa em 3D\n\nComparar com ios-v1.5.9: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.9...ios-v1.5.10",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.1/Duotone.ipa",
           "size": 15301084,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.5.0",
-          "date": "2026-08-31T02:52:59Z",
-          "localizedDescription": "- Equalizador com os mesmos perfis e dez controlos do PC\n- Velocidade contínua de 0,5× a 2× com memória por faixa\n- Bass boost e treble reais, sem baixar o volume geral\n- Equalizador inicia sempre Flat e protege apenas os picos\n- Painel EQ acessível no Currently Playing\n- Artistas inteligentes e pesquisa por lupa\n- Títulos completos no Currently Playing",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.0/Duotone.ipa",
-          "size": 15301340,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.5.10",
-      "versionDate": "2026-09-03T11:20:16Z",
-      "versionDescription": "- Corrigir o perfil e sincronizar ajustes, com letras na capa em 3D\n\nComparar com ios-v1.5.9: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.9...ios-v1.5.10",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.10/Duotone.ipa",
-      "size": 15661958
+      "version": "1.5.11",
+      "versionDate": "2026-09-03T14:05:51Z",
+      "versionDescription": "- fix: resolve black bars on cube rotation and keep seamless audio reaction\n- Escolher playlists do perfil: as linhas bloqueadas passam a parecer bloqueadas\n- Perfil: tirar os \"Try again\" das secções que falham\n- Grupos: quem falou fica à vista, e as opções saem de cima da conversa\n\nComparar com ios-v1.5.10: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.10...ios-v1.5.11",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.11/Duotone.ipa",
+      "size": 14261866
     }
   ],
   "news": []
