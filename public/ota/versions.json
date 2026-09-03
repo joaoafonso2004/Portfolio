@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T20:33:17.926Z",
+  "generatedAt": "2026-09-03T21:24:34.212Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.2/Duotone.ipa"
       },
       "windows": {
-        "version": "1.6.2",
-        "tag": "win-v1.6.2",
-        "notes": "- Windows: a capa do perfil deixa de ser uma faixa solta ao meio\n\nComparar com win-v1.6.1: https://github.com/joaoafonso2004/duotone/compare/win-v1.6.1...win-v1.6.2",
-        "publishedAt": "2026-09-03T20:27:46Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.6.2",
+        "version": "1.6.3",
+        "tag": "win-v1.6.3",
+        "notes": "- Perfil e partilha: tirar a música destacada, partilhar para grupos, e a capa até ao topo\n\nComparar com win-v1.6.2: https://github.com/joaoafonso2004/duotone/compare/win-v1.6.2...win-v1.6.3",
+        "publishedAt": "2026-09-03T21:24:20Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.6.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 96830800,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.6.2/Duotone-Setup.exe",
+          "size": 96832907,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.6.3/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.6.2/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.6.3/Duotone-Setup.exe"
       }
     }
   }
