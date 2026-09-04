@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.7.1",
+          "date": "2026-09-04T15:56:09Z",
+          "localizedDescription": "- Capa do Lock Screen e do carro sem as barras pretas do YouTube\n- Lock Screen: manter anterior/seguinte quando o expo-video volta a registar\n\nComparar com ios-v1.7.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.0...ios-v1.7.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.1/Duotone.ipa",
+          "size": 15834589,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.6.5",
           "date": "2026-09-04T04:05:05Z",
           "localizedDescription": "- Separar o alvo do widget do modulo Expo\n- Compatibilizar o fundo do widget com iOS 16\n- Corrigir lockfile para a build iOS\n- Widget iOS com a faixa e os amigos a ouvir\n- Uma cor só, e a capa a mandar nela\n\nComparar com ios-v1.6.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.4...ios-v1.6.5",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.10/Duotone.ipa",
           "size": 15661958,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.5.9",
-          "date": "2026-09-03T04:26:36Z",
-          "localizedDescription": "- Adicionar destaques de perfil, preferências de sugestões e modo offline no iOS\n- Uniformizar o Social e o Perfil no Windows e no iOS\n- Concluir guardar playlists dos amigos com cópias seguras e navegação iOS\n- Playlists no perfil: mostrar as que se quiser, e guardar as dos outros\n- Imagens do perfil: o que se ve e o que fica, e ajusta-se a arrastar\n- Equalizador e velocidade: deixam de ser memoria de um aparelho so\n- Fecho do player: proteger o ramo de aborto, como o irmao dele ja estava\n- Pesquisa: cada prateleira aparece quando chega, e o refrescar sai da frente\n- Perfil no iOS: o Social volta a ter porta, e o ecra deixa de ser caixas\n\nComparar com ios-v1.5.8: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.8...ios-v1.5.9",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.9/Duotone.ipa",
-          "size": 15633959,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.6.5",
-      "versionDate": "2026-09-04T04:05:05Z",
-      "versionDescription": "- Separar o alvo do widget do modulo Expo\n- Compatibilizar o fundo do widget com iOS 16\n- Corrigir lockfile para a build iOS\n- Widget iOS com a faixa e os amigos a ouvir\n- Uma cor só, e a capa a mandar nela\n\nComparar com ios-v1.6.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.4...ios-v1.6.5",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.5/Duotone.ipa",
-      "size": 17862955
+      "version": "1.7.1",
+      "versionDate": "2026-09-04T15:56:09Z",
+      "versionDescription": "- Capa do Lock Screen e do carro sem as barras pretas do YouTube\n- Lock Screen: manter anterior/seguinte quando o expo-video volta a registar\n\nComparar com ios-v1.7.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.0...ios-v1.7.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.1/Duotone.ipa",
+      "size": 15834589
     }
   ],
   "news": []

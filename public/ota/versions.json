@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-04T15:50:41.288Z",
+  "generatedAt": "2026-09-04T15:56:24.201Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.6.5",
-        "tag": "ios-v1.6.5",
-        "notes": "- Separar o alvo do widget do modulo Expo\n- Compatibilizar o fundo do widget com iOS 16\n- Corrigir lockfile para a build iOS\n- Widget iOS com a faixa e os amigos a ouvir\n- Uma cor só, e a capa a mandar nela\n\nComparar com ios-v1.6.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.4...ios-v1.6.5",
-        "publishedAt": "2026-09-04T04:05:05Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.6.5",
+        "version": "1.7.1",
+        "tag": "ios-v1.7.1",
+        "notes": "- Capa do Lock Screen e do carro sem as barras pretas do YouTube\n- Lock Screen: manter anterior/seguinte quando o expo-video volta a registar\n\nComparar com ios-v1.7.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.0...ios-v1.7.1",
+        "publishedAt": "2026-09-04T15:56:09Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.7.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17862955,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.5/Duotone.ipa",
-          "downloads": 2
+          "size": 15834589,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.1/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.5/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.1/Duotone.ipa"
       },
       "windows": {
         "version": "1.7.1",
