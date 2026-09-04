@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T16:16:51.890Z",
+  "generatedAt": "2026-09-04T16:19:59.744Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.2/Duotone.ipa"
       },
       "windows": {
-        "version": "1.7.2",
-        "tag": "win-v1.7.2",
-        "notes": "- Destravar faixas que ficavam presas no último segundo\n\nComparar com win-v1.7.1: https://github.com/joaoafonso2004/duotone/compare/win-v1.7.1...win-v1.7.2",
-        "publishedAt": "2026-09-04T16:12:14Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.7.2",
+        "version": "1.7.3",
+        "tag": "win-v1.7.3",
+        "notes": "- Destravar a faixa presa também com o ecrã bloqueado\n\nComparar com win-v1.7.2: https://github.com/joaoafonso2004/duotone/compare/win-v1.7.2...win-v1.7.3",
+        "publishedAt": "2026-09-04T16:19:46Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.7.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95201532,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.2/Duotone-Setup.exe",
+          "size": 95201749,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.3/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.2/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.3/Duotone-Setup.exe"
       }
     }
   }
