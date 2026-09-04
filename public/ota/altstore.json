@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.6.5",
+          "date": "2026-09-04T04:05:05Z",
+          "localizedDescription": "- Separar o alvo do widget do modulo Expo\n- Compatibilizar o fundo do widget com iOS 16\n- Corrigir lockfile para a build iOS\n- Widget iOS com a faixa e os amigos a ouvir\n- Uma cor só, e a capa a mandar nela\n\nComparar com ios-v1.6.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.4...ios-v1.6.5",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.5/Duotone.ipa",
+          "size": 17862955,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.6.4",
           "date": "2026-09-04T02:19:49Z",
           "localizedDescription": "- Windows: rever ao teclado, e voltar atrás a partir do Now Playing\n- Correspondência: menos faixas por confirmar, e nunca a versão errada\n- Fix: importação do Spotify dava \"not found\" em todas as faixas no Windows\n- Windows: o player deixa de ser deitado fora a cada música\n- Reações nas mensagens\n- Editor: a moldura da capa passa a ser o cabeçalho do perfil\n- Capa: o recorte e o cabeçalho voltam a ter a mesma forma\n\nComparar com ios-v1.6.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.3...ios-v1.6.4",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.9/Duotone.ipa",
           "size": 15633959,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.5.8",
-          "date": "2026-09-03T01:30:50Z",
-          "localizedDescription": "- Aviso de atualizacao: um \"?\" que explica como se instala, por sistema\n- Interface: o portugues que ainda restava passa a ingles\n- Biblioteca: a lista deixa de esperar pela rede para aparecer\n- Grupos: o menu no padrao da app, e a criacao deixa de falhar as escuras\n- chore: 1.5.8\n- Fix: alinhar todas as versoes do SDK 57 para a app voltar a abrir no iOS\n- Perfil: a cor de destaque passa a ter funcao, e fora os dois botoes repetidos\n- Social: coerencia com a app, voltar no perfil, apagar conversas, e paginas rapidas\n- Interface: o ultimo 'Adicionar a fila' que faltava\n- Interface: o resto do portugues visivel passa a ingles\n\nComparar com ios-v1.5.7: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.7...ios-v1.5.8",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.8/Duotone.ipa",
-          "size": 15586856,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.6.4",
-      "versionDate": "2026-09-04T02:19:49Z",
-      "versionDescription": "- Windows: rever ao teclado, e voltar atrás a partir do Now Playing\n- Correspondência: menos faixas por confirmar, e nunca a versão errada\n- Fix: importação do Spotify dava \"not found\" em todas as faixas no Windows\n- Windows: o player deixa de ser deitado fora a cada música\n- Reações nas mensagens\n- Editor: a moldura da capa passa a ser o cabeçalho do perfil\n- Capa: o recorte e o cabeçalho voltam a ter a mesma forma\n\nComparar com ios-v1.6.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.3...ios-v1.6.4",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.4/Duotone.ipa",
-      "size": 15975549
+      "version": "1.6.5",
+      "versionDate": "2026-09-04T04:05:05Z",
+      "versionDescription": "- Separar o alvo do widget do modulo Expo\n- Compatibilizar o fundo do widget com iOS 16\n- Corrigir lockfile para a build iOS\n- Widget iOS com a faixa e os amigos a ouvir\n- Uma cor só, e a capa a mandar nela\n\nComparar com ios-v1.6.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.4...ios-v1.6.5",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.5/Duotone.ipa",
+      "size": 17862955
     }
   ],
   "news": []

@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-04T02:20:02.950Z",
+  "generatedAt": "2026-09-04T04:05:18.955Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.6.4",
-        "tag": "ios-v1.6.4",
-        "notes": "- Windows: rever ao teclado, e voltar atrás a partir do Now Playing\n- Correspondência: menos faixas por confirmar, e nunca a versão errada\n- Fix: importação do Spotify dava \"not found\" em todas as faixas no Windows\n- Windows: o player deixa de ser deitado fora a cada música\n- Reações nas mensagens\n- Editor: a moldura da capa passa a ser o cabeçalho do perfil\n- Capa: o recorte e o cabeçalho voltam a ter a mesma forma\n\nComparar com ios-v1.6.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.3...ios-v1.6.4",
-        "publishedAt": "2026-09-04T02:19:49Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.6.4",
+        "version": "1.6.5",
+        "tag": "ios-v1.6.5",
+        "notes": "- Separar o alvo do widget do modulo Expo\n- Compatibilizar o fundo do widget com iOS 16\n- Corrigir lockfile para a build iOS\n- Widget iOS com a faixa e os amigos a ouvir\n- Uma cor só, e a capa a mandar nela\n\nComparar com ios-v1.6.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.4...ios-v1.6.5",
+        "publishedAt": "2026-09-04T04:05:05Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.6.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15975549,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.4/Duotone.ipa",
+          "size": 17862955,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.5/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.4/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.5/Duotone.ipa"
       },
       "windows": {
         "version": "1.6.4",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 96838209,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.6.4/Duotone-Setup.exe",
-          "downloads": 0
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.6.4/Duotone-Setup.exe"
       }
