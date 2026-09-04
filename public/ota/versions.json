@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-04T16:51:40.837Z",
+  "generatedAt": "2026-09-04T16:56:42.222Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.7.3",
-        "tag": "ios-v1.7.3",
-        "notes": "- Destravar a faixa presa também com o ecrã bloqueado\n\nComparar com ios-v1.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.2...ios-v1.7.3",
-        "publishedAt": "2026-09-04T16:25:14Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.7.3",
+        "version": "1.7.5",
+        "tag": "ios-v1.7.5",
+        "notes": "- Capa do perfil igual nas duas plataformas, a preencher e com a vinheta a pegar\n\nComparar com ios-v1.7.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.4...ios-v1.7.5",
+        "publishedAt": "2026-09-04T16:56:28Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.7.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15836468,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.3/Duotone.ipa",
-          "downloads": 2
+          "size": 15840536,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.5/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.3/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.5/Duotone.ipa"
       },
       "windows": {
         "version": "1.7.5",

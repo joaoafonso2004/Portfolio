@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.7.5",
+          "date": "2026-09-04T16:56:28Z",
+          "localizedDescription": "- Capa do perfil igual nas duas plataformas, a preencher e com a vinheta a pegar\n\nComparar com ios-v1.7.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.4...ios-v1.7.5",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.5/Duotone.ipa",
+          "size": 15840536,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.7.3",
           "date": "2026-09-04T16:25:14Z",
           "localizedDescription": "- Destravar a faixa presa também com o ecrã bloqueado\n\nComparar com ios-v1.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.2...ios-v1.7.3",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.0/Duotone.ipa",
           "size": 15678037,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.5.12",
-          "date": "2026-09-03T14:32:35Z",
-          "localizedDescription": "- fix: restore original App.tsx entry point\n\nComparar com ios-v1.5.11: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.11...ios-v1.5.12",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.12/Duotone.ipa",
-          "size": 15668065,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.7.3",
-      "versionDate": "2026-09-04T16:25:14Z",
-      "versionDescription": "- Destravar a faixa presa também com o ecrã bloqueado\n\nComparar com ios-v1.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.2...ios-v1.7.3",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.3/Duotone.ipa",
-      "size": 15836468
+      "version": "1.7.5",
+      "versionDate": "2026-09-04T16:56:28Z",
+      "versionDescription": "- Capa do perfil igual nas duas plataformas, a preencher e com a vinheta a pegar\n\nComparar com ios-v1.7.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.4...ios-v1.7.5",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.5/Duotone.ipa",
+      "size": 15840536
     }
   ],
   "news": []
