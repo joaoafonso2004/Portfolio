@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.6.4",
+          "date": "2026-09-04T02:19:49Z",
+          "localizedDescription": "- Windows: rever ao teclado, e voltar atrás a partir do Now Playing\n- Correspondência: menos faixas por confirmar, e nunca a versão errada\n- Fix: importação do Spotify dava \"not found\" em todas as faixas no Windows\n- Windows: o player deixa de ser deitado fora a cada música\n- Reações nas mensagens\n- Editor: a moldura da capa passa a ser o cabeçalho do perfil\n- Capa: o recorte e o cabeçalho voltam a ter a mesma forma\n\nComparar com ios-v1.6.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.3...ios-v1.6.4",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.4/Duotone.ipa",
+          "size": 15975549,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.6.3",
           "date": "2026-09-03T21:30:14Z",
           "localizedDescription": "- Perfil e partilha: tirar a música destacada, partilhar para grupos, e a capa até ao topo\n\nComparar com ios-v1.6.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.2...ios-v1.6.3",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.8/Duotone.ipa",
           "size": 15586856,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.5.7",
-          "date": "2026-09-03T00:16:01Z",
-          "localizedDescription": "- chore: 1.5.7\n- Interface: as ultimas frases em portugues passam a ingles\n- Social: a interface em ingles e com os tokens da app\n- SQL: pedidos de amizade antigos deixam de ficar impossiveis de aceitar\n- Social e perfis: trabalho em curso, por validar contra o Supabase\n- Versiona funções do Supabase e corrige data do histórico\n- Corrige pesquisa, artistas e grupos e integra funções do Windows\n- Social: conversas de grupo\n- sql: conversas de grupo (correr no Supabase antes da interface)\n- Social: fora a aba Inbox, e partilhar com varios de uma vez\n- Artista: destrocar titulos ao contrario, e o repeat dizer qual dos modos\n- Shuffle: o brilho preenche o botao, e o normal mostra que esta ligado\n- chore: 1.5.5\n- Discover new: faixas de quem ele ja ouve deixam de entrar\n- Recomendacoes que pesam o que ele ouve, e seis arranjos na interface\n- chore: 1.5.4\n- Alvos: so vao procurar nomes que a biblioteca dele confirma\n- Recomendacoes: perguntar a um catalogo quem se parece, em vez de adivinhar\n- chore: 1.5.3\n- Shuffle alternavel, \"Discover new\", e recomendacoes que sao mesmo musica\n\nComparar com ios-v1.5.6: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.6...ios-v1.5.7",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.7/Duotone.ipa",
-          "size": 15514886,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.6.3",
-      "versionDate": "2026-09-03T21:30:14Z",
-      "versionDescription": "- Perfil e partilha: tirar a música destacada, partilhar para grupos, e a capa até ao topo\n\nComparar com ios-v1.6.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.2...ios-v1.6.3",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.3/Duotone.ipa",
-      "size": 15967118
+      "version": "1.6.4",
+      "versionDate": "2026-09-04T02:19:49Z",
+      "versionDescription": "- Windows: rever ao teclado, e voltar atrás a partir do Now Playing\n- Correspondência: menos faixas por confirmar, e nunca a versão errada\n- Fix: importação do Spotify dava \"not found\" em todas as faixas no Windows\n- Windows: o player deixa de ser deitado fora a cada música\n- Reações nas mensagens\n- Editor: a moldura da capa passa a ser o cabeçalho do perfil\n- Capa: o recorte e o cabeçalho voltam a ter a mesma forma\n\nComparar com ios-v1.6.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.3...ios-v1.6.4",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.4/Duotone.ipa",
+      "size": 15975549
     }
   ],
   "news": []

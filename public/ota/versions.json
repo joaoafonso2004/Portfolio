@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-04T02:14:27.809Z",
+  "generatedAt": "2026-09-04T02:20:02.950Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.6.3",
-        "tag": "ios-v1.6.3",
-        "notes": "- Perfil e partilha: tirar a música destacada, partilhar para grupos, e a capa até ao topo\n\nComparar com ios-v1.6.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.2...ios-v1.6.3",
-        "publishedAt": "2026-09-03T21:30:14Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.6.3",
+        "version": "1.6.4",
+        "tag": "ios-v1.6.4",
+        "notes": "- Windows: rever ao teclado, e voltar atrás a partir do Now Playing\n- Correspondência: menos faixas por confirmar, e nunca a versão errada\n- Fix: importação do Spotify dava \"not found\" em todas as faixas no Windows\n- Windows: o player deixa de ser deitado fora a cada música\n- Reações nas mensagens\n- Editor: a moldura da capa passa a ser o cabeçalho do perfil\n- Capa: o recorte e o cabeçalho voltam a ter a mesma forma\n\nComparar com ios-v1.6.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.3...ios-v1.6.4",
+        "publishedAt": "2026-09-04T02:19:49Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.6.4",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15967118,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.3/Duotone.ipa",
-          "downloads": 6
+          "size": 15975549,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.4/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.3/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.4/Duotone.ipa"
       },
       "windows": {
         "version": "1.6.4",
