@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.7.8",
+          "date": "2026-09-04T17:34:39Z",
+          "localizedDescription": "- Devolver a capa ao ecrã de bloqueio\n- Fechar o now-playing arrastando de qualquer ponto da página\n\nComparar com ios-v1.7.7: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.7...ios-v1.7.8",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.8/Duotone.ipa",
+          "size": 15841125,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.7.5",
           "date": "2026-09-04T16:56:28Z",
           "localizedDescription": "- Capa do perfil igual nas duas plataformas, a preencher e com a vinheta a pegar\n\nComparar com ios-v1.7.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.4...ios-v1.7.5",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.1/Duotone.ipa",
           "size": 15966067,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.6.0",
-          "date": "2026-09-03T17:57:54Z",
-          "localizedDescription": "- CI: o teste das novas regras de SQL tem de ir no repositório\n- Segurança: fechar o catálogo, as playlists privadas e as mensagens dos outros\n\nComparar com ios-v1.5.12: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.12...ios-v1.6.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.0/Duotone.ipa",
-          "size": 15678037,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.7.5",
-      "versionDate": "2026-09-04T16:56:28Z",
-      "versionDescription": "- Capa do perfil igual nas duas plataformas, a preencher e com a vinheta a pegar\n\nComparar com ios-v1.7.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.4...ios-v1.7.5",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.5/Duotone.ipa",
-      "size": 15840536
+      "version": "1.7.8",
+      "versionDate": "2026-09-04T17:34:39Z",
+      "versionDescription": "- Devolver a capa ao ecrã de bloqueio\n- Fechar o now-playing arrastando de qualquer ponto da página\n\nComparar com ios-v1.7.7: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.7...ios-v1.7.8",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.8/Duotone.ipa",
+      "size": 15841125
     }
   ],
   "news": []

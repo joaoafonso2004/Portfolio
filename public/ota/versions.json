@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-04T17:29:17.715Z",
+  "generatedAt": "2026-09-04T17:34:51.858Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.7.5",
-        "tag": "ios-v1.7.5",
-        "notes": "- Capa do perfil igual nas duas plataformas, a preencher e com a vinheta a pegar\n\nComparar com ios-v1.7.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.4...ios-v1.7.5",
-        "publishedAt": "2026-09-04T16:56:28Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.7.5",
+        "version": "1.7.8",
+        "tag": "ios-v1.7.8",
+        "notes": "- Devolver a capa ao ecrã de bloqueio\n- Fechar o now-playing arrastando de qualquer ponto da página\n\nComparar com ios-v1.7.7: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.7...ios-v1.7.8",
+        "publishedAt": "2026-09-04T17:34:39Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.7.8",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15840536,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.5/Duotone.ipa",
-          "downloads": 1
+          "size": 15841125,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.8/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.5/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.8/Duotone.ipa"
       },
       "windows": {
         "version": "1.7.8",
