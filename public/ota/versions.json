@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T16:56:42.222Z",
+  "generatedAt": "2026-09-04T17:29:17.715Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15840536,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.5/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.5/Duotone.ipa"
       },
       "windows": {
-        "version": "1.7.5",
-        "tag": "win-v1.7.5",
-        "notes": "- Capa do perfil igual nas duas plataformas, a preencher e com a vinheta a pegar\n\nComparar com win-v1.7.4: https://github.com/joaoafonso2004/duotone/compare/win-v1.7.4...win-v1.7.5",
-        "publishedAt": "2026-09-04T16:51:26Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.7.5",
+        "version": "1.7.8",
+        "tag": "win-v1.7.8",
+        "notes": "- Devolver a capa ao ecrã de bloqueio\n- Fechar o now-playing arrastando de qualquer ponto da página\n\nComparar com win-v1.7.7: https://github.com/joaoafonso2004/duotone/compare/win-v1.7.7...win-v1.7.8",
+        "publishedAt": "2026-09-04T17:29:03Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.7.8",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95201928,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.5/Duotone-Setup.exe",
+          "size": 95202138,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.8/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.5/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.8/Duotone-Setup.exe"
       }
     }
   }
