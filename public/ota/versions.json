@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T15:56:24.201Z",
+  "generatedAt": "2026-09-04T16:12:29.644Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15834589,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.1/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.1/Duotone.ipa"
       },
       "windows": {
-        "version": "1.7.1",
-        "tag": "win-v1.7.1",
-        "notes": "- Capa do Lock Screen e do carro sem as barras pretas do YouTube\n- Lock Screen: manter anterior/seguinte quando o expo-video volta a registar\n\nComparar com win-v1.7.0: https://github.com/joaoafonso2004/duotone/compare/win-v1.7.0...win-v1.7.1",
-        "publishedAt": "2026-09-04T15:50:28Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.7.1",
+        "version": "1.7.2",
+        "tag": "win-v1.7.2",
+        "notes": "- Destravar faixas que ficavam presas no último segundo\n\nComparar com win-v1.7.1: https://github.com/joaoafonso2004/duotone/compare/win-v1.7.1...win-v1.7.2",
+        "publishedAt": "2026-09-04T16:12:14Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.7.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95201890,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.1/Duotone-Setup.exe",
+          "size": 95201532,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.2/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.2/Duotone-Setup.exe"
       }
     }
   }
