@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.7.2",
+          "date": "2026-09-04T16:16:37Z",
+          "localizedDescription": "- Destravar faixas que ficavam presas no último segundo\n\nComparar com ios-v1.7.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.1...ios-v1.7.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.2/Duotone.ipa",
+          "size": 15835594,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.7.1",
           "date": "2026-09-04T15:56:09Z",
           "localizedDescription": "- Capa do Lock Screen e do carro sem as barras pretas do YouTube\n- Lock Screen: manter anterior/seguinte quando o expo-video volta a registar\n\nComparar com ios-v1.7.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.0...ios-v1.7.1",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.11/Duotone.ipa",
           "size": 14261866,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.5.10",
-          "date": "2026-09-03T11:20:16Z",
-          "localizedDescription": "- Corrigir o perfil e sincronizar ajustes, com letras na capa em 3D\n\nComparar com ios-v1.5.9: https://github.com/joaoafonso2004/duotone/compare/ios-v1.5.9...ios-v1.5.10",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.5.10/Duotone.ipa",
-          "size": 15661958,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.7.1",
-      "versionDate": "2026-09-04T15:56:09Z",
-      "versionDescription": "- Capa do Lock Screen e do carro sem as barras pretas do YouTube\n- Lock Screen: manter anterior/seguinte quando o expo-video volta a registar\n\nComparar com ios-v1.7.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.0...ios-v1.7.1",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.1/Duotone.ipa",
-      "size": 15834589
+      "version": "1.7.2",
+      "versionDate": "2026-09-04T16:16:37Z",
+      "versionDescription": "- Destravar faixas que ficavam presas no último segundo\n\nComparar com ios-v1.7.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.1...ios-v1.7.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.2/Duotone.ipa",
+      "size": 15835594
     }
   ],
   "news": []

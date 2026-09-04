@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-04T16:12:29.644Z",
+  "generatedAt": "2026-09-04T16:16:51.890Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.7.1",
-        "tag": "ios-v1.7.1",
-        "notes": "- Capa do Lock Screen e do carro sem as barras pretas do YouTube\n- Lock Screen: manter anterior/seguinte quando o expo-video volta a registar\n\nComparar com ios-v1.7.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.0...ios-v1.7.1",
-        "publishedAt": "2026-09-04T15:56:09Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.7.1",
+        "version": "1.7.2",
+        "tag": "ios-v1.7.2",
+        "notes": "- Destravar faixas que ficavam presas no último segundo\n\nComparar com ios-v1.7.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.1...ios-v1.7.2",
+        "publishedAt": "2026-09-04T16:16:37Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.7.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15834589,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.1/Duotone.ipa",
-          "downloads": 1
+          "size": 15835594,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.2/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.1/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.2/Duotone.ipa"
       },
       "windows": {
         "version": "1.7.2",
