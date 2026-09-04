@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-04T16:19:59.744Z",
+  "generatedAt": "2026-09-04T16:25:26.591Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.7.2",
-        "tag": "ios-v1.7.2",
-        "notes": "- Destravar faixas que ficavam presas no último segundo\n\nComparar com ios-v1.7.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.1...ios-v1.7.2",
-        "publishedAt": "2026-09-04T16:16:37Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.7.2",
+        "version": "1.7.3",
+        "tag": "ios-v1.7.3",
+        "notes": "- Destravar a faixa presa também com o ecrã bloqueado\n\nComparar com ios-v1.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.2...ios-v1.7.3",
+        "publishedAt": "2026-09-04T16:25:14Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.7.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15835594,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.2/Duotone.ipa",
+          "size": 15836468,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.3/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.2/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.3/Duotone.ipa"
       },
       "windows": {
         "version": "1.7.3",
