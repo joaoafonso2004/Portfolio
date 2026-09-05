@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.10.3",
+          "date": "2026-09-05T19:29:14Z",
+          "localizedDescription": "- Crossfade: se a fila não avançar, desfazer em vez de encravar\n- O shuffle inteligente parava depois das primeiras sugestões\n\nComparar com ios-v1.10.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.2...ios-v1.10.3",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.3/Duotone.ipa",
+          "size": 15868175,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.10.2",
           "date": "2026-09-05T18:52:49Z",
           "localizedDescription": "- O botão do banner de handoff estava sem letras\n- Smart shuffle: semear também quando se toca a partir de uma lista\n- Handoff: publicar o instante da amostra, e bater ao ritmo do player\n- A capa e a foto de perfil passam a ter zoom, e a andar para os lados\n\nComparar com ios-v1.10.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.1...ios-v1.10.2",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.5/Duotone.ipa",
           "size": 15840536,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.7.3",
-          "date": "2026-09-04T16:25:14Z",
-          "localizedDescription": "- Destravar a faixa presa também com o ecrã bloqueado\n\nComparar com ios-v1.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.2...ios-v1.7.3",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.3/Duotone.ipa",
-          "size": 15836468,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.10.2",
-      "versionDate": "2026-09-05T18:52:49Z",
-      "versionDescription": "- O botão do banner de handoff estava sem letras\n- Smart shuffle: semear também quando se toca a partir de uma lista\n- Handoff: publicar o instante da amostra, e bater ao ritmo do player\n- A capa e a foto de perfil passam a ter zoom, e a andar para os lados\n\nComparar com ios-v1.10.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.1...ios-v1.10.2",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.2/Duotone.ipa",
-      "size": 15867693
+      "version": "1.10.3",
+      "versionDate": "2026-09-05T19:29:14Z",
+      "versionDescription": "- Crossfade: se a fila não avançar, desfazer em vez de encravar\n- O shuffle inteligente parava depois das primeiras sugestões\n\nComparar com ios-v1.10.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.2...ios-v1.10.3",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.3/Duotone.ipa",
+      "size": 15868175
     }
   ],
   "news": []
