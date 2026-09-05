@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-05T09:46:43.906Z",
+  "generatedAt": "2026-09-05T12:08:41.765Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.8.0",
-        "tag": "ios-v1.8.0",
-        "notes": "- Arrumar os botões da playlist e do Now Playing, e botão direito nos cartões\n\nComparar com ios-v1.7.9: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.9...ios-v1.8.0",
-        "publishedAt": "2026-09-05T03:05:23Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.8.0",
+        "version": "1.9.1",
+        "tag": "ios-v1.9.1",
+        "notes": "- Gerar o lockfile com o npm que o CI usa\n\nComparar com ios-v1.9.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.0...ios-v1.9.1",
+        "publishedAt": "2026-09-05T12:08:28Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.9.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15840439,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.8.0/Duotone.ipa",
-          "downloads": 5
+          "size": 15854988,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.1/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.8.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.1/Duotone.ipa"
       },
       "windows": {
         "version": "1.8.0",

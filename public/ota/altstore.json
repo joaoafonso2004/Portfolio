@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.9.1",
+          "date": "2026-09-05T12:08:28Z",
+          "localizedDescription": "- Gerar o lockfile com o npm que o CI usa\n\nComparar com ios-v1.9.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.0...ios-v1.9.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.1/Duotone.ipa",
+          "size": 15854988,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.8.0",
           "date": "2026-09-05T03:05:23Z",
           "localizedDescription": "- Arrumar os botões da playlist e do Now Playing, e botão direito nos cartões\n\nComparar com ios-v1.7.9: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.9...ios-v1.8.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.4/Duotone.ipa",
           "size": 15975549,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.6.3",
-          "date": "2026-09-03T21:30:14Z",
-          "localizedDescription": "- Perfil e partilha: tirar a música destacada, partilhar para grupos, e a capa até ao topo\n\nComparar com ios-v1.6.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.2...ios-v1.6.3",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.3/Duotone.ipa",
-          "size": 15967118,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.8.0",
-      "versionDate": "2026-09-05T03:05:23Z",
-      "versionDescription": "- Arrumar os botões da playlist e do Now Playing, e botão direito nos cartões\n\nComparar com ios-v1.7.9: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.9...ios-v1.8.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.8.0/Duotone.ipa",
-      "size": 15840439
+      "version": "1.9.1",
+      "versionDate": "2026-09-05T12:08:28Z",
+      "versionDescription": "- Gerar o lockfile com o npm que o CI usa\n\nComparar com ios-v1.9.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.0...ios-v1.9.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.1/Duotone.ipa",
+      "size": 15854988
     }
   ],
   "news": []
