@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.10.1",
+          "date": "2026-09-05T17:35:14Z",
+          "localizedDescription": "- O crossfade acabava com um solavanco, e a culpa era minha\n\nComparar com ios-v1.10.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.0...ios-v1.10.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.1/Duotone.ipa",
+          "size": 15864912,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.10.0",
           "date": "2026-09-05T17:03:57Z",
           "localizedDescription": "- No PC, os três botões de shuffle acendem-se da mesma maneira\n- No PC, o botão da playlist dizia \"Smart shuffle\" sem o brilho\n- Uma interrupção deixava a app a dizer que tocava, calada\n- A marca do shuffle inteligente não sobrevivia a fechar a app\n- As faixas do shuffle inteligente ficavam presas no último segundo\n- Crossfade: quem entra já traz o equalizador e a velocidade dela\n- Crossfade, passos 4 e 5: a curva e as interrupções\n- Crossfade, passo 3: dois motores e a troca de papéis, ainda sem fade\n- No PC, a altura do cabeçalho passa a acompanhar a largura\n- Crossfade, passo 2: a preferência e o controlo\n\nComparar com ios-v1.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.2...ios-v1.10.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.2/Duotone.ipa",
           "size": 15835594,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.7.1",
-          "date": "2026-09-04T15:56:09Z",
-          "localizedDescription": "- Capa do Lock Screen e do carro sem as barras pretas do YouTube\n- Lock Screen: manter anterior/seguinte quando o expo-video volta a registar\n\nComparar com ios-v1.7.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.0...ios-v1.7.1",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.1/Duotone.ipa",
-          "size": 15834589,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.10.0",
-      "versionDate": "2026-09-05T17:03:57Z",
-      "versionDescription": "- No PC, os três botões de shuffle acendem-se da mesma maneira\n- No PC, o botão da playlist dizia \"Smart shuffle\" sem o brilho\n- Uma interrupção deixava a app a dizer que tocava, calada\n- A marca do shuffle inteligente não sobrevivia a fechar a app\n- As faixas do shuffle inteligente ficavam presas no último segundo\n- Crossfade: quem entra já traz o equalizador e a velocidade dela\n- Crossfade, passos 4 e 5: a curva e as interrupções\n- Crossfade, passo 3: dois motores e a troca de papéis, ainda sem fade\n- No PC, a altura do cabeçalho passa a acompanhar a largura\n- Crossfade, passo 2: a preferência e o controlo\n\nComparar com ios-v1.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.2...ios-v1.10.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.0/Duotone.ipa",
-      "size": 15864293
+      "version": "1.10.1",
+      "versionDate": "2026-09-05T17:35:14Z",
+      "versionDescription": "- O crossfade acabava com um solavanco, e a culpa era minha\n\nComparar com ios-v1.10.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.0...ios-v1.10.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.1/Duotone.ipa",
+      "size": 15864912
     }
   ],
   "news": []
