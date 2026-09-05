@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T18:53:03.444Z",
+  "generatedAt": "2026-09-05T19:23:08.957Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15867693,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.2/Duotone.ipa",
-          "downloads": 0
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.2/Duotone.ipa"
       },
       "windows": {
-        "version": "1.10.2",
-        "tag": "win-v1.10.2",
-        "notes": "- O botão do banner de handoff estava sem letras\n- Smart shuffle: semear também quando se toca a partir de uma lista\n- Handoff: publicar o instante da amostra, e bater ao ritmo do player\n- A capa e a foto de perfil passam a ter zoom, e a andar para os lados\n- O crossfade acabava com um solavanco, e a culpa era minha\n\nComparar com win-v1.10.0: https://github.com/joaoafonso2004/duotone/compare/win-v1.10.0...win-v1.10.2",
-        "publishedAt": "2026-09-05T18:43:47Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.10.2",
+        "version": "1.10.3",
+        "tag": "win-v1.10.3",
+        "notes": "- Crossfade: se a fila não avançar, desfazer em vez de encravar\n- O shuffle inteligente parava depois das primeiras sugestões\n\nComparar com win-v1.10.2: https://github.com/joaoafonso2004/duotone/compare/win-v1.10.2...win-v1.10.3",
+        "publishedAt": "2026-09-05T19:22:57Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.10.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95206074,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.10.2/Duotone-Setup.exe",
+          "size": 95206124,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.10.3/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.10.2/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.10.3/Duotone-Setup.exe"
       }
     }
   }
