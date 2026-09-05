@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.8.0",
+          "date": "2026-09-05T03:05:23Z",
+          "localizedDescription": "- Arrumar os botões da playlist e do Now Playing, e botão direito nos cartões\n\nComparar com ios-v1.7.9: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.9...ios-v1.8.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.8.0/Duotone.ipa",
+          "size": 15840439,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.7.9",
           "date": "2026-09-05T01:45:34Z",
           "localizedDescription": "- Reverter as duas coisas minhas que partiram a reprodução no iOS\n- Pôr os artistas a sério à cabeça da lista no iOS\n- Tirar o caso especial da conta @joao dos artistas\n- Registar que a fita do emblema é para ficar\n\nComparar com ios-v1.7.8: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.8...ios-v1.7.9",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.3/Duotone.ipa",
           "size": 15967118,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.6.2",
-          "date": "2026-09-03T20:32:49Z",
-          "localizedDescription": "- Windows: a capa do perfil deixa de ser uma faixa solta ao meio\n\nComparar com ios-v1.6.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.1...ios-v1.6.2",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.2/Duotone.ipa",
-          "size": 15966038,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.7.9",
-      "versionDate": "2026-09-05T01:45:34Z",
-      "versionDescription": "- Reverter as duas coisas minhas que partiram a reprodução no iOS\n- Pôr os artistas a sério à cabeça da lista no iOS\n- Tirar o caso especial da conta @joao dos artistas\n- Registar que a fita do emblema é para ficar\n\nComparar com ios-v1.7.8: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.8...ios-v1.7.9",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.9/Duotone.ipa",
-      "size": 15840273
+      "version": "1.8.0",
+      "versionDate": "2026-09-05T03:05:23Z",
+      "versionDescription": "- Arrumar os botões da playlist e do Now Playing, e botão direito nos cartões\n\nComparar com ios-v1.7.9: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.9...ios-v1.8.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.8.0/Duotone.ipa",
+      "size": 15840439
     }
   ],
   "news": []
