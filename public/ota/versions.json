@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-05T23:43:04.877Z",
+  "generatedAt": "2026-09-05T23:46:06.662Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.10.4",
-        "tag": "ios-v1.10.4",
-        "notes": "- O segundo catálogo: o que os teus artistas nunca lançaram\n- A loja do player passa a correr dentro de um teste\n\nComparar com ios-v1.10.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.3...ios-v1.10.4",
-        "publishedAt": "2026-09-05T20:29:00Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.10.4",
+        "version": "1.10.5",
+        "tag": "ios-v1.10.5",
+        "notes": "- As faixas por ouvir ganham imagem: a capa se saiu, a cor da era se não\n- Os separadores do artista ganham ícone e um aceso que se vê\n- Os separadores do artista mudam de linha, em vez de esticar\n\nComparar com ios-v1.10.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.4...ios-v1.10.5",
+        "publishedAt": "2026-09-05T23:45:53Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.10.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15879033,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.4/Duotone.ipa",
-          "downloads": 2
+          "size": 15881040,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.5/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.4/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.5/Duotone.ipa"
       },
       "windows": {
         "version": "1.10.5",

@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.10.5",
+          "date": "2026-09-05T23:45:53Z",
+          "localizedDescription": "- As faixas por ouvir ganham imagem: a capa se saiu, a cor da era se não\n- Os separadores do artista ganham ícone e um aceso que se vê\n- Os separadores do artista mudam de linha, em vez de esticar\n\nComparar com ios-v1.10.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.4...ios-v1.10.5",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.5/Duotone.ipa",
+          "size": 15881040,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.10.4",
           "date": "2026-09-05T20:29:00Z",
           "localizedDescription": "- O segundo catálogo: o que os teus artistas nunca lançaram\n- A loja do player passa a correr dentro de um teste\n\nComparar com ios-v1.10.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.3...ios-v1.10.4",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.9/Duotone.ipa",
           "size": 15840273,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.7.8",
-          "date": "2026-09-04T17:34:39Z",
-          "localizedDescription": "- Devolver a capa ao ecrã de bloqueio\n- Fechar o now-playing arrastando de qualquer ponto da página\n\nComparar com ios-v1.7.7: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.7...ios-v1.7.8",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.8/Duotone.ipa",
-          "size": 15841125,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.10.4",
-      "versionDate": "2026-09-05T20:29:00Z",
-      "versionDescription": "- O segundo catálogo: o que os teus artistas nunca lançaram\n- A loja do player passa a correr dentro de um teste\n\nComparar com ios-v1.10.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.3...ios-v1.10.4",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.4/Duotone.ipa",
-      "size": 15879033
+      "version": "1.10.5",
+      "versionDate": "2026-09-05T23:45:53Z",
+      "versionDescription": "- As faixas por ouvir ganham imagem: a capa se saiu, a cor da era se não\n- Os separadores do artista ganham ícone e um aceso que se vê\n- Os separadores do artista mudam de linha, em vez de esticar\n\nComparar com ios-v1.10.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.4...ios-v1.10.5",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.5/Duotone.ipa",
+      "size": 15881040
     }
   ],
   "news": []
