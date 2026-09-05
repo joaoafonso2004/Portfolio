@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T17:34:51.858Z",
+  "generatedAt": "2026-09-05T01:38:59.229Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15841125,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.8/Duotone.ipa",
-          "downloads": 0
+          "downloads": 6
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.8/Duotone.ipa"
       },
       "windows": {
-        "version": "1.7.8",
-        "tag": "win-v1.7.8",
-        "notes": "- Devolver a capa ao ecrã de bloqueio\n- Fechar o now-playing arrastando de qualquer ponto da página\n\nComparar com win-v1.7.7: https://github.com/joaoafonso2004/duotone/compare/win-v1.7.7...win-v1.7.8",
-        "publishedAt": "2026-09-04T17:29:03Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.7.8",
+        "version": "1.7.9",
+        "tag": "win-v1.7.9",
+        "notes": "- Reverter as duas coisas minhas que partiram a reprodução no iOS\n- Pôr os artistas a sério à cabeça da lista no iOS\n- Tirar o caso especial da conta @joao dos artistas\n- Registar que a fita do emblema é para ficar\n\nComparar com win-v1.7.8: https://github.com/joaoafonso2004/duotone/compare/win-v1.7.8...win-v1.7.9",
+        "publishedAt": "2026-09-05T01:38:45Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.7.9",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95202138,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.8/Duotone-Setup.exe",
+          "size": 95202308,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.9/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.8/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.7.9/Duotone-Setup.exe"
       }
     }
   }
