@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-05T01:38:59.229Z",
+  "generatedAt": "2026-09-05T01:45:49.107Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.7.8",
-        "tag": "ios-v1.7.8",
-        "notes": "- Devolver a capa ao ecrã de bloqueio\n- Fechar o now-playing arrastando de qualquer ponto da página\n\nComparar com ios-v1.7.7: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.7...ios-v1.7.8",
-        "publishedAt": "2026-09-04T17:34:39Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.7.8",
+        "version": "1.7.9",
+        "tag": "ios-v1.7.9",
+        "notes": "- Reverter as duas coisas minhas que partiram a reprodução no iOS\n- Pôr os artistas a sério à cabeça da lista no iOS\n- Tirar o caso especial da conta @joao dos artistas\n- Registar que a fita do emblema é para ficar\n\nComparar com ios-v1.7.8: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.8...ios-v1.7.9",
+        "publishedAt": "2026-09-05T01:45:34Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.7.9",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15841125,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.8/Duotone.ipa",
-          "downloads": 6
+          "size": 15840273,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.9/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.8/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.9/Duotone.ipa"
       },
       "windows": {
         "version": "1.7.9",
