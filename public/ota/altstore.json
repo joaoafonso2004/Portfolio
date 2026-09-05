@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.10.4",
+          "date": "2026-09-05T20:29:00Z",
+          "localizedDescription": "- O segundo catálogo: o que os teus artistas nunca lançaram\n- A loja do player passa a correr dentro de um teste\n\nComparar com ios-v1.10.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.3...ios-v1.10.4",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.4/Duotone.ipa",
+          "size": 15879033,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.10.3",
           "date": "2026-09-05T19:29:14Z",
           "localizedDescription": "- Crossfade: se a fila não avançar, desfazer em vez de encravar\n- O shuffle inteligente parava depois das primeiras sugestões\n\nComparar com ios-v1.10.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.2...ios-v1.10.3",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.8/Duotone.ipa",
           "size": 15841125,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.7.5",
-          "date": "2026-09-04T16:56:28Z",
-          "localizedDescription": "- Capa do perfil igual nas duas plataformas, a preencher e com a vinheta a pegar\n\nComparar com ios-v1.7.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.4...ios-v1.7.5",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.5/Duotone.ipa",
-          "size": 15840536,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.10.3",
-      "versionDate": "2026-09-05T19:29:14Z",
-      "versionDescription": "- Crossfade: se a fila não avançar, desfazer em vez de encravar\n- O shuffle inteligente parava depois das primeiras sugestões\n\nComparar com ios-v1.10.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.2...ios-v1.10.3",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.3/Duotone.ipa",
-      "size": 15868175
+      "version": "1.10.4",
+      "versionDate": "2026-09-05T20:29:00Z",
+      "versionDescription": "- O segundo catálogo: o que os teus artistas nunca lançaram\n- A loja do player passa a correr dentro de um teste\n\nComparar com ios-v1.10.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.3...ios-v1.10.4",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.4/Duotone.ipa",
+      "size": 15879033
     }
   ],
   "news": []

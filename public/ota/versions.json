@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-05T20:25:02.650Z",
+  "generatedAt": "2026-09-05T20:29:12.436Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.10.3",
-        "tag": "ios-v1.10.3",
-        "notes": "- Crossfade: se a fila não avançar, desfazer em vez de encravar\n- O shuffle inteligente parava depois das primeiras sugestões\n\nComparar com ios-v1.10.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.2...ios-v1.10.3",
-        "publishedAt": "2026-09-05T19:29:14Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.10.3",
+        "version": "1.10.4",
+        "tag": "ios-v1.10.4",
+        "notes": "- O segundo catálogo: o que os teus artistas nunca lançaram\n- A loja do player passa a correr dentro de um teste\n\nComparar com ios-v1.10.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.3...ios-v1.10.4",
+        "publishedAt": "2026-09-05T20:29:00Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.10.4",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15868175,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.3/Duotone.ipa",
-          "downloads": 1
+          "size": 15879033,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.4/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.3/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.4/Duotone.ipa"
       },
       "windows": {
         "version": "1.10.4",
