@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T12:20:42.022Z",
+  "generatedAt": "2026-09-05T16:58:54.194Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15855014,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.2/Duotone.ipa",
-          "downloads": 0
+          "downloads": 3
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.2/Duotone.ipa"
       },
       "windows": {
-        "version": "1.9.2",
-        "tag": "win-v1.9.2",
-        "notes": "- Reverter o Electron 44: o electron-builder não o consegue empacotar\n- Crossfade, passo 1: as decisões, sem tocar em nenhum motor\n\nComparar com win-v1.9.1: https://github.com/joaoafonso2004/duotone/compare/win-v1.9.1...win-v1.9.2",
-        "publishedAt": "2026-09-05T12:14:12Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.9.2",
+        "version": "1.10.0",
+        "tag": "win-v1.10.0",
+        "notes": "- No PC, os três botões de shuffle acendem-se da mesma maneira\n- No PC, o botão da playlist dizia \"Smart shuffle\" sem o brilho\n- Uma interrupção deixava a app a dizer que tocava, calada\n- A marca do shuffle inteligente não sobrevivia a fechar a app\n- As faixas do shuffle inteligente ficavam presas no último segundo\n- Crossfade: quem entra já traz o equalizador e a velocidade dela\n- Crossfade, passos 4 e 5: a curva e as interrupções\n- Crossfade, passo 3: dois motores e a troca de papéis, ainda sem fade\n- No PC, a altura do cabeçalho passa a acompanhar a largura\n- Crossfade, passo 2: a preferência e o controlo\n\nComparar com win-v1.9.2: https://github.com/joaoafonso2004/duotone/compare/win-v1.9.2...win-v1.10.0",
+        "publishedAt": "2026-09-05T16:58:37Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.10.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95205000,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.9.2/Duotone-Setup.exe",
+          "size": 95205559,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.10.0/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.9.2/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.10.0/Duotone-Setup.exe"
       }
     }
   }
