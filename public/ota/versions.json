@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-05T12:14:26.210Z",
+  "generatedAt": "2026-09-05T12:20:42.022Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.9.1",
-        "tag": "ios-v1.9.1",
-        "notes": "- Gerar o lockfile com o npm que o CI usa\n\nComparar com ios-v1.9.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.0...ios-v1.9.1",
-        "publishedAt": "2026-09-05T12:08:28Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.9.1",
+        "version": "1.9.2",
+        "tag": "ios-v1.9.2",
+        "notes": "- Reverter o Electron 44: o electron-builder não o consegue empacotar\n- Crossfade, passo 1: as decisões, sem tocar em nenhum motor\n\nComparar com ios-v1.9.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.1...ios-v1.9.2",
+        "publishedAt": "2026-09-05T12:20:27Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.9.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15854988,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.1/Duotone.ipa",
+          "size": 15855014,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.2/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.1/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.2/Duotone.ipa"
       },
       "windows": {
         "version": "1.9.2",

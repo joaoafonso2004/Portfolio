@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.9.2",
+          "date": "2026-09-05T12:20:27Z",
+          "localizedDescription": "- Reverter o Electron 44: o electron-builder não o consegue empacotar\n- Crossfade, passo 1: as decisões, sem tocar em nenhum motor\n\nComparar com ios-v1.9.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.1...ios-v1.9.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.2/Duotone.ipa",
+          "size": 15855014,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.9.1",
           "date": "2026-09-05T12:08:28Z",
           "localizedDescription": "- Gerar o lockfile com o npm que o CI usa\n\nComparar com ios-v1.9.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.0...ios-v1.9.1",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.5/Duotone.ipa",
           "size": 17862955,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.6.4",
-          "date": "2026-09-04T02:19:49Z",
-          "localizedDescription": "- Windows: rever ao teclado, e voltar atrás a partir do Now Playing\n- Correspondência: menos faixas por confirmar, e nunca a versão errada\n- Fix: importação do Spotify dava \"not found\" em todas as faixas no Windows\n- Windows: o player deixa de ser deitado fora a cada música\n- Reações nas mensagens\n- Editor: a moldura da capa passa a ser o cabeçalho do perfil\n- Capa: o recorte e o cabeçalho voltam a ter a mesma forma\n\nComparar com ios-v1.6.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.3...ios-v1.6.4",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.4/Duotone.ipa",
-          "size": 15975549,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.9.1",
-      "versionDate": "2026-09-05T12:08:28Z",
-      "versionDescription": "- Gerar o lockfile com o npm que o CI usa\n\nComparar com ios-v1.9.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.0...ios-v1.9.1",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.1/Duotone.ipa",
-      "size": 15854988
+      "version": "1.9.2",
+      "versionDate": "2026-09-05T12:20:27Z",
+      "versionDescription": "- Reverter o Electron 44: o electron-builder não o consegue empacotar\n- Crossfade, passo 1: as decisões, sem tocar em nenhum motor\n\nComparar com ios-v1.9.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.1...ios-v1.9.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.2/Duotone.ipa",
+      "size": 15855014
     }
   ],
   "news": []
