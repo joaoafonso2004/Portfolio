@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T12:08:41.765Z",
+  "generatedAt": "2026-09-05T12:14:26.210Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.1/Duotone.ipa"
       },
       "windows": {
-        "version": "1.8.0",
-        "tag": "win-v1.8.0",
-        "notes": "- Arrumar os botões da playlist e do Now Playing, e botão direito nos cartões\n\nComparar com win-v1.7.9: https://github.com/joaoafonso2004/duotone/compare/win-v1.7.9...win-v1.8.0",
-        "publishedAt": "2026-09-05T03:01:50Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.8.0",
+        "version": "1.9.2",
+        "tag": "win-v1.9.2",
+        "notes": "- Reverter o Electron 44: o electron-builder não o consegue empacotar\n- Crossfade, passo 1: as decisões, sem tocar em nenhum motor\n\nComparar com win-v1.9.1: https://github.com/joaoafonso2004/duotone/compare/win-v1.9.1...win-v1.9.2",
+        "publishedAt": "2026-09-05T12:14:12Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.9.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95202778,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.8.0/Duotone-Setup.exe",
-          "downloads": 1
+          "size": 95205000,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.9.2/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.8.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.9.2/Duotone-Setup.exe"
       }
     }
   }
