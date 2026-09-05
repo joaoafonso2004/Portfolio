@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.10.0",
+          "date": "2026-09-05T17:03:57Z",
+          "localizedDescription": "- No PC, os três botões de shuffle acendem-se da mesma maneira\n- No PC, o botão da playlist dizia \"Smart shuffle\" sem o brilho\n- Uma interrupção deixava a app a dizer que tocava, calada\n- A marca do shuffle inteligente não sobrevivia a fechar a app\n- As faixas do shuffle inteligente ficavam presas no último segundo\n- Crossfade: quem entra já traz o equalizador e a velocidade dela\n- Crossfade, passos 4 e 5: a curva e as interrupções\n- Crossfade, passo 3: dois motores e a troca de papéis, ainda sem fade\n- No PC, a altura do cabeçalho passa a acompanhar a largura\n- Crossfade, passo 2: a preferência e o controlo\n\nComparar com ios-v1.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.2...ios-v1.10.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.0/Duotone.ipa",
+          "size": 15864293,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.9.2",
           "date": "2026-09-05T12:20:27Z",
           "localizedDescription": "- Reverter o Electron 44: o electron-builder não o consegue empacotar\n- Crossfade, passo 1: as decisões, sem tocar em nenhum motor\n\nComparar com ios-v1.9.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.1...ios-v1.9.2",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.1/Duotone.ipa",
           "size": 15834589,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.6.5",
-          "date": "2026-09-04T04:05:05Z",
-          "localizedDescription": "- Separar o alvo do widget do modulo Expo\n- Compatibilizar o fundo do widget com iOS 16\n- Corrigir lockfile para a build iOS\n- Widget iOS com a faixa e os amigos a ouvir\n- Uma cor só, e a capa a mandar nela\n\nComparar com ios-v1.6.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.6.4...ios-v1.6.5",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.6.5/Duotone.ipa",
-          "size": 17862955,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.9.2",
-      "versionDate": "2026-09-05T12:20:27Z",
-      "versionDescription": "- Reverter o Electron 44: o electron-builder não o consegue empacotar\n- Crossfade, passo 1: as decisões, sem tocar em nenhum motor\n\nComparar com ios-v1.9.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.1...ios-v1.9.2",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.2/Duotone.ipa",
-      "size": 15855014
+      "version": "1.10.0",
+      "versionDate": "2026-09-05T17:03:57Z",
+      "versionDescription": "- No PC, os três botões de shuffle acendem-se da mesma maneira\n- No PC, o botão da playlist dizia \"Smart shuffle\" sem o brilho\n- Uma interrupção deixava a app a dizer que tocava, calada\n- A marca do shuffle inteligente não sobrevivia a fechar a app\n- As faixas do shuffle inteligente ficavam presas no último segundo\n- Crossfade: quem entra já traz o equalizador e a velocidade dela\n- Crossfade, passos 4 e 5: a curva e as interrupções\n- Crossfade, passo 3: dois motores e a troca de papéis, ainda sem fade\n- No PC, a altura do cabeçalho passa a acompanhar a largura\n- Crossfade, passo 2: a preferência e o controlo\n\nComparar com ios-v1.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.2...ios-v1.10.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.0/Duotone.ipa",
+      "size": 15864293
     }
   ],
   "news": []
