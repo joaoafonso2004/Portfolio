@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-05T18:44:02.218Z",
+  "generatedAt": "2026-09-05T18:53:03.444Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.10.1",
-        "tag": "ios-v1.10.1",
-        "notes": "- O crossfade acabava com um solavanco, e a culpa era minha\n\nComparar com ios-v1.10.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.0...ios-v1.10.1",
-        "publishedAt": "2026-09-05T17:35:14Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.10.1",
+        "version": "1.10.2",
+        "tag": "ios-v1.10.2",
+        "notes": "- O botão do banner de handoff estava sem letras\n- Smart shuffle: semear também quando se toca a partir de uma lista\n- Handoff: publicar o instante da amostra, e bater ao ritmo do player\n- A capa e a foto de perfil passam a ter zoom, e a andar para os lados\n\nComparar com ios-v1.10.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.1...ios-v1.10.2",
+        "publishedAt": "2026-09-05T18:52:49Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.10.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15864912,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.1/Duotone.ipa",
-          "downloads": 4
+          "size": 15867693,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.2/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.1/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.2/Duotone.ipa"
       },
       "windows": {
         "version": "1.10.2",
