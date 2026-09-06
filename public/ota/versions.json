@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T23:46:06.662Z",
+  "generatedAt": "2026-09-06T01:55:03.041Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15881040,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.5/Duotone.ipa",
-          "downloads": 0
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.5/Duotone.ipa"
       },
       "windows": {
-        "version": "1.10.5",
-        "tag": "win-v1.10.5",
-        "notes": "- As faixas por ouvir ganham imagem: a capa se saiu, a cor da era se não\n- Os separadores do artista ganham ícone e um aceso que se vê\n- Os separadores do artista mudam de linha, em vez de esticar\n\nComparar com win-v1.10.4: https://github.com/joaoafonso2004/duotone/compare/win-v1.10.4...win-v1.10.5",
-        "publishedAt": "2026-09-05T23:42:50Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.10.5",
+        "version": "1.10.6",
+        "tag": "win-v1.10.6",
+        "notes": "- \"Never released\": o segundo catálogo passa a ser uma prateleira a tocar\n- Fora o separador \"Por Ouvir\": a página do artista volta ao que era\n\nComparar com win-v1.10.5: https://github.com/joaoafonso2004/duotone/compare/win-v1.10.5...win-v1.10.6",
+        "publishedAt": "2026-09-06T01:54:48Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.10.6",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95208389,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.10.5/Duotone-Setup.exe",
+          "size": 95208218,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.10.6/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.10.5/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.10.6/Duotone-Setup.exe"
       }
     }
   }
