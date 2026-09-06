@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.11.3",
+          "date": "2026-09-06T21:46:28Z",
+          "localizedDescription": "- A capa voa da linha que tocaste para o player\n- Diz ao Swift o nível de acesso do import, que ele não adivinha\n- Uma faixa que falha deixa de custar o sítio na fila\n- Social: uma só grelha de tempo, e um botão que parece um botão\n- As frases da Siri passam para dentro do alvo da app\n- Uma folha só, um gesto só: partilha, pesquisa e chat coerentes\n\nComparar com ios-v1.11.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.11.1...ios-v1.11.3",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.3/Duotone.ipa",
+          "size": 15926756,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.11.1",
           "date": "2026-09-06T20:44:15Z",
           "localizedDescription": "- Corrige a 1.11.0: o download acabava e o ficheiro era apagado a seguir\n- O now playing: título com espaço, ações com casa, e uma pista para as letras\n- O player mostra o mesmo título que as listas\n\nComparar com ios-v1.11.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.11.0...ios-v1.11.1",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.0/Duotone.ipa",
           "size": 15864293,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.9.2",
-          "date": "2026-09-05T12:20:27Z",
-          "localizedDescription": "- Reverter o Electron 44: o electron-builder não o consegue empacotar\n- Crossfade, passo 1: as decisões, sem tocar em nenhum motor\n\nComparar com ios-v1.9.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.1...ios-v1.9.2",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.9.2/Duotone.ipa",
-          "size": 15855014,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.11.1",
-      "versionDate": "2026-09-06T20:44:15Z",
-      "versionDescription": "- Corrige a 1.11.0: o download acabava e o ficheiro era apagado a seguir\n- O now playing: título com espaço, ações com casa, e uma pista para as letras\n- O player mostra o mesmo título que as listas\n\nComparar com ios-v1.11.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.11.0...ios-v1.11.1",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.1/Duotone.ipa",
-      "size": 15919135
+      "version": "1.11.3",
+      "versionDate": "2026-09-06T21:46:28Z",
+      "versionDescription": "- A capa voa da linha que tocaste para o player\n- Diz ao Swift o nível de acesso do import, que ele não adivinha\n- Uma faixa que falha deixa de custar o sítio na fila\n- Social: uma só grelha de tempo, e um botão que parece um botão\n- As frases da Siri passam para dentro do alvo da app\n- Uma folha só, um gesto só: partilha, pesquisa e chat coerentes\n\nComparar com ios-v1.11.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.11.1...ios-v1.11.3",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.3/Duotone.ipa",
+      "size": 15926756
     }
   ],
   "news": []
