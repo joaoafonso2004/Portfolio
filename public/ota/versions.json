@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-06T10:02:48.583Z",
+  "generatedAt": "2026-09-06T18:28:38.408Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.10.6",
-        "tag": "ios-v1.10.6",
-        "notes": "- \"Never released\": o segundo catálogo passa a ser uma prateleira a tocar\n- Fora o separador \"Por Ouvir\": a página do artista volta ao que era\n\nComparar com ios-v1.10.5: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.5...ios-v1.10.6",
-        "publishedAt": "2026-09-06T01:58:36Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.10.6",
+        "version": "1.11.0",
+        "tag": "ios-v1.11.0",
+        "notes": "- Corrige os atalhos: a API que usei só existe no iOS 26\n- Atalhos da Siri: tocar, pausar e saltar sem abrir a app\n- O que está guardado no telemóvel deixa de ser invisível\n- A retrospetiva: o ano em revista, a partir do histórico que já existia\n- Tirar os auscultadores pausa mesmo, e voltar a ligar não retoma\n- A pesquisa deixa de ficar presa na primeira página\n- A sessão do iPhone passa para o Keychain sem ninguém ter de voltar a entrar\n- Um download de cada vez, e uma ordem para quem espera\n- A janela só abre depois de o servidor ser mesmo nosso\n- Um download interrompido deixa de ficar como se estivesse inteiro\n- Fora a etiqueta do YouTube: a música na lista é tua, não de lá\n- A Pesquisa passa a procurar primeiro no que já é teu\n\nComparar com ios-v1.10.6: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.6...ios-v1.11.0",
+        "publishedAt": "2026-09-06T18:28:24Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.11.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15880463,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.6/Duotone.ipa",
-          "downloads": 2
+          "size": 15918689,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.0/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.6/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.0/Duotone.ipa"
       },
       "windows": {
         "version": "1.10.6",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 95208218,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.10.6/Duotone-Setup.exe",
-          "downloads": 1
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.10.6/Duotone-Setup.exe"
       }
