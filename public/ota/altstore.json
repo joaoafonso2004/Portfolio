@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.10.6",
+          "date": "2026-09-06T01:58:36Z",
+          "localizedDescription": "- \"Never released\": o segundo catálogo passa a ser uma prateleira a tocar\n- Fora o separador \"Por Ouvir\": a página do artista volta ao que era\n\nComparar com ios-v1.10.5: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.5...ios-v1.10.6",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.6/Duotone.ipa",
+          "size": 15880463,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.10.5",
           "date": "2026-09-05T23:45:53Z",
           "localizedDescription": "- As faixas por ouvir ganham imagem: a capa se saiu, a cor da era se não\n- Os separadores do artista ganham ícone e um aceso que se vê\n- Os separadores do artista mudam de linha, em vez de esticar\n\nComparar com ios-v1.10.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.4...ios-v1.10.5",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.8.0/Duotone.ipa",
           "size": 15840439,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.7.9",
-          "date": "2026-09-05T01:45:34Z",
-          "localizedDescription": "- Reverter as duas coisas minhas que partiram a reprodução no iOS\n- Pôr os artistas a sério à cabeça da lista no iOS\n- Tirar o caso especial da conta @joao dos artistas\n- Registar que a fita do emblema é para ficar\n\nComparar com ios-v1.7.8: https://github.com/joaoafonso2004/duotone/compare/ios-v1.7.8...ios-v1.7.9",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.7.9/Duotone.ipa",
-          "size": 15840273,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.10.5",
-      "versionDate": "2026-09-05T23:45:53Z",
-      "versionDescription": "- As faixas por ouvir ganham imagem: a capa se saiu, a cor da era se não\n- Os separadores do artista ganham ícone e um aceso que se vê\n- Os separadores do artista mudam de linha, em vez de esticar\n\nComparar com ios-v1.10.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.4...ios-v1.10.5",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.5/Duotone.ipa",
-      "size": 15881040
+      "version": "1.10.6",
+      "versionDate": "2026-09-06T01:58:36Z",
+      "versionDescription": "- \"Never released\": o segundo catálogo passa a ser uma prateleira a tocar\n- Fora o separador \"Por Ouvir\": a página do artista volta ao que era\n\nComparar com ios-v1.10.5: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.5...ios-v1.10.6",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.6/Duotone.ipa",
+      "size": 15880463
     }
   ],
   "news": []
