@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-06T23:03:19.836Z",
+  "generatedAt": "2026-09-06T23:24:44.118Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.12.0",
-        "tag": "ios-v1.12.0",
-        "notes": "- No PC, \"activo\" deixa de querer dizer \"a app existe\"\n- \"Online now\" passa a querer dizer que a pessoa está lá\n- A fila de downloads deixa de poder encravar a app\n- O crossfade passa a contar do fim da música, não do fim do ficheiro\n- O perfil deixa a moldura para trás\n- A capa deixa de animar pela ponte e passa a animar na UI thread\n\nComparar com ios-v1.11.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.11.4...ios-v1.12.0",
-        "publishedAt": "2026-09-06T23:03:06Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.12.0",
+        "version": "1.12.1",
+        "tag": "ios-v1.12.1",
+        "notes": "- A 1.12.0 não arrancava: driver nativo e driver do JS na mesma vista\n\nComparar com ios-v1.12.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.12.0...ios-v1.12.1",
+        "publishedAt": "2026-09-06T23:24:31Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.12.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15929835,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.12.0/Duotone.ipa",
+          "size": 15929707,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.12.1/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.12.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.12.1/Duotone.ipa"
       },
       "windows": {
         "version": "1.10.6",
