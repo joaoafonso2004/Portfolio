@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-06T21:46:40.437Z",
+  "generatedAt": "2026-09-06T22:15:03.220Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.11.3",
-        "tag": "ios-v1.11.3",
-        "notes": "- A capa voa da linha que tocaste para o player\n- Diz ao Swift o nível de acesso do import, que ele não adivinha\n- Uma faixa que falha deixa de custar o sítio na fila\n- Social: uma só grelha de tempo, e um botão que parece um botão\n- As frases da Siri passam para dentro do alvo da app\n- Uma folha só, um gesto só: partilha, pesquisa e chat coerentes\n\nComparar com ios-v1.11.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.11.1...ios-v1.11.3",
-        "publishedAt": "2026-09-06T21:46:28Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.11.3",
+        "version": "1.11.4",
+        "tag": "ios-v1.11.4",
+        "notes": "- As conversas passam a parecer conversas\n- Fora as barras pretas das listas, e o Social com uma régua só\n\nComparar com ios-v1.11.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.11.3...ios-v1.11.4",
+        "publishedAt": "2026-09-06T22:14:50Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.11.4",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15926756,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.3/Duotone.ipa",
+          "size": 15927424,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.4/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.3/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.4/Duotone.ipa"
       },
       "windows": {
         "version": "1.10.6",

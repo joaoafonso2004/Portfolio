@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.11.4",
+          "date": "2026-09-06T22:14:50Z",
+          "localizedDescription": "- As conversas passam a parecer conversas\n- Fora as barras pretas das listas, e o Social com uma régua só\n\nComparar com ios-v1.11.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.11.3...ios-v1.11.4",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.4/Duotone.ipa",
+          "size": 15927424,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "1.11.3",
           "date": "2026-09-06T21:46:28Z",
           "localizedDescription": "- A capa voa da linha que tocaste para o player\n- Diz ao Swift o nível de acesso do import, que ele não adivinha\n- Uma faixa que falha deixa de custar o sítio na fila\n- Social: uma só grelha de tempo, e um botão que parece um botão\n- As frases da Siri passam para dentro do alvo da app\n- Uma folha só, um gesto só: partilha, pesquisa e chat coerentes\n\nComparar com ios-v1.11.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.11.1...ios-v1.11.3",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.1/Duotone.ipa",
           "size": 15864912,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.10.0",
-          "date": "2026-09-05T17:03:57Z",
-          "localizedDescription": "- No PC, os três botões de shuffle acendem-se da mesma maneira\n- No PC, o botão da playlist dizia \"Smart shuffle\" sem o brilho\n- Uma interrupção deixava a app a dizer que tocava, calada\n- A marca do shuffle inteligente não sobrevivia a fechar a app\n- As faixas do shuffle inteligente ficavam presas no último segundo\n- Crossfade: quem entra já traz o equalizador e a velocidade dela\n- Crossfade, passos 4 e 5: a curva e as interrupções\n- Crossfade, passo 3: dois motores e a troca de papéis, ainda sem fade\n- No PC, a altura do cabeçalho passa a acompanhar a largura\n- Crossfade, passo 2: a preferência e o controlo\n\nComparar com ios-v1.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.9.2...ios-v1.10.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.0/Duotone.ipa",
-          "size": 15864293,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "1.11.3",
-      "versionDate": "2026-09-06T21:46:28Z",
-      "versionDescription": "- A capa voa da linha que tocaste para o player\n- Diz ao Swift o nível de acesso do import, que ele não adivinha\n- Uma faixa que falha deixa de custar o sítio na fila\n- Social: uma só grelha de tempo, e um botão que parece um botão\n- As frases da Siri passam para dentro do alvo da app\n- Uma folha só, um gesto só: partilha, pesquisa e chat coerentes\n\nComparar com ios-v1.11.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.11.1...ios-v1.11.3",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.3/Duotone.ipa",
-      "size": 15926756
+      "version": "1.11.4",
+      "versionDate": "2026-09-06T22:14:50Z",
+      "versionDescription": "- As conversas passam a parecer conversas\n- Fora as barras pretas das listas, e o Social com uma régua só\n\nComparar com ios-v1.11.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.11.3...ios-v1.11.4",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.4/Duotone.ipa",
+      "size": 15927424
     }
   ],
   "news": []
