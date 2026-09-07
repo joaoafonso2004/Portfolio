@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-07T14:57:54.676Z",
+  "generatedAt": "2026-09-07T15:31:33.403Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.1.1",
-        "tag": "ios-v2.1.1",
-        "notes": "- A 2.1.0 não arrancava: um selector que devolvia um valor novo a cada leitura\n\nComparar com ios-v2.1.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.0...ios-v2.1.1",
-        "publishedAt": "2026-09-07T14:57:40Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.1.1",
+        "version": "2.1.2",
+        "tag": "ios-v2.1.2",
+        "notes": "- O convite nunca podia funcionar, e o chat não se lia\n\nComparar com ios-v2.1.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.1...ios-v2.1.2",
+        "publishedAt": "2026-09-07T15:31:20Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.1.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15967050,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.1/Duotone.ipa",
+          "size": 15967440,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.2/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.1/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.2/Duotone.ipa"
       },
       "windows": {
         "version": "2.0.0",

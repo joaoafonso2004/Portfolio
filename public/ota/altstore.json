@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.1.2",
+          "date": "2026-09-07T15:31:20Z",
+          "localizedDescription": "- O convite nunca podia funcionar, e o chat não se lia\n\nComparar com ios-v2.1.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.1...ios-v2.1.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.2/Duotone.ipa",
+          "size": 15967440,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.1.1",
           "date": "2026-09-07T14:57:40Z",
           "localizedDescription": "- A 2.1.0 não arrancava: um selector que devolvia um valor novo a cada leitura\n\nComparar com ios-v2.1.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.0...ios-v2.1.1",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.6/Duotone.ipa",
           "size": 15880463,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.10.5",
-          "date": "2026-09-05T23:45:53Z",
-          "localizedDescription": "- As faixas por ouvir ganham imagem: a capa se saiu, a cor da era se não\n- Os separadores do artista ganham ícone e um aceso que se vê\n- Os separadores do artista mudam de linha, em vez de esticar\n\nComparar com ios-v1.10.4: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.4...ios-v1.10.5",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.5/Duotone.ipa",
-          "size": 15881040,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.1.1",
-      "versionDate": "2026-09-07T14:57:40Z",
-      "versionDescription": "- A 2.1.0 não arrancava: um selector que devolvia um valor novo a cada leitura\n\nComparar com ios-v2.1.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.0...ios-v2.1.1",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.1/Duotone.ipa",
-      "size": 15967050
+      "version": "2.1.2",
+      "versionDate": "2026-09-07T15:31:20Z",
+      "versionDescription": "- O convite nunca podia funcionar, e o chat não se lia\n\nComparar com ios-v2.1.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.1...ios-v2.1.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.2/Duotone.ipa",
+      "size": 15967440
     }
   ],
   "news": []
