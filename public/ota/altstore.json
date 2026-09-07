@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.1.0",
+          "date": "2026-09-07T14:32:49Z",
+          "localizedDescription": "- Ouvir juntos, onda 5: grupos, e o que corre mal\n- Ouvir juntos, onda 4: a fila partilhada e quem manda\n- O chat: balões que se veem, um nome só, e o gesto que existia mas não se apanhava\n- O áudio ia parar ao motor que já não mandava\n- O perfil já está lido quando se toca nele, e o Social tem esqueleto\n- Ouvir juntos, onda 3: a sessão a dois, ponta a ponta\n- O teste da onda 2 não tinha entrado no git\n- Ouvir juntos, onda 2: tabelas, RLS e RPCs\n- Ouvir juntos, onda 1: o relógio partilhado e as contas da sincronia\n\nComparar com ios-v2.0.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.0.1...ios-v2.1.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.0/Duotone.ipa",
+          "size": 15966698,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.0.1",
           "date": "2026-09-07T03:55:56Z",
           "localizedDescription": "- O 0:00 era o expo-video a ficar com uma faixa que ninguém pediu\n\nComparar com ios-v2.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.0.0...ios-v2.0.1",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.5/Duotone.ipa",
           "size": 15881040,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.10.4",
-          "date": "2026-09-05T20:29:00Z",
-          "localizedDescription": "- O segundo catálogo: o que os teus artistas nunca lançaram\n- A loja do player passa a correr dentro de um teste\n\nComparar com ios-v1.10.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.3...ios-v1.10.4",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.4/Duotone.ipa",
-          "size": 15879033,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.0.1",
-      "versionDate": "2026-09-07T03:55:56Z",
-      "versionDescription": "- O 0:00 era o expo-video a ficar com uma faixa que ninguém pediu\n\nComparar com ios-v2.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.0.0...ios-v2.0.1",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.0.1/Duotone.ipa",
-      "size": 15934833
+      "version": "2.1.0",
+      "versionDate": "2026-09-07T14:32:49Z",
+      "versionDescription": "- Ouvir juntos, onda 5: grupos, e o que corre mal\n- Ouvir juntos, onda 4: a fila partilhada e quem manda\n- O chat: balões que se veem, um nome só, e o gesto que existia mas não se apanhava\n- O áudio ia parar ao motor que já não mandava\n- O perfil já está lido quando se toca nele, e o Social tem esqueleto\n- Ouvir juntos, onda 3: a sessão a dois, ponta a ponta\n- O teste da onda 2 não tinha entrado no git\n- Ouvir juntos, onda 2: tabelas, RLS e RPCs\n- Ouvir juntos, onda 1: o relógio partilhado e as contas da sincronia\n\nComparar com ios-v2.0.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.0.1...ios-v2.1.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.0/Duotone.ipa",
+      "size": 15966698
     }
   ],
   "news": []

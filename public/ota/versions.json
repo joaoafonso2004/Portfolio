@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-07T11:15:49.454Z",
+  "generatedAt": "2026-09-07T14:33:04.264Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.0.1",
-        "tag": "ios-v2.0.1",
-        "notes": "- O 0:00 era o expo-video a ficar com uma faixa que ninguém pediu\n\nComparar com ios-v2.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.0.0...ios-v2.0.1",
-        "publishedAt": "2026-09-07T03:55:56Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.0.1",
+        "version": "2.1.0",
+        "tag": "ios-v2.1.0",
+        "notes": "- Ouvir juntos, onda 5: grupos, e o que corre mal\n- Ouvir juntos, onda 4: a fila partilhada e quem manda\n- O chat: balões que se veem, um nome só, e o gesto que existia mas não se apanhava\n- O áudio ia parar ao motor que já não mandava\n- O perfil já está lido quando se toca nele, e o Social tem esqueleto\n- Ouvir juntos, onda 3: a sessão a dois, ponta a ponta\n- O teste da onda 2 não tinha entrado no git\n- Ouvir juntos, onda 2: tabelas, RLS e RPCs\n- Ouvir juntos, onda 1: o relógio partilhado e as contas da sincronia\n\nComparar com ios-v2.0.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.0.1...ios-v2.1.0",
+        "publishedAt": "2026-09-07T14:32:49Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.1.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15934833,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.0.1/Duotone.ipa",
-          "downloads": 1
+          "size": 15966698,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.0/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.0.1/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.0/Duotone.ipa"
       },
       "windows": {
         "version": "2.0.0",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 95212232,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.0.0/Duotone-Setup.exe",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.0.0/Duotone-Setup.exe"
       }
