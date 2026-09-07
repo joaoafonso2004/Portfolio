@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.2.0",
+          "date": "2026-09-07T20:35:08Z",
+          "localizedDescription": "- Arrastar para reordenar a fila, com um segundo de espera a abrir o gesto\n- Dentro do jam, Play numa lista põe na fila em vez de tomar conta\n- Reler a sessão deixa de cancelar a faixa que estava a carregar\n\nComparar com ios-v2.1.8: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.8...ios-v2.2.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.2.0/Duotone.ipa",
+          "size": 15977601,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.1.8",
           "date": "2026-09-07T19:51:59Z",
           "localizedDescription": "- O relógio fraco passa a servir para saltar, e não para afinar\n- Quatro maneiras de o jam se desencontrar, e o fim de cada uma\n\nComparar com ios-v2.1.7: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.7...ios-v2.1.8",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.12.1/Duotone.ipa",
           "size": 15929707,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.11.4",
-          "date": "2026-09-06T22:14:50Z",
-          "localizedDescription": "- As conversas passam a parecer conversas\n- Fora as barras pretas das listas, e o Social com uma régua só\n\nComparar com ios-v1.11.3: https://github.com/joaoafonso2004/duotone/compare/ios-v1.11.3...ios-v1.11.4",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.4/Duotone.ipa",
-          "size": 15927424,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.1.8",
-      "versionDate": "2026-09-07T19:51:59Z",
-      "versionDescription": "- O relógio fraco passa a servir para saltar, e não para afinar\n- Quatro maneiras de o jam se desencontrar, e o fim de cada uma\n\nComparar com ios-v2.1.7: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.7...ios-v2.1.8",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.8/Duotone.ipa",
-      "size": 15975519
+      "version": "2.2.0",
+      "versionDate": "2026-09-07T20:35:08Z",
+      "versionDescription": "- Arrastar para reordenar a fila, com um segundo de espera a abrir o gesto\n- Dentro do jam, Play numa lista põe na fila em vez de tomar conta\n- Reler a sessão deixa de cancelar a faixa que estava a carregar\n\nComparar com ios-v2.1.8: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.8...ios-v2.2.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.2.0/Duotone.ipa",
+      "size": 15977601
     }
   ],
   "news": []
