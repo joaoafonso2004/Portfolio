@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-07T16:00:48.535Z",
+  "generatedAt": "2026-09-07T16:10:31.028Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.1.3",
-        "tag": "ios-v2.1.3",
-        "notes": "- O 0:00 tinha um terceiro caminho, e era o único sem saída nenhuma\n\nComparar com ios-v2.1.2: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.2...ios-v2.1.3",
-        "publishedAt": "2026-09-07T16:00:34Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.1.3",
+        "version": "2.1.4",
+        "tag": "ios-v2.1.4",
+        "notes": "- O botão de seguinte esperava por uma ida à rede antes de mudar de música\n\nComparar com ios-v2.1.3: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.3...ios-v2.1.4",
+        "publishedAt": "2026-09-07T16:10:16Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.1.4",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15967939,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.3/Duotone.ipa",
+          "size": 15968483,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.4/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.3/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.4/Duotone.ipa"
       },
       "windows": {
         "version": "2.0.0",
