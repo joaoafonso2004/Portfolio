@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.1.3",
+          "date": "2026-09-07T16:00:34Z",
+          "localizedDescription": "- O 0:00 tinha um terceiro caminho, e era o único sem saída nenhuma\n\nComparar com ios-v2.1.2: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.2...ios-v2.1.3",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.3/Duotone.ipa",
+          "size": 15967939,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.1.2",
           "date": "2026-09-07T15:31:20Z",
           "localizedDescription": "- O convite nunca podia funcionar, e o chat não se lia\n\nComparar com ios-v2.1.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.1...ios-v2.1.2",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.0/Duotone.ipa",
           "size": 15918689,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.10.6",
-          "date": "2026-09-06T01:58:36Z",
-          "localizedDescription": "- \"Never released\": o segundo catálogo passa a ser uma prateleira a tocar\n- Fora o separador \"Por Ouvir\": a página do artista volta ao que era\n\nComparar com ios-v1.10.5: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.5...ios-v1.10.6",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.6/Duotone.ipa",
-          "size": 15880463,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.1.2",
-      "versionDate": "2026-09-07T15:31:20Z",
-      "versionDescription": "- O convite nunca podia funcionar, e o chat não se lia\n\nComparar com ios-v2.1.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.1...ios-v2.1.2",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.2/Duotone.ipa",
-      "size": 15967440
+      "version": "2.1.3",
+      "versionDate": "2026-09-07T16:00:34Z",
+      "versionDescription": "- O 0:00 tinha um terceiro caminho, e era o único sem saída nenhuma\n\nComparar com ios-v2.1.2: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.2...ios-v2.1.3",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.3/Duotone.ipa",
+      "size": 15967939
     }
   ],
   "news": []
