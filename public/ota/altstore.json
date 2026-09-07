@@ -18,11 +18,11 @@
       "category": "entertainment",
       "versions": [
         {
-          "version": "2.1.5",
-          "date": "2026-09-07T16:51:29Z",
-          "localizedDescription": "- O jam fala inglês, a fila é uma só, e os saltos têm limite\n- Numa sessão, tocar numa música é propô-la\n- A primeira sessão real: cinco coisas que só se veem a dois\n\nComparar com ios-v2.1.4: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.4...ios-v2.1.5",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.5/Duotone.ipa",
-          "size": 15969977,
+          "version": "2.1.6",
+          "date": "2026-09-07T17:12:20Z",
+          "localizedDescription": "- A 2.1.5 rebentava ao abrir uma sessão: um hook depois de um `return`\n\nComparar com ios-v2.1.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.5...ios-v2.1.6",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.6/Duotone.ipa",
+          "size": 15969881,
           "minOSVersion": "16.4"
         },
         {
@@ -98,11 +98,11 @@
           "minOSVersion": "16.4"
         }
       ],
-      "version": "2.1.5",
-      "versionDate": "2026-09-07T16:51:29Z",
-      "versionDescription": "- O jam fala inglês, a fila é uma só, e os saltos têm limite\n- Numa sessão, tocar numa música é propô-la\n- A primeira sessão real: cinco coisas que só se veem a dois\n\nComparar com ios-v2.1.4: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.4...ios-v2.1.5",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.5/Duotone.ipa",
-      "size": 15969977
+      "version": "2.1.6",
+      "versionDate": "2026-09-07T17:12:20Z",
+      "versionDescription": "- A 2.1.5 rebentava ao abrir uma sessão: um hook depois de um `return`\n\nComparar com ios-v2.1.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.5...ios-v2.1.6",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.6/Duotone.ipa",
+      "size": 15969881
     }
   ],
   "news": []
