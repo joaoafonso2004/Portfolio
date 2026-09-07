@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-07T03:37:50.353Z",
+  "generatedAt": "2026-09-07T03:43:08.848Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "1.12.1",
-        "tag": "ios-v1.12.1",
-        "notes": "- A 1.12.0 não arrancava: driver nativo e driver do JS na mesma vista\n\nComparar com ios-v1.12.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.12.0...ios-v1.12.1",
-        "publishedAt": "2026-09-06T23:24:31Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v1.12.1",
+        "version": "2.0.0",
+        "tag": "ios-v2.0.0",
+        "notes": "- Movimento, onda 4: os casos que merecem mais do que uma escala\n- Movimento: os botões passam a responder ao dedo\n- Migração da presença: repor os defaults e o fecho das sessões antigas\n- A faixa que nunca arranca deixa de ficar em 0:00 para sempre\n\nComparar com ios-v1.12.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.12.1...ios-v2.0.0",
+        "publishedAt": "2026-09-07T03:42:55Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.0.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15929707,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.12.1/Duotone.ipa",
-          "downloads": 3
+          "size": 15934045,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.0.0/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.12.1/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.0.0/Duotone.ipa"
       },
       "windows": {
         "version": "2.0.0",
