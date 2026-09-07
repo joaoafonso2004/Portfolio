@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.1.7",
+          "date": "2026-09-07T18:38:40Z",
+          "localizedDescription": "- A fila partilhada passa a ser a única fonte da próxima faixa no jam\n\nComparar com ios-v2.1.6: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.6...ios-v2.1.7",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.7/Duotone.ipa",
+          "size": 15974925,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.1.6",
           "date": "2026-09-07T17:12:20Z",
           "localizedDescription": "- A 2.1.5 rebentava ao abrir uma sessão: um hook depois de um `return`\n\nComparar com ios-v2.1.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.5...ios-v2.1.6",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.3/Duotone.ipa",
           "size": 15926756,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.11.1",
-          "date": "2026-09-06T20:44:15Z",
-          "localizedDescription": "- Corrige a 1.11.0: o download acabava e o ficheiro era apagado a seguir\n- O now playing: título com espaço, ações com casa, e uma pista para as letras\n- O player mostra o mesmo título que as listas\n\nComparar com ios-v1.11.0: https://github.com/joaoafonso2004/duotone/compare/ios-v1.11.0...ios-v1.11.1",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.1/Duotone.ipa",
-          "size": 15919135,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.1.6",
-      "versionDate": "2026-09-07T17:12:20Z",
-      "versionDescription": "- A 2.1.5 rebentava ao abrir uma sessão: um hook depois de um `return`\n\nComparar com ios-v2.1.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.5...ios-v2.1.6",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.6/Duotone.ipa",
-      "size": 15969881
+      "version": "2.1.7",
+      "versionDate": "2026-09-07T18:38:40Z",
+      "versionDescription": "- A fila partilhada passa a ser a única fonte da próxima faixa no jam\n\nComparar com ios-v2.1.6: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.6...ios-v2.1.7",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.7/Duotone.ipa",
+      "size": 15974925
     }
   ],
   "news": []

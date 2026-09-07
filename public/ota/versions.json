@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-07T17:12:32.877Z",
+  "generatedAt": "2026-09-07T18:38:53.778Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.1.6",
-        "tag": "ios-v2.1.6",
-        "notes": "- A 2.1.5 rebentava ao abrir uma sessão: um hook depois de um `return`\n\nComparar com ios-v2.1.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.5...ios-v2.1.6",
-        "publishedAt": "2026-09-07T17:12:20Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.1.6",
+        "version": "2.1.7",
+        "tag": "ios-v2.1.7",
+        "notes": "- A fila partilhada passa a ser a única fonte da próxima faixa no jam\n\nComparar com ios-v2.1.6: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.6...ios-v2.1.7",
+        "publishedAt": "2026-09-07T18:38:40Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.1.7",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15969881,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.6/Duotone.ipa",
+          "size": 15974925,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.7/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.6/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.7/Duotone.ipa"
       },
       "windows": {
         "version": "2.0.0",
