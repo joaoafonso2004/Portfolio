@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.0.1",
+          "date": "2026-09-07T03:55:56Z",
+          "localizedDescription": "- O 0:00 era o expo-video a ficar com uma faixa que ninguém pediu\n\nComparar com ios-v2.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.0.0...ios-v2.0.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.0.1/Duotone.ipa",
+          "size": 15934833,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.0.0",
           "date": "2026-09-07T03:42:55Z",
           "localizedDescription": "- Movimento, onda 4: os casos que merecem mais do que uma escala\n- Movimento: os botões passam a responder ao dedo\n- Migração da presença: repor os defaults e o fecho das sessões antigas\n- A faixa que nunca arranca deixa de ficar em 0:00 para sempre\n\nComparar com ios-v1.12.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.12.1...ios-v2.0.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.4/Duotone.ipa",
           "size": 15879033,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.10.3",
-          "date": "2026-09-05T19:29:14Z",
-          "localizedDescription": "- Crossfade: se a fila não avançar, desfazer em vez de encravar\n- O shuffle inteligente parava depois das primeiras sugestões\n\nComparar com ios-v1.10.2: https://github.com/joaoafonso2004/duotone/compare/ios-v1.10.2...ios-v1.10.3",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.10.3/Duotone.ipa",
-          "size": 15868175,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.0.0",
-      "versionDate": "2026-09-07T03:42:55Z",
-      "versionDescription": "- Movimento, onda 4: os casos que merecem mais do que uma escala\n- Movimento: os botões passam a responder ao dedo\n- Migração da presença: repor os defaults e o fecho das sessões antigas\n- A faixa que nunca arranca deixa de ficar em 0:00 para sempre\n\nComparar com ios-v1.12.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.12.1...ios-v2.0.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.0.0/Duotone.ipa",
-      "size": 15934045
+      "version": "2.0.1",
+      "versionDate": "2026-09-07T03:55:56Z",
+      "versionDescription": "- O 0:00 era o expo-video a ficar com uma faixa que ninguém pediu\n\nComparar com ios-v2.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.0.0...ios-v2.0.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.0.1/Duotone.ipa",
+      "size": 15934833
     }
   ],
   "news": []
