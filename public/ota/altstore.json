@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.1.8",
+          "date": "2026-09-07T19:51:59Z",
+          "localizedDescription": "- O relógio fraco passa a servir para saltar, e não para afinar\n- Quatro maneiras de o jam se desencontrar, e o fim de cada uma\n\nComparar com ios-v2.1.7: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.7...ios-v2.1.8",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.8/Duotone.ipa",
+          "size": 15975519,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.1.7",
           "date": "2026-09-07T18:38:40Z",
           "localizedDescription": "- A fila partilhada passa a ser a única fonte da próxima faixa no jam\n\nComparar com ios-v2.1.6: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.6...ios-v2.1.7",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.4/Duotone.ipa",
           "size": 15927424,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "1.11.3",
-          "date": "2026-09-06T21:46:28Z",
-          "localizedDescription": "- A capa voa da linha que tocaste para o player\n- Diz ao Swift o nível de acesso do import, que ele não adivinha\n- Uma faixa que falha deixa de custar o sítio na fila\n- Social: uma só grelha de tempo, e um botão que parece um botão\n- As frases da Siri passam para dentro do alvo da app\n- Uma folha só, um gesto só: partilha, pesquisa e chat coerentes\n\nComparar com ios-v1.11.1: https://github.com/joaoafonso2004/duotone/compare/ios-v1.11.1...ios-v1.11.3",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.11.3/Duotone.ipa",
-          "size": 15926756,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.1.7",
-      "versionDate": "2026-09-07T18:38:40Z",
-      "versionDescription": "- A fila partilhada passa a ser a única fonte da próxima faixa no jam\n\nComparar com ios-v2.1.6: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.6...ios-v2.1.7",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.7/Duotone.ipa",
-      "size": 15974925
+      "version": "2.1.8",
+      "versionDate": "2026-09-07T19:51:59Z",
+      "versionDescription": "- O relógio fraco passa a servir para saltar, e não para afinar\n- Quatro maneiras de o jam se desencontrar, e o fim de cada uma\n\nComparar com ios-v2.1.7: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.7...ios-v2.1.8",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.8/Duotone.ipa",
+      "size": 15975519
     }
   ],
   "news": []

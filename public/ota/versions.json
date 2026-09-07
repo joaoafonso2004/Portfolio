@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-07T18:38:53.778Z",
+  "generatedAt": "2026-09-07T19:52:17.929Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.1.7",
-        "tag": "ios-v2.1.7",
-        "notes": "- A fila partilhada passa a ser a única fonte da próxima faixa no jam\n\nComparar com ios-v2.1.6: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.6...ios-v2.1.7",
-        "publishedAt": "2026-09-07T18:38:40Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.1.7",
+        "version": "2.1.8",
+        "tag": "ios-v2.1.8",
+        "notes": "- O relógio fraco passa a servir para saltar, e não para afinar\n- Quatro maneiras de o jam se desencontrar, e o fim de cada uma\n\nComparar com ios-v2.1.7: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.7...ios-v2.1.8",
+        "publishedAt": "2026-09-07T19:51:59Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.1.8",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15974925,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.7/Duotone.ipa",
+          "size": 15975519,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.8/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.7/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.8/Duotone.ipa"
       },
       "windows": {
         "version": "2.0.0",
