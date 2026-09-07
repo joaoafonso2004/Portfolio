@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T23:24:44.118Z",
+  "generatedAt": "2026-09-07T03:37:50.353Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15929707,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.12.1/Duotone.ipa",
-          "downloads": 0
+          "downloads": 3
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v1.12.1/Duotone.ipa"
       },
       "windows": {
-        "version": "1.10.6",
-        "tag": "win-v1.10.6",
-        "notes": "- \"Never released\": o segundo catálogo passa a ser uma prateleira a tocar\n- Fora o separador \"Por Ouvir\": a página do artista volta ao que era\n\nComparar com win-v1.10.5: https://github.com/joaoafonso2004/duotone/compare/win-v1.10.5...win-v1.10.6",
-        "publishedAt": "2026-09-06T01:54:48Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v1.10.6",
+        "version": "2.0.0",
+        "tag": "win-v2.0.0",
+        "notes": "- Movimento, onda 4: os casos que merecem mais do que uma escala\n- Movimento: os botões passam a responder ao dedo\n- Migração da presença: repor os defaults e o fecho das sessões antigas\n- A faixa que nunca arranca deixa de ficar em 0:00 para sempre\n- A 1.12.0 não arrancava: driver nativo e driver do JS na mesma vista\n- No PC, \"activo\" deixa de querer dizer \"a app existe\"\n- \"Online now\" passa a querer dizer que a pessoa está lá\n- A fila de downloads deixa de poder encravar a app\n- O crossfade passa a contar do fim da música, não do fim do ficheiro\n- O perfil deixa a moldura para trás\n- A capa deixa de animar pela ponte e passa a animar na UI thread\n- As conversas passam a parecer conversas\n- Fora as barras pretas das listas, e o Social com uma régua só\n- A capa voa da linha que tocaste para o player\n- Diz ao Swift o nível de acesso do import, que ele não adivinha\n- Uma faixa que falha deixa de custar o sítio na fila\n- Social: uma só grelha de tempo, e um botão que parece um botão\n- As frases da Siri passam para dentro do alvo da app\n- Uma folha só, um gesto só: partilha, pesquisa e chat coerentes\n- Corrige a 1.11.0: o download acabava e o ficheiro era apagado a seguir\n\nComparar com win-v1.10.6: https://github.com/joaoafonso2004/duotone/compare/win-v1.10.6...win-v2.0.0",
+        "publishedAt": "2026-09-07T03:37:35Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.0.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95208218,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.10.6/Duotone-Setup.exe",
-          "downloads": 4
+          "size": 95212232,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.0.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v1.10.6/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.0.0/Duotone-Setup.exe"
       }
     }
   }
