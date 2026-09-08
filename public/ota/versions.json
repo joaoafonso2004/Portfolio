@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T17:45:39.767Z",
+  "generatedAt": "2026-09-08T22:31:26.362Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16125936,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.3/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.3/Duotone.ipa"
       },
       "windows": {
-        "version": "2.0.0",
-        "tag": "win-v2.0.0",
-        "notes": "- Movimento, onda 4: os casos que merecem mais do que uma escala\n- Movimento: os botões passam a responder ao dedo\n- Migração da presença: repor os defaults e o fecho das sessões antigas\n- A faixa que nunca arranca deixa de ficar em 0:00 para sempre\n- A 1.12.0 não arrancava: driver nativo e driver do JS na mesma vista\n- No PC, \"activo\" deixa de querer dizer \"a app existe\"\n- \"Online now\" passa a querer dizer que a pessoa está lá\n- A fila de downloads deixa de poder encravar a app\n- O crossfade passa a contar do fim da música, não do fim do ficheiro\n- O perfil deixa a moldura para trás\n- A capa deixa de animar pela ponte e passa a animar na UI thread\n- As conversas passam a parecer conversas\n- Fora as barras pretas das listas, e o Social com uma régua só\n- A capa voa da linha que tocaste para o player\n- Diz ao Swift o nível de acesso do import, que ele não adivinha\n- Uma faixa que falha deixa de custar o sítio na fila\n- Social: uma só grelha de tempo, e um botão que parece um botão\n- As frases da Siri passam para dentro do alvo da app\n- Uma folha só, um gesto só: partilha, pesquisa e chat coerentes\n- Corrige a 1.11.0: o download acabava e o ficheiro era apagado a seguir\n\nComparar com win-v1.10.6: https://github.com/joaoafonso2004/duotone/compare/win-v1.10.6...win-v2.0.0",
-        "publishedAt": "2026-09-07T03:37:35Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.0.0",
+        "version": "2.4.4",
+        "tag": "win-v2.4.4",
+        "notes": "- Um push para Testing passa a dar também o .exe\n- O equalizador do iPhone deixa de calar o som ao mexer\n- A consulta de confirmação da migração devolvia constraints de outras tabelas\n- A sombra apaga-se enquanto a capa vira para as letras\n- Uma sombra ligeira por baixo da capa do leitor\n- Rádio por artista, e o que a separa de uma mistura\n- A grelha de atalhos à cabeça da pesquisa\n- A descoberta passa a ser a mesma durante sete dias\n- O teste do player rebentava a arrancar, e o typecheck não dava por isso\n- Os teus estilos, descobertos e não etiquetados\n- A duração total também no cabeçalho da playlist no PC\n- A playlist passa a ter cara\n- Migração para o equalizador base sincronizar entre aparelhos\n- Equalizador base nas Definições, nas duas plataformas\n- Os últimos quatro sítios a pedir a lista de playlists por conta própria\n- As playlists deixam de piscar de cada vez que se abre a página\n- A folga do now-playing estava toda num sítio só\n- A fila de quem está a ouvir dizia quem, mas não o quê\n- No Windows a descoberta estava toda vazia, e ninguém dava por isso\n- O nome do artista no PC já levava à página dele, mas não parecia\n\nComparar com win-v2.0.0: https://github.com/joaoafonso2004/duotone/compare/win-v2.0.0...win-v2.4.4",
+        "publishedAt": "2026-09-08T22:31:12Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.4.4",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95212232,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.0.0/Duotone-Setup.exe",
-          "downloads": 2
+          "size": 95759315,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.4/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.0.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.4/Duotone-Setup.exe"
       }
     }
   }
