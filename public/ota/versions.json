@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-08T15:16:36.433Z",
+  "generatedAt": "2026-09-08T16:58:05.548Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.4.0",
-        "tag": "ios-v2.4.0",
-        "notes": "- Refaz o lockfile com o npm que o CI usa, e não com o meu\n- Integra os controlos do Currently Playing e as ações da fila\n- Os separadores passam a mudar com o dedo\n- As secções de baixo em cartões largos, não em quadrados\n- Três coisas do perfil: tirar uma playlist, a data a mais, e a moldura\n- Playlists que a app monta, entre a descoberta e o que já se ouviu\n- A pesquisa passa a dar música que chegue, e sem ícones à frente dos títulos\n- O arrasto na fila deixa de estar preso ao que está visível\n- Fecha o now-playing a meio: três estilos em falta e a saída da fila\n- A rede do 0:00 passa a valer também para quem ouve sozinho\n- O pré-carregamento voltava a seguir a fila antiga depois de reordenar\n\nComparar com ios-v2.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.3.0...ios-v2.4.0",
-        "publishedAt": "2026-09-08T15:16:22Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.4.0",
+        "version": "2.4.1",
+        "tag": "ios-v2.4.1",
+        "notes": "- Daily mixes a sério: o teu artista intercalado com os vizinhos dele\n- O aviso que prometia uma segunda tentativa passa a fazer alguma coisa\n- Guardar e partilhar uma mistura, com o partilhar a guardar antes\n- As opções do leitor descem para junto do título, num menu que abre ali\n- As playlists mudam de dia para dia, e a descoberta perde a duração\n- A capa seguinte assoma na margem, e diz que há mais música\n\nComparar com ios-v2.4.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.0...ios-v2.4.1",
+        "publishedAt": "2026-09-08T16:57:51Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.4.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 16117698,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.0/Duotone.ipa",
+          "size": 16124612,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.1/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.1/Duotone.ipa"
       },
       "windows": {
         "version": "2.0.0",
