@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.4.4",
+          "date": "2026-09-08T22:36:12Z",
+          "localizedDescription": "- Um push para Testing passa a dar também o .exe\n- O equalizador do iPhone deixa de calar o som ao mexer\n- A consulta de confirmação da migração devolvia constraints de outras tabelas\n- A sombra apaga-se enquanto a capa vira para as letras\n- Uma sombra ligeira por baixo da capa do leitor\n- Rádio por artista, e o que a separa de uma mistura\n- A grelha de atalhos à cabeça da pesquisa\n- A descoberta passa a ser a mesma durante sete dias\n- O teste do player rebentava a arrancar, e o typecheck não dava por isso\n- Os teus estilos, descobertos e não etiquetados\n- A duração total também no cabeçalho da playlist no PC\n- A playlist passa a ter cara\n- Migração para o equalizador base sincronizar entre aparelhos\n- Equalizador base nas Definições, nas duas plataformas\n- Os últimos quatro sítios a pedir a lista de playlists por conta própria\n- As playlists deixam de piscar de cada vez que se abre a página\n- A folga do now-playing estava toda num sítio só\n- A fila de quem está a ouvir dizia quem, mas não o quê\n- No Windows a descoberta estava toda vazia, e ninguém dava por isso\n- O nome do artista no PC já levava à página dele, mas não parecia\n\nComparar com ios-v2.4.3: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.3...ios-v2.4.4",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.4/Duotone.ipa",
+          "size": 16140787,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.4.3",
           "date": "2026-09-08T17:45:25Z",
           "localizedDescription": "- A marca ao centro: o espaçamento entre letras deixava um vazio à direita\n- A app deixava de reagir ao toque: duas janelas a trocar de lugar ao mesmo tempo\n- Fechar volta ao canto, o corpo volta a repartir o ecrã, e o temporizador conta\n- A mensagem seguia e o texto ficava no campo\n- As misturas não tinham vizinhos nenhuns: duas chaves no mesmo mapa\n\nComparar com ios-v2.4.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.1...ios-v2.4.3",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.4/Duotone.ipa",
           "size": 15968483,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.1.2",
-          "date": "2026-09-07T15:31:20Z",
-          "localizedDescription": "- O convite nunca podia funcionar, e o chat não se lia\n\nComparar com ios-v2.1.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.1...ios-v2.1.2",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.2/Duotone.ipa",
-          "size": 15967440,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.4.3",
-      "versionDate": "2026-09-08T17:45:25Z",
-      "versionDescription": "- A marca ao centro: o espaçamento entre letras deixava um vazio à direita\n- A app deixava de reagir ao toque: duas janelas a trocar de lugar ao mesmo tempo\n- Fechar volta ao canto, o corpo volta a repartir o ecrã, e o temporizador conta\n- A mensagem seguia e o texto ficava no campo\n- As misturas não tinham vizinhos nenhuns: duas chaves no mesmo mapa\n\nComparar com ios-v2.4.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.1...ios-v2.4.3",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.3/Duotone.ipa",
-      "size": 16125936
+      "version": "2.4.4",
+      "versionDate": "2026-09-08T22:36:12Z",
+      "versionDescription": "- Um push para Testing passa a dar também o .exe\n- O equalizador do iPhone deixa de calar o som ao mexer\n- A consulta de confirmação da migração devolvia constraints de outras tabelas\n- A sombra apaga-se enquanto a capa vira para as letras\n- Uma sombra ligeira por baixo da capa do leitor\n- Rádio por artista, e o que a separa de uma mistura\n- A grelha de atalhos à cabeça da pesquisa\n- A descoberta passa a ser a mesma durante sete dias\n- O teste do player rebentava a arrancar, e o typecheck não dava por isso\n- Os teus estilos, descobertos e não etiquetados\n- A duração total também no cabeçalho da playlist no PC\n- A playlist passa a ter cara\n- Migração para o equalizador base sincronizar entre aparelhos\n- Equalizador base nas Definições, nas duas plataformas\n- Os últimos quatro sítios a pedir a lista de playlists por conta própria\n- As playlists deixam de piscar de cada vez que se abre a página\n- A folga do now-playing estava toda num sítio só\n- A fila de quem está a ouvir dizia quem, mas não o quê\n- No Windows a descoberta estava toda vazia, e ninguém dava por isso\n- O nome do artista no PC já levava à página dele, mas não parecia\n\nComparar com ios-v2.4.3: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.3...ios-v2.4.4",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.4/Duotone.ipa",
+      "size": 16140787
     }
   ],
   "news": []
