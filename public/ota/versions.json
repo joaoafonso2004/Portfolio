@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-08T16:58:05.548Z",
+  "generatedAt": "2026-09-08T17:45:39.767Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.4.1",
-        "tag": "ios-v2.4.1",
-        "notes": "- Daily mixes a sério: o teu artista intercalado com os vizinhos dele\n- O aviso que prometia uma segunda tentativa passa a fazer alguma coisa\n- Guardar e partilhar uma mistura, com o partilhar a guardar antes\n- As opções do leitor descem para junto do título, num menu que abre ali\n- As playlists mudam de dia para dia, e a descoberta perde a duração\n- A capa seguinte assoma na margem, e diz que há mais música\n\nComparar com ios-v2.4.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.0...ios-v2.4.1",
-        "publishedAt": "2026-09-08T16:57:51Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.4.1",
+        "version": "2.4.3",
+        "tag": "ios-v2.4.3",
+        "notes": "- A marca ao centro: o espaçamento entre letras deixava um vazio à direita\n- A app deixava de reagir ao toque: duas janelas a trocar de lugar ao mesmo tempo\n- Fechar volta ao canto, o corpo volta a repartir o ecrã, e o temporizador conta\n- A mensagem seguia e o texto ficava no campo\n- As misturas não tinham vizinhos nenhuns: duas chaves no mesmo mapa\n\nComparar com ios-v2.4.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.1...ios-v2.4.3",
+        "publishedAt": "2026-09-08T17:45:25Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.4.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 16124612,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.1/Duotone.ipa",
+          "size": 16125936,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.3/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.1/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.3/Duotone.ipa"
       },
       "windows": {
         "version": "2.0.0",
