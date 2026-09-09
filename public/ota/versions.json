@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-09T21:19:14.755Z",
+  "generatedAt": "2026-09-09T21:26:54.637Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.4.8",
-        "tag": "ios-v2.4.8",
-        "notes": "- A capa reage ao som no iPhone, com o shader do PC\n- Gestos, cabeçalho e a página dos artistas\n- Misturas por década, pelo método do Spotify\n- O smart shuffle sugeria sempre do mesmo poço\n- Três artistas, para o primeiro dia não ser uma página vazia\n- O catálogo passa a guardar género e ano\n- O botão de refrescar não trazia nada de novo\n- Discord Rich Presence: o que estás a ouvir, no teu perfil\n\nComparar com ios-v2.4.6: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.6...ios-v2.4.8",
-        "publishedAt": "2026-09-09T20:27:35Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.4.8",
+        "version": "2.4.9",
+        "tag": "ios-v2.4.9",
+        "notes": "- A capa reactiva no iPhone passa a acompanhar a música, e não a tremer\n- O equalizador base passa a sincronizar entre aparelhos\n\nComparar com ios-v2.4.8: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.8...ios-v2.4.9",
+        "publishedAt": "2026-09-09T21:26:38Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.4.9",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 16342443,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.8/Duotone.ipa",
-          "downloads": 2
+          "size": 16340442,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.9/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.8/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.9/Duotone.ipa"
       },
       "windows": {
         "version": "2.4.9",

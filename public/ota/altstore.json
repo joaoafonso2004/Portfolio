@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.4.9",
+          "date": "2026-09-09T21:26:38Z",
+          "localizedDescription": "- A capa reactiva no iPhone passa a acompanhar a música, e não a tremer\n- O equalizador base passa a sincronizar entre aparelhos\n\nComparar com ios-v2.4.8: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.8...ios-v2.4.9",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.9/Duotone.ipa",
+          "size": 16340442,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.4.8",
           "date": "2026-09-09T20:27:35Z",
           "localizedDescription": "- A capa reage ao som no iPhone, com o shader do PC\n- Gestos, cabeçalho e a página dos artistas\n- Misturas por década, pelo método do Spotify\n- O smart shuffle sugeria sempre do mesmo poço\n- Três artistas, para o primeiro dia não ser uma página vazia\n- O catálogo passa a guardar género e ano\n- O botão de refrescar não trazia nada de novo\n- Discord Rich Presence: o que estás a ouvir, no teu perfil\n\nComparar com ios-v2.4.6: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.6...ios-v2.4.8",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.2.0/Duotone.ipa",
           "size": 15977601,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.1.8",
-          "date": "2026-09-07T19:51:59Z",
-          "localizedDescription": "- O relógio fraco passa a servir para saltar, e não para afinar\n- Quatro maneiras de o jam se desencontrar, e o fim de cada uma\n\nComparar com ios-v2.1.7: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.7...ios-v2.1.8",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.8/Duotone.ipa",
-          "size": 15975519,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.4.8",
-      "versionDate": "2026-09-09T20:27:35Z",
-      "versionDescription": "- A capa reage ao som no iPhone, com o shader do PC\n- Gestos, cabeçalho e a página dos artistas\n- Misturas por década, pelo método do Spotify\n- O smart shuffle sugeria sempre do mesmo poço\n- Três artistas, para o primeiro dia não ser uma página vazia\n- O catálogo passa a guardar género e ano\n- O botão de refrescar não trazia nada de novo\n- Discord Rich Presence: o que estás a ouvir, no teu perfil\n\nComparar com ios-v2.4.6: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.6...ios-v2.4.8",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.8/Duotone.ipa",
-      "size": 16342443
+      "version": "2.4.9",
+      "versionDate": "2026-09-09T21:26:38Z",
+      "versionDescription": "- A capa reactiva no iPhone passa a acompanhar a música, e não a tremer\n- O equalizador base passa a sincronizar entre aparelhos\n\nComparar com ios-v2.4.8: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.8...ios-v2.4.9",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.9/Duotone.ipa",
+      "size": 16340442
     }
   ],
   "news": []
