@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T15:00:47.056Z",
+  "generatedAt": "2026-09-09T15:17:44.362Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.5/Duotone.ipa"
       },
       "windows": {
-        "version": "2.4.6",
-        "tag": "win-v2.4.6",
-        "notes": "- O Social passa a ser uma lista só, por quem falou por último\n- O Social passa a ser uma secção, a seguir ao Perfil\n- Uma prateleira com o que os teus amigos mais ouvem\n- A velocidade deixa de cortar o som, como o equalizador já não corta\n- Refaz as notificações do iPhone com avisos dentro da app\n\nComparar com win-v2.4.5: https://github.com/joaoafonso2004/duotone/compare/win-v2.4.5...win-v2.4.6",
-        "publishedAt": "2026-09-09T15:00:31Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.4.6",
+        "version": "2.4.7",
+        "tag": "win-v2.4.7",
+        "notes": "- Discord Rich Presence: o que estás a ouvir, no teu perfil\n\nComparar com win-v2.4.6: https://github.com/joaoafonso2004/duotone/compare/win-v2.4.6...win-v2.4.7",
+        "publishedAt": "2026-09-09T15:17:30Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.4.7",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95761594,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.6/Duotone-Setup.exe",
+          "size": 95765889,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.7/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.6/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.7/Duotone-Setup.exe"
       }
     }
   }
