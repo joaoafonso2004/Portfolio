@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T10:33:22.905Z",
+  "generatedAt": "2026-09-09T15:00:47.056Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.5/Duotone.ipa"
       },
       "windows": {
-        "version": "2.4.5",
-        "tag": "win-v2.4.5",
-        "notes": "- Seis correcções da primeira volta no telemóvel\n\nComparar com win-v2.4.4: https://github.com/joaoafonso2004/duotone/compare/win-v2.4.4...win-v2.4.5",
-        "publishedAt": "2026-09-08T23:11:01Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.4.5",
+        "version": "2.4.6",
+        "tag": "win-v2.4.6",
+        "notes": "- O Social passa a ser uma lista só, por quem falou por último\n- O Social passa a ser uma secção, a seguir ao Perfil\n- Uma prateleira com o que os teus amigos mais ouvem\n- A velocidade deixa de cortar o som, como o equalizador já não corta\n- Refaz as notificações do iPhone com avisos dentro da app\n\nComparar com win-v2.4.5: https://github.com/joaoafonso2004/duotone/compare/win-v2.4.5...win-v2.4.6",
+        "publishedAt": "2026-09-09T15:00:31Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.4.6",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95760277,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.5/Duotone-Setup.exe",
-          "downloads": 1
+          "size": 95761594,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.6/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.5/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.6/Duotone-Setup.exe"
       }
     }
   }
