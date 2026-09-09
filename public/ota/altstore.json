@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.4.6",
+          "date": "2026-09-09T15:19:02Z",
+          "localizedDescription": "- O Social passa a ser uma lista só, por quem falou por último\n- O Social passa a ser uma secção, a seguir ao Perfil\n- Uma prateleira com o que os teus amigos mais ouvem\n- A velocidade deixa de cortar o som, como o equalizador já não corta\n- Refaz as notificações do iPhone com avisos dentro da app\n\nComparar com ios-v2.4.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.5...ios-v2.4.6",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.6/Duotone.ipa",
+          "size": 14576036,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.4.5",
           "date": "2026-09-08T23:15:01Z",
           "localizedDescription": "- Seis correcções da primeira volta no telemóvel\n\nComparar com ios-v2.4.4: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.4...ios-v2.4.5",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.7/Duotone.ipa",
           "size": 15974925,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.1.6",
-          "date": "2026-09-07T17:12:20Z",
-          "localizedDescription": "- A 2.1.5 rebentava ao abrir uma sessão: um hook depois de um `return`\n\nComparar com ios-v2.1.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.5...ios-v2.1.6",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.6/Duotone.ipa",
-          "size": 15969881,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.4.5",
-      "versionDate": "2026-09-08T23:15:01Z",
-      "versionDescription": "- Seis correcções da primeira volta no telemóvel\n\nComparar com ios-v2.4.4: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.4...ios-v2.4.5",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.5/Duotone.ipa",
-      "size": 16141257
+      "version": "2.4.6",
+      "versionDate": "2026-09-09T15:19:02Z",
+      "versionDescription": "- O Social passa a ser uma lista só, por quem falou por último\n- O Social passa a ser uma secção, a seguir ao Perfil\n- Uma prateleira com o que os teus amigos mais ouvem\n- A velocidade deixa de cortar o som, como o equalizador já não corta\n- Refaz as notificações do iPhone com avisos dentro da app\n\nComparar com ios-v2.4.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.5...ios-v2.4.6",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.6/Duotone.ipa",
+      "size": 14576036
     }
   ],
   "news": []
