@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T20:29:00.366Z",
+  "generatedAt": "2026-09-09T21:19:14.755Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16342443,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.8/Duotone.ipa",
-          "downloads": 0
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.8/Duotone.ipa"
       },
       "windows": {
-        "version": "2.4.8",
-        "tag": "win-v2.4.8",
-        "notes": "- A capa reage ao som no iPhone, com o shader do PC\n- Gestos, cabeçalho e a página dos artistas\n- Misturas por década, pelo método do Spotify\n- O smart shuffle sugeria sempre do mesmo poço\n- Três artistas, para o primeiro dia não ser uma página vazia\n- O catálogo passa a guardar género e ano\n- O botão de refrescar não trazia nada de novo\n\nComparar com win-v2.4.7: https://github.com/joaoafonso2004/duotone/compare/win-v2.4.7...win-v2.4.8",
-        "publishedAt": "2026-09-09T20:19:13Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.4.8",
+        "version": "2.4.9",
+        "tag": "win-v2.4.9",
+        "notes": "- A capa reactiva no iPhone passa a acompanhar a música, e não a tremer\n- O equalizador base passa a sincronizar entre aparelhos\n\nComparar com win-v2.4.8: https://github.com/joaoafonso2004/duotone/compare/win-v2.4.8...win-v2.4.9",
+        "publishedAt": "2026-09-09T21:19:02Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.4.9",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95767726,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.8/Duotone-Setup.exe",
+          "size": 95768128,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.9/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.8/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.9/Duotone-Setup.exe"
       }
     }
   }
