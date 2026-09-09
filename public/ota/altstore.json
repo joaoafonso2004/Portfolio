@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.4.8",
+          "date": "2026-09-09T20:27:35Z",
+          "localizedDescription": "- A capa reage ao som no iPhone, com o shader do PC\n- Gestos, cabeçalho e a página dos artistas\n- Misturas por década, pelo método do Spotify\n- O smart shuffle sugeria sempre do mesmo poço\n- Três artistas, para o primeiro dia não ser uma página vazia\n- O catálogo passa a guardar género e ano\n- O botão de refrescar não trazia nada de novo\n- Discord Rich Presence: o que estás a ouvir, no teu perfil\n\nComparar com ios-v2.4.6: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.6...ios-v2.4.8",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.8/Duotone.ipa",
+          "size": 16342443,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.4.6",
           "date": "2026-09-09T15:19:02Z",
           "localizedDescription": "- O Social passa a ser uma lista só, por quem falou por último\n- O Social passa a ser uma secção, a seguir ao Perfil\n- Uma prateleira com o que os teus amigos mais ouvem\n- A velocidade deixa de cortar o som, como o equalizador já não corta\n- Refaz as notificações do iPhone com avisos dentro da app\n\nComparar com ios-v2.4.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.5...ios-v2.4.6",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.8/Duotone.ipa",
           "size": 15975519,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.1.7",
-          "date": "2026-09-07T18:38:40Z",
-          "localizedDescription": "- A fila partilhada passa a ser a única fonte da próxima faixa no jam\n\nComparar com ios-v2.1.6: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.6...ios-v2.1.7",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.1.7/Duotone.ipa",
-          "size": 15974925,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.4.6",
-      "versionDate": "2026-09-09T15:19:02Z",
-      "versionDescription": "- O Social passa a ser uma lista só, por quem falou por último\n- O Social passa a ser uma secção, a seguir ao Perfil\n- Uma prateleira com o que os teus amigos mais ouvem\n- A velocidade deixa de cortar o som, como o equalizador já não corta\n- Refaz as notificações do iPhone com avisos dentro da app\n\nComparar com ios-v2.4.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.5...ios-v2.4.6",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.6/Duotone.ipa",
-      "size": 14576036
+      "version": "2.4.8",
+      "versionDate": "2026-09-09T20:27:35Z",
+      "versionDescription": "- A capa reage ao som no iPhone, com o shader do PC\n- Gestos, cabeçalho e a página dos artistas\n- Misturas por década, pelo método do Spotify\n- O smart shuffle sugeria sempre do mesmo poço\n- Três artistas, para o primeiro dia não ser uma página vazia\n- O catálogo passa a guardar género e ano\n- O botão de refrescar não trazia nada de novo\n- Discord Rich Presence: o que estás a ouvir, no teu perfil\n\nComparar com ios-v2.4.6: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.6...ios-v2.4.8",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.8/Duotone.ipa",
+      "size": 16342443
     }
   ],
   "news": []
