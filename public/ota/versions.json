@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T15:19:15.950Z",
+  "generatedAt": "2026-09-09T20:19:27.712Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.6/Duotone.ipa"
       },
       "windows": {
-        "version": "2.4.7",
-        "tag": "win-v2.4.7",
-        "notes": "- Discord Rich Presence: o que estás a ouvir, no teu perfil\n\nComparar com win-v2.4.6: https://github.com/joaoafonso2004/duotone/compare/win-v2.4.6...win-v2.4.7",
-        "publishedAt": "2026-09-09T15:17:30Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.4.7",
+        "version": "2.4.8",
+        "tag": "win-v2.4.8",
+        "notes": "- A capa reage ao som no iPhone, com o shader do PC\n- Gestos, cabeçalho e a página dos artistas\n- Misturas por década, pelo método do Spotify\n- O smart shuffle sugeria sempre do mesmo poço\n- Três artistas, para o primeiro dia não ser uma página vazia\n- O catálogo passa a guardar género e ano\n- O botão de refrescar não trazia nada de novo\n\nComparar com win-v2.4.7: https://github.com/joaoafonso2004/duotone/compare/win-v2.4.7...win-v2.4.8",
+        "publishedAt": "2026-09-09T20:19:13Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.4.8",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95765889,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.7/Duotone-Setup.exe",
+          "size": 95767726,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.8/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.7/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.8/Duotone-Setup.exe"
       }
     }
   }
