@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T21:26:54.637Z",
+  "generatedAt": "2026-09-10T01:40:23.038Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16340442,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.9/Duotone.ipa",
-          "downloads": 0
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.9/Duotone.ipa"
       },
       "windows": {
-        "version": "2.4.9",
-        "tag": "win-v2.4.9",
-        "notes": "- A capa reactiva no iPhone passa a acompanhar a música, e não a tremer\n- O equalizador base passa a sincronizar entre aparelhos\n\nComparar com win-v2.4.8: https://github.com/joaoafonso2004/duotone/compare/win-v2.4.8...win-v2.4.9",
-        "publishedAt": "2026-09-09T21:19:02Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.4.9",
+        "version": "2.5.0",
+        "tag": "win-v2.5.0",
+        "notes": "- O espectro da capa passa a ser uma FFT a sério, como no PC\n- O corte ao mudar de velocidade: a ordem estava trocada, e há uma escolha a fazer\n\nComparar com win-v2.4.9: https://github.com/joaoafonso2004/duotone/compare/win-v2.4.9...win-v2.5.0",
+        "publishedAt": "2026-09-10T01:40:06Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.5.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 95768128,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.9/Duotone-Setup.exe",
+          "size": 95767807,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.5.0/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.4.9/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.5.0/Duotone-Setup.exe"
       }
     }
   }
