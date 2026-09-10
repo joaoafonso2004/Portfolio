@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.6.0",
+          "date": "2026-09-10T04:51:18Z",
+          "localizedDescription": "- Fix audio analysis reference for iOS compilation\n- Restore TypeScript 5 peer required by npm ci\n- Bateria: a leitura da análise deixa de saltar para a thread principal, e o modo de poupança desliga o efeito\n- Modo carro, e o espectro deixa de subir quatro vezes o que precisa\n- Uma música por dia\n- Passa o aux: dentro da sessão, a vez de escolher roda\n- A fila do jam deixa de secar\n- A semana em cinco números, à sexta-feira\n- \"Rare finds\": a música que não existe em serviço nenhum\n- Vocês os dois: uma página sobre uma amizade, feita de música\n- Entrar no que o amigo está a ouvir, com um toque\n- \"Tocar a seguir\" no jam quer mesmo dizer a seguir, e a capa desce a 30 fps\n- O Social deixa de fazer uma leitura completa de dois em dois minutos em segundo plano\n- Misturas por género, e um \"mais destas\" para as recomendações\n- As prateleiras de misturas chegam ao Windows\n\nComparar com ios-v2.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.5.0...ios-v2.6.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.0/Duotone.ipa",
+          "size": 16378159,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.5.0",
           "date": "2026-09-10T01:40:53Z",
           "localizedDescription": "- O espectro da capa passa a ser uma FFT a sério, como no PC\n- O corte ao mudar de velocidade: a ordem estava trocada, e há uma escolha a fazer\n\nComparar com ios-v2.4.9: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.9...ios-v2.5.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.0/Duotone.ipa",
           "size": 16117698,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.3.0",
-          "date": "2026-09-08T02:49:07Z",
-          "localizedDescription": "- Quem está a ouvir agora, à cabeça da pesquisa\n- As prateleiras deixam de parecer álbuns: uma faixa por artista de cada vez\n- A pesquisa ganha a forma que faltava: primeira secção em lista, e \"See all\"\n- A pesquisa deixa de repetir músicas e de esperar pela prateleira mais lenta\n- Uma rede para o convidado preso nos 0:00, já que a causa me escapa\n- Arrastar passa a funcionar com o shuffle ligado, e o hold sem mexer desfaz-se\n\nComparar com ios-v2.2.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.2.0...ios-v2.3.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.3.0/Duotone.ipa",
-          "size": 15984781,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.5.0",
-      "versionDate": "2026-09-10T01:40:53Z",
-      "versionDescription": "- O espectro da capa passa a ser uma FFT a sério, como no PC\n- O corte ao mudar de velocidade: a ordem estava trocada, e há uma escolha a fazer\n\nComparar com ios-v2.4.9: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.9...ios-v2.5.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.5.0/Duotone.ipa",
-      "size": 16343938
+      "version": "2.6.0",
+      "versionDate": "2026-09-10T04:51:18Z",
+      "versionDescription": "- Fix audio analysis reference for iOS compilation\n- Restore TypeScript 5 peer required by npm ci\n- Bateria: a leitura da análise deixa de saltar para a thread principal, e o modo de poupança desliga o efeito\n- Modo carro, e o espectro deixa de subir quatro vezes o que precisa\n- Uma música por dia\n- Passa o aux: dentro da sessão, a vez de escolher roda\n- A fila do jam deixa de secar\n- A semana em cinco números, à sexta-feira\n- \"Rare finds\": a música que não existe em serviço nenhum\n- Vocês os dois: uma página sobre uma amizade, feita de música\n- Entrar no que o amigo está a ouvir, com um toque\n- \"Tocar a seguir\" no jam quer mesmo dizer a seguir, e a capa desce a 30 fps\n- O Social deixa de fazer uma leitura completa de dois em dois minutos em segundo plano\n- Misturas por género, e um \"mais destas\" para as recomendações\n- As prateleiras de misturas chegam ao Windows\n\nComparar com ios-v2.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.5.0...ios-v2.6.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.0/Duotone.ipa",
+      "size": 16378159
     }
   ],
   "news": []
