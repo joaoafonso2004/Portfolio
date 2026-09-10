@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.6.2",
+          "date": "2026-09-10T17:33:41Z",
+          "localizedDescription": "- release: Duotone 2.6.2\n\nComparar com ios-v2.6.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.6.0...ios-v2.6.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.2/Duotone.ipa",
+          "size": 16381573,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.6.0",
           "date": "2026-09-10T04:51:18Z",
           "localizedDescription": "- Fix audio analysis reference for iOS compilation\n- Restore TypeScript 5 peer required by npm ci\n- Bateria: a leitura da análise deixa de saltar para a thread principal, e o modo de poupança desliga o efeito\n- Modo carro, e o espectro deixa de subir quatro vezes o que precisa\n- Uma música por dia\n- Passa o aux: dentro da sessão, a vez de escolher roda\n- A fila do jam deixa de secar\n- A semana em cinco números, à sexta-feira\n- \"Rare finds\": a música que não existe em serviço nenhum\n- Vocês os dois: uma página sobre uma amizade, feita de música\n- Entrar no que o amigo está a ouvir, com um toque\n- \"Tocar a seguir\" no jam quer mesmo dizer a seguir, e a capa desce a 30 fps\n- O Social deixa de fazer uma leitura completa de dois em dois minutos em segundo plano\n- Misturas por género, e um \"mais destas\" para as recomendações\n- As prateleiras de misturas chegam ao Windows\n\nComparar com ios-v2.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.5.0...ios-v2.6.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.1/Duotone.ipa",
           "size": 16124612,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.4.0",
-          "date": "2026-09-08T15:16:22Z",
-          "localizedDescription": "- Refaz o lockfile com o npm que o CI usa, e não com o meu\n- Integra os controlos do Currently Playing e as ações da fila\n- Os separadores passam a mudar com o dedo\n- As secções de baixo em cartões largos, não em quadrados\n- Três coisas do perfil: tirar uma playlist, a data a mais, e a moldura\n- Playlists que a app monta, entre a descoberta e o que já se ouviu\n- A pesquisa passa a dar música que chegue, e sem ícones à frente dos títulos\n- O arrasto na fila deixa de estar preso ao que está visível\n- Fecha o now-playing a meio: três estilos em falta e a saída da fila\n- A rede do 0:00 passa a valer também para quem ouve sozinho\n- O pré-carregamento voltava a seguir a fila antiga depois de reordenar\n\nComparar com ios-v2.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.3.0...ios-v2.4.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.0/Duotone.ipa",
-          "size": 16117698,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.6.0",
-      "versionDate": "2026-09-10T04:51:18Z",
-      "versionDescription": "- Fix audio analysis reference for iOS compilation\n- Restore TypeScript 5 peer required by npm ci\n- Bateria: a leitura da análise deixa de saltar para a thread principal, e o modo de poupança desliga o efeito\n- Modo carro, e o espectro deixa de subir quatro vezes o que precisa\n- Uma música por dia\n- Passa o aux: dentro da sessão, a vez de escolher roda\n- A fila do jam deixa de secar\n- A semana em cinco números, à sexta-feira\n- \"Rare finds\": a música que não existe em serviço nenhum\n- Vocês os dois: uma página sobre uma amizade, feita de música\n- Entrar no que o amigo está a ouvir, com um toque\n- \"Tocar a seguir\" no jam quer mesmo dizer a seguir, e a capa desce a 30 fps\n- O Social deixa de fazer uma leitura completa de dois em dois minutos em segundo plano\n- Misturas por género, e um \"mais destas\" para as recomendações\n- As prateleiras de misturas chegam ao Windows\n\nComparar com ios-v2.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.5.0...ios-v2.6.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.0/Duotone.ipa",
-      "size": 16378159
+      "version": "2.6.2",
+      "versionDate": "2026-09-10T17:33:41Z",
+      "versionDescription": "- release: Duotone 2.6.2\n\nComparar com ios-v2.6.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.6.0...ios-v2.6.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.2/Duotone.ipa",
+      "size": 16381573
     }
   ],
   "news": []
