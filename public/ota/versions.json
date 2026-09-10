@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-10T19:05:52.288Z",
+  "generatedAt": "2026-09-10T19:11:54.495Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.6.2",
-        "tag": "ios-v2.6.2",
-        "notes": "- release: Duotone 2.6.2\n\nComparar com ios-v2.6.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.6.0...ios-v2.6.2",
-        "publishedAt": "2026-09-10T17:33:41Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.6.2",
+        "version": "2.6.3",
+        "tag": "ios-v2.6.3",
+        "notes": "- O lock volta a ter o TypeScript 5 que o npm ci do CI exige\n- Músicas do dia: os dias anteriores, e a versão do PC\n- Rare finds: \"New to you\" passa a ser verdade\n- Definições: o servidor de PO Token deixa de prometer o que já não é verdade\n- \"Tocar a seguir\" testado em todos os modos da fila\n- O relatório estratégico passa a marcar o que está feito\n- Electron 37 -> 44: o Windows volta a ter um Chromium com correções\n- iPhone: saber que o YouTube fechou a porta antes de o ecrã bloquear\n- O \"Rare finds\" antigo acaba de vez: fora o código que ficou órfão\n- O Join do Discord: o botão do YouTube deitava abaixo a atividade do Jam\n\nComparar com ios-v2.6.2: https://github.com/joaoafonso2004/duotone/compare/ios-v2.6.2...ios-v2.6.3",
+        "publishedAt": "2026-09-10T19:11:40Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.6.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 16381573,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.2/Duotone.ipa",
-          "downloads": 1
+          "size": 16389813,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.3/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.2/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.3/Duotone.ipa"
       },
       "windows": {
         "version": "2.6.3",
