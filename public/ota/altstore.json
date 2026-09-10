@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.5.0",
+          "date": "2026-09-10T01:40:53Z",
+          "localizedDescription": "- O espectro da capa passa a ser uma FFT a sério, como no PC\n- O corte ao mudar de velocidade: a ordem estava trocada, e há uma escolha a fazer\n\nComparar com ios-v2.4.9: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.9...ios-v2.5.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.5.0/Duotone.ipa",
+          "size": 16343938,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.4.9",
           "date": "2026-09-09T21:26:38Z",
           "localizedDescription": "- A capa reactiva no iPhone passa a acompanhar a música, e não a tremer\n- O equalizador base passa a sincronizar entre aparelhos\n\nComparar com ios-v2.4.8: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.8...ios-v2.4.9",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.3.0/Duotone.ipa",
           "size": 15984781,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.2.0",
-          "date": "2026-09-07T20:35:08Z",
-          "localizedDescription": "- Arrastar para reordenar a fila, com um segundo de espera a abrir o gesto\n- Dentro do jam, Play numa lista põe na fila em vez de tomar conta\n- Reler a sessão deixa de cancelar a faixa que estava a carregar\n\nComparar com ios-v2.1.8: https://github.com/joaoafonso2004/duotone/compare/ios-v2.1.8...ios-v2.2.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.2.0/Duotone.ipa",
-          "size": 15977601,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.4.9",
-      "versionDate": "2026-09-09T21:26:38Z",
-      "versionDescription": "- A capa reactiva no iPhone passa a acompanhar a música, e não a tremer\n- O equalizador base passa a sincronizar entre aparelhos\n\nComparar com ios-v2.4.8: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.8...ios-v2.4.9",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.9/Duotone.ipa",
-      "size": 16340442
+      "version": "2.5.0",
+      "versionDate": "2026-09-10T01:40:53Z",
+      "versionDescription": "- O espectro da capa passa a ser uma FFT a sério, como no PC\n- O corte ao mudar de velocidade: a ordem estava trocada, e há uma escolha a fazer\n\nComparar com ios-v2.4.9: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.9...ios-v2.5.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.5.0/Duotone.ipa",
+      "size": 16343938
     }
   ],
   "news": []
