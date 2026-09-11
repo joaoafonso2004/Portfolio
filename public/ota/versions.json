@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T13:01:47.507Z",
+  "generatedAt": "2026-09-11T15:31:01.903Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16404738,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.4/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.4/Duotone.ipa"
       },
       "windows": {
-        "version": "2.6.4",
-        "tag": "win-v2.6.4",
-        "notes": "- Relatório: partilha no chat, handoff com fila e indicador de visibilidade feitos\n- Indicador de visibilidade no leitor, e escuta privada\n- O \"continuar aqui\" mostra a fila que vem com ele\n- Guardar uma música direto da conversa\n- Smart Collections saem\n- O menu das faixas diz \"Play next\" em todo o lado\n- Smart Collections: o artista pelo nome que se vê, e o PC sem downloads que não tem\n- feat: add live smart collections\n- feat: add discovery control and harden social playback\n- O relatório passa a marcar o que saiu na 2.6.3\n\nComparar com win-v2.6.3: https://github.com/joaoafonso2004/duotone/compare/win-v2.6.3...win-v2.6.4",
-        "publishedAt": "2026-09-11T12:55:57Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.6.4",
+        "version": "2.6.5",
+        "tag": "win-v2.6.5",
+        "notes": "- release: Duotone 2.6.5\n- Relatório: sai o gestor de downloads\n- Continuar aqui ao vivo, com a hora medida pelo servidor\n- Uma reprodução só conta com metade ouvida, ou quatro minutos\n- No leitor do PC, um olho em vez da pílula Discord\n- Arrastar na fila do iPhone: desliza nas bordas, e a música fica onde se larga\n- Sai o Discovery Control, e o seletor do Discover no PC alinha com o resto\n- Relatório: a 2.6.4 está publicada\n\nComparar com win-v2.6.4: https://github.com/joaoafonso2004/duotone/compare/win-v2.6.4...win-v2.6.5",
+        "publishedAt": "2026-09-11T15:30:44Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.6.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115117529,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.6.4/Duotone-Setup.exe",
+          "size": 115118521,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.6.5/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.6.4/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.6.5/Duotone-Setup.exe"
       }
     }
   }
