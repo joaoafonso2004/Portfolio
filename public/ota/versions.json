@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T10:22:47.699Z",
+  "generatedAt": "2026-09-11T12:56:11.904Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.3/Duotone.ipa"
       },
       "windows": {
-        "version": "2.6.3",
-        "tag": "win-v2.6.3",
-        "notes": "- O lock volta a ter o TypeScript 5 que o npm ci do CI exige\n- Músicas do dia: os dias anteriores, e a versão do PC\n- Rare finds: \"New to you\" passa a ser verdade\n- Definições: o servidor de PO Token deixa de prometer o que já não é verdade\n- \"Tocar a seguir\" testado em todos os modos da fila\n- O relatório estratégico passa a marcar o que está feito\n- Electron 37 -> 44: o Windows volta a ter um Chromium com correções\n- iPhone: saber que o YouTube fechou a porta antes de o ecrã bloquear\n- O \"Rare finds\" antigo acaba de vez: fora o código que ficou órfão\n- O Join do Discord: o botão do YouTube deitava abaixo a atividade do Jam\n\nComparar com win-v2.6.2: https://github.com/joaoafonso2004/duotone/compare/win-v2.6.2...win-v2.6.3",
-        "publishedAt": "2026-09-10T19:05:30Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.6.3",
+        "version": "2.6.4",
+        "tag": "win-v2.6.4",
+        "notes": "- Relatório: partilha no chat, handoff com fila e indicador de visibilidade feitos\n- Indicador de visibilidade no leitor, e escuta privada\n- O \"continuar aqui\" mostra a fila que vem com ele\n- Guardar uma música direto da conversa\n- Smart Collections saem\n- O menu das faixas diz \"Play next\" em todo o lado\n- Smart Collections: o artista pelo nome que se vê, e o PC sem downloads que não tem\n- feat: add live smart collections\n- feat: add discovery control and harden social playback\n- O relatório passa a marcar o que saiu na 2.6.3\n\nComparar com win-v2.6.3: https://github.com/joaoafonso2004/duotone/compare/win-v2.6.3...win-v2.6.4",
+        "publishedAt": "2026-09-11T12:55:57Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.6.4",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115110773,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.6.3/Duotone-Setup.exe",
+          "size": 115117529,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.6.4/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.6.3/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.6.4/Duotone-Setup.exe"
       }
     }
   }
