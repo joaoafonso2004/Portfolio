@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T09:53:55.942Z",
+  "generatedAt": "2026-09-12T13:38:43.323Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17459730,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.5/Duotone.ipa",
-          "downloads": 1
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.5/Duotone.ipa"
       },
       "windows": {
-        "version": "2.7.5",
-        "tag": "win-v2.7.5",
-        "notes": "- release: Duotone 2.7.5\n- Contraste que passa, embed sem cookies, e as capas pedidas na abertura\n- Plano e relatório: sai o AirPlay, e o CarPlay fica medido\n\nComparar com win-v2.7.2: https://github.com/joaoafonso2004/duotone/compare/win-v2.7.2...win-v2.7.5",
-        "publishedAt": "2026-09-12T04:14:20Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.7.5",
+        "version": "2.7.6",
+        "tag": "win-v2.7.6",
+        "notes": "- release: Duotone 2.7.6\n- A abertura acaba com o logo a vir na direção do ecrã\n\nComparar com win-v2.7.5: https://github.com/joaoafonso2004/duotone/compare/win-v2.7.5...win-v2.7.6",
+        "publishedAt": "2026-09-12T13:38:29Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.7.6",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116221332,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.5/Duotone-Setup.exe",
+          "size": 116450013,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.6/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.5/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.6/Duotone-Setup.exe"
       }
     }
   }
