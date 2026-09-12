@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T01:50:35.316Z",
+  "generatedAt": "2026-09-12T02:54:29.785Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17448592,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.0/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.0/Duotone.ipa"
       },
       "windows": {
-        "version": "2.7.0",
-        "tag": "win-v2.7.0",
-        "notes": "- release: Duotone 2.7.0\n- Plano e relatório: a 2 feita, o Library check\n- Library check: duplicados, vídeos mortos e capas partidas\n- Plano: a 1 feita, e entra a velocidade partilhada no Jam\n- Definições que provam efeito\n- Plano das próximas cinco\n- Relatório: menus feitos, e saem as transições adaptativas\n- Menus das faixas iguais em todo o lado\n- Relatório: as Músicas do dia já têm o SQL aplicado desde 10/9\n- Relatório: sai a \"Vocês os dois\"\n- Relatório: sai o Music Director\n- Relatório: o Jam funciona a dois, e o Discovery Control saiu na 2.6.5\n- Jam: cada pessoa com o seu perfil, e a barra sai de cima do leitor\n- Jam no PC: fica pronto quando carrega, e toca a 1x lá dentro\n- Abertura: um eclipse que se abre no logo ao ligar a app\n\nComparar com win-v2.6.5: https://github.com/joaoafonso2004/duotone/compare/win-v2.6.5...win-v2.7.0",
-        "publishedAt": "2026-09-12T01:47:31Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.7.0",
+        "version": "2.7.1",
+        "tag": "win-v2.7.1",
+        "notes": "- release: Duotone 2.7.1\n- Modo limpo no PC: a capa, a barra, e mais nada\n- Relatório: a 2.7.0 está publicada\n\nComparar com win-v2.7.0: https://github.com/joaoafonso2004/duotone/compare/win-v2.7.0...win-v2.7.1",
+        "publishedAt": "2026-09-12T02:54:15Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.7.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116135106,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.0/Duotone-Setup.exe",
+          "size": 116136722,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.1/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.1/Duotone-Setup.exe"
       }
     }
   }
