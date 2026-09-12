@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-12T20:34:14.432Z",
+  "generatedAt": "2026-09-12T20:41:11.346Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.7.7",
-        "tag": "ios-v2.7.7",
-        "notes": "- release: Duotone 2.7.7\n- A animação da abertura deixa de tremer no iPhone\n\nComparar com ios-v2.7.6: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.6...ios-v2.7.7",
-        "publishedAt": "2026-09-12T19:18:01Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.7.7",
+        "version": "2.7.8",
+        "tag": "ios-v2.7.8",
+        "notes": "- release: Duotone 2.7.8\n- Abrir a app deixa de pôr música a tocar, e o Connect fica utilizável\n\nComparar com ios-v2.7.7: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.7...ios-v2.7.8",
+        "publishedAt": "2026-09-12T20:40:58Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.7.8",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17046350,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.7/Duotone.ipa",
-          "downloads": 2
+          "size": 17047188,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.8/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.7/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.8/Duotone.ipa"
       },
       "windows": {
         "version": "2.7.8",
