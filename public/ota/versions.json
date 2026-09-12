@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T13:43:16.593Z",
+  "generatedAt": "2026-09-12T19:15:14.157Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17688923,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.6/Duotone.ipa",
-          "downloads": 0
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.6/Duotone.ipa"
       },
       "windows": {
-        "version": "2.7.6",
-        "tag": "win-v2.7.6",
-        "notes": "- release: Duotone 2.7.6\n- A abertura acaba com o logo a vir na direção do ecrã\n\nComparar com win-v2.7.5: https://github.com/joaoafonso2004/duotone/compare/win-v2.7.5...win-v2.7.6",
-        "publishedAt": "2026-09-12T13:38:29Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.7.6",
+        "version": "2.7.7",
+        "tag": "win-v2.7.7",
+        "notes": "- release: Duotone 2.7.7\n- A animação da abertura deixa de tremer no iPhone\n\nComparar com win-v2.7.6: https://github.com/joaoafonso2004/duotone/compare/win-v2.7.6...win-v2.7.7",
+        "publishedAt": "2026-09-12T19:14:59Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.7.7",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116450013,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.6/Duotone-Setup.exe",
+          "size": 115809920,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.7/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.6/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.7/Duotone-Setup.exe"
       }
     }
   }
