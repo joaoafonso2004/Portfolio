@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.7.2",
+          "date": "2026-09-12T03:44:02Z",
+          "localizedDescription": "- release: Duotone 2.7.2\n- Duotone Connect: mandar a música para outro aparelho, e comandá-lo\n- Modo limpo: fundo escuro com a cor da capa, e o Esc a chegar mesmo\n- Plano e relatório: saem os atalhos físicos\n- release: Duotone 2.7.1\n- Modo limpo no PC: a capa, a barra, e mais nada\n- Relatório: a 2.7.0 está publicada\n\nComparar com ios-v2.7.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.0...ios-v2.7.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.2/Duotone.ipa",
+          "size": 17457578,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.7.0",
           "date": "2026-09-12T01:50:23Z",
           "localizedDescription": "- release: Duotone 2.7.0\n- Plano e relatório: a 2 feita, o Library check\n- Library check: duplicados, vídeos mortos e capas partidas\n- Plano: a 1 feita, e entra a velocidade partilhada no Jam\n- Definições que provam efeito\n- Plano das próximas cinco\n- Relatório: menus feitos, e saem as transições adaptativas\n- Menus das faixas iguais em todo o lado\n- Relatório: as Músicas do dia já têm o SQL aplicado desde 10/9\n- Relatório: sai a \"Vocês os dois\"\n- Relatório: sai o Music Director\n- Relatório: o Jam funciona a dois, e o Discovery Control saiu na 2.6.5\n- Jam: cada pessoa com o seu perfil, e a barra sai de cima do leitor\n- Jam no PC: fica pronto quando carrega, e toca a 1x lá dentro\n- Abertura: um eclipse que se abre no logo ao ligar a app\n\nComparar com ios-v2.6.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.6.5...ios-v2.7.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.8/Duotone.ipa",
           "size": 16342443,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.4.6",
-          "date": "2026-09-09T15:19:02Z",
-          "localizedDescription": "- O Social passa a ser uma lista só, por quem falou por último\n- O Social passa a ser uma secção, a seguir ao Perfil\n- Uma prateleira com o que os teus amigos mais ouvem\n- A velocidade deixa de cortar o som, como o equalizador já não corta\n- Refaz as notificações do iPhone com avisos dentro da app\n\nComparar com ios-v2.4.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.5...ios-v2.4.6",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.6/Duotone.ipa",
-          "size": 14576036,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.7.0",
-      "versionDate": "2026-09-12T01:50:23Z",
-      "versionDescription": "- release: Duotone 2.7.0\n- Plano e relatório: a 2 feita, o Library check\n- Library check: duplicados, vídeos mortos e capas partidas\n- Plano: a 1 feita, e entra a velocidade partilhada no Jam\n- Definições que provam efeito\n- Plano das próximas cinco\n- Relatório: menus feitos, e saem as transições adaptativas\n- Menus das faixas iguais em todo o lado\n- Relatório: as Músicas do dia já têm o SQL aplicado desde 10/9\n- Relatório: sai a \"Vocês os dois\"\n- Relatório: sai o Music Director\n- Relatório: o Jam funciona a dois, e o Discovery Control saiu na 2.6.5\n- Jam: cada pessoa com o seu perfil, e a barra sai de cima do leitor\n- Jam no PC: fica pronto quando carrega, e toca a 1x lá dentro\n- Abertura: um eclipse que se abre no logo ao ligar a app\n\nComparar com ios-v2.6.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.6.5...ios-v2.7.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.0/Duotone.ipa",
-      "size": 17448592
+      "version": "2.7.2",
+      "versionDate": "2026-09-12T03:44:02Z",
+      "versionDescription": "- release: Duotone 2.7.2\n- Duotone Connect: mandar a música para outro aparelho, e comandá-lo\n- Modo limpo: fundo escuro com a cor da capa, e o Esc a chegar mesmo\n- Plano e relatório: saem os atalhos físicos\n- release: Duotone 2.7.1\n- Modo limpo no PC: a capa, a barra, e mais nada\n- Relatório: a 2.7.0 está publicada\n\nComparar com ios-v2.7.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.0...ios-v2.7.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.2/Duotone.ipa",
+      "size": 17457578
     }
   ],
   "news": []
