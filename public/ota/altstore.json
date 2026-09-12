@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.7.0",
+          "date": "2026-09-12T01:50:23Z",
+          "localizedDescription": "- release: Duotone 2.7.0\n- Plano e relatório: a 2 feita, o Library check\n- Library check: duplicados, vídeos mortos e capas partidas\n- Plano: a 1 feita, e entra a velocidade partilhada no Jam\n- Definições que provam efeito\n- Plano das próximas cinco\n- Relatório: menus feitos, e saem as transições adaptativas\n- Menus das faixas iguais em todo o lado\n- Relatório: as Músicas do dia já têm o SQL aplicado desde 10/9\n- Relatório: sai a \"Vocês os dois\"\n- Relatório: sai o Music Director\n- Relatório: o Jam funciona a dois, e o Discovery Control saiu na 2.6.5\n- Jam: cada pessoa com o seu perfil, e a barra sai de cima do leitor\n- Jam no PC: fica pronto quando carrega, e toca a 1x lá dentro\n- Abertura: um eclipse que se abre no logo ao ligar a app\n\nComparar com ios-v2.6.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.6.5...ios-v2.7.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.0/Duotone.ipa",
+          "size": 17448592,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.6.5",
           "date": "2026-09-11T15:32:12Z",
           "localizedDescription": "- release: Duotone 2.6.5\n- Relatório: sai o gestor de downloads\n- Continuar aqui ao vivo, com a hora medida pelo servidor\n- Uma reprodução só conta com metade ouvida, ou quatro minutos\n- No leitor do PC, um olho em vez da pílula Discord\n- Arrastar na fila do iPhone: desliza nas bordas, e a música fica onde se larga\n- Sai o Discovery Control, e o seletor do Discover no PC alinha com o resto\n- Relatório: a 2.6.4 está publicada\n\nComparar com ios-v2.6.4: https://github.com/joaoafonso2004/duotone/compare/ios-v2.6.4...ios-v2.6.5",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.6/Duotone.ipa",
           "size": 14576036,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.4.5",
-          "date": "2026-09-08T23:15:01Z",
-          "localizedDescription": "- Seis correcções da primeira volta no telemóvel\n\nComparar com ios-v2.4.4: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.4...ios-v2.4.5",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.5/Duotone.ipa",
-          "size": 16141257,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.6.5",
-      "versionDate": "2026-09-11T15:32:12Z",
-      "versionDescription": "- release: Duotone 2.6.5\n- Relatório: sai o gestor de downloads\n- Continuar aqui ao vivo, com a hora medida pelo servidor\n- Uma reprodução só conta com metade ouvida, ou quatro minutos\n- No leitor do PC, um olho em vez da pílula Discord\n- Arrastar na fila do iPhone: desliza nas bordas, e a música fica onde se larga\n- Sai o Discovery Control, e o seletor do Discover no PC alinha com o resto\n- Relatório: a 2.6.4 está publicada\n\nComparar com ios-v2.6.4: https://github.com/joaoafonso2004/duotone/compare/ios-v2.6.4...ios-v2.6.5",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.5/Duotone.ipa",
-      "size": 16408943
+      "version": "2.7.0",
+      "versionDate": "2026-09-12T01:50:23Z",
+      "versionDescription": "- release: Duotone 2.7.0\n- Plano e relatório: a 2 feita, o Library check\n- Library check: duplicados, vídeos mortos e capas partidas\n- Plano: a 1 feita, e entra a velocidade partilhada no Jam\n- Definições que provam efeito\n- Plano das próximas cinco\n- Relatório: menus feitos, e saem as transições adaptativas\n- Menus das faixas iguais em todo o lado\n- Relatório: as Músicas do dia já têm o SQL aplicado desde 10/9\n- Relatório: sai a \"Vocês os dois\"\n- Relatório: sai o Music Director\n- Relatório: o Jam funciona a dois, e o Discovery Control saiu na 2.6.5\n- Jam: cada pessoa com o seu perfil, e a barra sai de cima do leitor\n- Jam no PC: fica pronto quando carrega, e toca a 1x lá dentro\n- Abertura: um eclipse que se abre no logo ao ligar a app\n\nComparar com ios-v2.6.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.6.5...ios-v2.7.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.0/Duotone.ipa",
+      "size": 17448592
     }
   ],
   "news": []
