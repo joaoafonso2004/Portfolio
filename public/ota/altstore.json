@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.7.6",
+          "date": "2026-09-12T13:43:03Z",
+          "localizedDescription": "- release: Duotone 2.7.6\n- A abertura acaba com o logo a vir na direção do ecrã\n\nComparar com ios-v2.7.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.5...ios-v2.7.6",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.6/Duotone.ipa",
+          "size": 17688923,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.7.5",
           "date": "2026-09-12T04:17:20Z",
           "localizedDescription": "- release: Duotone 2.7.5\n- Contraste que passa, embed sem cookies, e as capas pedidas na abertura\n- Plano e relatório: sai o AirPlay, e o CarPlay fica medido\n\nComparar com ios-v2.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.2...ios-v2.7.5",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.5.0/Duotone.ipa",
           "size": 16343938,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.4.9",
-          "date": "2026-09-09T21:26:38Z",
-          "localizedDescription": "- A capa reactiva no iPhone passa a acompanhar a música, e não a tremer\n- O equalizador base passa a sincronizar entre aparelhos\n\nComparar com ios-v2.4.8: https://github.com/joaoafonso2004/duotone/compare/ios-v2.4.8...ios-v2.4.9",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.4.9/Duotone.ipa",
-          "size": 16340442,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.7.5",
-      "versionDate": "2026-09-12T04:17:20Z",
-      "versionDescription": "- release: Duotone 2.7.5\n- Contraste que passa, embed sem cookies, e as capas pedidas na abertura\n- Plano e relatório: sai o AirPlay, e o CarPlay fica medido\n\nComparar com ios-v2.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.2...ios-v2.7.5",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.5/Duotone.ipa",
-      "size": 17459730
+      "version": "2.7.6",
+      "versionDate": "2026-09-12T13:43:03Z",
+      "versionDescription": "- release: Duotone 2.7.6\n- A abertura acaba com o logo a vir na direção do ecrã\n\nComparar com ios-v2.7.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.5...ios-v2.7.6",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.6/Duotone.ipa",
+      "size": 17688923
     }
   ],
   "news": []

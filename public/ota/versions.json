@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-12T13:38:43.323Z",
+  "generatedAt": "2026-09-12T13:43:16.593Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.7.5",
-        "tag": "ios-v2.7.5",
-        "notes": "- release: Duotone 2.7.5\n- Contraste que passa, embed sem cookies, e as capas pedidas na abertura\n- Plano e relatório: sai o AirPlay, e o CarPlay fica medido\n\nComparar com ios-v2.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.2...ios-v2.7.5",
-        "publishedAt": "2026-09-12T04:17:20Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.7.5",
+        "version": "2.7.6",
+        "tag": "ios-v2.7.6",
+        "notes": "- release: Duotone 2.7.6\n- A abertura acaba com o logo a vir na direção do ecrã\n\nComparar com ios-v2.7.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.5...ios-v2.7.6",
+        "publishedAt": "2026-09-12T13:43:03Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.7.6",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17459730,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.5/Duotone.ipa",
-          "downloads": 2
+          "size": 17688923,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.6/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.5/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.6/Duotone.ipa"
       },
       "windows": {
         "version": "2.7.6",
