@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T03:44:16.218Z",
+  "generatedAt": "2026-09-12T04:14:37.613Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17457578,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.2/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.2/Duotone.ipa"
       },
       "windows": {
-        "version": "2.7.2",
-        "tag": "win-v2.7.2",
-        "notes": "- release: Duotone 2.7.2\n- Duotone Connect: mandar a música para outro aparelho, e comandá-lo\n- Modo limpo: fundo escuro com a cor da capa, e o Esc a chegar mesmo\n- Plano e relatório: saem os atalhos físicos\n\nComparar com win-v2.7.1: https://github.com/joaoafonso2004/duotone/compare/win-v2.7.1...win-v2.7.2",
-        "publishedAt": "2026-09-12T03:40:18Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.7.2",
+        "version": "2.7.5",
+        "tag": "win-v2.7.5",
+        "notes": "- release: Duotone 2.7.5\n- Contraste que passa, embed sem cookies, e as capas pedidas na abertura\n- Plano e relatório: sai o AirPlay, e o CarPlay fica medido\n\nComparar com win-v2.7.2: https://github.com/joaoafonso2004/duotone/compare/win-v2.7.2...win-v2.7.5",
+        "publishedAt": "2026-09-12T04:14:20Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.7.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116220602,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.2/Duotone-Setup.exe",
+          "size": 116221332,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.5/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.2/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.7.5/Duotone-Setup.exe"
       }
     }
   }
