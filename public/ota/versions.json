@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-13T03:14:06.608Z",
+  "generatedAt": "2026-09-13T03:21:16.753Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.7.8",
-        "tag": "ios-v2.7.8",
-        "notes": "- release: Duotone 2.7.8\n- Abrir a app deixa de pôr música a tocar, e o Connect fica utilizável\n\nComparar com ios-v2.7.7: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.7...ios-v2.7.8",
-        "publishedAt": "2026-09-12T20:40:58Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.7.8",
+        "version": "2.7.9",
+        "tag": "ios-v2.7.9",
+        "notes": "- release: Duotone 2.7.9\n- Um interruptor para a app não pôr nada na fila do jam sozinha\n- \"Anterior\" dentro de um jam deixa de ser só recomeçar\n- Na fila do jam nada entra duas vezes\n- O F11 volta ao modo limpo, e os aparelhos fantasma são apagados\n\nComparar com ios-v2.7.8: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.8...ios-v2.7.9",
+        "publishedAt": "2026-09-13T03:21:04Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.7.9",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17047188,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.8/Duotone.ipa",
-          "downloads": 1
+          "size": 17049923,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.9/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.8/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.9/Duotone.ipa"
       },
       "windows": {
         "version": "2.7.9",
