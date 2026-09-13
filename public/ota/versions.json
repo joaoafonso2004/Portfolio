@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T18:31:48.157Z",
+  "generatedAt": "2026-09-13T20:38:11.822Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16934290,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.1/Duotone.ipa",
-          "downloads": 0
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.1/Duotone.ipa"
       },
       "windows": {
-        "version": "2.9.1",
-        "tag": "win-v2.9.1",
-        "notes": "- release: Duotone 2.9.1\n\nComparar com win-v2.9.0: https://github.com/joaoafonso2004/duotone/compare/win-v2.9.0...win-v2.9.1",
-        "publishedAt": "2026-09-13T18:25:38Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.9.1",
+        "version": "2.9.2",
+        "tag": "win-v2.9.2",
+        "notes": "- release: Duotone 2.9.2\n- A capa 3D passa a ser uma caixa que vira para as letras\n- A espessura da capa 3D passa a ser a da foto de referência\n- A capa 3D passa a pertencer ao fundo: luz da própria capa, sombra difusa e a face a dominar\n- A capa 3D do iPhone passa a ser um objeto fino a sério, na pose da referência\n\nComparar com win-v2.9.1: https://github.com/joaoafonso2004/duotone/compare/win-v2.9.1...win-v2.9.2",
+        "publishedAt": "2026-09-13T20:37:57Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.9.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115814044,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.9.1/Duotone-Setup.exe",
+          "size": 115815406,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.9.2/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.9.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.9.2/Duotone-Setup.exe"
       }
     }
   }
