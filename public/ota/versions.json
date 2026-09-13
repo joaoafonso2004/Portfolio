@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-13T21:08:53.350Z",
+  "generatedAt": "2026-09-13T21:15:54.757Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.9.2",
-        "tag": "ios-v2.9.2",
-        "notes": "- release: Duotone 2.9.2\n- A capa 3D passa a ser uma caixa que vira para as letras\n- A espessura da capa 3D passa a ser a da foto de referência\n- A capa 3D passa a pertencer ao fundo: luz da própria capa, sombra difusa e a face a dominar\n- A capa 3D do iPhone passa a ser um objeto fino a sério, na pose da referência\n\nComparar com ios-v2.9.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.1...ios-v2.9.2",
-        "publishedAt": "2026-09-13T20:44:21Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.9.2",
+        "version": "2.9.3",
+        "tag": "ios-v2.9.3",
+        "notes": "- release: Duotone 2.9.3\n- O grão da capa 3D cobre as faces inteiras\n\nComparar com ios-v2.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.2...ios-v2.9.3",
+        "publishedAt": "2026-09-13T21:15:42Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.9.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17050118,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.2/Duotone.ipa",
-          "downloads": 1
+          "size": 17050992,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.3/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.2/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.3/Duotone.ipa"
       },
       "windows": {
         "version": "2.9.3",
