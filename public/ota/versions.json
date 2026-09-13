@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-13T18:25:51.089Z",
+  "generatedAt": "2026-09-13T18:31:48.157Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.9.0",
-        "tag": "ios-v2.9.0",
-        "notes": "- O lockfile volta a ser aceite pelo npm da CI\n- release: Duotone 2.9.0\n- Capa e letras mantêm o 3D durante o swipe\n- Smart Shuffle deixa de repetir músicas durante 30 dias\n- Now Playing ganha capa 3D flutuante no iPhone\n- A mistura dos dois junta o gosto de dois amigos\n- Daily mix: uma playlist que se refaz sozinha todos os dias, no topo das Playlists\n- O \"Discover new\" deixa de repetir as músicas das semanas anteriores\n- As recomendações partem do gosto do Spotify, e deixam de ignorar quem chega sem biblioteca\n- Três músicas prontas antes da vez delas, e o leitor deixa de dizer \"Downloading\"\n\nComparar com ios-v2.8.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.8.0...ios-v2.9.0",
-        "publishedAt": "2026-09-13T18:18:16Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.9.0",
+        "version": "2.9.1",
+        "tag": "ios-v2.9.1",
+        "notes": "- release: Duotone 2.9.1\n\nComparar com ios-v2.9.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.0...ios-v2.9.1",
+        "publishedAt": "2026-09-13T18:31:33Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.9.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 16934060,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.0/Duotone.ipa",
+          "size": 16934290,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.1/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.1/Duotone.ipa"
       },
       "windows": {
         "version": "2.9.1",

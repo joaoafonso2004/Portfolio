@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.9.1",
+          "date": "2026-09-13T18:31:33Z",
+          "localizedDescription": "- release: Duotone 2.9.1\n\nComparar com ios-v2.9.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.0...ios-v2.9.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.1/Duotone.ipa",
+          "size": 16934290,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.9.0",
           "date": "2026-09-13T18:18:16Z",
           "localizedDescription": "- O lockfile volta a ser aceite pelo npm da CI\n- release: Duotone 2.9.0\n- Capa e letras mantêm o 3D durante o swipe\n- Smart Shuffle deixa de repetir músicas durante 30 dias\n- Now Playing ganha capa 3D flutuante no iPhone\n- A mistura dos dois junta o gosto de dois amigos\n- Daily mix: uma playlist que se refaz sozinha todos os dias, no topo das Playlists\n- O \"Discover new\" deixa de repetir as músicas das semanas anteriores\n- As recomendações partem do gosto do Spotify, e deixam de ignorar quem chega sem biblioteca\n- Três músicas prontas antes da vez delas, e o leitor deixa de dizer \"Downloading\"\n\nComparar com ios-v2.8.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.8.0...ios-v2.9.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.0/Duotone.ipa",
           "size": 17448592,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.6.5",
-          "date": "2026-09-11T15:32:12Z",
-          "localizedDescription": "- release: Duotone 2.6.5\n- Relatório: sai o gestor de downloads\n- Continuar aqui ao vivo, com a hora medida pelo servidor\n- Uma reprodução só conta com metade ouvida, ou quatro minutos\n- No leitor do PC, um olho em vez da pílula Discord\n- Arrastar na fila do iPhone: desliza nas bordas, e a música fica onde se larga\n- Sai o Discovery Control, e o seletor do Discover no PC alinha com o resto\n- Relatório: a 2.6.4 está publicada\n\nComparar com ios-v2.6.4: https://github.com/joaoafonso2004/duotone/compare/ios-v2.6.4...ios-v2.6.5",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.5/Duotone.ipa",
-          "size": 16408943,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.9.0",
-      "versionDate": "2026-09-13T18:18:16Z",
-      "versionDescription": "- O lockfile volta a ser aceite pelo npm da CI\n- release: Duotone 2.9.0\n- Capa e letras mantêm o 3D durante o swipe\n- Smart Shuffle deixa de repetir músicas durante 30 dias\n- Now Playing ganha capa 3D flutuante no iPhone\n- A mistura dos dois junta o gosto de dois amigos\n- Daily mix: uma playlist que se refaz sozinha todos os dias, no topo das Playlists\n- O \"Discover new\" deixa de repetir as músicas das semanas anteriores\n- As recomendações partem do gosto do Spotify, e deixam de ignorar quem chega sem biblioteca\n- Três músicas prontas antes da vez delas, e o leitor deixa de dizer \"Downloading\"\n\nComparar com ios-v2.8.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.8.0...ios-v2.9.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.0/Duotone.ipa",
-      "size": 16934060
+      "version": "2.9.1",
+      "versionDate": "2026-09-13T18:31:33Z",
+      "versionDescription": "- release: Duotone 2.9.1\n\nComparar com ios-v2.9.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.0...ios-v2.9.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.1/Duotone.ipa",
+      "size": 16934290
     }
   ],
   "news": []
