@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.8.0",
+          "date": "2026-09-13T15:17:20Z",
+          "localizedDescription": "- O package-lock volta a ter o typescript do apple-targets\n- release: Duotone 2.8.0\n- Now Playing: título ao centro, a barra junto dos botões e três espaços iguais\n- A primeira música depois de abrir a app deixa de esperar pelo PO Token\n- O perfil e os Artists deixam de esperar pelo toque no separador\n- A capa respira escurecendo, e a moldura à volta dela desaparece\n- A música deixa de recomeçar sozinha logo a seguir ao download\n- As Songs do iPhone passam pela cache aquecida, e ela morre quando deve\n- As secções carregam no arranque, e não ao primeiro toque no separador\n\nComparar com ios-v2.7.9: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.9...ios-v2.8.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.8.0/Duotone.ipa",
+          "size": 17057620,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.7.9",
           "date": "2026-09-13T03:21:04Z",
           "localizedDescription": "- release: Duotone 2.7.9\n- Um interruptor para a app não pôr nada na fila do jam sozinha\n- \"Anterior\" dentro de um jam deixa de ser só recomeçar\n- Na fila do jam nada entra duas vezes\n- O F11 volta ao modo limpo, e os aparelhos fantasma são apagados\n\nComparar com ios-v2.7.8: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.8...ios-v2.7.9",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.4/Duotone.ipa",
           "size": 16404738,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.6.3",
-          "date": "2026-09-10T19:11:40Z",
-          "localizedDescription": "- O lock volta a ter o TypeScript 5 que o npm ci do CI exige\n- Músicas do dia: os dias anteriores, e a versão do PC\n- Rare finds: \"New to you\" passa a ser verdade\n- Definições: o servidor de PO Token deixa de prometer o que já não é verdade\n- \"Tocar a seguir\" testado em todos os modos da fila\n- O relatório estratégico passa a marcar o que está feito\n- Electron 37 -> 44: o Windows volta a ter um Chromium com correções\n- iPhone: saber que o YouTube fechou a porta antes de o ecrã bloquear\n- O \"Rare finds\" antigo acaba de vez: fora o código que ficou órfão\n- O Join do Discord: o botão do YouTube deitava abaixo a atividade do Jam\n\nComparar com ios-v2.6.2: https://github.com/joaoafonso2004/duotone/compare/ios-v2.6.2...ios-v2.6.3",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.3/Duotone.ipa",
-          "size": 16389813,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.7.9",
-      "versionDate": "2026-09-13T03:21:04Z",
-      "versionDescription": "- release: Duotone 2.7.9\n- Um interruptor para a app não pôr nada na fila do jam sozinha\n- \"Anterior\" dentro de um jam deixa de ser só recomeçar\n- Na fila do jam nada entra duas vezes\n- O F11 volta ao modo limpo, e os aparelhos fantasma são apagados\n\nComparar com ios-v2.7.8: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.8...ios-v2.7.9",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.9/Duotone.ipa",
-      "size": 17049923
+      "version": "2.8.0",
+      "versionDate": "2026-09-13T15:17:20Z",
+      "versionDescription": "- O package-lock volta a ter o typescript do apple-targets\n- release: Duotone 2.8.0\n- Now Playing: título ao centro, a barra junto dos botões e três espaços iguais\n- A primeira música depois de abrir a app deixa de esperar pelo PO Token\n- O perfil e os Artists deixam de esperar pelo toque no separador\n- A capa respira escurecendo, e a moldura à volta dela desaparece\n- A música deixa de recomeçar sozinha logo a seguir ao download\n- As Songs do iPhone passam pela cache aquecida, e ela morre quando deve\n- As secções carregam no arranque, e não ao primeiro toque no separador\n\nComparar com ios-v2.7.9: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.9...ios-v2.8.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.8.0/Duotone.ipa",
+      "size": 17057620
     }
   ],
   "news": []
