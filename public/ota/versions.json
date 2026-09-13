@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T18:18:31.701Z",
+  "generatedAt": "2026-09-13T18:25:51.089Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.0/Duotone.ipa"
       },
       "windows": {
-        "version": "2.9.0",
-        "tag": "win-v2.9.0",
-        "notes": "- O lockfile volta a ser aceite pelo npm da CI\n- release: Duotone 2.9.0\n- Capa e letras mantêm o 3D durante o swipe\n- Smart Shuffle deixa de repetir músicas durante 30 dias\n- Now Playing ganha capa 3D flutuante no iPhone\n- A mistura dos dois junta o gosto de dois amigos\n- Daily mix: uma playlist que se refaz sozinha todos os dias, no topo das Playlists\n- O \"Discover new\" deixa de repetir as músicas das semanas anteriores\n- As recomendações partem do gosto do Spotify, e deixam de ignorar quem chega sem biblioteca\n- Três músicas prontas antes da vez delas, e o leitor deixa de dizer \"Downloading\"\n\nComparar com win-v2.8.0: https://github.com/joaoafonso2004/duotone/compare/win-v2.8.0...win-v2.9.0",
-        "publishedAt": "2026-09-13T18:10:20Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.9.0",
+        "version": "2.9.1",
+        "tag": "win-v2.9.1",
+        "notes": "- release: Duotone 2.9.1\n\nComparar com win-v2.9.0: https://github.com/joaoafonso2004/duotone/compare/win-v2.9.0...win-v2.9.1",
+        "publishedAt": "2026-09-13T18:25:38Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.9.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115814102,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.9.0/Duotone-Setup.exe",
+          "size": 115814044,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.9.1/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.9.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.9.1/Duotone-Setup.exe"
       }
     }
   }
