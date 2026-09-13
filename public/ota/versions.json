@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T15:17:37.119Z",
+  "generatedAt": "2026-09-13T18:10:37.008Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17057620,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.8.0/Duotone.ipa",
-          "downloads": 0
+          "downloads": 4
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.8.0/Duotone.ipa"
       },
       "windows": {
-        "version": "2.8.0",
-        "tag": "win-v2.8.0",
-        "notes": "- O package-lock volta a ter o typescript do apple-targets\n- release: Duotone 2.8.0\n- Now Playing: título ao centro, a barra junto dos botões e três espaços iguais\n- A primeira música depois de abrir a app deixa de esperar pelo PO Token\n- O perfil e os Artists deixam de esperar pelo toque no separador\n- A capa respira escurecendo, e a moldura à volta dela desaparece\n- A música deixa de recomeçar sozinha logo a seguir ao download\n- As Songs do iPhone passam pela cache aquecida, e ela morre quando deve\n- As secções carregam no arranque, e não ao primeiro toque no separador\n\nComparar com win-v2.7.9: https://github.com/joaoafonso2004/duotone/compare/win-v2.7.9...win-v2.8.0",
-        "publishedAt": "2026-09-13T15:11:36Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.8.0",
+        "version": "2.9.0",
+        "tag": "win-v2.9.0",
+        "notes": "- O lockfile volta a ser aceite pelo npm da CI\n- release: Duotone 2.9.0\n- Capa e letras mantêm o 3D durante o swipe\n- Smart Shuffle deixa de repetir músicas durante 30 dias\n- Now Playing ganha capa 3D flutuante no iPhone\n- A mistura dos dois junta o gosto de dois amigos\n- Daily mix: uma playlist que se refaz sozinha todos os dias, no topo das Playlists\n- O \"Discover new\" deixa de repetir as músicas das semanas anteriores\n- As recomendações partem do gosto do Spotify, e deixam de ignorar quem chega sem biblioteca\n- Três músicas prontas antes da vez delas, e o leitor deixa de dizer \"Downloading\"\n\nComparar com win-v2.8.0: https://github.com/joaoafonso2004/duotone/compare/win-v2.8.0...win-v2.9.0",
+        "publishedAt": "2026-09-13T18:10:20Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v2.9.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115811810,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.8.0/Duotone-Setup.exe",
+          "size": 115814102,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.9.0/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.8.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v2.9.0/Duotone-Setup.exe"
       }
     }
   }
