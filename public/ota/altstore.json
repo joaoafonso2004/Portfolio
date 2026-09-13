@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.9.2",
+          "date": "2026-09-13T20:44:21Z",
+          "localizedDescription": "- release: Duotone 2.9.2\n- A capa 3D passa a ser uma caixa que vira para as letras\n- A espessura da capa 3D passa a ser a da foto de referência\n- A capa 3D passa a pertencer ao fundo: luz da própria capa, sombra difusa e a face a dominar\n- A capa 3D do iPhone passa a ser um objeto fino a sério, na pose da referência\n\nComparar com ios-v2.9.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.1...ios-v2.9.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.2/Duotone.ipa",
+          "size": 17050118,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.9.1",
           "date": "2026-09-13T18:31:33Z",
           "localizedDescription": "- release: Duotone 2.9.1\n\nComparar com ios-v2.9.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.0...ios-v2.9.1",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.2/Duotone.ipa",
           "size": 17457578,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.7.0",
-          "date": "2026-09-12T01:50:23Z",
-          "localizedDescription": "- release: Duotone 2.7.0\n- Plano e relatório: a 2 feita, o Library check\n- Library check: duplicados, vídeos mortos e capas partidas\n- Plano: a 1 feita, e entra a velocidade partilhada no Jam\n- Definições que provam efeito\n- Plano das próximas cinco\n- Relatório: menus feitos, e saem as transições adaptativas\n- Menus das faixas iguais em todo o lado\n- Relatório: as Músicas do dia já têm o SQL aplicado desde 10/9\n- Relatório: sai a \"Vocês os dois\"\n- Relatório: sai o Music Director\n- Relatório: o Jam funciona a dois, e o Discovery Control saiu na 2.6.5\n- Jam: cada pessoa com o seu perfil, e a barra sai de cima do leitor\n- Jam no PC: fica pronto quando carrega, e toca a 1x lá dentro\n- Abertura: um eclipse que se abre no logo ao ligar a app\n\nComparar com ios-v2.6.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.6.5...ios-v2.7.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.0/Duotone.ipa",
-          "size": 17448592,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.9.1",
-      "versionDate": "2026-09-13T18:31:33Z",
-      "versionDescription": "- release: Duotone 2.9.1\n\nComparar com ios-v2.9.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.0...ios-v2.9.1",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.1/Duotone.ipa",
-      "size": 16934290
+      "version": "2.9.2",
+      "versionDate": "2026-09-13T20:44:21Z",
+      "versionDescription": "- release: Duotone 2.9.2\n- A capa 3D passa a ser uma caixa que vira para as letras\n- A espessura da capa 3D passa a ser a da foto de referência\n- A capa 3D passa a pertencer ao fundo: luz da própria capa, sombra difusa e a face a dominar\n- A capa 3D do iPhone passa a ser um objeto fino a sério, na pose da referência\n\nComparar com ios-v2.9.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.1...ios-v2.9.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.2/Duotone.ipa",
+      "size": 17050118
     }
   ],
   "news": []
