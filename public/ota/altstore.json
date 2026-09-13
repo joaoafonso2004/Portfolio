@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.9.0",
+          "date": "2026-09-13T18:18:16Z",
+          "localizedDescription": "- O lockfile volta a ser aceite pelo npm da CI\n- release: Duotone 2.9.0\n- Capa e letras mantêm o 3D durante o swipe\n- Smart Shuffle deixa de repetir músicas durante 30 dias\n- Now Playing ganha capa 3D flutuante no iPhone\n- A mistura dos dois junta o gosto de dois amigos\n- Daily mix: uma playlist que se refaz sozinha todos os dias, no topo das Playlists\n- O \"Discover new\" deixa de repetir as músicas das semanas anteriores\n- As recomendações partem do gosto do Spotify, e deixam de ignorar quem chega sem biblioteca\n- Três músicas prontas antes da vez delas, e o leitor deixa de dizer \"Downloading\"\n\nComparar com ios-v2.8.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.8.0...ios-v2.9.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.0/Duotone.ipa",
+          "size": 16934060,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.8.0",
           "date": "2026-09-13T15:17:20Z",
           "localizedDescription": "- O package-lock volta a ter o typescript do apple-targets\n- release: Duotone 2.8.0\n- Now Playing: título ao centro, a barra junto dos botões e três espaços iguais\n- A primeira música depois de abrir a app deixa de esperar pelo PO Token\n- O perfil e os Artists deixam de esperar pelo toque no separador\n- A capa respira escurecendo, e a moldura à volta dela desaparece\n- A música deixa de recomeçar sozinha logo a seguir ao download\n- As Songs do iPhone passam pela cache aquecida, e ela morre quando deve\n- As secções carregam no arranque, e não ao primeiro toque no separador\n\nComparar com ios-v2.7.9: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.9...ios-v2.8.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.5/Duotone.ipa",
           "size": 16408943,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.6.4",
-          "date": "2026-09-11T13:01:35Z",
-          "localizedDescription": "- Relatório: partilha no chat, handoff com fila e indicador de visibilidade feitos\n- Indicador de visibilidade no leitor, e escuta privada\n- O \"continuar aqui\" mostra a fila que vem com ele\n- Guardar uma música direto da conversa\n- Smart Collections saem\n- O menu das faixas diz \"Play next\" em todo o lado\n- Smart Collections: o artista pelo nome que se vê, e o PC sem downloads que não tem\n- feat: add live smart collections\n- feat: add discovery control and harden social playback\n- O relatório passa a marcar o que saiu na 2.6.3\n\nComparar com ios-v2.6.3: https://github.com/joaoafonso2004/duotone/compare/ios-v2.6.3...ios-v2.6.4",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.6.4/Duotone.ipa",
-          "size": 16404738,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.8.0",
-      "versionDate": "2026-09-13T15:17:20Z",
-      "versionDescription": "- O package-lock volta a ter o typescript do apple-targets\n- release: Duotone 2.8.0\n- Now Playing: título ao centro, a barra junto dos botões e três espaços iguais\n- A primeira música depois de abrir a app deixa de esperar pelo PO Token\n- O perfil e os Artists deixam de esperar pelo toque no separador\n- A capa respira escurecendo, e a moldura à volta dela desaparece\n- A música deixa de recomeçar sozinha logo a seguir ao download\n- As Songs do iPhone passam pela cache aquecida, e ela morre quando deve\n- As secções carregam no arranque, e não ao primeiro toque no separador\n\nComparar com ios-v2.7.9: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.9...ios-v2.8.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.8.0/Duotone.ipa",
-      "size": 17057620
+      "version": "2.9.0",
+      "versionDate": "2026-09-13T18:18:16Z",
+      "versionDescription": "- O lockfile volta a ser aceite pelo npm da CI\n- release: Duotone 2.9.0\n- Capa e letras mantêm o 3D durante o swipe\n- Smart Shuffle deixa de repetir músicas durante 30 dias\n- Now Playing ganha capa 3D flutuante no iPhone\n- A mistura dos dois junta o gosto de dois amigos\n- Daily mix: uma playlist que se refaz sozinha todos os dias, no topo das Playlists\n- O \"Discover new\" deixa de repetir as músicas das semanas anteriores\n- As recomendações partem do gosto do Spotify, e deixam de ignorar quem chega sem biblioteca\n- Três músicas prontas antes da vez delas, e o leitor deixa de dizer \"Downloading\"\n\nComparar com ios-v2.8.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.8.0...ios-v2.9.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.0/Duotone.ipa",
+      "size": 16934060
     }
   ],
   "news": []
