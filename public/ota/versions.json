@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-14T07:44:12.950Z",
+  "generatedAt": "2026-09-14T07:49:13.978Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "2.9.3",
-        "tag": "ios-v2.9.3",
-        "notes": "- release: Duotone 2.9.3\n- O grão da capa 3D cobre as faces inteiras\n\nComparar com ios-v2.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.2...ios-v2.9.3",
-        "publishedAt": "2026-09-13T21:15:42Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v2.9.3",
+        "version": "3.0.0",
+        "tag": "ios-v3.0.0",
+        "notes": "- release: Duotone 3.0.0\n- A capa 3D monta-se com o download, e um arranque preso guarda relatório\n- As arestas da capa 3D deixam de ficar claras, e o F11 perde os quadrados\n- Menos trabalho para o iPhone, sem tirar nada à app\n- A capa 3D fica à deriva, e a flutuação deixa de saltar\n\nComparar com ios-v2.9.3: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.3...ios-v3.0.0",
+        "publishedAt": "2026-09-14T07:48:56Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.0.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17050992,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.3/Duotone.ipa",
-          "downloads": 1
+          "size": 17058536,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.0.0/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.3/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.0.0/Duotone.ipa"
       },
       "windows": {
         "version": "3.0.0",

@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "3.0.0",
+          "date": "2026-09-14T07:48:56Z",
+          "localizedDescription": "- release: Duotone 3.0.0\n- A capa 3D monta-se com o download, e um arranque preso guarda relatório\n- As arestas da capa 3D deixam de ficar claras, e o F11 perde os quadrados\n- Menos trabalho para o iPhone, sem tirar nada à app\n- A capa 3D fica à deriva, e a flutuação deixa de saltar\n\nComparar com ios-v2.9.3: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.3...ios-v3.0.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.0.0/Duotone.ipa",
+          "size": 17058536,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "2.9.3",
           "date": "2026-09-13T21:15:42Z",
           "localizedDescription": "- release: Duotone 2.9.3\n- O grão da capa 3D cobre as faces inteiras\n\nComparar com ios-v2.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.2...ios-v2.9.3",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.6/Duotone.ipa",
           "size": 17688923,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.7.5",
-          "date": "2026-09-12T04:17:20Z",
-          "localizedDescription": "- release: Duotone 2.7.5\n- Contraste que passa, embed sem cookies, e as capas pedidas na abertura\n- Plano e relatório: sai o AirPlay, e o CarPlay fica medido\n\nComparar com ios-v2.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.2...ios-v2.7.5",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.5/Duotone.ipa",
-          "size": 17459730,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "2.9.3",
-      "versionDate": "2026-09-13T21:15:42Z",
-      "versionDescription": "- release: Duotone 2.9.3\n- O grão da capa 3D cobre as faces inteiras\n\nComparar com ios-v2.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.2...ios-v2.9.3",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.3/Duotone.ipa",
-      "size": 17050992
+      "version": "3.0.0",
+      "versionDate": "2026-09-14T07:48:56Z",
+      "versionDescription": "- release: Duotone 3.0.0\n- A capa 3D monta-se com o download, e um arranque preso guarda relatório\n- As arestas da capa 3D deixam de ficar claras, e o F11 perde os quadrados\n- Menos trabalho para o iPhone, sem tirar nada à app\n- A capa 3D fica à deriva, e a flutuação deixa de saltar\n\nComparar com ios-v2.9.3: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.3...ios-v3.0.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.0.0/Duotone.ipa",
+      "size": 17058536
     }
   ],
   "news": []
