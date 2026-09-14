@@ -21,6 +21,7 @@ const otherProjects = PROJECTS.filter((p) => p.slug !== project.slug)
 
 const isDeviceGallery = project.galleryDevice === true;
 const tallHero = project.heroCrop === 'tall';
+const inDevelopment = project.status === 'in-development';
 ---
 
 <Layout title={`${project.title} — João Afonso`} description={project.description}>
@@ -40,9 +41,17 @@ const tallHero = project.heroCrop === 'tall';
 
       <div class="flex flex-col justify-between gap-8 md:flex-row md:items-end md:gap-6">
         <div>
-          <span class="mb-3 block font-mono text-[10px] uppercase tracking-[0.18em] text-accent md:mb-4">
-            {project.category}
-          </span>
+          <div class="mb-3 flex flex-wrap items-center gap-x-3 gap-y-2 md:mb-4">
+            <span class="block font-mono text-[10px] uppercase tracking-[0.18em] text-accent">
+              {project.category}
+            </span>
+            {inDevelopment && (
+              <span class="inline-flex items-center gap-1.5 rounded-full border border-line px-2.5 py-1 font-mono text-[9px] uppercase leading-none tracking-[0.16em] text-paper">
+                <span class="h-1 w-1 rounded-full bg-accent" aria-hidden="true" />
+                In development
+              </span>
+            )}
+          </div>
           <h1
             class="font-display text-[clamp(2.35rem,11vw,5.5rem)] font-semibold uppercase leading-[0.95] tracking-[-0.02em]"
           >
@@ -80,6 +89,7 @@ const tallHero = project.heroCrop === 'tall';
 
           {/* Full width on a phone: two auto-width pills wrap into a ragged
               stack, and each one ends up under the comfortable touch height. */}
+          {(project.live || project.github) && (
           <div class="mt-1 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
             {project.live && (
               <a
@@ -108,6 +118,7 @@ const tallHero = project.heroCrop === 'tall';
               </a>
             )}
           </div>
+          )}
         </div>
       </div>
     </header>
@@ -119,15 +130,24 @@ const tallHero = project.heroCrop === 'tall';
         'animate-fade-in animation-delay-200 relative mb-16 overflow-hidden bg-coal',
         '-mx-[max(var(--gutter),var(--safe-l))] w-[calc(100%+2*max(var(--gutter),var(--safe-l)))]',
         'sm:mx-0 sm:w-full sm:rounded-lg md:mb-20',
-        tallHero ? 'aspect-[4/5] sm:aspect-video' : 'aspect-video',
+        tallHero ? 'aspect-[4/5] sm:aspect-video' : project.poster ? 'aspect-[4/3] sm:aspect-video' : 'aspect-video',
       ]}
     >
+      {project.poster && (
+        <Image
+          src={project.poster}
+          alt={project.title}
+          widths={[480, 768, 1080]}
+          sizes="100vw"
+          class="absolute inset-0 h-full w-full object-cover sm:hidden"
+        />
+      )}
       <Image
         src={project.img}
         alt={project.title}
         widths={[480, 768, 1280, 1600]}
         sizes="(max-width: 767px) 100vw, (max-width: 1280px) 92vw, 1200px"
-        class="absolute inset-0 h-full w-full object-cover"
+        class:list={['absolute inset-0 h-full w-full object-cover', project.poster && 'hidden sm:block']}
       />
       {project.video && (
         <video
@@ -215,7 +235,7 @@ const tallHero = project.heroCrop === 'tall';
             <div class="relative mb-4 aspect-[16/10] overflow-hidden rounded-lg bg-coal sm:aspect-[4/3]">
               <div class="absolute inset-0 h-full w-full" data-parallax>
                 <Image
-                  src={p.img}
+                  src={p.poster ?? p.img}
                   alt={p.title}
                   widths={[320, 480, 768]}
                   sizes="(max-width: 639px) 100vw, 32vw"
@@ -228,7 +248,7 @@ const tallHero = project.heroCrop === 'tall';
               {p.title}
             </h3>
             <span class="mt-1 block font-mono text-[10px] uppercase leading-relaxed tracking-[0.15em] text-accent transition-transform delay-75 duration-500 group-hover:translate-x-2">
-              {p.category}
+              {p.category}{p.status === 'in-development' && ' · In development'}
             </span>
           </a>
         ))}

@@ -20,6 +20,11 @@ import jarvisImg from '../assets/images/work_jarvis.png';
 import liminal1 from '../assets/images/liminal1_up.jpg';
 import liminal2 from '../assets/images/liminal2_up.jpg';
 import liminal3 from '../assets/images/liminal3.jpg';
+import quietHoursCover from '../assets/images/quiethours_cover.png';
+import quietHoursPoster from '../assets/images/quiethours_poster.png';
+import quietHours1 from '../assets/images/quiethours1.png';
+import quietHours2 from '../assets/images/quiethours2.png';
+import quietHours3 from '../assets/images/quiethours3.png';
 
 export interface Project {
   slug: string;
@@ -31,6 +36,11 @@ export interface Project {
   /** Imagem de cartaz. Idealmente o primeiro frame do vídeo, para a troca
    *  entre os dois ser invisível. */
   img: ImageMetadata;
+  /**
+   * Versão 4:3 do cartaz. Substitui `img` onde o enquadramento é 4:3: nos
+   * cartões de "More to Discover" e no herói do telemóvel.
+   */
+  poster?: ImageMetadata;
   /** Galeria de imagens adicionais para a página do projeto. */
   gallery: ImageMetadata[];
   /** Opcional, em `public/work/`. Sem ficheiro, fica só a imagem. */
@@ -67,6 +77,8 @@ export interface Project {
   itchGameId?: number;
   /** Peso visual no anel — nem todos os projetos merecem o mesmo espaço. */
   weight?: number;
+  /** Ainda em produção: etiqueta no cartão do anel e no cabeçalho da página. */
+  status?: 'in-development';
 }
 
 export const PROJECTS: Project[] = [
@@ -156,6 +168,19 @@ export const PROJECTS: Project[] = [
     img: td1,
     gallery: [],
     video: '/work/3DWebsite.mp4',
+  },
+  {
+    slug: 'quiet-hours',
+    title: 'Quiet Hours',
+    category: 'Narrative Horror — Unity',
+    description:
+      'A first-person horror game set in a shared flat. Tomás rents the cheap room; Rui, the flatmate who picked him, sublets it illegally and still has a key. Three days, no combat, three endings — told through an in-world phone and a bedroom door that slowly stops protecting him.',
+    github: 'https://github.com/joaoafonso2004/Quiet-Hours',
+    img: quietHoursCover,
+    poster: quietHoursPoster,
+    gallery: [quietHours1, quietHours2, quietHours3],
+    status: 'in-development',
+    weight: 1.05,
   },
   {
     slug: 'mog',

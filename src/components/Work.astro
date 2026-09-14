@@ -93,6 +93,13 @@ import { PROJECTS } from '../data/projects';
                 )}
 
                 <span class="pointer-events-none absolute inset-0 bg-ink/0 transition-colors duration-500 group-hover:bg-ink/10" />
+
+                {project.status === 'in-development' && (
+                  <span class="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-ink/75 px-2.5 py-1 font-mono text-[9px] uppercase leading-none tracking-[0.16em] text-paper backdrop-blur-sm">
+                    <span class="h-1 w-1 rounded-full bg-accent" aria-hidden="true" />
+                    In development
+                  </span>
+                )}
               </div>
             </div>
 
