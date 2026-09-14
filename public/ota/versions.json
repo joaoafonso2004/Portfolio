@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-14T19:07:01.057Z",
+  "generatedAt": "2026-09-14T19:14:29.878Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "3.1.0",
-        "tag": "ios-v3.1.0",
-        "notes": "- release: Duotone 3.1.0\n- O Smart Shuffle deixa de sugerir favoritas e repetidas, e a velocidade padrão passa entre aparelhos\n\nComparar com ios-v3.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.0.0...ios-v3.1.0",
-        "publishedAt": "2026-09-14T16:30:57Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.1.0",
+        "version": "3.2.0",
+        "tag": "ios-v3.2.0",
+        "notes": "- release: Duotone 3.2.0\n- Responder a mensagens, guardar playlists recebidas, e a capa do iPhone recua no skip sem ficar vazia\n\nComparar com ios-v3.1.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.1.0...ios-v3.2.0",
+        "publishedAt": "2026-09-14T19:14:12Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.2.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17063966,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.1.0/Duotone.ipa",
-          "downloads": 2
+          "size": 17075979,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.2.0/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.1.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.2.0/Duotone.ipa"
       },
       "windows": {
         "version": "3.2.0",

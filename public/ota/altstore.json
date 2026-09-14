@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "3.2.0",
+          "date": "2026-09-14T19:14:12Z",
+          "localizedDescription": "- release: Duotone 3.2.0\n- Responder a mensagens, guardar playlists recebidas, e a capa do iPhone recua no skip sem ficar vazia\n\nComparar com ios-v3.1.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.1.0...ios-v3.2.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.2.0/Duotone.ipa",
+          "size": 17075979,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "3.1.0",
           "date": "2026-09-14T16:30:57Z",
           "localizedDescription": "- release: Duotone 3.1.0\n- O Smart Shuffle deixa de sugerir favoritas e repetidas, e a velocidade padrão passa entre aparelhos\n\nComparar com ios-v3.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.0.0...ios-v3.1.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.8/Duotone.ipa",
           "size": 17047188,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.7.7",
-          "date": "2026-09-12T19:18:01Z",
-          "localizedDescription": "- release: Duotone 2.7.7\n- A animação da abertura deixa de tremer no iPhone\n\nComparar com ios-v2.7.6: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.6...ios-v2.7.7",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.7/Duotone.ipa",
-          "size": 17046350,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "3.1.0",
-      "versionDate": "2026-09-14T16:30:57Z",
-      "versionDescription": "- release: Duotone 3.1.0\n- O Smart Shuffle deixa de sugerir favoritas e repetidas, e a velocidade padrão passa entre aparelhos\n\nComparar com ios-v3.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.0.0...ios-v3.1.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.1.0/Duotone.ipa",
-      "size": 17063966
+      "version": "3.2.0",
+      "versionDate": "2026-09-14T19:14:12Z",
+      "versionDescription": "- release: Duotone 3.2.0\n- Responder a mensagens, guardar playlists recebidas, e a capa do iPhone recua no skip sem ficar vazia\n\nComparar com ios-v3.1.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.1.0...ios-v3.2.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.2.0/Duotone.ipa",
+      "size": 17075979
     }
   ],
   "news": []
