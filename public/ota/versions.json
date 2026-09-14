@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T16:31:17.279Z",
+  "generatedAt": "2026-09-14T19:07:01.057Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17063966,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.1.0/Duotone.ipa",
-          "downloads": 0
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.1.0/Duotone.ipa"
       },
       "windows": {
-        "version": "3.1.0",
-        "tag": "win-v3.1.0",
-        "notes": "- release: Duotone 3.1.0\n- O Smart Shuffle deixa de sugerir favoritas e repetidas, e a velocidade padrão passa entre aparelhos\n\nComparar com win-v3.0.0: https://github.com/joaoafonso2004/duotone/compare/win-v3.0.0...win-v3.1.0",
-        "publishedAt": "2026-09-14T16:23:36Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.1.0",
+        "version": "3.2.0",
+        "tag": "win-v3.2.0",
+        "notes": "- release: Duotone 3.2.0\n- Responder a mensagens, guardar playlists recebidas, e a capa do iPhone recua no skip sem ficar vazia\n\nComparar com win-v3.1.0: https://github.com/joaoafonso2004/duotone/compare/win-v3.1.0...win-v3.2.0",
+        "publishedAt": "2026-09-14T19:06:44Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.2.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115817883,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.1.0/Duotone-Setup.exe",
+          "size": 115820376,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.2.0/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.1.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.2.0/Duotone-Setup.exe"
       }
     }
   }
