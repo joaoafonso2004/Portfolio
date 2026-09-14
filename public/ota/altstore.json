@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "3.1.0",
+          "date": "2026-09-14T16:30:57Z",
+          "localizedDescription": "- release: Duotone 3.1.0\n- O Smart Shuffle deixa de sugerir favoritas e repetidas, e a velocidade padrão passa entre aparelhos\n\nComparar com ios-v3.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.0.0...ios-v3.1.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.1.0/Duotone.ipa",
+          "size": 17063966,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "3.0.0",
           "date": "2026-09-14T07:48:56Z",
           "localizedDescription": "- release: Duotone 3.0.0\n- A capa 3D monta-se com o download, e um arranque preso guarda relatório\n- As arestas da capa 3D deixam de ficar claras, e o F11 perde os quadrados\n- Menos trabalho para o iPhone, sem tirar nada à app\n- A capa 3D fica à deriva, e a flutuação deixa de saltar\n\nComparar com ios-v2.9.3: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.3...ios-v3.0.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.7/Duotone.ipa",
           "size": 17046350,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.7.6",
-          "date": "2026-09-12T13:43:03Z",
-          "localizedDescription": "- release: Duotone 2.7.6\n- A abertura acaba com o logo a vir na direção do ecrã\n\nComparar com ios-v2.7.5: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.5...ios-v2.7.6",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.6/Duotone.ipa",
-          "size": 17688923,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "3.0.0",
-      "versionDate": "2026-09-14T07:48:56Z",
-      "versionDescription": "- release: Duotone 3.0.0\n- A capa 3D monta-se com o download, e um arranque preso guarda relatório\n- As arestas da capa 3D deixam de ficar claras, e o F11 perde os quadrados\n- Menos trabalho para o iPhone, sem tirar nada à app\n- A capa 3D fica à deriva, e a flutuação deixa de saltar\n\nComparar com ios-v2.9.3: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.3...ios-v3.0.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.0.0/Duotone.ipa",
-      "size": 17058536
+      "version": "3.1.0",
+      "versionDate": "2026-09-14T16:30:57Z",
+      "versionDescription": "- release: Duotone 3.1.0\n- O Smart Shuffle deixa de sugerir favoritas e repetidas, e a velocidade padrão passa entre aparelhos\n\nComparar com ios-v3.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.0.0...ios-v3.1.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.1.0/Duotone.ipa",
+      "size": 17063966
     }
   ],
   "news": []
