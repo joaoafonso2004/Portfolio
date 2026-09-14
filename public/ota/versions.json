@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T11:25:20.989Z",
+  "generatedAt": "2026-09-14T16:23:53.125Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17058536,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.0.0/Duotone.ipa",
-          "downloads": 1
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.0.0/Duotone.ipa"
       },
       "windows": {
-        "version": "3.0.0",
-        "tag": "win-v3.0.0",
-        "notes": "- release: Duotone 3.0.0\n- A capa 3D monta-se com o download, e um arranque preso guarda relatório\n- As arestas da capa 3D deixam de ficar claras, e o F11 perde os quadrados\n- Menos trabalho para o iPhone, sem tirar nada à app\n- A capa 3D fica à deriva, e a flutuação deixa de saltar\n\nComparar com win-v2.9.3: https://github.com/joaoafonso2004/duotone/compare/win-v2.9.3...win-v3.0.0",
-        "publishedAt": "2026-09-14T07:43:57Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.0.0",
+        "version": "3.1.0",
+        "tag": "win-v3.1.0",
+        "notes": "- release: Duotone 3.1.0\n- O Smart Shuffle deixa de sugerir favoritas e repetidas, e a velocidade padrão passa entre aparelhos\n\nComparar com win-v3.0.0: https://github.com/joaoafonso2004/duotone/compare/win-v3.0.0...win-v3.1.0",
+        "publishedAt": "2026-09-14T16:23:36Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.1.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115816226,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.0.0/Duotone-Setup.exe",
-          "downloads": 2
+          "size": 115817883,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.1.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.0.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.1.0/Duotone-Setup.exe"
       }
     }
   }
