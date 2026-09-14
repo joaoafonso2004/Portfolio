@@ -22,7 +22,6 @@ import liminal2 from '../assets/images/liminal2_up.jpg';
 import liminal3 from '../assets/images/liminal3.jpg';
 import quietHoursCover from '../assets/images/quiethours_cover.png';
 import quietHoursPoster from '../assets/images/quiethours_poster.png';
-import quietHours1 from '../assets/images/quiethours1.png';
 import quietHours2 from '../assets/images/quiethours2.png';
 import quietHours3 from '../assets/images/quiethours3.png';
 
@@ -178,7 +177,7 @@ export const PROJECTS: Project[] = [
     github: 'https://github.com/joaoafonso2004/Quiet-Hours',
     img: quietHoursCover,
     poster: quietHoursPoster,
-    gallery: [quietHours1, quietHours2, quietHours3],
+    gallery: [quietHours2, quietHours3],
     status: 'in-development',
     weight: 1.05,
   },
