@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "3.3.0",
+          "date": "2026-09-15T11:49:39Z",
+          "localizedDescription": "- iOS 3.3.0: o arranque deixa de prender e a capa chega com o áudio\n- O Windows passa a atualizar-se com um botão, sem ir ao site\n\nComparar com ios-v3.2.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.2.0...ios-v3.3.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.3.0/Duotone.ipa",
+          "size": 17079933,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "3.2.0",
           "date": "2026-09-14T19:14:12Z",
           "localizedDescription": "- release: Duotone 3.2.0\n- Responder a mensagens, guardar playlists recebidas, e a capa do iPhone recua no skip sem ficar vazia\n\nComparar com ios-v3.1.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.1.0...ios-v3.2.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.9/Duotone.ipa",
           "size": 17049923,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.7.8",
-          "date": "2026-09-12T20:40:58Z",
-          "localizedDescription": "- release: Duotone 2.7.8\n- Abrir a app deixa de pôr música a tocar, e o Connect fica utilizável\n\nComparar com ios-v2.7.7: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.7...ios-v2.7.8",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.8/Duotone.ipa",
-          "size": 17047188,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "3.2.0",
-      "versionDate": "2026-09-14T19:14:12Z",
-      "versionDescription": "- release: Duotone 3.2.0\n- Responder a mensagens, guardar playlists recebidas, e a capa do iPhone recua no skip sem ficar vazia\n\nComparar com ios-v3.1.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.1.0...ios-v3.2.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.2.0/Duotone.ipa",
-      "size": 17075979
+      "version": "3.3.0",
+      "versionDate": "2026-09-15T11:49:39Z",
+      "versionDescription": "- iOS 3.3.0: o arranque deixa de prender e a capa chega com o áudio\n- O Windows passa a atualizar-se com um botão, sem ir ao site\n\nComparar com ios-v3.2.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.2.0...ios-v3.3.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.3.0/Duotone.ipa",
+      "size": 17079933
     }
   ],
   "news": []

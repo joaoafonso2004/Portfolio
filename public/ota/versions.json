@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-15T10:48:18.273Z",
+  "generatedAt": "2026-09-15T11:49:52.124Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "3.2.0",
-        "tag": "ios-v3.2.0",
-        "notes": "- release: Duotone 3.2.0\n- Responder a mensagens, guardar playlists recebidas, e a capa do iPhone recua no skip sem ficar vazia\n\nComparar com ios-v3.1.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.1.0...ios-v3.2.0",
-        "publishedAt": "2026-09-14T19:14:12Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.2.0",
+        "version": "3.3.0",
+        "tag": "ios-v3.3.0",
+        "notes": "- iOS 3.3.0: o arranque deixa de prender e a capa chega com o áudio\n- O Windows passa a atualizar-se com um botão, sem ir ao site\n\nComparar com ios-v3.2.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.2.0...ios-v3.3.0",
+        "publishedAt": "2026-09-15T11:49:39Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.3.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17075979,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.2.0/Duotone.ipa",
-          "downloads": 2
+          "size": 17079933,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.3.0/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.2.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.3.0/Duotone.ipa"
       },
       "windows": {
         "version": "3.2.0",
