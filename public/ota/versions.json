@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T22:44:37.651Z",
+  "generatedAt": "2026-09-15T23:26:07.777Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.3.0/Duotone.ipa"
       },
       "windows": {
-        "version": "3.3.0",
-        "tag": "win-v3.3.0",
-        "notes": "Atualizações dentro da app: o botão Update now descarrega, instala e reabre o Duotone. A procura separa Windows de iOS, valida o instalador e recupera de downloads parados.",
-        "publishedAt": "2026-09-15T22:43:16Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.3.0",
+        "version": "3.4.0",
+        "tag": "win-v3.4.0",
+        "notes": "- Corrigir o reinício depois da atualização no Windows\n\nComparar com win-v3.3.0: https://github.com/joaoafonso2004/duotone/compare/win-v3.3.0...win-v3.4.0",
+        "publishedAt": "2026-09-15T23:25:55Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.4.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115824531,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.3.0/Duotone-Setup.exe",
+          "size": 115823991,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.4.0/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.3.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.4.0/Duotone-Setup.exe"
       }
     }
   }
