@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T22:43:28.663Z",
+  "generatedAt": "2026-09-15T22:44:37.651Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -20,7 +20,7 @@
       "windows": {
         "version": "3.3.0",
         "tag": "win-v3.3.0",
-        "notes": "- Tornar o atualizador do Windows fiável\n- iOS 3.3.0: o arranque deixa de prender e a capa chega com o áudio\n- O Windows passa a atualizar-se com um botão, sem ir ao site\n\nComparar com win-v3.2.0: https://github.com/joaoafonso2004/duotone/compare/win-v3.2.0...win-v3.3.0",
+        "notes": "Atualizações dentro da app: o botão Update now descarrega, instala e reabre o Duotone. A procura separa Windows de iOS, valida o instalador e recupera de downloads parados.",
         "publishedAt": "2026-09-15T22:43:16Z",
         "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.3.0",
         "prerelease": false,
