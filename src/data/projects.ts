@@ -47,8 +47,6 @@ export interface Project {
   gallery: ImageMetadata[];
   /** Opcional, em `public/work/`. Sem ficheiro, fica só a imagem. */
   video?: string;
-  /** Teaser / trailer em alta resolução para exibição cinematográfica na página. */
-  trailerVideo?: string;
   /** Layout da galeria. Default é grid-2 com Bento Box. grid-3 é melhor para imagens verticais. */
   galleryLayout?: 'default' | 'grid-3';
   /**
@@ -183,7 +181,6 @@ export const PROJECTS: Project[] = [
     img: quietHoursCover,
     poster: quietHoursPoster,
     video: '/work/quiethours.mp4',
-    trailerVideo: '/work/quiet-hours/trailer.mp4',
     gallery: [qhCorredor, qhPorta, qhVaranda, quietHours2],
     status: 'in-development',
     weight: 1.05,
