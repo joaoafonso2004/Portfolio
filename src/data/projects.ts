@@ -24,6 +24,26 @@ import quietHoursCover from '../assets/images/quiethours_cover.png';
 import quietHoursPoster from '../assets/images/quiethours_poster.png';
 import quietHours2 from '../assets/images/quiethours2.png';
 import quietHours3 from '../assets/images/quiethours3.png';
+import qhContactSheet from '../assets/images/quiet-hours/00_folha_de_contacto.png';
+import qh01 from '../assets/images/quiet-hours/01_elevador_caixas.png';
+import qh02 from '../assets/images/quiet-hours/02_corredor_rui_ao_fundo.png';
+import qh03 from '../assets/images/quiet-hours/03_rui_na_porta_do_quarto.png';
+import qh04 from '../assets/images/quiet-hours/04_quarto_do_tomas.png';
+import qh05 from '../assets/images/quiet-hours/05_varanda_cidade.png';
+import qh06 from '../assets/images/quiet-hours/06_varanda_rui_a_porta.png';
+import qh07 from '../assets/images/quiet-hours/07_chave_na_prateleira.png';
+import qh08 from '../assets/images/quiet-hours/08_porta_3B.png';
+import qh09 from '../assets/images/quiet-hours/09_rui_meio_corpo.png';
+import qh10 from '../assets/images/quiet-hours/10_rui_ao_lado_da_cama.png';
+import qh11 from '../assets/images/quiet-hours/11_corredor_vazio.png';
+import qh12 from '../assets/images/quiet-hours/12_rui_de_costas_frigorifico.png';
+
+export interface ProjectClip {
+  id: string;
+  title: string;
+  video: string;
+  screenshot: ImageMetadata;
+}
 
 export interface Project {
   slug: string;
@@ -44,6 +64,12 @@ export interface Project {
   gallery: ImageMetadata[];
   /** Opcional, em `public/work/`. Sem ficheiro, fica só a imagem. */
   video?: string;
+  /** Teaser / trailer em alta resolução para exibição cinematográfica na página. */
+  trailerVideo?: string;
+  /** Clips de vídeo interativos associados a screenshots para quebra de sequência. */
+  clips?: ProjectClip[];
+  /** Imagem panorâmica de folha de contacto com todos os planos. */
+  contactSheet?: ImageMetadata;
   /** Layout da galeria. Default é grid-2 com Bento Box. grid-3 é melhor para imagens verticais. */
   galleryLayout?: 'default' | 'grid-3';
   /**
@@ -177,6 +203,23 @@ export const PROJECTS: Project[] = [
     github: 'https://github.com/joaoafonso2004/Quiet-Hours',
     img: quietHoursCover,
     poster: quietHoursPoster,
+    video: '/work/quiethours.mp4',
+    trailerVideo: '/work/quiet-hours/trailer.mp4',
+    contactSheet: qhContactSheet,
+    clips: [
+      { id: '01', title: '01 · Elevador & Caixas', video: '/work/quiet-hours/clips/01_elevador_caixas.mp4', screenshot: qh01 },
+      { id: '02', title: '02 · Corredor (Rui ao Fundo)', video: '/work/quiet-hours/clips/02_corredor_rui_ao_fundo.mp4', screenshot: qh02 },
+      { id: '03', title: '03 · Rui à Porta do Quarto', video: '/work/quiet-hours/clips/03_rui_na_porta_do_quarto.mp4', screenshot: qh03 },
+      { id: '04', title: '04 · Quarto do Tomás', video: '/work/quiet-hours/clips/04_quarto_do_tomas.mp4', screenshot: qh04 },
+      { id: '05', title: '05 · Varanda & Cidade', video: '/work/quiet-hours/clips/05_varanda_cidade.mp4', screenshot: qh05 },
+      { id: '06', title: '06 · Varanda (Rui à Porta)', video: '/work/quiet-hours/clips/06_varanda_rui_a_porta.mp4', screenshot: qh06 },
+      { id: '07', title: '07 · A Chave na Prateleira', video: '/work/quiet-hours/clips/07_chave_na_prateleira.mp4', screenshot: qh07 },
+      { id: '08', title: '08 · Porta 3B', video: '/work/quiet-hours/clips/08_porta_3B.mp4', screenshot: qh08 },
+      { id: '09', title: '09 · Rui no Escuro', video: '/work/quiet-hours/clips/09_rui_meio_corpo.mp4', screenshot: qh09 },
+      { id: '10', title: '10 · Rui ao Lado da Cama', video: '/work/quiet-hours/clips/10_rui_ao_lado_da_cama.mp4', screenshot: qh10 },
+      { id: '11', title: '11 · Corredor Noturno', video: '/work/quiet-hours/clips/11_corredor_vazio.mp4', screenshot: qh11 },
+      { id: '12', title: '12 · Rui na Cozinha', video: '/work/quiet-hours/clips/12_rui_de_costas_frigorifico.mp4', screenshot: qh12 },
+    ],
     gallery: [quietHours2, quietHours3],
     status: 'in-development',
     weight: 1.05,
