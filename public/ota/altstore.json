@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "3.5.0",
+          "date": "2026-09-16T18:10:41Z",
+          "localizedDescription": "- Duotone 3.5.0: recomendações mais certas, que aprendem com os skips\n- Corrigir o arranque, fecho e shuffle no Windows\n- Corrigir o reinício depois da atualização no Windows\n- Tornar o atualizador do Windows fiável\n\nComparar com ios-v3.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.3.0...ios-v3.5.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.5.0/Duotone.ipa",
+          "size": 17094597,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "3.3.0",
           "date": "2026-09-15T11:49:39Z",
           "localizedDescription": "- iOS 3.3.0: o arranque deixa de prender e a capa chega com o áudio\n- O Windows passa a atualizar-se com um botão, sem ir ao site\n\nComparar com ios-v3.2.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.2.0...ios-v3.3.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.8.0/Duotone.ipa",
           "size": 17057620,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.7.9",
-          "date": "2026-09-13T03:21:04Z",
-          "localizedDescription": "- release: Duotone 2.7.9\n- Um interruptor para a app não pôr nada na fila do jam sozinha\n- \"Anterior\" dentro de um jam deixa de ser só recomeçar\n- Na fila do jam nada entra duas vezes\n- O F11 volta ao modo limpo, e os aparelhos fantasma são apagados\n\nComparar com ios-v2.7.8: https://github.com/joaoafonso2004/duotone/compare/ios-v2.7.8...ios-v2.7.9",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.7.9/Duotone.ipa",
-          "size": 17049923,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "3.3.0",
-      "versionDate": "2026-09-15T11:49:39Z",
-      "versionDescription": "- iOS 3.3.0: o arranque deixa de prender e a capa chega com o áudio\n- O Windows passa a atualizar-se com um botão, sem ir ao site\n\nComparar com ios-v3.2.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.2.0...ios-v3.3.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.3.0/Duotone.ipa",
-      "size": 17079933
+      "version": "3.5.0",
+      "versionDate": "2026-09-16T18:10:41Z",
+      "versionDescription": "- Duotone 3.5.0: recomendações mais certas, que aprendem com os skips\n- Corrigir o arranque, fecho e shuffle no Windows\n- Corrigir o reinício depois da atualização no Windows\n- Tornar o atualizador do Windows fiável\n\nComparar com ios-v3.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.3.0...ios-v3.5.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.5.0/Duotone.ipa",
+      "size": 17094597
     }
   ],
   "news": []

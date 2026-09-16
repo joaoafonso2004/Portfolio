@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-16T18:04:49.646Z",
+  "generatedAt": "2026-09-16T18:10:56.868Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "3.3.0",
-        "tag": "ios-v3.3.0",
-        "notes": "- iOS 3.3.0: o arranque deixa de prender e a capa chega com o áudio\n- O Windows passa a atualizar-se com um botão, sem ir ao site\n\nComparar com ios-v3.2.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.2.0...ios-v3.3.0",
-        "publishedAt": "2026-09-15T11:49:39Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.3.0",
+        "version": "3.5.0",
+        "tag": "ios-v3.5.0",
+        "notes": "- Duotone 3.5.0: recomendações mais certas, que aprendem com os skips\n- Corrigir o arranque, fecho e shuffle no Windows\n- Corrigir o reinício depois da atualização no Windows\n- Tornar o atualizador do Windows fiável\n\nComparar com ios-v3.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.3.0...ios-v3.5.0",
+        "publishedAt": "2026-09-16T18:10:41Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.5.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17079933,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.3.0/Duotone.ipa",
-          "downloads": 6
+          "size": 17094597,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.5.0/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.3.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.5.0/Duotone.ipa"
       },
       "windows": {
         "version": "3.5.0",
