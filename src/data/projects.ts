@@ -180,6 +180,7 @@ export const PROJECTS: Project[] = [
     github: 'https://github.com/joaoafonso2004/Quiet-Hours',
     img: quietHoursCover,
     poster: quietHoursPoster,
+    video: '/work/quiethours.mp4',
     gallery: [qhCorredor, qhPorta, qhVaranda, quietHours2],
     status: 'in-development',
     weight: 1.05,

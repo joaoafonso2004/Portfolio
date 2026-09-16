@@ -150,14 +150,47 @@ const inDevelopment = project.status === 'in-development';
         class:list={['absolute inset-0 h-full w-full object-cover', project.poster && 'hidden sm:block']}
       />
       {project.video && (
-        <video
-          src={project.video}
-          autoplay
-          muted
-          loop
-          playsinline
-          class="absolute inset-0 h-full w-full object-cover"
-        />
+        <>
+          <video
+            data-hero-video
+            src={project.video}
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <div class="pointer-events-none absolute inset-x-0 bottom-0 z-20 flex items-center justify-end gap-2 p-4 sm:p-6">
+            <button
+              type="button"
+              data-hero-sound-toggle
+              aria-label="Toggle sound"
+              class="tap pointer-events-auto inline-flex items-center gap-2 rounded-full border border-white/20 bg-ink/75 px-3.5 py-2 font-mono text-[10px] uppercase tracking-[0.16em] text-paper shadow-lg backdrop-blur-md transition-all duration-300 hover:border-accent hover:text-accent hover:bg-ink/90"
+            >
+              <svg data-icon-muted class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                <line x1="23" y1="9" x2="17" y2="15" />
+                <line x1="17" y1="9" x2="23" y2="15" />
+              </svg>
+              <svg data-icon-unmuted class="hidden h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+              </svg>
+              <span data-sound-label>Sound off</span>
+            </button>
+            <button
+              type="button"
+              data-hero-fullscreen
+              aria-label="Fullscreen"
+              class="tap pointer-events-auto hidden sm:inline-flex items-center justify-center rounded-full border border-white/20 bg-ink/75 p-2 text-paper shadow-lg backdrop-blur-md transition-all duration-300 hover:border-accent hover:text-accent hover:bg-ink/90"
+            >
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+              </svg>
+            </button>
+          </div>
+        </>
       )}
     </div>
 
@@ -289,6 +322,38 @@ const inDevelopment = project.status === 'in-development';
   }
 
   document.addEventListener('astro:page-load', async () => {
+    const heroVid = document.querySelector<HTMLVideoElement>('[data-hero-video]');
+    const soundToggle = document.querySelector<HTMLButtonElement>('[data-hero-sound-toggle]');
+    const fsToggle = document.querySelector<HTMLButtonElement>('[data-hero-fullscreen]');
+
+    if (heroVid && soundToggle) {
+      const mutedIcon = soundToggle.querySelector('[data-icon-muted]');
+      const unmutedIcon = soundToggle.querySelector('[data-icon-unmuted]');
+      const label = soundToggle.querySelector('[data-sound-label]');
+
+      soundToggle.addEventListener('click', () => {
+        heroVid.muted = !heroVid.muted;
+        if (heroVid.muted) {
+          mutedIcon?.classList.remove('hidden');
+          unmutedIcon?.classList.add('hidden');
+          if (label) label.textContent = 'Sound off';
+        } else {
+          mutedIcon?.classList.add('hidden');
+          unmutedIcon?.classList.remove('hidden');
+          if (label) label.textContent = 'Sound on';
+        }
+      });
+    }
+
+    if (heroVid && fsToggle) {
+      fsToggle.addEventListener('click', () => {
+        if (document.fullscreenElement) {
+          document.exitFullscreen().catch(() => {});
+        } else {
+          heroVid.requestFullscreen().catch(() => {});
+        }
+      });
+    }
 
     const container = document.querySelector<HTMLElement>('[data-stats]');
     if (!container) return;
