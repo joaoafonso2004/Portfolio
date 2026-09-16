@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T10:37:23.647Z",
+  "generatedAt": "2026-09-16T18:04:49.646Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17079933,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.3.0/Duotone.ipa",
-          "downloads": 2
+          "downloads": 6
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.3.0/Duotone.ipa"
       },
       "windows": {
-        "version": "3.4.1",
-        "tag": "win-v3.4.1",
-        "notes": "- Corrige o falso aviso de faixa presa ao abrir a app com a sessão em pausa.\n- Adiciona nas Definições a opção de o botão Fechar minimizar para a área de notificação ou sair da app.\n- Evita repetir a mesma música através de uploads diferentes durante o shuffle.\n\nComparar com win-v3.4.0: https://github.com/joaoafonso2004/duotone/compare/win-v3.4.0...win-v3.4.1",
-        "publishedAt": "2026-09-16T00:27:21Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.4.1",
+        "version": "3.5.0",
+        "tag": "win-v3.5.0",
+        "notes": "- Duotone 3.5.0: recomendações mais certas, que aprendem com os skips\n\nComparar com win-v3.4.1: https://github.com/joaoafonso2004/duotone/compare/win-v3.4.1...win-v3.5.0",
+        "publishedAt": "2026-09-16T18:04:34Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.5.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115824256,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.4.1/Duotone-Setup.exe",
-          "downloads": 3
+          "size": 115827245,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.5.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.4.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.5.0/Duotone-Setup.exe"
       }
     }
   }
