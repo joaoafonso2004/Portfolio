@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T10:21:58.318Z",
+  "generatedAt": "2026-09-18T13:35:50.742Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.5.0/Duotone.ipa"
       },
       "windows": {
-        "version": "3.6.0",
-        "tag": "win-v3.6.0",
-        "notes": "- Duotone 3.6.0: o PC com melhor acabamento, e uma Descoberta cheia de escolha\n\nComparar com win-v3.5.0: https://github.com/joaoafonso2004/duotone/compare/win-v3.5.0...win-v3.6.0",
-        "publishedAt": "2026-09-18T03:07:10Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.6.0",
+        "version": "3.6.1",
+        "tag": "win-v3.6.1",
+        "notes": "- Duotone 3.6.1: os amigos continuam online enquanto ouvem música no PC\n\nComparar com win-v3.6.0: https://github.com/joaoafonso2004/duotone/compare/win-v3.6.0...win-v3.6.1",
+        "publishedAt": "2026-09-18T13:35:35Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.6.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115835110,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.6.0/Duotone-Setup.exe",
-          "downloads": 2
+          "size": 115835439,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.6.1/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.6.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.6.1/Duotone-Setup.exe"
       }
     }
   }
