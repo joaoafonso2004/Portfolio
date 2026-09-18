@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T10:46:40.165Z",
+  "generatedAt": "2026-09-18T03:07:24.582Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17094597,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.5.0/Duotone.ipa",
-          "downloads": 2
+          "downloads": 3
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.5.0/Duotone.ipa"
       },
       "windows": {
-        "version": "3.5.0",
-        "tag": "win-v3.5.0",
-        "notes": "- Duotone 3.5.0: recomendações mais certas, que aprendem com os skips\n\nComparar com win-v3.4.1: https://github.com/joaoafonso2004/duotone/compare/win-v3.4.1...win-v3.5.0",
-        "publishedAt": "2026-09-16T18:04:34Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.5.0",
+        "version": "3.6.0",
+        "tag": "win-v3.6.0",
+        "notes": "- Duotone 3.6.0: o PC com melhor acabamento, e uma Descoberta cheia de escolha\n\nComparar com win-v3.5.0: https://github.com/joaoafonso2004/duotone/compare/win-v3.5.0...win-v3.6.0",
+        "publishedAt": "2026-09-18T03:07:10Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.6.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115827245,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.5.0/Duotone-Setup.exe",
-          "downloads": 3
+          "size": 115835110,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.6.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.5.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.6.0/Duotone-Setup.exe"
       }
     }
   }
