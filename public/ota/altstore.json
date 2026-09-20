@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "3.7.2",
+          "date": "2026-09-20T12:49:19Z",
+          "localizedDescription": "- Duotone 3.7.2: dá mesmo para favoritar artistas, e é o coração das músicas\n- Duotone 3.7.1: o PC ganha mesmo o movimento que a 3.7.0 prometia\n\nComparar com ios-v3.7.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.0...ios-v3.7.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.2/Duotone.ipa",
+          "size": 17145700,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "3.7.0",
           "date": "2026-09-20T03:30:13Z",
           "localizedDescription": "- Duotone 3.7.0: artistas favoritos, o Discover a mudar todos os dias, e o PC com movimento\n- Duotone 3.6.1: os amigos continuam online enquanto ouvem música no PC\n- Duotone 3.6.0: o PC com melhor acabamento, e uma Descoberta cheia de escolha\n\nComparar com ios-v3.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.5.0...ios-v3.7.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.1/Duotone.ipa",
           "size": 16934290,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.9.0",
-          "date": "2026-09-13T18:18:16Z",
-          "localizedDescription": "- O lockfile volta a ser aceite pelo npm da CI\n- release: Duotone 2.9.0\n- Capa e letras mantêm o 3D durante o swipe\n- Smart Shuffle deixa de repetir músicas durante 30 dias\n- Now Playing ganha capa 3D flutuante no iPhone\n- A mistura dos dois junta o gosto de dois amigos\n- Daily mix: uma playlist que se refaz sozinha todos os dias, no topo das Playlists\n- O \"Discover new\" deixa de repetir as músicas das semanas anteriores\n- As recomendações partem do gosto do Spotify, e deixam de ignorar quem chega sem biblioteca\n- Três músicas prontas antes da vez delas, e o leitor deixa de dizer \"Downloading\"\n\nComparar com ios-v2.8.0: https://github.com/joaoafonso2004/duotone/compare/ios-v2.8.0...ios-v2.9.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.0/Duotone.ipa",
-          "size": 16934060,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "3.7.0",
-      "versionDate": "2026-09-20T03:30:13Z",
-      "versionDescription": "- Duotone 3.7.0: artistas favoritos, o Discover a mudar todos os dias, e o PC com movimento\n- Duotone 3.6.1: os amigos continuam online enquanto ouvem música no PC\n- Duotone 3.6.0: o PC com melhor acabamento, e uma Descoberta cheia de escolha\n\nComparar com ios-v3.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.5.0...ios-v3.7.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.0/Duotone.ipa",
-      "size": 17145771
+      "version": "3.7.2",
+      "versionDate": "2026-09-20T12:49:19Z",
+      "versionDescription": "- Duotone 3.7.2: dá mesmo para favoritar artistas, e é o coração das músicas\n- Duotone 3.7.1: o PC ganha mesmo o movimento que a 3.7.0 prometia\n\nComparar com ios-v3.7.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.0...ios-v3.7.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.2/Duotone.ipa",
+      "size": 17145700
     }
   ],
   "news": []
