@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T10:24:22.600Z",
+  "generatedAt": "2026-09-20T12:27:50.335Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.0/Duotone.ipa"
       },
       "windows": {
-        "version": "3.7.0",
-        "tag": "win-v3.7.0",
-        "notes": "- Duotone 3.7.0: artistas favoritos, o Discover a mudar todos os dias, e o PC com movimento\n\nComparar com win-v3.6.1: https://github.com/joaoafonso2004/duotone/compare/win-v3.6.1...win-v3.7.0",
-        "publishedAt": "2026-09-20T03:25:30Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.7.0",
+        "version": "3.7.1",
+        "tag": "win-v3.7.1",
+        "notes": "- Duotone 3.7.1: o PC ganha mesmo o movimento que a 3.7.0 prometia\n\nComparar com win-v3.7.0: https://github.com/joaoafonso2004/duotone/compare/win-v3.7.0...win-v3.7.1",
+        "publishedAt": "2026-09-20T12:27:38Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.7.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115838204,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.7.0/Duotone-Setup.exe",
+          "size": 115838348,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.7.1/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.7.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.7.1/Duotone-Setup.exe"
       }
     }
   }
