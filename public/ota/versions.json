@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-20T03:25:53.215Z",
+  "generatedAt": "2026-09-20T03:30:24.230Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "3.5.0",
-        "tag": "ios-v3.5.0",
-        "notes": "- Duotone 3.5.0: recomendações mais certas, que aprendem com os skips\n- Corrigir o arranque, fecho e shuffle no Windows\n- Corrigir o reinício depois da atualização no Windows\n- Tornar o atualizador do Windows fiável\n\nComparar com ios-v3.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.3.0...ios-v3.5.0",
-        "publishedAt": "2026-09-16T18:10:41Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.5.0",
+        "version": "3.7.0",
+        "tag": "ios-v3.7.0",
+        "notes": "- Duotone 3.7.0: artistas favoritos, o Discover a mudar todos os dias, e o PC com movimento\n- Duotone 3.6.1: os amigos continuam online enquanto ouvem música no PC\n- Duotone 3.6.0: o PC com melhor acabamento, e uma Descoberta cheia de escolha\n\nComparar com ios-v3.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.5.0...ios-v3.7.0",
+        "publishedAt": "2026-09-20T03:30:13Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.7.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17094597,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.5.0/Duotone.ipa",
-          "downloads": 3
+          "size": 17145771,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.0/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.5.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.0/Duotone.ipa"
       },
       "windows": {
         "version": "3.7.0",
