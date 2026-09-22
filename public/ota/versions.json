@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-22T20:29:19.572Z",
+  "generatedAt": "2026-09-22T21:29:14.796Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "3.7.4",
-        "tag": "ios-v3.7.4",
-        "notes": "- Duotone 3.7.4: as músicas deixam de parar a meio quando o YouTube marca o telemóvel\n- Duotone 3.7.3: o PC leve outra vez, e a barra lateral sem duas camadas\n\nComparar com ios-v3.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.2...ios-v3.7.4",
-        "publishedAt": "2026-09-22T20:29:04Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.7.4",
+        "version": "3.7.5",
+        "tag": "ios-v3.7.5",
+        "notes": "- Duotone 3.7.5: as músicas voltam a descarregar antes de tocar\n\nComparar com ios-v3.7.4: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.4...ios-v3.7.5",
+        "publishedAt": "2026-09-22T21:29:01Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.7.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17148318,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.4/Duotone.ipa",
+          "size": 17149065,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.5/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.4/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.5/Duotone.ipa"
       },
       "windows": {
         "version": "3.7.3",

@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "3.7.5",
+          "date": "2026-09-22T21:29:01Z",
+          "localizedDescription": "- Duotone 3.7.5: as músicas voltam a descarregar antes de tocar\n\nComparar com ios-v3.7.4: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.4...ios-v3.7.5",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.5/Duotone.ipa",
+          "size": 17149065,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "3.7.4",
           "date": "2026-09-22T20:29:04Z",
           "localizedDescription": "- Duotone 3.7.4: as músicas deixam de parar a meio quando o YouTube marca o telemóvel\n- Duotone 3.7.3: o PC leve outra vez, e a barra lateral sem duas camadas\n\nComparar com ios-v3.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.2...ios-v3.7.4",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.3/Duotone.ipa",
           "size": 17050992,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.9.2",
-          "date": "2026-09-13T20:44:21Z",
-          "localizedDescription": "- release: Duotone 2.9.2\n- A capa 3D passa a ser uma caixa que vira para as letras\n- A espessura da capa 3D passa a ser a da foto de referência\n- A capa 3D passa a pertencer ao fundo: luz da própria capa, sombra difusa e a face a dominar\n- A capa 3D do iPhone passa a ser um objeto fino a sério, na pose da referência\n\nComparar com ios-v2.9.1: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.1...ios-v2.9.2",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.2/Duotone.ipa",
-          "size": 17050118,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "3.7.4",
-      "versionDate": "2026-09-22T20:29:04Z",
-      "versionDescription": "- Duotone 3.7.4: as músicas deixam de parar a meio quando o YouTube marca o telemóvel\n- Duotone 3.7.3: o PC leve outra vez, e a barra lateral sem duas camadas\n\nComparar com ios-v3.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.2...ios-v3.7.4",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.4/Duotone.ipa",
-      "size": 17148318
+      "version": "3.7.5",
+      "versionDate": "2026-09-22T21:29:01Z",
+      "versionDescription": "- Duotone 3.7.5: as músicas voltam a descarregar antes de tocar\n\nComparar com ios-v3.7.4: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.4...ios-v3.7.5",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.5/Duotone.ipa",
+      "size": 17149065
     }
   ],
   "news": []
