@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T10:15:03.933Z",
+  "generatedAt": "2026-09-23T10:16:39.046Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -9,8 +9,13 @@
         "publishedAt": "2026-09-23T10:10:59Z",
         "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.7.7",
         "prerelease": false,
-        "asset": null,
-        "install": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.7.7"
+        "asset": {
+          "name": "Duotone.ipa",
+          "size": 18422579,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.7/Duotone.ipa",
+          "downloads": 0
+        },
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.7/Duotone.ipa"
       },
       "windows": {
         "version": "3.7.3",
