@@ -1,21 +1,16 @@
 {
-  "generatedAt": "2026-09-23T00:03:12.201Z",
+  "generatedAt": "2026-09-23T09:45:47.750Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "3.7.6",
-        "tag": "ios-v3.7.6",
-        "notes": "- Duotone 3.7.6: a velocidade deixa de ficar um clique atrás, e a pausa pausa\n\nComparar com ios-v3.7.5: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.5...ios-v3.7.6",
-        "publishedAt": "2026-09-23T00:02:57Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.7.6",
+        "version": "3.7.7",
+        "tag": "ios-v3.7.7",
+        "notes": "- Velocidade: o expo-video vem pré-compilado, o remendo nunca chegou ao iPhone\n- A velocidade deixa de ficar um clique atrás, e a pausa pausa (de vez)\n- O teste do ensaio do Opus entra no git (o .gitignore apanhava test-*.mjs)\n- Plano de áudio, entrega 3: Opus no iPhone, com recuo para AAC\n- Plano de áudio: downloads pedidos à parte da cache, e o ensaio do Opus\n- Plano de áudio: o que a 3.7.5 e a 3.7.6 mudaram, e o salto por explicar\n\nComparar com ios-v3.7.6: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.6...ios-v3.7.7",
+        "publishedAt": "2026-09-23T09:45:33Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.7.7",
         "prerelease": false,
-        "asset": {
-          "name": "Duotone.ipa",
-          "size": 17149169,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.6/Duotone.ipa",
-          "downloads": 0
-        },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.6/Duotone.ipa"
+        "asset": null,
+        "install": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.7.7"
       },
       "windows": {
         "version": "3.7.3",
