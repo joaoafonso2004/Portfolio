@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "3.7.6",
+          "date": "2026-09-23T00:02:57Z",
+          "localizedDescription": "- Duotone 3.7.6: a velocidade deixa de ficar um clique atrás, e a pausa pausa\n\nComparar com ios-v3.7.5: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.5...ios-v3.7.6",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.6/Duotone.ipa",
+          "size": 17149169,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "3.7.5",
           "date": "2026-09-22T21:29:01Z",
           "localizedDescription": "- Duotone 3.7.5: as músicas voltam a descarregar antes de tocar\n\nComparar com ios-v3.7.4: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.4...ios-v3.7.5",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.0.0/Duotone.ipa",
           "size": 17058536,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "2.9.3",
-          "date": "2026-09-13T21:15:42Z",
-          "localizedDescription": "- release: Duotone 2.9.3\n- O grão da capa 3D cobre as faces inteiras\n\nComparar com ios-v2.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v2.9.2...ios-v2.9.3",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v2.9.3/Duotone.ipa",
-          "size": 17050992,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "3.7.5",
-      "versionDate": "2026-09-22T21:29:01Z",
-      "versionDescription": "- Duotone 3.7.5: as músicas voltam a descarregar antes de tocar\n\nComparar com ios-v3.7.4: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.4...ios-v3.7.5",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.5/Duotone.ipa",
-      "size": 17149065
+      "version": "3.7.6",
+      "versionDate": "2026-09-23T00:02:57Z",
+      "versionDescription": "- Duotone 3.7.6: a velocidade deixa de ficar um clique atrás, e a pausa pausa\n\nComparar com ios-v3.7.5: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.5...ios-v3.7.6",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.6/Duotone.ipa",
+      "size": 17149169
     }
   ],
   "news": []
