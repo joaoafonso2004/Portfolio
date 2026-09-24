@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-24T18:02:16.618Z",
+  "generatedAt": "2026-09-24T18:07:49.073Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "3.8.0",
-        "tag": "ios-v3.8.0",
-        "notes": "- Capa 3D: trocar de música deixa de engasgar (a caixa já não é reconstruída a cada faixa).\n- Guardar músicas e marcar playlists muda no toque, sem esperar pelo servidor.\n- A sessão do leitor deixa de regravar a fila inteira a cada 3 segundos.\n- Rádio e páginas de artista gastam menos quota da pesquisa do YouTube.\n- Criar grupos e guardar ajustes por faixa numa só ida ao servidor.",
-        "publishedAt": "2026-09-24T12:17:10Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.8.0",
+        "version": "3.8.1",
+        "tag": "ios-v3.8.1",
+        "notes": "- Modo offline: sem rede, a app abre nos Downloads, com Tocar e Aleatório só com o que está no telemóvel.\n- Sem rede, a fila passa por cima das músicas que não estão no telemóvel.\n- As músicas ouvidas sem rede passam a contar nas estatísticas quando a rede volta.",
+        "publishedAt": "2026-09-24T18:07:27Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.8.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 18428735,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.0/Duotone.ipa",
-          "downloads": 1
+          "size": 18437935,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.1/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.1/Duotone.ipa"
       },
       "windows": {
         "version": "3.8.1",
