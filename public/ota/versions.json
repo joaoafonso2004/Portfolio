@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T12:17:33.814Z",
+  "generatedAt": "2026-09-24T18:02:16.618Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 18428735,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.0/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.0/Duotone.ipa"
       },
       "windows": {
-        "version": "3.7.3",
-        "tag": "win-v3.7.3",
-        "notes": "- Duotone 3.7.3: o PC leve outra vez, e a barra lateral sem duas camadas\n\nComparar com win-v3.7.2: https://github.com/joaoafonso2004/duotone/compare/win-v3.7.2...win-v3.7.3",
-        "publishedAt": "2026-09-20T14:21:49Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.7.3",
+        "version": "3.8.1",
+        "tag": "win-v3.8.1",
+        "notes": "- Crossfade no PC: dois players do YouTube a cruzar o volume no fim da faixa\n- PC: atalhos globais configuráveis (nenhum por omissão) e o mini leitor flutuante\n- Modo offline: arranca nos Downloads, a fila salta o que não está no telemóvel e as escutas esperam pela rede\n- Pesquisa: a rádio, a alternativa do PC e a página do artista vão pela livre primeiro\n- Escritas numa só ida e corações otimistas\n- Sessão do leitor: a fila vive noutra chave e só se escreve quando muda\n- Capa 3D: o skip deixa de reconstruir a caixa e os desfoques partem da miniatura\n- Velocidade e pausa: laboratório no Opus test e o relatório diz quem retoma a música\n- Velocidade: o relatório de reprodução passa a mostrar o que o iPhone faz\n- Build iOS: o .ipa sobe à parte e confirma-se, e fica sempre como artefacto\n- Velocidade: o expo-video vem pré-compilado, o remendo nunca chegou ao iPhone\n- A velocidade deixa de ficar um clique atrás, e a pausa pausa (de vez)\n- O teste do ensaio do Opus entra no git (o .gitignore apanhava test-*.mjs)\n- Plano de áudio, entrega 3: Opus no iPhone, com recuo para AAC\n- Plano de áudio: downloads pedidos à parte da cache, e o ensaio do Opus\n- Plano de áudio: o que a 3.7.5 e a 3.7.6 mudaram, e o salto por explicar\n- Duotone 3.7.6: a velocidade deixa de ficar um clique atrás, e a pausa pausa\n- Duotone 3.7.5: as músicas voltam a descarregar antes de tocar\n- Duotone 3.7.4: as músicas deixam de parar a meio quando o YouTube marca o telemóvel\n\nComparar com win-v3.7.3: https://github.com/joaoafonso2004/duotone/compare/win-v3.7.3...win-v3.8.1",
+        "publishedAt": "2026-09-24T18:02:01Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.8.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115839201,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.7.3/Duotone-Setup.exe",
-          "downloads": 4
+          "size": 115856735,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.1/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.7.3/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.1/Duotone-Setup.exe"
       }
     }
   }
