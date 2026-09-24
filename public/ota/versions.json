@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-24T18:57:52.725Z",
+  "generatedAt": "2026-09-24T19:04:12.272Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "3.8.1",
-        "tag": "ios-v3.8.1",
-        "notes": "- Modo offline: sem rede, a app abre nos Downloads, com Tocar e Aleatório só com o que está no telemóvel.\n- Sem rede, a fila passa por cima das músicas que não estão no telemóvel.\n- As músicas ouvidas sem rede passam a contar nas estatísticas quando a rede volta.",
-        "publishedAt": "2026-09-24T18:07:27Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.8.1",
+        "version": "3.8.2",
+        "tag": "ios-v3.8.2",
+        "notes": "- A app deixa de abrir sozinha nos Downloads.\n- Tocar numa música volta a abrir o leitor.\n- As playlists da Pesquisa voltam a aparecer (já não ficam a carregar para sempre).",
+        "publishedAt": "2026-09-24T19:03:55Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.8.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 18437935,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.1/Duotone.ipa",
-          "downloads": 1
+          "size": 18437903,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.2/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.1/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.2/Duotone.ipa"
       },
       "windows": {
         "version": "3.8.2",
