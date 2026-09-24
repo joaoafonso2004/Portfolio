@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "3.8.0",
+          "date": "2026-09-24T12:17:10Z",
+          "localizedDescription": "- Capa 3D: trocar de música deixa de engasgar (a caixa já não é reconstruída a cada faixa).\n- Guardar músicas e marcar playlists muda no toque, sem esperar pelo servidor.\n- A sessão do leitor deixa de regravar a fila inteira a cada 3 segundos.\n- Rádio e páginas de artista gastam menos quota da pesquisa do YouTube.\n- Criar grupos e guardar ajustes por faixa numa só ida ao servidor.",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.0/Duotone.ipa",
+          "size": 18428735,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "3.7.9",
           "date": "2026-09-24T11:37:14Z",
           "localizedDescription": "- Laboratório da velocidade no Opus test (Definições → Playback diagnostics) e o relatório passa a dizer quem volta a pôr a música a tocar depois de uma pausa.",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.5.0/Duotone.ipa",
           "size": 17094597,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "3.3.0",
-          "date": "2026-09-15T11:49:39Z",
-          "localizedDescription": "- iOS 3.3.0: o arranque deixa de prender e a capa chega com o áudio\n- O Windows passa a atualizar-se com um botão, sem ir ao site\n\nComparar com ios-v3.2.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.2.0...ios-v3.3.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.3.0/Duotone.ipa",
-          "size": 17079933,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "3.7.9",
-      "versionDate": "2026-09-24T11:37:14Z",
-      "versionDescription": "- Laboratório da velocidade no Opus test (Definições → Playback diagnostics) e o relatório passa a dizer quem volta a pôr a música a tocar depois de uma pausa.",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.9/Duotone.ipa",
-      "size": 18426249
+      "version": "3.8.0",
+      "versionDate": "2026-09-24T12:17:10Z",
+      "versionDescription": "- Capa 3D: trocar de música deixa de engasgar (a caixa já não é reconstruída a cada faixa).\n- Guardar músicas e marcar playlists muda no toque, sem esperar pelo servidor.\n- A sessão do leitor deixa de regravar a fila inteira a cada 3 segundos.\n- Rádio e páginas de artista gastam menos quota da pesquisa do YouTube.\n- Criar grupos e guardar ajustes por faixa numa só ida ao servidor.",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.0/Duotone.ipa",
+      "size": 18428735
     }
   ],
   "news": []

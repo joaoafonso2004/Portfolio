@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-24T11:37:30.064Z",
+  "generatedAt": "2026-09-24T12:17:33.814Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "3.7.9",
-        "tag": "ios-v3.7.9",
-        "notes": "- Laboratório da velocidade no Opus test (Definições → Playback diagnostics) e o relatório passa a dizer quem volta a pôr a música a tocar depois de uma pausa.",
-        "publishedAt": "2026-09-24T11:37:14Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.7.9",
+        "version": "3.8.0",
+        "tag": "ios-v3.8.0",
+        "notes": "- Capa 3D: trocar de música deixa de engasgar (a caixa já não é reconstruída a cada faixa).\n- Guardar músicas e marcar playlists muda no toque, sem esperar pelo servidor.\n- A sessão do leitor deixa de regravar a fila inteira a cada 3 segundos.\n- Rádio e páginas de artista gastam menos quota da pesquisa do YouTube.\n- Criar grupos e guardar ajustes por faixa numa só ida ao servidor.",
+        "publishedAt": "2026-09-24T12:17:10Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.8.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 18426249,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.9/Duotone.ipa",
+          "size": 18428735,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.0/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.9/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.0/Duotone.ipa"
       },
       "windows": {
         "version": "3.7.3",
