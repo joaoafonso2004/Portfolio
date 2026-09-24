@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "3.7.9",
+          "date": "2026-09-24T11:37:14Z",
+          "localizedDescription": "- Laboratório da velocidade no Opus test (Definições → Playback diagnostics) e o relatório passa a dizer quem volta a pôr a música a tocar depois de uma pausa.",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.9/Duotone.ipa",
+          "size": 18426249,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "3.7.8",
           "date": "2026-09-23T11:15:51Z",
           "localizedDescription": "- A app passa a registar cada mudança de velocidade no relatório de reprodução (Definições → Playback diagnostics), para acabar de vez com a velocidade que fica um clique atrás.",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.3.0/Duotone.ipa",
           "size": 17079933,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "3.2.0",
-          "date": "2026-09-14T19:14:12Z",
-          "localizedDescription": "- release: Duotone 3.2.0\n- Responder a mensagens, guardar playlists recebidas, e a capa do iPhone recua no skip sem ficar vazia\n\nComparar com ios-v3.1.0: https://github.com/joaoafonso2004/duotone/compare/ios-v3.1.0...ios-v3.2.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.2.0/Duotone.ipa",
-          "size": 17075979,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "3.7.8",
-      "versionDate": "2026-09-23T11:15:51Z",
-      "versionDescription": "- A app passa a registar cada mudança de velocidade no relatório de reprodução (Definições → Playback diagnostics), para acabar de vez com a velocidade que fica um clique atrás.",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.8/Duotone.ipa",
-      "size": 18424383
+      "version": "3.7.9",
+      "versionDate": "2026-09-24T11:37:14Z",
+      "versionDescription": "- Laboratório da velocidade no Opus test (Definições → Playback diagnostics) e o relatório passa a dizer quem volta a pôr a música a tocar depois de uma pausa.",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.9/Duotone.ipa",
+      "size": 18426249
     }
   ],
   "news": []

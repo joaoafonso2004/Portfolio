@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-24T10:53:47.442Z",
+  "generatedAt": "2026-09-24T11:37:30.064Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "3.7.8",
-        "tag": "ios-v3.7.8",
-        "notes": "- A app passa a registar cada mudança de velocidade no relatório de reprodução (Definições → Playback diagnostics), para acabar de vez com a velocidade que fica um clique atrás.",
-        "publishedAt": "2026-09-23T11:15:51Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.7.8",
+        "version": "3.7.9",
+        "tag": "ios-v3.7.9",
+        "notes": "- Laboratório da velocidade no Opus test (Definições → Playback diagnostics) e o relatório passa a dizer quem volta a pôr a música a tocar depois de uma pausa.",
+        "publishedAt": "2026-09-24T11:37:14Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.7.9",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 18424383,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.8/Duotone.ipa",
-          "downloads": 2
+          "size": 18426249,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.9/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.8/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.9/Duotone.ipa"
       },
       "windows": {
         "version": "3.7.3",
