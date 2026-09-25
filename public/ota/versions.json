@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T10:56:05.873Z",
+  "generatedAt": "2026-09-25T11:18:27.389Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.2/Duotone.ipa"
       },
       "windows": {
-        "version": "3.8.3",
-        "tag": "win-v3.8.3",
-        "notes": "- Mini leitor: arrasta-se pela barrinha do topo, e o botão ao lado do X mostra e esconde a app\n\nComparar com win-v3.8.2: https://github.com/joaoafonso2004/duotone/compare/win-v3.8.2...win-v3.8.3",
-        "publishedAt": "2026-09-24T22:08:21Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.8.3",
+        "version": "3.8.4",
+        "tag": "win-v3.8.4",
+        "notes": "- Smart Shuffle confirma o artista pela música, Now Playing do PC novo e o mini em barra\n\nComparar com win-v3.8.3: https://github.com/joaoafonso2004/duotone/compare/win-v3.8.3...win-v3.8.4",
+        "publishedAt": "2026-09-25T11:18:14Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.8.4",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115860373,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.3/Duotone-Setup.exe",
-          "downloads": 2
+          "size": 115866595,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.4/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.3/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.4/Duotone-Setup.exe"
       }
     }
   }
