@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T12:09:11.888Z",
+  "generatedAt": "2026-09-25T15:55:48.856Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.4/Duotone.ipa"
       },
       "windows": {
-        "version": "3.8.5",
-        "tag": "win-v3.8.5",
-        "notes": "- Rádio com artistas de tom parecido, e o mini recolhe sempre\n\nComparar com win-v3.8.4: https://github.com/joaoafonso2004/duotone/compare/win-v3.8.4...win-v3.8.5",
-        "publishedAt": "2026-09-25T12:01:12Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.8.5",
+        "version": "3.8.6",
+        "tag": "win-v3.8.6",
+        "notes": "- Fila do PC arrasta com shuffle, e o mini muda de tamanho e fica por cima da barra de tarefas\n\nComparar com win-v3.8.5: https://github.com/joaoafonso2004/duotone/compare/win-v3.8.5...win-v3.8.6",
+        "publishedAt": "2026-09-25T15:55:32Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.8.6",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115866352,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.5/Duotone-Setup.exe",
+          "size": 115867828,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.6/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.5/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.6/Duotone-Setup.exe"
       }
     }
   }
