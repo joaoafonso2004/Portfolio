@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T11:25:51.530Z",
+  "generatedAt": "2026-09-25T12:01:29.095Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.3/Duotone.ipa"
       },
       "windows": {
-        "version": "3.8.4",
-        "tag": "win-v3.8.4",
-        "notes": "- Smart Shuffle confirma o artista pela música, Now Playing do PC novo e o mini em barra\n\nComparar com win-v3.8.3: https://github.com/joaoafonso2004/duotone/compare/win-v3.8.3...win-v3.8.4",
-        "publishedAt": "2026-09-25T11:18:14Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.8.4",
+        "version": "3.8.5",
+        "tag": "win-v3.8.5",
+        "notes": "- Rádio com artistas de tom parecido, e o mini recolhe sempre\n\nComparar com win-v3.8.4: https://github.com/joaoafonso2004/duotone/compare/win-v3.8.4...win-v3.8.5",
+        "publishedAt": "2026-09-25T12:01:12Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.8.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115866595,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.4/Duotone-Setup.exe",
+          "size": 115866352,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.5/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.4/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.5/Duotone-Setup.exe"
       }
     }
   }
