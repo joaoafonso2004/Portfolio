@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "3.8.4",
+          "date": "2026-09-25T12:08:54Z",
+          "localizedDescription": "- Ao tocar uma música, a fila passa a vir de artistas com um tom parecido (e o próprio artista só de vez em quando), em vez das tuas favoritas de sempre.\n- Smart Shuffle: também parte do artista que está a tocar mesmo quando tens só uma música dele.",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.4/Duotone.ipa",
+          "size": 18443538,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "3.8.3",
           "date": "2026-09-25T11:25:36Z",
           "localizedDescription": "- Smart Shuffle: deixa de trazer músicas de artistas com o mesmo nome (confirma o artista pelas tuas músicas) e não sugere nada quando não reconhece o que está a tocar.\n- Títulos limpos e o artista certo em todo o lado (Downloads, Pesquisa, menus, estatísticas); capas sem barras pretas.\n- Pesquisa: a Daily mix passa para o topo; o motivo de cada prateleira aparece uma vez, ao lado do título.\n- Fila: botão \"Clear\" para tirar o que vem a seguir.\n- Downloads, estatísticas e Year in review em inglês, com o topo dos Downloads mais simples.\n- \"Liked Songs\" como nome único da lista.",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.5/Duotone.ipa",
           "size": 17149065,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "3.7.4",
-          "date": "2026-09-22T20:29:04Z",
-          "localizedDescription": "- Duotone 3.7.4: as músicas deixam de parar a meio quando o YouTube marca o telemóvel\n- Duotone 3.7.3: o PC leve outra vez, e a barra lateral sem duas camadas\n\nComparar com ios-v3.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v3.7.2...ios-v3.7.4",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.4/Duotone.ipa",
-          "size": 17148318,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "3.8.3",
-      "versionDate": "2026-09-25T11:25:36Z",
-      "versionDescription": "- Smart Shuffle: deixa de trazer músicas de artistas com o mesmo nome (confirma o artista pelas tuas músicas) e não sugere nada quando não reconhece o que está a tocar.\n- Títulos limpos e o artista certo em todo o lado (Downloads, Pesquisa, menus, estatísticas); capas sem barras pretas.\n- Pesquisa: a Daily mix passa para o topo; o motivo de cada prateleira aparece uma vez, ao lado do título.\n- Fila: botão \"Clear\" para tirar o que vem a seguir.\n- Downloads, estatísticas e Year in review em inglês, com o topo dos Downloads mais simples.\n- \"Liked Songs\" como nome único da lista.",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.3/Duotone.ipa",
-      "size": 18442637
+      "version": "3.8.4",
+      "versionDate": "2026-09-25T12:08:54Z",
+      "versionDescription": "- Ao tocar uma música, a fila passa a vir de artistas com um tom parecido (e o próprio artista só de vez em quando), em vez das tuas favoritas de sempre.\n- Smart Shuffle: também parte do artista que está a tocar mesmo quando tens só uma música dele.",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.4/Duotone.ipa",
+      "size": 18443538
     }
   ],
   "news": []

@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-25T12:01:29.095Z",
+  "generatedAt": "2026-09-25T12:09:11.888Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "3.8.3",
-        "tag": "ios-v3.8.3",
-        "notes": "- Smart Shuffle: deixa de trazer músicas de artistas com o mesmo nome (confirma o artista pelas tuas músicas) e não sugere nada quando não reconhece o que está a tocar.\n- Títulos limpos e o artista certo em todo o lado (Downloads, Pesquisa, menus, estatísticas); capas sem barras pretas.\n- Pesquisa: a Daily mix passa para o topo; o motivo de cada prateleira aparece uma vez, ao lado do título.\n- Fila: botão \"Clear\" para tirar o que vem a seguir.\n- Downloads, estatísticas e Year in review em inglês, com o topo dos Downloads mais simples.\n- \"Liked Songs\" como nome único da lista.",
-        "publishedAt": "2026-09-25T11:25:36Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.8.3",
+        "version": "3.8.4",
+        "tag": "ios-v3.8.4",
+        "notes": "- Ao tocar uma música, a fila passa a vir de artistas com um tom parecido (e o próprio artista só de vez em quando), em vez das tuas favoritas de sempre.\n- Smart Shuffle: também parte do artista que está a tocar mesmo quando tens só uma música dele.",
+        "publishedAt": "2026-09-25T12:08:54Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.8.4",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 18442637,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.3/Duotone.ipa",
+          "size": 18443538,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.4/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.3/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.4/Duotone.ipa"
       },
       "windows": {
         "version": "3.8.5",
