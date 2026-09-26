@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T10:36:38.760Z",
+  "generatedAt": "2026-09-26T14:25:32.144Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.4/Duotone.ipa"
       },
       "windows": {
-        "version": "3.8.6",
-        "tag": "win-v3.8.6",
-        "notes": "- Fila do PC arrasta com shuffle, e o mini muda de tamanho e fica por cima da barra de tarefas\n\nComparar com win-v3.8.5: https://github.com/joaoafonso2004/duotone/compare/win-v3.8.5...win-v3.8.6",
-        "publishedAt": "2026-09-25T15:55:32Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.8.6",
+        "version": "3.8.7",
+        "tag": "win-v3.8.7",
+        "notes": "- A fila pousa suavemente ao largar uma música: animação de encaixe e linhas estáveis, sem o salto ao confirmar a ordem.\n- Novo aviso no canto superior com foto do amigo, excerto da mensagem e botão Reply. Mensagens na conversa visível não interrompem.\n- Ícone da barra de tarefas a piscar quando chega uma mensagem em segundo plano e contador de mensagens por ler. Abrir a janela para o piscar; ler as mensagens limpa o contador.\n- Artistas favoritos sincronizados com o iPhone, incluindo remoções e alterações feitas offline. Atualiza os dois aparelhos.\n- Smart Shuffle com sugestões identificadas por extenso, intensidade Few / Some / Lots e explicações no relatório de reprodução.\n- Importação de playlists do Spotify por link corrigida e artistas do questionário inicial preenchidos.\n- Filtro de versões na pesquisa, nova lateral com amigos e transição/topo do Now Playing revistos.\n\nNão é necessário SQL novo para os favoritos. Para o progresso da música dos amigos, continua a ser necessário aplicar supabase/presenca-com-posicao.sql.",
+        "publishedAt": "2026-09-26T14:25:15Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.8.7",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115867828,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.6/Duotone-Setup.exe",
-          "downloads": 2
+          "size": 115882783,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.7/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.6/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.7/Duotone-Setup.exe"
       }
     }
   }
