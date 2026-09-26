@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-26T14:25:32.144Z",
+  "generatedAt": "2026-09-26T14:31:38.218Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "3.8.4",
-        "tag": "ios-v3.8.4",
-        "notes": "- Ao tocar uma música, a fila passa a vir de artistas com um tom parecido (e o próprio artista só de vez em quando), em vez das tuas favoritas de sempre.\n- Smart Shuffle: também parte do artista que está a tocar mesmo quando tens só uma música dele.",
-        "publishedAt": "2026-09-25T12:08:54Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.8.4",
+        "version": "3.8.5",
+        "tag": "ios-v3.8.5",
+        "notes": "- Artistas favoritos sincronizados entre iPhone e Windows, incluindo remoções. As escolhas offline ficam guardadas e são enviadas quando a ligação volta. Atualiza os dois aparelhos.\n- Smart Shuffle com marca visível nas sugestões e intensidade configurável: Few, Some e Lots. O relatório explica quando sugere e quando não consegue sugerir.\n- Filtro de versões na pesquisa: Original, Remix, Slowed / sped up, Live e Acoustic.\n- Importação de playlists do Spotify por link, com progresso visível.\n- Deslizar para remover músicas da fila.\n- Correções na reprodução após skip e na aplicação da velocidade depois do crossfade.\n\nNão é necessário SQL novo para os favoritos. Para o progresso da música dos amigos, continua a ser necessário aplicar supabase/presenca-com-posicao.sql.",
+        "publishedAt": "2026-09-26T14:31:22Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.8.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 18443538,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.4/Duotone.ipa",
-          "downloads": 1
+          "size": 17238620,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.5/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.4/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.5/Duotone.ipa"
       },
       "windows": {
         "version": "3.8.7",
