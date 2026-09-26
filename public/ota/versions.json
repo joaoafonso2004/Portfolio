@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T14:31:38.218Z",
+  "generatedAt": "2026-09-26T18:25:55.543Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17238620,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.5/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.5/Duotone.ipa"
       },
       "windows": {
-        "version": "3.8.7",
-        "tag": "win-v3.8.7",
-        "notes": "- A fila pousa suavemente ao largar uma música: animação de encaixe e linhas estáveis, sem o salto ao confirmar a ordem.\n- Novo aviso no canto superior com foto do amigo, excerto da mensagem e botão Reply. Mensagens na conversa visível não interrompem.\n- Ícone da barra de tarefas a piscar quando chega uma mensagem em segundo plano e contador de mensagens por ler. Abrir a janela para o piscar; ler as mensagens limpa o contador.\n- Artistas favoritos sincronizados com o iPhone, incluindo remoções e alterações feitas offline. Atualiza os dois aparelhos.\n- Smart Shuffle com sugestões identificadas por extenso, intensidade Few / Some / Lots e explicações no relatório de reprodução.\n- Importação de playlists do Spotify por link corrigida e artistas do questionário inicial preenchidos.\n- Filtro de versões na pesquisa, nova lateral com amigos e transição/topo do Now Playing revistos.\n\nNão é necessário SQL novo para os favoritos. Para o progresso da música dos amigos, continua a ser necessário aplicar supabase/presenca-com-posicao.sql.",
-        "publishedAt": "2026-09-26T14:25:15Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.8.7",
+        "version": "3.8.8",
+        "tag": "win-v3.8.8",
+        "notes": "- Daily mix feita a partir do que ouviste nos últimos dias, com mais peso para ontem: mais do género que andas a ouvir, mas nunca só isso, e 60% de músicas novas.\n- A cor da capa enche a janela toda no Now Playing (lateral, barra de cima e leitor). Muda-se em Settings > Appearance > Now Playing colour.\n- Atalhos na lateral: fixa playlists, músicas, artistas, amigos e a Daily mix pelo \"+\" ou pelo alfinete na página de uma playlist ou de um artista.\n- Amigos na lateral com o tempo da música e a duração.\n- Definições arrumadas: secções à esquerda e uma de cada vez, sem as opções técnicas.\n- Liked Songs carregam sozinhas ao chegar ao fim da lista.\n- No chat, o Enter envia a mensagem (Shift+Enter faz parágrafo). O Esc limpa as pesquisas.\n\nPara o progresso da música dos amigos, continua a ser necessário aplicar supabase/presenca-com-posicao.sql.",
+        "publishedAt": "2026-09-26T18:25:44Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.8.8",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115882783,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.7/Duotone-Setup.exe",
+          "size": 115888030,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.8/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.7/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.8/Duotone-Setup.exe"
       }
     }
   }
