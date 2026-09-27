@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-27T01:19:24.321Z",
+  "generatedAt": "2026-09-27T02:04:28.746Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "3.8.7",
-        "tag": "ios-v3.8.7",
-        "notes": "- Os skips para a música seguinte ficam prontos mais cedo: a app começa a prepará-la logo depois de a atual começar.\n- A presença manda a duração da música, para a barra de progresso dos amigos no PC.\n- O relatório de reprodução mostra quanto tempo cada música demorou a começar e porquê (Definições > About > Send playback report).",
-        "publishedAt": "2026-09-27T01:19:09Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.8.7",
+        "version": "3.8.9",
+        "tag": "ios-v3.8.9",
+        "notes": "- Skips seguidos já não deixam a música presa: um pedido que o servidor não responde é abandonado aos 8 segundos e a app tenta outra vez, e nenhuma espera fica sem prazo (HLS, trocas de fonte, resoluções).\n- A música seguinte começa a ser preparada logo depois de a atual começar.\n- A presença manda a duração da música, para a barra dos amigos no PC.\n- O relatório de reprodução mostra quanto tempo cada música demorou a começar e porquê (Settings > About > Send playback report).",
+        "publishedAt": "2026-09-27T02:04:14Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.8.9",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17246625,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.7/Duotone.ipa",
+          "size": 17248505,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.9/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.7/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.9/Duotone.ipa"
       },
       "windows": {
         "version": "3.8.9",
