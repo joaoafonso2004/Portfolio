@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-27T00:50:10.955Z",
+  "generatedAt": "2026-09-27T01:19:24.321Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "3.8.6",
-        "tag": "ios-v3.8.6",
-        "notes": "- Daily mix feita a partir do que ouviste nos últimos dias, com mais peso para ontem: mais do género que andas a ouvir, mas nunca só isso, e 60% de músicas novas.\n- Definições arrumadas por secções (Playback, Sound, Appearance, General, Library, Storage, Account, About), sem as opções técnicas.\n- O relatório de reprodução fica em About > Send playback report.",
-        "publishedAt": "2026-09-26T18:30:25Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.8.6",
+        "version": "3.8.7",
+        "tag": "ios-v3.8.7",
+        "notes": "- Os skips para a música seguinte ficam prontos mais cedo: a app começa a prepará-la logo depois de a atual começar.\n- A presença manda a duração da música, para a barra de progresso dos amigos no PC.\n- O relatório de reprodução mostra quanto tempo cada música demorou a começar e porquê (Definições > About > Send playback report).",
+        "publishedAt": "2026-09-27T01:19:09Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v3.8.7",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17243089,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.6/Duotone.ipa",
-          "downloads": 1
+          "size": 17246625,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.7/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.6/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.7/Duotone.ipa"
       },
       "windows": {
         "version": "3.8.9",
