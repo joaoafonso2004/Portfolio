@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T02:04:28.746Z",
+  "generatedAt": "2026-09-27T02:06:31.647Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.9/Duotone.ipa"
       },
       "windows": {
-        "version": "3.8.9",
-        "tag": "win-v3.8.9",
-        "notes": "- Atualizações sem perguntar: a versão nova descarrega-se em segundo plano e instala-se na próxima vez que o Duotone abre.\n- Abas mais rápidas: a lateral responde no clique e o conteúdo entra numa passagem curta.\n- Start with Windows ligado de origem, a abrir a janela.\n- A capa no Now Playing aparece inteira (as capas escuras apareciam ampliadas).\n- Botões laterais do rato para trás e para a frente.\n- Foto do amigo no topo da conversa, e a barra da música dos amigos só com o fio.\n- Menos memória com a app escondida; o relatório de reprodução mostra os recursos de cada processo.\n\nEsta é a última versão que ainda mostra o aviso de atualização a quem vem de uma anterior.",
-        "publishedAt": "2026-09-27T00:49:58Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.8.9",
+        "version": "3.8.10",
+        "tag": "win-v3.8.10",
+        "notes": "- Primeira atualização automática: quem tem a 3.8.9 recebe esta versão sem aviso; descarrega em segundo plano e instala na próxima vez que o Duotone abrir.\n- Pequenas correções internas partilhadas com o iPhone.",
+        "publishedAt": "2026-09-27T02:06:16Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.8.10",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115892193,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.9/Duotone-Setup.exe",
+          "size": 115893559,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.10/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.9/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.10/Duotone-Setup.exe"
       }
     }
   }
