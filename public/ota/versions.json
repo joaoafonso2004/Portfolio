@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T02:06:31.647Z",
+  "generatedAt": "2026-09-27T03:17:15.873Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17248505,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.9/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.9/Duotone.ipa"
       },
       "windows": {
-        "version": "3.8.10",
-        "tag": "win-v3.8.10",
-        "notes": "- Primeira atualização automática: quem tem a 3.8.9 recebe esta versão sem aviso; descarrega em segundo plano e instala na próxima vez que o Duotone abrir.\n- Pequenas correções internas partilhadas com o iPhone.",
-        "publishedAt": "2026-09-27T02:06:16Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v3.8.10",
+        "version": "4.0.0",
+        "tag": "win-v4.0.0",
+        "notes": "- Os cartões das prateleiras da Pesquisa entram em cascata e sobem ao passar o rato, como os das outras páginas.\n- Pequenas correções internas partilhadas com o iPhone.",
+        "publishedAt": "2026-09-27T03:17:02Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.0.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115893559,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.10/Duotone-Setup.exe",
+          "size": 115894101,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.0.0/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v3.8.10/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.0.0/Duotone-Setup.exe"
       }
     }
   }
