@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.0.1",
+          "date": "2026-09-27T04:36:29Z",
+          "localizedDescription": "- Tocar numa música enquanto outras estão a descarregar já não espera que o download em curso acabe.\n- Quando uma música acaba e a seguinte começa sem crossfade, o primeiro segundo deixa de entrar abafado.\n- Saltar de música com uma lista aberta fica mais leve.\n- A barra de progresso do leitor desliza em vez de andar aos saltos.\n- A app gasta muito menos dados do servidor com as mensagens, os gostos e o \"continuar noutro aparelho\".",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.1/Duotone.ipa",
+          "size": 17257909,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.0.0",
           "date": "2026-09-27T03:20:46Z",
           "localizedDescription": "- Mudar de música fica mais rápido: quando a música seguinte já estava a ser preparada, o leitor aproveita esse trabalho em vez de começar do zero.\n- Um download que pare a meio é retomado ao fim de 10 segundos, em vez de esperar 30.",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.1/Duotone.ipa",
           "size": 18437935,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "3.8.0",
-          "date": "2026-09-24T12:17:10Z",
-          "localizedDescription": "- Capa 3D: trocar de música deixa de engasgar (a caixa já não é reconstruída a cada faixa).\n- Guardar músicas e marcar playlists muda no toque, sem esperar pelo servidor.\n- A sessão do leitor deixa de regravar a fila inteira a cada 3 segundos.\n- Rádio e páginas de artista gastam menos quota da pesquisa do YouTube.\n- Criar grupos e guardar ajustes por faixa numa só ida ao servidor.",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.0/Duotone.ipa",
-          "size": 18428735,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.0.0",
-      "versionDate": "2026-09-27T03:20:46Z",
-      "versionDescription": "- Mudar de música fica mais rápido: quando a música seguinte já estava a ser preparada, o leitor aproveita esse trabalho em vez de começar do zero.\n- Um download que pare a meio é retomado ao fim de 10 segundos, em vez de esperar 30.",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.0/Duotone.ipa",
-      "size": 17250210
+      "version": "4.0.1",
+      "versionDate": "2026-09-27T04:36:29Z",
+      "versionDescription": "- Tocar numa música enquanto outras estão a descarregar já não espera que o download em curso acabe.\n- Quando uma música acaba e a seguinte começa sem crossfade, o primeiro segundo deixa de entrar abafado.\n- Saltar de música com uma lista aberta fica mais leve.\n- A barra de progresso do leitor desliza em vez de andar aos saltos.\n- A app gasta muito menos dados do servidor com as mensagens, os gostos e o \"continuar noutro aparelho\".",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.1/Duotone.ipa",
+      "size": 17257909
     }
   ],
   "news": []

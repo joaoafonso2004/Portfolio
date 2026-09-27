@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-27T04:32:25.840Z",
+  "generatedAt": "2026-09-27T04:36:43.354Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.0.0",
-        "tag": "ios-v4.0.0",
-        "notes": "- Mudar de música fica mais rápido: quando a música seguinte já estava a ser preparada, o leitor aproveita esse trabalho em vez de começar do zero.\n- Um download que pare a meio é retomado ao fim de 10 segundos, em vez de esperar 30.",
-        "publishedAt": "2026-09-27T03:20:46Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.0.0",
+        "version": "4.0.1",
+        "tag": "ios-v4.0.1",
+        "notes": "- Tocar numa música enquanto outras estão a descarregar já não espera que o download em curso acabe.\n- Quando uma música acaba e a seguinte começa sem crossfade, o primeiro segundo deixa de entrar abafado.\n- Saltar de música com uma lista aberta fica mais leve.\n- A barra de progresso do leitor desliza em vez de andar aos saltos.\n- A app gasta muito menos dados do servidor com as mensagens, os gostos e o \"continuar noutro aparelho\".",
+        "publishedAt": "2026-09-27T04:36:29Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.0.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17250210,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.0/Duotone.ipa",
+          "size": 17257909,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.1/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.1/Duotone.ipa"
       },
       "windows": {
         "version": "4.0.1",
