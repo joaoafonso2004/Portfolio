@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.0.0",
+          "date": "2026-09-27T03:20:46Z",
+          "localizedDescription": "- Mudar de música fica mais rápido: quando a música seguinte já estava a ser preparada, o leitor aproveita esse trabalho em vez de começar do zero.\n- Um download que pare a meio é retomado ao fim de 10 segundos, em vez de esperar 30.",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.0/Duotone.ipa",
+          "size": 17250210,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "3.8.9",
           "date": "2026-09-27T02:04:14Z",
           "localizedDescription": "- Skips seguidos já não deixam a música presa: um pedido que o servidor não responde é abandonado aos 8 segundos e a app tenta outra vez, e nenhuma espera fica sem prazo (HLS, trocas de fonte, resoluções).\n- A música seguinte começa a ser preparada logo depois de a atual começar.\n- A presença manda a duração da música, para a barra dos amigos no PC.\n- O relatório de reprodução mostra quanto tempo cada música demorou a começar e porquê (Settings > About > Send playback report).",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.0/Duotone.ipa",
           "size": 18428735,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "3.7.9",
-          "date": "2026-09-24T11:37:14Z",
-          "localizedDescription": "- Laboratório da velocidade no Opus test (Definições → Playback diagnostics) e o relatório passa a dizer quem volta a pôr a música a tocar depois de uma pausa.",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.7.9/Duotone.ipa",
-          "size": 18426249,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "3.8.9",
-      "versionDate": "2026-09-27T02:04:14Z",
-      "versionDescription": "- Skips seguidos já não deixam a música presa: um pedido que o servidor não responde é abandonado aos 8 segundos e a app tenta outra vez, e nenhuma espera fica sem prazo (HLS, trocas de fonte, resoluções).\n- A música seguinte começa a ser preparada logo depois de a atual começar.\n- A presença manda a duração da música, para a barra dos amigos no PC.\n- O relatório de reprodução mostra quanto tempo cada música demorou a começar e porquê (Settings > About > Send playback report).",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.9/Duotone.ipa",
-      "size": 17248505
+      "version": "4.0.0",
+      "versionDate": "2026-09-27T03:20:46Z",
+      "versionDescription": "- Mudar de música fica mais rápido: quando a música seguinte já estava a ser preparada, o leitor aproveita esse trabalho em vez de começar do zero.\n- Um download que pare a meio é retomado ao fim de 10 segundos, em vez de esperar 30.",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.0/Duotone.ipa",
+      "size": 17250210
     }
   ],
   "news": []
