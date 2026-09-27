@@ -1,0 +1,205 @@
+---
+/**
+ * Os downloads de uma app dentro da página do projeto. A mesma fonte que a
+ * secção Apps da homepage, mas só os botões: as notas de cada versão ficam
+ * lá, aqui o que interessa é chegar ao ficheiro.
+ */
+import type { AppConfig } from '../data/apps';
+import PlatformIcon from './PlatformIcon.astro';
+
+interface Props {
+  app: AppConfig;
+}
+
+const { app } = Astro.props;
+---
+
+<div data-app-downloads={app.id} class="downloads mt-1 flex flex-col gap-3">
+  {
+    Object.entries(app.platforms).map(([platformId, platform]) => (
+      <a
+        data-platform={platformId}
+        aria-disabled="true"
+        class="btn-pill btn-ghost pointer-events-none w-full justify-between gap-4 px-6 py-3 font-medium opacity-40 transition-all hover:-translate-y-1 hover:shadow-[0_8px_16px_-6px_rgba(255,255,255,0.15)]"
+      >
+        <span class="flex min-w-0 items-center gap-2.5">
+          <PlatformIcon platform={platformId} class="h-4 w-4 shrink-0" />
+          <span><span data-dl-verb class="dl-verb">Download for </span><span data-dl-name>{platform.label}</span></span>
+        </span>
+        <span class="whitespace-nowrap text-[10px] font-normal normal-case tracking-normal opacity-70">
+          <span data-dl-status>…</span>
+          <span data-dl-release hidden><span data-dl-version class="dl-version" /><span data-dl-size /></span>
+        </span>
+      </a>
+    ))
+  }
+  <p data-dl-hint class="font-mono text-[11px] leading-relaxed tracking-[0.04em] text-muted/70 empty:hidden" />
+</div>
+
+<style>
+  /* O botão inteiro, com verbo, versão e tamanho, pede uns 360px, e a coluna
+     do cabeçalho não os tem abaixo do desktop largo: 311 a 1024, 229 a 768.
+     Em vez de partir o rótulo em duas linhas, larga primeiro a versão e
+     depois o verbo. Mede-se a coluna e não o ecrã, porque no telemóvel ela
+     ocupa a largura toda e no tablet só um terço. */
+  .downloads {
+    container-type: inline-size;
+  }
+  .dl-verb,
+  .dl-version {
+    display: none;
+  }
+  @container (min-width: 19.25rem) {
+    .dl-verb {
+      display: inline;
+    }
+  }
+  @container (min-width: 23rem) {
+    .dl-version {
+      display: inline;
+    }
+  }
+</style>
+
+<script>
+  import { APPS } from '../data/apps';
+  import type { AppConfig } from '../data/apps';
+  import {
+    formatSize,
+    isIOS,
+    isPlainClick,
+    loadReleases,
+    startDownload,
+  } from '../scripts/releases';
+  import type { AppReleases } from '../scripts/releases';
+
+  const enable = (btn: HTMLAnchorElement) => {
+    btn.classList.remove('opacity-40', 'pointer-events-none');
+    btn.removeAttribute('aria-disabled');
+  };
+
+  /**
+   * À direita do rótulo há duas coisas que se alternam: um estado curto
+   * ("No release", "Started") ou a versão e o tamanho. Alternam-se com
+   * `hidden` em vez de se reescrever o texto, porque as regras que escondem a
+   * versão em colunas estreitas só apanham elementos do template.
+   */
+  function showStatus(btn: HTMLElement, text: string) {
+    const status = btn.querySelector<HTMLElement>('[data-dl-status]');
+    const release = btn.querySelector<HTMLElement>('[data-dl-release]');
+    if (status) {
+      status.textContent = text;
+      status.hidden = !text;
+    }
+    if (release) release.hidden = !!text;
+  }
+
+  function paint(root: HTMLElement, app: AppConfig, releases: AppReleases) {
+    let hint = '';
+
+    root.querySelectorAll<HTMLAnchorElement>('[data-platform]').forEach((btn) => {
+      const platformId = btn.dataset.platform ?? '';
+      const release = releases[platformId] ?? null;
+
+      // Sem ficheiro o botão fica apagado, mas diz porquê em vez de ficar
+      // eternamente em "…".
+      if (!release?.asset) {
+        showStatus(btn, release ? 'File missing' : 'No release');
+        return;
+      }
+
+      btn.href = release.install;
+      enable(btn);
+
+      const version = btn.querySelector<HTMLElement>('[data-dl-version]');
+      const size = btn.querySelector<HTMLElement>('[data-dl-size]');
+      if (version) version.textContent = `v${release.version} · `;
+      if (size) size.textContent = formatSize(release.asset.size);
+      showStatus(btn, '');
+
+      if (platformId === 'ios') {
+        btn.classList.replace('btn-ghost', 'btn-accent');
+        const ota = app.platforms.ios.ota === true;
+        if (ota) {
+          const verb = btn.querySelector<HTMLElement>('[data-dl-verb]');
+          const name = btn.querySelector<HTMLElement>('[data-dl-name]');
+          if (verb) verb.textContent = 'Install on ';
+          if (name) name.textContent = 'iPhone';
+        }
+        // Há mais do que um botão, por isso a dica diz a que plataforma se
+        // refere; na homepage a coluna já o dizia.
+        hint = ota
+          ? isIOS()
+            ? ''
+            : 'Open this page on your iPhone to install.'
+          : 'The iOS build installs via sideload (Sideloadly or AltStore).';
+      }
+    });
+
+    const hintEl = root.querySelector<HTMLElement>('[data-dl-hint]');
+    if (hintEl) hintEl.textContent = hint;
+  }
+
+  /** Sem dados não há versão nem tamanho, mas os ficheiros continuam no
+   *  GitHub: os botões passam a levar lá em vez de ficarem mortos. */
+  function fail(root: HTMLElement, app: AppConfig) {
+    root.querySelectorAll<HTMLAnchorElement>('[data-platform]').forEach((btn) => {
+      btn.href = `https://github.com/${app.owner}/${app.repo}/releases`;
+      btn.target = '_blank';
+      btn.rel = 'noopener noreferrer';
+      enable(btn);
+      showStatus(btn, 'GitHub ↗');
+    });
+    const hintEl = root.querySelector<HTMLElement>('[data-dl-hint]');
+    if (hintEl) hintEl.textContent = 'Release data is unavailable right now. The files are on GitHub.';
+  }
+
+  function arm(root: HTMLElement) {
+    root.querySelectorAll<HTMLAnchorElement>('[data-platform]').forEach((btn) => {
+      // `astro:page-load` pode correr mais do que uma vez sobre o mesmo DOM.
+      if (btn.dataset.armed) return;
+      btn.dataset.armed = '1';
+
+      let timer = 0;
+
+      btn.addEventListener('click', (ev) => {
+        if (!isPlainClick(ev)) return;
+
+        const href = btn.getAttribute('href');
+        if (!href || btn.hasAttribute('aria-disabled')) return;
+
+        // O plano B abre a página de releases noutro separador, e
+        // `itms-services:` só instala a partir de uma navegação directa.
+        if (btn.target === '_blank' || href.startsWith('itms-services:')) return;
+
+        ev.preventDefault();
+        startDownload(href);
+
+        // O browser pode demorar a mostrar o download, sobretudo com os
+        // 100 MB do instalador: sem sinal, o clique parece não ter feito nada.
+        showStatus(btn, 'Started');
+        window.clearTimeout(timer);
+        timer = window.setTimeout(() => showStatus(btn, ''), 4000);
+      });
+    });
+  }
+
+  document.addEventListener('astro:page-load', async () => {
+    const root = document.querySelector<HTMLElement>('[data-app-downloads]');
+    if (!root) return;
+    const app = APPS.find((a) => a.id === root.dataset.appDownloads);
+    if (!app) return;
+
+    arm(root);
+
+    let releases: AppReleases;
+    try {
+      releases = await loadReleases(app);
+    } catch {
+      if (root.isConnected) fail(root, app);
+      return;
+    }
+    // Quem saiu da página entretanto já não tem estes botões no ecrã.
+    if (root.isConnected) paint(root, app, releases);
+  });
+</script>

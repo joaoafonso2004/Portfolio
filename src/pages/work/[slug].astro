@@ -4,6 +4,8 @@ import { Image } from 'astro:assets';
 import { PROJECTS } from '../../data/projects';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
+import AppDownloads from '../../components/AppDownloads.astro';
+import { APPS } from '../../data/apps';
 
 export async function getStaticPaths() {
   return PROJECTS.map((project) => ({
@@ -22,6 +24,8 @@ const otherProjects = PROJECTS.filter((p) => p.slug !== project.slug)
 const isDeviceGallery = project.galleryDevice === true;
 const tallHero = project.heroCrop === 'tall';
 const inDevelopment = project.status === 'in-development';
+// Uma app publicada ganha os botões de download aqui, e não só na homepage.
+const app = APPS.find((a) => a.projectSlug === project.slug);
 ---
 
 <Layout title={`${project.title} — João Afonso`} description={project.description}>
@@ -86,6 +90,8 @@ const inDevelopment = project.status === 'in-development';
               ))}
             </div>
           )}
+
+          {app && <AppDownloads app={app} />}
 
           {/* Full width on a phone: two auto-width pills wrap into a ragged
               stack, and each one ends up under the comfortable touch height. */}

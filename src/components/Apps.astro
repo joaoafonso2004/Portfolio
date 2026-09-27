@@ -1,5 +1,6 @@
 ---
 import { APPS } from '../data/apps';
+import PlatformIcon from './PlatformIcon.astro';
 
 const count = String(APPS.length).padStart(2, '0');
 ---
@@ -70,15 +71,7 @@ const count = String(APPS.length).padStart(2, '0');
                   >
                     <div class="flex items-center justify-between gap-4">
                       <span class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-paper">
-                        {platformId === 'ios' ? (
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
-                            <path d="M17.05 12.94c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.9-1.74.03-3.35 1.01-4.24 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.89 2.65 3.24 2.6 1.3-.05 1.79-.84 3.36-.84s2.01.84 3.39.81c1.4-.02 2.28-1.27 3.13-2.53.99-1.45 1.4-2.85 1.42-2.92-.03-.01-2.72-1.04-2.74-4.12zM14.6 5.3c.72-.87 1.2-2.08 1.07-3.3-1.03.04-2.28.69-3.02 1.56-.66.77-1.24 2-1.09 3.18 1.15.09 2.32-.58 3.04-1.44z" />
-                          </svg>
-                        ) : (
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
-                            <path d="M3 5.6l7.3-1v6.9H3V5.6zm0 12.8l7.3 1v-6.8H3v5.8zm8.2 1.1L21 21V12h-9.8v7.5zM11.2 4L21 2.6V11h-9.8V4z" />
-                          </svg>
-                        )}
+                        <PlatformIcon platform={platformId} />
                         {platform.label}
                       </span>
                       <span
@@ -122,23 +115,16 @@ const count = String(APPS.length).padStart(2, '0');
 
 <script>
   import { navigate } from 'astro:transitions/client';
-  import { APPS, VERSIONS_PATH, releasesApi } from '../data/apps';
-  import type { AppConfig, PlatformRelease, VersionsFile } from '../data/apps';
-
-  const isIOS = () =>
-    /iPad|iPhone|iPod/.test(navigator.userAgent) ||
-    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-
-  const formatSize = (bytes: number) => {
-    if (!bytes) return '';
-    const mb = bytes / 1024 / 1024;
-    return mb >= 1 ? `${mb.toFixed(1)} MB` : `${Math.round(bytes / 1024)} KB`;
-  };
-
-  const formatDate = (iso: string) =>
-    new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).format(
-      new Date(iso)
-    );
+  import { APPS } from '../data/apps';
+  import type { AppConfig, PlatformRelease } from '../data/apps';
+  import {
+    formatDate,
+    formatSize,
+    isIOS,
+    isPlainClick,
+    loadReleases,
+    startDownload,
+  } from '../scripts/releases';
 
   /**
    * As notas vêm em Markdown e são conteúdo externo à página: construídas
@@ -285,7 +271,7 @@ const count = String(APPS.length).padStart(2, '0');
           e.preventDefault();
           retryBtn.innerHTML = '<span class="h-1.5 w-1.5 animate-pulse rounded-full bg-accent"></span> Loading...';
           try {
-            await fallbackToApi(app);
+            paintApp(app, await loadReleases(app));
           } catch {
             retryBtn.textContent = 'Rate limited (Try later)';
           }
@@ -311,80 +297,6 @@ const count = String(APPS.length).padStart(2, '0');
   }
 
   /**
-   * Plano B: se o versions.json ainda não foi gerado, lê-se a API do GitHub
-   * directamente. Mais lento e sujeito a 60 pedidos/hora por IP, mas evita
-   * uma secção vazia enquanto a Action não corre pela primeira vez.
-   */
-  let cachedVersions: VersionsFile | null = null;
-  let versionsFetched = false;
-  const fallbackCache: Record<string, Record<string, PlatformRelease | null>> = {};
-
-  async function fallbackToApi(app: AppConfig) {
-    if (fallbackCache[app.id]) {
-      paintApp(app, fallbackCache[app.id]);
-      return;
-    }
-    const res = await fetch(releasesApi(app), {
-      headers: { Accept: 'application/vnd.github+json' },
-    });
-    if (!res.ok) throw new Error(String(res.status));
-    const releases = await res.json();
-
-    const platforms: Record<string, PlatformRelease | null> = {};
-    for (const [platformId, platform] of Object.entries(app.platforms)) {
-      const rel = releases
-        .filter((r: any) => !r.draft && r.tag_name.startsWith(platform.tagPrefix))
-        .sort(
-          (a: any, b: any) =>
-            new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
-        )[0];
-      if (!rel) {
-        platforms[platformId] = null;
-        continue;
-      }
-      const asset = rel.assets.find((a: any) => a.name === platform.asset) ?? null;
-      platforms[platformId] = {
-        version: rel.tag_name.slice(platform.tagPrefix.length),
-        tag: rel.tag_name,
-        notes: rel.body ?? '',
-        publishedAt: rel.published_at,
-        releaseUrl: rel.html_url,
-        prerelease: rel.prerelease,
-        asset: asset
-          ? {
-              name: asset.name,
-              size: asset.size,
-              url: asset.browser_download_url,
-              downloads: asset.download_count,
-            }
-          : null,
-        install: asset ? asset.browser_download_url : rel.html_url,
-      };
-    }
-    fallbackCache[app.id] = platforms;
-    paintApp(app, platforms);
-  }
-
-  /**
-   * O ficheiro entra por um iframe em vez de `location.href` porque a seguir
-   * ha uma navegacao: mudar o location arrancaria o download e cancelaria a
-   * ida para a pagina do projeto, ou o contrario, conforme o browser.
-   *
-   * O iframe vai para `#download-frames`, que persiste entre paginas. No body
-   * seria destruido no swap, e um download apanhado a meio do redirecto do
-   * GitHub nunca chegaria a comecar.
-   */
-  function startDownload(url: string) {
-    const host = document.getElementById('download-frames') ?? document.body;
-    const frame = document.createElement('iframe');
-    frame.src = url;
-    host.appendChild(frame);
-    // Depois de o browser assumir o ficheiro o iframe nao serve para nada, e
-    // um por cada clique acumulava-se durante toda a visita.
-    window.setTimeout(() => frame.remove(), 30000);
-  }
-
-  /**
    * Cliques no download de uma app que tenha pagina de projeto: o ficheiro
    * arranca, a espiral fecha, e o visitante aterra na pagina dessa app.
    */
@@ -404,8 +316,7 @@ const count = String(APPS.length).padStart(2, '0');
         btn.addEventListener('click', (ev) => {
           // Abrir noutro separador, ou com o botao do meio, e uma escolha
           // explicita de quem clica: nao ha nada aqui que valha reescreve-la.
-          if (ev.defaultPrevented || ev.button !== 0) return;
-          if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+          if (!isPlainClick(ev)) return;
 
           const href = btn.getAttribute('href');
           if (!href || btn.hasAttribute('aria-disabled')) return;
@@ -438,22 +349,9 @@ const count = String(APPS.length).padStart(2, '0');
 
     armSpiralDownloads();
 
-    if (!versionsFetched) {
-      try {
-        const res = await fetch(VERSIONS_PATH, { cache: 'no-cache' });
-        if (res.ok) cachedVersions = await res.json();
-      } catch {}
-      versionsFetched = true;
-    }
-
     for (const app of APPS) {
-      const entry = cachedVersions?.apps?.[app.id];
-      if (entry) {
-        paintApp(app, entry);
-        continue;
-      }
       try {
-        await fallbackToApi(app);
+        paintApp(app, await loadReleases(app));
       } catch {
         failApp(app, 'Could not load release data. Downloads are on GitHub.');
       }
