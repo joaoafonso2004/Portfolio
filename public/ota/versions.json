@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T14:46:06.759Z",
+  "generatedAt": "2026-09-28T17:12:31.927Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17273439,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.4/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.4/Duotone.ipa"
       },
       "windows": {
-        "version": "4.0.4",
-        "tag": "win-v4.0.4",
-        "notes": "- Importar uma playlist do YouTube traz a lista inteira, até 5000 músicas (antes parava nas 200).",
-        "publishedAt": "2026-09-28T14:35:03Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.0.4",
+        "version": "4.0.5",
+        "tag": "win-v4.0.5",
+        "notes": "- Importação de Mix do YouTube: traz a primeira seleção de músicas da mistura.\n- Os álbuns na página de um artista passam a vir do canal identificado pelas músicas da biblioteca, evitando álbuns de artistas com o mesmo nome.\n- Corrige a escolha da sessão Jam ao entrar ou reabrir a app e remove da fila as músicas já consumidas.\n- Prepara a passagem da Jam a outro participante quando o anfitrião sai, com aviso ao novo anfitrião.\n\nValidação: TypeScript e 174 testes de regressão passaram; lint sem erros (44 avisos).\n\nBase de dados: a continuidade da Jam ao sair o anfitrião requer a aplicação de supabase/jam-passa-o-anfitriao.sql no Supabase, caso ainda não tenha sido aplicada. A build não aplica SQL automaticamente.",
+        "publishedAt": "2026-09-28T17:12:16Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.0.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115897738,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.0.4/Duotone-Setup.exe",
+          "size": 115900422,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.0.5/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.0.4/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.0.5/Duotone-Setup.exe"
       }
     }
   }
