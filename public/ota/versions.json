@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-28T17:12:31.927Z",
+  "generatedAt": "2026-09-28T17:15:34.077Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.0.4",
-        "tag": "ios-v4.0.4",
-        "notes": "- Importar uma playlist do YouTube traz a lista inteira, até 5000 músicas (antes parava nas 200).",
-        "publishedAt": "2026-09-28T14:45:46Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.0.4",
+        "version": "4.0.5",
+        "tag": "ios-v4.0.5",
+        "notes": "- Importação de Mix do YouTube: traz a primeira seleção de músicas da mistura.\n- Os álbuns na página de um artista passam a vir do canal identificado pelas músicas da biblioteca, evitando álbuns de artistas com o mesmo nome.\n- Corrige a escolha da sessão Jam ao entrar ou reabrir a app e remove da fila as músicas já consumidas.\n- Prepara a passagem da Jam a outro participante quando o anfitrião sai, com aviso ao novo anfitrião.\n\nValidação: TypeScript e 174 testes de regressão passaram; lint sem erros (44 avisos).\n\nBase de dados: a continuidade da Jam ao sair o anfitrião requer a aplicação de supabase/jam-passa-o-anfitriao.sql no Supabase, caso ainda não tenha sido aplicada. A build não aplica SQL automaticamente.",
+        "publishedAt": "2026-09-28T17:15:14Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.0.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17273439,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.4/Duotone.ipa",
-          "downloads": 1
+          "size": 17284515,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.5/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.4/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.5/Duotone.ipa"
       },
       "windows": {
         "version": "4.0.5",
