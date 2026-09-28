@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-28T00:42:08.384Z",
+  "generatedAt": "2026-09-28T00:47:47.307Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.0.1",
-        "tag": "ios-v4.0.1",
-        "notes": "- Tocar numa música enquanto outras estão a descarregar já não espera que o download em curso acabe.\n- Quando uma música acaba e a seguinte começa sem crossfade, o primeiro segundo deixa de entrar abafado.\n- Saltar de música com uma lista aberta fica mais leve.\n- A barra de progresso do leitor desliza em vez de andar aos saltos.\n- A app gasta muito menos dados do servidor com as mensagens, os gostos e o \"continuar noutro aparelho\".",
-        "publishedAt": "2026-09-27T04:36:29Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.0.1",
+        "version": "4.0.2",
+        "tag": "ios-v4.0.2",
+        "notes": "- Ouvir com um amigo passa a segui-lo: a mesma música, no mesmo segundo, e a seguinte quando ele passar à seguinte.\n- Importar uma playlist do Spotify traz a versão explícita das músicas quando a original é explícita, em vez da censurada.\n- Depois de uma música acabar, a seguinte já não fica parada nos 0:00.\n- Com o ecrã bloqueado, a música seguinte começa quando acaba de descarregar, em vez de ficar em silêncio.\n- Os comandos mandados do PC continuam a chegar ao iPhone com o ecrã bloqueado.\n- Os artistas mostram a foto deles.\n- Sair da conta, ou apagá-la, pára a música e limpa a fila.",
+        "publishedAt": "2026-09-28T00:47:30Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.0.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17257909,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.1/Duotone.ipa",
-          "downloads": 3
+          "size": 17267381,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.2/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.1/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.2/Duotone.ipa"
       },
       "windows": {
         "version": "4.0.2",
