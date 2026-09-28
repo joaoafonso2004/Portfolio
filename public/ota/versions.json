@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T11:09:27.907Z",
+  "generatedAt": "2026-09-28T00:42:08.384Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17257909,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.1/Duotone.ipa",
-          "downloads": 1
+          "downloads": 3
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.1/Duotone.ipa"
       },
       "windows": {
-        "version": "4.0.1",
-        "tag": "win-v4.0.1",
-        "notes": "- Gostar de uma música já não recarrega a biblioteca inteira.\n- A app gasta muito menos dados do servidor, sobretudo escondida no tabuleiro: mensagens e \"continuar noutro aparelho\".\n- Pequenas correções internas partilhadas com o iPhone.",
-        "publishedAt": "2026-09-27T04:32:11Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.0.1",
+        "version": "4.0.2",
+        "tag": "win-v4.0.2",
+        "notes": "- Ouvir com um amigo passa a segui-lo: a mesma música, no mesmo segundo, e a seguinte quando ele passar à seguinte.\n- As Definições têm uma secção Account: o teu email, repor a password e sair da conta.\n- Importar uma playlist do Spotify traz a versão explícita das músicas quando a original é explícita, em vez da censurada.\n- O Now Playing mostra a fila do Jam quando estás num.\n- Os artistas mostram a foto deles.\n- A lista de amigos na lateral fica mais leve para o computador.",
+        "publishedAt": "2026-09-28T00:41:56Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.0.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115895013,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.0.1/Duotone-Setup.exe",
+          "size": 115897370,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.0.2/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.0.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.0.2/Duotone-Setup.exe"
       }
     }
   }
