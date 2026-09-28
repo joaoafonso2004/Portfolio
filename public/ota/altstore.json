@@ -20,7 +20,7 @@
         {
           "version": "4.0.5",
           "date": "2026-09-28T17:15:14Z",
-          "localizedDescription": "- Importação de Mix do YouTube: traz a primeira seleção de músicas da mistura.\n- Os álbuns na página de um artista passam a vir do canal identificado pelas músicas da biblioteca, evitando álbuns de artistas com o mesmo nome.\n- Corrige a escolha da sessão Jam ao entrar ou reabrir a app e remove da fila as músicas já consumidas.\n- Prepara a passagem da Jam a outro participante quando o anfitrião sai, com aviso ao novo anfitrião.\n\nValidação: TypeScript e 174 testes de regressão passaram; lint sem erros (44 avisos).\n\nBase de dados: a continuidade da Jam ao sair o anfitrião requer a aplicação de supabase/jam-passa-o-anfitriao.sql no Supabase, caso ainda não tenha sido aplicada. A build não aplica SQL automaticamente.",
+          "localizedDescription": "- Importar um Mix do YouTube por link: traz as músicas do Mix, como aparecem no YouTube.\n- Os álbuns na página de um artista são mesmo dele, e já não os de outro artista com o mesmo nome.\n- Jam: as músicas que já tocaram saem da fila, e ao entrar numa Jam vês a fila dessa Jam (antes podia aparecer a de uma Jam antiga).\n- Jam: quando quem a abriu sai, a Jam continua com quem lá está.",
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.5/Duotone.ipa",
           "size": 17284515,
           "minOSVersion": "16.4"
@@ -100,7 +100,7 @@
       ],
       "version": "4.0.5",
       "versionDate": "2026-09-28T17:15:14Z",
-      "versionDescription": "- Importação de Mix do YouTube: traz a primeira seleção de músicas da mistura.\n- Os álbuns na página de um artista passam a vir do canal identificado pelas músicas da biblioteca, evitando álbuns de artistas com o mesmo nome.\n- Corrige a escolha da sessão Jam ao entrar ou reabrir a app e remove da fila as músicas já consumidas.\n- Prepara a passagem da Jam a outro participante quando o anfitrião sai, com aviso ao novo anfitrião.\n\nValidação: TypeScript e 174 testes de regressão passaram; lint sem erros (44 avisos).\n\nBase de dados: a continuidade da Jam ao sair o anfitrião requer a aplicação de supabase/jam-passa-o-anfitriao.sql no Supabase, caso ainda não tenha sido aplicada. A build não aplica SQL automaticamente.",
+      "versionDescription": "- Importar um Mix do YouTube por link: traz as músicas do Mix, como aparecem no YouTube.\n- Os álbuns na página de um artista são mesmo dele, e já não os de outro artista com o mesmo nome.\n- Jam: as músicas que já tocaram saem da fila, e ao entrar numa Jam vês a fila dessa Jam (antes podia aparecer a de uma Jam antiga).\n- Jam: quando quem a abriu sai, a Jam continua com quem lá está.",
       "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.5/Duotone.ipa",
       "size": 17284515
     }

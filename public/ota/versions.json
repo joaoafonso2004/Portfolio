@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-28T18:10:18.551Z",
+  "generatedAt": "2026-09-28T19:21:33.461Z",
   "apps": {
     "duotone": {
       "ios": {
         "version": "4.0.5",
         "tag": "ios-v4.0.5",
-        "notes": "- Importação de Mix do YouTube: traz a primeira seleção de músicas da mistura.\n- Os álbuns na página de um artista passam a vir do canal identificado pelas músicas da biblioteca, evitando álbuns de artistas com o mesmo nome.\n- Corrige a escolha da sessão Jam ao entrar ou reabrir a app e remove da fila as músicas já consumidas.\n- Prepara a passagem da Jam a outro participante quando o anfitrião sai, com aviso ao novo anfitrião.\n\nValidação: TypeScript e 174 testes de regressão passaram; lint sem erros (44 avisos).\n\nBase de dados: a continuidade da Jam ao sair o anfitrião requer a aplicação de supabase/jam-passa-o-anfitriao.sql no Supabase, caso ainda não tenha sido aplicada. A build não aplica SQL automaticamente.",
+        "notes": "- Importar um Mix do YouTube por link: traz as músicas do Mix, como aparecem no YouTube.\n- Os álbuns na página de um artista são mesmo dele, e já não os de outro artista com o mesmo nome.\n- Jam: as músicas que já tocaram saem da fila, e ao entrar numa Jam vês a fila dessa Jam (antes podia aparecer a de uma Jam antiga).\n- Jam: quando quem a abriu sai, a Jam continua com quem lá está.",
         "publishedAt": "2026-09-28T17:15:14Z",
         "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.0.5",
         "prerelease": false,
@@ -13,14 +13,14 @@
           "name": "Duotone.ipa",
           "size": 17284515,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.5/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.5/Duotone.ipa"
       },
       "windows": {
         "version": "4.0.6",
         "tag": "win-v4.0.6",
-        "notes": "- Corrige a procura automática de atualizações: verifica cinco segundos após abrir e a cada quinze minutos, em vez de esperar seis horas.\n- Repete a procura ao fim de um minuto se a rede falhar e antecipa a verificação ao acordar o PC ou voltar à janela principal.\n- O botão Check for updates partilha a procura em curso, evitando downloads duplicados.\n- Mantém a instalação silenciosa no próximo arranque completo do Duotone, sem interromper a música.\n\nValidação local: TypeScript, testes de atualização e integração Electron passaram. A build valida também a suite completa de regressão.\n\nPara receber esta primeira correção, a versão anterior pode ainda precisar de Check for updates e de sair completamente da aplicação antes de a reabrir. Fechar apenas para o tabuleiro não reinicia a aplicação.",
+        "notes": "- As atualizações chegam mais depressa: a app procura logo ao abrir e de 15 em 15 minutos (antes era de 6 em 6 horas), e volta a tentar se a rede falhar.\n- A versão nova instala-se sozinha da próxima vez que o Duotone abrir.",
         "publishedAt": "2026-09-28T18:10:06Z",
         "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.0.6",
         "prerelease": false,
