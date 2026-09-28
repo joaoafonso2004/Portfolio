@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-28T01:51:07.079Z",
+  "generatedAt": "2026-09-28T01:56:05.849Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.0.2",
-        "tag": "ios-v4.0.2",
-        "notes": "- Ouvir com um amigo passa a segui-lo: a mesma música, no mesmo segundo, e a seguinte quando ele passar à seguinte.\n- Importar uma playlist do Spotify traz a versão explícita das músicas quando a original é explícita, em vez da censurada.\n- Depois de uma música acabar, a seguinte já não fica parada nos 0:00.\n- Com o ecrã bloqueado, a música seguinte começa quando acaba de descarregar, em vez de ficar em silêncio.\n- Os comandos mandados do PC continuam a chegar ao iPhone com o ecrã bloqueado.\n- Os artistas mostram a foto deles.\n- Sair da conta, ou apagá-la, pára a música e limpa a fila.",
-        "publishedAt": "2026-09-28T00:47:30Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.0.2",
+        "version": "4.0.3",
+        "tag": "ios-v4.0.3",
+        "notes": "- O rádio no fim de uma lista deixa de repetir sempre as mesmas músicas novas.\n- Toque longo numa playlist: tocar, baralhar, pôr na fila, partilhar e editar, sem a abrir.\n- Editar uma playlist junta o nome e a ordem: arrastas como na fila, deslizas para tirar, e nada muda antes de carregares em Save.\n- Na página da playlist, a pesquisa passa para a lupa em cima e o Share fica à mão.\n- As capas das playlists deixam de ter faixas pretas.",
+        "publishedAt": "2026-09-28T01:55:15Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.0.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17267381,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.2/Duotone.ipa",
+          "size": 17274532,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.3/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.2/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.3/Duotone.ipa"
       },
       "windows": {
         "version": "4.0.3",

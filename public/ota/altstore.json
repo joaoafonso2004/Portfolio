@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.0.3",
+          "date": "2026-09-28T01:55:15Z",
+          "localizedDescription": "- O rádio no fim de uma lista deixa de repetir sempre as mesmas músicas novas.\n- Toque longo numa playlist: tocar, baralhar, pôr na fila, partilhar e editar, sem a abrir.\n- Editar uma playlist junta o nome e a ordem: arrastas como na fila, deslizas para tirar, e nada muda antes de carregares em Save.\n- Na página da playlist, a pesquisa passa para a lupa em cima e o Share fica à mão.\n- As capas das playlists deixam de ter faixas pretas.",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.3/Duotone.ipa",
+          "size": 17274532,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.0.2",
           "date": "2026-09-28T00:47:30Z",
           "localizedDescription": "- Ouvir com um amigo passa a segui-lo: a mesma música, no mesmo segundo, e a seguinte quando ele passar à seguinte.\n- Importar uma playlist do Spotify traz a versão explícita das músicas quando a original é explícita, em vez da censurada.\n- Depois de uma música acabar, a seguinte já não fica parada nos 0:00.\n- Com o ecrã bloqueado, a música seguinte começa quando acaba de descarregar, em vez de ficar em silêncio.\n- Os comandos mandados do PC continuam a chegar ao iPhone com o ecrã bloqueado.\n- Os artistas mostram a foto deles.\n- Sair da conta, ou apagá-la, pára a música e limpa a fila.",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.3/Duotone.ipa",
           "size": 18442637,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "3.8.2",
-          "date": "2026-09-24T19:03:55Z",
-          "localizedDescription": "- A app deixa de abrir sozinha nos Downloads.\n- Tocar numa música volta a abrir o leitor.\n- As playlists da Pesquisa voltam a aparecer (já não ficam a carregar para sempre).",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.2/Duotone.ipa",
-          "size": 18437903,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.0.2",
-      "versionDate": "2026-09-28T00:47:30Z",
-      "versionDescription": "- Ouvir com um amigo passa a segui-lo: a mesma música, no mesmo segundo, e a seguinte quando ele passar à seguinte.\n- Importar uma playlist do Spotify traz a versão explícita das músicas quando a original é explícita, em vez da censurada.\n- Depois de uma música acabar, a seguinte já não fica parada nos 0:00.\n- Com o ecrã bloqueado, a música seguinte começa quando acaba de descarregar, em vez de ficar em silêncio.\n- Os comandos mandados do PC continuam a chegar ao iPhone com o ecrã bloqueado.\n- Os artistas mostram a foto deles.\n- Sair da conta, ou apagá-la, pára a música e limpa a fila.",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.2/Duotone.ipa",
-      "size": 17267381
+      "version": "4.0.3",
+      "versionDate": "2026-09-28T01:55:15Z",
+      "versionDescription": "- O rádio no fim de uma lista deixa de repetir sempre as mesmas músicas novas.\n- Toque longo numa playlist: tocar, baralhar, pôr na fila, partilhar e editar, sem a abrir.\n- Editar uma playlist junta o nome e a ordem: arrastas como na fila, deslizas para tirar, e nada muda antes de carregares em Save.\n- Na página da playlist, a pesquisa passa para a lupa em cima e o Share fica à mão.\n- As capas das playlists deixam de ter faixas pretas.",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.3/Duotone.ipa",
+      "size": 17274532
     }
   ],
   "news": []
