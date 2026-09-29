@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-29T12:53:07.824Z",
+  "generatedAt": "2026-09-29T12:57:41.784Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.0.5",
-        "tag": "ios-v4.0.5",
-        "notes": "- Importar um Mix do YouTube por link: traz as músicas do Mix, como aparecem no YouTube.\n- Os álbuns na página de um artista são mesmo dele, e já não os de outro artista com o mesmo nome.\n- Jam: as músicas que já tocaram saem da fila, e ao entrar numa Jam vês a fila dessa Jam (antes podia aparecer a de uma Jam antiga).\n- Jam: quando quem a abriu sai, a Jam continua com quem lá está.",
-        "publishedAt": "2026-09-28T17:15:14Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.0.5",
+        "version": "4.1.0",
+        "tag": "ios-v4.1.0",
+        "notes": "- Cartão para as Stories do Instagram: no \"…\" do leitor, \"Share to Stories\" cria uma imagem com a música que está a tocar, sobre o fundo da app.\n- Pesquisa por tipo: separadores Songs, Artists e Albums. Um artista abre a página certa, mesmo com nomes parecidos.\n- Página de artista: o lançamento mais recente em destaque, mais músicas do próprio artista e o coração para o favoritar lá dentro.\n- Deslizar uma música para a direita numa lista põe-na na fila.\n- A capa 3D recua ligeiramente quando encaixa, no fim do download.\n- Mix do YouTube importado com até 100 músicas.\n- Jam: quando o anfitrião sai, a Jam continua com outro participante; as Jams paradas há horas fecham sozinhas.",
+        "publishedAt": "2026-09-29T12:57:20Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.1.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17284515,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.5/Duotone.ipa",
-          "downloads": 2
+          "size": 17316593,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.0/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.5/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.0/Duotone.ipa"
       },
       "windows": {
         "version": "4.1.0",
