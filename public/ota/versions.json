@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T11:55:26.349Z",
+  "generatedAt": "2026-09-29T12:53:07.824Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.5/Duotone.ipa"
       },
       "windows": {
-        "version": "4.0.6",
-        "tag": "win-v4.0.6",
-        "notes": "- As atualizações chegam mais depressa: a app procura logo ao abrir e de 15 em 15 minutos (antes era de 6 em 6 horas), e volta a tentar se a rede falhar.\n- A versão nova instala-se sozinha da próxima vez que o Duotone abrir.",
-        "publishedAt": "2026-09-28T18:10:06Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.0.6",
+        "version": "4.1.0",
+        "tag": "win-v4.1.0",
+        "notes": "- Cartão para as Stories do Instagram: \"Share to Stories\" no menu de uma música cria a imagem, para guardar ou copiar.\n- Pesquisa por tipo: separadores Songs, Artists e Albums. Um artista abre a página certa, mesmo com nomes parecidos.\n- Página de artista: o lançamento mais recente em destaque, mais músicas do próprio artista e o coração para o favoritar lá dentro.\n- Mix do YouTube importado com até 100 músicas.\n- Jam: quando o anfitrião sai, a Jam continua com outro participante; as Jams paradas há horas fecham sozinhas; os avisos da Jam aparecem também no PC.",
+        "publishedAt": "2026-09-29T12:52:50Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.1.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115901096,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.0.6/Duotone-Setup.exe",
-          "downloads": 7
+          "size": 115908306,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.0.6/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.0/Duotone-Setup.exe"
       }
     }
   }
