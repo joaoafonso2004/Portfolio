@@ -2,15 +2,9 @@ import type { ImageMetadata } from 'astro';
 import redbullImg from '../assets/images/work_redbull.png';
 import pizzariaImg from '../assets/images/work_pizzaria.png';
 import sirocoImg from '../assets/images/work_siroco.png';
-import duotoneImg from '../assets/images/work_duotone_phones.jpg';
-import duotoneOriginalImg from '../assets/images/work_duotone.png';
+import duotoneImg from '../assets/images/duotone/hero.jpg';
 import td1 from '../assets/images/3DWebsite1.png';
 import td2 from '../assets/images/3DWebsite2.png';
-import duo1 from '../assets/images/Duotone1.png';
-import duo2 from '../assets/images/Duotone2.png';
-import duo3 from '../assets/images/Duotone3.png';
-import duo4 from '../assets/images/Duotone4.png';
-import duo5 from '../assets/images/Duotone5.png';
 import mog1 from '../assets/images/mog1.png';
 import mog2 from '../assets/images/mog2.png';
 import mog3 from '../assets/images/mog3.png';
@@ -132,12 +126,10 @@ export const PROJECTS: Project[] = [
     slug: 'duotone',
     title: 'Duotone',
     category: 'Music App — iOS & PC',
-    description: 'A cross-platform music application concept built with a sleek, minimalist UI. Focuses on intuitive navigation and high-quality aesthetics.',
+    description: 'A music app for iOS and Windows, with 3D artwork, a personal library and social features.',
     github: 'https://github.com/joaoafonso2004/duotone',
     img: duotoneImg,
-    gallery: [duo1, duo2, duo3, duo4, duo5],
-    galleryLayout: 'grid-3',
-    galleryDevice: true,
+    gallery: [],
     heroCrop: 'tall',
     weight: 1.15,
   },

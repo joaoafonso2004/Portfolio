@@ -1,0 +1,30 @@
+---
+import { Image, getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  src: ImageMetadata;
+  alt: string;
+  eager?: boolean;
+  variant?: 'phone' | 'desktop';
+}
+const { src, alt, eager = false, variant = 'phone' } = Astro.props;
+const enlarged = await getImage({ src, width: src.width, format: 'webp' });
+---
+
+<button class:list={['duo-phone', { 'desktop-screen': variant === 'desktop' }]} type="button" data-duotone-zoom={enlarged.src} data-caption={alt} data-screenshot-layout={variant} aria-label={`Enlarge screenshot: ${alt}`} aria-haspopup="dialog">
+  <Image src={src} alt={alt} widths={variant === 'desktop' ? [640, 960, 1280, 1920] : [280, 420, 640]} sizes={variant === 'desktop' ? '(max-width: 767px) 90vw, (max-width: 1280px) 92vw, 1200px' : '(max-width: 600px) 65vw, 300px'} format="webp" loading={eager ? 'eager' : 'lazy'} decoding="async" />
+  <span class="zoom-hint" aria-hidden="true">↗</span>
+</button>
+
+<style>
+  .duo-phone { position: relative; display: block; width: 100%; padding: 6px; border: 1px solid #56565d; border-radius: 36px; background: #17171c; box-shadow: 0 24px 50px -22px #000b, inset 0 0 0 2px #25252b; cursor: zoom-in; transition: transform .35s ease, border-color .35s ease; }
+  .duo-phone:hover { transform: translateY(-5px); border-color: #c4bad9; }
+  .duo-phone img { display: block; width: 100%; height: auto; border-radius: 29px; }
+  .desktop-screen { padding: 0; border-radius: 12px; box-shadow: 0 24px 50px -22px #0008; overflow: hidden; }
+  .desktop-screen img { border-radius: 11px; }
+  .zoom-hint { position: absolute; bottom: 14px; right: 14px; display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid #ffffff30; border-radius: 50%; background: #15151bd9; color: #fff; font-size: 18px; opacity: 0; transition: opacity .2s; }
+  .duo-phone:hover .zoom-hint, .duo-phone:focus-visible .zoom-hint { opacity: 1; }
+  @media (hover: none) { .zoom-hint { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .duo-phone, .zoom-hint { transition: none; } .duo-phone:hover { transform: none; } }
+</style>

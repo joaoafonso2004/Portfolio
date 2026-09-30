@@ -6,6 +6,7 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import AppDownloads from '../../components/AppDownloads.astro';
 import { APPS } from '../../data/apps';
+import DuotoneCaseStudy from '../../components/DuotoneCaseStudy.astro';
 
 export async function getStaticPaths() {
   return PROJECTS.map((project) => ({
@@ -34,6 +35,7 @@ const app = APPS.find((a) => a.projectSlug === project.slug);
   <main
     class="section-x relative z-10 mx-auto min-h-screen max-w-7xl pb-20 pt-[calc(var(--nav-h)+var(--safe-t)+2.5rem)] md:pt-32"
   >
+    {project.slug === 'duotone' ? <DuotoneCaseStudy project={project} app={app} /> : <>
     <!-- Header -->
     <header class="animate-fade-in mb-12 md:mb-20">
       <a
@@ -264,6 +266,8 @@ const app = APPS.find((a) => a.projectSlug === project.slug);
         )}
       </section>
     )}
+
+    </>}
 
     <!-- More to Discover -->
     <section class="border-t border-white/10 pb-10 pt-16 md:pt-20">
