@@ -319,13 +319,12 @@ const {
       // Initialize audio on first click anywhere
       window.addEventListener('click', initAudio, { once: true });
 
-      /* ---------- Always start at the top ---------- */
+      /* ---------- Fresh-page scroll position ---------- */
       if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
       window.scrollTo(0, 0);
-      if (window.location.hash) {
-        history.replaceState(null, '', window.location.pathname + window.location.search);
-      }
-      window.addEventListener('pageshow', () => window.scrollTo(0, 0));
+      window.addEventListener('pageshow', () => {
+        if (!window.location.hash) window.scrollTo(0, 0);
+      });
       window.addEventListener('beforeunload', () => window.scrollTo(0, 0));
 
       /* ---------- Global state for cleanup ---------- */
@@ -333,7 +332,7 @@ const {
       const velocity = { v: 0 };
       let scrollFxTicker: any = null;
 
-      /* ---------- Landing at the top after a navigation ----------
+      /* ---------- Landing at the destination after a navigation ----------
          A view transition swaps the document while the window is still parked
          at the outgoing page's offset, and three separate things can put that
          offset back on the new page: the browser's own restoration, Lenis
@@ -350,14 +349,27 @@ const {
          cancels it, so it cannot pull the page from under someone reading. */
       let pinUntil = 0;
       let pinFrame = 0;
-      /** Onde a página nova aterra. Zero numa navegação normal; ao voltar
-       *  atrás (ou à frente), a posição que o Astro guardou nessa entrada do
-       *  histórico, para quem sai de um projeto voltar ao sítio de onde veio
-       *  e não ao topo da homepage. */
+      /** Links com fragmento aterram na secção; voltar atrás ou à frente
+       *  mantém a posição guardada pelo Astro nessa entrada do histórico. */
       let landingY = 0;
+      let landingHash = window.location.hash;
+      let incomingHash = '';
+
+      const resolveLandingY = () => {
+        if (!landingHash) return;
+        let id: string;
+        try { id = decodeURIComponent(landingHash.slice(1)); }
+        catch { return; }
+        const target = document.getElementById(id);
+        if (!target) return;
+        const margin = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
+        const maxY = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+        landingY = Math.min(maxY, Math.max(0, target.getBoundingClientRect().top + window.scrollY - margin));
+      };
 
       const pinLanding = () => {
         if (performance.now() > pinUntil) return;
+        resolveLandingY();
         window.scrollTo(0, landingY);
         // `force` because the preloader leaves Lenis stopped, and a stopped
         // instance ignores scrollTo — which would desync it from the window.
@@ -378,6 +390,7 @@ const {
 
         const check = () => {
           if (performance.now() > pinUntil) return false;
+          resolveLandingY();
           // A página pode ainda não ter altura para chegar lá: uma imagem por
           // carregar prende o scroll mais acima, e tenta-se de novo.
           if (Math.abs(window.scrollY - landingY) > 1) pinLanding();
@@ -396,6 +409,7 @@ const {
       };
 
       const armLandingPin = () => {
+        resolveLandingY();
         pinUntil = performance.now() + 1200;
         watchLandingPin();
       };
@@ -595,9 +609,14 @@ const {
         spiralPending = null;
         morphActive = morphPending;
         morphPending = false;
+        // O fragmento só é resolvido depois de trocar o documento: #contact,
+        // por exemplo, também existe na página do projeto que estamos a sair.
+        const traversing = (ev as any).navigationType === 'traverse';
+        incomingHash = traversing ? '' : (ev as any).to.hash;
+        landingHash = '';
         // No `traverse` o histórico já está na entrada de destino.
         landingY =
-          (ev as any).navigationType === 'traverse' ? Number(history.state?.scrollY) || 0 : 0;
+          traversing ? Number(history.state?.scrollY) || 0 : 0;
 
         (ev as any).loader = async function() {
           if (morphActive) {
@@ -643,6 +662,9 @@ const {
       });
 
       document.addEventListener('astro:after-swap', () => {
+        landingHash = incomingHash;
+        incomingHash = '';
+        resolveLandingY();
         window.scrollTo({ top: landingY, left: 0, behavior: 'instant' });
         // Swapping <body> resizes the document, which schedules a refresh of
         // its own — clear again so that one measures from zero.
@@ -721,6 +743,10 @@ const {
 
         const finishPreload = () => {
           (window as any).__preloaderComplete = true;
+          if (landingHash) {
+            armLandingPin();
+            pinLanding();
+          }
           document.dispatchEvent(new CustomEvent('preloader:done'));
           ScrollTrigger.refresh();
         };
