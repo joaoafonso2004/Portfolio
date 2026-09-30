@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T15:32:25.836Z",
+  "generatedAt": "2026-09-30T01:30:48.070Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17304788,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.1/Duotone.ipa",
-          "downloads": 0
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.1/Duotone.ipa"
       },
       "windows": {
-        "version": "4.1.1",
-        "tag": "win-v4.1.1",
-        "notes": "- Pesquisa: novo separador Playlists. Procurar \"drake playlist\" abre-o sozinho, com as playlists mais ouvidas e as oficiais do artista primeiro.\n- Procurar \"album\" junto ao nome abre os álbuns desse artista, sem resultados de outros.\n- As playlists oficiais passam a abrir inteiras, em vez de só as primeiras músicas.\n- Sai o \"Share to Stories\" do menu das músicas.",
-        "publishedAt": "2026-09-29T15:25:02Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.1.1",
+        "version": "4.1.2",
+        "tag": "win-v4.1.2",
+        "notes": "- Botão \"Mix\" na página de cada artista: uma rádio com músicas dele e de artistas parecidos.\n- Pesquisa: ao procurar um artista (por exemplo \"drake\" ou \"drake playlist\"), aparece em cima o cartão dele com o Mix.\n- As capas das playlists, dos álbuns e as fotos dos artistas aparecem todas.\n- As playlists oficiais (\"Presenting ...\") já abrem, e os álbuns abrem mais depressa.\n- Mudar de página é mais suave, e sair do Now Playing já não mostra a página anterior por um instante.",
+        "publishedAt": "2026-09-30T01:30:33Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.1.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115906486,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.1/Duotone-Setup.exe",
+          "size": 115908763,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.2/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.2/Duotone-Setup.exe"
       }
     }
   }
