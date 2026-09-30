@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.1.4",
+          "date": "2026-09-30T16:58:58Z",
+          "localizedDescription": "- A capa do leitor já não aparece com barras pretas em cima e em baixo quando tocas numa música.\n- Página do artista: o Play e o Aleatório tocam o artista todo (as tuas e as de \"More tracks\") e aparecem mesmo sem nenhuma guardada.\n- Artistas sem foto passam a mostrar a foto do canal deles.\n- A biblioteca e as playlists já não se descarregam inteiras sempre que abres a Pesquisa, uma página de artista ou os Downloads.",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.4/Duotone.ipa",
+          "size": 17341773,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.1.3",
           "date": "2026-09-30T03:56:13Z",
           "localizedDescription": "- Equalizador com novo aspeto: velocidade com escala, presets numa linha, valor em dB em cada banda e uma onda entre os pontos.\n- Presets: cria os teus, edita os da app (com \"Restore original\") e escolhe quais aparecem. Sincronizam com o PC.\n- No carro, com CarPlay ou o Bluetooth do carro, o preset que escolheres vale para todas as músicas.\n- Mudar a velocidade já não corta a música durante um segundo.\n- Pausar enquanto a música seguinte carrega já pausa mesmo.\n- Smart Shuffle: as sugestões seguem o teu gosto em vez de músicas ao acaso do artista que estava a tocar.",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.1/Duotone.ipa",
           "size": 17257909,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.0.0",
-          "date": "2026-09-27T03:20:46Z",
-          "localizedDescription": "- Mudar de música fica mais rápido: quando a música seguinte já estava a ser preparada, o leitor aproveita esse trabalho em vez de começar do zero.\n- Um download que pare a meio é retomado ao fim de 10 segundos, em vez de esperar 30.",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.0/Duotone.ipa",
-          "size": 17250210,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.1.3",
-      "versionDate": "2026-09-30T03:56:13Z",
-      "versionDescription": "- Equalizador com novo aspeto: velocidade com escala, presets numa linha, valor em dB em cada banda e uma onda entre os pontos.\n- Presets: cria os teus, edita os da app (com \"Restore original\") e escolhe quais aparecem. Sincronizam com o PC.\n- No carro, com CarPlay ou o Bluetooth do carro, o preset que escolheres vale para todas as músicas.\n- Mudar a velocidade já não corta a música durante um segundo.\n- Pausar enquanto a música seguinte carrega já pausa mesmo.\n- Smart Shuffle: as sugestões seguem o teu gosto em vez de músicas ao acaso do artista que estava a tocar.",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.3/Duotone.ipa",
-      "size": 17337423
+      "version": "4.1.4",
+      "versionDate": "2026-09-30T16:58:58Z",
+      "versionDescription": "- A capa do leitor já não aparece com barras pretas em cima e em baixo quando tocas numa música.\n- Página do artista: o Play e o Aleatório tocam o artista todo (as tuas e as de \"More tracks\") e aparecem mesmo sem nenhuma guardada.\n- Artistas sem foto passam a mostrar a foto do canal deles.\n- A biblioteca e as playlists já não se descarregam inteiras sempre que abres a Pesquisa, uma página de artista ou os Downloads.",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.4/Duotone.ipa",
+      "size": 17341773
     }
   ],
   "news": []
