@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T01:36:55.899Z",
+  "generatedAt": "2026-09-30T03:51:06.596Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.2/Duotone.ipa"
       },
       "windows": {
-        "version": "4.1.2",
-        "tag": "win-v4.1.2",
-        "notes": "- Botão \"Mix\" na página de cada artista: uma rádio com músicas dele e de artistas parecidos.\n- Pesquisa: ao procurar um artista (por exemplo \"drake\" ou \"drake playlist\"), aparece em cima o cartão dele com o Mix.\n- As capas das playlists, dos álbuns e as fotos dos artistas aparecem todas.\n- As playlists oficiais (\"Presenting ...\") já abrem, e os álbuns abrem mais depressa.\n- Mudar de página é mais suave, e sair do Now Playing já não mostra a página anterior por um instante.",
-        "publishedAt": "2026-09-30T01:30:33Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.1.2",
+        "version": "4.1.3",
+        "tag": "win-v4.1.3",
+        "notes": "- Presets do equalizador: cria os teus, edita os da app (com \"Restore original\") e escolhe quais aparecem. \"Save as preset\" no painel do equalizador. Sincronizam com o telemóvel.\n- Escolhe nas Definições o preset do carro, que o iPhone usa com CarPlay ou com o Bluetooth do carro.\n- Pausar enquanto a música seguinte carrega já pausa mesmo.\n- Smart Shuffle: as sugestões seguem o teu gosto em vez de músicas ao acaso do artista que estava a tocar.",
+        "publishedAt": "2026-09-30T03:50:53Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.1.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115908763,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.2/Duotone-Setup.exe",
+          "size": 115912470,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.3/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.2/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.3/Duotone-Setup.exe"
       }
     }
   }
