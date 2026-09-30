@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.1.2",
+          "date": "2026-09-30T01:36:38Z",
+          "localizedDescription": "- Botão \"Mix\" na página de cada artista: uma rádio com músicas dele e de artistas parecidos.\n- Pesquisa: ao procurar um artista (por exemplo \"drake\" ou \"drake playlist\"), aparece em cima o cartão dele com o Mix.\n- Os álbuns e as playlists abrem mais depressa, e as playlists oficiais (\"Presenting ...\") já abrem.\n- Os botões da página de um artista aparecem mesmo sem músicas dele guardadas.",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.2/Duotone.ipa",
+          "size": 17310909,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.1.1",
           "date": "2026-09-29T15:32:05Z",
           "localizedDescription": "- Pesquisa: novo separador Playlists. Procurar \"drake playlist\" abre-o sozinho, com as playlists mais ouvidas e as oficiais do artista primeiro.\n- Procurar \"album\" junto ao nome abre os álbuns desse artista, sem resultados de outros.\n- As playlists oficiais passam a abrir inteiras, em vez de só as primeiras músicas.\n- Sai o \"Share to Stories\" do menu do leitor.",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.9/Duotone.ipa",
           "size": 17248505,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "3.8.7",
-          "date": "2026-09-27T01:19:09Z",
-          "localizedDescription": "- Os skips para a música seguinte ficam prontos mais cedo: a app começa a prepará-la logo depois de a atual começar.\n- A presença manda a duração da música, para a barra de progresso dos amigos no PC.\n- O relatório de reprodução mostra quanto tempo cada música demorou a começar e porquê (Definições > About > Send playback report).",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v3.8.7/Duotone.ipa",
-          "size": 17246625,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.1.1",
-      "versionDate": "2026-09-29T15:32:05Z",
-      "versionDescription": "- Pesquisa: novo separador Playlists. Procurar \"drake playlist\" abre-o sozinho, com as playlists mais ouvidas e as oficiais do artista primeiro.\n- Procurar \"album\" junto ao nome abre os álbuns desse artista, sem resultados de outros.\n- As playlists oficiais passam a abrir inteiras, em vez de só as primeiras músicas.\n- Sai o \"Share to Stories\" do menu do leitor.",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.1/Duotone.ipa",
-      "size": 17304788
+      "version": "4.1.2",
+      "versionDate": "2026-09-30T01:36:38Z",
+      "versionDescription": "- Botão \"Mix\" na página de cada artista: uma rádio com músicas dele e de artistas parecidos.\n- Pesquisa: ao procurar um artista (por exemplo \"drake\" ou \"drake playlist\"), aparece em cima o cartão dele com o Mix.\n- Os álbuns e as playlists abrem mais depressa, e as playlists oficiais (\"Presenting ...\") já abrem.\n- Os botões da página de um artista aparecem mesmo sem músicas dele guardadas.",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.2/Duotone.ipa",
+      "size": 17310909
     }
   ],
   "news": []

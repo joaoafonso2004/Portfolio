@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-30T01:30:48.070Z",
+  "generatedAt": "2026-09-30T01:36:55.899Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.1.1",
-        "tag": "ios-v4.1.1",
-        "notes": "- Pesquisa: novo separador Playlists. Procurar \"drake playlist\" abre-o sozinho, com as playlists mais ouvidas e as oficiais do artista primeiro.\n- Procurar \"album\" junto ao nome abre os álbuns desse artista, sem resultados de outros.\n- As playlists oficiais passam a abrir inteiras, em vez de só as primeiras músicas.\n- Sai o \"Share to Stories\" do menu do leitor.",
-        "publishedAt": "2026-09-29T15:32:05Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.1.1",
+        "version": "4.1.2",
+        "tag": "ios-v4.1.2",
+        "notes": "- Botão \"Mix\" na página de cada artista: uma rádio com músicas dele e de artistas parecidos.\n- Pesquisa: ao procurar um artista (por exemplo \"drake\" ou \"drake playlist\"), aparece em cima o cartão dele com o Mix.\n- Os álbuns e as playlists abrem mais depressa, e as playlists oficiais (\"Presenting ...\") já abrem.\n- Os botões da página de um artista aparecem mesmo sem músicas dele guardadas.",
+        "publishedAt": "2026-09-30T01:36:38Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.1.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17304788,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.1/Duotone.ipa",
-          "downloads": 2
+          "size": 17310909,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.2/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.1/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.2/Duotone.ipa"
       },
       "windows": {
         "version": "4.1.2",
