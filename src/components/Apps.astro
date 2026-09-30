@@ -34,7 +34,18 @@ const count = String(APPS.length).padStart(2, '0');
               <div class="flex flex-wrap items-start justify-between gap-x-6 gap-y-3">
                 <div class="min-w-0 flex-1">
                   <h3 class="font-display text-[clamp(1.9rem,4.5vw,3.4rem)] font-medium uppercase leading-none tracking-[-0.01em]">
-                    {app.name}
+                    {/* O nome leva à página do projeto, quando a app tem uma. */}
+                    {app.projectSlug ? (
+                      <a
+                        href={`/work/${app.projectSlug}`}
+                        class="transition-colors duration-300 hover:text-accent"
+                        data-cursor-label="View"
+                      >
+                        {app.name}
+                      </a>
+                    ) : (
+                      app.name
+                    )}
                   </h3>
                   <p class="mt-3.5 max-w-xl text-sm leading-relaxed text-muted">{app.tagline}</p>
                 </div>

@@ -343,20 +343,25 @@ const {
          triggers does not clear.
 
          The two calls to clearScrollMemory() at the swap boundaries and the
-         Lenis sync below close the first two off outright. pinTop is the
+         Lenis sync below close the first two off outright. pinLanding is the
          backstop for the third: ScrollTrigger's first refresh lands a frame
          after the new page builds its triggers, which is later than every
          scrollTo(0, 0) here. The window is short and any real scroll input
          cancels it, so it cannot pull the page from under someone reading. */
-      let pinTopUntil = 0;
+      let pinUntil = 0;
       let pinFrame = 0;
+      /** Onde a página nova aterra. Zero numa navegação normal; ao voltar
+       *  atrás (ou à frente), a posição que o Astro guardou nessa entrada do
+       *  histórico, para quem sai de um projeto voltar ao sítio de onde veio
+       *  e não ao topo da homepage. */
+      let landingY = 0;
 
-      const pinTop = () => {
-        if (performance.now() > pinTopUntil) return;
-        window.scrollTo(0, 0);
+      const pinLanding = () => {
+        if (performance.now() > pinUntil) return;
+        window.scrollTo(0, landingY);
         // `force` because the preloader leaves Lenis stopped, and a stopped
         // instance ignores scrollTo — which would desync it from the window.
-        lenis?.scrollTo(0, { immediate: true, force: true });
+        lenis?.scrollTo(landingY, { immediate: true, force: true });
       };
 
       /* Chrome runs the swap inside document.startViewTransition(), and a
@@ -367,13 +372,15 @@ const {
          over a few frames is the only reliable answer: the revert happens
          after every scrollTo(0, 0) we can schedule directly. */
       const pinTimers: number[] = [];
-      const watchTopPin = () => {
+      const watchLandingPin = () => {
         cancelAnimationFrame(pinFrame);
         pinTimers.splice(0).forEach(clearTimeout);
 
         const check = () => {
-          if (performance.now() > pinTopUntil) return false;
-          if (window.scrollY !== 0) pinTop();
+          if (performance.now() > pinUntil) return false;
+          // A página pode ainda não ter altura para chegar lá: uma imagem por
+          // carregar prende o scroll mais acima, e tenta-se de novo.
+          if (Math.abs(window.scrollY - landingY) > 1) pinLanding();
           return true;
         };
         const step = () => {
@@ -388,22 +395,22 @@ const {
         );
       };
 
-      const armTopPin = () => {
-        pinTopUntil = performance.now() + 1200;
-        watchTopPin();
+      const armLandingPin = () => {
+        pinUntil = performance.now() + 1200;
+        watchLandingPin();
       };
 
       /** Anything that means "the visitor chose to be somewhere else". */
-      const cancelTopPin = () => {
-        pinTopUntil = 0;
+      const cancelLandingPin = () => {
+        pinUntil = 0;
         cancelAnimationFrame(pinFrame);
         pinTimers.splice(0).forEach(clearTimeout);
       };
 
       ['wheel', 'touchmove', 'keydown', 'pointerdown'].forEach((type) =>
-        window.addEventListener(type, cancelTopPin, { passive: true })
+        window.addEventListener(type, cancelLandingPin, { passive: true })
       );
-      ScrollTrigger.addEventListener('refresh', pinTop);
+      ScrollTrigger.addEventListener('refresh', pinLanding);
 
       // Update lenis tick globally
       gsap.ticker.add((time) => {
@@ -428,6 +435,23 @@ const {
       let spiralPending: SpiralLabel | null = null;
       /** O mesmo pedido ja em curso: sobrevive ao swap, para o abrir do outro lado. */
       let spiralActive: SpiralLabel | null = null;
+
+      /* ---------- Morph do anel ----------
+         Um cartão do anel clicado não passa pela cortina: voa até ao topo da
+         página do projeto. O cartão sai com o nome `project-morph`, e o topo
+         da página nova recebe o mesmo nome no swap; é esse par que a View
+         Transition anima. A cortina tem de ficar de fora, porque o browser
+         fotografa a página antiga depois do loader, e com a cortina em cima
+         a fotografia era só preto. */
+      let morphPending = false;
+      let morphActive = false;
+      /** O `viewTransition` só vem no before-swap; o after-swap precisa dele
+       *  para tirar o nome ao topo da página quando a animação acabar. */
+      let morphTransition: any = null;
+
+      document.addEventListener('portfolio:morph', () => {
+        morphPending = true;
+      });
 
       document.addEventListener('portfolio:spiral', (ev) => {
         const detail = (ev as CustomEvent).detail ?? {};
@@ -569,9 +593,16 @@ const {
         // seguinte, que apanharia uma espiral que ninguem pediu.
         spiralActive = spiralPending;
         spiralPending = null;
+        morphActive = morphPending;
+        morphPending = false;
+        // No `traverse` o histórico já está na entrada de destino.
+        landingY =
+          (ev as any).navigationType === 'traverse' ? Number(history.state?.scrollY) || 0 : 0;
 
         (ev as any).loader = async function() {
-          if (spiralActive && !reduced) {
+          if (morphActive) {
+            // Nada por cima do cartão: ver "Morph do anel".
+          } else if (spiralActive && !reduced) {
             await closeSpiral(spiralActive);
           } else {
             const curtain = document.getElementById('page-curtain');
@@ -590,14 +621,15 @@ const {
         // the API; its `finished` promise is the exact moment the snapshot is
         // released and a suppressed scroll would snap back.
         const vt = (ev as any).viewTransition;
-        vt?.finished?.then(pinTop).catch(() => {});
+        vt?.finished?.then(pinLanding).catch(() => {});
+        morphTransition = morphActive ? vt : null;
 
         // Kill all scroll triggers
         ScrollTrigger.getAll().forEach((t) => t.kill());
         // kill() leaves the recorded scroll positions behind; this is what
         // actually stops the old page's offset following us to the new one.
         ScrollTrigger.clearScrollMemory('manual');
-        armTopPin();
+        armLandingPin();
         // Remove old ticker
         if (scrollFxTicker) {
           gsap.ticker.remove(scrollFxTicker);
@@ -611,11 +643,29 @@ const {
       });
 
       document.addEventListener('astro:after-swap', () => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        window.scrollTo({ top: landingY, left: 0, behavior: 'instant' });
         // Swapping <body> resizes the document, which schedules a refresh of
         // its own — clear again so that one measures from zero.
         ScrollTrigger.clearScrollMemory('manual');
-        armTopPin();
+        armLandingPin();
+        if (morphActive) {
+          morphActive = false;
+          const target = document.querySelector<HTMLElement>('[data-morph-target]');
+          if (target) {
+            // O fade de entrada da página partia a animação a meio: o browser
+            // anima o elemento vivo, e ele começava transparente.
+            target.style.animation = 'none';
+            target.style.opacity = '1';
+            target.style.viewTransitionName = 'project-morph';
+            // Com o nome posto para sempre, a próxima navegação com cortina
+            // levava este elemento por cima dela.
+            const release = () => (target.style.viewTransitionName = '');
+            if (morphTransition?.finished) morphTransition.finished.finally(release);
+            else release();
+          }
+          morphTransition = null;
+          return;
+        }
         if (spiralActive) {
           spiralActive = null;
           if (!reduced) openSpiral();
@@ -631,9 +681,9 @@ const {
 
       /* ---------- Initialize everything on page load ---------- */
       document.addEventListener('astro:page-load', () => {
-        // Enforce top scroll immediately on render before Lenis captures it
-        armTopPin();
-        window.scrollTo(0, 0);
+        // Enforce the landing position before Lenis captures window.scrollY
+        armLandingPin();
+        window.scrollTo(0, landingY);
 
         /* ---------- Smooth scroll ---------- */
         if (!reduced) {
@@ -647,7 +697,7 @@ const {
         (window as any).__lenis = lenis;
         // Lenis reads window.scrollY when constructed; this keeps its internal
         // target and the real position agreeing from the very first frame.
-        pinTop();
+        pinLanding();
 
         /* ---------- Anchor scrolling ---------- */
         document.querySelectorAll<HTMLAnchorElement>('a[href^="#"], a[href^="/#"]').forEach((anchor) => {
@@ -659,7 +709,7 @@ const {
             const target = document.querySelector<HTMLElement>(id);
             if (!target) return;
             e.preventDefault();
-            cancelTopPin();
+            cancelLandingPin();
             if (lenis) lenis.scrollTo(target, { duration: 1.4 });
             else target.scrollIntoView({ behavior: 'smooth' });
           });

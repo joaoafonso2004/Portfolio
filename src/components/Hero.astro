@@ -44,7 +44,7 @@
              as a deliberate stack and doubles the target size. -->
         <div class="hero-fade flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
           <a href="#work" class="btn-pill btn-accent" data-magnetic>
-            Selected work
+            My work
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m0 0l6-6m-6 6l-6-6"></path>
             </svg>
@@ -81,8 +81,14 @@
   /* ================= WebGL ink-aurora background ================= */
 
   let renderer: any = null;
-  
+  /** Os listeners do shader morrem com a página. Sem isto acumulavam-se a
+   *  cada regresso à homepage, e um resize noutra página chamava o setSize
+   *  de um renderer que já não existe. */
+  let heroListeners: AbortController | null = null;
+
   document.addEventListener('astro:before-swap', () => {
+    heroListeners?.abort();
+    heroListeners = null;
     if (renderer) {
       renderer.setAnimationLoop(null);
       renderer.dispose();
@@ -255,8 +261,12 @@
         renderer.setSize(w, h, false);
         uniforms.uRes.value.set(w * dpr, h * dpr);
       };
+      heroListeners?.abort();
+      heroListeners = new AbortController();
+      const { signal } = heroListeners;
+
       setSize();
-      window.addEventListener('resize', setSize);
+      window.addEventListener('resize', setSize, { signal });
 
       let targetX = 0;
       let targetY = 0;
@@ -266,11 +276,13 @@
           targetX = e.clientX / window.innerWidth - 0.5;
           targetY = 0.5 - e.clientY / window.innerHeight;
         },
-        { passive: true }
+        { passive: true, signal }
       );
 
       let inView = true;
-      new IntersectionObserver(([entry]) => (inView = entry.isIntersecting)).observe(canvas);
+      const io = new IntersectionObserver(([entry]) => (inView = entry.isIntersecting));
+      io.observe(canvas);
+      signal.addEventListener('abort', () => io.disconnect());
 
       const startTime = performance.now();
       const render = () => {

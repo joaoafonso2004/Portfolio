@@ -25,12 +25,20 @@ import { PROJECTS } from '../data/projects';
         data-split
         class="font-display text-[clamp(2.1rem,9vw,3.6rem)] font-semibold uppercase leading-[0.95] tracking-[-0.02em]"
       >
-        Selected<br />Work
+        My<br />Work
       </h2>
       <div class="shrink-0 text-right font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
         <span class="block text-accent">({String(PROJECTS.length).padStart(2, '0')})</span>
         <span>Projects</span>
       </div>
+    </div>
+
+    <!-- Luz ambiente: o projeto sob o cursor, desfocado ao ponto de ser só
+         cor, pinta o fundo do anel. Duas camadas para cruzar de uma para a
+         outra; usam a imagem que o cartão já descarregou. -->
+    <div data-ring-ambient class="ring-ambient pointer-events-none absolute inset-0 z-0 hidden orbit:block" aria-hidden="true">
+      <img alt="" decoding="async" />
+      <img alt="" decoding="async" />
     </div>
 
     <!-- Centro do anel: mostra o projeto sob o cursor (só no anel) -->
@@ -143,8 +151,28 @@ import { PROJECTS } from '../data/projects';
   </div>
 </section>
 
+<style>
+  .ring-ambient {
+    /* A luz fica no centro e morre antes das margens: sem a máscara, o blur
+       tinge o ecrã inteiro e deixa de parecer luz para parecer um fundo. */
+    mask-image: radial-gradient(ellipse 60% 55% at 50% 52%, #000 0%, transparent 72%);
+  }
+  .ring-ambient img {
+    position: absolute;
+    inset: -12%;
+    width: 124%;
+    height: 124%;
+    object-fit: cover;
+    filter: blur(90px) saturate(1.35);
+    opacity: 0;
+    transition: opacity 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity;
+  }
+</style>
+
 <script>
   import { gsap } from 'gsap';
+  import Snap from 'lenis/snap';
   import { navigate } from 'astro:transitions/client';
 
   /** Tem de espelhar o screen `ring` do tailwind.config.mjs. */
@@ -373,6 +401,31 @@ import { PROJECTS } from '../data/projects';
       }
     }
 
+    /** A luz ambiente é cor por trás do anel, nunca uma imagem legível. */
+    const AMBIENT_OPACITY = '0.34';
+    const ambient = [...stage.querySelectorAll<HTMLImageElement>('[data-ring-ambient] img')];
+    let ambientFront = 0;
+
+    /** Cruza a luz ambiente para as cores do projeto em foco, com a imagem
+     *  que o cartão já tem carregada, por isso sem nenhum download extra. */
+    function setAmbient(item: HTMLElement | null) {
+      if (ambient.length < 2) return;
+      if (!item) {
+        ambient.forEach((img) => (img.style.opacity = '0'));
+        return;
+      }
+      const src = item.querySelector<HTMLImageElement>('[data-frame] img')?.currentSrc;
+      if (!src) return;
+      const front = ambient[ambientFront];
+      if (front.dataset.src === src && front.style.opacity === AMBIENT_OPACITY) return;
+      const next = ambient[1 - ambientFront];
+      next.src = src;
+      next.dataset.src = src;
+      next.style.opacity = AMBIENT_OPACITY;
+      front.style.opacity = '0';
+      ambientFront = 1 - ambientFront;
+    }
+
     const initRing = () => {
       const onMouseMove = (e: MouseEvent) => {
         mouseX = e.clientX;
@@ -415,6 +468,20 @@ import { PROJECTS } from '../data/projects';
       const lenis = (window as any).__lenis;
       const onWheel = (e: WheelEvent) => push(e.deltaY * 0.1);
 
+      // Ao chegar perto do anel, o stage encaixa inteiro no ecrã. Só em
+      // `proximity`: longe dele o scroll é livre como sempre foi.
+      if (lenis && !reduced) {
+        const snap = new Snap(lenis, {
+          type: 'proximity',
+          distanceThreshold: '20%',
+          duration: 1.1,
+          debounce: 180,
+        });
+        snap.addElement(stage, { align: 'start' });
+        teardown.push(() => snap.destroy());
+      }
+      teardown.push(() => setAmbient(null));
+
       if (lenis?.on) {
         lenisScrollFn = (e: any) => push(e.velocity ?? 0);
         lenis.on('scroll', lenisScrollFn);
@@ -443,6 +510,7 @@ import { PROJECTS } from '../data/projects';
             item.setAttribute('data-focused', '');
             ring.setAttribute('data-focusing', '');
             setCentre(item);
+            setAmbient(item);
             if (video) play(video);
             if (frame) gsap.to(frame, { scale: 1.05, duration: 0.4, ease: 'power2.out' });
           };
@@ -452,6 +520,7 @@ import { PROJECTS } from '../data/projects';
             item.removeAttribute('data-focused');
             ring.removeAttribute('data-focusing');
             setCentre(null);
+            setAmbient(null);
             if (frame) gsap.to(frame, { scale: 1, duration: 0.4, ease: 'power2.out' });
           };
 
@@ -489,7 +558,21 @@ import { PROJECTS } from '../data/projects';
           osc.stop(ctx.currentTime + 0.1);
         }
 
-        if (ringMQ.matches && !reduced) {
+        if (ringMQ.matches && !reduced && 'startViewTransition' in document) {
+          // O anel pára onde está: a transição vai buscar o cartão exatamente
+          // a este sítio e leva-o até ao topo da página do projeto.
+          cancelAnimationFrame(tickId);
+          tickId = 0;
+          setCentre(null);
+          const frame = item.querySelector<HTMLElement>('[data-frame]');
+          if (frame) frame.style.viewTransitionName = 'project-morph';
+          gsap.to(
+            items.filter((other) => other !== item),
+            { autoAlpha: 0, duration: 0.35, ease: 'power2.in' }
+          );
+          document.dispatchEvent(new CustomEvent('portfolio:morph'));
+          setTimeout(() => navigate(href), 260);
+        } else if (ringMQ.matches && !reduced) {
           gsap.to(items, {
             scale: 0.85,
             autoAlpha: 0,

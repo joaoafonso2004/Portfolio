@@ -526,6 +526,20 @@ body.wireframe-mode canvas {
   }
 }
 
+/* ---------- Morph do anel para a página do projeto ----------
+   O nome só existe durante essa navegação (ver Layout.astro, "Morph do anel"),
+   por isso estas regras não tocam em mais nenhuma transição. */
+::view-transition-group(project-morph) {
+  animation-duration: 0.9s;
+  animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+}
+::view-transition-old(project-morph),
+::view-transition-new(project-morph) {
+  height: 100%;
+  object-fit: cover;
+  animation-duration: 0.9s;
+}
+
 /* ---------- Project page entrance ---------- */
 .animate-fade-in {
   opacity: 0;

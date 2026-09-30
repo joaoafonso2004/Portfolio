@@ -132,6 +132,7 @@ const app = APPS.find((a) => a.projectSlug === project.slug);
     {/* Edge to edge on a phone: the gutter costs 40px of a 375px-wide poster
         for no benefit, and the bleed is what makes it read as a hero. */}
     <div
+      data-morph-target
       class:list={[
         'animate-fade-in animation-delay-200 relative mb-16 overflow-hidden bg-coal',
         '-mx-[max(var(--gutter),var(--safe-l))] w-[calc(100%+2*max(var(--gutter),var(--safe-l)))]',
