@@ -62,7 +62,7 @@ const screens = [
       <div class="player-note"><p class="micro section-index">01 / Player</p><h2 id="player-heading">Artwork<br /><em>in motion.</em></h2><p>3D covers, lyrics and ambient colour.</p></div>
       <div class="player-demo">
         <figure>
-          <div class="video-phone"><video controls muted playsinline preload="none" poster="/work/duotone/artwork-poster.jpg" aria-label="iOS screen recording demonstrating the Duotone three-dimensional artwork player"><source src="/work/duotone/artwork-demo.mp4" type="video/mp4" />Your browser does not support this video. <a href="/work/duotone/artwork-demo.mp4">Download the player recording</a>.</video></div>
+          <div class="video-phone"><video controls autoplay loop muted playsinline preload="auto" poster="/work/duotone/artwork-poster.jpg" aria-label="iOS screen recording demonstrating the Duotone three-dimensional artwork player"><source src="/work/duotone/artwork-demo.mp4" type="video/mp4" />Your browser does not support this video. <a href="/work/duotone/artwork-demo.mp4">Download the player recording</a>.</video></div>
           <figcaption>iOS recording <span class="duration">00:09</span></figcaption>
         </figure>
       </div>
@@ -306,7 +306,11 @@ const screens = [
     dialog.addEventListener('close', () => { restoreScroll(); trigger?.focus({ preventScroll: true }); }, { signal });
 
     const videos = Array.from(root.querySelectorAll<HTMLVideoElement>('video'));
-    videos.forEach((video) => video.addEventListener('play', () => videos.forEach((other) => { if (other !== video) other.pause(); }), { signal }));
+    videos.forEach((video) => {
+      video.muted = true;
+      void video.play().catch(() => {});
+      video.addEventListener('play', () => videos.forEach((other) => { if (other !== video) other.pause(); }), { signal });
+    });
     document.addEventListener('astro:before-swap', () => {
       videos.forEach((video) => video.pause());
       if (dialog.open) dialog.close();
