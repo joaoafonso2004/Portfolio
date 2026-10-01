@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T12:12:00.412Z",
+  "generatedAt": "2026-10-01T22:09:41.864Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17341773,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.4/Duotone.ipa",
-          "downloads": 2
+          "downloads": 3
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.4/Duotone.ipa"
       },
       "windows": {
-        "version": "4.1.5",
-        "tag": "win-v4.1.5",
-        "notes": "- Pesquisa: a Daily mix, os Rare finds, os favoritos dos amigos e o Listen again voltam a andar para a direita, com as setas e com o arrasto.",
-        "publishedAt": "2026-10-01T01:09:04Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.1.5",
+        "version": "4.1.6",
+        "tag": "win-v4.1.6",
+        "notes": "- Com o Duotone minimizado ou no tabuleiro continuas online para os amigos enquanto usas o PC, a tocar ou não.\n- Ouvir com um amigo deixou de ficar uns segundos atrás dele.",
+        "publishedAt": "2026-10-01T22:09:28Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.1.6",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115913902,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.5/Duotone-Setup.exe",
+          "size": 115917375,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.6/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.5/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.6/Duotone-Setup.exe"
       }
     }
   }
