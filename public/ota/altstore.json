@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.1.5",
+          "date": "2026-10-01T22:14:59Z",
+          "localizedDescription": "- Com o ecrã desligado a app gasta menos bateria: deixou de acordar o iPhone para coisas que ninguém está a ver (as presenças dos amigos, o equalizador em Flat, as letras, gravações a cada poucos segundos).\n- A Pesquisa mostra todos os amigos online, e não só quem está a ouvir.\n- Ouvir com um amigo deixou de ficar uns segundos atrás dele.\n- O widget saiu.",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.5/Duotone.ipa",
+          "size": 15476115,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.1.4",
           "date": "2026-09-30T16:58:58Z",
           "localizedDescription": "- A capa do leitor já não aparece com barras pretas em cima e em baixo quando tocas numa música.\n- Página do artista: o Play e o Aleatório tocam o artista todo (as tuas e as de \"More tracks\") e aparecem mesmo sem nenhuma guardada.\n- Artistas sem foto passam a mostrar a foto do canal deles.\n- A biblioteca e as playlists já não se descarregam inteiras sempre que abres a Pesquisa, uma página de artista ou os Downloads.",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.2/Duotone.ipa",
           "size": 17267381,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.0.1",
-          "date": "2026-09-27T04:36:29Z",
-          "localizedDescription": "- Tocar numa música enquanto outras estão a descarregar já não espera que o download em curso acabe.\n- Quando uma música acaba e a seguinte começa sem crossfade, o primeiro segundo deixa de entrar abafado.\n- Saltar de música com uma lista aberta fica mais leve.\n- A barra de progresso do leitor desliza em vez de andar aos saltos.\n- A app gasta muito menos dados do servidor com as mensagens, os gostos e o \"continuar noutro aparelho\".",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.1/Duotone.ipa",
-          "size": 17257909,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.1.4",
-      "versionDate": "2026-09-30T16:58:58Z",
-      "versionDescription": "- A capa do leitor já não aparece com barras pretas em cima e em baixo quando tocas numa música.\n- Página do artista: o Play e o Aleatório tocam o artista todo (as tuas e as de \"More tracks\") e aparecem mesmo sem nenhuma guardada.\n- Artistas sem foto passam a mostrar a foto do canal deles.\n- A biblioteca e as playlists já não se descarregam inteiras sempre que abres a Pesquisa, uma página de artista ou os Downloads.",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.4/Duotone.ipa",
-      "size": 17341773
+      "version": "4.1.5",
+      "versionDate": "2026-10-01T22:14:59Z",
+      "versionDescription": "- Com o ecrã desligado a app gasta menos bateria: deixou de acordar o iPhone para coisas que ninguém está a ver (as presenças dos amigos, o equalizador em Flat, as letras, gravações a cada poucos segundos).\n- A Pesquisa mostra todos os amigos online, e não só quem está a ouvir.\n- Ouvir com um amigo deixou de ficar uns segundos atrás dele.\n- O widget saiu.",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.5/Duotone.ipa",
+      "size": 15476115
     }
   ],
   "news": []

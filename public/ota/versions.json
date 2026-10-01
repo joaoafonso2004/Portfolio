@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-01T22:09:41.864Z",
+  "generatedAt": "2026-10-01T22:15:18.401Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.1.4",
-        "tag": "ios-v4.1.4",
-        "notes": "- A capa do leitor já não aparece com barras pretas em cima e em baixo quando tocas numa música.\n- Página do artista: o Play e o Aleatório tocam o artista todo (as tuas e as de \"More tracks\") e aparecem mesmo sem nenhuma guardada.\n- Artistas sem foto passam a mostrar a foto do canal deles.\n- A biblioteca e as playlists já não se descarregam inteiras sempre que abres a Pesquisa, uma página de artista ou os Downloads.",
-        "publishedAt": "2026-09-30T16:58:58Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.1.4",
+        "version": "4.1.5",
+        "tag": "ios-v4.1.5",
+        "notes": "- Com o ecrã desligado a app gasta menos bateria: deixou de acordar o iPhone para coisas que ninguém está a ver (as presenças dos amigos, o equalizador em Flat, as letras, gravações a cada poucos segundos).\n- A Pesquisa mostra todos os amigos online, e não só quem está a ouvir.\n- Ouvir com um amigo deixou de ficar uns segundos atrás dele.\n- O widget saiu.",
+        "publishedAt": "2026-10-01T22:14:59Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.1.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17341773,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.4/Duotone.ipa",
-          "downloads": 3
+          "size": 15476115,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.5/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.4/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.5/Duotone.ipa"
       },
       "windows": {
         "version": "4.1.6",
