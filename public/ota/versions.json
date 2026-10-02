@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-02T11:41:37.389Z",
+  "generatedAt": "2026-10-02T12:12:28.628Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.1.6",
-        "tag": "ios-v4.1.6",
-        "notes": "- Abrir e fechar o leitor ficou novo: a página cresce a partir do mini-player, a capa faz um arco até ao sítio e ganha a pose 3D, e a app de trás recua.\n- Para fechar, arrasta para baixo: o leitor encolhe e segue o teu dedo, e ao largares a capa aterra no mini-player.\n- A app passa a correr a 120 Hz nos iPhones com ProMotion.\n- A capa 3D já não tem a textura de pedra por cima.",
-        "publishedAt": "2026-10-02T02:04:14Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.1.6",
+        "version": "4.1.7",
+        "tag": "ios-v4.1.7",
+        "notes": "- Corrigido: a música anterior continuava a ouvir-se depois de escolheres outra, enquanto a nova carregava.\n- Corrigido: depois de fechar o leitor a arrastar, a app podia ficar escurecida e deixar de responder.\n- Corrigido: ao arrastar o leitor para baixo, o mini-player já não fica fora do sítio nem dá um salto no fim.\n- O leitor abre logo com a música que escolheste, e a animação ficou mais leve.",
+        "publishedAt": "2026-10-02T12:12:11Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.1.7",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15446927,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.6/Duotone.ipa",
-          "downloads": 2
+          "size": 15447562,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.7/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.6/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.7/Duotone.ipa"
       },
       "windows": {
         "version": "4.1.7",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 115998355,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.7/Duotone-Setup.exe",
-          "downloads": 0
+          "downloads": 3
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.7/Duotone-Setup.exe"
       }

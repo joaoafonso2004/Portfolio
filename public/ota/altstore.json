@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.1.7",
+          "date": "2026-10-02T12:12:11Z",
+          "localizedDescription": "- Corrigido: a música anterior continuava a ouvir-se depois de escolheres outra, enquanto a nova carregava.\n- Corrigido: depois de fechar o leitor a arrastar, a app podia ficar escurecida e deixar de responder.\n- Corrigido: ao arrastar o leitor para baixo, o mini-player já não fica fora do sítio nem dá um salto no fim.\n- O leitor abre logo com a música que escolheste, e a animação ficou mais leve.",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.7/Duotone.ipa",
+          "size": 15447562,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.1.6",
           "date": "2026-10-02T02:04:14Z",
           "localizedDescription": "- Abrir e fechar o leitor ficou novo: a página cresce a partir do mini-player, a capa faz um arco até ao sítio e ganha a pose 3D, e a app de trás recua.\n- Para fechar, arrasta para baixo: o leitor encolhe e segue o teu dedo, e ao largares a capa aterra no mini-player.\n- A app passa a correr a 120 Hz nos iPhones com ProMotion.\n- A capa 3D já não tem a textura de pedra por cima.",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.4/Duotone.ipa",
           "size": 17273439,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.0.3",
-          "date": "2026-09-28T01:55:15Z",
-          "localizedDescription": "- O rádio no fim de uma lista deixa de repetir sempre as mesmas músicas novas.\n- Toque longo numa playlist: tocar, baralhar, pôr na fila, partilhar e editar, sem a abrir.\n- Editar uma playlist junta o nome e a ordem: arrastas como na fila, deslizas para tirar, e nada muda antes de carregares em Save.\n- Na página da playlist, a pesquisa passa para a lupa em cima e o Share fica à mão.\n- As capas das playlists deixam de ter faixas pretas.",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.3/Duotone.ipa",
-          "size": 17274532,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.1.6",
-      "versionDate": "2026-10-02T02:04:14Z",
-      "versionDescription": "- Abrir e fechar o leitor ficou novo: a página cresce a partir do mini-player, a capa faz um arco até ao sítio e ganha a pose 3D, e a app de trás recua.\n- Para fechar, arrasta para baixo: o leitor encolhe e segue o teu dedo, e ao largares a capa aterra no mini-player.\n- A app passa a correr a 120 Hz nos iPhones com ProMotion.\n- A capa 3D já não tem a textura de pedra por cima.",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.6/Duotone.ipa",
-      "size": 15446927
+      "version": "4.1.7",
+      "versionDate": "2026-10-02T12:12:11Z",
+      "versionDescription": "- Corrigido: a música anterior continuava a ouvir-se depois de escolheres outra, enquanto a nova carregava.\n- Corrigido: depois de fechar o leitor a arrastar, a app podia ficar escurecida e deixar de responder.\n- Corrigido: ao arrastar o leitor para baixo, o mini-player já não fica fora do sítio nem dá um salto no fim.\n- O leitor abre logo com a música que escolheste, e a animação ficou mais leve.",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.7/Duotone.ipa",
+      "size": 15447562
     }
   ],
   "news": []
