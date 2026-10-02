@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.1.8",
+          "date": "2026-10-02T13:23:02Z",
+          "localizedDescription": "- Corrigido: fechar o leitor no X deixava a app escurecida.\n- Ao trocar de música, a capa já não encrava nem dá um salto: o recuo da caixa ficou fluido.\n- A capa da música nova entra por cima da anterior sem piscar a preto.\n- Fechar no X desce primeiro o leitor e só depois pára a música.",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.8/Duotone.ipa",
+          "size": 15450241,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.1.7",
           "date": "2026-10-02T12:12:11Z",
           "localizedDescription": "- Corrigido: a música anterior continuava a ouvir-se depois de escolheres outra, enquanto a nova carregava.\n- Corrigido: depois de fechar o leitor a arrastar, a app podia ficar escurecida e deixar de responder.\n- Corrigido: ao arrastar o leitor para baixo, o mini-player já não fica fora do sítio nem dá um salto no fim.\n- O leitor abre logo com a música que escolheste, e a animação ficou mais leve.",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.5/Duotone.ipa",
           "size": 17284515,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.0.4",
-          "date": "2026-09-28T14:45:46Z",
-          "localizedDescription": "- Importar uma playlist do YouTube traz a lista inteira, até 5000 músicas (antes parava nas 200).",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.4/Duotone.ipa",
-          "size": 17273439,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.1.7",
-      "versionDate": "2026-10-02T12:12:11Z",
-      "versionDescription": "- Corrigido: a música anterior continuava a ouvir-se depois de escolheres outra, enquanto a nova carregava.\n- Corrigido: depois de fechar o leitor a arrastar, a app podia ficar escurecida e deixar de responder.\n- Corrigido: ao arrastar o leitor para baixo, o mini-player já não fica fora do sítio nem dá um salto no fim.\n- O leitor abre logo com a música que escolheste, e a animação ficou mais leve.",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.7/Duotone.ipa",
-      "size": 15447562
+      "version": "4.1.8",
+      "versionDate": "2026-10-02T13:23:02Z",
+      "versionDescription": "- Corrigido: fechar o leitor no X deixava a app escurecida.\n- Ao trocar de música, a capa já não encrava nem dá um salto: o recuo da caixa ficou fluido.\n- A capa da música nova entra por cima da anterior sem piscar a preto.\n- Fechar no X desce primeiro o leitor e só depois pára a música.",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.8/Duotone.ipa",
+      "size": 15450241
     }
   ],
   "news": []
