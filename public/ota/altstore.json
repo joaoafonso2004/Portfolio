@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.2.0",
+          "date": "2026-10-02T16:08:52Z",
+          "localizedDescription": "- O Play na página de um artista respeita a aba escolhida: \"In your library\" toca as músicas guardadas e \"More songs\" toca as músicas dessa aba. A contagem e a duração acompanham a lista aberta.\n- A rádio usa o canal musical confirmado do artista e rejeita montagens de futebol, golos/assistências e resumos de jogos que antes podiam passar por músicas.\n- Menos pedidos ao Supabase e downloads repetidos de fotos de perfil. A presença e as atualizações sociais evitam pedidos duplicados ao voltar à app ou abrir o Centro de Controlo.\n- Ao ir para segundo plano, a vigia e as animações da capa e os temporizadores de atualização da interface param, reduzindo trabalho desnecessário com o ecrã desligado.",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.2.0/Duotone.ipa",
+          "size": 15451643,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.1.8",
           "date": "2026-10-02T13:23:02Z",
           "localizedDescription": "- Corrigido: fechar o leitor no X deixava a app escurecida.\n- Ao trocar de música, a capa já não encrava nem dá um salto: o recuo da caixa ficou fluido.\n- A capa da música nova entra por cima da anterior sem piscar a preto.\n- Fechar no X desce primeiro o leitor e só depois pára a música.",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.0/Duotone.ipa",
           "size": 17316593,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.0.5",
-          "date": "2026-09-28T17:15:14Z",
-          "localizedDescription": "- Importar um Mix do YouTube por link: traz as músicas do Mix, como aparecem no YouTube.\n- Os álbuns na página de um artista são mesmo dele, e já não os de outro artista com o mesmo nome.\n- Jam: as músicas que já tocaram saem da fila, e ao entrar numa Jam vês a fila dessa Jam (antes podia aparecer a de uma Jam antiga).\n- Jam: quando quem a abriu sai, a Jam continua com quem lá está.",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.5/Duotone.ipa",
-          "size": 17284515,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.1.8",
-      "versionDate": "2026-10-02T13:23:02Z",
-      "versionDescription": "- Corrigido: fechar o leitor no X deixava a app escurecida.\n- Ao trocar de música, a capa já não encrava nem dá um salto: o recuo da caixa ficou fluido.\n- A capa da música nova entra por cima da anterior sem piscar a preto.\n- Fechar no X desce primeiro o leitor e só depois pára a música.",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.8/Duotone.ipa",
-      "size": 15450241
+      "version": "4.2.0",
+      "versionDate": "2026-10-02T16:08:52Z",
+      "versionDescription": "- O Play na página de um artista respeita a aba escolhida: \"In your library\" toca as músicas guardadas e \"More songs\" toca as músicas dessa aba. A contagem e a duração acompanham a lista aberta.\n- A rádio usa o canal musical confirmado do artista e rejeita montagens de futebol, golos/assistências e resumos de jogos que antes podiam passar por músicas.\n- Menos pedidos ao Supabase e downloads repetidos de fotos de perfil. A presença e as atualizações sociais evitam pedidos duplicados ao voltar à app ou abrir o Centro de Controlo.\n- Ao ir para segundo plano, a vigia e as animações da capa e os temporizadores de atualização da interface param, reduzindo trabalho desnecessário com o ecrã desligado.",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.2.0/Duotone.ipa",
+      "size": 15451643
     }
   ],
   "news": []

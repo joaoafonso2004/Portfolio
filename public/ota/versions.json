@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-02T16:03:21.316Z",
+  "generatedAt": "2026-10-02T16:09:21.819Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.1.8",
-        "tag": "ios-v4.1.8",
-        "notes": "- Corrigido: fechar o leitor no X deixava a app escurecida.\n- Ao trocar de música, a capa já não encrava nem dá um salto: o recuo da caixa ficou fluido.\n- A capa da música nova entra por cima da anterior sem piscar a preto.\n- Fechar no X desce primeiro o leitor e só depois pára a música.",
-        "publishedAt": "2026-10-02T13:23:02Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.1.8",
+        "version": "4.2.0",
+        "tag": "ios-v4.2.0",
+        "notes": "- O Play na página de um artista respeita a aba escolhida: \"In your library\" toca as músicas guardadas e \"More songs\" toca as músicas dessa aba. A contagem e a duração acompanham a lista aberta.\n- A rádio usa o canal musical confirmado do artista e rejeita montagens de futebol, golos/assistências e resumos de jogos que antes podiam passar por músicas.\n- Menos pedidos ao Supabase e downloads repetidos de fotos de perfil. A presença e as atualizações sociais evitam pedidos duplicados ao voltar à app ou abrir o Centro de Controlo.\n- Ao ir para segundo plano, a vigia e as animações da capa e os temporizadores de atualização da interface param, reduzindo trabalho desnecessário com o ecrã desligado.",
+        "publishedAt": "2026-10-02T16:08:52Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.2.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15450241,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.8/Duotone.ipa",
-          "downloads": 1
+          "size": 15451643,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.2.0/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.8/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.2.0/Duotone.ipa"
       },
       "windows": {
         "version": "4.2.0",
