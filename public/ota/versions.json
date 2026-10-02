@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-01T22:15:18.401Z",
+  "generatedAt": "2026-10-02T02:04:30.506Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.1.5",
-        "tag": "ios-v4.1.5",
-        "notes": "- Com o ecrã desligado a app gasta menos bateria: deixou de acordar o iPhone para coisas que ninguém está a ver (as presenças dos amigos, o equalizador em Flat, as letras, gravações a cada poucos segundos).\n- A Pesquisa mostra todos os amigos online, e não só quem está a ouvir.\n- Ouvir com um amigo deixou de ficar uns segundos atrás dele.\n- O widget saiu.",
-        "publishedAt": "2026-10-01T22:14:59Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.1.5",
+        "version": "4.1.6",
+        "tag": "ios-v4.1.6",
+        "notes": "- Abrir e fechar o leitor ficou novo: a página cresce a partir do mini-player, a capa faz um arco até ao sítio e ganha a pose 3D, e a app de trás recua.\n- Para fechar, arrasta para baixo: o leitor encolhe e segue o teu dedo, e ao largares a capa aterra no mini-player.\n- A app passa a correr a 120 Hz nos iPhones com ProMotion.\n- A capa 3D já não tem a textura de pedra por cima.",
+        "publishedAt": "2026-10-02T02:04:14Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.1.6",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15476115,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.5/Duotone.ipa",
+          "size": 15446927,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.6/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.5/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.6/Duotone.ipa"
       },
       "windows": {
         "version": "4.1.6",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 115917375,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.6/Duotone-Setup.exe",
-          "downloads": 0
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.1.6/Duotone-Setup.exe"
       }

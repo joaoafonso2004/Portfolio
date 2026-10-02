@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.1.6",
+          "date": "2026-10-02T02:04:14Z",
+          "localizedDescription": "- Abrir e fechar o leitor ficou novo: a página cresce a partir do mini-player, a capa faz um arco até ao sítio e ganha a pose 3D, e a app de trás recua.\n- Para fechar, arrasta para baixo: o leitor encolhe e segue o teu dedo, e ao largares a capa aterra no mini-player.\n- A app passa a correr a 120 Hz nos iPhones com ProMotion.\n- A capa 3D já não tem a textura de pedra por cima.",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.6/Duotone.ipa",
+          "size": 15446927,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.1.5",
           "date": "2026-10-01T22:14:59Z",
           "localizedDescription": "- Com o ecrã desligado a app gasta menos bateria: deixou de acordar o iPhone para coisas que ninguém está a ver (as presenças dos amigos, o equalizador em Flat, as letras, gravações a cada poucos segundos).\n- A Pesquisa mostra todos os amigos online, e não só quem está a ouvir.\n- Ouvir com um amigo deixou de ficar uns segundos atrás dele.\n- O widget saiu.",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.3/Duotone.ipa",
           "size": 17274532,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.0.2",
-          "date": "2026-09-28T00:47:30Z",
-          "localizedDescription": "- Ouvir com um amigo passa a segui-lo: a mesma música, no mesmo segundo, e a seguinte quando ele passar à seguinte.\n- Importar uma playlist do Spotify traz a versão explícita das músicas quando a original é explícita, em vez da censurada.\n- Depois de uma música acabar, a seguinte já não fica parada nos 0:00.\n- Com o ecrã bloqueado, a música seguinte começa quando acaba de descarregar, em vez de ficar em silêncio.\n- Os comandos mandados do PC continuam a chegar ao iPhone com o ecrã bloqueado.\n- Os artistas mostram a foto deles.\n- Sair da conta, ou apagá-la, pára a música e limpa a fila.",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.0.2/Duotone.ipa",
-          "size": 17267381,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.1.5",
-      "versionDate": "2026-10-01T22:14:59Z",
-      "versionDescription": "- Com o ecrã desligado a app gasta menos bateria: deixou de acordar o iPhone para coisas que ninguém está a ver (as presenças dos amigos, o equalizador em Flat, as letras, gravações a cada poucos segundos).\n- A Pesquisa mostra todos os amigos online, e não só quem está a ouvir.\n- Ouvir com um amigo deixou de ficar uns segundos atrás dele.\n- O widget saiu.",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.5/Duotone.ipa",
-      "size": 15476115
+      "version": "4.1.6",
+      "versionDate": "2026-10-02T02:04:14Z",
+      "versionDescription": "- Abrir e fechar o leitor ficou novo: a página cresce a partir do mini-player, a capa faz um arco até ao sítio e ganha a pose 3D, e a app de trás recua.\n- Para fechar, arrasta para baixo: o leitor encolhe e segue o teu dedo, e ao largares a capa aterra no mini-player.\n- A app passa a correr a 120 Hz nos iPhones com ProMotion.\n- A capa 3D já não tem a textura de pedra por cima.",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.6/Duotone.ipa",
+      "size": 15446927
     }
   ],
   "news": []
