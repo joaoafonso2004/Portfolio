@@ -3,12 +3,12 @@
   "type": "module",
   "version": "2.0.0",
   "engines": {
-    "node": "20.x"
+    "node": "22.x"
   },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/runtime-das-funcoes.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
