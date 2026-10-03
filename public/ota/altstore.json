@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.4.0",
+          "date": "2026-10-03T15:49:53Z",
+          "localizedDescription": "Duotone iOS 4.4.0\n\n- A página Search passa a Home, com Jump back in para abrir os contextos recentes, amigos a ouvir e Daily mix em destaque. As prateleiras têm títulos maiores.\n- O mini-player e os separadores passam a uma única base de vidro. Com a cor da capa ligada, a música tinge o topo da base; a altura da barra é medida para ajustar as listas e os avisos.\n- A música que está a tocar mostra três barrinhas sobre a capa nas listas. Em pausa, as barrinhas encolhem até serem reticências.\n- A barra de progresso arrasta a partir da posição atual, sem saltar ao pousar o dedo. Descer o dedo permite ajustar com mais precisão, com vibração ao agarrar, mudar de ritmo e chegar às pontas.\n- A fila abre numa folha nativa do iOS, com alturas de meia página e página inteira. Arrastar músicas para ordenar usa o Gesture Handler.\n- O título que encolhe ao rolar chega também às páginas de playlist, artista, álbum, Social e Importar.\n- Os erros e sucessos passam a avisos com frases legíveis, substituindo os alertas que interrompiam a navegação.\n\nComparar com iOS 4.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.3.0...ios-v4.4.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.4.0/Duotone.ipa",
+          "size": 15607603,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.3.0",
           "date": "2026-10-03T02:49:18Z",
           "localizedDescription": "- Tirar das Liked Songs, da fila ou de uma playlist e tirar um download já não perguntam antes: sai logo e aparece um aviso com \"Undo\" durante 5 segundos. O \"Undo\" devolve a música ao mesmo sítio da lista.\n- O título dos ecrãs encolhe ao rolar para uma barra compacta, e a pesquisa fica presa por baixo dela.\n- Fechar o leitor a arrastar e deslizar o mini-player seguem o dedo mesmo com a app ocupada, sem encravar.\n- \"Anterior\" na primeira música recomeça-a, e \"Seguinte\" na última com o rádio ligado já não fica apagado.\n- Tocar no separador onde já estás leva a lista ao topo. Os nomes da barra de baixo estão em minúsculas e mudar de separador já não vibra.\n- Cantos arredondados como os do iOS em capas, cartões e folhas, e nenhum texto abaixo de 11 pt.\n- Favoritar um artista usa o coração com a cor da capa.\n- A lista de conversas mostra a última mensagem por ler e a hora.\n- Com o iPhone quente ou em modo de poupança, a app descarrega menos músicas com antecedência.\n- O Mix de um artista já não começa a tocar por cima de uma música escolhida entretanto.",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.2/Duotone.ipa",
           "size": 17310909,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.1.1",
-          "date": "2026-09-29T15:32:05Z",
-          "localizedDescription": "- Pesquisa: novo separador Playlists. Procurar \"drake playlist\" abre-o sozinho, com as playlists mais ouvidas e as oficiais do artista primeiro.\n- Procurar \"album\" junto ao nome abre os álbuns desse artista, sem resultados de outros.\n- As playlists oficiais passam a abrir inteiras, em vez de só as primeiras músicas.\n- Sai o \"Share to Stories\" do menu do leitor.",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.1/Duotone.ipa",
-          "size": 17304788,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.3.0",
-      "versionDate": "2026-10-03T02:49:18Z",
-      "versionDescription": "- Tirar das Liked Songs, da fila ou de uma playlist e tirar um download já não perguntam antes: sai logo e aparece um aviso com \"Undo\" durante 5 segundos. O \"Undo\" devolve a música ao mesmo sítio da lista.\n- O título dos ecrãs encolhe ao rolar para uma barra compacta, e a pesquisa fica presa por baixo dela.\n- Fechar o leitor a arrastar e deslizar o mini-player seguem o dedo mesmo com a app ocupada, sem encravar.\n- \"Anterior\" na primeira música recomeça-a, e \"Seguinte\" na última com o rádio ligado já não fica apagado.\n- Tocar no separador onde já estás leva a lista ao topo. Os nomes da barra de baixo estão em minúsculas e mudar de separador já não vibra.\n- Cantos arredondados como os do iOS em capas, cartões e folhas, e nenhum texto abaixo de 11 pt.\n- Favoritar um artista usa o coração com a cor da capa.\n- A lista de conversas mostra a última mensagem por ler e a hora.\n- Com o iPhone quente ou em modo de poupança, a app descarrega menos músicas com antecedência.\n- O Mix de um artista já não começa a tocar por cima de uma música escolhida entretanto.",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.3.0/Duotone.ipa",
-      "size": 15587038
+      "version": "4.4.0",
+      "versionDate": "2026-10-03T15:49:53Z",
+      "versionDescription": "Duotone iOS 4.4.0\n\n- A página Search passa a Home, com Jump back in para abrir os contextos recentes, amigos a ouvir e Daily mix em destaque. As prateleiras têm títulos maiores.\n- O mini-player e os separadores passam a uma única base de vidro. Com a cor da capa ligada, a música tinge o topo da base; a altura da barra é medida para ajustar as listas e os avisos.\n- A música que está a tocar mostra três barrinhas sobre a capa nas listas. Em pausa, as barrinhas encolhem até serem reticências.\n- A barra de progresso arrasta a partir da posição atual, sem saltar ao pousar o dedo. Descer o dedo permite ajustar com mais precisão, com vibração ao agarrar, mudar de ritmo e chegar às pontas.\n- A fila abre numa folha nativa do iOS, com alturas de meia página e página inteira. Arrastar músicas para ordenar usa o Gesture Handler.\n- O título que encolhe ao rolar chega também às páginas de playlist, artista, álbum, Social e Importar.\n- Os erros e sucessos passam a avisos com frases legíveis, substituindo os alertas que interrompiam a navegação.\n\nComparar com iOS 4.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.3.0...ios-v4.4.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.4.0/Duotone.ipa",
+      "size": 15607603
     }
   ],
   "news": []
