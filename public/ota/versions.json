@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T10:55:20.234Z",
+  "generatedAt": "2026-10-03T15:42:20.822Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15587038,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.3.0/Duotone.ipa",
-          "downloads": 1
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.3.0/Duotone.ipa"
       },
       "windows": {
-        "version": "4.2.0",
-        "tag": "win-v4.2.0",
-        "notes": "- A rádio usa o canal musical confirmado do artista. Montagens de futebol, golos/assistências e resumos de jogos deixam de passar pelo filtro como músicas.\n- O Play na página de um artista toca a lista da aba escolhida, em vez de começar sempre pelas músicas da biblioteca. Mantém o modo Shuffle selecionado.\n- Menos pedidos ao Supabase e downloads repetidos dos avatares. As fotos deixam de renovar o link de quatro em quatro minutos e o regresso à janela evita atualizações sociais duplicadas.\n- Os temporizadores de atualização da interface fazem pausa enquanto a janela está oculta, reduzindo trabalho desnecessário em segundo plano.",
-        "publishedAt": "2026-10-02T16:03:06Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.2.0",
+        "version": "4.4.0",
+        "tag": "win-v4.4.0",
+        "notes": "Duotone para Windows 4.4.0\n\n- Os avisos de mensagens dentro da app mostram a mensagem e permitem responder diretamente. Quando chega uma música, mostram a capa e um botão para a tocar; várias mensagens da mesma conversa juntam-se no aviso.\n- O botão direito num amigo da lateral abre um menu com ações para a música, conversa, ouvir juntos, Jam e atalhos, conforme o estado do amigo.\n- A lista de conversas mostra a última mensagem por ler e a hora. Os títulos longos da música na lateral rolam para se conseguirem ler.\n- Ao escolher outra música enquanto um Mix de artista ainda está a carregar, prevalece a última escolha, evitando que o Mix comece a tocar por cima dela.\n- O catálogo de artistas e as respostas do YouTube ficam em memória durante a sessão, reduzindo pedidos repetidos.\n- Esta versão volta a alinhar a numeração das releases de Windows e iOS em 4.4.0.\n\nComparar com Windows 4.2.0: https://github.com/joaoafonso2004/duotone/compare/win-v4.2.0...win-v4.4.0",
+        "publishedAt": "2026-10-03T15:42:06Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.4.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 115998712,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.2.0/Duotone-Setup.exe",
-          "downloads": 7
+          "size": 116047830,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.4.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.2.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.4.0/Duotone-Setup.exe"
       }
     }
   }
