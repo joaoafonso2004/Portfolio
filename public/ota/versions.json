@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-02T16:09:21.819Z",
+  "generatedAt": "2026-10-03T02:49:34.898Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.2.0",
-        "tag": "ios-v4.2.0",
-        "notes": "- O Play na página de um artista respeita a aba escolhida: \"In your library\" toca as músicas guardadas e \"More songs\" toca as músicas dessa aba. A contagem e a duração acompanham a lista aberta.\n- A rádio usa o canal musical confirmado do artista e rejeita montagens de futebol, golos/assistências e resumos de jogos que antes podiam passar por músicas.\n- Menos pedidos ao Supabase e downloads repetidos de fotos de perfil. A presença e as atualizações sociais evitam pedidos duplicados ao voltar à app ou abrir o Centro de Controlo.\n- Ao ir para segundo plano, a vigia e as animações da capa e os temporizadores de atualização da interface param, reduzindo trabalho desnecessário com o ecrã desligado.",
-        "publishedAt": "2026-10-02T16:08:52Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.2.0",
+        "version": "4.3.0",
+        "tag": "ios-v4.3.0",
+        "notes": "- Tirar das Liked Songs, da fila ou de uma playlist e tirar um download já não perguntam antes: sai logo e aparece um aviso com \"Undo\" durante 5 segundos. O \"Undo\" devolve a música ao mesmo sítio da lista.\n- O título dos ecrãs encolhe ao rolar para uma barra compacta, e a pesquisa fica presa por baixo dela.\n- Fechar o leitor a arrastar e deslizar o mini-player seguem o dedo mesmo com a app ocupada, sem encravar.\n- \"Anterior\" na primeira música recomeça-a, e \"Seguinte\" na última com o rádio ligado já não fica apagado.\n- Tocar no separador onde já estás leva a lista ao topo. Os nomes da barra de baixo estão em minúsculas e mudar de separador já não vibra.\n- Cantos arredondados como os do iOS em capas, cartões e folhas, e nenhum texto abaixo de 11 pt.\n- Favoritar um artista usa o coração com a cor da capa.\n- A lista de conversas mostra a última mensagem por ler e a hora.\n- Com o iPhone quente ou em modo de poupança, a app descarrega menos músicas com antecedência.\n- O Mix de um artista já não começa a tocar por cima de uma música escolhida entretanto.",
+        "publishedAt": "2026-10-03T02:49:18Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.3.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15451643,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.2.0/Duotone.ipa",
+          "size": 15587038,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.3.0/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.2.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.3.0/Duotone.ipa"
       },
       "windows": {
         "version": "4.2.0",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 115998712,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.2.0/Duotone-Setup.exe",
-          "downloads": 0
+          "downloads": 7
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.2.0/Duotone-Setup.exe"
       }
