@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.4.1",
+          "date": "2026-10-03T20:42:58Z",
+          "localizedDescription": "Duotone iOS 4.4.1\n\n- Abrir e fechar o leitor, os menus, o equalizador e os gestos passam a 120 Hz nos iPhones com ProMotion. Antes ficavam presos aos 60 Hz.\n- Arrastar uma música na fila para mudar de sítio já não abre buracos nem faz a lista correr sozinha.\n- Deslizar o mini-player para fechar a música é liso, e a base de vidro encolhe ao mesmo tempo.\n- O coração e o shuffle ativos já não piscam quando muda a música, no leitor e no mini-player.\n- Ajustar o equalizador nas Definições já não arrasta a página.\n- As \"Songs of the day\" saíram da Home.\n- O relatório de reprodução mede também o consumo com a app aberta, para perceber o que aquece o telemóvel.\n\nComparar com iOS 4.4.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.4.0...ios-v4.4.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.4.1/Duotone.ipa",
+          "size": 15607970,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.4.0",
           "date": "2026-10-03T15:49:53Z",
           "localizedDescription": "Duotone iOS 4.4.0\n\n- A página Search passa a Home, com Jump back in para abrir os contextos recentes, amigos a ouvir e Daily mix em destaque. As prateleiras têm títulos maiores.\n- O mini-player e os separadores passam a uma única base de vidro. Com a cor da capa ligada, a música tinge o topo da base; a altura da barra é medida para ajustar as listas e os avisos.\n- A música que está a tocar mostra três barrinhas sobre a capa nas listas. Em pausa, as barrinhas encolhem até serem reticências.\n- A barra de progresso arrasta a partir da posição atual, sem saltar ao pousar o dedo. Descer o dedo permite ajustar com mais precisão, com vibração ao agarrar, mudar de ritmo e chegar às pontas.\n- A fila abre numa folha nativa do iOS, com alturas de meia página e página inteira. Arrastar músicas para ordenar usa o Gesture Handler.\n- O título que encolhe ao rolar chega também às páginas de playlist, artista, álbum, Social e Importar.\n- Os erros e sucessos passam a avisos com frases legíveis, substituindo os alertas que interrompiam a navegação.\n\nComparar com iOS 4.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.3.0...ios-v4.4.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.3/Duotone.ipa",
           "size": 17337423,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.1.2",
-          "date": "2026-09-30T01:36:38Z",
-          "localizedDescription": "- Botão \"Mix\" na página de cada artista: uma rádio com músicas dele e de artistas parecidos.\n- Pesquisa: ao procurar um artista (por exemplo \"drake\" ou \"drake playlist\"), aparece em cima o cartão dele com o Mix.\n- Os álbuns e as playlists abrem mais depressa, e as playlists oficiais (\"Presenting ...\") já abrem.\n- Os botões da página de um artista aparecem mesmo sem músicas dele guardadas.",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.2/Duotone.ipa",
-          "size": 17310909,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.4.0",
-      "versionDate": "2026-10-03T15:49:53Z",
-      "versionDescription": "Duotone iOS 4.4.0\n\n- A página Search passa a Home, com Jump back in para abrir os contextos recentes, amigos a ouvir e Daily mix em destaque. As prateleiras têm títulos maiores.\n- O mini-player e os separadores passam a uma única base de vidro. Com a cor da capa ligada, a música tinge o topo da base; a altura da barra é medida para ajustar as listas e os avisos.\n- A música que está a tocar mostra três barrinhas sobre a capa nas listas. Em pausa, as barrinhas encolhem até serem reticências.\n- A barra de progresso arrasta a partir da posição atual, sem saltar ao pousar o dedo. Descer o dedo permite ajustar com mais precisão, com vibração ao agarrar, mudar de ritmo e chegar às pontas.\n- A fila abre numa folha nativa do iOS, com alturas de meia página e página inteira. Arrastar músicas para ordenar usa o Gesture Handler.\n- O título que encolhe ao rolar chega também às páginas de playlist, artista, álbum, Social e Importar.\n- Os erros e sucessos passam a avisos com frases legíveis, substituindo os alertas que interrompiam a navegação.\n\nComparar com iOS 4.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.3.0...ios-v4.4.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.4.0/Duotone.ipa",
-      "size": 15607603
+      "version": "4.4.1",
+      "versionDate": "2026-10-03T20:42:58Z",
+      "versionDescription": "Duotone iOS 4.4.1\n\n- Abrir e fechar o leitor, os menus, o equalizador e os gestos passam a 120 Hz nos iPhones com ProMotion. Antes ficavam presos aos 60 Hz.\n- Arrastar uma música na fila para mudar de sítio já não abre buracos nem faz a lista correr sozinha.\n- Deslizar o mini-player para fechar a música é liso, e a base de vidro encolhe ao mesmo tempo.\n- O coração e o shuffle ativos já não piscam quando muda a música, no leitor e no mini-player.\n- Ajustar o equalizador nas Definições já não arrasta a página.\n- As \"Songs of the day\" saíram da Home.\n- O relatório de reprodução mede também o consumo com a app aberta, para perceber o que aquece o telemóvel.\n\nComparar com iOS 4.4.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.4.0...ios-v4.4.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.4.1/Duotone.ipa",
+      "size": 15607970
     }
   ],
   "news": []

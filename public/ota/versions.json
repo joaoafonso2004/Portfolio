@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-03T15:50:09.570Z",
+  "generatedAt": "2026-10-03T20:43:13.111Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.4.0",
-        "tag": "ios-v4.4.0",
-        "notes": "Duotone iOS 4.4.0\n\n- A página Search passa a Home, com Jump back in para abrir os contextos recentes, amigos a ouvir e Daily mix em destaque. As prateleiras têm títulos maiores.\n- O mini-player e os separadores passam a uma única base de vidro. Com a cor da capa ligada, a música tinge o topo da base; a altura da barra é medida para ajustar as listas e os avisos.\n- A música que está a tocar mostra três barrinhas sobre a capa nas listas. Em pausa, as barrinhas encolhem até serem reticências.\n- A barra de progresso arrasta a partir da posição atual, sem saltar ao pousar o dedo. Descer o dedo permite ajustar com mais precisão, com vibração ao agarrar, mudar de ritmo e chegar às pontas.\n- A fila abre numa folha nativa do iOS, com alturas de meia página e página inteira. Arrastar músicas para ordenar usa o Gesture Handler.\n- O título que encolhe ao rolar chega também às páginas de playlist, artista, álbum, Social e Importar.\n- Os erros e sucessos passam a avisos com frases legíveis, substituindo os alertas que interrompiam a navegação.\n\nComparar com iOS 4.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.3.0...ios-v4.4.0",
-        "publishedAt": "2026-10-03T15:49:53Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.4.0",
+        "version": "4.4.1",
+        "tag": "ios-v4.4.1",
+        "notes": "Duotone iOS 4.4.1\n\n- Abrir e fechar o leitor, os menus, o equalizador e os gestos passam a 120 Hz nos iPhones com ProMotion. Antes ficavam presos aos 60 Hz.\n- Arrastar uma música na fila para mudar de sítio já não abre buracos nem faz a lista correr sozinha.\n- Deslizar o mini-player para fechar a música é liso, e a base de vidro encolhe ao mesmo tempo.\n- O coração e o shuffle ativos já não piscam quando muda a música, no leitor e no mini-player.\n- Ajustar o equalizador nas Definições já não arrasta a página.\n- As \"Songs of the day\" saíram da Home.\n- O relatório de reprodução mede também o consumo com a app aberta, para perceber o que aquece o telemóvel.\n\nComparar com iOS 4.4.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.4.0...ios-v4.4.1",
+        "publishedAt": "2026-10-03T20:42:58Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.4.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15607603,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.4.0/Duotone.ipa",
+          "size": 15607970,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.4.1/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.4.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.4.1/Duotone.ipa"
       },
       "windows": {
         "version": "4.4.0",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 116047830,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.4.0/Duotone-Setup.exe",
-          "downloads": 0
+          "downloads": 4
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.4.0/Duotone-Setup.exe"
       }
