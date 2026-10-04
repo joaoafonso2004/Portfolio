@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.5.2",
+          "date": "2026-10-04T20:27:22Z",
+          "localizedDescription": "Duotone iOS 4.5.2 — perfil Editorial\n\n- Perfil com identidade centrada e mais compacta, sem o emblema amarelo nem os números soltos no cabeçalho.\n- Biografia opcional abaixo do @username: acompanha o texto e não ocupa espaço quando está vazia. Continua editável em Edit profile.\n- Estatísticas, amigos e definições acessíveis pelo menu de opções do perfil.\n- Música do momento numa linha limpa, com reprodução e opções da faixa.\n- Playlists em lista com capas pequenas; as destacadas aparecem primeiro e See all mostra as restantes.\n\nComparar com iOS 4.5.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.5.1...ios-v4.5.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.5.2/Duotone.ipa",
+          "size": 15661667,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.5.1",
           "date": "2026-10-04T19:21:41Z",
           "localizedDescription": "Duotone iOS 4.5.1 — correções\n\n- Corrige os menus de músicas, playlists e restantes painéis que mostravam as opções cortadas por uma área cinzenta. Recupera a apresentação anterior, mantendo as opções e o desenho dos menus.\n- Corrige o cabeçalho do perfil que tapava a capa mesmo no topo da página.\n- Corrige a escolha da foto e da capa do perfil: o seletor abre depois de o menu terminar de fechar.\n- No Jam, as sugestões automáticas seguem a música atual e as últimas músicas da sessão. O histórico geral dos participantes deixa de introduzir artistas sem relação como ponto de partida.\n- Evita sugestões duplicadas e respostas antigas depois de mudar de Jam, de anfitrião ou desligar as sugestões automáticas.\n\nComparar com iOS 4.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.5.0...ios-v4.5.1",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.6/Duotone.ipa",
           "size": 15446927,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.1.5",
-          "date": "2026-10-01T22:14:59Z",
-          "localizedDescription": "- Com o ecrã desligado a app gasta menos bateria: deixou de acordar o iPhone para coisas que ninguém está a ver (as presenças dos amigos, o equalizador em Flat, as letras, gravações a cada poucos segundos).\n- A Pesquisa mostra todos os amigos online, e não só quem está a ouvir.\n- Ouvir com um amigo deixou de ficar uns segundos atrás dele.\n- O widget saiu.",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.5/Duotone.ipa",
-          "size": 15476115,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.5.1",
-      "versionDate": "2026-10-04T19:21:41Z",
-      "versionDescription": "Duotone iOS 4.5.1 — correções\n\n- Corrige os menus de músicas, playlists e restantes painéis que mostravam as opções cortadas por uma área cinzenta. Recupera a apresentação anterior, mantendo as opções e o desenho dos menus.\n- Corrige o cabeçalho do perfil que tapava a capa mesmo no topo da página.\n- Corrige a escolha da foto e da capa do perfil: o seletor abre depois de o menu terminar de fechar.\n- No Jam, as sugestões automáticas seguem a música atual e as últimas músicas da sessão. O histórico geral dos participantes deixa de introduzir artistas sem relação como ponto de partida.\n- Evita sugestões duplicadas e respostas antigas depois de mudar de Jam, de anfitrião ou desligar as sugestões automáticas.\n\nComparar com iOS 4.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.5.0...ios-v4.5.1",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.5.1/Duotone.ipa",
-      "size": 15660919
+      "version": "4.5.2",
+      "versionDate": "2026-10-04T20:27:22Z",
+      "versionDescription": "Duotone iOS 4.5.2 — perfil Editorial\n\n- Perfil com identidade centrada e mais compacta, sem o emblema amarelo nem os números soltos no cabeçalho.\n- Biografia opcional abaixo do @username: acompanha o texto e não ocupa espaço quando está vazia. Continua editável em Edit profile.\n- Estatísticas, amigos e definições acessíveis pelo menu de opções do perfil.\n- Música do momento numa linha limpa, com reprodução e opções da faixa.\n- Playlists em lista com capas pequenas; as destacadas aparecem primeiro e See all mostra as restantes.\n\nComparar com iOS 4.5.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.5.1...ios-v4.5.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.5.2/Duotone.ipa",
+      "size": 15661667
     }
   ],
   "news": []
