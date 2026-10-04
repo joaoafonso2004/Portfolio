@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-04T12:27:34.705Z",
+  "generatedAt": "2026-10-04T19:21:56.571Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.5.0",
-        "tag": "ios-v4.5.0",
-        "notes": "Duotone iOS 4.5.0\n\n- Saltar de música é mais rápido: a música escolhida entra em 250 ms em vez de um segundo de fade, e o download do áudio passou para código nativo. Os bytes deixam de passar pelo JavaScript, e a app já não engasga no fim de um download.\n- Uma música que parava logo ao arrancar volta a tocar sozinha, de imediato.\n- Todos os menus e painéis que sobem de baixo passam a folhas nativas do iOS.\n- Definições novas, como os Ajustes do iPhone: linhas com ícone, o valor à direita e um menu junto ao dedo. O equalizador padrão abre numa folha.\n- Perfil novo: cabeçalho ao centro com as contagens, artistas em círculo e playlists em cartões. Editar o perfil passa a uma lista com os destaques e o que se mostra.\n- Puxar para atualizar na Home, nas Playlists e no Social. O play/pause cruza em vez de rodar, e tocar no tempo total mostra o que falta.\n- A app arranca mais leve: os separadores montam depois da abertura.\n- Com a app escondida, só se adianta a próxima música, o que poupa bateria. Em 4G, a capa grande já não fica esticada por causa de uma falha de rede.\n- O relatório de reprodução mede o primeiro som com precisão e a memória por minuto.\n\nComparar com iOS 4.4.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.4.1...ios-v4.5.0",
-        "publishedAt": "2026-10-04T12:27:19Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.5.0",
+        "version": "4.5.1",
+        "tag": "ios-v4.5.1",
+        "notes": "Duotone iOS 4.5.1 — correções\n\n- Corrige os menus de músicas, playlists e restantes painéis que mostravam as opções cortadas por uma área cinzenta. Recupera a apresentação anterior, mantendo as opções e o desenho dos menus.\n- Corrige o cabeçalho do perfil que tapava a capa mesmo no topo da página.\n- Corrige a escolha da foto e da capa do perfil: o seletor abre depois de o menu terminar de fechar.\n- No Jam, as sugestões automáticas seguem a música atual e as últimas músicas da sessão. O histórico geral dos participantes deixa de introduzir artistas sem relação como ponto de partida.\n- Evita sugestões duplicadas e respostas antigas depois de mudar de Jam, de anfitrião ou desligar as sugestões automáticas.\n\nComparar com iOS 4.5.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.5.0...ios-v4.5.1",
+        "publishedAt": "2026-10-04T19:21:41Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.5.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15661577,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.5.0/Duotone.ipa",
+          "size": 15660919,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.5.1/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.5.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.5.1/Duotone.ipa"
       },
       "windows": {
         "version": "4.4.0",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 116047830,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.4.0/Duotone-Setup.exe",
-          "downloads": 5
+          "downloads": 7
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.4.0/Duotone-Setup.exe"
       }
