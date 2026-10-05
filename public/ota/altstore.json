@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.6.0",
+          "date": "2026-10-05T06:11:53Z",
+          "localizedDescription": "Duotone iOS 4.6.0 — Social, Rádio e desempenho\n\n- Social com atividade musical em cartões compactos, Friends e Chats separados e última mensagem preservada depois de a ler. Music activity e Friends usam o mesmo estilo de título, sem ícone na atividade.\n- Rádio diretamente na fila, baseado na escuta desta sessão, com Undo e preservação da música atual. Sem confirmação.\n- Página do artista abre com skeleton; Mix aparece desde o início e usa música relacionada quando o canal não publica um Mix. Shuffle publica o estado antes de preparar sugestões.\n- Conversas privadas e grupos permitem voltar arrastando da margem esquerda. Removido o atalho duplicado Friends and chats das opções do perfil. Home preservada.\n- Menos consultas repetidas: cache persistente de catálogo/imagens, snapshots de playlists, histórico incremental, leituras Realtime agrupadas e presença sem publicações antigas acumuladas.\n- Jam calcula a posição antes do primeiro som e protege a pausa/fila contra respostas antigas. Diagnóstico local acrescenta operações demoradas e contadores de cache.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.0.md\nComparar com iOS 4.5.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.5.2...ios-v4.6.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.0/Duotone.ipa",
+          "size": 15698995,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.5.2",
           "date": "2026-10-04T20:27:22Z",
           "localizedDescription": "Duotone iOS 4.5.2 — perfil Editorial\n\n- Perfil com identidade centrada e mais compacta, sem o emblema amarelo nem os números soltos no cabeçalho.\n- Biografia opcional abaixo do @username: acompanha o texto e não ocupa espaço quando está vazia. Continua editável em Edit profile.\n- Estatísticas, amigos e definições acessíveis pelo menu de opções do perfil.\n- Música do momento numa linha limpa, com reprodução e opções da faixa.\n- Playlists em lista com capas pequenas; as destacadas aparecem primeiro e See all mostra as restantes.\n\nComparar com iOS 4.5.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.5.1...ios-v4.5.2",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.7/Duotone.ipa",
           "size": 15447562,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.1.6",
-          "date": "2026-10-02T02:04:14Z",
-          "localizedDescription": "- Abrir e fechar o leitor ficou novo: a página cresce a partir do mini-player, a capa faz um arco até ao sítio e ganha a pose 3D, e a app de trás recua.\n- Para fechar, arrasta para baixo: o leitor encolhe e segue o teu dedo, e ao largares a capa aterra no mini-player.\n- A app passa a correr a 120 Hz nos iPhones com ProMotion.\n- A capa 3D já não tem a textura de pedra por cima.",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.6/Duotone.ipa",
-          "size": 15446927,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.5.2",
-      "versionDate": "2026-10-04T20:27:22Z",
-      "versionDescription": "Duotone iOS 4.5.2 — perfil Editorial\n\n- Perfil com identidade centrada e mais compacta, sem o emblema amarelo nem os números soltos no cabeçalho.\n- Biografia opcional abaixo do @username: acompanha o texto e não ocupa espaço quando está vazia. Continua editável em Edit profile.\n- Estatísticas, amigos e definições acessíveis pelo menu de opções do perfil.\n- Música do momento numa linha limpa, com reprodução e opções da faixa.\n- Playlists em lista com capas pequenas; as destacadas aparecem primeiro e See all mostra as restantes.\n\nComparar com iOS 4.5.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.5.1...ios-v4.5.2",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.5.2/Duotone.ipa",
-      "size": 15661667
+      "version": "4.6.0",
+      "versionDate": "2026-10-05T06:11:53Z",
+      "versionDescription": "Duotone iOS 4.6.0 — Social, Rádio e desempenho\n\n- Social com atividade musical em cartões compactos, Friends e Chats separados e última mensagem preservada depois de a ler. Music activity e Friends usam o mesmo estilo de título, sem ícone na atividade.\n- Rádio diretamente na fila, baseado na escuta desta sessão, com Undo e preservação da música atual. Sem confirmação.\n- Página do artista abre com skeleton; Mix aparece desde o início e usa música relacionada quando o canal não publica um Mix. Shuffle publica o estado antes de preparar sugestões.\n- Conversas privadas e grupos permitem voltar arrastando da margem esquerda. Removido o atalho duplicado Friends and chats das opções do perfil. Home preservada.\n- Menos consultas repetidas: cache persistente de catálogo/imagens, snapshots de playlists, histórico incremental, leituras Realtime agrupadas e presença sem publicações antigas acumuladas.\n- Jam calcula a posição antes do primeiro som e protege a pausa/fila contra respostas antigas. Diagnóstico local acrescenta operações demoradas e contadores de cache.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.0.md\nComparar com iOS 4.5.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.5.2...ios-v4.6.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.0/Duotone.ipa",
+      "size": 15698995
     }
   ],
   "news": []
