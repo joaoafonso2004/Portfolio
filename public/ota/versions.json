@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-06T02:44:56.953Z",
+  "generatedAt": "2026-10-06T03:03:45.180Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.6.2",
-        "tag": "ios-v4.6.2",
-        "notes": "Duotone iOS 4.6.2 — menos calor com a app aberta\n\n- O iPhone aquecia com uma ou duas músicas: ao voltar à app e ao tocar, o Rádio, o Smart Shuffle e a descoberta recalculavam o nome do artista de milhares de faixas, várias vezes por música, e cada título sem \" - \" percorria todos os artistas conhecidos. Era isso que dava as paragens de mais de um segundo e o JavaScript sempre ocupado.\n- O nome do artista, o título e a identidade de cada música passam a ficar guardados, e a procura de um artista dentro de um título vai pelas palavras do título em vez de percorrer todos os artistas. Os resultados são os mesmos; o trabalho por passagem pela biblioteca desce de ~50 ms para ~1–3 ms (medido em Node com 2537 faixas), e com o shuffle cada \"seguinte\" deixa de refazer a fila inteira.\n- O relatório de reprodução passa a medir a energia com a app aberta a partir de 15 segundos (antes, só a partir de um minuto).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.2.md\nComparar com iOS 4.6.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.1...ios-v4.6.2",
-        "publishedAt": "2026-10-06T02:44:42Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.6.2",
+        "version": "4.6.3",
+        "tag": "ios-v4.6.3",
+        "notes": "Duotone iOS 4.6.3 — a barra do leitor e o arrastar entre secções\n\n- A barra de progresso do leitor aberto podia ficar presa no \"a arrastar\" (o botão grande e o tempo parado) com a música a tocar, e cada arrasto novo voltava a prendê-la. Agora o arrasto larga-se sempre: ao levantar o dedo, ao fechar o leitor, ao mudar de faixa, ou sozinho se o gesto deixar de dar sinal.\n- Deslizar uma música para o lado deixou de a tentar pôr na fila: o gesto roubava o arrastar para mudar de secção e não chegava a pôr na fila. Arrastar para os lados volta a mudar de secção em qualquer lista; \"Add to queue\" continua no \"…\" de cada música.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.3.md\nComparar com iOS 4.6.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.2...ios-v4.6.3",
+        "publishedAt": "2026-10-06T03:03:29Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.6.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15714349,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.2/Duotone.ipa",
+          "size": 15713485,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.3/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.2/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.3/Duotone.ipa"
       },
       "windows": {
         "version": "4.6.2",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 116066441,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.6.2/Duotone-Setup.exe",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.6.2/Duotone-Setup.exe"
       }
