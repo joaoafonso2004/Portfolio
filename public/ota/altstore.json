@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.6.4",
+          "date": "2026-10-06T15:16:22Z",
+          "localizedDescription": "Duotone iOS 4.6.4 — menos idas ao servidor\n\n- O Social deixa de reler tudo a cada passo. Voltar à app, uma mensagem nova ou o canal a ligar eram, cada um, uma leitura completa (amigos, grupos, conversas, presença): agora são leituras leves, e os grupos e contactos só se releem de 30 em 30 minutos, à mão ou quando chega algo novo (um grupo ou uma amizade).\n- A conversa aberta já não se relê com mensagens de outras conversas, nem a cada regresso; e a mesma marca de \"lida\" deixa de ser enviada várias vezes.\n- Abrir a app já não lê, uma a uma, todas as Jams em que se esteve: as abertas vêm numa consulta.\n- As músicas começadas são registadas em lote, em vez de dois pedidos por música (e por cada skip).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.4.md\nComparar com iOS 4.6.3: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.3...ios-v4.6.4",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.4/Duotone.ipa",
+          "size": 15717854,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.6.3",
           "date": "2026-10-06T03:03:29Z",
           "localizedDescription": "Duotone iOS 4.6.3 — a barra do leitor e o arrastar entre secções\n\n- A barra de progresso do leitor aberto podia ficar presa no \"a arrastar\" (o botão grande e o tempo parado) com a música a tocar, e cada arrasto novo voltava a prendê-la. Agora o arrasto larga-se sempre: ao levantar o dedo, ao fechar o leitor, ao mudar de faixa, ou sozinho se o gesto deixar de dar sinal.\n- Deslizar uma música para o lado deixou de a tentar pôr na fila: o gesto roubava o arrastar para mudar de secção e não chegava a pôr na fila. Arrastar para os lados volta a mudar de secção em qualquer lista; \"Add to queue\" continua no \"…\" de cada música.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.3.md\nComparar com iOS 4.6.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.2...ios-v4.6.3",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.4.0/Duotone.ipa",
           "size": 15607603,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.3.0",
-          "date": "2026-10-03T02:49:18Z",
-          "localizedDescription": "- Tirar das Liked Songs, da fila ou de uma playlist e tirar um download já não perguntam antes: sai logo e aparece um aviso com \"Undo\" durante 5 segundos. O \"Undo\" devolve a música ao mesmo sítio da lista.\n- O título dos ecrãs encolhe ao rolar para uma barra compacta, e a pesquisa fica presa por baixo dela.\n- Fechar o leitor a arrastar e deslizar o mini-player seguem o dedo mesmo com a app ocupada, sem encravar.\n- \"Anterior\" na primeira música recomeça-a, e \"Seguinte\" na última com o rádio ligado já não fica apagado.\n- Tocar no separador onde já estás leva a lista ao topo. Os nomes da barra de baixo estão em minúsculas e mudar de separador já não vibra.\n- Cantos arredondados como os do iOS em capas, cartões e folhas, e nenhum texto abaixo de 11 pt.\n- Favoritar um artista usa o coração com a cor da capa.\n- A lista de conversas mostra a última mensagem por ler e a hora.\n- Com o iPhone quente ou em modo de poupança, a app descarrega menos músicas com antecedência.\n- O Mix de um artista já não começa a tocar por cima de uma música escolhida entretanto.",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.3.0/Duotone.ipa",
-          "size": 15587038,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.6.3",
-      "versionDate": "2026-10-06T03:03:29Z",
-      "versionDescription": "Duotone iOS 4.6.3 — a barra do leitor e o arrastar entre secções\n\n- A barra de progresso do leitor aberto podia ficar presa no \"a arrastar\" (o botão grande e o tempo parado) com a música a tocar, e cada arrasto novo voltava a prendê-la. Agora o arrasto larga-se sempre: ao levantar o dedo, ao fechar o leitor, ao mudar de faixa, ou sozinho se o gesto deixar de dar sinal.\n- Deslizar uma música para o lado deixou de a tentar pôr na fila: o gesto roubava o arrastar para mudar de secção e não chegava a pôr na fila. Arrastar para os lados volta a mudar de secção em qualquer lista; \"Add to queue\" continua no \"…\" de cada música.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.3.md\nComparar com iOS 4.6.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.2...ios-v4.6.3",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.3/Duotone.ipa",
-      "size": 15713485
+      "version": "4.6.4",
+      "versionDate": "2026-10-06T15:16:22Z",
+      "versionDescription": "Duotone iOS 4.6.4 — menos idas ao servidor\n\n- O Social deixa de reler tudo a cada passo. Voltar à app, uma mensagem nova ou o canal a ligar eram, cada um, uma leitura completa (amigos, grupos, conversas, presença): agora são leituras leves, e os grupos e contactos só se releem de 30 em 30 minutos, à mão ou quando chega algo novo (um grupo ou uma amizade).\n- A conversa aberta já não se relê com mensagens de outras conversas, nem a cada regresso; e a mesma marca de \"lida\" deixa de ser enviada várias vezes.\n- Abrir a app já não lê, uma a uma, todas as Jams em que se esteve: as abertas vêm numa consulta.\n- As músicas começadas são registadas em lote, em vez de dois pedidos por música (e por cada skip).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.4.md\nComparar com iOS 4.6.3: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.3...ios-v4.6.4",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.4/Duotone.ipa",
+      "size": 15717854
     }
   ],
   "news": []

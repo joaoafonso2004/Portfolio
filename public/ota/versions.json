@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-06T15:10:46.278Z",
+  "generatedAt": "2026-10-06T15:16:42.531Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.6.3",
-        "tag": "ios-v4.6.3",
-        "notes": "Duotone iOS 4.6.3 — a barra do leitor e o arrastar entre secções\n\n- A barra de progresso do leitor aberto podia ficar presa no \"a arrastar\" (o botão grande e o tempo parado) com a música a tocar, e cada arrasto novo voltava a prendê-la. Agora o arrasto larga-se sempre: ao levantar o dedo, ao fechar o leitor, ao mudar de faixa, ou sozinho se o gesto deixar de dar sinal.\n- Deslizar uma música para o lado deixou de a tentar pôr na fila: o gesto roubava o arrastar para mudar de secção e não chegava a pôr na fila. Arrastar para os lados volta a mudar de secção em qualquer lista; \"Add to queue\" continua no \"…\" de cada música.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.3.md\nComparar com iOS 4.6.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.2...ios-v4.6.3",
-        "publishedAt": "2026-10-06T03:03:29Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.6.3",
+        "version": "4.6.4",
+        "tag": "ios-v4.6.4",
+        "notes": "Duotone iOS 4.6.4 — menos idas ao servidor\n\n- O Social deixa de reler tudo a cada passo. Voltar à app, uma mensagem nova ou o canal a ligar eram, cada um, uma leitura completa (amigos, grupos, conversas, presença): agora são leituras leves, e os grupos e contactos só se releem de 30 em 30 minutos, à mão ou quando chega algo novo (um grupo ou uma amizade).\n- A conversa aberta já não se relê com mensagens de outras conversas, nem a cada regresso; e a mesma marca de \"lida\" deixa de ser enviada várias vezes.\n- Abrir a app já não lê, uma a uma, todas as Jams em que se esteve: as abertas vêm numa consulta.\n- As músicas começadas são registadas em lote, em vez de dois pedidos por música (e por cada skip).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.4.md\nComparar com iOS 4.6.3: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.3...ios-v4.6.4",
+        "publishedAt": "2026-10-06T15:16:22Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.6.4",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15713485,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.3/Duotone.ipa",
-          "downloads": 2
+          "size": 15717854,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.4/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.3/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.4/Duotone.ipa"
       },
       "windows": {
         "version": "4.6.4",
