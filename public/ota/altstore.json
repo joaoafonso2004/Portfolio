@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.6.2",
+          "date": "2026-10-06T02:44:42Z",
+          "localizedDescription": "Duotone iOS 4.6.2 — menos calor com a app aberta\n\n- O iPhone aquecia com uma ou duas músicas: ao voltar à app e ao tocar, o Rádio, o Smart Shuffle e a descoberta recalculavam o nome do artista de milhares de faixas, várias vezes por música, e cada título sem \" - \" percorria todos os artistas conhecidos. Era isso que dava as paragens de mais de um segundo e o JavaScript sempre ocupado.\n- O nome do artista, o título e a identidade de cada música passam a ficar guardados, e a procura de um artista dentro de um título vai pelas palavras do título em vez de percorrer todos os artistas. Os resultados são os mesmos; o trabalho por passagem pela biblioteca desce de ~50 ms para ~1–3 ms (medido em Node com 2537 faixas), e com o shuffle cada \"seguinte\" deixa de refazer a fila inteira.\n- O relatório de reprodução passa a medir a energia com a app aberta a partir de 15 segundos (antes, só a partir de um minuto).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.2.md\nComparar com iOS 4.6.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.1...ios-v4.6.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.2/Duotone.ipa",
+          "size": 15714349,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.6.1",
           "date": "2026-10-05T21:29:32Z",
           "localizedDescription": "Duotone iOS 4.6.1 — perfil, navegação e Rádio sem fim\n\n- Perfil: a capa mostra a fotografia inteira e só escurece no último terço; ao rolar, sobe mais devagar do que o texto. Deixa de \"acabar a meio\".\n- Navegação: uma playlist, um artista, um perfil ou as estatísticas abrem dentro do separador onde se está, sempre com a barra por baixo. Um perfil aberto a partir de uma conversa volta à conversa; \"View artist\" a partir da fila fecha-a e abre o artista.\n- Social numa só vista: a música dos amigos em cima e, por baixo, amigos, grupos e conversas pela interação mais recente. A conversa é uma página: volta-se a arrastar em qualquer sítio do ecrã. \"Message\" e as notificações abrem a conversa direto.\n- Menus junto ao dedo: o \"…\" das listas abre o mesmo menu do leitor; o toque longo num amigo abre o menu dele (ouvir com ele, tocar a música dele, mensagem, perfil, a mistura dos dois, Jam). As playlists tocam, baralham e entram na fila sem abrir.\n- Rádio: pastilha transparente ao lado do Clear. Aprende com o que se ouve e com o que se salta, não acaba (procura outras âncoras quando seca), funciona a seguir um amigo e continua depois de reabrir a app.\n- Smart Shuffle de volta ao comportamento da 4.1.4.\n- Downloads no topo da biblioteca, botão das mensagens com a contagem na Home, Definições na roda dentada do perfil e com os mesmos nomes do PC.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.1.md\nComparar com iOS 4.6.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.0...ios-v4.6.1",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.2.0/Duotone.ipa",
           "size": 15451643,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.1.8",
-          "date": "2026-10-02T13:23:02Z",
-          "localizedDescription": "- Corrigido: fechar o leitor no X deixava a app escurecida.\n- Ao trocar de música, a capa já não encrava nem dá um salto: o recuo da caixa ficou fluido.\n- A capa da música nova entra por cima da anterior sem piscar a preto.\n- Fechar no X desce primeiro o leitor e só depois pára a música.",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.1.8/Duotone.ipa",
-          "size": 15450241,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.6.1",
-      "versionDate": "2026-10-05T21:29:32Z",
-      "versionDescription": "Duotone iOS 4.6.1 — perfil, navegação e Rádio sem fim\n\n- Perfil: a capa mostra a fotografia inteira e só escurece no último terço; ao rolar, sobe mais devagar do que o texto. Deixa de \"acabar a meio\".\n- Navegação: uma playlist, um artista, um perfil ou as estatísticas abrem dentro do separador onde se está, sempre com a barra por baixo. Um perfil aberto a partir de uma conversa volta à conversa; \"View artist\" a partir da fila fecha-a e abre o artista.\n- Social numa só vista: a música dos amigos em cima e, por baixo, amigos, grupos e conversas pela interação mais recente. A conversa é uma página: volta-se a arrastar em qualquer sítio do ecrã. \"Message\" e as notificações abrem a conversa direto.\n- Menus junto ao dedo: o \"…\" das listas abre o mesmo menu do leitor; o toque longo num amigo abre o menu dele (ouvir com ele, tocar a música dele, mensagem, perfil, a mistura dos dois, Jam). As playlists tocam, baralham e entram na fila sem abrir.\n- Rádio: pastilha transparente ao lado do Clear. Aprende com o que se ouve e com o que se salta, não acaba (procura outras âncoras quando seca), funciona a seguir um amigo e continua depois de reabrir a app.\n- Smart Shuffle de volta ao comportamento da 4.1.4.\n- Downloads no topo da biblioteca, botão das mensagens com a contagem na Home, Definições na roda dentada do perfil e com os mesmos nomes do PC.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.1.md\nComparar com iOS 4.6.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.0...ios-v4.6.1",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.1/Duotone.ipa",
-      "size": 15712941
+      "version": "4.6.2",
+      "versionDate": "2026-10-06T02:44:42Z",
+      "versionDescription": "Duotone iOS 4.6.2 — menos calor com a app aberta\n\n- O iPhone aquecia com uma ou duas músicas: ao voltar à app e ao tocar, o Rádio, o Smart Shuffle e a descoberta recalculavam o nome do artista de milhares de faixas, várias vezes por música, e cada título sem \" - \" percorria todos os artistas conhecidos. Era isso que dava as paragens de mais de um segundo e o JavaScript sempre ocupado.\n- O nome do artista, o título e a identidade de cada música passam a ficar guardados, e a procura de um artista dentro de um título vai pelas palavras do título em vez de percorrer todos os artistas. Os resultados são os mesmos; o trabalho por passagem pela biblioteca desce de ~50 ms para ~1–3 ms (medido em Node com 2537 faixas), e com o shuffle cada \"seguinte\" deixa de refazer a fila inteira.\n- O relatório de reprodução passa a medir a energia com a app aberta a partir de 15 segundos (antes, só a partir de um minuto).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.2.md\nComparar com iOS 4.6.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.1...ios-v4.6.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.2/Duotone.ipa",
+      "size": 15714349
     }
   ],
   "news": []
