@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T21:29:51.519Z",
+  "generatedAt": "2026-10-06T02:39:36.489Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15712941,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.1/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.1/Duotone.ipa"
       },
       "windows": {
-        "version": "4.6.1",
-        "tag": "win-v4.6.1",
-        "notes": "Duotone para Windows 4.6.1 — menus no cursor e o que faltava no PC\n\n- Menus no sítio do clique: o botão direito (e o \"…\") numa música, numa playlist, num atalho da lateral ou num amigo abre o menu junto ao cursor, com setas, Esc e clique fora. As playlists tocam, baralham e entram na fila sem abrir.\n- Partilhar é um diálogo com X, Esc e clique fora — o anterior não fechava. Há uma só janela de partilha em toda a app.\n- Chegaram ao PC: \"You two\" (no perfil de um amigo), \"Year in review\" (nas estatísticas) e \"Jump back in\" no topo da página principal.\n- Social numa só vista: a música dos amigos em cima e, por baixo, amigos, grupos e conversas pela interação mais recente.\n- Rádio no Up next: pastilha ao lado do Clear. Aprende com o que se ouve e com o que se salta, e não acaba.\n- Smart Shuffle de volta ao comportamento da 4.1.4.\n- O botão voltar diz para onde vai; Definições com os mesmos nomes do iPhone; ícones iguais nas duas apps (Artists, Jam).\n- Perfil: a capa só escurece no último terço.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.1.md\nComparar com Windows 4.6.0: https://github.com/joaoafonso2004/duotone/compare/win-v4.6.0...win-v4.6.1",
-        "publishedAt": "2026-10-05T21:27:10Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.6.1",
+        "version": "4.6.2",
+        "tag": "win-v4.6.2",
+        "notes": "Duotone para Windows 4.6.2 — mais leve com bibliotecas grandes\n\n- O nome do artista, o título e a identidade de cada música passam a ficar guardados, e a procura de um artista dentro de um título deixa de percorrer todos os artistas conhecidos. O Rádio, o Smart Shuffle, a descoberta e as páginas de artistas fazem o mesmo com muito menos trabalho numa biblioteca grande. Os resultados não mudam.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.2.md\nComparar com Windows 4.6.1: https://github.com/joaoafonso2004/duotone/compare/win-v4.6.1...win-v4.6.2",
+        "publishedAt": "2026-10-06T02:39:21Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.6.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116066446,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.6.1/Duotone-Setup.exe",
+          "size": 116066441,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.6.2/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.6.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.6.2/Duotone-Setup.exe"
       }
     }
   }
