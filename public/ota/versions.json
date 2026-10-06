@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T03:03:45.180Z",
+  "generatedAt": "2026-10-06T12:33:19.521Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 116066441,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.6.2/Duotone-Setup.exe",
-          "downloads": 1
+          "downloads": 4
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.6.2/Duotone-Setup.exe"
       }
