@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-07T10:23:37.199Z",
+  "generatedAt": "2026-10-07T10:25:50.783Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.6.4",
-        "tag": "ios-v4.6.4",
-        "notes": "Duotone iOS 4.6.4 — menos idas ao servidor\n\n- O Social deixa de reler tudo a cada passo. Voltar à app, uma mensagem nova ou o canal a ligar eram, cada um, uma leitura completa (amigos, grupos, conversas, presença): agora são leituras leves, e os grupos e contactos só se releem de 30 em 30 minutos, à mão ou quando chega algo novo (um grupo ou uma amizade).\n- A conversa aberta já não se relê com mensagens de outras conversas, nem a cada regresso; e a mesma marca de \"lida\" deixa de ser enviada várias vezes.\n- Abrir a app já não lê, uma a uma, todas as Jams em que se esteve: as abertas vêm numa consulta.\n- As músicas começadas são registadas em lote, em vez de dois pedidos por música (e por cada skip).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.4.md\nComparar com iOS 4.6.3: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.3...ios-v4.6.4",
-        "publishedAt": "2026-10-06T15:16:22Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.6.4",
+        "version": "4.7.1",
+        "tag": "ios-v4.7.1",
+        "notes": "Duotone iOS 4.7.1 — playlists com amigos, o teu mês e o Radio que fica ligado\n\n- Playlists colaborativas: junta amigos a uma playlist tua (\"Collaborators…\" no menu dela). Eles veem-na nas Playlists deles e podem pôr, tirar e reordenar músicas; o nome e apagar continuam teus. As caras de quem lá está ficam por baixo do título, e cada música mostra quem a pôs.\n- O Radio fica ligado: com a pastilha Radio ligada no Up next, tocar numa música recomeça o Radio a partir dela. O Play e o Shuffle de uma lista continuam a tocar a lista.\n- Radio no Jam: a pastilha do Up next liga o Radio da sala, e a fila partilhada enche-se sozinha com músicas parecidas, depois das que as pessoas puseram.\n- \"O teu mês\": nos primeiros dias de cada mês, três páginas como uma story com o que ouviste no mês anterior. Substitui o cartaz de sexta.\n- Importar do Spotify pela tua conta: as Liked Songs e as playlists que escolheres, no ecrã de importar.\n- Dois toques na capa do leitor guardam a música nas Liked Songs (o coração continua lá).\n- \"Not interested\" no menu de uma sugestão do Smart Shuffle ou do Radio: sai da fila e ensina as recomendações.\n- Atalhos no ícone da app (premir sem largar): continuar a ouvir, a Daily mix e baralhar as Liked Songs.\n- Perfil: a capa dissolve-se no fundo em vez de acabar num corte preto, e as estatísticas têm um botão próprio em cima.\n- Pousar o dedo numa música já a começa a preparar, por isso arranca mais depressa.\n- Menos idas ao servidor: a presença e o \"continuar noutro aparelho\" passam a dar sinal com menos frequência.\n- A 4.7.0 não chegou a sair (a build falhou antes de começar): vem tudo aqui.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.7.1.md\nComparar com iOS 4.6.4: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.4...ios-v4.7.1",
+        "publishedAt": "2026-10-07T10:25:22Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.7.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15717854,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.4/Duotone.ipa",
-          "downloads": 3
+          "size": 15768950,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.1/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.4/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.1/Duotone.ipa"
       },
       "windows": {
         "version": "4.7.1",
