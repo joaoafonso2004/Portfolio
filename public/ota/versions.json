@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T17:02:18.874Z",
+  "generatedAt": "2026-10-07T17:11:42.040Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.2/Duotone.ipa"
       },
       "windows": {
-        "version": "4.7.1",
-        "tag": "win-v4.7.1",
-        "notes": "Duotone para Windows 4.7.1 — playlists com amigos, o teu mês e o Radio que fica ligado\n\n- Playlists colaborativas: junta amigos a uma playlist tua (\"Collaborators…\" no menu dela). Eles veem-na nas Playlists deles e podem pôr, tirar e reordenar músicas; o nome e apagar continuam teus. As caras de quem lá está ficam por baixo do título, e a tabela mostra quem pôs cada música.\n- O Radio fica ligado: com a pastilha Radio ligada no Up next, tocar numa música recomeça o Radio a partir dela. O Play e o Shuffle de uma lista continuam a tocar a lista.\n- Radio no Jam: a pastilha do Up next liga o Radio da sala, e a fila partilhada enche-se sozinha com músicas parecidas, depois das que as pessoas puseram.\n- \"O teu mês\": nos primeiros dias de cada mês, três páginas com o que ouviste no mês anterior. Substitui o cartaz de sexta.\n- \"Not interested\" no menu de uma sugestão do Smart Shuffle ou do Radio: sai da fila e ensina as recomendações.\n- Perfil: a capa dissolve-se no fundo em vez de acabar num corte, e as estatísticas têm um botão próprio.\n- Menos idas ao servidor: a presença e o \"continuar noutro aparelho\" passam a dar sinal com menos frequência.\n- A Pesquisa sem texto mostra só a descoberta: o separador \"Songs of the day\" saiu, como já tinha saído do iPhone.\n- A 4.7.0 não chegou a sair (a build falhou antes de começar): vem tudo aqui.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.7.1.md\nComparar com Windows 4.6.4: https://github.com/joaoafonso2004/duotone/compare/win-v4.6.4...win-v4.7.1",
-        "publishedAt": "2026-10-07T10:23:23Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.7.1",
+        "version": "4.7.2",
+        "tag": "win-v4.7.2",
+        "notes": "Duotone para Windows 4.7.2 — playlists colaborativas ao vivo\n\n- Uma playlist colaborativa aberta atualiza-se sozinha quando um amigo põe, tira ou reordena músicas, cerca de um segundo depois.\n- Reabrir uma playlist já não mostra uma cópia antiga: a de um amigo ou uma colaborativa confirma-se com o servidor ao abrir. Antes, o que outra pessoa punha podia demorar muito a aparecer.\n- Botão \"Refresh playlist\" ao lado do Sort.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.7.2.md\nComparar com Windows 4.7.1: https://github.com/joaoafonso2004/duotone/compare/win-v4.7.1...win-v4.7.2",
+        "publishedAt": "2026-10-07T17:11:25Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.7.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116074328,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.7.1/Duotone-Setup.exe",
-          "downloads": 5
+          "size": 116074078,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.7.2/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.7.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.7.2/Duotone-Setup.exe"
       }
     }
   }
