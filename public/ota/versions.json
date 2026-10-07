@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-07T20:30:30.202Z",
+  "generatedAt": "2026-10-07T20:37:02.967Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.7.2",
-        "tag": "ios-v4.7.2",
-        "notes": "Duotone iOS 4.7.2 — playlists colaborativas ao vivo\n\n- Uma playlist colaborativa aberta atualiza-se sozinha quando um amigo põe, tira ou reordena músicas, cerca de um segundo depois. Antes só se via ao sair e voltar.\n- Puxar para atualizar na página de uma playlist.\n- As caras de quem está numa playlist colaborativa ficam centradas por baixo do título (estavam coladas à borda esquerda).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.7.2.md\nComparar com iOS 4.7.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.7.1...ios-v4.7.2",
-        "publishedAt": "2026-10-07T17:01:59Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.7.2",
+        "version": "4.7.3",
+        "tag": "ios-v4.7.3",
+        "notes": "Duotone iOS 4.7.3 — as fotografias certas nas playlists colaborativas\n\n- Nas playlists colaborativas, as caras de quem lá está (por baixo do título, na lista de colaboradores e ao lado de cada música) passam a ser as fotografias atuais. Aparecia uma fotografia antiga do dono e nenhuma dos amigos.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.7.3.md\nComparar com iOS 4.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.7.2...ios-v4.7.3",
+        "publishedAt": "2026-10-07T20:36:46Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.7.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15770304,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.2/Duotone.ipa",
-          "downloads": 1
+          "size": 15770930,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.3/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.2/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.3/Duotone.ipa"
       },
       "windows": {
         "version": "4.7.3",

@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.7.3",
+          "date": "2026-10-07T20:36:46Z",
+          "localizedDescription": "Duotone iOS 4.7.3 — as fotografias certas nas playlists colaborativas\n\n- Nas playlists colaborativas, as caras de quem lá está (por baixo do título, na lista de colaboradores e ao lado de cada música) passam a ser as fotografias atuais. Aparecia uma fotografia antiga do dono e nenhuma dos amigos.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.7.3.md\nComparar com iOS 4.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.7.2...ios-v4.7.3",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.3/Duotone.ipa",
+          "size": 15770930,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.7.2",
           "date": "2026-10-07T17:01:59Z",
           "localizedDescription": "Duotone iOS 4.7.2 — playlists colaborativas ao vivo\n\n- Uma playlist colaborativa aberta atualiza-se sozinha quando um amigo põe, tira ou reordena músicas, cerca de um segundo depois. Antes só se via ao sair e voltar.\n- Puxar para atualizar na página de uma playlist.\n- As caras de quem está numa playlist colaborativa ficam centradas por baixo do título (estavam coladas à borda esquerda).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.7.2.md\nComparar com iOS 4.7.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.7.1...ios-v4.7.2",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.5.1/Duotone.ipa",
           "size": 15660919,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.5.0",
-          "date": "2026-10-04T12:27:19Z",
-          "localizedDescription": "Duotone iOS 4.5.0\n\n- Saltar de música é mais rápido: a música escolhida entra em 250 ms em vez de um segundo de fade, e o download do áudio passou para código nativo. Os bytes deixam de passar pelo JavaScript, e a app já não engasga no fim de um download.\n- Uma música que parava logo ao arrancar volta a tocar sozinha, de imediato.\n- Todos os menus e painéis que sobem de baixo passam a folhas nativas do iOS.\n- Definições novas, como os Ajustes do iPhone: linhas com ícone, o valor à direita e um menu junto ao dedo. O equalizador padrão abre numa folha.\n- Perfil novo: cabeçalho ao centro com as contagens, artistas em círculo e playlists em cartões. Editar o perfil passa a uma lista com os destaques e o que se mostra.\n- Puxar para atualizar na Home, nas Playlists e no Social. O play/pause cruza em vez de rodar, e tocar no tempo total mostra o que falta.\n- A app arranca mais leve: os separadores montam depois da abertura.\n- Com a app escondida, só se adianta a próxima música, o que poupa bateria. Em 4G, a capa grande já não fica esticada por causa de uma falha de rede.\n- O relatório de reprodução mede o primeiro som com precisão e a memória por minuto.\n\nComparar com iOS 4.4.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.4.1...ios-v4.5.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.5.0/Duotone.ipa",
-          "size": 15661577,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.7.2",
-      "versionDate": "2026-10-07T17:01:59Z",
-      "versionDescription": "Duotone iOS 4.7.2 — playlists colaborativas ao vivo\n\n- Uma playlist colaborativa aberta atualiza-se sozinha quando um amigo põe, tira ou reordena músicas, cerca de um segundo depois. Antes só se via ao sair e voltar.\n- Puxar para atualizar na página de uma playlist.\n- As caras de quem está numa playlist colaborativa ficam centradas por baixo do título (estavam coladas à borda esquerda).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.7.2.md\nComparar com iOS 4.7.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.7.1...ios-v4.7.2",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.2/Duotone.ipa",
-      "size": 15770304
+      "version": "4.7.3",
+      "versionDate": "2026-10-07T20:36:46Z",
+      "versionDescription": "Duotone iOS 4.7.3 — as fotografias certas nas playlists colaborativas\n\n- Nas playlists colaborativas, as caras de quem lá está (por baixo do título, na lista de colaboradores e ao lado de cada música) passam a ser as fotografias atuais. Aparecia uma fotografia antiga do dono e nenhuma dos amigos.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.7.3.md\nComparar com iOS 4.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.7.2...ios-v4.7.3",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.3/Duotone.ipa",
+      "size": 15770930
     }
   ],
   "news": []
