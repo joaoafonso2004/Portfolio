@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:35:57.085Z",
+  "generatedAt": "2026-10-09T11:26:20.235Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15770930,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.3/Duotone.ipa",
-          "downloads": 3
+          "downloads": 4
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.3/Duotone.ipa"
       },
       "windows": {
-        "version": "4.7.3",
-        "tag": "win-v4.7.3",
-        "notes": "Duotone para Windows 4.7.3 — as fotografias certas nas playlists colaborativas\n\n- Nas playlists colaborativas, as caras de quem lá está (por baixo do título, na lista de colaboradores e na coluna de quem pôs cada música) passam a ser as fotografias atuais. Aparecia uma fotografia antiga do dono e nenhuma dos amigos.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.7.3.md\nComparar com Windows 4.7.2: https://github.com/joaoafonso2004/duotone/compare/win-v4.7.2...win-v4.7.3",
-        "publishedAt": "2026-10-07T20:30:16Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.7.3",
+        "version": "4.8.0",
+        "tag": "win-v4.8.0",
+        "notes": "Duotone para Windows 4.8.0 — partilhar a sério, a fila certa e uma Daily mix que muda\n\n- Mandar músicas e playlists a amigos: o diálogo novo mostra o que vai (capa, nome e artista), tem pesquisa, deixa escolher várias pessoas e manda a mensagem a todas no fim. Antes, um clique numa pessoa já enviava.\n- \"Add to queue\" põe a música logo a seguir à que está a tocar (depois das que já puseste), e não no fim da fila.\n- A ordem escolhida numa playlist e nas Liked Songs fica guardada (voltava sempre a \"Playlist order\").\n- A Daily mix já não repete as mesmas músicas pela mesma ordem: as novas não voltam durante uma semana e as conhecidas rodam de dia para dia.\n- Conversas: balões sem molduras, a hora em separadores, músicas que tocam sem sair (▶), o convite para a Jam diz quem e que música, o \"＋\" manda música e dois toques num balão põem ❤️. A última mensagem na lista diz a frase certa (\"You invited nuno to a Jam\").\n- Artista e título no sítio certo em mais casos (títulos ao contrário no canal do artista, e o formato Artista \"Título\" dos canais de uploads).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.8.0.md\nComparar com Windows 4.7.3: https://github.com/joaoafonso2004/duotone/compare/win-v4.7.3...win-v4.8.0",
+        "publishedAt": "2026-10-09T11:26:07Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.8.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116074860,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.7.3/Duotone-Setup.exe",
-          "downloads": 6
+          "size": 116079689,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.8.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.7.3/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.8.0/Duotone-Setup.exe"
       }
     }
   }
