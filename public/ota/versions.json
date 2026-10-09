@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-09T11:26:20.235Z",
+  "generatedAt": "2026-10-09T11:32:59.327Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.7.3",
-        "tag": "ios-v4.7.3",
-        "notes": "Duotone iOS 4.7.3 — as fotografias certas nas playlists colaborativas\n\n- Nas playlists colaborativas, as caras de quem lá está (por baixo do título, na lista de colaboradores e ao lado de cada música) passam a ser as fotografias atuais. Aparecia uma fotografia antiga do dono e nenhuma dos amigos.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.7.3.md\nComparar com iOS 4.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.7.2...ios-v4.7.3",
-        "publishedAt": "2026-10-07T20:36:46Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.7.3",
+        "version": "4.8.0",
+        "tag": "ios-v4.8.0",
+        "notes": "Duotone iOS 4.8.0 — o Social novo, a fila certa e uma Daily mix que muda\n\n- Social novo: \"Listening now\" em cima, com a música de cada amigo num balão por cima da cara. Tocar num amigo abre o que ele está a ouvir, com \"Listen along\" (ou entrar na Jam dele), tocar, guardar, pôr na fila e reações que vão para a conversa. As Jams abertas dos amigos aparecem num cartão com \"Join\".\n- Na Home, tocar num amigo que está a ouvir abre a mesma folha.\n- A lista de conversas: a linha inteira abre a conversa, a última mensagem diz a frase certa (\"You invited nuno to a Jam\" em vez de \"You: Invited you to a Jam\"), os pedidos de amizade ficam numa pastilha, e há pesquisa e nova conversa no topo.\n- A conversa: o que o amigo está a ouvir no topo (e abre a folha dele), balões sem molduras, a hora em separadores, músicas que tocam sem sair (▶), o convite para a Jam diz quem e que música, e o \"＋\" manda música. Com o campo vazio, o ♪ manda o que estás a ouvir. Dois toques num balão põem ❤️.\n- \"Add to queue\" põe a música logo a seguir à que está a tocar (depois das que já puseste), e não no fim da fila.\n- A ordem escolhida nas Liked Songs e nas playlists fica guardada.\n- A Daily mix já não repete as mesmas músicas pela mesma ordem: as novas não voltam durante uma semana e as conhecidas rodam de dia para dia.\n- Artista e título no sítio certo em mais casos (títulos ao contrário no canal do artista, e o formato Artista \"Título\" dos canais de uploads).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.8.0.md\nComparar com iOS 4.7.3: https://github.com/joaoafonso2004/duotone/compare/ios-v4.7.3...ios-v4.8.0",
+        "publishedAt": "2026-10-09T11:32:42Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.8.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15770930,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.3/Duotone.ipa",
-          "downloads": 4
+          "size": 15795594,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.8.0/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.3/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.8.0/Duotone.ipa"
       },
       "windows": {
         "version": "4.8.0",
