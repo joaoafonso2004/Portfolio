@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-10T23:53:14.602Z",
+  "generatedAt": "2026-10-11T00:01:40.511Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "4.8.0",
-        "tag": "ios-v4.8.0",
-        "notes": "Duotone iOS 4.8.0 — o Social novo, a fila certa e uma Daily mix que muda\n\n- Social novo: \"Listening now\" em cima, com a música de cada amigo num balão por cima da cara. Tocar num amigo abre o que ele está a ouvir, com \"Listen along\" (ou entrar na Jam dele), tocar, guardar, pôr na fila e reações que vão para a conversa. As Jams abertas dos amigos aparecem num cartão com \"Join\".\n- Na Home, tocar num amigo que está a ouvir abre a mesma folha.\n- A lista de conversas: a linha inteira abre a conversa, a última mensagem diz a frase certa (\"You invited nuno to a Jam\" em vez de \"You: Invited you to a Jam\"), os pedidos de amizade ficam numa pastilha, e há pesquisa e nova conversa no topo.\n- A conversa: o que o amigo está a ouvir no topo (e abre a folha dele), balões sem molduras, a hora em separadores, músicas que tocam sem sair (▶), o convite para a Jam diz quem e que música, e o \"＋\" manda música. Com o campo vazio, o ♪ manda o que estás a ouvir. Dois toques num balão põem ❤️.\n- \"Add to queue\" põe a música logo a seguir à que está a tocar (depois das que já puseste), e não no fim da fila.\n- A ordem escolhida nas Liked Songs e nas playlists fica guardada.\n- A Daily mix já não repete as mesmas músicas pela mesma ordem: as novas não voltam durante uma semana e as conhecidas rodam de dia para dia.\n- Artista e título no sítio certo em mais casos (títulos ao contrário no canal do artista, e o formato Artista \"Título\" dos canais de uploads).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.8.0.md\nComparar com iOS 4.7.3: https://github.com/joaoafonso2004/duotone/compare/ios-v4.7.3...ios-v4.8.0",
-        "publishedAt": "2026-10-09T11:32:42Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.8.0",
+        "version": "4.9.1",
+        "tag": "ios-v4.9.1",
+        "notes": "Duotone iOS 4.9.1 — personalizar a app e o leitor, novos lançamentos e letras com tempos\n\nA 4.9.0 não chegou a sair (a build falhou): esta leva tudo o que ela trazia.\n\n- Customise (Settings → Appearance → Customise): os temas Duotone, Minimal, Glow e OLED, e cada opção à mão, com o leitor em pequeno a mudar enquanto se escolhe. Sem mexer em nada, fica tudo como estava. Fica guardado no iPhone.\n  - App: o fundo (o de sempre ou preto OLED), listas compactas, os títulos Default, Serif ou Mono, e os nomes da barra de baixo.\n  - Leitor: a capa Floating 3D, Simple ou Full (a toda a largura); em cima a marca ou \"Playing from\" (tocar no nome abre a lista); o título ao centro ou à esquerda; a barra fina ou grossa; o play cheio, em anel ou só o ícone; até quatro botões em baixo (Queue, Who sees it, EQ, Devices, Share, Lyrics); a capa 3D a flutuar ou parada; o fundo desfocado, com a cor da capa, num gradiente de duas cores da capa a mexer devagar, ou preto, e o brilho dele.\n  - Letras: tamanho S, M ou L, e abrir o leitor já nas letras quando a música as tem.\n  - Home: esconder secções e mudar a ordem delas.\n- New releases: uma prateleira na Home com os álbuns e singles novos dos teus artistas, vistos uma vez por dia, com \"New\" durante 14 dias e um ponto nos Artists até abrires o artista.\n- Página do artista: as músicas por \"Most played\" ou \"Newest\", e cada linha diz as reproduções ou o ano.\n- Letras com tempos em muito mais músicas: quando a primeira fonte não os tem, há uma segunda.\n- O Mix de um artista é sobretudo dele, e começa por um êxito diferente de cada vez (antes começava sempre pela mesma música).\n- O Radio arranca em músicas onde dizia \"No related music found\" (por exemplo \"Eloy Ft.Randy - Fuera Del Planeta\").\n- \"Add to playlist\" mostra sempre os ✓ desta música (às vezes dizia que já estava numa playlist onde não estava).\n- Textos: \"Add to playlist\" e \"Remove\" na seleção das Liked Songs, e o VoiceOver em inglês na capa, no coração do leitor e no \"…\" das linhas.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.9.1.md\nComparar com iOS 4.8.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.8.0...ios-v4.9.1",
+        "publishedAt": "2026-10-11T00:01:23Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v4.9.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15795594,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.8.0/Duotone.ipa",
-          "downloads": 3
+          "size": 15834546,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.9.1/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.8.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.9.1/Duotone.ipa"
       },
       "windows": {
         "version": "4.9.1",
