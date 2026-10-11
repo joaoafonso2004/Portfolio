@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T11:55:25.020Z",
+  "generatedAt": "2026-10-11T19:58:05.555Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15847070,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.9.2/Duotone.ipa",
-          "downloads": 3
+          "downloads": 4
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.9.2/Duotone.ipa"
       },
       "windows": {
-        "version": "4.9.2",
-        "tag": "win-v4.9.2",
-        "notes": "Duotone para Windows 4.9.2 — Queue e Lyrics na seta do canto\n\n- A seta ‹ no canto superior direito abre o painel com as abas Queue e Lyrics; a seta › recolhe-o. A barra do leitor mantém os seus botões.\n- O painel abre e recolhe suavemente. Em janelas largas, a página adapta-se à sua largura; em janelas estreitas, o painel desliza por cima. A última aba e o estado aberto ou fechado ficam guardados.\n- A fila do painel usa a mesma ordem e as mesmas ações do Now Playing: arrastar, tocar, menu da música, Radio, Clear e indicação do fim da fila. Continua a respeitar Shuffle, Jam e ouvir um amigo.\n- As letras usam a vista existente da app e acompanham a música atual. Escape fecha o painel; as setas do teclado mudam entre Queue e Lyrics.\n- Artista correto nas músicas com convidados, incluindo wokeuplikethis*: o nome principal deixa de ser substituído pelo artista da página onde a música foi encontrada.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v4.9.2/docs/VERIFICAR-4.9.2.md\nComparar com Windows 4.9.1: https://github.com/joaoafonso2004/duotone/compare/win-v4.9.1...win-v4.9.2",
-        "publishedAt": "2026-10-11T02:17:54Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.9.2",
+        "version": "4.9.3",
+        "tag": "win-v4.9.3",
+        "notes": "Duotone para Windows 4.9.3 — o painel sem saltos, a seta na barra de título e Save na fila\n\n- O painel da Queue e das Lyrics abre e fecha a deslizar, sem solavancos: a página muda de largura uma vez em vez de a cada fotograma.\n- A seta que abre o painel passou para a barra de título, à esquerda do minimizar. No canto da página ficava por cima de botões como \"Play all\" e \"Shuffle\".\n- \"Save\" na fila, no Now Playing e no painel: guarda a música que toca e as próximas numa playlist nova, sem repetidas, com um nome sugerido pela origem.\n- Na página de um artista, as reproduções e o ano já não aparecem cortados (\"64…\").\n- Artista certo nas músicas com um convidado entre parênteses, como \"wokeuplikethis* (feat. Lil Uzi Vert)\".\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v4.9.3/docs/VERIFICAR-4.9.3.md\nComparar com Windows 4.9.2: https://github.com/joaoafonso2004/duotone/compare/win-v4.9.2...win-v4.9.3",
+        "publishedAt": "2026-10-11T19:57:52Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.9.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116092313,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.9.2/Duotone-Setup.exe",
-          "downloads": 2
+          "size": 116093438,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.9.3/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.9.2/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.9.3/Duotone-Setup.exe"
       }
     }
   }
