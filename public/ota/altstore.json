@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.0.1",
+          "date": "2026-10-11T23:36:46Z",
+          "localizedDescription": "Duotone iOS 5.0.1 — o Social mais arrumado\n\nNovo nesta versão:\n- O \"Listening now\" do Social é igual ao da Home: a mesma fila de amigos, e por baixo as Jams abertas.\n- Conversa nova é um \"+\" no canto do Social, em vez da caneta.\n- Na folha da música de um amigo, o \"Message\" está em cima, ao lado do nome, em vez de no fundo.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.0.1/docs/VERIFICAR-5.0.1.md\nComparar com iOS 5.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.0.0...ios-v5.0.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.1/Duotone.ipa",
+          "size": 15846255,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.0.0",
           "date": "2026-10-11T21:20:49Z",
           "localizedDescription": "Duotone iOS 5.0.0 — o perfil novo, e a app à tua maneira\n\nNovo nesta versão:\n- O perfil foi refeito: a capa é o cabeçalho. A fotografia dissolve-se na cor dela, que desce pela página sem aresta nenhuma, e por cima, à esquerda, ficam a tua cara (maior), o nome grande, o @, a bio e o Edit profile. Já não há a zona preta debaixo da capa.\n- A folha de um amigo no Social desce ao fechar, em vez de desaparecer de um instante para o outro.\n\nO que a série 4.9 trouxe, em resumo:\n- Customise: temas (Duotone, Minimal, Glow, OLED) e cada opção à mão, para a app e para o leitor (capa Floating 3D, Simple ou Full, fundo desfocado, cor da capa, gradiente ou preto, títulos Serif/Mono, letras S/M/L, secções da Home).\n- As folhas e os menus seguem o tema: grafite em Dark, preto em OLED, a capa desfocada com o destaque Cover.\n- New releases dos teus artistas, \"Most played\"/\"Newest\" na página de um artista, letras com tempos em muito mais músicas.\n- EQ por aparelho (um preset para os AirPods, outro para a coluna), guardar a fila como playlist, e o Share com pesquisa e várias pessoas de uma vez.\n- O artista certo nas músicas com convidados, o Radio que arranca sempre, e o Mix de um artista sobretudo dele.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.0.0/docs/VERIFICAR-5.0.0.md\nComparar com iOS 4.9.3: https://github.com/joaoafonso2004/duotone/compare/ios-v4.9.3...ios-v5.0.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.4/Duotone.ipa",
           "size": 15717854,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.6.3",
-          "date": "2026-10-06T03:03:29Z",
-          "localizedDescription": "Duotone iOS 4.6.3 — a barra do leitor e o arrastar entre secções\n\n- A barra de progresso do leitor aberto podia ficar presa no \"a arrastar\" (o botão grande e o tempo parado) com a música a tocar, e cada arrasto novo voltava a prendê-la. Agora o arrasto larga-se sempre: ao levantar o dedo, ao fechar o leitor, ao mudar de faixa, ou sozinho se o gesto deixar de dar sinal.\n- Deslizar uma música para o lado deixou de a tentar pôr na fila: o gesto roubava o arrastar para mudar de secção e não chegava a pôr na fila. Arrastar para os lados volta a mudar de secção em qualquer lista; \"Add to queue\" continua no \"…\" de cada música.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.3.md\nComparar com iOS 4.6.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.2...ios-v4.6.3",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.3/Duotone.ipa",
-          "size": 15713485,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.0.0",
-      "versionDate": "2026-10-11T21:20:49Z",
-      "versionDescription": "Duotone iOS 5.0.0 — o perfil novo, e a app à tua maneira\n\nNovo nesta versão:\n- O perfil foi refeito: a capa é o cabeçalho. A fotografia dissolve-se na cor dela, que desce pela página sem aresta nenhuma, e por cima, à esquerda, ficam a tua cara (maior), o nome grande, o @, a bio e o Edit profile. Já não há a zona preta debaixo da capa.\n- A folha de um amigo no Social desce ao fechar, em vez de desaparecer de um instante para o outro.\n\nO que a série 4.9 trouxe, em resumo:\n- Customise: temas (Duotone, Minimal, Glow, OLED) e cada opção à mão, para a app e para o leitor (capa Floating 3D, Simple ou Full, fundo desfocado, cor da capa, gradiente ou preto, títulos Serif/Mono, letras S/M/L, secções da Home).\n- As folhas e os menus seguem o tema: grafite em Dark, preto em OLED, a capa desfocada com o destaque Cover.\n- New releases dos teus artistas, \"Most played\"/\"Newest\" na página de um artista, letras com tempos em muito mais músicas.\n- EQ por aparelho (um preset para os AirPods, outro para a coluna), guardar a fila como playlist, e o Share com pesquisa e várias pessoas de uma vez.\n- O artista certo nas músicas com convidados, o Radio que arranca sempre, e o Mix de um artista sobretudo dele.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.0.0/docs/VERIFICAR-5.0.0.md\nComparar com iOS 4.9.3: https://github.com/joaoafonso2004/duotone/compare/ios-v4.9.3...ios-v5.0.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.0/Duotone.ipa",
-      "size": 15848053
+      "version": "5.0.1",
+      "versionDate": "2026-10-11T23:36:46Z",
+      "versionDescription": "Duotone iOS 5.0.1 — o Social mais arrumado\n\nNovo nesta versão:\n- O \"Listening now\" do Social é igual ao da Home: a mesma fila de amigos, e por baixo as Jams abertas.\n- Conversa nova é um \"+\" no canto do Social, em vez da caneta.\n- Na folha da música de um amigo, o \"Message\" está em cima, ao lado do nome, em vez de no fundo.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.0.1/docs/VERIFICAR-5.0.1.md\nComparar com iOS 5.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.0.0...ios-v5.0.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.1/Duotone.ipa",
+      "size": 15846255
     }
   ],
   "news": []

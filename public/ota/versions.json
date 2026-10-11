@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-11T23:31:35.180Z",
+  "generatedAt": "2026-10-11T23:37:05.701Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.0.0",
-        "tag": "ios-v5.0.0",
-        "notes": "Duotone iOS 5.0.0 — o perfil novo, e a app à tua maneira\n\nNovo nesta versão:\n- O perfil foi refeito: a capa é o cabeçalho. A fotografia dissolve-se na cor dela, que desce pela página sem aresta nenhuma, e por cima, à esquerda, ficam a tua cara (maior), o nome grande, o @, a bio e o Edit profile. Já não há a zona preta debaixo da capa.\n- A folha de um amigo no Social desce ao fechar, em vez de desaparecer de um instante para o outro.\n\nO que a série 4.9 trouxe, em resumo:\n- Customise: temas (Duotone, Minimal, Glow, OLED) e cada opção à mão, para a app e para o leitor (capa Floating 3D, Simple ou Full, fundo desfocado, cor da capa, gradiente ou preto, títulos Serif/Mono, letras S/M/L, secções da Home).\n- As folhas e os menus seguem o tema: grafite em Dark, preto em OLED, a capa desfocada com o destaque Cover.\n- New releases dos teus artistas, \"Most played\"/\"Newest\" na página de um artista, letras com tempos em muito mais músicas.\n- EQ por aparelho (um preset para os AirPods, outro para a coluna), guardar a fila como playlist, e o Share com pesquisa e várias pessoas de uma vez.\n- O artista certo nas músicas com convidados, o Radio que arranca sempre, e o Mix de um artista sobretudo dele.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.0.0/docs/VERIFICAR-5.0.0.md\nComparar com iOS 4.9.3: https://github.com/joaoafonso2004/duotone/compare/ios-v4.9.3...ios-v5.0.0",
-        "publishedAt": "2026-10-11T21:20:49Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.0.0",
+        "version": "5.0.1",
+        "tag": "ios-v5.0.1",
+        "notes": "Duotone iOS 5.0.1 — o Social mais arrumado\n\nNovo nesta versão:\n- O \"Listening now\" do Social é igual ao da Home: a mesma fila de amigos, e por baixo as Jams abertas.\n- Conversa nova é um \"+\" no canto do Social, em vez da caneta.\n- Na folha da música de um amigo, o \"Message\" está em cima, ao lado do nome, em vez de no fundo.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.0.1/docs/VERIFICAR-5.0.1.md\nComparar com iOS 5.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.0.0...ios-v5.0.1",
+        "publishedAt": "2026-10-11T23:36:46Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.0.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15848053,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.0/Duotone.ipa",
-          "downloads": 1
+          "size": 15846255,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.1/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.1/Duotone.ipa"
       },
       "windows": {
         "version": "5.0.1",
