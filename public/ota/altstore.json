@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "4.9.3",
+          "date": "2026-10-11T20:05:58Z",
+          "localizedDescription": "Duotone iOS 4.9.3 — menus na cor do tema, fila sem fundos e o artista certo\n\n- O menu \"…\", Edit profile, Recommendations…, Start a conversation, Find people, Group details, as confirmações e a partilha de playlists seguem a cor das outras folhas: grafite em Dark, preto em OLED, a capa desfocada com o destaque Cover.\n- Essas folhas fecham a arrastar a pega ou o cabeçalho para baixo.\n- As músicas na fila (e nas playlists) já não têm um fundo escuro por linha; o vermelho do \"Remove\" só aparece no que a linha destapa ao deslizar.\n- A folha de um álbum mostra mais músicas: a lista ocupa cerca de metade do ecrã (eram três).\n- O mini leitor já não pisca depois de o deslizar para fechar.\n- Artista certo nas músicas com um convidado entre parênteses, como \"wokeuplikethis* (feat. Lil Uzi Vert)\": mostra o Playboi Carti. Uma já guardada corrige-se depois de abrir uma vez a página de um dos artistas.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v4.9.3/docs/VERIFICAR-4.9.3.md\nComparar com iOS 4.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.9.2...ios-v4.9.3",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.9.3/Duotone.ipa",
+          "size": 15847637,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.9.2",
           "date": "2026-10-11T02:22:29Z",
           "localizedDescription": "Duotone iOS 4.9.2 — partilhar, guardar a fila e EQ por aparelho\n\n- Share: mostra o que vais partilhar, permite pesquisar, escolher várias conversas e escrever a mensagem antes de enviar. As conversas recentes aparecem primeiro; Listen together usa os amigos escolhidos.\n- Queue: Save guarda a música atual e as próximas numa playlist nova, sem repetidas, com um nome sugerido a partir da origem.\n- EQ por aparelho: podes escolher um preset para cada par de auscultadores ou coluna. Entra quando o aparelho se liga e sai quando se desliga; o preset do carro mantém a prioridade.\n- As folhas da fila, EQ, Share e restantes opções seguem o tema: grafite em Dark, preto em OLED ou a capa desfocada quando o destaque é Cover.\n- Com Title: Left, o título da música também fica alinhado à esquerda.\n- Tocar na barra da velocidade muda a velocidade, mesmo sem arrastar.\n- A pré-visualização do Customise aparece inteira e mostra o título limpo da música.\n- Artista correto nas músicas com convidados, incluindo wokeuplikethis*: o nome principal deixa de ser substituído pelo artista da página onde a música foi encontrada.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v4.9.2/docs/VERIFICAR-4.9.2.md\nComparar com iOS 4.9.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.9.1...ios-v4.9.2",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.2/Duotone.ipa",
           "size": 15714349,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.6.1",
-          "date": "2026-10-05T21:29:32Z",
-          "localizedDescription": "Duotone iOS 4.6.1 — perfil, navegação e Rádio sem fim\n\n- Perfil: a capa mostra a fotografia inteira e só escurece no último terço; ao rolar, sobe mais devagar do que o texto. Deixa de \"acabar a meio\".\n- Navegação: uma playlist, um artista, um perfil ou as estatísticas abrem dentro do separador onde se está, sempre com a barra por baixo. Um perfil aberto a partir de uma conversa volta à conversa; \"View artist\" a partir da fila fecha-a e abre o artista.\n- Social numa só vista: a música dos amigos em cima e, por baixo, amigos, grupos e conversas pela interação mais recente. A conversa é uma página: volta-se a arrastar em qualquer sítio do ecrã. \"Message\" e as notificações abrem a conversa direto.\n- Menus junto ao dedo: o \"…\" das listas abre o mesmo menu do leitor; o toque longo num amigo abre o menu dele (ouvir com ele, tocar a música dele, mensagem, perfil, a mistura dos dois, Jam). As playlists tocam, baralham e entram na fila sem abrir.\n- Rádio: pastilha transparente ao lado do Clear. Aprende com o que se ouve e com o que se salta, não acaba (procura outras âncoras quando seca), funciona a seguir um amigo e continua depois de reabrir a app.\n- Smart Shuffle de volta ao comportamento da 4.1.4.\n- Downloads no topo da biblioteca, botão das mensagens com a contagem na Home, Definições na roda dentada do perfil e com os mesmos nomes do PC.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.1.md\nComparar com iOS 4.6.0: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.0...ios-v4.6.1",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.1/Duotone.ipa",
-          "size": 15712941,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.9.2",
-      "versionDate": "2026-10-11T02:22:29Z",
-      "versionDescription": "Duotone iOS 4.9.2 — partilhar, guardar a fila e EQ por aparelho\n\n- Share: mostra o que vais partilhar, permite pesquisar, escolher várias conversas e escrever a mensagem antes de enviar. As conversas recentes aparecem primeiro; Listen together usa os amigos escolhidos.\n- Queue: Save guarda a música atual e as próximas numa playlist nova, sem repetidas, com um nome sugerido a partir da origem.\n- EQ por aparelho: podes escolher um preset para cada par de auscultadores ou coluna. Entra quando o aparelho se liga e sai quando se desliga; o preset do carro mantém a prioridade.\n- As folhas da fila, EQ, Share e restantes opções seguem o tema: grafite em Dark, preto em OLED ou a capa desfocada quando o destaque é Cover.\n- Com Title: Left, o título da música também fica alinhado à esquerda.\n- Tocar na barra da velocidade muda a velocidade, mesmo sem arrastar.\n- A pré-visualização do Customise aparece inteira e mostra o título limpo da música.\n- Artista correto nas músicas com convidados, incluindo wokeuplikethis*: o nome principal deixa de ser substituído pelo artista da página onde a música foi encontrada.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v4.9.2/docs/VERIFICAR-4.9.2.md\nComparar com iOS 4.9.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.9.1...ios-v4.9.2",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.9.2/Duotone.ipa",
-      "size": 15847070
+      "version": "4.9.3",
+      "versionDate": "2026-10-11T20:05:58Z",
+      "versionDescription": "Duotone iOS 4.9.3 — menus na cor do tema, fila sem fundos e o artista certo\n\n- O menu \"…\", Edit profile, Recommendations…, Start a conversation, Find people, Group details, as confirmações e a partilha de playlists seguem a cor das outras folhas: grafite em Dark, preto em OLED, a capa desfocada com o destaque Cover.\n- Essas folhas fecham a arrastar a pega ou o cabeçalho para baixo.\n- As músicas na fila (e nas playlists) já não têm um fundo escuro por linha; o vermelho do \"Remove\" só aparece no que a linha destapa ao deslizar.\n- A folha de um álbum mostra mais músicas: a lista ocupa cerca de metade do ecrã (eram três).\n- O mini leitor já não pisca depois de o deslizar para fechar.\n- Artista certo nas músicas com um convidado entre parênteses, como \"wokeuplikethis* (feat. Lil Uzi Vert)\": mostra o Playboi Carti. Uma já guardada corrige-se depois de abrir uma vez a página de um dos artistas.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v4.9.3/docs/VERIFICAR-4.9.3.md\nComparar com iOS 4.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.9.2...ios-v4.9.3",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.9.3/Duotone.ipa",
+      "size": 15847637
     }
   ],
   "news": []
