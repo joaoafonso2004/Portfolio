@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.0.0",
+          "date": "2026-10-11T21:20:49Z",
+          "localizedDescription": "Duotone iOS 5.0.0 — o perfil novo, e a app à tua maneira\n\nNovo nesta versão:\n- O perfil foi refeito: a capa é o cabeçalho. A fotografia dissolve-se na cor dela, que desce pela página sem aresta nenhuma, e por cima, à esquerda, ficam a tua cara (maior), o nome grande, o @, a bio e o Edit profile. Já não há a zona preta debaixo da capa.\n- A folha de um amigo no Social desce ao fechar, em vez de desaparecer de um instante para o outro.\n\nO que a série 4.9 trouxe, em resumo:\n- Customise: temas (Duotone, Minimal, Glow, OLED) e cada opção à mão, para a app e para o leitor (capa Floating 3D, Simple ou Full, fundo desfocado, cor da capa, gradiente ou preto, títulos Serif/Mono, letras S/M/L, secções da Home).\n- As folhas e os menus seguem o tema: grafite em Dark, preto em OLED, a capa desfocada com o destaque Cover.\n- New releases dos teus artistas, \"Most played\"/\"Newest\" na página de um artista, letras com tempos em muito mais músicas.\n- EQ por aparelho (um preset para os AirPods, outro para a coluna), guardar a fila como playlist, e o Share com pesquisa e várias pessoas de uma vez.\n- O artista certo nas músicas com convidados, o Radio que arranca sempre, e o Mix de um artista sobretudo dele.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.0.0/docs/VERIFICAR-5.0.0.md\nComparar com iOS 4.9.3: https://github.com/joaoafonso2004/duotone/compare/ios-v4.9.3...ios-v5.0.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.0/Duotone.ipa",
+          "size": 15848053,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "4.9.3",
           "date": "2026-10-11T20:05:58Z",
           "localizedDescription": "Duotone iOS 4.9.3 — menus na cor do tema, fila sem fundos e o artista certo\n\n- O menu \"…\", Edit profile, Recommendations…, Start a conversation, Find people, Group details, as confirmações e a partilha de playlists seguem a cor das outras folhas: grafite em Dark, preto em OLED, a capa desfocada com o destaque Cover.\n- Essas folhas fecham a arrastar a pega ou o cabeçalho para baixo.\n- As músicas na fila (e nas playlists) já não têm um fundo escuro por linha; o vermelho do \"Remove\" só aparece no que a linha destapa ao deslizar.\n- A folha de um álbum mostra mais músicas: a lista ocupa cerca de metade do ecrã (eram três).\n- O mini leitor já não pisca depois de o deslizar para fechar.\n- Artista certo nas músicas com um convidado entre parênteses, como \"wokeuplikethis* (feat. Lil Uzi Vert)\": mostra o Playboi Carti. Uma já guardada corrige-se depois de abrir uma vez a página de um dos artistas.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v4.9.3/docs/VERIFICAR-4.9.3.md\nComparar com iOS 4.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.9.2...ios-v4.9.3",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.3/Duotone.ipa",
           "size": 15713485,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.6.2",
-          "date": "2026-10-06T02:44:42Z",
-          "localizedDescription": "Duotone iOS 4.6.2 — menos calor com a app aberta\n\n- O iPhone aquecia com uma ou duas músicas: ao voltar à app e ao tocar, o Rádio, o Smart Shuffle e a descoberta recalculavam o nome do artista de milhares de faixas, várias vezes por música, e cada título sem \" - \" percorria todos os artistas conhecidos. Era isso que dava as paragens de mais de um segundo e o JavaScript sempre ocupado.\n- O nome do artista, o título e a identidade de cada música passam a ficar guardados, e a procura de um artista dentro de um título vai pelas palavras do título em vez de percorrer todos os artistas. Os resultados são os mesmos; o trabalho por passagem pela biblioteca desce de ~50 ms para ~1–3 ms (medido em Node com 2537 faixas), e com o shuffle cada \"seguinte\" deixa de refazer a fila inteira.\n- O relatório de reprodução passa a medir a energia com a app aberta a partir de 15 segundos (antes, só a partir de um minuto).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.2.md\nComparar com iOS 4.6.1: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.1...ios-v4.6.2",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.2/Duotone.ipa",
-          "size": 15714349,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "4.9.3",
-      "versionDate": "2026-10-11T20:05:58Z",
-      "versionDescription": "Duotone iOS 4.9.3 — menus na cor do tema, fila sem fundos e o artista certo\n\n- O menu \"…\", Edit profile, Recommendations…, Start a conversation, Find people, Group details, as confirmações e a partilha de playlists seguem a cor das outras folhas: grafite em Dark, preto em OLED, a capa desfocada com o destaque Cover.\n- Essas folhas fecham a arrastar a pega ou o cabeçalho para baixo.\n- As músicas na fila (e nas playlists) já não têm um fundo escuro por linha; o vermelho do \"Remove\" só aparece no que a linha destapa ao deslizar.\n- A folha de um álbum mostra mais músicas: a lista ocupa cerca de metade do ecrã (eram três).\n- O mini leitor já não pisca depois de o deslizar para fechar.\n- Artista certo nas músicas com um convidado entre parênteses, como \"wokeuplikethis* (feat. Lil Uzi Vert)\": mostra o Playboi Carti. Uma já guardada corrige-se depois de abrir uma vez a página de um dos artistas.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v4.9.3/docs/VERIFICAR-4.9.3.md\nComparar com iOS 4.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.9.2...ios-v4.9.3",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.9.3/Duotone.ipa",
-      "size": 15847637
+      "version": "5.0.0",
+      "versionDate": "2026-10-11T21:20:49Z",
+      "versionDescription": "Duotone iOS 5.0.0 — o perfil novo, e a app à tua maneira\n\nNovo nesta versão:\n- O perfil foi refeito: a capa é o cabeçalho. A fotografia dissolve-se na cor dela, que desce pela página sem aresta nenhuma, e por cima, à esquerda, ficam a tua cara (maior), o nome grande, o @, a bio e o Edit profile. Já não há a zona preta debaixo da capa.\n- A folha de um amigo no Social desce ao fechar, em vez de desaparecer de um instante para o outro.\n\nO que a série 4.9 trouxe, em resumo:\n- Customise: temas (Duotone, Minimal, Glow, OLED) e cada opção à mão, para a app e para o leitor (capa Floating 3D, Simple ou Full, fundo desfocado, cor da capa, gradiente ou preto, títulos Serif/Mono, letras S/M/L, secções da Home).\n- As folhas e os menus seguem o tema: grafite em Dark, preto em OLED, a capa desfocada com o destaque Cover.\n- New releases dos teus artistas, \"Most played\"/\"Newest\" na página de um artista, letras com tempos em muito mais músicas.\n- EQ por aparelho (um preset para os AirPods, outro para a coluna), guardar a fila como playlist, e o Share com pesquisa e várias pessoas de uma vez.\n- O artista certo nas músicas com convidados, o Radio que arranca sempre, e o Mix de um artista sobretudo dele.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.0.0/docs/VERIFICAR-5.0.0.md\nComparar com iOS 4.9.3: https://github.com/joaoafonso2004/duotone/compare/ios-v4.9.3...ios-v5.0.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.0/Duotone.ipa",
+      "size": 15848053
     }
   ],
   "news": []
