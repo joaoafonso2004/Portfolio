@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T00:01:40.511Z",
+  "generatedAt": "2026-10-11T02:18:08.966Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15834546,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.9.1/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.9.1/Duotone.ipa"
       },
       "windows": {
-        "version": "4.9.1",
-        "tag": "win-v4.9.1",
-        "notes": "Duotone para Windows 4.9.1 — a barra de tarefas, a roda do rato, novos lançamentos e letras com tempos\n\nA 4.9.0 não chegou a sair (a build falhou): esta leva tudo o que ela trazia.\n\n- Barra de tarefas: anterior, tocar/pausa e seguinte na miniatura da janela, e a lista do botão direito no ícone com Resume, Daily mix e Shuffle Liked Songs.\n- Roda do rato: por cima do volume muda 5 por dente; por cima da barra da música anda 5 s por dente.\n- New releases: uma prateleira na página principal com os álbuns e singles novos dos teus artistas, vistos uma vez por dia, com \"New\" durante 14 dias e um ponto na grelha dos artistas até abrires o artista.\n- Página do artista: as músicas por \"Most played\" ou \"Newest\", e cada linha diz as reproduções ou o ano.\n- Letras com tempos em muito mais músicas: quando a primeira fonte não os tem, há uma segunda.\n- O Mix de um artista é sobretudo dele, e começa por um êxito diferente de cada vez.\n- O Radio arranca em músicas onde dizia \"No related music found\" (por exemplo \"Eloy Ft.Randy - Fuera Del Planeta\").\n- A pesquisa já não diz \"or videos\".\n- Clicar no ícone com o Duotone já aberto mostra a janela, em vez da caixa \"A porta 18081 esta a ser usada por outro programa\".\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.9.1.md\nComparar com Windows 4.8.0: https://github.com/joaoafonso2004/duotone/compare/win-v4.8.0...win-v4.9.1",
-        "publishedAt": "2026-10-10T23:53:02Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.9.1",
+        "version": "4.9.2",
+        "tag": "win-v4.9.2",
+        "notes": "Duotone para Windows 4.9.2 — Queue e Lyrics na seta do canto\n\n- A seta ‹ no canto superior direito abre o painel com as abas Queue e Lyrics; a seta › recolhe-o. A barra do leitor mantém os seus botões.\n- O painel abre e recolhe suavemente. Em janelas largas, a página adapta-se à sua largura; em janelas estreitas, o painel desliza por cima. A última aba e o estado aberto ou fechado ficam guardados.\n- A fila do painel usa a mesma ordem e as mesmas ações do Now Playing: arrastar, tocar, menu da música, Radio, Clear e indicação do fim da fila. Continua a respeitar Shuffle, Jam e ouvir um amigo.\n- As letras usam a vista existente da app e acompanham a música atual. Escape fecha o painel; as setas do teclado mudam entre Queue e Lyrics.\n- Artista correto nas músicas com convidados, incluindo wokeuplikethis*: o nome principal deixa de ser substituído pelo artista da página onde a música foi encontrada.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v4.9.2/docs/VERIFICAR-4.9.2.md\nComparar com Windows 4.9.1: https://github.com/joaoafonso2004/duotone/compare/win-v4.9.1...win-v4.9.2",
+        "publishedAt": "2026-10-11T02:17:54Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v4.9.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116090163,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.9.1/Duotone-Setup.exe",
+          "size": 116092313,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.9.2/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.9.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v4.9.2/Duotone-Setup.exe"
       }
     }
   }
