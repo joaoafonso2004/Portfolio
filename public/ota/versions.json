@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T21:21:03.073Z",
+  "generatedAt": "2026-10-11T23:31:35.180Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15848053,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.0/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.0/Duotone.ipa"
       },
       "windows": {
-        "version": "5.0.0",
-        "tag": "win-v5.0.0",
-        "notes": "Duotone para Windows 5.0.0 — o perfil novo e o painel da Queue e das Lyrics\n\nNovo nesta versão:\n- O perfil foi refeito: a capa é o cabeçalho, dissolve-se na cor dela sem aresta, e o nome, o @, a bio e os botões ficam à esquerda, por cima dela.\n- O painel da Queue e das Lyrics (a seta ‹ na barra de título) entra por cima da página e só depois ela se ajusta, com um desvanecer: já não empurra a janela nem salta de um instante para o outro. A seta não aparece no ecrã de login.\n\nO que a série 4.9 trouxe, em resumo:\n- O painel à direita com a Queue e as Lyrics, sem sair da página, e \"Save\" na fila para a guardar como playlist.\n- Botões na miniatura da barra de tarefas e a lista de saltos (Resume, Daily mix, Shuffle Liked Songs); a roda do rato no volume e na barra da música.\n- New releases dos teus artistas, \"Most played\"/\"Newest\" na página de um artista, letras com tempos em muito mais músicas.\n- O artista certo nas músicas com convidados, o Radio que arranca sempre, e abrir o Duotone com ele já aberto sem erro.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.0.0/docs/VERIFICAR-5.0.0.md\nComparar com Windows 4.9.3: https://github.com/joaoafonso2004/duotone/compare/win-v4.9.3...win-v5.0.0",
-        "publishedAt": "2026-10-11T21:13:19Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.0.0",
+        "version": "5.0.1",
+        "tag": "win-v5.0.1",
+        "notes": "Duotone para Windows 5.0.1 — acompanha o iPhone\n\nSem mudanças no Windows: esta versão só acerta o número com a do iPhone (o Social do iPhone mudou).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.0.1/docs/VERIFICAR-5.0.1.md\nComparar com Windows 5.0.0: https://github.com/joaoafonso2004/duotone/compare/win-v5.0.0...win-v5.0.1",
+        "publishedAt": "2026-10-11T23:31:21Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.0.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116093736,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.0.0/Duotone-Setup.exe",
+          "size": 116093867,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.0.1/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.0.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.0.1/Duotone-Setup.exe"
       }
     }
   }
