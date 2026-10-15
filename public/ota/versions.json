@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-15T21:41:27.705Z",
+  "generatedAt": "2026-10-15T21:46:10.643Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.0.1",
-        "tag": "ios-v5.0.1",
-        "notes": "Duotone iOS 5.0.1 — o Social mais arrumado\n\nNovo nesta versão:\n- O \"Listening now\" do Social é igual ao da Home: a mesma fila de amigos, e por baixo as Jams abertas.\n- Conversa nova é um \"+\" no canto do Social, em vez da caneta.\n- Na folha da música de um amigo, o \"Message\" está em cima, ao lado do nome, em vez de no fundo.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.0.1/docs/VERIFICAR-5.0.1.md\nComparar com iOS 5.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.0.0...ios-v5.0.1",
-        "publishedAt": "2026-10-11T23:36:46Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.0.1",
+        "version": "5.1.1",
+        "tag": "ios-v5.1.1",
+        "notes": "Duotone iOS 5.1.1 — o Radio que não se repete\n\nNovo nesta versão:\n- O Radio e a música que continua sozinha no fim da fila já não repetem o que ouviste nas últimas 24 horas, as tuas músicas incluídas. Quando a música parecida acaba, segue a partir do que ouviste na sessão; só repete em último caso, e começa pelas que ouviste há mais tempo.\n- No fim de uma lista, a música que continua é sempre parecida com a que estavas a ouvir: já não salta para as tuas favoritas de outro género.\n- New releases volta a procurar lançamentos novos com a app aberta, alterna entre os favoritos e os artistas que mais ouves, e inclui artistas que ouves mas não guardaste.\n- Na página de um artista sem lista de músicas própria, \"Most played\" e \"Newest\" já ordenam: pelas visualizações e pela data de cada vídeo. Sem dados para ordenar, os botões não aparecem.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.1/docs/VERIFICAR-5.1.1.md\nComparar com iOS 5.0.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.0.1...ios-v5.1.1",
+        "publishedAt": "2026-10-15T21:45:45Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.1.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15846255,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.1/Duotone.ipa",
-          "downloads": 4
+          "size": 15852869,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.1/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.1/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.1/Duotone.ipa"
       },
       "windows": {
         "version": "5.1.1",

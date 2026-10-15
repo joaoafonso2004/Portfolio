@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.1.1",
+          "date": "2026-10-15T21:45:45Z",
+          "localizedDescription": "Duotone iOS 5.1.1 — o Radio que não se repete\n\nNovo nesta versão:\n- O Radio e a música que continua sozinha no fim da fila já não repetem o que ouviste nas últimas 24 horas, as tuas músicas incluídas. Quando a música parecida acaba, segue a partir do que ouviste na sessão; só repete em último caso, e começa pelas que ouviste há mais tempo.\n- No fim de uma lista, a música que continua é sempre parecida com a que estavas a ouvir: já não salta para as tuas favoritas de outro género.\n- New releases volta a procurar lançamentos novos com a app aberta, alterna entre os favoritos e os artistas que mais ouves, e inclui artistas que ouves mas não guardaste.\n- Na página de um artista sem lista de músicas própria, \"Most played\" e \"Newest\" já ordenam: pelas visualizações e pela data de cada vídeo. Sem dados para ordenar, os botões não aparecem.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.1/docs/VERIFICAR-5.1.1.md\nComparar com iOS 5.0.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.0.1...ios-v5.1.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.1/Duotone.ipa",
+          "size": 15852869,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.0.1",
           "date": "2026-10-11T23:36:46Z",
           "localizedDescription": "Duotone iOS 5.0.1 — o Social mais arrumado\n\nNovo nesta versão:\n- O \"Listening now\" do Social é igual ao da Home: a mesma fila de amigos, e por baixo as Jams abertas.\n- Conversa nova é um \"+\" no canto do Social, em vez da caneta.\n- Na folha da música de um amigo, o \"Message\" está em cima, ao lado do nome, em vez de no fundo.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.0.1/docs/VERIFICAR-5.0.1.md\nComparar com iOS 5.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.0.0...ios-v5.0.1",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.1/Duotone.ipa",
           "size": 15768950,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.6.4",
-          "date": "2026-10-06T15:16:22Z",
-          "localizedDescription": "Duotone iOS 4.6.4 — menos idas ao servidor\n\n- O Social deixa de reler tudo a cada passo. Voltar à app, uma mensagem nova ou o canal a ligar eram, cada um, uma leitura completa (amigos, grupos, conversas, presença): agora são leituras leves, e os grupos e contactos só se releem de 30 em 30 minutos, à mão ou quando chega algo novo (um grupo ou uma amizade).\n- A conversa aberta já não se relê com mensagens de outras conversas, nem a cada regresso; e a mesma marca de \"lida\" deixa de ser enviada várias vezes.\n- Abrir a app já não lê, uma a uma, todas as Jams em que se esteve: as abertas vêm numa consulta.\n- As músicas começadas são registadas em lote, em vez de dois pedidos por música (e por cada skip).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.6.4.md\nComparar com iOS 4.6.3: https://github.com/joaoafonso2004/duotone/compare/ios-v4.6.3...ios-v4.6.4",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.6.4/Duotone.ipa",
-          "size": 15717854,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.0.1",
-      "versionDate": "2026-10-11T23:36:46Z",
-      "versionDescription": "Duotone iOS 5.0.1 — o Social mais arrumado\n\nNovo nesta versão:\n- O \"Listening now\" do Social é igual ao da Home: a mesma fila de amigos, e por baixo as Jams abertas.\n- Conversa nova é um \"+\" no canto do Social, em vez da caneta.\n- Na folha da música de um amigo, o \"Message\" está em cima, ao lado do nome, em vez de no fundo.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.0.1/docs/VERIFICAR-5.0.1.md\nComparar com iOS 5.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.0.0...ios-v5.0.1",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.1/Duotone.ipa",
-      "size": 15846255
+      "version": "5.1.1",
+      "versionDate": "2026-10-15T21:45:45Z",
+      "versionDescription": "Duotone iOS 5.1.1 — o Radio que não se repete\n\nNovo nesta versão:\n- O Radio e a música que continua sozinha no fim da fila já não repetem o que ouviste nas últimas 24 horas, as tuas músicas incluídas. Quando a música parecida acaba, segue a partir do que ouviste na sessão; só repete em último caso, e começa pelas que ouviste há mais tempo.\n- No fim de uma lista, a música que continua é sempre parecida com a que estavas a ouvir: já não salta para as tuas favoritas de outro género.\n- New releases volta a procurar lançamentos novos com a app aberta, alterna entre os favoritos e os artistas que mais ouves, e inclui artistas que ouves mas não guardaste.\n- Na página de um artista sem lista de músicas própria, \"Most played\" e \"Newest\" já ordenam: pelas visualizações e pela data de cada vídeo. Sem dados para ordenar, os botões não aparecem.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.1/docs/VERIFICAR-5.1.1.md\nComparar com iOS 5.0.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.0.1...ios-v5.1.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.1/Duotone.ipa",
+      "size": 15852869
     }
   ],
   "news": []
