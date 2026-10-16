@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-16T19:27:37.080Z",
+  "generatedAt": "2026-10-16T19:34:22.493Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.1.4",
-        "tag": "ios-v5.1.4",
-        "notes": "Duotone iOS 5.1.4 — o leitor como estava\n\nNovo nesta versão:\n- O leitor volta a ser o da 5.0.1: o coração do Now Playing e do mini leitor é o de antes, e o som toca como tocava.\n- Tudo o resto fica: o Radio que parte da música que está a tocar, as playlists sem rede, o menu compacto e o \"Cancel\" na pesquisa.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.4/docs/VERIFICAR-5.1.4.md\nComparar com iOS 5.1.3: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.3...ios-v5.1.4",
-        "publishedAt": "2026-10-16T18:16:14Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.1.4",
+        "version": "5.1.5",
+        "tag": "ios-v5.1.5",
+        "notes": "Duotone iOS 5.1.5 — pesquisa mais rápida\n\nNovo nesta versão:\n- A pesquisa já não espera 10 segundos quando o YouTube não responde: ao fim de 4 passa à alternativa.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.5/docs/VERIFICAR-5.1.5.md\nComparar com iOS 5.1.4: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.4...ios-v5.1.5",
+        "publishedAt": "2026-10-16T19:34:07Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.1.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15874565,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.4/Duotone.ipa",
+          "size": 15874628,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.5/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.4/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.5/Duotone.ipa"
       },
       "windows": {
         "version": "5.1.5",
