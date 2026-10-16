@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-16T14:46:03.894Z",
+  "generatedAt": "2026-10-16T14:51:52.574Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.1.1",
-        "tag": "ios-v5.1.1",
-        "notes": "Duotone iOS 5.1.1 — o Radio que não se repete\n\nNovo nesta versão:\n- O Radio e a música que continua sozinha no fim da fila já não repetem o que ouviste nas últimas 24 horas, as tuas músicas incluídas. Quando a música parecida acaba, segue a partir do que ouviste na sessão; só repete em último caso, e começa pelas que ouviste há mais tempo.\n- No fim de uma lista, a música que continua é sempre parecida com a que estavas a ouvir: já não salta para as tuas favoritas de outro género.\n- New releases volta a procurar lançamentos novos com a app aberta, alterna entre os favoritos e os artistas que mais ouves, e inclui artistas que ouves mas não guardaste.\n- Na página de um artista sem lista de músicas própria, \"Most played\" e \"Newest\" já ordenam: pelas visualizações e pela data de cada vídeo. Sem dados para ordenar, os botões não aparecem.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.1/docs/VERIFICAR-5.1.1.md\nComparar com iOS 5.0.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.0.1...ios-v5.1.1",
-        "publishedAt": "2026-10-15T21:45:45Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.1.1",
+        "version": "5.1.2",
+        "tag": "ios-v5.1.2",
+        "notes": "Duotone iOS 5.1.2 — playlists sem rede e o menu compacto\n\nNovo nesta versão:\n- Sem rede, as Playlists e cada playlist abrem com a última cópia, em vez de \"You're offline\": a ordem, as capas e os artistas. Toca o que está no iPhone; as outras músicas ficam no lugar delas, apagadas. Cada playlist diz quantas músicas estão no iPhone.\n- O menu de uma música está mais curto: a capa e o coração em cima, \"Play next\", \"Queue\" e \"Playlist\" em quadrados, e o resto em grupos. Sem rede, um aviso só no topo. Abre sempre dentro do ecrã, nunca por baixo da ilha.\n- O coração de guardar reage logo ao carregar: ao guardar enche e saltam umas faíscas, ao tirar encolhe até desaparecer. No leitor, no mini leitor, nas conversas e na folha de um amigo.\n- Temporizador: nova opção \"End of track\", que pára quando a música que está a tocar acaba.\n- Radio: um lançamento novo de um artista que ouves entra no Radio, e dentro do género vêm primeiro as músicas mais ouvidas.\n- Liked Songs: uma falha de rede sem lista guardada já não diz \"Nothing here yet\"; diz \"Couldn't load your liked songs\", com \"Try again\".\n- Uma música com vários artistas separados por vírgulas já não troca o título com o artista (o caso \"Timeless\").\n- Menos pedidos ao servidor por cada música ouvida.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.2/docs/VERIFICAR-5.1.2.md\nComparar com iOS 5.1.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.1...ios-v5.1.2",
+        "publishedAt": "2026-10-16T14:51:36Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.1.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15852869,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.1/Duotone.ipa",
-          "downloads": 1
+          "size": 15873709,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.2/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.1/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.2/Duotone.ipa"
       },
       "windows": {
         "version": "5.1.2",
