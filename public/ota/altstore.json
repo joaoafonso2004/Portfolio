@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.1.4",
+          "date": "2026-10-16T18:16:14Z",
+          "localizedDescription": "Duotone iOS 5.1.4 — o leitor como estava\n\nNovo nesta versão:\n- O leitor volta a ser o da 5.0.1: o coração do Now Playing e do mini leitor é o de antes, e o som toca como tocava.\n- Tudo o resto fica: o Radio que parte da música que está a tocar, as playlists sem rede, o menu compacto e o \"Cancel\" na pesquisa.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.4/docs/VERIFICAR-5.1.4.md\nComparar com iOS 5.1.3: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.3...ios-v5.1.4",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.4/Duotone.ipa",
+          "size": 15874565,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.1.3",
           "date": "2026-10-16T17:09:17Z",
           "localizedDescription": "Duotone iOS 5.1.3 — o Radio da música que está a tocar\n\nNovo nesta versão:\n- Radio: parte sempre da música que está a tocar. O que ouviste antes de o ligar já não conta — um Radio ligado num rap já não te traz o funk que ouviste há meia hora. Continua a aprender com o que ouves depois de o ligar.\n- Pesquisa da Home: aparece \"Cancel\" ao lado da caixa enquanto pesquisas. Fecha o teclado, limpa e volta à Home; o ✕ continua a só apagar o texto.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.3/docs/VERIFICAR-5.1.3.md\nComparar com iOS 5.1.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.2...ios-v5.1.3",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.8.0/Duotone.ipa",
           "size": 15795594,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.7.3",
-          "date": "2026-10-07T20:36:46Z",
-          "localizedDescription": "Duotone iOS 4.7.3 — as fotografias certas nas playlists colaborativas\n\n- Nas playlists colaborativas, as caras de quem lá está (por baixo do título, na lista de colaboradores e ao lado de cada música) passam a ser as fotografias atuais. Aparecia uma fotografia antiga do dono e nenhuma dos amigos.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/main/docs/VERIFICAR-4.7.3.md\nComparar com iOS 4.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.7.2...ios-v4.7.3",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.7.3/Duotone.ipa",
-          "size": 15770930,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.1.3",
-      "versionDate": "2026-10-16T17:09:17Z",
-      "versionDescription": "Duotone iOS 5.1.3 — o Radio da música que está a tocar\n\nNovo nesta versão:\n- Radio: parte sempre da música que está a tocar. O que ouviste antes de o ligar já não conta — um Radio ligado num rap já não te traz o funk que ouviste há meia hora. Continua a aprender com o que ouves depois de o ligar.\n- Pesquisa da Home: aparece \"Cancel\" ao lado da caixa enquanto pesquisas. Fecha o teclado, limpa e volta à Home; o ✕ continua a só apagar o texto.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.3/docs/VERIFICAR-5.1.3.md\nComparar com iOS 5.1.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.2...ios-v5.1.3",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.3/Duotone.ipa",
-      "size": 15874539
+      "version": "5.1.4",
+      "versionDate": "2026-10-16T18:16:14Z",
+      "versionDescription": "Duotone iOS 5.1.4 — o leitor como estava\n\nNovo nesta versão:\n- O leitor volta a ser o da 5.0.1: o coração do Now Playing e do mini leitor é o de antes, e o som toca como tocava.\n- Tudo o resto fica: o Radio que parte da música que está a tocar, as playlists sem rede, o menu compacto e o \"Cancel\" na pesquisa.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.4/docs/VERIFICAR-5.1.4.md\nComparar com iOS 5.1.3: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.3...ios-v5.1.4",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.4/Duotone.ipa",
+      "size": 15874565
     }
   ],
   "news": []
