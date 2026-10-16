@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T17:09:37.984Z",
+  "generatedAt": "2026-10-16T18:07:43.546Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.3/Duotone.ipa"
       },
       "windows": {
-        "version": "5.1.3",
-        "tag": "win-v5.1.3",
-        "notes": "Duotone para Windows 5.1.3 — músicas que carregam depois de um skip, e a Jam que entra\n\nNovo nesta versão:\n- Quando uma música fica a carregar sem nunca começar, a app passa a usar um leitor novo em vez de insistir no que encravou. Era isso que fazia \"dou skip, volto atrás e não carrega\". Se voltar a falhar, procura outra cópia da mesma música, e só salta se não houver nenhuma.\n- Se saltares uma música que estava há mais de 4 segundos a carregar, a seguinte já começa num leitor novo.\n- Jam: quem entra numa sala já não fica para sempre em \"Loading · 0%\". Uma música que não carrega no teu PC continua a ser tentada, e nunca é saltada ou trocada para os outros.\n- Radio: parte sempre da música que está a tocar. O que ouviste antes de o ligar já não conta — um Radio ligado num rap já não te traz o funk que ouviste há meia hora.\n- O equalizador abre sem escurecer o leitor por trás.\n- Definições mais fáceis de ler: as explicações passam de 10 para 12 px, e os nomes das opções ficam maiores.\n- Quando uma música falha, a mensagem aparece por baixo do título, onde está o artista, em vez de uma linha minúscula ao lado do volume.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.1.3/docs/VERIFICAR-5.1.3.md\nComparar com Windows 5.1.2: https://github.com/joaoafonso2004/duotone/compare/win-v5.1.2...win-v5.1.3",
-        "publishedAt": "2026-10-16T17:02:13Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.1.3",
+        "version": "5.1.4",
+        "tag": "win-v5.1.4",
+        "notes": "Duotone para Windows 5.1.4 — o leitor da 5.0.1 de volta\n\nNovo nesta versão:\n- O leitor de música volta a ser o da 5.0.1. Na 5.1.3 as músicas carregavam mas não se ouviam, e o Listen along e a Jam não davam. Saíram as mudanças ao leitor desde a 5.0.1; ficam só a curva do volume (a barra fica onde a tinhas) e o \"End of track\" do temporizador.\n- Tudo o resto da 5.1.3 fica: o Radio que parte da música que está a tocar, o coração novo, o EQ sem escurecer, as Definições mais legíveis e o erro por baixo do título.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.1.4/docs/VERIFICAR-5.1.4.md\nComparar com Windows 5.1.3: https://github.com/joaoafonso2004/duotone/compare/win-v5.1.3...win-v5.1.4",
+        "publishedAt": "2026-10-16T18:07:30Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.1.4",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116102056,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.3/Duotone-Setup.exe",
+          "size": 116101127,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.4/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.3/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.4/Duotone-Setup.exe"
       }
     }
   }
