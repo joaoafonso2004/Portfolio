@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-16T17:02:27.029Z",
+  "generatedAt": "2026-10-16T17:09:37.984Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.1.2",
-        "tag": "ios-v5.1.2",
-        "notes": "Duotone iOS 5.1.2 — playlists sem rede e o menu compacto\n\nNovo nesta versão:\n- Sem rede, as Playlists e cada playlist abrem com a última cópia, em vez de \"You're offline\": a ordem, as capas e os artistas. Toca o que está no iPhone; as outras músicas ficam no lugar delas, apagadas. Cada playlist diz quantas músicas estão no iPhone.\n- O menu de uma música está mais curto: a capa e o coração em cima, \"Play next\", \"Queue\" e \"Playlist\" em quadrados, e o resto em grupos. Sem rede, um aviso só no topo. Abre sempre dentro do ecrã, nunca por baixo da ilha.\n- O coração de guardar reage logo ao carregar: ao guardar enche e saltam umas faíscas, ao tirar encolhe até desaparecer. No leitor, no mini leitor, nas conversas e na folha de um amigo.\n- Temporizador: nova opção \"End of track\", que pára quando a música que está a tocar acaba.\n- Radio: um lançamento novo de um artista que ouves entra no Radio, e dentro do género vêm primeiro as músicas mais ouvidas.\n- Liked Songs: uma falha de rede sem lista guardada já não diz \"Nothing here yet\"; diz \"Couldn't load your liked songs\", com \"Try again\".\n- Uma música com vários artistas separados por vírgulas já não troca o título com o artista (o caso \"Timeless\").\n- Menos pedidos ao servidor por cada música ouvida.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.2/docs/VERIFICAR-5.1.2.md\nComparar com iOS 5.1.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.1...ios-v5.1.2",
-        "publishedAt": "2026-10-16T14:51:36Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.1.2",
+        "version": "5.1.3",
+        "tag": "ios-v5.1.3",
+        "notes": "Duotone iOS 5.1.3 — o Radio da música que está a tocar\n\nNovo nesta versão:\n- Radio: parte sempre da música que está a tocar. O que ouviste antes de o ligar já não conta — um Radio ligado num rap já não te traz o funk que ouviste há meia hora. Continua a aprender com o que ouves depois de o ligar.\n- Pesquisa da Home: aparece \"Cancel\" ao lado da caixa enquanto pesquisas. Fecha o teclado, limpa e volta à Home; o ✕ continua a só apagar o texto.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.3/docs/VERIFICAR-5.1.3.md\nComparar com iOS 5.1.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.2...ios-v5.1.3",
+        "publishedAt": "2026-10-16T17:09:17Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.1.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15873709,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.2/Duotone.ipa",
+          "size": 15874539,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.3/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.2/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.3/Duotone.ipa"
       },
       "windows": {
         "version": "5.1.3",
