@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T18:16:32.069Z",
+  "generatedAt": "2026-10-16T19:27:37.080Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.4/Duotone.ipa"
       },
       "windows": {
-        "version": "5.1.4",
-        "tag": "win-v5.1.4",
-        "notes": "Duotone para Windows 5.1.4 — o leitor da 5.0.1 de volta\n\nNovo nesta versão:\n- O leitor de música volta a ser o da 5.0.1. Na 5.1.3 as músicas carregavam mas não se ouviam, e o Listen along e a Jam não davam. Saíram as mudanças ao leitor desde a 5.0.1; ficam só a curva do volume (a barra fica onde a tinhas) e o \"End of track\" do temporizador.\n- Tudo o resto da 5.1.3 fica: o Radio que parte da música que está a tocar, o coração novo, o EQ sem escurecer, as Definições mais legíveis e o erro por baixo do título.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.1.4/docs/VERIFICAR-5.1.4.md\nComparar com Windows 5.1.3: https://github.com/joaoafonso2004/duotone/compare/win-v5.1.3...win-v5.1.4",
-        "publishedAt": "2026-10-16T18:07:30Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.1.4",
+        "version": "5.1.5",
+        "tag": "win-v5.1.5",
+        "notes": "Duotone para Windows 5.1.5 — uma música que não carrega salta logo\n\nNovo nesta versão:\n- Uma música que fica a carregar sem começar passa à seguinte ao fim de 6 segundos, com o aviso \"This song didn't load. Skipping to the next one.\". Já não fica a ampulheta para sempre.\n- Na Jam e a seguir um amigo não salta (a música é a deles). Se quatro seguidas não carregarem, pára e diz \"Songs aren't loading right now\", em vez de varrer a fila toda.\n- A pesquisa já não espera 10 segundos quando o YouTube não responde: ao fim de 4 passa à alternativa.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.1.5/docs/VERIFICAR-5.1.5.md\nComparar com Windows 5.1.4: https://github.com/joaoafonso2004/duotone/compare/win-v5.1.4...win-v5.1.5",
+        "publishedAt": "2026-10-16T19:27:21Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.1.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116101127,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.4/Duotone-Setup.exe",
+          "size": 116102041,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.5/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.4/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.5/Duotone-Setup.exe"
       }
     }
   }
