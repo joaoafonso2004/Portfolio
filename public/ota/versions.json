@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T14:51:52.574Z",
+  "generatedAt": "2026-10-16T17:02:27.029Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.2/Duotone.ipa"
       },
       "windows": {
-        "version": "5.1.2",
-        "tag": "win-v5.1.2",
-        "notes": "Duotone para Windows 5.1.2 — uma música que não arranca já não pára tudo\n\nNovo nesta versão:\n- Uma música que não arranca já não deixa a reprodução parada com \"This track did not start\": a app tenta a mesma outra vez e, se voltar a falhar, passa à seguinte. Sem internet continua à espera, em vez de saltar a fila toda.\n- O coração de guardar reage logo ao carregar, não ao largar: ao guardar enche e saltam umas faíscas, ao tirar encolhe até desaparecer. Na barra do leitor, no Now Playing e no mini leitor.\n- Volume: a barra segue o ouvido. Perto do mínimo já fica baixo a sério; o máximo é o mesmo de antes.\n- Temporizador: nova opção \"End of track\", que pára quando a música que está a tocar acaba.\n- Radio: um lançamento novo de um artista que ouves entra no Radio, e dentro do género vêm primeiro as músicas mais ouvidas.\n- A página inicial chama-se Home, como no iPhone.\n- Liked Songs e Artists: uma falha de rede já não aparece como \"0 songs\". Aparece \"Couldn't load your library\" com \"Try again\", e atualizar já não esconde a lista enquanto carrega.\n- O menu de uma música mostra logo se ela está nas Liked Songs, sem \"Checking your library…\". Numa playlist de outra pessoa já não oferece \"Remove from this playlist\", e o menu da fila ou do leitor já não o herda da página de baixo.\n- Uma música com vários artistas separados por vírgulas já não troca o título com o artista (o caso \"Timeless\").\n- Menos pedidos ao servidor por cada música ouvida.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.1.2/docs/VERIFICAR-5.1.2.md\nComparar com Windows 5.1.1: https://github.com/joaoafonso2004/duotone/compare/win-v5.1.1...win-v5.1.2",
-        "publishedAt": "2026-10-16T14:45:46Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.1.2",
+        "version": "5.1.3",
+        "tag": "win-v5.1.3",
+        "notes": "Duotone para Windows 5.1.3 — músicas que carregam depois de um skip, e a Jam que entra\n\nNovo nesta versão:\n- Quando uma música fica a carregar sem nunca começar, a app passa a usar um leitor novo em vez de insistir no que encravou. Era isso que fazia \"dou skip, volto atrás e não carrega\". Se voltar a falhar, procura outra cópia da mesma música, e só salta se não houver nenhuma.\n- Se saltares uma música que estava há mais de 4 segundos a carregar, a seguinte já começa num leitor novo.\n- Jam: quem entra numa sala já não fica para sempre em \"Loading · 0%\". Uma música que não carrega no teu PC continua a ser tentada, e nunca é saltada ou trocada para os outros.\n- Radio: parte sempre da música que está a tocar. O que ouviste antes de o ligar já não conta — um Radio ligado num rap já não te traz o funk que ouviste há meia hora.\n- O equalizador abre sem escurecer o leitor por trás.\n- Definições mais fáceis de ler: as explicações passam de 10 para 12 px, e os nomes das opções ficam maiores.\n- Quando uma música falha, a mensagem aparece por baixo do título, onde está o artista, em vez de uma linha minúscula ao lado do volume.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.1.3/docs/VERIFICAR-5.1.3.md\nComparar com Windows 5.1.2: https://github.com/joaoafonso2004/duotone/compare/win-v5.1.2...win-v5.1.3",
+        "publishedAt": "2026-10-16T17:02:13Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.1.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116101932,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.2/Duotone-Setup.exe",
+          "size": 116102056,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.3/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.2/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.3/Duotone-Setup.exe"
       }
     }
   }
