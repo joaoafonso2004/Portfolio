@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.1.9",
+          "date": "2026-10-18T17:14:20Z",
+          "localizedDescription": "Duotone iOS 5.1.9 — a 5.1.8 (o Mix, e o Speed volta a funcionar)\n\nNo iPhone é igual à 5.1.8: a 5.1.9 sai para o Windows ter a mesma versão (lá a 5.1.8 não chegou a sair). O que trouxe a 5.1.8:\n- O Radio tem dois lados. Com ele desligado, carregar na pastilha do Up next abre um menu que nasce da própria pastilha: \"Songs like this one\" (o Radio de sempre, a partir da música que toca) ou \"Mix\" (de tudo o que ouves: os teus artistas a rodar, metade músicas tuas e metade novas parecidas). Ligado, a pastilha diz \"Radio on\" ou \"Mix on\", e carregar desliga como antes.\n- O Mix não faz pedidos ao servidor para saber o que ouves: lê o histórico do iPhone.\n- Abrir a app já não te mete numa Jam antiga sem saberes. Era isso que deixava o Speed preso a 1x e fazia a música pausar sozinha: só voltas a uma Jam em que este iPhone esteve nos últimos 15 minutos.\n- Dentro de uma Jam o Speed diz porque está a 1x (\"Everyone plays at 1x in a Jam\"), em vez de parecer avariado.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.9/docs/VERIFICAR-5.1.9.md\nComparar com iOS 5.1.8: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.8...ios-v5.1.9",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.9/Duotone.ipa",
+          "size": 15897542,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.1.8",
           "date": "2026-10-18T03:26:58Z",
           "localizedDescription": "Duotone iOS 5.1.8 — o Mix, e o Speed volta a funcionar\n\nNovo nesta versão:\n- O Radio tem dois lados. Com ele desligado, carregar na pastilha do Up next abre um menu que nasce da própria pastilha: \"Songs like this one\" (o Radio de sempre, a partir da música que toca) ou \"Mix\" (de tudo o que ouves: os teus artistas a rodar, metade músicas tuas e metade novas parecidas). Ligado, a pastilha diz \"Radio on\" ou \"Mix on\", e carregar desliga como antes.\n- O Mix não faz pedidos ao servidor para saber o que ouves: lê o histórico do iPhone.\n- Abrir a app já não te mete numa Jam antiga sem saberes. Era isso que deixava o Speed preso a 1x e fazia a música pausar sozinha: só voltas a uma Jam em que este iPhone esteve nos últimos 15 minutos.\n- Dentro de uma Jam o Speed diz porque está a 1x (\"Everyone plays at 1x in a Jam\"), em vez de parecer avariado.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.8/docs/VERIFICAR-5.1.8.md\nComparar com iOS 5.1.7: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.7...ios-v5.1.8",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.1/Duotone.ipa",
           "size": 15846255,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.0.0",
-          "date": "2026-10-11T21:20:49Z",
-          "localizedDescription": "Duotone iOS 5.0.0 — o perfil novo, e a app à tua maneira\n\nNovo nesta versão:\n- O perfil foi refeito: a capa é o cabeçalho. A fotografia dissolve-se na cor dela, que desce pela página sem aresta nenhuma, e por cima, à esquerda, ficam a tua cara (maior), o nome grande, o @, a bio e o Edit profile. Já não há a zona preta debaixo da capa.\n- A folha de um amigo no Social desce ao fechar, em vez de desaparecer de um instante para o outro.\n\nO que a série 4.9 trouxe, em resumo:\n- Customise: temas (Duotone, Minimal, Glow, OLED) e cada opção à mão, para a app e para o leitor (capa Floating 3D, Simple ou Full, fundo desfocado, cor da capa, gradiente ou preto, títulos Serif/Mono, letras S/M/L, secções da Home).\n- As folhas e os menus seguem o tema: grafite em Dark, preto em OLED, a capa desfocada com o destaque Cover.\n- New releases dos teus artistas, \"Most played\"/\"Newest\" na página de um artista, letras com tempos em muito mais músicas.\n- EQ por aparelho (um preset para os AirPods, outro para a coluna), guardar a fila como playlist, e o Share com pesquisa e várias pessoas de uma vez.\n- O artista certo nas músicas com convidados, o Radio que arranca sempre, e o Mix de um artista sobretudo dele.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.0.0/docs/VERIFICAR-5.0.0.md\nComparar com iOS 4.9.3: https://github.com/joaoafonso2004/duotone/compare/ios-v4.9.3...ios-v5.0.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.0/Duotone.ipa",
-          "size": 15848053,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.1.8",
-      "versionDate": "2026-10-18T03:26:58Z",
-      "versionDescription": "Duotone iOS 5.1.8 — o Mix, e o Speed volta a funcionar\n\nNovo nesta versão:\n- O Radio tem dois lados. Com ele desligado, carregar na pastilha do Up next abre um menu que nasce da própria pastilha: \"Songs like this one\" (o Radio de sempre, a partir da música que toca) ou \"Mix\" (de tudo o que ouves: os teus artistas a rodar, metade músicas tuas e metade novas parecidas). Ligado, a pastilha diz \"Radio on\" ou \"Mix on\", e carregar desliga como antes.\n- O Mix não faz pedidos ao servidor para saber o que ouves: lê o histórico do iPhone.\n- Abrir a app já não te mete numa Jam antiga sem saberes. Era isso que deixava o Speed preso a 1x e fazia a música pausar sozinha: só voltas a uma Jam em que este iPhone esteve nos últimos 15 minutos.\n- Dentro de uma Jam o Speed diz porque está a 1x (\"Everyone plays at 1x in a Jam\"), em vez de parecer avariado.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.8/docs/VERIFICAR-5.1.8.md\nComparar com iOS 5.1.7: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.7...ios-v5.1.8",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.8/Duotone.ipa",
-      "size": 15897371
+      "version": "5.1.9",
+      "versionDate": "2026-10-18T17:14:20Z",
+      "versionDescription": "Duotone iOS 5.1.9 — a 5.1.8 (o Mix, e o Speed volta a funcionar)\n\nNo iPhone é igual à 5.1.8: a 5.1.9 sai para o Windows ter a mesma versão (lá a 5.1.8 não chegou a sair). O que trouxe a 5.1.8:\n- O Radio tem dois lados. Com ele desligado, carregar na pastilha do Up next abre um menu que nasce da própria pastilha: \"Songs like this one\" (o Radio de sempre, a partir da música que toca) ou \"Mix\" (de tudo o que ouves: os teus artistas a rodar, metade músicas tuas e metade novas parecidas). Ligado, a pastilha diz \"Radio on\" ou \"Mix on\", e carregar desliga como antes.\n- O Mix não faz pedidos ao servidor para saber o que ouves: lê o histórico do iPhone.\n- Abrir a app já não te mete numa Jam antiga sem saberes. Era isso que deixava o Speed preso a 1x e fazia a música pausar sozinha: só voltas a uma Jam em que este iPhone esteve nos últimos 15 minutos.\n- Dentro de uma Jam o Speed diz porque está a 1x (\"Everyone plays at 1x in a Jam\"), em vez de parecer avariado.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.9/docs/VERIFICAR-5.1.9.md\nComparar com iOS 5.1.8: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.8...ios-v5.1.9",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.9/Duotone.ipa",
+      "size": 15897542
     }
   ],
   "news": []
