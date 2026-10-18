@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.2.0",
+          "date": "2026-10-18T19:41:24Z",
+          "localizedDescription": "Duotone iOS 5.2.0 — a pausa do ecrã bloqueado fica pausada\n\nNovo nesta versão:\n- Pausar no ecrã bloqueado, no Centro de Controlo, nos AirPods ou no carro é uma pausa a sério: a música já não volta sozinha uns segundos depois. Antes, a app achava que a música tinha encravado e voltava a pô-la a tocar.\n- Carregar em play nesses sítios com a app em pausa também passa a contar: a app fica a saber que está a tocar.\n- Uma chamada que chega logo a seguir a uma pausa continua a retomar a música quando acaba.\n\nDa 5.1.8 (para quem vem de antes): o Radio com dois lados (\"Songs like this one\" e \"Mix\", num menu que nasce da pastilha), o Mix de tudo o que ouves, e abrir a app já não te mete numa Jam antiga (o Speed volta a funcionar).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.2.0/docs/VERIFICAR-5.2.0.md\nComparar com iOS 5.1.9: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.9...ios-v5.2.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.2.0/Duotone.ipa",
+          "size": 15899623,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.1.9",
           "date": "2026-10-18T17:14:20Z",
           "localizedDescription": "Duotone iOS 5.1.9 — a 5.1.8 (o Mix, e o Speed volta a funcionar)\n\nNo iPhone é igual à 5.1.8: a 5.1.9 sai para o Windows ter a mesma versão (lá a 5.1.8 não chegou a sair). O que trouxe a 5.1.8:\n- O Radio tem dois lados. Com ele desligado, carregar na pastilha do Up next abre um menu que nasce da própria pastilha: \"Songs like this one\" (o Radio de sempre, a partir da música que toca) ou \"Mix\" (de tudo o que ouves: os teus artistas a rodar, metade músicas tuas e metade novas parecidas). Ligado, a pastilha diz \"Radio on\" ou \"Mix on\", e carregar desliga como antes.\n- O Mix não faz pedidos ao servidor para saber o que ouves: lê o histórico do iPhone.\n- Abrir a app já não te mete numa Jam antiga sem saberes. Era isso que deixava o Speed preso a 1x e fazia a música pausar sozinha: só voltas a uma Jam em que este iPhone esteve nos últimos 15 minutos.\n- Dentro de uma Jam o Speed diz porque está a 1x (\"Everyone plays at 1x in a Jam\"), em vez de parecer avariado.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.9/docs/VERIFICAR-5.1.9.md\nComparar com iOS 5.1.8: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.8...ios-v5.1.9",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.1/Duotone.ipa",
           "size": 15852869,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.0.1",
-          "date": "2026-10-11T23:36:46Z",
-          "localizedDescription": "Duotone iOS 5.0.1 — o Social mais arrumado\n\nNovo nesta versão:\n- O \"Listening now\" do Social é igual ao da Home: a mesma fila de amigos, e por baixo as Jams abertas.\n- Conversa nova é um \"+\" no canto do Social, em vez da caneta.\n- Na folha da música de um amigo, o \"Message\" está em cima, ao lado do nome, em vez de no fundo.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.0.1/docs/VERIFICAR-5.0.1.md\nComparar com iOS 5.0.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.0.0...ios-v5.0.1",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.1/Duotone.ipa",
-          "size": 15846255,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.1.9",
-      "versionDate": "2026-10-18T17:14:20Z",
-      "versionDescription": "Duotone iOS 5.1.9 — a 5.1.8 (o Mix, e o Speed volta a funcionar)\n\nNo iPhone é igual à 5.1.8: a 5.1.9 sai para o Windows ter a mesma versão (lá a 5.1.8 não chegou a sair). O que trouxe a 5.1.8:\n- O Radio tem dois lados. Com ele desligado, carregar na pastilha do Up next abre um menu que nasce da própria pastilha: \"Songs like this one\" (o Radio de sempre, a partir da música que toca) ou \"Mix\" (de tudo o que ouves: os teus artistas a rodar, metade músicas tuas e metade novas parecidas). Ligado, a pastilha diz \"Radio on\" ou \"Mix on\", e carregar desliga como antes.\n- O Mix não faz pedidos ao servidor para saber o que ouves: lê o histórico do iPhone.\n- Abrir a app já não te mete numa Jam antiga sem saberes. Era isso que deixava o Speed preso a 1x e fazia a música pausar sozinha: só voltas a uma Jam em que este iPhone esteve nos últimos 15 minutos.\n- Dentro de uma Jam o Speed diz porque está a 1x (\"Everyone plays at 1x in a Jam\"), em vez de parecer avariado.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.9/docs/VERIFICAR-5.1.9.md\nComparar com iOS 5.1.8: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.8...ios-v5.1.9",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.9/Duotone.ipa",
-      "size": 15897542
+      "version": "5.2.0",
+      "versionDate": "2026-10-18T19:41:24Z",
+      "versionDescription": "Duotone iOS 5.2.0 — a pausa do ecrã bloqueado fica pausada\n\nNovo nesta versão:\n- Pausar no ecrã bloqueado, no Centro de Controlo, nos AirPods ou no carro é uma pausa a sério: a música já não volta sozinha uns segundos depois. Antes, a app achava que a música tinha encravado e voltava a pô-la a tocar.\n- Carregar em play nesses sítios com a app em pausa também passa a contar: a app fica a saber que está a tocar.\n- Uma chamada que chega logo a seguir a uma pausa continua a retomar a música quando acaba.\n\nDa 5.1.8 (para quem vem de antes): o Radio com dois lados (\"Songs like this one\" e \"Mix\", num menu que nasce da pastilha), o Mix de tudo o que ouves, e abrir a app já não te mete numa Jam antiga (o Speed volta a funcionar).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.2.0/docs/VERIFICAR-5.2.0.md\nComparar com iOS 5.1.9: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.9...ios-v5.2.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.2.0/Duotone.ipa",
+      "size": 15899623
     }
   ],
   "news": []
