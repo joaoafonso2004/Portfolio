@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T10:11:21.661Z",
+  "generatedAt": "2026-10-18T17:08:04.161Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.8/Duotone.ipa"
       },
       "windows": {
-        "version": "5.1.7",
-        "tag": "win-v5.1.7",
-        "notes": "Duotone para Windows 5.1.7 — menos pedidos ao servidor\n\nNovo nesta versão:\n- O PC deixa de fazer uma pergunta extra antes de cada pedido ao servidor (o \"OPTIONS\" do browser). Os pedidos passam pelo processo da app, que não precisa dela. Era cerca de 1 em cada 5 linhas de log do servidor.\n- O \"online\" que os amigos veem renova-se de 10 em 10 minutos em vez de 3 (precisa do SQL `supabase/presenca-quinze-minutos.sql`). Voltar à janela, por exemplo ao sair de um jogo, já não volta a ler os teus outros aparelhos sem motivo. Numa conta com um só aparelho, a sessão do \"Continue here\" deixa de se gravar a cada música.\n- Se a app fechar sem aviso a meio de uma música, os amigos deixam de te ver \"a ouvir\" quando essa música acabava.\n- O relatório de reprodução (Settings → Save playback report) diz quantos pedidos a app fez ao servidor, e a quê.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.1.7/docs/VERIFICAR-5.1.7.md\nComparar com Windows 5.1.6: https://github.com/joaoafonso2004/duotone/compare/win-v5.1.6...win-v5.1.7",
-        "publishedAt": "2026-10-17T16:09:36Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.1.7",
+        "version": "5.1.9",
+        "tag": "win-v5.1.9",
+        "notes": "Duotone para Windows 5.1.9 — o Mix, e o Speed volta a funcionar\n\nNovo nesta versão:\n- O Radio tem dois lados. Com ele desligado, carregar na pastilha da fila abre um menu que nasce da própria pastilha: \"Songs like this one\" (o Radio de sempre, a partir da música que toca) ou \"Mix\" (de tudo o que ouves: os teus artistas a rodar, metade músicas tuas e metade novas parecidas). Ligado, a pastilha diz \"Radio on\" ou \"Mix on\", e carregar desliga como antes. O menu fecha com Esc ou com um clique fora.\n- O Mix não faz pedidos ao servidor para saber o que ouves: lê o histórico do computador.\n- Abrir a app já não te mete numa Jam antiga sem saberes. Só voltas a uma Jam em que este PC esteve nos últimos 15 minutos.\n- Dentro de uma Jam o Speed diz porque está a 1x (\"Everyone plays at 1x in a Jam\"), em vez de parecer avariado.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.1.9/docs/VERIFICAR-5.1.9.md\nComparar com Windows 5.1.7: https://github.com/joaoafonso2004/duotone/compare/win-v5.1.7...win-v5.1.9",
+        "publishedAt": "2026-10-18T17:07:52Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.1.9",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116103543,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.7/Duotone-Setup.exe",
-          "downloads": 5
+          "size": 116108901,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.9/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.7/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.9/Duotone-Setup.exe"
       }
     }
   }
