@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-17T16:18:53.061Z",
+  "generatedAt": "2026-10-18T03:27:13.949Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.1.7",
-        "tag": "ios-v5.1.7",
-        "notes": "Duotone iOS 5.1.7 — menos pedidos ao servidor\n\nNovo nesta versão:\n- A app faz bem menos pedidos ao servidor, para não passar os limites do plano gratuito. O \"online\" que os amigos veem renova-se de 10 em 10 minutos em vez de 3 (precisa do SQL `supabase/presenca-quinze-minutos.sql`). Numa conta com um só aparelho, a sessão do \"Continue here\" deixa de se gravar a cada música, porque não há outro aparelho que a leia.\n- Se a app fechar sem aviso a meio de uma música (por exemplo, fechada no seletor de apps), os amigos deixam de te ver \"a ouvir\" quando essa música acabava.\n- O relatório de reprodução diz quantos pedidos a app fez ao servidor, e a quê.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.7/docs/VERIFICAR-5.1.7.md\nComparar com iOS 5.1.6: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.6...ios-v5.1.7",
-        "publishedAt": "2026-10-17T16:18:35Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.1.7",
+        "version": "5.1.8",
+        "tag": "ios-v5.1.8",
+        "notes": "Duotone iOS 5.1.8 — o Mix, e o Speed volta a funcionar\n\nNovo nesta versão:\n- O Radio tem dois lados. Com ele desligado, carregar na pastilha do Up next abre um menu que nasce da própria pastilha: \"Songs like this one\" (o Radio de sempre, a partir da música que toca) ou \"Mix\" (de tudo o que ouves: os teus artistas a rodar, metade músicas tuas e metade novas parecidas). Ligado, a pastilha diz \"Radio on\" ou \"Mix on\", e carregar desliga como antes.\n- O Mix não faz pedidos ao servidor para saber o que ouves: lê o histórico do iPhone.\n- Abrir a app já não te mete numa Jam antiga sem saberes. Era isso que deixava o Speed preso a 1x e fazia a música pausar sozinha: só voltas a uma Jam em que este iPhone esteve nos últimos 15 minutos.\n- Dentro de uma Jam o Speed diz porque está a 1x (\"Everyone plays at 1x in a Jam\"), em vez de parecer avariado.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.8/docs/VERIFICAR-5.1.8.md\nComparar com iOS 5.1.7: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.7...ios-v5.1.8",
+        "publishedAt": "2026-10-18T03:26:58Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.1.8",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15884327,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.7/Duotone.ipa",
+          "size": 15897371,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.8/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.7/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.8/Duotone.ipa"
       },
       "windows": {
         "version": "5.1.7",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 116103543,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.7/Duotone-Setup.exe",
-          "downloads": 0
+          "downloads": 5
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.1.7/Duotone-Setup.exe"
       }

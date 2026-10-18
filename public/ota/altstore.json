@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.1.8",
+          "date": "2026-10-18T03:26:58Z",
+          "localizedDescription": "Duotone iOS 5.1.8 — o Mix, e o Speed volta a funcionar\n\nNovo nesta versão:\n- O Radio tem dois lados. Com ele desligado, carregar na pastilha do Up next abre um menu que nasce da própria pastilha: \"Songs like this one\" (o Radio de sempre, a partir da música que toca) ou \"Mix\" (de tudo o que ouves: os teus artistas a rodar, metade músicas tuas e metade novas parecidas). Ligado, a pastilha diz \"Radio on\" ou \"Mix on\", e carregar desliga como antes.\n- O Mix não faz pedidos ao servidor para saber o que ouves: lê o histórico do iPhone.\n- Abrir a app já não te mete numa Jam antiga sem saberes. Era isso que deixava o Speed preso a 1x e fazia a música pausar sozinha: só voltas a uma Jam em que este iPhone esteve nos últimos 15 minutos.\n- Dentro de uma Jam o Speed diz porque está a 1x (\"Everyone plays at 1x in a Jam\"), em vez de parecer avariado.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.8/docs/VERIFICAR-5.1.8.md\nComparar com iOS 5.1.7: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.7...ios-v5.1.8",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.8/Duotone.ipa",
+          "size": 15897371,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.1.7",
           "date": "2026-10-17T16:18:35Z",
           "localizedDescription": "Duotone iOS 5.1.7 — menos pedidos ao servidor\n\nNovo nesta versão:\n- A app faz bem menos pedidos ao servidor, para não passar os limites do plano gratuito. O \"online\" que os amigos veem renova-se de 10 em 10 minutos em vez de 3 (precisa do SQL `supabase/presenca-quinze-minutos.sql`). Numa conta com um só aparelho, a sessão do \"Continue here\" deixa de se gravar a cada música, porque não há outro aparelho que a leia.\n- Se a app fechar sem aviso a meio de uma música (por exemplo, fechada no seletor de apps), os amigos deixam de te ver \"a ouvir\" quando essa música acabava.\n- O relatório de reprodução diz quantos pedidos a app fez ao servidor, e a quê.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.7/docs/VERIFICAR-5.1.7.md\nComparar com iOS 5.1.6: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.6...ios-v5.1.7",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.0.0/Duotone.ipa",
           "size": 15848053,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "4.9.3",
-          "date": "2026-10-11T20:05:58Z",
-          "localizedDescription": "Duotone iOS 4.9.3 — menus na cor do tema, fila sem fundos e o artista certo\n\n- O menu \"…\", Edit profile, Recommendations…, Start a conversation, Find people, Group details, as confirmações e a partilha de playlists seguem a cor das outras folhas: grafite em Dark, preto em OLED, a capa desfocada com o destaque Cover.\n- Essas folhas fecham a arrastar a pega ou o cabeçalho para baixo.\n- As músicas na fila (e nas playlists) já não têm um fundo escuro por linha; o vermelho do \"Remove\" só aparece no que a linha destapa ao deslizar.\n- A folha de um álbum mostra mais músicas: a lista ocupa cerca de metade do ecrã (eram três).\n- O mini leitor já não pisca depois de o deslizar para fechar.\n- Artista certo nas músicas com um convidado entre parênteses, como \"wokeuplikethis* (feat. Lil Uzi Vert)\": mostra o Playboi Carti. Uma já guardada corrige-se depois de abrir uma vez a página de um dos artistas.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v4.9.3/docs/VERIFICAR-4.9.3.md\nComparar com iOS 4.9.2: https://github.com/joaoafonso2004/duotone/compare/ios-v4.9.2...ios-v4.9.3",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v4.9.3/Duotone.ipa",
-          "size": 15847637,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.1.7",
-      "versionDate": "2026-10-17T16:18:35Z",
-      "versionDescription": "Duotone iOS 5.1.7 — menos pedidos ao servidor\n\nNovo nesta versão:\n- A app faz bem menos pedidos ao servidor, para não passar os limites do plano gratuito. O \"online\" que os amigos veem renova-se de 10 em 10 minutos em vez de 3 (precisa do SQL `supabase/presenca-quinze-minutos.sql`). Numa conta com um só aparelho, a sessão do \"Continue here\" deixa de se gravar a cada música, porque não há outro aparelho que a leia.\n- Se a app fechar sem aviso a meio de uma música (por exemplo, fechada no seletor de apps), os amigos deixam de te ver \"a ouvir\" quando essa música acabava.\n- O relatório de reprodução diz quantos pedidos a app fez ao servidor, e a quê.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.7/docs/VERIFICAR-5.1.7.md\nComparar com iOS 5.1.6: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.6...ios-v5.1.7",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.7/Duotone.ipa",
-      "size": 15884327
+      "version": "5.1.8",
+      "versionDate": "2026-10-18T03:26:58Z",
+      "versionDescription": "Duotone iOS 5.1.8 — o Mix, e o Speed volta a funcionar\n\nNovo nesta versão:\n- O Radio tem dois lados. Com ele desligado, carregar na pastilha do Up next abre um menu que nasce da própria pastilha: \"Songs like this one\" (o Radio de sempre, a partir da música que toca) ou \"Mix\" (de tudo o que ouves: os teus artistas a rodar, metade músicas tuas e metade novas parecidas). Ligado, a pastilha diz \"Radio on\" ou \"Mix on\", e carregar desliga como antes.\n- O Mix não faz pedidos ao servidor para saber o que ouves: lê o histórico do iPhone.\n- Abrir a app já não te mete numa Jam antiga sem saberes. Era isso que deixava o Speed preso a 1x e fazia a música pausar sozinha: só voltas a uma Jam em que este iPhone esteve nos últimos 15 minutos.\n- Dentro de uma Jam o Speed diz porque está a 1x (\"Everyone plays at 1x in a Jam\"), em vez de parecer avariado.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.8/docs/VERIFICAR-5.1.8.md\nComparar com iOS 5.1.7: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.7...ios-v5.1.8",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.8/Duotone.ipa",
+      "size": 15897371
     }
   ],
   "news": []
