@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T10:46:05.888Z",
+  "generatedAt": "2026-10-20T14:14:36.623Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.2.0/Duotone.ipa"
       },
       "windows": {
-        "version": "5.2.0",
-        "tag": "win-v5.2.0",
-        "notes": "Duotone para Windows 5.2.0 — a mesma versão do iPhone\n\nNo Windows a 5.2.0 é igual à 5.1.9: a correção desta versão (a pausa no ecrã bloqueado e nos AirPods) é só do iPhone. Sai para as duas apps terem o mesmo número.\n\nDa 5.1.9 (para quem vem de antes): o Radio com dois lados (\"Songs like this one\" e \"Mix\", num menu que nasce da pastilha), o Mix de tudo o que ouves, e abrir a app já não te mete numa Jam antiga (o Speed volta a funcionar).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.2.0/docs/VERIFICAR-5.2.0.md\nComparar com Windows 5.1.9: https://github.com/joaoafonso2004/duotone/compare/win-v5.1.9...win-v5.2.0",
-        "publishedAt": "2026-10-18T19:35:11Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.2.0",
+        "version": "5.3.0",
+        "tag": "win-v5.3.0",
+        "notes": "Duotone para Windows 5.3.0 — a Jam sem estalo no início, e a app inteira por teclado\n\nNovo nesta versão:\n- Jam: cada música nova começa já no sítio onde a sala vai, sem som até estar certa. Acaba o estalo com o salto de um segundo logo no início das músicas.\n- O Now Playing sai como entra: ao voltar ou ao ir para outra página, apaga-se devagar, e a cor da capa sai da janela ao mesmo passo.\n- Com muitos atalhos fixados, a lista \"Pinned\" da lateral rola até aos de baixo.\n- Teclado: os diálogos recebem o foco, o Tab não sai deles e o Escape fecha só o de cima. O volume e a barra da música andam com as setas. Os botões de ícone dizem o nome (e o atalho) ao passar o rato, e o anel do foco vê-se em qualquer botão, incluindo o Play.\n- Um botão ligado (shuffle, repeat, uma aba) já não se confunde com um botão com o rato por cima. \"Saving…\" e \"Loading…\" mostram a roda e ficam acesos, em vez de parecerem desativados.\n- Pesquisar mostra logo as tuas músicas e não as tira quando a rede falha. Uma falha tem \"Try again\".\n- O botão direito nos New releases abre o menu do lançamento, e as pesquisas recentes da Home só aparecem com a caixa de pesquisa em foco.\n- O mini leitor tem as cores e a letra da janela principal.\n- Numa Jam, o Radio apagado diz porquê ao passar o rato.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.3.0/docs/VERIFICAR-5.3.0.md\nComparar com Windows 5.2.0: https://github.com/joaoafonso2004/duotone/compare/win-v5.2.0...win-v5.3.0",
+        "publishedAt": "2026-10-20T14:14:18Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.3.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116108852,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.2.0/Duotone-Setup.exe",
-          "downloads": 7
+          "size": 116113114,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.2.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.0/Duotone-Setup.exe"
       }
     }
   }
