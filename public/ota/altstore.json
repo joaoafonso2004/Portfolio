@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.3.0",
+          "date": "2026-10-20T14:16:36Z",
+          "localizedDescription": "Duotone iOS 5.3.0 — a pesquisa não esconde o que é teu, e um botão a carregar já não parece desligado\n\nNovo nesta versão:\n- Pesquisar mostra logo as tuas músicas (\"In your library\"), sem esperar pela pesquisa online, e não as tira quando a rede falha. Uma falha diz \"Couldn't search online\" com \"Try again\", que repete a mesma pesquisa.\n- Um botão que já começou a fazer alguma coisa (guardar, importar, ligar o Spotify) mostra a roda ao lado do texto e fica aceso. Antes apagava-se e parecia desativado.\n- Numa Jam, tocar no Radio quando não és tu a mandar diz porquê: só o anfitrião o liga, a não ser que ele ligue \"Guests can control\".\n- O Mix do artista em destaque na pesquisa é mais fácil de acertar com o dedo.\n- Acabamento: as capas pequenas têm todas o mesmo canto, e alguns textos que estavam a meio ponto ficaram no tamanho dos outros.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.0/docs/VERIFICAR-5.3.0.md\nComparar com iOS 5.2.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.2.0...ios-v5.3.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.0/Duotone.ipa",
+          "size": 15901663,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.2.0",
           "date": "2026-10-18T19:41:24Z",
           "localizedDescription": "Duotone iOS 5.2.0 — a pausa do ecrã bloqueado fica pausada\n\nNovo nesta versão:\n- Pausar no ecrã bloqueado, no Centro de Controlo, nos AirPods ou no carro é uma pausa a sério: a música já não volta sozinha uns segundos depois. Antes, a app achava que a música tinha encravado e voltava a pô-la a tocar.\n- Carregar em play nesses sítios com a app em pausa também passa a contar: a app fica a saber que está a tocar.\n- Uma chamada que chega logo a seguir a uma pausa continua a retomar a música quando acaba.\n\nDa 5.1.8 (para quem vem de antes): o Radio com dois lados (\"Songs like this one\" e \"Mix\", num menu que nasce da pastilha), o Mix de tudo o que ouves, e abrir a app já não te mete numa Jam antiga (o Speed volta a funcionar).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.2.0/docs/VERIFICAR-5.2.0.md\nComparar com iOS 5.1.9: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.9...ios-v5.2.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.2/Duotone.ipa",
           "size": 15873709,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.1.1",
-          "date": "2026-10-15T21:45:45Z",
-          "localizedDescription": "Duotone iOS 5.1.1 — o Radio que não se repete\n\nNovo nesta versão:\n- O Radio e a música que continua sozinha no fim da fila já não repetem o que ouviste nas últimas 24 horas, as tuas músicas incluídas. Quando a música parecida acaba, segue a partir do que ouviste na sessão; só repete em último caso, e começa pelas que ouviste há mais tempo.\n- No fim de uma lista, a música que continua é sempre parecida com a que estavas a ouvir: já não salta para as tuas favoritas de outro género.\n- New releases volta a procurar lançamentos novos com a app aberta, alterna entre os favoritos e os artistas que mais ouves, e inclui artistas que ouves mas não guardaste.\n- Na página de um artista sem lista de músicas própria, \"Most played\" e \"Newest\" já ordenam: pelas visualizações e pela data de cada vídeo. Sem dados para ordenar, os botões não aparecem.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.1/docs/VERIFICAR-5.1.1.md\nComparar com iOS 5.0.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.0.1...ios-v5.1.1",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.1/Duotone.ipa",
-          "size": 15852869,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.2.0",
-      "versionDate": "2026-10-18T19:41:24Z",
-      "versionDescription": "Duotone iOS 5.2.0 — a pausa do ecrã bloqueado fica pausada\n\nNovo nesta versão:\n- Pausar no ecrã bloqueado, no Centro de Controlo, nos AirPods ou no carro é uma pausa a sério: a música já não volta sozinha uns segundos depois. Antes, a app achava que a música tinha encravado e voltava a pô-la a tocar.\n- Carregar em play nesses sítios com a app em pausa também passa a contar: a app fica a saber que está a tocar.\n- Uma chamada que chega logo a seguir a uma pausa continua a retomar a música quando acaba.\n\nDa 5.1.8 (para quem vem de antes): o Radio com dois lados (\"Songs like this one\" e \"Mix\", num menu que nasce da pastilha), o Mix de tudo o que ouves, e abrir a app já não te mete numa Jam antiga (o Speed volta a funcionar).\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.2.0/docs/VERIFICAR-5.2.0.md\nComparar com iOS 5.1.9: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.9...ios-v5.2.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.2.0/Duotone.ipa",
-      "size": 15899623
+      "version": "5.3.0",
+      "versionDate": "2026-10-20T14:16:36Z",
+      "versionDescription": "Duotone iOS 5.3.0 — a pesquisa não esconde o que é teu, e um botão a carregar já não parece desligado\n\nNovo nesta versão:\n- Pesquisar mostra logo as tuas músicas (\"In your library\"), sem esperar pela pesquisa online, e não as tira quando a rede falha. Uma falha diz \"Couldn't search online\" com \"Try again\", que repete a mesma pesquisa.\n- Um botão que já começou a fazer alguma coisa (guardar, importar, ligar o Spotify) mostra a roda ao lado do texto e fica aceso. Antes apagava-se e parecia desativado.\n- Numa Jam, tocar no Radio quando não és tu a mandar diz porquê: só o anfitrião o liga, a não ser que ele ligue \"Guests can control\".\n- O Mix do artista em destaque na pesquisa é mais fácil de acertar com o dedo.\n- Acabamento: as capas pequenas têm todas o mesmo canto, e alguns textos que estavam a meio ponto ficaram no tamanho dos outros.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.0/docs/VERIFICAR-5.3.0.md\nComparar com iOS 5.2.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.2.0...ios-v5.3.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.0/Duotone.ipa",
+      "size": 15901663
     }
   ],
   "news": []
