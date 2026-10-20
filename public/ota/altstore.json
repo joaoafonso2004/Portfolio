@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.3.1",
+          "date": "2026-10-20T17:14:54Z",
+          "localizedDescription": "Duotone iOS 5.3.1 — a mesma versão do Windows\n\nNo iPhone a 5.3.1 é igual à 5.3.0: as correções desta versão (o crossfade e o progresso das atualizações) são só do Windows. Sai para as duas apps terem o mesmo número.\n\nDa 5.3.0 (para quem vem de antes): a pesquisa mostra logo as tuas músicas e não as esconde quando a rede falha, um botão a carregar já não parece desligado, e o Radio da Jam diz porquê quando não o podes ligar.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.1/docs/VERIFICAR-5.3.1.md\nComparar com iOS 5.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.0...ios-v5.3.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.1/Duotone.ipa",
+          "size": 15901732,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.3.0",
           "date": "2026-10-20T14:16:36Z",
           "localizedDescription": "Duotone iOS 5.3.0 — a pesquisa não esconde o que é teu, e um botão a carregar já não parece desligado\n\nNovo nesta versão:\n- Pesquisar mostra logo as tuas músicas (\"In your library\"), sem esperar pela pesquisa online, e não as tira quando a rede falha. Uma falha diz \"Couldn't search online\" com \"Try again\", que repete a mesma pesquisa.\n- Um botão que já começou a fazer alguma coisa (guardar, importar, ligar o Spotify) mostra a roda ao lado do texto e fica aceso. Antes apagava-se e parecia desativado.\n- Numa Jam, tocar no Radio quando não és tu a mandar diz porquê: só o anfitrião o liga, a não ser que ele ligue \"Guests can control\".\n- O Mix do artista em destaque na pesquisa é mais fácil de acertar com o dedo.\n- Acabamento: as capas pequenas têm todas o mesmo canto, e alguns textos que estavam a meio ponto ficaram no tamanho dos outros.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.0/docs/VERIFICAR-5.3.0.md\nComparar com iOS 5.2.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.2.0...ios-v5.3.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.3/Duotone.ipa",
           "size": 15874539,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.1.2",
-          "date": "2026-10-16T14:51:36Z",
-          "localizedDescription": "Duotone iOS 5.1.2 — playlists sem rede e o menu compacto\n\nNovo nesta versão:\n- Sem rede, as Playlists e cada playlist abrem com a última cópia, em vez de \"You're offline\": a ordem, as capas e os artistas. Toca o que está no iPhone; as outras músicas ficam no lugar delas, apagadas. Cada playlist diz quantas músicas estão no iPhone.\n- O menu de uma música está mais curto: a capa e o coração em cima, \"Play next\", \"Queue\" e \"Playlist\" em quadrados, e o resto em grupos. Sem rede, um aviso só no topo. Abre sempre dentro do ecrã, nunca por baixo da ilha.\n- O coração de guardar reage logo ao carregar: ao guardar enche e saltam umas faíscas, ao tirar encolhe até desaparecer. No leitor, no mini leitor, nas conversas e na folha de um amigo.\n- Temporizador: nova opção \"End of track\", que pára quando a música que está a tocar acaba.\n- Radio: um lançamento novo de um artista que ouves entra no Radio, e dentro do género vêm primeiro as músicas mais ouvidas.\n- Liked Songs: uma falha de rede sem lista guardada já não diz \"Nothing here yet\"; diz \"Couldn't load your liked songs\", com \"Try again\".\n- Uma música com vários artistas separados por vírgulas já não troca o título com o artista (o caso \"Timeless\").\n- Menos pedidos ao servidor por cada música ouvida.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.2/docs/VERIFICAR-5.1.2.md\nComparar com iOS 5.1.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.1...ios-v5.1.2",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.2/Duotone.ipa",
-          "size": 15873709,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.3.0",
-      "versionDate": "2026-10-20T14:16:36Z",
-      "versionDescription": "Duotone iOS 5.3.0 — a pesquisa não esconde o que é teu, e um botão a carregar já não parece desligado\n\nNovo nesta versão:\n- Pesquisar mostra logo as tuas músicas (\"In your library\"), sem esperar pela pesquisa online, e não as tira quando a rede falha. Uma falha diz \"Couldn't search online\" com \"Try again\", que repete a mesma pesquisa.\n- Um botão que já começou a fazer alguma coisa (guardar, importar, ligar o Spotify) mostra a roda ao lado do texto e fica aceso. Antes apagava-se e parecia desativado.\n- Numa Jam, tocar no Radio quando não és tu a mandar diz porquê: só o anfitrião o liga, a não ser que ele ligue \"Guests can control\".\n- O Mix do artista em destaque na pesquisa é mais fácil de acertar com o dedo.\n- Acabamento: as capas pequenas têm todas o mesmo canto, e alguns textos que estavam a meio ponto ficaram no tamanho dos outros.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.0/docs/VERIFICAR-5.3.0.md\nComparar com iOS 5.2.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.2.0...ios-v5.3.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.0/Duotone.ipa",
-      "size": 15901663
+      "version": "5.3.1",
+      "versionDate": "2026-10-20T17:14:54Z",
+      "versionDescription": "Duotone iOS 5.3.1 — a mesma versão do Windows\n\nNo iPhone a 5.3.1 é igual à 5.3.0: as correções desta versão (o crossfade e o progresso das atualizações) são só do Windows. Sai para as duas apps terem o mesmo número.\n\nDa 5.3.0 (para quem vem de antes): a pesquisa mostra logo as tuas músicas e não as esconde quando a rede falha, um botão a carregar já não parece desligado, e o Radio da Jam diz porquê quando não o podes ligar.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.1/docs/VERIFICAR-5.3.1.md\nComparar com iOS 5.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.0...ios-v5.3.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.1/Duotone.ipa",
+      "size": 15901732
     }
   ],
   "news": []
