@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T10:57:13.032Z",
+  "generatedAt": "2026-10-22T22:23:39.045Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15901732,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.1/Duotone.ipa",
-          "downloads": 1
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.1/Duotone.ipa"
       },
       "windows": {
-        "version": "5.3.1",
-        "tag": "win-v5.3.1",
-        "notes": "Duotone para Windows 5.3.1 — o crossfade sem o segundo da música seguinte\n\nNovo nesta versão:\n- Crossfade: a música seguinte já não se ouve um segundo antes de a passagem começar. Ela prepara-se calada noutro player, mas o player do YouTube podia repor-lhe o som ao carregar; agora fica calada até à passagem.\n- Atualizações: o About diz quanto falta ao download da versão nova (\"Downloading Duotone… 36%\"), em vez de ficar em \"Checking for updates…\" o download inteiro. Aparece a partir da próxima atualização.\n\nDa 5.3.0 (para quem vem de antes): a Jam sem estalo no início das músicas, o Now Playing que sai como entra, a lista \"Pinned\" que rola, e a app inteira por teclado.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.3.1/docs/VERIFICAR-5.3.1.md\nComparar com Windows 5.3.0: https://github.com/joaoafonso2004/duotone/compare/win-v5.3.0...win-v5.3.1",
-        "publishedAt": "2026-10-20T17:12:00Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.3.1",
+        "version": "5.3.2",
+        "tag": "win-v5.3.2",
+        "notes": "Duotone para Windows 5.3.2 — a página do artista nova\n\nNovo nesta versão:\n- Artistas: uma página nova. Um cabeçalho com a foto e os fãs, as tuas músicas primeiro (marcadas com o coração) e depois as outras dele, dez à vista com \"See all songs\", o último lançamento e \"Fans also like\" ao lado, e os álbuns e os singles e EPs em carrosséis por baixo. O Play toca a página toda.\n- Já não aparece \"0 saved tracks\" no cabeçalho de um artista enquanto a página carrega.\n- Amigos: quando um amigo começa a ouvir, a música dele aparece mais depressa. Uma publicação falhada ou pendurada deixava-o só \"Online\" até ao batimento seguinte.\n\nDa 5.3.1 (para quem vem de antes): o crossfade sem o segundo da música seguinte, e o About com o progresso do download de uma versão nova.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.3.2/docs/VERIFICAR-5.3.2.md\nComparar com Windows 5.3.1: https://github.com/joaoafonso2004/duotone/compare/win-v5.3.1...win-v5.3.2",
+        "publishedAt": "2026-10-22T22:23:17Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.3.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116114144,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.1/Duotone-Setup.exe",
-          "downloads": 9
+          "size": 116115164,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.2/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.2/Duotone-Setup.exe"
       }
     }
   }
