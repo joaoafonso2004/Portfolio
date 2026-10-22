@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.3.2",
+          "date": "2026-10-22T22:28:25Z",
+          "localizedDescription": "Duotone iOS 5.3.2 — a página do artista nova\n\nNovo nesta versão:\n- Artistas: uma página nova. A foto a toda a largura com o nome e os fãs, as tuas músicas primeiro (marcadas com o coração) e depois as outras dele, cinco à vista com \"See all songs\", o último lançamento, os álbuns e os singles e EPs em carrosséis, e \"Fans also like\" para saltar para artistas parecidos. O Play toca a página toda.\n- Já não aparece \"0 songs\" no cabeçalho de um artista nem de um álbum enquanto a página carrega.\n- Fila: arrastar uma música já não deixa outras umas por cima das outras nem buracos depois de largar.\n- Amigos: quando um amigo começa a ouvir, a música dele aparece mais depressa. Uma publicação falhada ou pendurada deixava-o só \"Online\" até ao batimento seguinte.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.2/docs/VERIFICAR-5.3.2.md\nComparar com iOS 5.3.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.1...ios-v5.3.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.2/Duotone.ipa",
+          "size": 15908230,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.3.1",
           "date": "2026-10-20T17:14:54Z",
           "localizedDescription": "Duotone iOS 5.3.1 — a mesma versão do Windows\n\nNo iPhone a 5.3.1 é igual à 5.3.0: as correções desta versão (o crossfade e o progresso das atualizações) são só do Windows. Sai para as duas apps terem o mesmo número.\n\nDa 5.3.0 (para quem vem de antes): a pesquisa mostra logo as tuas músicas e não as esconde quando a rede falha, um botão a carregar já não parece desligado, e o Radio da Jam diz porquê quando não o podes ligar.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.1/docs/VERIFICAR-5.3.1.md\nComparar com iOS 5.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.0...ios-v5.3.1",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.4/Duotone.ipa",
           "size": 15874565,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.1.3",
-          "date": "2026-10-16T17:09:17Z",
-          "localizedDescription": "Duotone iOS 5.1.3 — o Radio da música que está a tocar\n\nNovo nesta versão:\n- Radio: parte sempre da música que está a tocar. O que ouviste antes de o ligar já não conta — um Radio ligado num rap já não te traz o funk que ouviste há meia hora. Continua a aprender com o que ouves depois de o ligar.\n- Pesquisa da Home: aparece \"Cancel\" ao lado da caixa enquanto pesquisas. Fecha o teclado, limpa e volta à Home; o ✕ continua a só apagar o texto.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.3/docs/VERIFICAR-5.1.3.md\nComparar com iOS 5.1.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.2...ios-v5.1.3",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.3/Duotone.ipa",
-          "size": 15874539,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.3.1",
-      "versionDate": "2026-10-20T17:14:54Z",
-      "versionDescription": "Duotone iOS 5.3.1 — a mesma versão do Windows\n\nNo iPhone a 5.3.1 é igual à 5.3.0: as correções desta versão (o crossfade e o progresso das atualizações) são só do Windows. Sai para as duas apps terem o mesmo número.\n\nDa 5.3.0 (para quem vem de antes): a pesquisa mostra logo as tuas músicas e não as esconde quando a rede falha, um botão a carregar já não parece desligado, e o Radio da Jam diz porquê quando não o podes ligar.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.1/docs/VERIFICAR-5.3.1.md\nComparar com iOS 5.3.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.0...ios-v5.3.1",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.1/Duotone.ipa",
-      "size": 15901732
+      "version": "5.3.2",
+      "versionDate": "2026-10-22T22:28:25Z",
+      "versionDescription": "Duotone iOS 5.3.2 — a página do artista nova\n\nNovo nesta versão:\n- Artistas: uma página nova. A foto a toda a largura com o nome e os fãs, as tuas músicas primeiro (marcadas com o coração) e depois as outras dele, cinco à vista com \"See all songs\", o último lançamento, os álbuns e os singles e EPs em carrosséis, e \"Fans also like\" para saltar para artistas parecidos. O Play toca a página toda.\n- Já não aparece \"0 songs\" no cabeçalho de um artista nem de um álbum enquanto a página carrega.\n- Fila: arrastar uma música já não deixa outras umas por cima das outras nem buracos depois de largar.\n- Amigos: quando um amigo começa a ouvir, a música dele aparece mais depressa. Uma publicação falhada ou pendurada deixava-o só \"Online\" até ao batimento seguinte.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.2/docs/VERIFICAR-5.3.2.md\nComparar com iOS 5.3.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.1...ios-v5.3.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.2/Duotone.ipa",
+      "size": 15908230
     }
   ],
   "news": []
