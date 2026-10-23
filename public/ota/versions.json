@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T15:05:39.595Z",
+  "generatedAt": "2026-10-23T19:08:14.619Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.4/Duotone.ipa"
       },
       "windows": {
-        "version": "5.3.4",
-        "tag": "win-v5.3.4",
-        "notes": "Duotone para Windows 5.3.4 — a mesma imagem fora e dentro do artista\n\nNovo nesta versão:\n- Artistas: a grelha dos Artists mostra a foto de cada artista, a mesma que aparece na página dele. Sem foto no catálogo, fica a capa da primeira música dele, também nos dois sítios.\n  - As fotos ficam guardadas no PC: aparecem logo da vez seguinte.\n\nDa 5.3.3 (para quem vem de antes): a página do artista refeita, o crossfade sem a música seguinte alta no começo, e uma ligação que recusa todas as músicas pára em vez de saltar a fila.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.3.4/docs/VERIFICAR-5.3.4.md\nComparar com Windows 5.3.3: https://github.com/joaoafonso2004/duotone/compare/win-v5.3.3...win-v5.3.4",
-        "publishedAt": "2026-10-23T15:03:34Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.3.4",
+        "version": "5.3.5",
+        "tag": "win-v5.3.5",
+        "notes": "Duotone para Windows 5.3.5 — o Radio da Jam a sério, o volume na Jam, e muito menos pedidos ao servidor\n\nNovo nesta versão:\n- Jam: cada música nova toca no volume da tua barra. Com o som em mudo, fica calada. Antes cada música nova da Jam começava no volume de antes, e ignorava o mudo.\n- Jam: o Radio da sala tem o mesmo menu de fora da Jam. Podes escolher \"Songs like this one\" ou \"Mix\", e na Jam o Mix é o da sala, feito do que todos estão a ouvir. A pastilha diz \"Radio on\" ou \"Mix on\".\n- Jam: o Radio já não repete músicas, já não seca a meio, e ao ligá-lo entram músicas logo, depois das que as pessoas escolheram.\n- Muito menos pedidos ao servidor.\n  - Com a janela escondida e sem música, a ligação em tempo real caía, e a app compensava a reler as mensagens de minuto a minuto (o teu PC fazia ~270 pedidos por hora). Agora a ligação aguenta-se com a janela escondida.\n  - Quando ela cai na mesma, as mensagens releem-se de 5 em 5 minutos.\n  - Os nomes e as fotos dos amigos ficam guardados 30 minutos.\n- O relatório de reprodução diz se a ligação em tempo real está bem: é a primeira linha de \"Server requests\".\n\nDa 5.3.4 (para quem vem de antes): a mesma imagem fora e dentro do artista.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.3.5/docs/VERIFICAR-5.3.5.md\nComparar com Windows 5.3.4: https://github.com/joaoafonso2004/duotone/compare/win-v5.3.4...win-v5.3.5",
+        "publishedAt": "2026-10-23T19:08:00Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.3.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116116126,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.4/Duotone-Setup.exe",
+          "size": 116117409,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.5/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.4/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.5/Duotone-Setup.exe"
       }
     }
   }
