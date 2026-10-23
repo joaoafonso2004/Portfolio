@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-23T19:08:14.619Z",
+  "generatedAt": "2026-10-23T19:11:51.076Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.3.4",
-        "tag": "ios-v5.3.4",
-        "notes": "Duotone iOS 5.3.4 — a mesma imagem fora e dentro do artista\n\nNovo nesta versão:\n- Artistas: a grelha dos Artists mostra a foto de cada artista, a mesma que aparece na página dele. Sem foto no catálogo, fica a capa de uma música dele, também nos dois sítios.\n  - As fotos ficam guardadas no iPhone: aparecem logo da vez seguinte.\n- A página de um artista sem foto no catálogo já não mostra uma silhueta cinzenta: fica com a imagem em que tocaste.\n- Um artista sem álbuns nem singles já não acaba nas Top Songs: mostra as músicas todas numa lista.\n- O nome pequeno na barra de cima só aparece quando o nome grande passa por baixo dela. Antes aparecia logo ao começar a rolar.\n\nDa 5.3.3 (para quem vem de antes): a página do artista refeita.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.4/docs/VERIFICAR-5.3.4.md\nComparar com iOS 5.3.3: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.3...ios-v5.3.4",
-        "publishedAt": "2026-10-23T15:05:22Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.3.4",
+        "version": "5.3.5",
+        "tag": "ios-v5.3.5",
+        "notes": "Duotone iOS 5.3.5 — o Radio da Jam a sério, e menos pedidos ao servidor\n\nNovo nesta versão:\n- Jam: o Radio da sala tem o mesmo menu de fora da Jam. Podes escolher \"Songs like this one\" ou \"Mix\", e na Jam o Mix é o da sala, feito do que todos estão a ouvir. A pastilha diz \"Radio on\" ou \"Mix on\".\n- Jam: o Radio já não repete músicas. Deixa de fora tudo o que a sala já ouviu nesta Jam e tudo o que ele próprio já lá pôs, e usa a mesma memória do Radio de sempre.\n- Jam: o Radio já não seca a meio, e ao ligá-lo entram músicas logo, depois das que as pessoas escolheram. Antes só enchia com a fila quase vazia, e ligar parecia não fazer nada.\n- Menos pedidos ao servidor: os nomes e as fotos dos amigos ficam guardados 30 minutos, e o catálogo de uma música só se pergunta uma vez.\n\nDa 5.3.4 (para quem vem de antes): a mesma imagem fora e dentro do artista.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.5/docs/VERIFICAR-5.3.5.md\nComparar com iOS 5.3.4: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.4...ios-v5.3.5",
+        "publishedAt": "2026-10-23T19:11:35Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.3.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15917895,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.4/Duotone.ipa",
+          "size": 15921772,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.5/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.4/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.5/Duotone.ipa"
       },
       "windows": {
         "version": "5.3.5",
