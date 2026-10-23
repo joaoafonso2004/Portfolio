@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-23T15:03:48.502Z",
+  "generatedAt": "2026-10-23T15:05:39.595Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.3.3",
-        "tag": "ios-v5.3.3",
-        "notes": "Duotone iOS 5.3.3 — a página do artista refeita\n\nNovo nesta versão:\n- Artistas: a página foi refeita de raiz.\n  - A foto ocupa o topo e a cor dela desce pela página.\n  - O nome é grande, com o Mix, o Shuffle e o Play por cima da foto, em vidro.\n  - As Top Songs são colunas de quatro que se folheiam de lado.\n  - O \"›\" abre todas as músicas numa folha, com pesquisa, Most played / Newest, Play e Shuffle.\n  - Seguem-se o último lançamento em destaque, os álbuns, os singles e EPs, os artistas parecidos e um About com a foto e os números.\n- Ao abrir um artista, a página começa com a imagem em que tocaste e passa para a foto dele num fundido, uma vez só. Antes trocava de imagem até três vezes.\n\nDa 5.3.2 (para quem vem de antes): arrastar na fila sem músicas sobrepostas, e a música de um amigo aparece mais depressa.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.3/docs/VERIFICAR-5.3.3.md\nComparar com iOS 5.3.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.2...ios-v5.3.3",
-        "publishedAt": "2026-10-23T03:44:50Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.3.3",
+        "version": "5.3.4",
+        "tag": "ios-v5.3.4",
+        "notes": "Duotone iOS 5.3.4 — a mesma imagem fora e dentro do artista\n\nNovo nesta versão:\n- Artistas: a grelha dos Artists mostra a foto de cada artista, a mesma que aparece na página dele. Sem foto no catálogo, fica a capa de uma música dele, também nos dois sítios.\n  - As fotos ficam guardadas no iPhone: aparecem logo da vez seguinte.\n- A página de um artista sem foto no catálogo já não mostra uma silhueta cinzenta: fica com a imagem em que tocaste.\n- Um artista sem álbuns nem singles já não acaba nas Top Songs: mostra as músicas todas numa lista.\n- O nome pequeno na barra de cima só aparece quando o nome grande passa por baixo dela. Antes aparecia logo ao começar a rolar.\n\nDa 5.3.3 (para quem vem de antes): a página do artista refeita.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.4/docs/VERIFICAR-5.3.4.md\nComparar com iOS 5.3.3: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.3...ios-v5.3.4",
+        "publishedAt": "2026-10-23T15:05:22Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.3.4",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15915555,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.3/Duotone.ipa",
-          "downloads": 1
+          "size": 15917895,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.4/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.3/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.4/Duotone.ipa"
       },
       "windows": {
         "version": "5.3.4",
