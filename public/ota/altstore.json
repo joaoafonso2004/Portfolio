@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.3.3",
+          "date": "2026-10-23T03:44:50Z",
+          "localizedDescription": "Duotone iOS 5.3.3 — a página do artista refeita\n\nNovo nesta versão:\n- Artistas: a página foi refeita de raiz.\n  - A foto ocupa o topo e a cor dela desce pela página.\n  - O nome é grande, com o Mix, o Shuffle e o Play por cima da foto, em vidro.\n  - As Top Songs são colunas de quatro que se folheiam de lado.\n  - O \"›\" abre todas as músicas numa folha, com pesquisa, Most played / Newest, Play e Shuffle.\n  - Seguem-se o último lançamento em destaque, os álbuns, os singles e EPs, os artistas parecidos e um About com a foto e os números.\n- Ao abrir um artista, a página começa com a imagem em que tocaste e passa para a foto dele num fundido, uma vez só. Antes trocava de imagem até três vezes.\n\nDa 5.3.2 (para quem vem de antes): arrastar na fila sem músicas sobrepostas, e a música de um amigo aparece mais depressa.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.3/docs/VERIFICAR-5.3.3.md\nComparar com iOS 5.3.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.2...ios-v5.3.3",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.3/Duotone.ipa",
+          "size": 15915555,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.3.2",
           "date": "2026-10-22T22:28:25Z",
           "localizedDescription": "Duotone iOS 5.3.2 — a página do artista nova\n\nNovo nesta versão:\n- Artistas: uma página nova. A foto a toda a largura com o nome e os fãs, as tuas músicas primeiro (marcadas com o coração) e depois as outras dele, cinco à vista com \"See all songs\", o último lançamento, os álbuns e os singles e EPs em carrosséis, e \"Fans also like\" para saltar para artistas parecidos. O Play toca a página toda.\n- Já não aparece \"0 songs\" no cabeçalho de um artista nem de um álbum enquanto a página carrega.\n- Fila: arrastar uma música já não deixa outras umas por cima das outras nem buracos depois de largar.\n- Amigos: quando um amigo começa a ouvir, a música dele aparece mais depressa. Uma publicação falhada ou pendurada deixava-o só \"Online\" até ao batimento seguinte.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.2/docs/VERIFICAR-5.3.2.md\nComparar com iOS 5.3.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.1...ios-v5.3.2",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.5/Duotone.ipa",
           "size": 15874628,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.1.4",
-          "date": "2026-10-16T18:16:14Z",
-          "localizedDescription": "Duotone iOS 5.1.4 — o leitor como estava\n\nNovo nesta versão:\n- O leitor volta a ser o da 5.0.1: o coração do Now Playing e do mini leitor é o de antes, e o som toca como tocava.\n- Tudo o resto fica: o Radio que parte da música que está a tocar, as playlists sem rede, o menu compacto e o \"Cancel\" na pesquisa.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.4/docs/VERIFICAR-5.1.4.md\nComparar com iOS 5.1.3: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.3...ios-v5.1.4",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.4/Duotone.ipa",
-          "size": 15874565,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.3.2",
-      "versionDate": "2026-10-22T22:28:25Z",
-      "versionDescription": "Duotone iOS 5.3.2 — a página do artista nova\n\nNovo nesta versão:\n- Artistas: uma página nova. A foto a toda a largura com o nome e os fãs, as tuas músicas primeiro (marcadas com o coração) e depois as outras dele, cinco à vista com \"See all songs\", o último lançamento, os álbuns e os singles e EPs em carrosséis, e \"Fans also like\" para saltar para artistas parecidos. O Play toca a página toda.\n- Já não aparece \"0 songs\" no cabeçalho de um artista nem de um álbum enquanto a página carrega.\n- Fila: arrastar uma música já não deixa outras umas por cima das outras nem buracos depois de largar.\n- Amigos: quando um amigo começa a ouvir, a música dele aparece mais depressa. Uma publicação falhada ou pendurada deixava-o só \"Online\" até ao batimento seguinte.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.2/docs/VERIFICAR-5.3.2.md\nComparar com iOS 5.3.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.1...ios-v5.3.2",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.2/Duotone.ipa",
-      "size": 15908230
+      "version": "5.3.3",
+      "versionDate": "2026-10-23T03:44:50Z",
+      "versionDescription": "Duotone iOS 5.3.3 — a página do artista refeita\n\nNovo nesta versão:\n- Artistas: a página foi refeita de raiz.\n  - A foto ocupa o topo e a cor dela desce pela página.\n  - O nome é grande, com o Mix, o Shuffle e o Play por cima da foto, em vidro.\n  - As Top Songs são colunas de quatro que se folheiam de lado.\n  - O \"›\" abre todas as músicas numa folha, com pesquisa, Most played / Newest, Play e Shuffle.\n  - Seguem-se o último lançamento em destaque, os álbuns, os singles e EPs, os artistas parecidos e um About com a foto e os números.\n- Ao abrir um artista, a página começa com a imagem em que tocaste e passa para a foto dele num fundido, uma vez só. Antes trocava de imagem até três vezes.\n\nDa 5.3.2 (para quem vem de antes): arrastar na fila sem músicas sobrepostas, e a música de um amigo aparece mais depressa.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.3/docs/VERIFICAR-5.3.3.md\nComparar com iOS 5.3.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.2...ios-v5.3.3",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.3/Duotone.ipa",
+      "size": 15915555
     }
   ],
   "news": []
