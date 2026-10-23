@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T10:49:39.727Z",
+  "generatedAt": "2026-10-23T15:03:48.502Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15915555,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.3/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.3/Duotone.ipa"
       },
       "windows": {
-        "version": "5.3.3",
-        "tag": "win-v5.3.3",
-        "notes": "Duotone para Windows 5.3.3 — a página do artista refeita, o crossfade sem o segundo da seguinte\n\nNovo nesta versão:\n- Artistas: a página foi refeita.\n  - A foto vai de ponta a ponta à direita e desfaz-se no fundo, com a cor dela por trás. Saíram o título \"Artist\" e a caixa.\n  - Todas as músicas estão na lista, sem \"See all\": as tuas primeiro, depois uma linha \"More from …\" e as dele.\n  - Há um filtro para procurar entre elas.\n  - À direita, uma coluna que fica parada enquanto rolas, com o último lançamento, os álbuns, os singles e EPs e os artistas parecidos.\n- Crossfade: a música seguinte já não se ouve alta durante um instante quando a passagem começa. A causa estava no começo da passagem, e não na preparação (como se pensou na 5.3.1).\n- Quando o YouTube recusa todas as músicas numa ligação, a app pára ao fim de três e diz \"Songs are being blocked on this connection right now\". Antes saltava a fila inteira em segundos, com uma rajada de pedidos que só piorava o bloqueio.\n\nDa 5.3.2 (para quem vem de antes): a página do artista com Songs e sem \"0 saved tracks\", e a música de um amigo aparece mais depressa.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.3.3/docs/VERIFICAR-5.3.3.md\nComparar com Windows 5.3.2: https://github.com/joaoafonso2004/duotone/compare/win-v5.3.2...win-v5.3.3",
-        "publishedAt": "2026-10-23T03:39:51Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.3.3",
+        "version": "5.3.4",
+        "tag": "win-v5.3.4",
+        "notes": "Duotone para Windows 5.3.4 — a mesma imagem fora e dentro do artista\n\nNovo nesta versão:\n- Artistas: a grelha dos Artists mostra a foto de cada artista, a mesma que aparece na página dele. Sem foto no catálogo, fica a capa da primeira música dele, também nos dois sítios.\n  - As fotos ficam guardadas no PC: aparecem logo da vez seguinte.\n\nDa 5.3.3 (para quem vem de antes): a página do artista refeita, o crossfade sem a música seguinte alta no começo, e uma ligação que recusa todas as músicas pára em vez de saltar a fila.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.3.4/docs/VERIFICAR-5.3.4.md\nComparar com Windows 5.3.3: https://github.com/joaoafonso2004/duotone/compare/win-v5.3.3...win-v5.3.4",
+        "publishedAt": "2026-10-23T15:03:34Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.3.4",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116115817,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.3/Duotone-Setup.exe",
-          "downloads": 2
+          "size": 116116126,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.4/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.3/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.4/Duotone-Setup.exe"
       }
     }
   }
