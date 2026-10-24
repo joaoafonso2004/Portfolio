@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.3.7",
+          "date": "2026-10-24T17:14:03Z",
+          "localizedDescription": "Duotone iOS 5.3.7 — a mesma versão do Windows\n\nNo iPhone a 5.3.7 é igual à 5.3.6: as novidades desta versão (o botão direito nos amigos e nas mensagens) são só do Windows. Sai para as duas apps terem o mesmo número.\n\nDa 5.3.5 (para quem vem de antes): o Radio da Jam escolhe o tipo e não repete, e menos pedidos ao servidor.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.7/docs/VERIFICAR-5.3.7.md\nComparar com iOS 5.3.6: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.6...ios-v5.3.7",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.7/Duotone.ipa",
+          "size": 15922406,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.3.6",
           "date": "2026-10-24T02:11:24Z",
           "localizedDescription": "Duotone iOS 5.3.6 — a mesma versão do Windows\n\nNo iPhone a 5.3.6 é igual à 5.3.5: as novidades desta versão (o botão direito em todo o lado e o Add to playlist ao lado do menu) são só do Windows. Sai para as duas apps terem o mesmo número.\n\nDa 5.3.5 (para quem vem de antes): o Radio da Jam escolhe o tipo e não repete, e menos pedidos ao servidor.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.6/docs/VERIFICAR-5.3.6.md\nComparar com iOS 5.3.5: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.5...ios-v5.3.6",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.9/Duotone.ipa",
           "size": 15897542,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.1.8",
-          "date": "2026-10-18T03:26:58Z",
-          "localizedDescription": "Duotone iOS 5.1.8 — o Mix, e o Speed volta a funcionar\n\nNovo nesta versão:\n- O Radio tem dois lados. Com ele desligado, carregar na pastilha do Up next abre um menu que nasce da própria pastilha: \"Songs like this one\" (o Radio de sempre, a partir da música que toca) ou \"Mix\" (de tudo o que ouves: os teus artistas a rodar, metade músicas tuas e metade novas parecidas). Ligado, a pastilha diz \"Radio on\" ou \"Mix on\", e carregar desliga como antes.\n- O Mix não faz pedidos ao servidor para saber o que ouves: lê o histórico do iPhone.\n- Abrir a app já não te mete numa Jam antiga sem saberes. Era isso que deixava o Speed preso a 1x e fazia a música pausar sozinha: só voltas a uma Jam em que este iPhone esteve nos últimos 15 minutos.\n- Dentro de uma Jam o Speed diz porque está a 1x (\"Everyone plays at 1x in a Jam\"), em vez de parecer avariado.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.8/docs/VERIFICAR-5.1.8.md\nComparar com iOS 5.1.7: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.7...ios-v5.1.8",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.8/Duotone.ipa",
-          "size": 15897371,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.3.6",
-      "versionDate": "2026-10-24T02:11:24Z",
-      "versionDescription": "Duotone iOS 5.3.6 — a mesma versão do Windows\n\nNo iPhone a 5.3.6 é igual à 5.3.5: as novidades desta versão (o botão direito em todo o lado e o Add to playlist ao lado do menu) são só do Windows. Sai para as duas apps terem o mesmo número.\n\nDa 5.3.5 (para quem vem de antes): o Radio da Jam escolhe o tipo e não repete, e menos pedidos ao servidor.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.6/docs/VERIFICAR-5.3.6.md\nComparar com iOS 5.3.5: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.5...ios-v5.3.6",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.6/Duotone.ipa",
-      "size": 15921911
+      "version": "5.3.7",
+      "versionDate": "2026-10-24T17:14:03Z",
+      "versionDescription": "Duotone iOS 5.3.7 — a mesma versão do Windows\n\nNo iPhone a 5.3.7 é igual à 5.3.6: as novidades desta versão (o botão direito nos amigos e nas mensagens) são só do Windows. Sai para as duas apps terem o mesmo número.\n\nDa 5.3.5 (para quem vem de antes): o Radio da Jam escolhe o tipo e não repete, e menos pedidos ao servidor.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.7/docs/VERIFICAR-5.3.7.md\nComparar com iOS 5.3.6: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.6...ios-v5.3.7",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.7/Duotone.ipa",
+      "size": 15922406
     }
   ],
   "news": []
