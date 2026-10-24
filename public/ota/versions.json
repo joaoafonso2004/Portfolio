@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T19:11:51.076Z",
+  "generatedAt": "2026-10-24T02:05:21.850Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15921772,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.5/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.5/Duotone.ipa"
       },
       "windows": {
-        "version": "5.3.5",
-        "tag": "win-v5.3.5",
-        "notes": "Duotone para Windows 5.3.5 — o Radio da Jam a sério, o volume na Jam, e muito menos pedidos ao servidor\n\nNovo nesta versão:\n- Jam: cada música nova toca no volume da tua barra. Com o som em mudo, fica calada. Antes cada música nova da Jam começava no volume de antes, e ignorava o mudo.\n- Jam: o Radio da sala tem o mesmo menu de fora da Jam. Podes escolher \"Songs like this one\" ou \"Mix\", e na Jam o Mix é o da sala, feito do que todos estão a ouvir. A pastilha diz \"Radio on\" ou \"Mix on\".\n- Jam: o Radio já não repete músicas, já não seca a meio, e ao ligá-lo entram músicas logo, depois das que as pessoas escolheram.\n- Muito menos pedidos ao servidor.\n  - Com a janela escondida e sem música, a ligação em tempo real caía, e a app compensava a reler as mensagens de minuto a minuto (o teu PC fazia ~270 pedidos por hora). Agora a ligação aguenta-se com a janela escondida.\n  - Quando ela cai na mesma, as mensagens releem-se de 5 em 5 minutos.\n  - Os nomes e as fotos dos amigos ficam guardados 30 minutos.\n- O relatório de reprodução diz se a ligação em tempo real está bem: é a primeira linha de \"Server requests\".\n\nDa 5.3.4 (para quem vem de antes): a mesma imagem fora e dentro do artista.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.3.5/docs/VERIFICAR-5.3.5.md\nComparar com Windows 5.3.4: https://github.com/joaoafonso2004/duotone/compare/win-v5.3.4...win-v5.3.5",
-        "publishedAt": "2026-10-23T19:08:00Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.3.5",
+        "version": "5.3.6",
+        "tag": "win-v5.3.6",
+        "notes": "Duotone para Windows 5.3.6 — o botão direito em todo o lado, e o Add to playlist ao lado do menu\n\nNovo nesta versão:\n- Add to playlist: no menu de uma música (botão direito ou \"•••\"), \"Add to playlist ›\" abre um painel ao lado, como num menu do Windows. Era um diálogo ao centro com uma caixa igual por playlist.\n  - Tem procura, as capas das playlists e um ✓ nas que já têm a música.\n  - \"New playlist\" cria a playlist ali mesmo, com a música lá dentro.\n  - O botão \"Add to playlist\" do Now Playing abre o mesmo painel.\n- O botão direito faz alguma coisa em mais sítios:\n  - Num artista (na grelha dos Artists, na pesquisa, no \"Fans also like\" e fixado na lateral): Open artist, Play Mix, Shuffle your songs, favorito e Pin to sidebar.\n  - Num álbum ou single da página do artista, e nos álbuns e playlists da pesquisa: Play, Shuffle, Add to queue e Save as playlist sem abrir.\n  - Numa mistura da Home: Play, Shuffle, Add to queue e Save as playlist.\n  - Nas Liked Songs da lateral: Play e Shuffle, sem abrir a página.\n  - Na música que toca (na barra do leitor e na capa do Now Playing): o menu dela, com \"Open Now Playing\" na barra.\n  - Nos campos de texto: Cut, Copy, Paste e Select all, como no resto do Windows.\n- Com o teclado, Shift+F10 ou a tecla de menu abrem o menu junto do que tem o foco.\n\nDa 5.3.5 (para quem vem de antes): o Radio da Jam escolhe o tipo e não repete, o volume da Jam respeita a tua barra, e muito menos pedidos ao servidor.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.3.6/docs/VERIFICAR-5.3.6.md\nComparar com Windows 5.3.5: https://github.com/joaoafonso2004/duotone/compare/win-v5.3.5...win-v5.3.6",
+        "publishedAt": "2026-10-24T02:05:08Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.3.6",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116117409,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.5/Duotone-Setup.exe",
+          "size": 116121605,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.6/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.5/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.6/Duotone-Setup.exe"
       }
     }
   }
