@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T10:04:56.054Z",
+  "generatedAt": "2026-10-24T17:09:25.302Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15921911,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.6/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.6/Duotone.ipa"
       },
       "windows": {
-        "version": "5.3.6",
-        "tag": "win-v5.3.6",
-        "notes": "Duotone para Windows 5.3.6 — o botão direito em todo o lado, e o Add to playlist ao lado do menu\n\nNovo nesta versão:\n- Add to playlist: no menu de uma música (botão direito ou \"•••\"), \"Add to playlist ›\" abre um painel ao lado, como num menu do Windows. Era um diálogo ao centro com uma caixa igual por playlist.\n  - Tem procura, as capas das playlists e um ✓ nas que já têm a música.\n  - \"New playlist\" cria a playlist ali mesmo, com a música lá dentro.\n  - O botão \"Add to playlist\" do Now Playing abre o mesmo painel.\n- O botão direito faz alguma coisa em mais sítios:\n  - Num artista (na grelha dos Artists, na pesquisa, no \"Fans also like\" e fixado na lateral): Open artist, Play Mix, Shuffle your songs, favorito e Pin to sidebar.\n  - Num álbum ou single da página do artista, e nos álbuns e playlists da pesquisa: Play, Shuffle, Add to queue e Save as playlist sem abrir.\n  - Numa mistura da Home: Play, Shuffle, Add to queue e Save as playlist.\n  - Nas Liked Songs da lateral: Play e Shuffle, sem abrir a página.\n  - Na música que toca (na barra do leitor e na capa do Now Playing): o menu dela, com \"Open Now Playing\" na barra.\n  - Nos campos de texto: Cut, Copy, Paste e Select all, como no resto do Windows.\n- Com o teclado, Shift+F10 ou a tecla de menu abrem o menu junto do que tem o foco.\n\nDa 5.3.5 (para quem vem de antes): o Radio da Jam escolhe o tipo e não repete, o volume da Jam respeita a tua barra, e muito menos pedidos ao servidor.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.3.6/docs/VERIFICAR-5.3.6.md\nComparar com Windows 5.3.5: https://github.com/joaoafonso2004/duotone/compare/win-v5.3.5...win-v5.3.6",
-        "publishedAt": "2026-10-24T02:05:08Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.3.6",
+        "version": "5.3.7",
+        "tag": "win-v5.3.7",
+        "notes": "Duotone para Windows 5.3.7 — o botão direito nos amigos e nas mensagens\n\nNovo nesta versão:\n- Botão direito num amigo: na página Social, nos participantes de uma Jam e no perfil dele abre o mesmo menu da lateral.\n  - Tem ouvir com ele, a música dele, mensagem, perfil, a mistura dos dois, Jam, fixar e remover.\n  - Num participante da tua Jam não há \"ouvir com\" nem \"convidar\": ele já lá está.\n- Botão direito numa mensagem do chat: as reações numa fila em cima, como no Teams, e por baixo Reply e Copy text.\n  - Numa música partilhada, também Play now, Add to queue, Liked Songs e \"Add to playlist ›\".\n  - Com texto selecionado na mensagem, o botão direito copia só o que escolheste.\n- Os avisos do Social (por exemplo \"Invited … to listen\") aparecem no PC. Antes não aparecia nada.\n\nCorrigido:\n- Jam: com o som em mudo, a música seguinte ficava calada mesmo depois de subires o volume. Agora subir o volume devolve o som.\n\nDa 5.3.6 (para quem vem de antes): o botão direito em artistas, discos, misturas, Liked Songs, na música que toca e nos campos de texto, e o Add to playlist num painel ao lado do menu.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.3.7/docs/VERIFICAR-5.3.7.md\nComparar com Windows 5.3.6: https://github.com/joaoafonso2004/duotone/compare/win-v5.3.6...win-v5.3.7",
+        "publishedAt": "2026-10-24T17:09:12Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.3.7",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116121605,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.6/Duotone-Setup.exe",
-          "downloads": 2
+          "size": 116122614,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.7/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.6/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.7/Duotone-Setup.exe"
       }
     }
   }
