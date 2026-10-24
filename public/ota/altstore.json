@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.3.6",
+          "date": "2026-10-24T02:11:24Z",
+          "localizedDescription": "Duotone iOS 5.3.6 — a mesma versão do Windows\n\nNo iPhone a 5.3.6 é igual à 5.3.5: as novidades desta versão (o botão direito em todo o lado e o Add to playlist ao lado do menu) são só do Windows. Sai para as duas apps terem o mesmo número.\n\nDa 5.3.5 (para quem vem de antes): o Radio da Jam escolhe o tipo e não repete, e menos pedidos ao servidor.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.6/docs/VERIFICAR-5.3.6.md\nComparar com iOS 5.3.5: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.5...ios-v5.3.6",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.6/Duotone.ipa",
+          "size": 15921911,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.3.5",
           "date": "2026-10-23T19:11:35Z",
           "localizedDescription": "Duotone iOS 5.3.5 — o Radio da Jam a sério, e menos pedidos ao servidor\n\nNovo nesta versão:\n- Jam: o Radio da sala tem o mesmo menu de fora da Jam. Podes escolher \"Songs like this one\" ou \"Mix\", e na Jam o Mix é o da sala, feito do que todos estão a ouvir. A pastilha diz \"Radio on\" ou \"Mix on\".\n- Jam: o Radio já não repete músicas. Deixa de fora tudo o que a sala já ouviu nesta Jam e tudo o que ele próprio já lá pôs, e usa a mesma memória do Radio de sempre.\n- Jam: o Radio já não seca a meio, e ao ligá-lo entram músicas logo, depois das que as pessoas escolheram. Antes só enchia com a fila quase vazia, e ligar parecia não fazer nada.\n- Menos pedidos ao servidor: os nomes e as fotos dos amigos ficam guardados 30 minutos, e o catálogo de uma música só se pergunta uma vez.\n\nDa 5.3.4 (para quem vem de antes): a mesma imagem fora e dentro do artista.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.5/docs/VERIFICAR-5.3.5.md\nComparar com iOS 5.3.4: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.4...ios-v5.3.5",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.8/Duotone.ipa",
           "size": 15897371,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.1.7",
-          "date": "2026-10-17T16:18:35Z",
-          "localizedDescription": "Duotone iOS 5.1.7 — menos pedidos ao servidor\n\nNovo nesta versão:\n- A app faz bem menos pedidos ao servidor, para não passar os limites do plano gratuito. O \"online\" que os amigos veem renova-se de 10 em 10 minutos em vez de 3 (precisa do SQL `supabase/presenca-quinze-minutos.sql`). Numa conta com um só aparelho, a sessão do \"Continue here\" deixa de se gravar a cada música, porque não há outro aparelho que a leia.\n- Se a app fechar sem aviso a meio de uma música (por exemplo, fechada no seletor de apps), os amigos deixam de te ver \"a ouvir\" quando essa música acabava.\n- O relatório de reprodução diz quantos pedidos a app fez ao servidor, e a quê.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.1.7/docs/VERIFICAR-5.1.7.md\nComparar com iOS 5.1.6: https://github.com/joaoafonso2004/duotone/compare/ios-v5.1.6...ios-v5.1.7",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.1.7/Duotone.ipa",
-          "size": 15884327,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.3.5",
-      "versionDate": "2026-10-23T19:11:35Z",
-      "versionDescription": "Duotone iOS 5.3.5 — o Radio da Jam a sério, e menos pedidos ao servidor\n\nNovo nesta versão:\n- Jam: o Radio da sala tem o mesmo menu de fora da Jam. Podes escolher \"Songs like this one\" ou \"Mix\", e na Jam o Mix é o da sala, feito do que todos estão a ouvir. A pastilha diz \"Radio on\" ou \"Mix on\".\n- Jam: o Radio já não repete músicas. Deixa de fora tudo o que a sala já ouviu nesta Jam e tudo o que ele próprio já lá pôs, e usa a mesma memória do Radio de sempre.\n- Jam: o Radio já não seca a meio, e ao ligá-lo entram músicas logo, depois das que as pessoas escolheram. Antes só enchia com a fila quase vazia, e ligar parecia não fazer nada.\n- Menos pedidos ao servidor: os nomes e as fotos dos amigos ficam guardados 30 minutos, e o catálogo de uma música só se pergunta uma vez.\n\nDa 5.3.4 (para quem vem de antes): a mesma imagem fora e dentro do artista.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.5/docs/VERIFICAR-5.3.5.md\nComparar com iOS 5.3.4: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.4...ios-v5.3.5",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.5/Duotone.ipa",
-      "size": 15921772
+      "version": "5.3.6",
+      "versionDate": "2026-10-24T02:11:24Z",
+      "versionDescription": "Duotone iOS 5.3.6 — a mesma versão do Windows\n\nNo iPhone a 5.3.6 é igual à 5.3.5: as novidades desta versão (o botão direito em todo o lado e o Add to playlist ao lado do menu) são só do Windows. Sai para as duas apps terem o mesmo número.\n\nDa 5.3.5 (para quem vem de antes): o Radio da Jam escolhe o tipo e não repete, e menos pedidos ao servidor.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.6/docs/VERIFICAR-5.3.6.md\nComparar com iOS 5.3.5: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.5...ios-v5.3.6",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.6/Duotone.ipa",
+      "size": 15921911
     }
   ],
   "news": []

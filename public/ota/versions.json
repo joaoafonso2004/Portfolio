@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-24T02:05:21.850Z",
+  "generatedAt": "2026-10-24T02:11:42.342Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.3.5",
-        "tag": "ios-v5.3.5",
-        "notes": "Duotone iOS 5.3.5 — o Radio da Jam a sério, e menos pedidos ao servidor\n\nNovo nesta versão:\n- Jam: o Radio da sala tem o mesmo menu de fora da Jam. Podes escolher \"Songs like this one\" ou \"Mix\", e na Jam o Mix é o da sala, feito do que todos estão a ouvir. A pastilha diz \"Radio on\" ou \"Mix on\".\n- Jam: o Radio já não repete músicas. Deixa de fora tudo o que a sala já ouviu nesta Jam e tudo o que ele próprio já lá pôs, e usa a mesma memória do Radio de sempre.\n- Jam: o Radio já não seca a meio, e ao ligá-lo entram músicas logo, depois das que as pessoas escolheram. Antes só enchia com a fila quase vazia, e ligar parecia não fazer nada.\n- Menos pedidos ao servidor: os nomes e as fotos dos amigos ficam guardados 30 minutos, e o catálogo de uma música só se pergunta uma vez.\n\nDa 5.3.4 (para quem vem de antes): a mesma imagem fora e dentro do artista.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.5/docs/VERIFICAR-5.3.5.md\nComparar com iOS 5.3.4: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.4...ios-v5.3.5",
-        "publishedAt": "2026-10-23T19:11:35Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.3.5",
+        "version": "5.3.6",
+        "tag": "ios-v5.3.6",
+        "notes": "Duotone iOS 5.3.6 — a mesma versão do Windows\n\nNo iPhone a 5.3.6 é igual à 5.3.5: as novidades desta versão (o botão direito em todo o lado e o Add to playlist ao lado do menu) são só do Windows. Sai para as duas apps terem o mesmo número.\n\nDa 5.3.5 (para quem vem de antes): o Radio da Jam escolhe o tipo e não repete, e menos pedidos ao servidor.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.6/docs/VERIFICAR-5.3.6.md\nComparar com iOS 5.3.5: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.5...ios-v5.3.6",
+        "publishedAt": "2026-10-24T02:11:24Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.3.6",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15921772,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.5/Duotone.ipa",
-          "downloads": 1
+          "size": 15921911,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.6/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.5/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.6/Duotone.ipa"
       },
       "windows": {
         "version": "5.3.6",
