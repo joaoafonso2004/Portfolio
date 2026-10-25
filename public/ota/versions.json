@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T10:30:06.213Z",
+  "generatedAt": "2026-10-25T14:17:09.828Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.7/Duotone.ipa"
       },
       "windows": {
-        "version": "5.3.7",
-        "tag": "win-v5.3.7",
-        "notes": "Duotone para Windows 5.3.7 — o botão direito nos amigos e nas mensagens\n\nNovo nesta versão:\n- Botão direito num amigo: na página Social, nos participantes de uma Jam e no perfil dele abre o mesmo menu da lateral.\n  - Tem ouvir com ele, a música dele, mensagem, perfil, a mistura dos dois, Jam, fixar e remover.\n  - Num participante da tua Jam não há \"ouvir com\" nem \"convidar\": ele já lá está.\n- Botão direito numa mensagem do chat: as reações numa fila em cima, como no Teams, e por baixo Reply e Copy text.\n  - Numa música partilhada, também Play now, Add to queue, Liked Songs e \"Add to playlist ›\".\n  - Com texto selecionado na mensagem, o botão direito copia só o que escolheste.\n- Os avisos do Social (por exemplo \"Invited … to listen\") aparecem no PC. Antes não aparecia nada.\n\nCorrigido:\n- Jam: com o som em mudo, a música seguinte ficava calada mesmo depois de subires o volume. Agora subir o volume devolve o som.\n\nDa 5.3.6 (para quem vem de antes): o botão direito em artistas, discos, misturas, Liked Songs, na música que toca e nos campos de texto, e o Add to playlist num painel ao lado do menu.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.3.7/docs/VERIFICAR-5.3.7.md\nComparar com Windows 5.3.6: https://github.com/joaoafonso2004/duotone/compare/win-v5.3.6...win-v5.3.7",
-        "publishedAt": "2026-10-24T17:09:12Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.3.7",
+        "version": "5.4.0",
+        "tag": "win-v5.4.0",
+        "notes": "Duotone para Windows 5.4.0 — arrastar músicas e o som certo para os teus auscultadores\n\nNovo nesta versão:\n- Arrastar uma música: de qualquer lista ou prateleira para as Liked Songs, uma playlist ou um amigo da lateral, para a fila (no sítio exato), para a barra do leitor, ou para outra posição da própria playlist.\n  - Enquanto arrastas, o cartão diz o que vai acontecer (\"Add to tuff\", \"Send to Ana\", \"Play after Location\"…).\n  - Esc desiste. O aviso no fim tem Undo.\n  - Um clique continua a tocar a música, como antes.\n- Recommended no equalizador: o primeiro preset, que não se apaga. Lê a saída de som do Windows (\"Headphones (WH-1000XM5)\") e aplica a correção medida para esses auscultadores.\n  - Muda sozinho quando trocas de saída.\n  - Nas colunas, ou com auscultadores na ficha da placa de som, escolhes o modelo uma vez e fica lembrado.\n  - Também pode ser o EQ padrão, nas Definições, em Sound.\n- Crossfade que respeita o disco: entre duas músicas seguidas do mesmo álbum não há fade. Numa playlist ou num Mix, o crossfade de sempre.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.4.0/docs/VERIFICAR-5.4.0.md\nComparar com Windows 5.3.7: https://github.com/joaoafonso2004/duotone/compare/win-v5.3.7...win-v5.4.0",
+        "publishedAt": "2026-10-25T14:16:54Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.4.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116122614,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.7/Duotone-Setup.exe",
-          "downloads": 5
+          "size": 116202829,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.4.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.3.7/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.4.0/Duotone-Setup.exe"
       }
     }
   }
