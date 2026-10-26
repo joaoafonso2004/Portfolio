@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T14:23:42.081Z",
+  "generatedAt": "2026-10-26T01:51:00.252Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16034682,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.0/Duotone.ipa",
-          "downloads": 0
+          "downloads": 3
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.0/Duotone.ipa"
       },
       "windows": {
-        "version": "5.4.0",
-        "tag": "win-v5.4.0",
-        "notes": "Duotone para Windows 5.4.0 — arrastar músicas e o som certo para os teus auscultadores\n\nNovo nesta versão:\n- Arrastar uma música: de qualquer lista ou prateleira para as Liked Songs, uma playlist ou um amigo da lateral, para a fila (no sítio exato), para a barra do leitor, ou para outra posição da própria playlist.\n  - Enquanto arrastas, o cartão diz o que vai acontecer (\"Add to tuff\", \"Send to Ana\", \"Play after Location\"…).\n  - Esc desiste. O aviso no fim tem Undo.\n  - Um clique continua a tocar a música, como antes.\n- Recommended no equalizador: o primeiro preset, que não se apaga. Lê a saída de som do Windows (\"Headphones (WH-1000XM5)\") e aplica a correção medida para esses auscultadores.\n  - Muda sozinho quando trocas de saída.\n  - Nas colunas, ou com auscultadores na ficha da placa de som, escolhes o modelo uma vez e fica lembrado.\n  - Também pode ser o EQ padrão, nas Definições, em Sound.\n- Crossfade que respeita o disco: entre duas músicas seguidas do mesmo álbum não há fade. Numa playlist ou num Mix, o crossfade de sempre.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.4.0/docs/VERIFICAR-5.4.0.md\nComparar com Windows 5.3.7: https://github.com/joaoafonso2004/duotone/compare/win-v5.3.7...win-v5.4.0",
-        "publishedAt": "2026-10-25T14:16:54Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.4.0",
+        "version": "5.4.1",
+        "tag": "win-v5.4.1",
+        "notes": "Duotone para Windows 5.4.1 — o refrão primeiro\n\nNovo nesta versão:\n- O refrão primeiro: passa o rato por um cartão e aparece um auscultador pequeno no canto da capa. Carregar nele toca 15 s do refrão.\n  - A música que estava a tocar baixa para 20 % enquanto ouves, e volta no fim. Um anel à volta do auscultador conta os 15 s.\n  - O mesmo auscultador, ou Esc, para. Carregar no resto do cartão toca a música normal.\n  - O refrão é a parte que mais se repete quando as pessoas ouvem a música. Sem esse dado, um terço da música.\n- \"Chorus on the progress bar\", nas Definições em Playback (vem desligado): uma risca fina na barra do leitor onde o refrão começa; com o rato na barra diz \"Chorus\".\n- Arrastar para uma playlist: segura a música em cima de Playlists, na lateral, e a página abre. Larga-a num cartão; no fim voltas para onde estavas.\n\nCorrigido:\n- Recommended no equalizador: os headsets USB (Corsair, HyperX, Logitech…) não eram reconhecidos (\"No measurements for CORSAIR VOID ELITE…\"). Agora o nome lê-se bem e aplica a correção medida para o modelo.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.4.1/docs/VERIFICAR-5.4.1.md\nComparar com Windows 5.4.0: https://github.com/joaoafonso2004/duotone/compare/win-v5.4.0...win-v5.4.1",
+        "publishedAt": "2026-10-26T01:50:47Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.4.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116202829,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.4.0/Duotone-Setup.exe",
+          "size": 116206240,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.4.1/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.4.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.4.1/Duotone-Setup.exe"
       }
     }
   }
