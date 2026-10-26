@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-26T03:51:23.787Z",
+  "generatedAt": "2026-10-26T03:57:25.997Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.4.2",
-        "tag": "ios-v5.4.2",
-        "notes": "Duotone iOS 5.4.2 — o AutoMix como um DJ\n\nNovo nesta versão:\n- O AutoMix passa de uma música para a outra como um DJ, também quando os andamentos não batem. Escolhe sozinho a passagem certa:\n  - Na batida, quando os andamentos batem: as duas cruzam-se uns compassos e acabam juntas no fim da frase.\n  - Por cima, quando a seguinte começa só com melodia: a intro dela entra por baixo do fim da outra, e a batida dela cai no tempo forte em que a da outra acaba.\n  - Na cauda, quando a música acaba sem batida: a batida da seguinte começa aí, e a cauda desvanece por baixo.\n  - Corte no \"um\", quando as duas têm batida até ao fim: a que sai perde os graves no último momento e a seguinte entra cheia.\n  - Sem batida clara, um fade suave.\n- Nunca duas linhas de baixo ao mesmo tempo: os graves trocam de uma música para a outra num compasso, e os agudos da seguinte chegam primeiro.\n- O AutoMix respeita o equalizador de cada música (o dela, o do carro ou o Recommended): os cortes da passagem ficam por cima dele. Mexer no EQ a meio de uma passagem não a estraga.\n- O AutoMix funciona a qualquer velocidade: os andamentos comparam-se como se ouvem, e a seguinte entra à velocidade dela. Antes, fora de 1× ficava o crossfade normal.\n\nCada música é analisada outra vez uma única vez, para saber onde a batida começa e acaba. Como antes, não faz pedidos a nenhum servidor.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.4.2/docs/VERIFICAR-5.4.2.md\nComparar com iOS 5.4.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.4.1...ios-v5.4.2",
-        "publishedAt": "2026-10-26T02:56:30Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.4.2",
+        "version": "5.4.3",
+        "tag": "ios-v5.4.3",
+        "notes": "Duotone iOS 5.4.3 — o AutoMix com filtro e tonalidade\n\nMelhorado:\n- O AutoMix soa menos a crossfade:\n  - Passagens mais curtas e decididas: na batida até 4 compassos, a intro por baixo até 8 s, a cauda até 4 s, e sem batida clara até 3 s.\n  - Um filtro de DJ: a música que sai \"fecha\" (perde os graves e depois os médios) e a que entra \"abre\" (chega abafada e fica cheia). Faz-se com o equalizador de cada música, por cima do EQ dela.\n- O AutoMix acerta melhor o ritmo do rap e do trap: o andamento já não se engana com o 808 sincopado, e o \"um\" passa a ser encontrado pelos hi-hats e pelas palmas.\n- O AutoMix conhece a tonalidade de cada música:\n  - Duas músicas em tonalidades que chocam passam depressa.\n  - Quando a música que sai acaba sem batida, ou não há batida clara, ela dobra-se até 2 semitons para casar com a seguinte, como num vinil.\n\nCorrigido:\n- Uma música sem duração conhecida acabava seca, sem crossfade nem AutoMix.\n- Ao abrir a página de um artista, a foto aparecia um instante num quadrado ao centro antes de encher o cabeçalho.\n\nCada música é analisada outra vez, uma única vez. Como antes, o AutoMix não faz pedidos a nenhum servidor.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.4.3/docs/VERIFICAR-5.4.3.md\nComparar com iOS 5.4.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.4.2...ios-v5.4.3",
+        "publishedAt": "2026-10-26T03:57:11Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.4.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 16060279,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.2/Duotone.ipa",
-          "downloads": 2
+          "size": 16065744,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.3/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.2/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.3/Duotone.ipa"
       },
       "windows": {
         "version": "5.4.3",
