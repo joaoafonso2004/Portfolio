@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.4.4",
+          "date": "2026-10-27T03:16:05Z",
+          "localizedDescription": "Duotone iOS 5.4.4 — o AutoMix, a fila e um leitor mais leve\n\nMelhorado:\n- O AutoMix reconhece melhor a batida de músicas com muita voz: quando a confiança fica perto do limite, confirma se o andamento é estável nas duas metades da análise antes de decidir a passagem.\n- Músicas com andamentos a menos de 4 % podem acertar-se pela velocidade da que entra, para uma passagem na batida. A velocidade escolhida para essa música volta no fim da transição.\n- O leitor evita redesenhos repetidos durante a reprodução, as letras atualizam só as linhas que mudam e a barra de progresso reutiliza as suas animações.\n- Ao abrir a Queue, a capa 3D e a barra do leitor ficam paradas por trás da folha, e a letra deixa de fazer scroll escondida, aliviando o trabalho enquanto se arrasta a aba.\n\nCorrigido:\n- Segurar uma música depois de descer na Queue já não faz a lista descer sozinha. O scroll nas bordas só começa depois de mover o dedo.\n- As três barras de reordenar saíram da Queue: para mover uma música, segura-a durante meio segundo e arrasta.\n\nA redução do consumo de memória e a fluidez da aba precisam de comparação no iPhone. A análise do AutoMix continua local, sem pedidos a servidores.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.4.4/docs/VERIFICAR-5.4.4.md\nComparar com iOS 5.4.3: https://github.com/joaoafonso2004/duotone/compare/ios-v5.4.3...ios-v5.4.4",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.4/Duotone.ipa",
+          "size": 16068911,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.4.3",
           "date": "2026-10-26T03:57:11Z",
           "localizedDescription": "Duotone iOS 5.4.3 — o AutoMix com filtro e tonalidade\n\nMelhorado:\n- O AutoMix soa menos a crossfade:\n  - Passagens mais curtas e decididas: na batida até 4 compassos, a intro por baixo até 8 s, a cauda até 4 s, e sem batida clara até 3 s.\n  - Um filtro de DJ: a música que sai \"fecha\" (perde os graves e depois os médios) e a que entra \"abre\" (chega abafada e fica cheia). Faz-se com o equalizador de cada música, por cima do EQ dela.\n- O AutoMix acerta melhor o ritmo do rap e do trap: o andamento já não se engana com o 808 sincopado, e o \"um\" passa a ser encontrado pelos hi-hats e pelas palmas.\n- O AutoMix conhece a tonalidade de cada música:\n  - Duas músicas em tonalidades que chocam passam depressa.\n  - Quando a música que sai acaba sem batida, ou não há batida clara, ela dobra-se até 2 semitons para casar com a seguinte, como num vinil.\n\nCorrigido:\n- Uma música sem duração conhecida acabava seca, sem crossfade nem AutoMix.\n- Ao abrir a página de um artista, a foto aparecia um instante num quadrado ao centro antes de encher o cabeçalho.\n\nCada música é analisada outra vez, uma única vez. Como antes, o AutoMix não faz pedidos a nenhum servidor.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.4.3/docs/VERIFICAR-5.4.3.md\nComparar com iOS 5.4.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.4.2...ios-v5.4.3",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.3/Duotone.ipa",
           "size": 15915555,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.3.2",
-          "date": "2026-10-22T22:28:25Z",
-          "localizedDescription": "Duotone iOS 5.3.2 — a página do artista nova\n\nNovo nesta versão:\n- Artistas: uma página nova. A foto a toda a largura com o nome e os fãs, as tuas músicas primeiro (marcadas com o coração) e depois as outras dele, cinco à vista com \"See all songs\", o último lançamento, os álbuns e os singles e EPs em carrosséis, e \"Fans also like\" para saltar para artistas parecidos. O Play toca a página toda.\n- Já não aparece \"0 songs\" no cabeçalho de um artista nem de um álbum enquanto a página carrega.\n- Fila: arrastar uma música já não deixa outras umas por cima das outras nem buracos depois de largar.\n- Amigos: quando um amigo começa a ouvir, a música dele aparece mais depressa. Uma publicação falhada ou pendurada deixava-o só \"Online\" até ao batimento seguinte.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.2/docs/VERIFICAR-5.3.2.md\nComparar com iOS 5.3.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.1...ios-v5.3.2",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.2/Duotone.ipa",
-          "size": 15908230,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.4.3",
-      "versionDate": "2026-10-26T03:57:11Z",
-      "versionDescription": "Duotone iOS 5.4.3 — o AutoMix com filtro e tonalidade\n\nMelhorado:\n- O AutoMix soa menos a crossfade:\n  - Passagens mais curtas e decididas: na batida até 4 compassos, a intro por baixo até 8 s, a cauda até 4 s, e sem batida clara até 3 s.\n  - Um filtro de DJ: a música que sai \"fecha\" (perde os graves e depois os médios) e a que entra \"abre\" (chega abafada e fica cheia). Faz-se com o equalizador de cada música, por cima do EQ dela.\n- O AutoMix acerta melhor o ritmo do rap e do trap: o andamento já não se engana com o 808 sincopado, e o \"um\" passa a ser encontrado pelos hi-hats e pelas palmas.\n- O AutoMix conhece a tonalidade de cada música:\n  - Duas músicas em tonalidades que chocam passam depressa.\n  - Quando a música que sai acaba sem batida, ou não há batida clara, ela dobra-se até 2 semitons para casar com a seguinte, como num vinil.\n\nCorrigido:\n- Uma música sem duração conhecida acabava seca, sem crossfade nem AutoMix.\n- Ao abrir a página de um artista, a foto aparecia um instante num quadrado ao centro antes de encher o cabeçalho.\n\nCada música é analisada outra vez, uma única vez. Como antes, o AutoMix não faz pedidos a nenhum servidor.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.4.3/docs/VERIFICAR-5.4.3.md\nComparar com iOS 5.4.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.4.2...ios-v5.4.3",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.3/Duotone.ipa",
-      "size": 16065744
+      "version": "5.4.4",
+      "versionDate": "2026-10-27T03:16:05Z",
+      "versionDescription": "Duotone iOS 5.4.4 — o AutoMix, a fila e um leitor mais leve\n\nMelhorado:\n- O AutoMix reconhece melhor a batida de músicas com muita voz: quando a confiança fica perto do limite, confirma se o andamento é estável nas duas metades da análise antes de decidir a passagem.\n- Músicas com andamentos a menos de 4 % podem acertar-se pela velocidade da que entra, para uma passagem na batida. A velocidade escolhida para essa música volta no fim da transição.\n- O leitor evita redesenhos repetidos durante a reprodução, as letras atualizam só as linhas que mudam e a barra de progresso reutiliza as suas animações.\n- Ao abrir a Queue, a capa 3D e a barra do leitor ficam paradas por trás da folha, e a letra deixa de fazer scroll escondida, aliviando o trabalho enquanto se arrasta a aba.\n\nCorrigido:\n- Segurar uma música depois de descer na Queue já não faz a lista descer sozinha. O scroll nas bordas só começa depois de mover o dedo.\n- As três barras de reordenar saíram da Queue: para mover uma música, segura-a durante meio segundo e arrasta.\n\nA redução do consumo de memória e a fluidez da aba precisam de comparação no iPhone. A análise do AutoMix continua local, sem pedidos a servidores.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.4.4/docs/VERIFICAR-5.4.4.md\nComparar com iOS 5.4.3: https://github.com/joaoafonso2004/duotone/compare/ios-v5.4.3...ios-v5.4.4",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.4/Duotone.ipa",
+      "size": 16068911
     }
   ],
   "news": []
