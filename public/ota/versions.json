@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T03:16:27.502Z",
+  "generatedAt": "2026-10-27T03:39:01.360Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16068911,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.4/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.4/Duotone.ipa"
       },
       "windows": {
-        "version": "5.4.4",
-        "tag": "win-v5.4.4",
-        "notes": "Duotone para Windows 5.4.4\n\nMelhorado:\n- A reprodução evita atualizações repetidas de estado quando o leitor já está pronto.\n- As letras reutilizam os controlos de cada verso: ao avançar a música, só as linhas que mudam precisam de ser atualizadas.\n\nEsta versão acompanha também as correções do AutoMix e da Queue no iPhone.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.4.4/docs/VERIFICAR-5.4.4.md\nComparar com Windows 5.4.3: https://github.com/joaoafonso2004/duotone/compare/win-v5.4.3...win-v5.4.4",
-        "publishedAt": "2026-10-27T03:13:50Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.4.4",
+        "version": "5.4.5",
+        "tag": "win-v5.4.5",
+        "notes": "Duotone para Windows 5.4.5 — atualizar os teus presets\n\nNovo:\n- No equalizador, escolhe um preset teu, ajusta as bandas e clica em Update “<nome>” para o substituir. O botão só aparece quando há alterações.\n- O preset mantém o nome e a ligação aos teus aparelhos. Save as preset continua a guardar uma cópia.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.4.5/docs/VERIFICAR-5.4.5.md\nComparar com Windows 5.4.4: https://github.com/joaoafonso2004/duotone/compare/win-v5.4.4...win-v5.4.5",
+        "publishedAt": "2026-10-27T03:38:51Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.4.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116206301,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.4.4/Duotone-Setup.exe",
+          "size": 116206730,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.4.5/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.4.4/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.4.5/Duotone-Setup.exe"
       }
     }
   }
