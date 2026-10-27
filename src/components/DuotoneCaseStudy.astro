@@ -4,14 +4,11 @@ import type { AppConfig } from '../data/apps';
 import { Image } from 'astro:assets';
 import AppDownloads from './AppDownloads.astro';
 import DuotoneScreen from './DuotoneScreen.astro';
+import DuotoneDemo from './DuotoneDemo.astro';
+import { duotoneDemos } from '../data/duotone-demos';
 import player from '../assets/images/duotone/player-jetlag.jpg';
 import playerMeh from '../assets/images/duotone/player-meh.jpg';
-import liked from '../assets/images/duotone/liked.jpg';
-import playlists from '../assets/images/duotone/playlists.jpg';
-import artists from '../assets/images/duotone/artists.jpg';
 import artist from '../assets/images/duotone/artist.jpg';
-import social from '../assets/images/duotone/social.jpg';
-import profile from '../assets/images/duotone/profile.jpg';
 import equalizer from '../assets/images/duotone/equalizer.webp';
 import windowsLibrary from '../assets/images/duotone/windows-library.png';
 import windowsPlayer from '../assets/images/duotone/windows-player.png';
@@ -19,13 +16,11 @@ import logo from '../assets/images/duotone/logo.png';
 
 interface Props { project: Project; app?: AppConfig; }
 const { project, app } = Astro.props;
-const screens = [
-  { id: 'playlists', label: 'Playlists', image: playlists, title: 'Your mixes.', text: 'Keep your favourite tracks together.', alt: 'Duotone iOS playlist library with a two-column grid of cover artwork' },
-  { id: 'songs', label: 'Liked songs', image: liked, title: 'On repeat.', text: 'Save, search and shuffle your favourites.', alt: 'Duotone iOS liked songs with play, shuffle and sorting controls' },
-  { id: 'artists', label: 'Artists', image: artists, title: 'Your rotation.', text: 'Find favourites and your most-played artists.', alt: 'Duotone iOS artists view with on-repeat artists and favourites' },
-  { id: 'artist', label: 'Artist detail', image: artist, title: 'More to discover.', text: 'Songs, albums and new releases in one place.', alt: 'Duotone iOS artist page with a portrait, latest release and saved songs' },
-  { id: 'profile', label: 'Your profile', image: profile, title: 'Your taste.', text: 'Feature a song, share playlists and see your listening stats.', alt: 'Duotone iOS personal profile with a cover photo, featured song, playlists and listening overview' },
-  { id: 'social', label: 'Friends', image: social, title: 'Better together.', text: 'Friends and conversations, alongside your music.', alt: 'Duotone iOS social screen with friends, activity and group conversations' },
+const highlights = [
+  { href: '#duotone-equalizer', number: 'Sound', title: 'Tune every track', detail: '10-band EQ + playback speed' },
+  { href: '#duotone-desktop', number: 'Desktop', title: 'Make room for music', detail: 'Floating mini player + pinned favourites' },
+  { href: '#duotone-connect', number: 'Connect', title: 'Pick up anywhere', detail: 'Sync + control across your devices' },
+  { href: '#duotone-discovery', number: 'Discover', title: 'Find your next favourite', detail: 'Song radio + a mix of your taste' },
 ];
 ---
 
@@ -39,90 +34,101 @@ const screens = [
     <div class="hero-copy">
       <p class="micro hero-kicker"><Image class="duo-mark" src={logo} width={44} height={44} alt="" aria-hidden="true" /> iOS & Windows</p>
       <h1>Duotone<span class="title-dot">.</span></h1>
-      <p class="hero-statement">Your music.<br /><em>A little closer.</em></p>
+      <p class="hero-statement">Your music.<br /><em>More possibilities.</em></p>
+      <p class="hero-description">Tune every track. Take it across devices.<br />Share the songs that stay with you.</p>
       <div class="hero-actions">
-        <a href="#duotone-experience" class="duo-button primary">Explore the app <span aria-hidden="true">↘</span></a>
-        <a href="#duotone-download" class="quiet-link">Get Duotone <span aria-hidden="true">↓</span></a>
+        <a href="#duotone-download" class="duo-button primary">Get Duotone <span aria-hidden="true">↓</span></a>
+        <a href="#duotone-player" class="quiet-link">See it in motion <span aria-hidden="true">↘</span></a>
       </div>
     </div>
     <div class="hero-stage" data-morph-target>
       <div class="stage-orbit orbit-one" aria-hidden="true"></div>
       <div class="stage-orbit orbit-two" aria-hidden="true"></div>
       <div class="hero-phone rear"><DuotoneScreen src={playerMeh} alt="Duotone player with teal artwork and playback controls" eager /></div>
-      <div class="hero-phone front"><DuotoneScreen src={player} alt="Duotone player with three-dimensional album artwork and an ambient background" eager /></div>
+      <div class="hero-phone front"><DuotoneDemo demo={duotoneDemos.hero} fallback={player} label="Floating 3D album artwork playing in Duotone on iPhone" compact /></div>
     </div>
   </header>
 
-  <dl class="project-facts">
-    <div><dt>Built with</dt><dd>React Native · Expo · Electron · Supabase</dd></div>
-  </dl>
+  <nav class="feature-index" aria-label="What makes Duotone personal">
+    {highlights.map((feature) => <a href={feature.href}><span class="micro">{feature.number}<span aria-hidden="true">↗</span></span><strong>{feature.title}</strong><span class="feature-detail">{feature.detail}</span></a>)}
+  </nav>
 
   <section class="player-section" id="duotone-player" aria-labelledby="player-heading">
     <div class="player-showcase">
-      <div class="player-note"><p class="micro section-index">01 / Player</p><h2 id="player-heading">Artwork<br /><em>in motion.</em></h2><p>3D covers, lyrics and ambient colour.</p></div>
+      <div class="player-note"><p class="micro section-index">01 / Feel the music</p><h2 id="player-heading">Give your music<br /><em>another dimension.</em></h2><p>Floating artwork. Colour that follows the cover. Turn it to reveal the lyrics, then turn it back.</p><span class="feature-tag">3D artwork & rotating lyrics · iOS</span></div>
       <div class="player-demo">
-        <figure>
-          <div class="video-phone"><video controls autoplay loop muted playsinline preload="auto" poster="/work/duotone/artwork-poster.jpg" aria-label="iOS screen recording demonstrating the Duotone three-dimensional artwork player"><source src="/work/duotone/artwork-demo.mp4" type="video/mp4" />Your browser does not support this video. <a href="/work/duotone/artwork-demo.mp4">Download the player recording</a>.</video></div>
-          <figcaption>iOS recording <span class="duration">00:09</span></figcaption>
-        </figure>
+        <DuotoneDemo demo={duotoneDemos.player} fallback={player} label="3D album artwork and the rotating lyrics view in Duotone on iOS" />
       </div>
     </div>
   </section>
 
   <section class="equalizer-section" id="duotone-equalizer" aria-labelledby="equalizer-heading">
     <div class="equalizer-showcase">
-      <div class="equalizer-visual"><div class="equalizer-phone"><DuotoneScreen src={equalizer} alt="Duotone iOS equalizer with playback speed, six presets, ten sound bands and per-track settings synced between devices" /></div></div>
+      <div class="equalizer-visual"><div class="equalizer-phone"><DuotoneDemo demo={duotoneDemos.equalizer} fallback={equalizer} label="Duotone iOS equalizer with playback speed, six presets and ten sound bands" /></div></div>
       <div class="equalizer-copy">
         <p class="micro section-index">02 / Equalizer</p>
         <h2 id="equalizer-heading">Make it<br /><em>your sound.</em></h2>
+        <p class="section-description">More bass. A slower tempo. Your settings, remembered for each song.</p>
         <ul class="sound-features">
-          <li>10 bands · 6 presets</li>
-          <li>Adjustable playback speed</li>
-          <li>Per-track settings, synced across devices</li>
+          <li><strong>10 bands. Presets you can make your own.</strong><span>Bass · Sub · Punch · Warm · and the detail above.</span></li>
+          <li><strong>Playback from 0.5× to 2×.</strong></li>
+          <li><strong>Saved per track. Synced across devices.</strong></li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section class="experience-section" id="duotone-experience" aria-labelledby="experience-heading">
+  <section class="desktop-section" id="duotone-desktop" aria-labelledby="desktop-heading">
     <div class="section-heading">
-      <p class="micro section-index">03 / Explore iOS</p>
-      <h2 id="experience-heading">Your library.<br /><em>Your people.</em></h2>
+      <p class="micro section-index">03 / Made for your desktop</p>
+      <h2 id="desktop-heading">Keep your music close.<br /><em>Keep your flow.</em></h2>
     </div>
-    <div class="experience-tabs" role="tablist" aria-label="Explore Duotone screens" data-duotone-tabs>
-      {screens.map((screen, i) => <button type="button" role="tab" id={`tab-${screen.id}`} aria-controls={`panel-${screen.id}`} aria-selected={i === 0 ? 'true' : 'false'} tabindex={i === 0 ? 0 : -1}>{screen.label}</button>)}
-    </div>
-    <div class="experience-panels">
-      {screens.map((screen, i) => (
-        <div class="experience-panel" role="tabpanel" id={`panel-${screen.id}`} aria-labelledby={`tab-${screen.id}`} hidden={i !== 0} tabindex="0">
-          <div class="tour-copy"><span class="tour-number" aria-hidden="true">0{i + 1}<span>/ 06</span></span><h3>{screen.title}</h3><p>{screen.text}</p></div>
-          <div class={`tour-visual visual-${screen.id}`}><span class="visual-word" aria-hidden="true">{screen.label}</span><div class="tour-phone"><DuotoneScreen src={screen.image} alt={screen.alt} /></div></div>
-        </div>
-      ))}
+    <div class="desktop-showcase"><DuotoneDemo demo={duotoneDemos.desktop} fallback={windowsLibrary} variant="desktop" label="Duotone Windows library with sidebar navigation, searchable tracks and playback controls" /></div>
+    <div class="desktop-features">
+      <div><h3>A player that fits.</h3><p>Drag, resize and expand the floating mini player. Always above your windows.</p></div>
+      <div><h3>Your favourites, pinned.</h3><p>Keep songs, playlists, artists and friends one click away in your sidebar.</p></div>
+      <div><h3>Artwork with a pulse.</h3><p>An audio-reactive visual effect, with an intensity you control.</p></div>
     </div>
   </section>
 
-  <section class="desktop-section" id="duotone-desktop" aria-labelledby="desktop-heading">
-    <div class="section-heading">
-      <p class="micro section-index">04 / Windows</p>
-      <h2 id="desktop-heading">Same music.<br /><em>More room.</em></h2>
+  <section class="connect-section" id="duotone-connect" aria-labelledby="connect-heading">
+    <div class="connect-copy"><p class="micro section-index">04 / Duotone Connect</p><h2 id="connect-heading">Change devices.<br /><em>Keep the music.</em></h2></div>
+    <div class="connect-features">
+      <div><span class="feature-symbol" aria-hidden="true">↔</span><h3>Pick up where you left off.</h3><p>Your track, queue and position, ready on the next device.</p></div>
+      <div><span class="feature-symbol" aria-hidden="true">⌁</span><h3>Your phone is the remote.</h3><p>Play, pause and skip on your PC from your iPhone.</p></div>
+      <p class="connection-note">Same account. Duotone open on both devices.</p>
     </div>
-    <div class="desktop-gallery">
-      <figure>
-        <DuotoneScreen src={windowsLibrary} variant="desktop" alt="Duotone Windows liked songs library with sidebar navigation, searchable tracks and persistent playback controls" />
-        <figcaption><span class="micro">Library</span></figcaption>
-      </figure>
-      <figure>
-        <DuotoneScreen src={windowsPlayer} variant="desktop" alt="Duotone Windows player with large album artwork, an up-next queue and playback controls" />
-        <figcaption><span class="micro">Now playing</span></figcaption>
-      </figure>
+    {duotoneDemos.connect && <div class="connect-recording"><DuotoneDemo demo={duotoneDemos.connect} fallback={windowsPlayer} variant="desktop" label="A Duotone listening session moving between iPhone and Windows, followed by remote playback control" /></div>}
+  </section>
+
+  <section class="discovery-section" id="duotone-discovery" aria-labelledby="discovery-heading">
+    <div class="section-heading">
+      <p class="micro section-index">05 / Follow your curiosity</p>
+      <h2 id="discovery-heading">Know what you love.<br /><em>Find what’s next.</em></h2>
+    </div>
+    <div class="radio-modes">
+      <div><span class="micro">Radio</span><h3>“Songs like this one”</h3><p>Start with a track. Follow its sound into your next discovery.</p></div>
+      <div><span class="micro">Mix</span><h3>A little of everything you love.</h3><p>Your favourites and listening habits, mixed with fresh suggestions.</p></div>
+    </div>
+    {duotoneDemos.radio && <div class="radio-recording"><DuotoneDemo demo={duotoneDemos.radio} fallback={player} label="Choosing Songs like this one and Mix in the Duotone radio menu" /></div>}
+    <div class="artist-showcase">
+      <div class="artist-copy"><p class="micro">Go beyond the top tracks</p><h3>One artist.<br /><em>So much to explore.</em></h3><p>Songs, collaborations, albums and new releases. Then “Fans also like” opens the next door.</p></div>
+      <div class="artist-visual"><div class="tour-phone"><DuotoneDemo demo={duotoneDemos.artist} fallback={artist} label="Duotone iOS artist page with latest releases, songs and albums" /></div></div>
+    </div>
+  </section>
+
+  <section class="experience-section" id="duotone-experience" aria-labelledby="experience-heading">
+    <div class="social-showcase">
+      <div class="social-visual"><div class="tour-phone"><DuotoneDemo demo={duotoneDemos.social} fallback={player} label="Opening Send to friends in Duotone, with names and photos blurred" /></div></div>
+      <div class="social-copy"><p class="micro section-index">06 / Better together</p><h2 id="experience-heading">“You need<br /><em>to hear this.”</em></h2><p class="section-description">Send songs and playlists straight to your friends. Keep the conversation going, and build your next playlist together.</p><span class="feature-tag">Friends · Chats · Collaborative playlists</span></div>
     </div>
   </section>
 
   <section class="download-section" id="duotone-download" aria-labelledby="download-heading">
-    <div><p class="micro">05 / Download</p><h2 id="download-heading">Get <em>Duotone.</em></h2></div>
+    <div><p class="micro">07 / Make it your player</p><h2 id="download-heading">Your next listen.<br /><em>Your way.</em></h2><p class="import-note">Bring your playlists with import options for Spotify and YouTube.</p></div>
     <div class="download-actions">{app && <AppDownloads app={app} />}<a class="source-link" href={project.github} target="_blank" rel="noopener noreferrer">Source on GitHub <span aria-hidden="true">↗</span></a></div>
   </section>
+  <dl class="project-facts"><div><dt>Designed & built by</dt><dd>João Afonso</dd></div><div><dt>Built with</dt><dd>React Native · Expo · Electron · Supabase</dd></div></dl>
 
   <dialog class="screenshot-dialog" aria-label="Duotone screenshot" data-duotone-dialog data-lenis-prevent>
     <div class="dialog-toolbar"><p data-duotone-caption></p><button type="button" data-duotone-close aria-label="Close screenshot">✕</button></div>
@@ -143,6 +149,7 @@ const screens = [
   h1 { font-family: 'Clash Display', sans-serif; font-size: clamp(72px, 9vw, 126px); font-weight: 500; line-height: 1; letter-spacing: -.065em; margin-left: -5px; }
   .title-dot { color: var(--duo-lilac); }
   .hero-statement { font-size: clamp(35px, 4vw, 54px); font-weight: 500; line-height: 1.08; letter-spacing: -.035em; margin: 30px 0 22px; }
+  .hero-description { color: #b5b0bd; max-width: 405px; font-size: 16px; line-height: 1.8; text-wrap: pretty; }
   em { font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; color: var(--duo-lilac); }
   .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; margin-top: 30px; }
   .duo-button { display: inline-flex; align-items: center; justify-content: space-between; gap: 25px; min-height: 50px; padding: 16px 24px; border-radius: 30px; font-size: 12px; font-weight: 700; transition: background .2s, transform .2s; }
@@ -154,52 +161,75 @@ const screens = [
   .hero-phone { position: absolute; width: 47%; max-width: 274px; }
   .hero-phone.front { top: 60px; right: 4%; transform: rotate(7deg); z-index: 2; }
   .hero-phone.rear { left: 4%; top: 12px; transform: rotate(-9deg); }
-  .project-facts { border-block: 1px solid #ffffff20; padding: 22px 0; }
+  .project-facts { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 40px; border-top: 1px solid #ffffff20; padding: 24px 0 0; margin-top: 64px; }
   .project-facts > div { display: flex; align-items: baseline; gap: 24px; }
   .project-facts dt { font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: .13em; font-size: 9px; color: var(--duo-dim); flex-shrink: 0; }
   .project-facts dd { font-size: 12px; line-height: 1.8; }
   section { scroll-margin-top: 100px; }
-  .player-section, .experience-section, .equalizer-section, .desktop-section { padding-top: 110px; }
+  .player-section, .experience-section, .equalizer-section, .desktop-section, .discovery-section { padding-top: 110px; }
   .section-heading { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; margin-bottom: 45px; }
   .section-index { color: var(--duo-lilac); padding-top: 10px; }
   h2 { font-size: clamp(40px, 5.1vw, 65px); font-weight: 500; letter-spacing: -.045em; line-height: 1.04; }
   .player-showcase { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 50px; padding: 60px; border: 1px solid #ffffff14; border-radius: 24px; background: radial-gradient(ellipse at 85% 25%, #4933464d, transparent 65%), #111115; }
   .player-note h2 { margin-top: 24px; }
-  .player-note p:not(.micro) { font-size: 14px; line-height: 1.8; color: var(--duo-dim); margin-top: 24px; max-width: 280px; }
-  .player-demo { width: min(100%, 280px); justify-self: center; min-width: 0; }
-  .video-phone { padding: 5px; border: 1px solid #64616c; background: #17171c; border-radius: 29px; overflow: hidden; box-shadow: 0 20px 35px #0005; }
-  .video-phone video { display: block; width: 100%; height: auto; aspect-ratio: 576 / 1248; border-radius: 23px; background: #09090d; }
-  figcaption { display: flex; gap: 9px; align-items: baseline; font-size: 10px; line-height: 1.7; margin-top: 18px; }
-  figcaption > span { font-family: 'JetBrains Mono', monospace; color: var(--duo-dim); font-size: 9px; }
-  .duration { margin-left: auto; }
+  .player-note p:not(.micro) { font-size: 15px; line-height: 1.85; color: #b5b0bd; margin-top: 24px; max-width: 380px; text-wrap: pretty; }
+  .player-demo { width: min(100%, 290px); justify-self: center; min-width: 0; }
+  .feature-tag { display: block; margin-top: 28px; color: var(--duo-lilac); font-family: 'JetBrains Mono', monospace; font-size: 10px; line-height: 1.8; }
   .equalizer-showcase { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #ffffff18; border-radius: 24px; overflow: hidden; background: #111115; }
   .equalizer-visual { display: grid; place-items: center; padding: 45px; background: radial-gradient(ellipse at 50% 40%, #55416077, #211e2966); }
   .equalizer-phone { width: 270px; max-width: 100%; }
   .equalizer-copy { align-self: center; padding: 50px; }
   .equalizer-copy h2 { margin-top: 24px; }
   .sound-features { margin-top: 30px; list-style: none; padding: 0; }
-  .sound-features li { padding-block: 16px; border-top: 1px solid #ffffff1a; color: var(--duo-dim); font-size: 13px; line-height: 1.6; }
-  .desktop-gallery { display: grid; gap: 60px; }
-  .desktop-gallery figcaption { margin-top: 16px; }
-  .desktop-gallery .micro { color: var(--duo-lilac); }
-  .experience-tabs { display: flex; gap: 8px; flex-wrap: wrap; padding-bottom: 24px; }
-  .experience-tabs button { min-height: 44px; padding: 11px 20px; border: 1px solid #ffffff25; border-radius: 30px; color: #b3b0bc; font-size: 12px; transition: background .2s, color .2s; }
-  .experience-tabs button:hover { border-color: var(--duo-lilac); color: white; }
-  .experience-tabs button[aria-selected='true'] { background: #d0c1e7; color: #17131e; border-color: #d0c1e7; }
-  .experience-panels { border: 1px solid #ffffff18; border-radius: 24px; overflow: hidden; background: #111115; }
-  .experience-panel { display: grid; grid-template-columns: 1fr 1fr; min-height: 690px; }
-  .experience-panel[hidden] { display: none; }
-  .tour-copy { padding: 60px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
-  .tour-number { color: var(--duo-lilac); font-family: 'JetBrains Mono', monospace; font-size: 14px; margin-bottom: 36px; }
-  .tour-number > span { color: #74717d; font-size: 10px; margin-left: 8px; }
-  .tour-copy h3 { font-size: clamp(30px, 3vw, 42px); letter-spacing: -.04em; line-height: 1.1; max-width: 340px; }
-  .tour-copy > p { color: #aaa7b1; font-size: 14px; line-height: 1.9; margin-top: 24px; max-width: 350px; }
-  .tour-visual { position: relative; display: grid; place-items: center; overflow: hidden; padding: 44px; background: radial-gradient(ellipse at 50% 40%, #55416077, #211e2966); }
-  .visual-word { position: absolute; transform: rotate(-90deg); color: #bca7da10; font-family: 'Clash Display', sans-serif; font-weight: 600; font-size: 115px; white-space: nowrap; }
+  .sound-features li { padding-block: 16px; border-top: 1px solid #ffffff1a; color: #b5b0bd; font-size: 13px; line-height: 1.7; }
+  .sound-features strong { display: block; font-size: 14px; color: #eee8f4; font-weight: 500; margin-bottom: 5px; }
+  .feature-index { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-block: 1px solid #ffffff20; }
+  .feature-index a { padding: 27px 22px; border-right: 1px solid #ffffff15; transition: background .25s; }
+  .feature-index a:first-child { padding-left: 0; }
+  .feature-index a:last-child { border: 0; padding-right: 0; }
+  .feature-index a:hover { background: #c4b5df08; }
+  .feature-index .micro { display: flex; justify-content: space-between; color: var(--duo-lilac); margin-bottom: 18px; }
+  .feature-index .micro span { font-size: 16px; }
+  .feature-index strong { display: block; font-size: 15px; font-weight: 500; letter-spacing: -.02em; margin-bottom: 7px; }
+  .feature-detail { color: var(--duo-dim); font-size: 11px; line-height: 1.7; display: block; }
+  .section-description { font-size: 15px; color: #b5b0bd; line-height: 1.85; margin-top: 24px; max-width: 520px; text-wrap: pretty; }
+  .desktop-showcase { padding: 32px; border: 1px solid #ffffff18; border-radius: 24px; background: radial-gradient(ellipse at 55% 0%, #55416066, transparent 75%), #111115; }
+  .desktop-features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 42px; padding: 38px 0 0; }
+  .desktop-features .micro { color: var(--duo-lilac); font-size: 9px; }
+  .desktop-features h3 { font-size: 23px; font-weight: 500; line-height: 1.2; letter-spacing: -.03em; margin: 14px 0; }
+  .desktop-features p { font-size: 13px; line-height: 1.85; color: #b5b0bd; }
+  .connect-section { display: grid; grid-template-columns: 1.1fr 1fr; gap: 70px; margin-top: 110px; padding: 64px 50px; background: radial-gradient(ellipse at 0 0, #3a2e4e70, transparent 70%), #111115; border: 1px solid #ffffff18; border-radius: 24px; }
+  .connect-copy h2 { margin-top: 24px; }
+  .connect-features { display: grid; gap: 30px; align-content: center; }
+  .connect-features > div { position: relative; padding-left: 48px; }
+  .feature-symbol { position: absolute; left: 0; top: -5px; font-size: 30px; color: var(--duo-lilac); }
+  .connect-features h3 { font-weight: 500; font-size: 21px; letter-spacing: -.03em; line-height: 1.3; }
+  .connect-features p { font-size: 13px; line-height: 1.85; color: #b5b0bd; margin-top: 10px; }
+  .connect-features .connection-note { border-top: 1px solid #ffffff20; margin: 0; padding-top: 20px; font-size: 11px; }
+  .connect-recording { grid-column: 1 / -1; min-width: 0; }
+  .radio-modes { display: grid; grid-template-columns: 1fr 1fr; border-block: 1px solid #ffffff20; }
+  .radio-modes > div { padding: 38px 42px 38px 0; }
+  .radio-modes > div + div { padding-left: 42px; padding-right: 0; border-left: 1px solid #ffffff20; }
+  .radio-modes .micro { color: #aecabf; }
+  .radio-modes h3 { font-size: clamp(25px, 3vw, 37px); font-weight: 500; letter-spacing: -.04em; margin: 22px 0 16px; line-height: 1.15; }
+  .radio-modes p { font-size: 14px; color: #b5b0bd; line-height: 1.85; max-width: 445px; }
+  .radio-recording { width: min(100%, 290px); margin: 40px auto; }
+  .artist-showcase { display: grid; grid-template-columns: 1fr 1fr; background: #111115; border: 1px solid #ffffff18; border-radius: 24px; overflow: hidden; margin-top: 45px; }
+  .artist-copy { padding: 55px; align-self: center; }
+  .artist-copy .micro { color: #aecabf; }
+  .artist-copy h3 { margin: 22px 0; font-size: clamp(34px, 4vw, 50px); line-height: 1.08; letter-spacing: -.04em; }
+  .artist-copy em { color: #aecabf; }
+  .artist-copy p:not(.micro) { font-size: 14px; line-height: 1.85; color: #b5b0bd; }
+  .artist-visual { display: grid; place-items: center; min-width: 0; padding: 40px; background: radial-gradient(ellipse at 50% 40%, #35574b55, #18292344); }
+  .social-showcase { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #ffffff18; border-radius: 24px; overflow: hidden; background: #111115; }
+  .social-visual { display: grid; place-items: center; padding: 40px; background: radial-gradient(ellipse at 50% 40%, #55416077, #211e2966); }
+  .social-copy { padding: 50px; align-self: center; }
+  .social-copy h2 { margin-top: 24px; }
   .tour-phone { position: relative; width: 270px; max-width: 100%; }
   .download-section { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 100px; padding: 75px 0 0; margin-top: 110px; border-top: 1px solid #ffffff20; }
   .download-section .micro { margin-bottom: 28px; color: var(--duo-lilac); }
   .download-actions { width: 100%; max-width: 420px; justify-self: end; }
+  .import-note { max-width: 460px; font-size: 12px; color: #aaa7b1; line-height: 1.85; margin-top: 20px; }
   .source-link { display: flex; align-items: center; justify-content: space-between; min-height: 44px; font-size: 12px; border-bottom: 1px solid #ffffff25; padding: 15px 0; margin-top: 14px; transition: color .2s; }
   .screenshot-dialog { position: fixed; inset: 0; width: min(900px, 96vw); height: 94dvh; max-height: 94dvh; max-width: 96vw; margin: auto; padding: 0; background: #111115; color: #f2efe8; border: 1px solid #ffffff30; border-radius: 18px; overflow: hidden; }
   .screenshot-dialog::backdrop { background: #060609ed; }
@@ -218,8 +248,16 @@ const screens = [
     .hero-statement { font-size: 42px; }
     .player-showcase { padding: 35px; gap: 28px; }
     .equalizer-copy { padding: 30px; } .equalizer-visual { padding: 30px; }
-    .tour-copy { padding: 35px; } .tour-visual { padding: 32px; } .experience-panel { min-height: 650px; }
+    .social-copy, .social-visual { padding: 30px; }
     .download-section { gap: 45px; }
+    .hero-description { font-size: 14px; }
+    .feature-index a { padding-inline: 15px; }
+    .feature-index strong { font-size: 13px; }
+    .desktop-features { gap: 28px; }
+    .connect-section { padding: 40px 30px; gap: 35px; }
+    .connect-copy h2 { font-size: 49px; }
+    .artist-copy { padding: 30px; }
+    .artist-visual { padding: 30px; }
   }
   @media (max-width: 767px) {
     .duotone-case { padding-bottom: 65px; } .case-topline > .micro { font-size: 8px; letter-spacing: .05em; text-align: right; max-width: 135px; }
@@ -230,16 +268,38 @@ const screens = [
     .hero-stage { height: auto; aspect-ratio: .9; width: 100%; max-width: 500px; justify-self: center; }
     .hero-phone { width: 45%; } .hero-phone.front { right: 8%; top: 9%; } .hero-phone.rear { left: 7%; top: 0; }
     .project-facts { padding: 20px 0; } .project-facts > div { flex-wrap: wrap; gap: 8px 16px; } .project-facts dd { font-size: 11px; }
-    .player-section, .experience-section, .equalizer-section, .desktop-section { padding-top: 70px; } .section-heading { grid-template-columns: 1fr; gap: 20px; margin-bottom: 30px; }
-    h2 { font-size: 47px; }
+    .player-section, .experience-section, .equalizer-section, .desktop-section, .discovery-section { padding-top: 70px; } .section-heading { grid-template-columns: 1fr; gap: 20px; margin-bottom: 30px; }
+    h2 { font-size: clamp(35px, 9.5vw, 47px); }
     .player-showcase { grid-template-columns: 1fr; padding: 28px 20px; gap: 35px; border-radius: 18px; }
     .player-note h2 { margin-top: 20px; } .player-note p:not(.micro) { max-width: 380px; margin-top: 18px; }
-    .player-demo { width: min(100%, 255px); } .video-phone { border-radius: 20px; padding: 3px; } .video-phone video { border-radius: 16px; } figcaption { font-size: 9px; flex-wrap: wrap; gap: 5px; } .duration { display: none; }
+    .player-demo { width: min(100%, 255px); }
     .equalizer-showcase { grid-template-columns: 1fr; } .equalizer-copy { grid-row: 1; padding: 30px 25px; } .equalizer-visual { padding: 35px 25px; } .equalizer-phone { width: 255px; }
-    .desktop-gallery { gap: 38px; }
-    .experience-tabs { gap: 7px; padding-bottom: 20px; } .experience-tabs button { padding: 10px 15px; font-size: 11px; }
-    .experience-panel { grid-template-columns: 1fr; min-height: 0; } .tour-copy { padding: 30px 25px; } .tour-number { margin-bottom: 18px; } .tour-copy h3 { font-size: 34px; } .tour-copy > p { margin-top: 16px; }
-    .tour-visual { padding: 35px 25px; } .tour-phone { width: 255px; } .visual-word { font-size: 95px; }
+    .feature-index { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .feature-index a, .feature-index a:first-child, .feature-index a:last-child { padding: 20px 15px; }
+    .feature-index a:nth-child(even) { border-right: 0; }
+    .feature-index a:nth-child(-n+2) { border-bottom: 1px solid #ffffff15; }
+    .feature-index .micro { margin-bottom: 10px; }
+    .feature-detail { font-size: 10px; }
+    .section-description { font-size: 14px; margin-top: 20px; }
+    .desktop-showcase { padding: 12px; border-radius: 18px; }
+    .desktop-features { grid-template-columns: 1fr; gap: 25px; padding-top: 28px; }
+    .desktop-features > div + div { padding-top: 25px; border-top: 1px solid #ffffff18; }
+    .desktop-features h3 { margin-block: 10px; }
+    .connect-section { grid-template-columns: 1fr; gap: 35px; padding: 30px 25px; margin-top: 70px; border-radius: 18px; }
+    .connect-copy h2 { font-size: clamp(32px, 8.8vw, 47px); }
+    .connect-features h3 { font-size: 20px; }
+    .connect-features > div { padding-left: 38px; }
+    .radio-modes { grid-template-columns: 1fr; }
+    .radio-modes > div, .radio-modes > div + div { padding: 28px 0; border-left: 0; }
+    .radio-modes > div + div { border-top: 1px solid #ffffff20; }
+    .radio-modes h3 { font-size: 30px; }
+    .artist-showcase { grid-template-columns: 1fr; margin-top: 30px; border-radius: 18px; }
+    .artist-copy { padding: 30px 25px; }
+    .artist-visual { padding: 35px 25px; }
+    .artist-copy h3 { font-size: 38px; }
+    .social-showcase { grid-template-columns: 1fr; border-radius: 18px; }
+    .social-copy { grid-row: 1; padding: 30px 25px; }
+    .social-visual { padding: 35px 25px; } .tour-phone { width: 255px; }
     .download-section { grid-template-columns: 1fr; gap: 30px; padding-top: 45px; margin-top: 70px; } .download-actions { max-width: none; }
     .dialog-toolbar { padding-inline: 12px; gap: 10px; } .dialog-toolbar p { font-size: 10px; }
   }
@@ -254,30 +314,23 @@ const screens = [
     root.dataset.initialized = 'true';
     const controller = new AbortController();
     const { signal } = controller;
-    const tabs = Array.from(root.querySelectorAll<HTMLButtonElement>('[role="tab"]'));
-    const panels = Array.from(root.querySelectorAll<HTMLElement>('[role="tabpanel"]'));
-    const select = (index: number, focus = false) => {
-      tabs.forEach((tab, i) => {
-        tab.setAttribute('aria-selected', String(i === index));
-        tab.tabIndex = i === index ? 0 : -1;
-        panels[i].hidden = i !== index;
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const entrances = new Set<Animation>();
+    const reveal = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        reveal.unobserve(entry.target);
+        if (motion.matches) return;
+        const animation = entry.target.animate([
+          { opacity: .35, transform: 'translateY(24px)' },
+          { opacity: 1, transform: 'translateY(0)' },
+        ], { duration: 700, easing: 'cubic-bezier(.16, 1, .3, 1)' });
+        entrances.add(animation);
+        animation.finished.then(() => entrances.delete(animation)).catch(() => {});
       });
-      if (focus) tabs[index].focus({ preventScroll: true });
-    };
-    tabs.forEach((tab, i) => {
-      tab.addEventListener('click', () => select(i), { signal });
-      tab.addEventListener('keydown', (event) => {
-        let index = i;
-        if (event.key === 'ArrowRight') index = (i + 1) % tabs.length;
-        else if (event.key === 'ArrowLeft') index = (i - 1 + tabs.length) % tabs.length;
-        else if (event.key === 'Home') index = 0;
-        else if (event.key === 'End') index = tabs.length - 1;
-        else return;
-        event.preventDefault();
-        select(index, true);
-      }, { signal });
-    });
-
+    }, { threshold: .08 });
+    root.querySelectorAll('.player-showcase, .equalizer-showcase, .section-heading, .connect-section, .artist-showcase, .social-showcase').forEach((element) => reveal.observe(element));
+    motion.addEventListener('change', () => { if (motion.matches) entrances.forEach((animation) => animation.cancel()); }, { signal });
     const dialog = root.querySelector<HTMLDialogElement>('[data-duotone-dialog]')!;
     const fullImage = dialog.querySelector<HTMLImageElement>('[data-duotone-fullscreen]')!;
     const caption = dialog.querySelector<HTMLElement>('[data-duotone-caption]')!;
@@ -305,14 +358,9 @@ const screens = [
     dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); }, { signal });
     dialog.addEventListener('close', () => { restoreScroll(); trigger?.focus({ preventScroll: true }); }, { signal });
 
-    const videos = Array.from(root.querySelectorAll<HTMLVideoElement>('video'));
-    videos.forEach((video) => {
-      video.muted = true;
-      void video.play().catch(() => {});
-      video.addEventListener('play', () => videos.forEach((other) => { if (other !== video) other.pause(); }), { signal });
-    });
     document.addEventListener('astro:before-swap', () => {
-      videos.forEach((video) => video.pause());
+      reveal.disconnect();
+      entrances.forEach((animation) => animation.cancel());
       if (dialog.open) dialog.close();
       restoreScroll();
       controller.abort();

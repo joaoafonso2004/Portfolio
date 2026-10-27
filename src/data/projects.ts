@@ -126,7 +126,7 @@ export const PROJECTS: Project[] = [
     slug: 'duotone',
     title: 'Duotone',
     category: 'Music App — iOS & PC',
-    description: 'A music app for iOS and Windows, with 3D artwork, a personal library and social features.',
+    description: 'Make music yours on iOS and Windows: per-song EQ, a floating mini player, cross-device control, personal radio and playlists built with friends.',
     github: 'https://github.com/joaoafonso2004/duotone',
     img: duotoneImg,
     gallery: [],

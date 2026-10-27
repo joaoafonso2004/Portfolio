@@ -1,0 +1,127 @@
+---
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import type { DuotoneDemo } from '../data/duotone-demos';
+import DuotoneScreen from './DuotoneScreen.astro';
+
+interface Props {
+  demo?: DuotoneDemo;
+  fallback: ImageMetadata;
+  label: string;
+  variant?: 'phone' | 'desktop';
+  compact?: boolean;
+}
+const { demo, fallback, label, variant = 'phone', compact = false } = Astro.props;
+const poster = demo?.poster ?? (demo ? (await getImage({ src: fallback, width: variant === 'phone' ? 640 : 1280, format: 'webp' })).src : undefined);
+---
+
+{demo ? (
+  <figure class:list={['demo', { 'demo-desktop': variant === 'desktop', 'demo-compact': compact }]} data-demo>
+    <div class="demo-frame">
+      <video data-lazy-video controls loop muted playsinline preload="none" width={variant === 'desktop' ? 1920 : 384} height={variant === 'desktop' ? 1080 : 848} poster={poster} aria-label={label}>
+        <source data-src={demo.src} type="video/mp4" />
+        <a href={demo.src}>Watch the recording</a>
+      </video>
+    </div>
+    <figcaption><span>Recorded in Duotone · {variant === 'phone' ? 'iOS' : 'Windows'}</span><button type="button" class="demo-toggle" data-demo-toggle aria-label={`Play demo: ${label}`} hidden>Play demo <span aria-hidden="true">▷</span></button></figcaption>
+    <noscript><a class="recording-link" href={demo.src}>Watch the recording ↗</a></noscript>
+  </figure>
+) : <DuotoneScreen src={fallback} alt={label} variant={variant} />}
+
+<style>
+  .demo { position: relative; width: 100%; }
+  .demo-frame { padding: 5px; border: 1px solid #64616c; background: #17171c; border-radius: 32px; overflow: hidden; box-shadow: 0 24px 50px -22px #000b; }
+  video { display: block; width: 100%; height: auto; object-fit: contain; border-radius: 26px; background: #09090d; }
+  figcaption { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; margin-top: 12px; color: #aaa5b5; font-family: 'JetBrains Mono', monospace; font-size: 9px; line-height: 1.6; }
+  .demo-toggle { min-height: 44px; color: #e2d6f2; display: inline-flex; align-items: center; gap: 12px; }
+  .demo-toggle[hidden] { display: none; }
+  .demo-toggle:hover, .recording-link:hover { color: white; }
+  .demo-desktop .demo-frame { border-radius: 14px; padding: 0; }
+  .demo-desktop video { aspect-ratio: 16 / 9; border-radius: 13px; }
+  .recording-link { display: inline-block; padding: 12px 0; font-size: 12px; color: #e2d6f2; }
+  .demo-compact figcaption { position: absolute; right: 12px; bottom: 12px; margin: 0; }
+  .demo-compact figcaption > span { display: none; }
+  .demo-compact .demo-toggle { width: 44px; height: 44px; justify-content: center; font-size: 0; background: #17131ee8; border: 1px solid #ffffff25; border-radius: 50%; }
+  .demo-compact .demo-toggle::after { content: '▷'; font-size: 17px; }
+  .demo-compact .demo-toggle[data-playing='true']::after { content: 'Ⅱ'; }
+</style>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    const root = document.querySelector<HTMLElement>('.duotone-case');
+    if (!root || root.dataset.demosReady) return;
+    root.dataset.demosReady = 'true';
+    const controller = new AbortController();
+    const { signal } = controller;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const demos = Array.from(root.querySelectorAll<HTMLElement>('[data-demo]')).map((element) => ({
+      element,
+      video: element.querySelector<HTMLVideoElement>('video')!,
+      button: element.querySelector<HTMLButtonElement>('[data-demo-toggle]')!,
+      visible: false,
+      preference: null as 'play' | 'pause' | null,
+    }));
+    const load = (video: HTMLVideoElement) => {
+      const source = video.querySelector<HTMLSourceElement>('source')!;
+      if (source.hasAttribute('src')) return;
+      source.src = source.dataset.src!;
+      video.load();
+    };
+    const release = (video: HTMLVideoElement) => {
+      video.pause();
+      const source = video.querySelector<HTMLSourceElement>('source')!;
+      if (!source.hasAttribute('src')) return;
+      // Free the decoder when a demo leaves the screen. Keeping every paused
+      // phone recording decoded can leave later videos black in embedded browsers.
+      source.removeAttribute('src');
+      video.load();
+    };
+    const update = (demo: typeof demos[number]) => {
+      const { video, button } = demo;
+      button.textContent = video.paused ? 'Play demo ▷' : 'Pause demo Ⅱ';
+      button.dataset.playing = String(!video.paused);
+      button.setAttribute('aria-label', `${video.paused ? 'Play' : 'Pause'} demo: ${video.getAttribute('aria-label')}`);
+    };
+    const sync = (demo: typeof demos[number]) => {
+      const shouldPlay = demo.visible && !document.hidden && (demo.preference === 'play' || (!reduced.matches && demo.preference !== 'pause'));
+      if (shouldPlay) {
+        load(demo.video);
+        void demo.video.play().catch(() => update(demo));
+      } else if (!demo.visible || document.hidden) release(demo.video);
+      else demo.video.pause();
+    };
+    demos.forEach((demo) => {
+      demo.video.muted = true;
+      demo.video.controls = false;
+      demo.button.hidden = false;
+      demo.button.addEventListener('click', () => {
+        demo.preference = demo.video.paused ? 'play' : 'pause';
+        sync(demo);
+      }, { signal });
+      demo.video.addEventListener('play', () => update(demo), { signal });
+      demo.video.addEventListener('pause', () => update(demo), { signal });
+      demo.video.addEventListener('emptied', () => update(demo), { signal });
+      demo.video.addEventListener('error', () => {
+        demo.video.controls = true;
+        demo.button.hidden = true;
+      }, { signal });
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const demo = demos.find((item) => item.element === entry.target)!;
+        demo.visible = entry.isIntersecting && entry.intersectionRatio >= .25;
+        sync(demo);
+      });
+    }, { threshold: [0, .25] });
+    demos.forEach((demo) => observer.observe(demo.element));
+    document.addEventListener('visibilitychange', () => demos.forEach(sync), { signal });
+    reduced.addEventListener('change', () => {
+      demos.forEach((demo) => { demo.preference = null; sync(demo); });
+    }, { signal });
+    document.addEventListener('astro:before-swap', () => {
+      observer.disconnect();
+      demos.forEach((demo) => release(demo.video));
+      controller.abort();
+    }, { once: true, signal });
+  });
+</script>
