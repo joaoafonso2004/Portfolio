@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T19:13:54.843Z",
+  "generatedAt": "2026-10-30T22:01:30.534Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16074356,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.5.0/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.5.0/Duotone.ipa"
       },
       "windows": {
-        "version": "5.5.0",
-        "tag": "win-v5.5.0",
-        "notes": "Duotone para Windows 5.5.0 — o PC a outro nível\n\nNovo nesta versão:\n- Home: dois cartões à cabeça, o que estavas a ouvir (para continuar) e a Daily mix. A pesquisa é uma barra de comando (Ctrl F), e as prateleiras menos usadas ficam atrás de um botão.\n- Playlists: pesquisa e ordem (Recent, A–Z, Most tracks) na grelha, um só botão Import (YouTube ou Spotify), e o mosaico viaja da grelha para a playlist e volta. No fim de uma playlist há sugestões para juntar com um clique.\n- Artists: Most played, A–Z ou Recently added. O artista que mais ouves aparece à frente, com as contas dele, e os retratos são redondos, com um vinil por trás. O retrato viaja para a página do artista, que pinta a janela com a cor da foto, como o Now Playing.\n- Liked Songs: o resumo no título, a ordem à vista, o cabeçalho da tabela preso e um atalho para a música que está a tocar.\n- Perfil: a capa de cada página fica presa e afasta-se ao rolar; a capa inteira abre com o botão ou com a tecla F.\n- Barra do leitor: o coração passa para o grupo da direita, e o shuffle, o repeat, o play/pause, o volume e a Jam ganham a sua animação.\n- Radio na fila: Off, Like this e Mix à vista, o grupo da Radio na fila e o Clear animado, com Undo.\n- Social: quem está a ouvir aparece em cartões, com \"Listen along\" ao passar o rato; as conversas já não têm o balão em cada linha; as músicas partilhadas aparecem a dois tons até serem tuas.\n- Capas: um brilho de metal segue o cursor nos cartões. Em Definições, em Appearance, \"Two-tone covers\" põe as capas das prateleiras e das grelhas a dois tons até lhes tocares (desligado de origem).\n\nCorrigido:\n- \"Continue here\" arranca na posição do telemóvel.\n- Guardar a fila: o diálogo cobre a janela e os botões respondem ao clique.\n- Duas playlists fixadas na lateral: a segunda abria com as músicas da primeira.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.5.0/docs/VERIFICAR-5.5.0.md\nComparar com Windows 5.4.5: https://github.com/joaoafonso2004/duotone/compare/win-v5.4.5...win-v5.5.0",
-        "publishedAt": "2026-10-30T19:09:07Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.5.0",
+        "version": "5.5.1",
+        "tag": "win-v5.5.1",
+        "notes": "Duotone para Windows 5.5.1 — a volta já não prende, e o look da maquete chega a mais ecrãs\n\nCorrigido:\n- Voltar de uma playlist ou de um artista já não fica preso uns 3 segundos.\n- A faixa escura do cabeçalho das tabelas (Liked Songs, playlists, artistas) saiu: o cabeçalho rola com a lista e já não é preso ao topo.\n- No perfil de um amigo e no Social, as reticências e o botão direito de uma música abrem o menu novo da app (com o \"Add to playlist ›\"), e não a folha antiga.\n\nNovo nesta versão:\n- Home: a Discover daily é um carrossel de capas grandes, e não uma parede de quadrados iguais. Os cartões de mistura (Your styles, Radio, Your genres, Playlists) são cartões de cor, com o nome grande, três capas em círculos e o play. As Decades são números grandes em contorno que se enchem ao passar o rato.\n- Entrada por blocos: o cabeçalho de cada página e as prateleiras da Home entram a subir e a acender, uma a seguir à outra. Nos cartões das prateleiras, dos artistas e das misturas, um play sobe ao passar o rato.\n- Liked Songs: uma lavagem de metal por trás do título.\n- Now Playing: a fila é um cartão redondo com as abas \"Up next\" e \"Lyrics\" (a letra abre ali mesmo), e a música que toca vem à cabeça, em destaque.\n- Social: o dia é uma pílula pequena, o que escreves é um balão claro com letra escura, o cabeçalho da conversa tem \"Start a Jam\" (ou \"Listen along\" se ele está a ouvir), o botão de enviar é redondo, e o cartão de quem está a ouvir leva a cor da capa.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.5.1/docs/VERIFICAR-5.5.1.md\nComparar com Windows 5.5.0: https://github.com/joaoafonso2004/duotone/compare/win-v5.5.0...win-v5.5.1",
+        "publishedAt": "2026-10-30T22:01:12Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.5.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116218879,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.5.0/Duotone-Setup.exe",
+          "size": 116220728,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.5.1/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.5.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.5.1/Duotone-Setup.exe"
       }
     }
   }
