@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.5.0",
+          "date": "2026-10-30T19:13:33Z",
+          "localizedDescription": "Duotone iOS 5.5.0 — o AutoMix já não dá um degrau de velocidade\n\nCorrigido:\n- AutoMix na batida: a faixa que entra voltava à velocidade dela de uma vez no fim da passagem, num degrau que podia chegar a 4 %. Agora volta aos poucos.\n- O relatório de reprodução já mede quanto o JavaScript aloca por minuto (MB, recolhas e tempo de recolha) mesmo quando vais e voltas entre apps. Antes, essa linha ficava em branco (vinha da 5.4.6, que não chegou a sair).\n- Nada muda no motor de áudio, no Swift nem na interface do iPhone.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.5.0/docs/VERIFICAR-5.5.0.md\nComparar com iOS 5.4.5: https://github.com/joaoafonso2004/duotone/compare/ios-v5.4.5...ios-v5.5.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.5.0/Duotone.ipa",
+          "size": 16074356,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.4.5",
           "date": "2026-10-27T03:46:49Z",
           "localizedDescription": "Duotone iOS 5.4.5 — atualizar os teus presets\n\nNovo:\n- No equalizador, escolhe um preset teu, ajusta as bandas e toca em Update “<nome>” para o substituir. O botão só aparece quando há alterações.\n- O preset mantém o nome e a ligação aos teus aparelhos. Save as preset continua a guardar uma cópia.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.4.5/docs/VERIFICAR-5.4.5.md\nComparar com iOS 5.4.4: https://github.com/joaoafonso2004/duotone/compare/ios-v5.4.4...ios-v5.4.5",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.5/Duotone.ipa",
           "size": 15921772,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.3.4",
-          "date": "2026-10-23T15:05:22Z",
-          "localizedDescription": "Duotone iOS 5.3.4 — a mesma imagem fora e dentro do artista\n\nNovo nesta versão:\n- Artistas: a grelha dos Artists mostra a foto de cada artista, a mesma que aparece na página dele. Sem foto no catálogo, fica a capa de uma música dele, também nos dois sítios.\n  - As fotos ficam guardadas no iPhone: aparecem logo da vez seguinte.\n- A página de um artista sem foto no catálogo já não mostra uma silhueta cinzenta: fica com a imagem em que tocaste.\n- Um artista sem álbuns nem singles já não acaba nas Top Songs: mostra as músicas todas numa lista.\n- O nome pequeno na barra de cima só aparece quando o nome grande passa por baixo dela. Antes aparecia logo ao começar a rolar.\n\nDa 5.3.3 (para quem vem de antes): a página do artista refeita.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.3.4/docs/VERIFICAR-5.3.4.md\nComparar com iOS 5.3.3: https://github.com/joaoafonso2004/duotone/compare/ios-v5.3.3...ios-v5.3.4",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.3.4/Duotone.ipa",
-          "size": 15917895,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.4.5",
-      "versionDate": "2026-10-27T03:46:49Z",
-      "versionDescription": "Duotone iOS 5.4.5 — atualizar os teus presets\n\nNovo:\n- No equalizador, escolhe um preset teu, ajusta as bandas e toca em Update “<nome>” para o substituir. O botão só aparece quando há alterações.\n- O preset mantém o nome e a ligação aos teus aparelhos. Save as preset continua a guardar uma cópia.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.4.5/docs/VERIFICAR-5.4.5.md\nComparar com iOS 5.4.4: https://github.com/joaoafonso2004/duotone/compare/ios-v5.4.4...ios-v5.4.5",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.5/Duotone.ipa",
-      "size": 16070730
+      "version": "5.5.0",
+      "versionDate": "2026-10-30T19:13:33Z",
+      "versionDescription": "Duotone iOS 5.5.0 — o AutoMix já não dá um degrau de velocidade\n\nCorrigido:\n- AutoMix na batida: a faixa que entra voltava à velocidade dela de uma vez no fim da passagem, num degrau que podia chegar a 4 %. Agora volta aos poucos.\n- O relatório de reprodução já mede quanto o JavaScript aloca por minuto (MB, recolhas e tempo de recolha) mesmo quando vais e voltas entre apps. Antes, essa linha ficava em branco (vinha da 5.4.6, que não chegou a sair).\n- Nada muda no motor de áudio, no Swift nem na interface do iPhone.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.5.0/docs/VERIFICAR-5.5.0.md\nComparar com iOS 5.4.5: https://github.com/joaoafonso2004/duotone/compare/ios-v5.4.5...ios-v5.5.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.5.0/Duotone.ipa",
+      "size": 16074356
     }
   ],
   "news": []
