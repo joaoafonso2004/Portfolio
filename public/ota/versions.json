@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T11:57:06.156Z",
+  "generatedAt": "2026-10-30T19:09:21.631Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16070730,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.5/Duotone.ipa",
-          "downloads": 14
+          "downloads": 15
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.5/Duotone.ipa"
       },
       "windows": {
-        "version": "5.4.5",
-        "tag": "win-v5.4.5",
-        "notes": "Duotone para Windows 5.4.5 — atualizar os teus presets\n\nNovo:\n- No equalizador, escolhe um preset teu, ajusta as bandas e clica em Update “<nome>” para o substituir. O botão só aparece quando há alterações.\n- O preset mantém o nome e a ligação aos teus aparelhos. Save as preset continua a guardar uma cópia.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.4.5/docs/VERIFICAR-5.4.5.md\nComparar com Windows 5.4.4: https://github.com/joaoafonso2004/duotone/compare/win-v5.4.4...win-v5.4.5",
-        "publishedAt": "2026-10-27T03:38:51Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.4.5",
+        "version": "5.5.0",
+        "tag": "win-v5.5.0",
+        "notes": "Duotone para Windows 5.5.0 — o PC a outro nível\n\nNovo nesta versão:\n- Home: dois cartões à cabeça, o que estavas a ouvir (para continuar) e a Daily mix. A pesquisa é uma barra de comando (Ctrl F), e as prateleiras menos usadas ficam atrás de um botão.\n- Playlists: pesquisa e ordem (Recent, A–Z, Most tracks) na grelha, um só botão Import (YouTube ou Spotify), e o mosaico viaja da grelha para a playlist e volta. No fim de uma playlist há sugestões para juntar com um clique.\n- Artists: Most played, A–Z ou Recently added. O artista que mais ouves aparece à frente, com as contas dele, e os retratos são redondos, com um vinil por trás. O retrato viaja para a página do artista, que pinta a janela com a cor da foto, como o Now Playing.\n- Liked Songs: o resumo no título, a ordem à vista, o cabeçalho da tabela preso e um atalho para a música que está a tocar.\n- Perfil: a capa de cada página fica presa e afasta-se ao rolar; a capa inteira abre com o botão ou com a tecla F.\n- Barra do leitor: o coração passa para o grupo da direita, e o shuffle, o repeat, o play/pause, o volume e a Jam ganham a sua animação.\n- Radio na fila: Off, Like this e Mix à vista, o grupo da Radio na fila e o Clear animado, com Undo.\n- Social: quem está a ouvir aparece em cartões, com \"Listen along\" ao passar o rato; as conversas já não têm o balão em cada linha; as músicas partilhadas aparecem a dois tons até serem tuas.\n- Capas: um brilho de metal segue o cursor nos cartões. Em Definições, em Appearance, \"Two-tone covers\" põe as capas das prateleiras e das grelhas a dois tons até lhes tocares (desligado de origem).\n\nCorrigido:\n- \"Continue here\" arranca na posição do telemóvel.\n- Guardar a fila: o diálogo cobre a janela e os botões respondem ao clique.\n- Duas playlists fixadas na lateral: a segunda abria com as músicas da primeira.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.5.0/docs/VERIFICAR-5.5.0.md\nComparar com Windows 5.4.5: https://github.com/joaoafonso2004/duotone/compare/win-v5.4.5...win-v5.5.0",
+        "publishedAt": "2026-10-30T19:09:07Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.5.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116206730,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.4.5/Duotone-Setup.exe",
-          "downloads": 9
+          "size": 116218879,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.5.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.4.5/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.5.0/Duotone-Setup.exe"
       }
     }
   }
