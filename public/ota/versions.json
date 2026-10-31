@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T22:01:30.534Z",
+  "generatedAt": "2026-10-31T04:58:31.176Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16074356,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.5.0/Duotone.ipa",
-          "downloads": 1
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.5.0/Duotone.ipa"
       },
       "windows": {
-        "version": "5.5.1",
-        "tag": "win-v5.5.1",
-        "notes": "Duotone para Windows 5.5.1 — a volta já não prende, e o look da maquete chega a mais ecrãs\n\nCorrigido:\n- Voltar de uma playlist ou de um artista já não fica preso uns 3 segundos.\n- A faixa escura do cabeçalho das tabelas (Liked Songs, playlists, artistas) saiu: o cabeçalho rola com a lista e já não é preso ao topo.\n- No perfil de um amigo e no Social, as reticências e o botão direito de uma música abrem o menu novo da app (com o \"Add to playlist ›\"), e não a folha antiga.\n\nNovo nesta versão:\n- Home: a Discover daily é um carrossel de capas grandes, e não uma parede de quadrados iguais. Os cartões de mistura (Your styles, Radio, Your genres, Playlists) são cartões de cor, com o nome grande, três capas em círculos e o play. As Decades são números grandes em contorno que se enchem ao passar o rato.\n- Entrada por blocos: o cabeçalho de cada página e as prateleiras da Home entram a subir e a acender, uma a seguir à outra. Nos cartões das prateleiras, dos artistas e das misturas, um play sobe ao passar o rato.\n- Liked Songs: uma lavagem de metal por trás do título.\n- Now Playing: a fila é um cartão redondo com as abas \"Up next\" e \"Lyrics\" (a letra abre ali mesmo), e a música que toca vem à cabeça, em destaque.\n- Social: o dia é uma pílula pequena, o que escreves é um balão claro com letra escura, o cabeçalho da conversa tem \"Start a Jam\" (ou \"Listen along\" se ele está a ouvir), o botão de enviar é redondo, e o cartão de quem está a ouvir leva a cor da capa.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.5.1/docs/VERIFICAR-5.5.1.md\nComparar com Windows 5.5.0: https://github.com/joaoafonso2004/duotone/compare/win-v5.5.0...win-v5.5.1",
-        "publishedAt": "2026-10-30T22:01:12Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.5.1",
+        "version": "5.5.2",
+        "tag": "win-v5.5.2",
+        "notes": "Duotone para Windows 5.5.2 — barras ajustáveis, About no Now Playing e um equalizador por defeito para cada plataforma\n\nNovo:\n- A lateral e o painel da fila ajustam-se: arrasta o bordo de cada um. A lateral vai de 200 a 420 px e, se a puxares para menos de metade do caminho, recolhe numa régua só com ícones (os amigos e os atalhos ficam só com a cara e a capa). O painel vai de 280 a 560 px. Duplo clique repõe a largura de origem, as setas do teclado também a mexem (Shift mais depressa) e a escolha fica guardada.\n- Aba About no Now Playing (Up next · Lyrics · About) e na barra da direita (Queue · Lyrics · About): o artista (foto, fãs, quantas músicas dele tens, quantas vezes o ouviste, \"Fans also like\", o último lançamento, ir ao artista, favoritar) e a música (álbum, ano, quantas vezes e quando a ouviste, o refrão e as que mais ouviste dele). Só mostra o que se sabe.\n- Com o Now Playing aberto, a barra da direita recolhe-se (a página já tem a fila, a letra e o About) e a seta da barra de título fica apagada. Ao fechar o Now Playing volta como estava.\n- Letra grande: o \"Expand\" da aba Lyrics passa a letra para a largura toda, com a capa ao lado. \"Collapse\" ou Esc voltam.\n- O equalizador por defeito é de cada plataforma: o do PC já não se apaga quando se escolhe o do iPhone, e o contrário também (o do iPhone muda quando houver build nova). Uma música só fica diferente se mexeres no EQ dela.\n\nCorrigido:\n- Voltar de uma playlist ou de um artista já não dá \"refresh\": a página já não repete a entrada ao fim da viagem, e o scroll volta logo ao sítio onde estavas (nos Artists, mesmo muito para baixo).\n- Mudar só a velocidade de uma música já não lhe congela o equalizador por defeito: ela continua a segui-lo.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.5.2/docs/VERIFICAR-5.5.2.md\nComparar com Windows 5.5.1: https://github.com/joaoafonso2004/duotone/compare/win-v5.5.1...win-v5.5.2",
+        "publishedAt": "2026-10-31T04:58:14Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.5.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116220728,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.5.1/Duotone-Setup.exe",
+          "size": 116226296,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.5.2/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.5.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.5.2/Duotone-Setup.exe"
       }
     }
   }
