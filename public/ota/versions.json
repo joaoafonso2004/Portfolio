@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T11:30:22.426Z",
+  "generatedAt": "2026-11-01T02:08:57.142Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16074356,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.5.0/Duotone.ipa",
-          "downloads": 2
+          "downloads": 3
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.5.0/Duotone.ipa"
       },
       "windows": {
-        "version": "5.5.2",
-        "tag": "win-v5.5.2",
-        "notes": "Duotone para Windows 5.5.2 — barras ajustáveis, About no Now Playing e um equalizador por defeito para cada plataforma\n\nNovo:\n- A lateral e o painel da fila ajustam-se: arrasta o bordo de cada um. A lateral vai de 200 a 420 px e, se a puxares para menos de metade do caminho, recolhe numa régua só com ícones (os amigos e os atalhos ficam só com a cara e a capa). O painel vai de 280 a 560 px. Duplo clique repõe a largura de origem, as setas do teclado também a mexem (Shift mais depressa) e a escolha fica guardada.\n- Aba About no Now Playing (Up next · Lyrics · About) e na barra da direita (Queue · Lyrics · About): o artista (foto, fãs, quantas músicas dele tens, quantas vezes o ouviste, \"Fans also like\", o último lançamento, ir ao artista, favoritar) e a música (álbum, ano, quantas vezes e quando a ouviste, o refrão e as que mais ouviste dele). Só mostra o que se sabe.\n- Com o Now Playing aberto, a barra da direita recolhe-se (a página já tem a fila, a letra e o About) e a seta da barra de título fica apagada. Ao fechar o Now Playing volta como estava.\n- Letra grande: o \"Expand\" da aba Lyrics passa a letra para a largura toda, com a capa ao lado. \"Collapse\" ou Esc voltam.\n- O equalizador por defeito é de cada plataforma: o do PC já não se apaga quando se escolhe o do iPhone, e o contrário também (o do iPhone muda quando houver build nova). Uma música só fica diferente se mexeres no EQ dela.\n\nCorrigido:\n- Voltar de uma playlist ou de um artista já não dá \"refresh\": a página já não repete a entrada ao fim da viagem, e o scroll volta logo ao sítio onde estavas (nos Artists, mesmo muito para baixo).\n- Mudar só a velocidade de uma música já não lhe congela o equalizador por defeito: ela continua a segui-lo.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.5.2/docs/VERIFICAR-5.5.2.md\nComparar com Windows 5.5.1: https://github.com/joaoafonso2004/duotone/compare/win-v5.5.1...win-v5.5.2",
-        "publishedAt": "2026-10-31T04:58:14Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.5.2",
+        "version": "5.6.0",
+        "tag": "win-v5.6.0",
+        "notes": "Duotone para Windows 5.6.0 — uma física, a Órbita, o teclado nas listas e o outro aparelho na barra\n\nNovo:\n- Uma física: o PC mexe-se com as mesmas molas do iPhone. Carregar afunda, largar volta com um pequeno ressalto, e as entradas e os estados assentam como no iPhone, com as durações de antes.\n- Órbita: no menu de uma música, \"Add to queue\", \"Play next\" e guardar fazem a capa voar em arco para onde a música foi (a seta da fila, a capa da barra do leitor ou as Liked Songs da lateral), e o destino acende. Com \"reduzir movimento\" do Windows, só acende.\n- O teclado nas listas: a tabela de músicas e a fila são um só ponto de Tab. As setas andam entre as linhas, o Enter toca. Mudar uma música de sítio continua a ser a arrastar.\n- O outro aparelho a tocar: o aviso é só a chegada, e o X já não o cala durante 15 minutos. Enquanto o outro tocar, fica um botão na barra do leitor com o nome dele, que abre o cartão (o que toca, ⏮ ⏯ ⏭ e \"Continue here\"). Sem nada a tocar aqui, a própria barra comanda o outro. Não faz pedidos novos.\n\nCorrigido:\n- Os avisos dizem o tipo: um erro já não sai com o visto verde de sucesso, e fala para pessoas em vez de mostrar o texto do pedido.\n- A página de uma playlist mostrava o erro duas vezes. Agora uma.\n- A fila já não tem o separador \"Radio · songs like this one\": as músicas da Radio seguem as tuas.\n- As recomendações já não trazem vídeos de reação (\"… REAGE A …\", \"reagem\", \"reação\", em espanhol e em inglês, também pelo nome do canal).\n- A letra que não há: um selo e uma frase (\"No lyrics for this song\", \"Instrumental\", ou \"Lyrics aren't available right now\" com \"Try again\"), em vez do \"Failed to fetch\".\n- As frases: \"Couldn't\" em vez de \"Could not\", as mesmas frases que no iPhone para nada a tocar e para uma playlist vazia, e um filtro sem resultados diz \"No matches\" em todo o lado. Os avisos de mensagem e de \"Continue here\" passam às cores e às letras da app.\n\nSaiu:\n- \"Play on another device\" (a lista e o diálogo): quase nunca encontrava o outro aparelho. O \"Continue here\" fica.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.6.0/docs/VERIFICAR-5.6.0.md\nComparar com Windows 5.5.2: https://github.com/joaoafonso2004/duotone/compare/win-v5.5.2...win-v5.6.0",
+        "publishedAt": "2026-11-01T02:08:43Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.6.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116226296,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.5.2/Duotone-Setup.exe",
-          "downloads": 3
+          "size": 116228860,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.6.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.5.2/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.6.0/Duotone-Setup.exe"
       }
     }
   }
