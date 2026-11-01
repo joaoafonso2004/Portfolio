@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T16:41:30.546Z",
+  "generatedAt": "2026-11-01T21:19:49.274Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16120305,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.0/Duotone.ipa",
-          "downloads": 0
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.0/Duotone.ipa"
       },
       "windows": {
-        "version": "5.7.0",
-        "tag": "win-v5.7.0",
-        "notes": "Duotone para Windows 5.7.0 — o movimento: as Duas luas, a Ocultação, o disco de metal, a letra que se grava e o Íman\n\nNovo:\n- As Duas luas: no Now Playing, num crossfade, a capa da música que entra nasce por trás da que sai, as duas cruzam-se como o volume, e no fim a velha sai para a esquerda.\n- A Ocultação: ao mudar de música, uma sombra com a cor da que vem passa por cima da capa, e a capa troca quando está tapada. A seguinte vem da direita e a anterior da esquerda, na barra do leitor, no mini leitor e no Now Playing.\n- O play é um disco de metal escovado: o reflexo roda quando se carrega, meia volta a travar na pausa e um quarto com um ressalto no play.\n- A letra grava-se: a linha que se canta acende da esquerda para a direita durante o tempo dela, a seguir a música. As que passaram apagam-se, a seguinte já está mais clara, e a linha onde o refrão começa leva a risca da barra.\n- O Íman: uma música a ser arrastada levanta-se como uma placa de metal, o destino mais próximo acende à medida que ela se aproxima, e ao largar é puxada para lá. Largada onde não faz nada, volta à linha.\n- A Passagem de luz: ao abrir uma playlist ou um artista da grelha, e ao voltar, a lateral e a barra ficam paradas, a página sobe e a luz passa pelo topo dela.\n- As barrinhas da música que toca andam no andamento dela, medido com o Now Playing aberto e guardado por música. No Now Playing, a cor de fundo troca num compasso. Sem andamento conhecido, fica tudo como estava.\n- Os avisos acendem com uma luz que passa: para a direita no que se juntou, para a esquerda no que saiu com \"Undo\", de cima numa informação. Um erro não acende.\n- O carregamento: as páginas carregam com as formas do que vem e um só reflexo a passar por todas, em vez de uma roda numa caixa de altura fixa (a página já não salta quando o conteúdo chega). Aos 4 s a luz pára e diz \"Still loading…\", com \"Try again\" onde dá.\n- Os vazios mostram os dois discos do símbolo, numa pose por estado.\n- O teu mês, refeito: seis páginas em vez de três, com as setas e o teclado. \"Your October\" nas estatísticas volta a abri-lo.\n\nCorrigido:\n- A música já não aparece com o nome e a capa de outra versão dela: a original \"Fuera Del Planeta\" aparecia como o remix, com \"Remix\" no lugar do artista e outra capa.\n- A barra do leitor e o mini leitor mostram a música que toca como o Now Playing: podiam mostrar nomes e capas diferentes.\n- Voltar de uma playlist e clicar logo noutro cartão já não faz a página entrar outra vez.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.7.0/docs/VERIFICAR-5.7.0.md\nComparar com Windows 5.6.0: https://github.com/joaoafonso2004/duotone/compare/win-v5.6.0...win-v5.7.0",
-        "publishedAt": "2026-11-01T16:34:53Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.7.0",
+        "version": "5.7.1",
+        "tag": "win-v5.7.1",
+        "notes": "Duotone para Windows 5.7.1 — leitor mais fluido e correções na fila e nas playlists\n\nNovo:\n- A barra do leitor entra suavemente quando começa a primeira música, abrindo espaço na página. A animação não se repete ao mudar de faixa e respeita a preferência por menos movimento.\n\nCorrigido:\n- Fechar a barra no Now Playing já não provoca o ecrã de erro. A página mostra o estado sem música e permite voltar a abrir uma faixa.\n- O Clear deixa de voltar a preencher a fila do Like this com as mesmas músicas. O Undo repõe a fila e o estado do rádio.\n- Voltar a pedir Like this para a mesma música pode reutilizar sugestões que ainda não foram ouvidas e limpa o aviso de erro quando encontra resultados.\n- Escolher uma playlist já marcada no menu de uma música remove-a dessa playlist.\n- Os símbolos de play e pausa ficam centrados no disco de metal e mantêm a posição ao passar o rato.\n- No PC, a linha da letra que está a ser cantada acende inteira quando chega a sua vez.",
+        "publishedAt": "2026-11-01T21:19:36Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.7.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116250366,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.0/Duotone-Setup.exe",
+          "size": 116250094,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.1/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.1/Duotone-Setup.exe"
       }
     }
   }
