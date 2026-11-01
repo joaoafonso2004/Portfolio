@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T12:28:26.839Z",
+  "generatedAt": "2026-11-01T16:35:07.243Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.6.0/Duotone.ipa"
       },
       "windows": {
-        "version": "5.6.0",
-        "tag": "win-v5.6.0",
-        "notes": "Duotone para Windows 5.6.0 — uma física, a Órbita, o teclado nas listas e o outro aparelho na barra\n\nNovo:\n- Uma física: o PC mexe-se com as mesmas molas do iPhone. Carregar afunda, largar volta com um pequeno ressalto, e as entradas e os estados assentam como no iPhone, com as durações de antes.\n- Órbita: no menu de uma música, \"Add to queue\", \"Play next\" e guardar fazem a capa voar em arco para onde a música foi (a seta da fila, a capa da barra do leitor ou as Liked Songs da lateral), e o destino acende. Com \"reduzir movimento\" do Windows, só acende.\n- O teclado nas listas: a tabela de músicas e a fila são um só ponto de Tab. As setas andam entre as linhas, o Enter toca. Mudar uma música de sítio continua a ser a arrastar.\n- O outro aparelho a tocar: o aviso é só a chegada, e o X já não o cala durante 15 minutos. Enquanto o outro tocar, fica um botão na barra do leitor com o nome dele, que abre o cartão (o que toca, ⏮ ⏯ ⏭ e \"Continue here\"). Sem nada a tocar aqui, a própria barra comanda o outro. Não faz pedidos novos.\n\nCorrigido:\n- Os avisos dizem o tipo: um erro já não sai com o visto verde de sucesso, e fala para pessoas em vez de mostrar o texto do pedido.\n- A página de uma playlist mostrava o erro duas vezes. Agora uma.\n- A fila já não tem o separador \"Radio · songs like this one\": as músicas da Radio seguem as tuas.\n- As recomendações já não trazem vídeos de reação (\"… REAGE A …\", \"reagem\", \"reação\", em espanhol e em inglês, também pelo nome do canal).\n- A letra que não há: um selo e uma frase (\"No lyrics for this song\", \"Instrumental\", ou \"Lyrics aren't available right now\" com \"Try again\"), em vez do \"Failed to fetch\".\n- As frases: \"Couldn't\" em vez de \"Could not\", as mesmas frases que no iPhone para nada a tocar e para uma playlist vazia, e um filtro sem resultados diz \"No matches\" em todo o lado. Os avisos de mensagem e de \"Continue here\" passam às cores e às letras da app.\n\nSaiu:\n- \"Play on another device\" (a lista e o diálogo): quase nunca encontrava o outro aparelho. O \"Continue here\" fica.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.6.0/docs/VERIFICAR-5.6.0.md\nComparar com Windows 5.5.2: https://github.com/joaoafonso2004/duotone/compare/win-v5.5.2...win-v5.6.0",
-        "publishedAt": "2026-11-01T02:08:43Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.6.0",
+        "version": "5.7.0",
+        "tag": "win-v5.7.0",
+        "notes": "Duotone para Windows 5.7.0 — o movimento: as Duas luas, a Ocultação, o disco de metal, a letra que se grava e o Íman\n\nNovo:\n- As Duas luas: no Now Playing, num crossfade, a capa da música que entra nasce por trás da que sai, as duas cruzam-se como o volume, e no fim a velha sai para a esquerda.\n- A Ocultação: ao mudar de música, uma sombra com a cor da que vem passa por cima da capa, e a capa troca quando está tapada. A seguinte vem da direita e a anterior da esquerda, na barra do leitor, no mini leitor e no Now Playing.\n- O play é um disco de metal escovado: o reflexo roda quando se carrega, meia volta a travar na pausa e um quarto com um ressalto no play.\n- A letra grava-se: a linha que se canta acende da esquerda para a direita durante o tempo dela, a seguir a música. As que passaram apagam-se, a seguinte já está mais clara, e a linha onde o refrão começa leva a risca da barra.\n- O Íman: uma música a ser arrastada levanta-se como uma placa de metal, o destino mais próximo acende à medida que ela se aproxima, e ao largar é puxada para lá. Largada onde não faz nada, volta à linha.\n- A Passagem de luz: ao abrir uma playlist ou um artista da grelha, e ao voltar, a lateral e a barra ficam paradas, a página sobe e a luz passa pelo topo dela.\n- As barrinhas da música que toca andam no andamento dela, medido com o Now Playing aberto e guardado por música. No Now Playing, a cor de fundo troca num compasso. Sem andamento conhecido, fica tudo como estava.\n- Os avisos acendem com uma luz que passa: para a direita no que se juntou, para a esquerda no que saiu com \"Undo\", de cima numa informação. Um erro não acende.\n- O carregamento: as páginas carregam com as formas do que vem e um só reflexo a passar por todas, em vez de uma roda numa caixa de altura fixa (a página já não salta quando o conteúdo chega). Aos 4 s a luz pára e diz \"Still loading…\", com \"Try again\" onde dá.\n- Os vazios mostram os dois discos do símbolo, numa pose por estado.\n- O teu mês, refeito: seis páginas em vez de três, com as setas e o teclado. \"Your October\" nas estatísticas volta a abri-lo.\n\nCorrigido:\n- A música já não aparece com o nome e a capa de outra versão dela: a original \"Fuera Del Planeta\" aparecia como o remix, com \"Remix\" no lugar do artista e outra capa.\n- A barra do leitor e o mini leitor mostram a música que toca como o Now Playing: podiam mostrar nomes e capas diferentes.\n- Voltar de uma playlist e clicar logo noutro cartão já não faz a página entrar outra vez.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/win-v5.7.0/docs/VERIFICAR-5.7.0.md\nComparar com Windows 5.6.0: https://github.com/joaoafonso2004/duotone/compare/win-v5.6.0...win-v5.7.0",
+        "publishedAt": "2026-11-01T16:34:53Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.7.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116228860,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.6.0/Duotone-Setup.exe",
-          "downloads": 4
+          "size": 116250366,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.6.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.0/Duotone-Setup.exe"
       }
     }
   }
