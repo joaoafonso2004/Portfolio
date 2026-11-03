@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T23:22:00.797Z",
+  "generatedAt": "2026-11-03T04:50:52.849Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16131338,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.2/Duotone.ipa",
-          "downloads": 0
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.2/Duotone.ipa"
       },
       "windows": {
-        "version": "5.7.2",
-        "tag": "win-v5.7.2",
-        "notes": "Duotone para Windows 5.7.2 — atividade mais rápida, EQ em direto e Clear na Jam\n\nNovo:\n- O Listening with acompanha em direto a velocidade e as dez bandas do equalizador do amigo. Os teus presets ficam guardados e voltam a aplicar-se quando deixas de seguir.\n- O painel mostra a curva recebida e fica em modo de leitura durante a escuta. Enquanto o EQ ainda não chegou, mostra que está à espera.\n- Clear na fila partilhada da Jam: o dono pode sempre limpar; os guests só podem com Guests can control ativado. A música atual continua a tocar.\n\nCorrigido:\n- A atividade é publicada assim que o áudio começa. Uma publicação antiga pendurada deixa de atrasar o anúncio da música nova, e a lista dos amigos atualiza-se ao receber a presença.\n- Cada novo Play com Shuffle cria logo um percurso aleatório. A fila e o pré-carregamento seguem esse percurso desde o início, também em playlists com 2000 músicas.\n- Na Jam, o Play com Shuffle também baralha as músicas que seguem para a fila partilhada.\n- Limpar a fila da Jam impede que lotes antigos de recomendações a voltem a preencher. A autorização é confirmada no servidor no instante do Clear.\n- Removido o símbolo de ampulheta dos botões de reprodução.\n\nOs ajustes em direto usam um canal privado apenas com ouvintes, com envios limitados e sem pedidos à base de dados por cada gesto. Para acompanhar o EQ em direto, os dois dispositivos devem ter a versão 5.7.2.\n\nComparar com Windows 5.7.1: https://github.com/joaoafonso2004/duotone/compare/win-v5.7.1...win-v5.7.2",
-        "publishedAt": "2026-11-02T23:15:38Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.7.2",
+        "version": "5.7.5",
+        "tag": "win-v5.7.5",
+        "notes": "- Permite ao dono partilhar o equalizador ao vivo na Jam\n- Evita reconstruir a capa e sobrepor animacoes ao abrir o leitor iOS\n- Preserva o preset EQ quando o sistema prepara novamente o tap\n- Executa a regressao Swift antes dos restantes testes iOS\n- Tolera a precisao Float na protecao da velocidade nativa\n- Evita escritas repetidas e reavaliacao do buffer na velocidade iOS\n\nComparar com win-v5.7.2: https://github.com/joaoafonso2004/duotone/compare/win-v5.7.2...win-v5.7.5",
+        "publishedAt": "2026-11-03T04:50:38Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.7.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116252176,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.2/Duotone-Setup.exe",
+          "size": 116253716,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.5/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.2/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.5/Duotone-Setup.exe"
       }
     }
   }
