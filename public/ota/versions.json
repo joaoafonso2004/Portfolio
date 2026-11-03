@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-03T04:50:52.849Z",
+  "generatedAt": "2026-11-03T04:59:34.315Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.7.2",
-        "tag": "ios-v5.7.2",
-        "notes": "Duotone iOS 5.7.2 — EQ em direto, atividade mais rápida e limite para o áudio guardado\n\nNovo:\n- O Listening with acompanha em direto a velocidade e as dez bandas do equalizador do amigo, incluindo quem está a transmitir a partir do PC. Os teus ajustes pessoais voltam quando deixas de seguir.\n- A folha do equalizador mostra a curva recebida em modo de leitura e indica quando ainda está à espera do EQ do amigo.\n- Clear na fila partilhada da Jam: o dono pode sempre limpar; os guests só podem com Guests can control ativado. A música atual continua a tocar.\n- O áudio em cache e os downloads manuais partilham um limite de 300 MB. As músicas mais antigas são apagadas automaticamente, protegendo os ficheiros em utilização pelo leitor.\n\nCorrigido:\n- A atividade é publicada assim que o áudio começa. Uma publicação antiga pendurada deixa de atrasar o anúncio da música nova, e a lista dos amigos atualiza-se ao receber a presença.\n- Cada novo Play com Shuffle cria logo um percurso aleatório. A fila e o pré-carregamento seguem esse percurso desde o início, também em playlists com 2000 músicas.\n- Na Jam, o Play com Shuffle também baralha as músicas que seguem para a fila partilhada.\n- Limpar a fila da Jam impede que lotes antigos de recomendações a voltem a preencher. As permissões são confirmadas no servidor.\n- O Clear deixa de repor as mesmas músicas na fila do Like this. Voltar a pedir sugestões para a mesma música permite reutilizar resultados válidos ainda não ouvidos e limpa o aviso anterior quando encontra músicas.\n\nOs ajustes em direto usam um canal privado apenas com ouvintes, com envios limitados e sem pedidos à base de dados por cada gesto. Para acompanhar o EQ em direto, os dois dispositivos devem ter a versão 5.7.2.\n\nComparar com iOS 5.7.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.7.0...ios-v5.7.2",
-        "publishedAt": "2026-11-02T23:21:45Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.7.2",
+        "version": "5.7.5",
+        "tag": "ios-v5.7.5",
+        "notes": "- Permite ao dono partilhar o equalizador ao vivo na Jam\n- Evita reconstruir a capa e sobrepor animacoes ao abrir o leitor iOS\n- Preserva o preset EQ quando o sistema prepara novamente o tap\n- Executa a regressao Swift antes dos restantes testes iOS\n- Tolera a precisao Float na protecao da velocidade nativa\n- Evita escritas repetidas e reavaliacao do buffer na velocidade iOS\n\nComparar com ios-v5.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.7.2...ios-v5.7.5",
+        "publishedAt": "2026-11-03T04:59:20Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.7.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 16131338,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.2/Duotone.ipa",
-          "downloads": 2
+          "size": 15968209,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.5/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.2/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.5/Duotone.ipa"
       },
       "windows": {
         "version": "5.7.5",
