@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T04:59:34.315Z",
+  "generatedAt": "2026-11-03T05:25:00.090Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15968209,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.5/Duotone.ipa",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.5/Duotone.ipa"
       },
       "windows": {
-        "version": "5.7.5",
-        "tag": "win-v5.7.5",
-        "notes": "- Permite ao dono partilhar o equalizador ao vivo na Jam\n- Evita reconstruir a capa e sobrepor animacoes ao abrir o leitor iOS\n- Preserva o preset EQ quando o sistema prepara novamente o tap\n- Executa a regressao Swift antes dos restantes testes iOS\n- Tolera a precisao Float na protecao da velocidade nativa\n- Evita escritas repetidas e reavaliacao do buffer na velocidade iOS\n\nComparar com win-v5.7.2: https://github.com/joaoafonso2004/duotone/compare/win-v5.7.2...win-v5.7.5",
-        "publishedAt": "2026-11-03T04:50:38Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.7.5",
+        "version": "5.7.6",
+        "tag": "win-v5.7.6",
+        "notes": "Duotone para Windows 5.7.6 — a capa reage a todas as batidas\n\nCorrigido:\n- A capa do Now Playing deixa de falhar batidas, sobretudo nas músicas mais rápidas e de bombo seco. A análise do som andava ao ritmo do desenho, e entre duas leituras ficavam 12 ms de música que nunca chegavam a ser olhados: um bombo que caísse nesse intervalo não aparecia na capa. A análise passou a ter relógio próprio e nenhum se perde, de 90 a 190 BPM. Falhava mais quando o PC estava a trabalhar — era por isso que acontecia umas vezes sim, outras não.\n- A pancada cai no tempo certo: chega uns 3 ms depois da batida, em vez dos 18 ms a variar de antes. O ataque passa a ser desenhado à taxa do ecrã; o resto continua como estava, para a app não aquecer mais.\n\nSó para Windows. O equalizador, o Jam e o resto da 5.7.5 ficam na mesma.\n\nComparar com Windows 5.7.5: https://github.com/joaoafonso2004/duotone/compare/win-v5.7.5...win-v5.7.6",
+        "publishedAt": "2026-11-03T05:24:45Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.7.6",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116253716,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.5/Duotone-Setup.exe",
+          "size": 116253822,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.6/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.5/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.6/Duotone-Setup.exe"
       }
     }
   }
