@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T13:24:39.169Z",
+  "generatedAt": "2026-11-04T05:38:27.339Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15968209,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.5/Duotone.ipa",
-          "downloads": 1
+          "downloads": 3
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.5/Duotone.ipa"
       },
       "windows": {
-        "version": "5.7.6",
-        "tag": "win-v5.7.6",
-        "notes": "Duotone para Windows 5.7.6 — a capa reage a todas as batidas\n\nCorrigido:\n- A capa do Now Playing deixa de falhar batidas, sobretudo nas músicas mais rápidas e de bombo seco. A análise do som andava ao ritmo do desenho, e entre duas leituras ficavam 12 ms de música que nunca chegavam a ser olhados: um bombo que caísse nesse intervalo não aparecia na capa. A análise passou a ter relógio próprio e nenhum se perde, de 90 a 190 BPM. Falhava mais quando o PC estava a trabalhar — era por isso que acontecia umas vezes sim, outras não.\n- A pancada cai no tempo certo: chega uns 3 ms depois da batida, em vez dos 18 ms a variar de antes. O ataque passa a ser desenhado à taxa do ecrã; o resto continua como estava, para a app não aquecer mais.\n\nSó para Windows. O equalizador, o Jam e o resto da 5.7.5 ficam na mesma.\n\nComparar com Windows 5.7.5: https://github.com/joaoafonso2004/duotone/compare/win-v5.7.5...win-v5.7.6",
-        "publishedAt": "2026-11-03T05:24:45Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.7.6",
+        "version": "5.7.7",
+        "tag": "win-v5.7.7",
+        "notes": "Duotone para Windows 5.7.7 — a barra de volume\n\nNovo:\n- A barra do volume passa a ser uma cunha, que cresce da esquerda para a direita. Era igual à barra da música que está a tocar — a mesma calha, o mesmo cheio, a mesma pega — e só o ícone ao lado as distinguia, com as duas a viver a centímetros uma da outra.\n\nCorrigido:\n- A barra deixa de ter um pedaço, lá em baixo, onde arrastar não muda nada. A curva mandava ao leitor um número inteiro, e nos primeiros 12% da barra esse número era sempre o mesmo: arrastava-se um oitavo da barra sem o som mudar, depois de ela ter prometido ali 83 dB de descida.\n- A barra passa a baixar por igual ao longo de todo o percurso. Cada 1% dela vale sempre a mesma mudança de som, em qualquer ponto; antes valia vinte vezes mais em baixo do que em cima, e era isso que deixava o meio da barra alto.\n- O volume que tinhas guardado muda de sítio na barra ao abrir esta versão, para continuar a soar como soava.\n\nSobra um bocadinho no fundo da barra onde o som não muda, e esse não desaparece: o leitor do YouTube só aceita números inteiros, e lá em baixo o degrau mais pequeno que ele tem já são 6 dB. Passou de 12% da barra a prometer 83 dB para 7% a prometer 2,2 dB, que ninguém ouve.\n\nSó para Windows. O iPhone não tem esta barra.\n\nComparar com Windows 5.7.6: https://github.com/joaoafonso2004/duotone/compare/win-v5.7.6...win-v5.7.7",
+        "publishedAt": "2026-11-04T05:38:13Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.7.7",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116253822,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.6/Duotone-Setup.exe",
-          "downloads": 5
+          "size": 116254076,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.7/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.6/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.7/Duotone-Setup.exe"
       }
     }
   }
