@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-05T13:49:26.706Z",
+  "generatedAt": "2026-11-05T23:36:28.664Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.7.5",
-        "tag": "ios-v5.7.5",
-        "notes": "- Permite ao dono partilhar o equalizador ao vivo na Jam\n- Evita reconstruir a capa e sobrepor animacoes ao abrir o leitor iOS\n- Preserva o preset EQ quando o sistema prepara novamente o tap\n- Executa a regressao Swift antes dos restantes testes iOS\n- Tolera a precisao Float na protecao da velocidade nativa\n- Evita escritas repetidas e reavaliacao do buffer na velocidade iOS\n\nComparar com ios-v5.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.7.2...ios-v5.7.5",
-        "publishedAt": "2026-11-03T04:59:20Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.7.5",
+        "version": "5.7.8",
+        "tag": "ios-v5.7.8",
+        "notes": "Duotone iOS 5.7.8 — as músicas do chat, importar de qualquer sítio e o shuffle na Jam\n\nNovo:\n- No chat, com um amigo ou num grupo, aparecem \"Play all\" e \"Save as playlist\" no topo, quando a conversa tem duas ou mais músicas. Play all põe na fila as músicas que os dois mandaram (num grupo, as de todos), da mais antiga para a mais nova e sem repetidas, e o leitor diz \"From chat with …\". Save as playlist guarda-as numa playlist tua, com um nome sugerido que podes mudar. A playlist é uma fotografia: as músicas que chegarem depois não entram sozinhas.\n- Importar passa a ser uma caixa só. Cola-se um link do Spotify, do YouTube, do Deezer ou do Apple Music, ou uma lista de músicas (uma por linha, ou um CSV colado), e a app percebe o que é. O link lê-se logo, para mostrar o nome da lista e quantas músicas tem. Depois vai tudo para uma playlist nova ou para as Liked Songs.\n- No fim de uma importação, a barra diz quais músicas não se encontraram (\"See the songs not found\").\n- A importação pela conta do Spotify continua lá, por baixo da caixa.\n\nCorrigido:\n- Na Jam com o shuffle aceso, tocar numa música manda o resto da lista baralhado para a fila partilhada. Antes ia pela ordem, e outro toque na mesma música dava sempre a mesma fila.\n\nLimites:\n- Um link do Tidal, do Amazon Music ou do SoundCloud não se lê sem conta. A app diz-te que entra por lista.\n- No máximo 1000 músicas por importação. Do Apple Music leem-se só as primeiras 50, e do Spotify, pelo link, até 100.\n- No iPhone não se escolhem ficheiros. Um CSV colado entra na mesma.\n\nComparar com iOS 5.7.5: https://github.com/joaoafonso2004/duotone/compare/ios-v5.7.5...ios-v5.7.8",
+        "publishedAt": "2026-11-05T23:36:08Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.7.8",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15968209,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.5/Duotone.ipa",
-          "downloads": 4
+          "size": 15986806,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.8/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.5/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.8/Duotone.ipa"
       },
       "windows": {
         "version": "5.7.7",
