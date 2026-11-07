@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T12:14:30.489Z",
+  "generatedAt": "2026-11-07T21:08:47.858Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15986806,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.8/Duotone.ipa",
-          "downloads": 3
+          "downloads": 4
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.8/Duotone.ipa"
       },
       "windows": {
-        "version": "5.7.8",
-        "tag": "win-v5.7.8",
-        "notes": "Duotone para Windows 5.7.8 — o Cinema, a capa de metal e o volume até ao fundo\n\nNovo:\n- O Now Playing ganha um segundo layout, o Cinema, em Settings › Appearance › \"Now Playing layout\". O fundo enche a janela, a capa pequena e o título enorme ficam à esquerda, o cartão Up next · Lyrics · About à direita, e por baixo dele \"Like\", \"Add to playlist\" e \"Go to artist\". O Classic continua a ser o de origem.\n- \"Now Playing background\": a capa desfocada de sempre (Artwork) ou a foto do artista, nítida (Artist photo). Num artista sem foto fica a capa. As duas opções mudam ao vivo.\n- \"3D metal cover\", desligada de origem: a capa do Now Playing numa caixa com arestas de metal escovado. O lado onde está o rato afunda, e arrastar roda a caixa até à letra. Lançada, continua a rodar e trava numa face. No Cinema não aparece, porque lá não há capa grande.\n- No chat, com um amigo ou num grupo, aparecem \"Play all\" e \"Save as playlist\" no topo, quando a conversa tem duas ou mais músicas. Play all põe na fila as músicas da conversa, da mais antiga para a mais nova e sem repetidas (\"From chat with …\"). Save as playlist guarda-as numa playlist tua, com um nome sugerido.\n- Importar passa a ser uma caixa só. Cola-se um link do Spotify, do YouTube, do Deezer ou do Apple Music, ou uma lista de músicas, ou escolhe-se ou larga-se um ficheiro (CSV, TXT, M3U). A app percebe o que é e mostra o nome da lista e quantas músicas tem. Vai tudo para uma playlist nova ou para as Liked Songs, e no fim a barra diz quais músicas não se encontraram. O \"Import\" das Playlists abre esta página direto, e a conta do Spotify continua lá, por baixo.\n\nCorrigido:\n- Com a barra do volume no mínimo ainda se ouvia alto: o fundo ficava a -30 dB, porque o leitor do YouTube só aceita números inteiros. A barra passa a ir até -50 dB, contínua até ao fundo. O que o leitor não consegue baixar, baixa-o o equalizador. O volume que tinhas guardado soa igual depois de atualizar.\n- Na Jam com o shuffle aceso, tocar numa música manda o resto da lista baralhado para a fila partilhada. Antes ia pela ordem.\n- No cartão da fila do Now Playing, o Radio, o Save e o Clear passam para uma segunda linha quando não cabem ao lado das abas.\n\nLimites da importação: um link do Tidal, do Amazon Music ou do SoundCloud não se lê sem conta, e a app diz-te que entra por lista ou ficheiro. No máximo 1000 músicas de cada vez. Do Apple Music leem-se só as primeiras 50.\n\nComparar com Windows 5.7.7: https://github.com/joaoafonso2004/duotone/compare/win-v5.7.7...win-v5.7.8",
-        "publishedAt": "2026-11-06T02:09:03Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.7.8",
+        "version": "5.7.9",
+        "tag": "win-v5.7.9",
+        "notes": "Duotone para Windows 5.7.9 — as playlists longas e a capa 3D\n\nNovo:\n- A capa 3D do Now Playing passa a ter a capa nas arestas, como no iPhone: a borda da capa continua pela aresta, espelhada, e escurece para trás. Era metal escovado, e as arestas ficavam cinzentas em qualquer capa. A opção nas Definições passa a chamar-se \"3D cover\" (era \"3D metal cover\"); quem a tinha ligada continua com ela.\n- Um brilho corre pelas arestas da capa 3D: ao passar o rato a capa inclina e o ponto de luz anda pela aresta, e a rodar para a letra passa de aresta em aresta. Com a capa parada não gasta nada.\n- Com a capa 3D ligada, a troca de música tem transição. Era um corte seco: a sombra da música que vem não aparecia com ela. Agora passa por dentro da face da capa, inclinada com ela, e as arestas escurecem à passagem.\n\nCorrigido:\n- Uma playlist muito longa já não fica lenta nem encrava ao rolar. A lista montava as músicas aos lotes e nunca desmontava nenhuma: perto da música 1500 de uma playlist de 3000 havia 1500 linhas montadas, cada lote novo parava tudo um terço de segundo, e mudar de música lá em baixo parava a app quase um segundo. Agora só existem as músicas que se veem, numa lista de 300 ou de 5000.\n- No Now Playing, o fundo da janela troca ao mesmo tempo que a capa. Trocava logo no skip, e durante um instante via-se o fundo da música nova com a capa da anterior ainda à frente.\n\nSó para Windows. O iPhone fica na 5.7.8.\n\nComparar com Windows 5.7.8: https://github.com/joaoafonso2004/duotone/compare/win-v5.7.8...win-v5.7.9",
+        "publishedAt": "2026-11-07T21:08:35Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.7.9",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116263658,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.8/Duotone-Setup.exe",
-          "downloads": 7
+          "size": 116268456,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.9/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.8/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.9/Duotone-Setup.exe"
       }
     }
   }
