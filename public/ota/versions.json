@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T12:34:20.248Z",
+  "generatedAt": "2026-11-08T17:26:49.528Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15986806,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.8/Duotone.ipa",
-          "downloads": 4
+          "downloads": 5
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.8/Duotone.ipa"
       },
       "windows": {
-        "version": "5.8.1",
-        "tag": "win-v5.8.1",
-        "notes": "Duotone para Windows 5.8.1 — oito arestas limadas\n\nCorrigido:\n- \"New releases\" mostra no máximo dois lançamentos de cada artista. Um artista com nove singles numa semana enchia a prateleira toda; os outros ficam na página dele.\n- Os cartões das décadas mostram o número inteiro (\"2010s\"). Liam-se \"2010s…\", porque o nome não cabia.\n- \"Jump back in\" fica em linhas cheias, com três por linha no máximo. Numa janela larga cabiam cinco, e o sexto ficava sozinho na segunda linha.\n- A grelha das Playlists enche a linha toda. Os cartões eram de tamanho fixo e, com a janela maximizada, sobrava um espaço vazio à direita.\n- As capas das playlists deixam de ter faixas pretas, nos mosaicos de quatro e nas de uma capa só.\n- A página de uma playlist diz \"Playlist\" uma vez só. Dizia-o três vezes, por cima do nome. O voltar passa para a esquerda, como na página de um artista.\n- Com o Now Playing aberto, nenhuma entrada da lateral fica acesa. Ficava a da página de onde se tinha vindo.\n- Nas tabelas, o artista fica mais perto do título numa janela larga. A coluna do título passava dos 800 px e abria um buraco no meio.\n\nSó para Windows. O iPhone fica na 5.7.8.\n\nComparar com Windows 5.8.0: https://github.com/joaoafonso2004/duotone/compare/win-v5.8.0...win-v5.8.1",
-        "publishedAt": "2026-11-08T04:58:30Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.8.1",
+        "version": "5.8.2",
+        "tag": "win-v5.8.2",
+        "notes": "Duotone para Windows 5.8.2 — os amigos que ouvem com o ecrã bloqueado\n\nCorrigido:\n- Um amigo a ouvir com o telemóvel bloqueado aparece na lista de amigos. Deixava de aparecer pouco depois de bloquear o ecrã, mesmo com a música a tocar, e só se via no Social, em \"Listening now\". Agora conta como online, com a música, a barra de progresso e o ponto verde, e o \"Listen along\" e o menu dele funcionam como com os outros.\n\nSó para Windows. O iPhone fica na 5.7.8.\n\nComparar com Windows 5.8.1: https://github.com/joaoafonso2004/duotone/compare/win-v5.8.1...win-v5.8.2",
+        "publishedAt": "2026-11-08T17:26:36Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.8.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116269284,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.1/Duotone-Setup.exe",
-          "downloads": 2
+          "size": 116269262,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.2/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.2/Duotone-Setup.exe"
       }
     }
   }
