@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T21:08:47.858Z",
+  "generatedAt": "2026-11-08T03:08:01.395Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.8/Duotone.ipa"
       },
       "windows": {
-        "version": "5.7.9",
-        "tag": "win-v5.7.9",
-        "notes": "Duotone para Windows 5.7.9 — as playlists longas e a capa 3D\n\nNovo:\n- A capa 3D do Now Playing passa a ter a capa nas arestas, como no iPhone: a borda da capa continua pela aresta, espelhada, e escurece para trás. Era metal escovado, e as arestas ficavam cinzentas em qualquer capa. A opção nas Definições passa a chamar-se \"3D cover\" (era \"3D metal cover\"); quem a tinha ligada continua com ela.\n- Um brilho corre pelas arestas da capa 3D: ao passar o rato a capa inclina e o ponto de luz anda pela aresta, e a rodar para a letra passa de aresta em aresta. Com a capa parada não gasta nada.\n- Com a capa 3D ligada, a troca de música tem transição. Era um corte seco: a sombra da música que vem não aparecia com ela. Agora passa por dentro da face da capa, inclinada com ela, e as arestas escurecem à passagem.\n\nCorrigido:\n- Uma playlist muito longa já não fica lenta nem encrava ao rolar. A lista montava as músicas aos lotes e nunca desmontava nenhuma: perto da música 1500 de uma playlist de 3000 havia 1500 linhas montadas, cada lote novo parava tudo um terço de segundo, e mudar de música lá em baixo parava a app quase um segundo. Agora só existem as músicas que se veem, numa lista de 300 ou de 5000.\n- No Now Playing, o fundo da janela troca ao mesmo tempo que a capa. Trocava logo no skip, e durante um instante via-se o fundo da música nova com a capa da anterior ainda à frente.\n\nSó para Windows. O iPhone fica na 5.7.8.\n\nComparar com Windows 5.7.8: https://github.com/joaoafonso2004/duotone/compare/win-v5.7.8...win-v5.7.9",
-        "publishedAt": "2026-11-07T21:08:35Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.7.9",
+        "version": "5.8.0",
+        "tag": "win-v5.8.0",
+        "notes": "Duotone para Windows 5.8.0 — a capa 3D com o efeito do som nas arestas\n\nNovo:\n- Com o efeito que reage ao som, as arestas da capa 3D passam a estremecer com a face. Até aqui só a face mexia, e as laterais ficavam paradas com a imagem limpa, o que dava uma caixa meio viva. Agora cada aresta continua a borda do efeito, na batida e de volta à capa limpa. Em repouso não fazem trabalho nenhum, e o processador fica igual com e sem elas.\n- Com o efeito estático, as arestas mostram o mesmo glitch congelado da face.\n\nCorrigido:\n- Na capa 3D, os cantos da imagem passam a ser direitos. Vinham arredondados da capa plana, e via-se o fundo nos quatro cantos da face. A capa plana e o cubo da letra ficam como estavam.\n\nSó para Windows. O iPhone fica na 5.7.8.\n\nComparar com Windows 5.7.9: https://github.com/joaoafonso2004/duotone/compare/win-v5.7.9...win-v5.8.0",
+        "publishedAt": "2026-11-08T03:07:48Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.8.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116268456,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.9/Duotone-Setup.exe",
+          "size": 116268958,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.0/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.7.9/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.0/Duotone-Setup.exe"
       }
     }
   }
