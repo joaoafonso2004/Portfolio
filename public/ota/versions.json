@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T03:08:01.395Z",
+  "generatedAt": "2026-11-08T04:58:49.182Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.8/Duotone.ipa"
       },
       "windows": {
-        "version": "5.8.0",
-        "tag": "win-v5.8.0",
-        "notes": "Duotone para Windows 5.8.0 — a capa 3D com o efeito do som nas arestas\n\nNovo:\n- Com o efeito que reage ao som, as arestas da capa 3D passam a estremecer com a face. Até aqui só a face mexia, e as laterais ficavam paradas com a imagem limpa, o que dava uma caixa meio viva. Agora cada aresta continua a borda do efeito, na batida e de volta à capa limpa. Em repouso não fazem trabalho nenhum, e o processador fica igual com e sem elas.\n- Com o efeito estático, as arestas mostram o mesmo glitch congelado da face.\n\nCorrigido:\n- Na capa 3D, os cantos da imagem passam a ser direitos. Vinham arredondados da capa plana, e via-se o fundo nos quatro cantos da face. A capa plana e o cubo da letra ficam como estavam.\n\nSó para Windows. O iPhone fica na 5.7.8.\n\nComparar com Windows 5.7.9: https://github.com/joaoafonso2004/duotone/compare/win-v5.7.9...win-v5.8.0",
-        "publishedAt": "2026-11-08T03:07:48Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.8.0",
+        "version": "5.8.1",
+        "tag": "win-v5.8.1",
+        "notes": "Duotone para Windows 5.8.1 — oito arestas limadas\n\nCorrigido:\n- \"New releases\" mostra no máximo dois lançamentos de cada artista. Um artista com nove singles numa semana enchia a prateleira toda; os outros ficam na página dele.\n- Os cartões das décadas mostram o número inteiro (\"2010s\"). Liam-se \"2010s…\", porque o nome não cabia.\n- \"Jump back in\" fica em linhas cheias, com três por linha no máximo. Numa janela larga cabiam cinco, e o sexto ficava sozinho na segunda linha.\n- A grelha das Playlists enche a linha toda. Os cartões eram de tamanho fixo e, com a janela maximizada, sobrava um espaço vazio à direita.\n- As capas das playlists deixam de ter faixas pretas, nos mosaicos de quatro e nas de uma capa só.\n- A página de uma playlist diz \"Playlist\" uma vez só. Dizia-o três vezes, por cima do nome. O voltar passa para a esquerda, como na página de um artista.\n- Com o Now Playing aberto, nenhuma entrada da lateral fica acesa. Ficava a da página de onde se tinha vindo.\n- Nas tabelas, o artista fica mais perto do título numa janela larga. A coluna do título passava dos 800 px e abria um buraco no meio.\n\nSó para Windows. O iPhone fica na 5.7.8.\n\nComparar com Windows 5.8.0: https://github.com/joaoafonso2004/duotone/compare/win-v5.8.0...win-v5.8.1",
+        "publishedAt": "2026-11-08T04:58:30Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.8.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116268958,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.0/Duotone-Setup.exe",
+          "size": 116269284,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.1/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.1/Duotone-Setup.exe"
       }
     }
   }
