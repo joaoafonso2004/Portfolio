@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.8.2",
+          "date": "2026-11-08T18:30:03Z",
+          "localizedDescription": "Duotone para iPhone 5.8.2 — os amigos que ouvem com o ecrã bloqueado\n\nCorrigido:\n- Um amigo a ouvir com o telemóvel bloqueado aparece no topo da Home e do Social. Deixava de aparecer pouco depois de bloquear o ecrã, mesmo com a música a tocar. Agora aparece com a música e o anel verde, e o botão de ouvir com ele funciona como com os outros.\n- \"New releases\" mostra no máximo dois lançamentos de cada artista. Um artista com nove singles numa semana enchia a prateleira toda; os outros ficam na página dele.\n\nO iPhone passa da 5.7.8 para a 5.8.2, para ficar com o mesmo número do Windows.\n\nComparar com iPhone 5.7.8: https://github.com/joaoafonso2004/duotone/compare/ios-v5.7.8...ios-v5.8.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.2/Duotone.ipa",
+          "size": 15986966,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.7.8",
           "date": "2026-11-05T23:36:08Z",
           "localizedDescription": "Duotone iOS 5.7.8 — as músicas do chat, importar de qualquer sítio e o shuffle na Jam\n\nNovo:\n- No chat, com um amigo ou num grupo, aparecem \"Play all\" e \"Save as playlist\" no topo, quando a conversa tem duas ou mais músicas. Play all põe na fila as músicas que os dois mandaram (num grupo, as de todos), da mais antiga para a mais nova e sem repetidas, e o leitor diz \"From chat with …\". Save as playlist guarda-as numa playlist tua, com um nome sugerido que podes mudar. A playlist é uma fotografia: as músicas que chegarem depois não entram sozinhas.\n- Importar passa a ser uma caixa só. Cola-se um link do Spotify, do YouTube, do Deezer ou do Apple Music, ou uma lista de músicas (uma por linha, ou um CSV colado), e a app percebe o que é. O link lê-se logo, para mostrar o nome da lista e quantas músicas tem. Depois vai tudo para uma playlist nova ou para as Liked Songs.\n- No fim de uma importação, a barra diz quais músicas não se encontraram (\"See the songs not found\").\n- A importação pela conta do Spotify continua lá, por baixo da caixa.\n\nCorrigido:\n- Na Jam com o shuffle aceso, tocar numa música manda o resto da lista baralhado para a fila partilhada. Antes ia pela ordem, e outro toque na mesma música dava sempre a mesma fila.\n\nLimites:\n- Um link do Tidal, do Amazon Music ou do SoundCloud não se lê sem conta. A app diz-te que entra por lista.\n- No máximo 1000 músicas por importação. Do Apple Music leem-se só as primeiras 50, e do Spotify, pelo link, até 100.\n- No iPhone não se escolhem ficheiros. Um CSV colado entra na mesma.\n\nComparar com iOS 5.7.5: https://github.com/joaoafonso2004/duotone/compare/ios-v5.7.5...ios-v5.7.8",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.3/Duotone.ipa",
           "size": 16065744,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.4.2",
-          "date": "2026-10-26T02:56:30Z",
-          "localizedDescription": "Duotone iOS 5.4.2 — o AutoMix como um DJ\n\nNovo nesta versão:\n- O AutoMix passa de uma música para a outra como um DJ, também quando os andamentos não batem. Escolhe sozinho a passagem certa:\n  - Na batida, quando os andamentos batem: as duas cruzam-se uns compassos e acabam juntas no fim da frase.\n  - Por cima, quando a seguinte começa só com melodia: a intro dela entra por baixo do fim da outra, e a batida dela cai no tempo forte em que a da outra acaba.\n  - Na cauda, quando a música acaba sem batida: a batida da seguinte começa aí, e a cauda desvanece por baixo.\n  - Corte no \"um\", quando as duas têm batida até ao fim: a que sai perde os graves no último momento e a seguinte entra cheia.\n  - Sem batida clara, um fade suave.\n- Nunca duas linhas de baixo ao mesmo tempo: os graves trocam de uma música para a outra num compasso, e os agudos da seguinte chegam primeiro.\n- O AutoMix respeita o equalizador de cada música (o dela, o do carro ou o Recommended): os cortes da passagem ficam por cima dele. Mexer no EQ a meio de uma passagem não a estraga.\n- O AutoMix funciona a qualquer velocidade: os andamentos comparam-se como se ouvem, e a seguinte entra à velocidade dela. Antes, fora de 1× ficava o crossfade normal.\n\nCada música é analisada outra vez uma única vez, para saber onde a batida começa e acaba. Como antes, não faz pedidos a nenhum servidor.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.4.2/docs/VERIFICAR-5.4.2.md\nComparar com iOS 5.4.1: https://github.com/joaoafonso2004/duotone/compare/ios-v5.4.1...ios-v5.4.2",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.2/Duotone.ipa",
-          "size": 16060279,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.7.8",
-      "versionDate": "2026-11-05T23:36:08Z",
-      "versionDescription": "Duotone iOS 5.7.8 — as músicas do chat, importar de qualquer sítio e o shuffle na Jam\n\nNovo:\n- No chat, com um amigo ou num grupo, aparecem \"Play all\" e \"Save as playlist\" no topo, quando a conversa tem duas ou mais músicas. Play all põe na fila as músicas que os dois mandaram (num grupo, as de todos), da mais antiga para a mais nova e sem repetidas, e o leitor diz \"From chat with …\". Save as playlist guarda-as numa playlist tua, com um nome sugerido que podes mudar. A playlist é uma fotografia: as músicas que chegarem depois não entram sozinhas.\n- Importar passa a ser uma caixa só. Cola-se um link do Spotify, do YouTube, do Deezer ou do Apple Music, ou uma lista de músicas (uma por linha, ou um CSV colado), e a app percebe o que é. O link lê-se logo, para mostrar o nome da lista e quantas músicas tem. Depois vai tudo para uma playlist nova ou para as Liked Songs.\n- No fim de uma importação, a barra diz quais músicas não se encontraram (\"See the songs not found\").\n- A importação pela conta do Spotify continua lá, por baixo da caixa.\n\nCorrigido:\n- Na Jam com o shuffle aceso, tocar numa música manda o resto da lista baralhado para a fila partilhada. Antes ia pela ordem, e outro toque na mesma música dava sempre a mesma fila.\n\nLimites:\n- Um link do Tidal, do Amazon Music ou do SoundCloud não se lê sem conta. A app diz-te que entra por lista.\n- No máximo 1000 músicas por importação. Do Apple Music leem-se só as primeiras 50, e do Spotify, pelo link, até 100.\n- No iPhone não se escolhem ficheiros. Um CSV colado entra na mesma.\n\nComparar com iOS 5.7.5: https://github.com/joaoafonso2004/duotone/compare/ios-v5.7.5...ios-v5.7.8",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.8/Duotone.ipa",
-      "size": 15986806
+      "version": "5.8.2",
+      "versionDate": "2026-11-08T18:30:03Z",
+      "versionDescription": "Duotone para iPhone 5.8.2 — os amigos que ouvem com o ecrã bloqueado\n\nCorrigido:\n- Um amigo a ouvir com o telemóvel bloqueado aparece no topo da Home e do Social. Deixava de aparecer pouco depois de bloquear o ecrã, mesmo com a música a tocar. Agora aparece com a música e o anel verde, e o botão de ouvir com ele funciona como com os outros.\n- \"New releases\" mostra no máximo dois lançamentos de cada artista. Um artista com nove singles numa semana enchia a prateleira toda; os outros ficam na página dele.\n\nO iPhone passa da 5.7.8 para a 5.8.2, para ficar com o mesmo número do Windows.\n\nComparar com iPhone 5.7.8: https://github.com/joaoafonso2004/duotone/compare/ios-v5.7.8...ios-v5.8.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.2/Duotone.ipa",
+      "size": 15986966
     }
   ],
   "news": []
