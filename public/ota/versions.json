@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T14:52:00.771Z",
+  "generatedAt": "2026-11-09T18:11:16.167Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15990702,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.3/Duotone.ipa",
-          "downloads": 3
+          "downloads": 5
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.3/Duotone.ipa"
       },
       "windows": {
-        "version": "5.8.4",
-        "tag": "win-v5.8.4",
-        "notes": "Duotone para Windows 5.8.4 — os botões sem quadrado\n\nMudado:\n- Os botões de ícone deixaram de ter um quadrado à volta: o coração guardado, o shuffle e o repeat ligados, e qualquer botão com o rato por cima. Fica só o ícone. O rato por cima acende-o, e um botão ligado mostra-se no próprio desenho (o coração cheio, o ponto por baixo do shuffle e do repeat, as ondas do Jam, o olho fechado).\n\nSó para Windows. O iPhone fica na 5.8.3.\n\nComparar com Windows 5.8.3: https://github.com/joaoafonso2004/duotone/compare/win-v5.8.3...win-v5.8.4",
-        "publishedAt": "2026-11-08T21:58:16Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.8.4",
+        "version": "5.8.5",
+        "tag": "win-v5.8.5",
+        "notes": "Duotone para Windows 5.8.5 — a janela sem barras\n\nMudado:\n- A app deixou de viver dentro de uma moldura. A lateral, a página e o leitor encostam às bordas da janela, com o mesmo fundo, e saíram os fios que separavam as zonas: por baixo da barra do título, entre a lateral e a página, por cima do leitor, por baixo do Social e à esquerda da fila.\n- A barra do título é agora só a faixa por cima da página, onde se arrasta a janela. O nome Duotone passou para o topo da lateral.\n- A lista desvanece antes de chegar ao leitor, e a cor no topo das páginas (Liked Songs, playlists) desfaz-se nas pontas em vez de acabar numa borda reta.\n- As barras de rolar só aparecem com o rato por cima.\n- Na tabela das músicas, o artista fica mais afastado do título: com a fila aberta, um título comprido já não cola ao artista.\n\nSó para Windows. O iPhone fica na 5.8.3.\n\nComparar com Windows 5.8.4: https://github.com/joaoafonso2004/duotone/compare/win-v5.8.4...win-v5.8.5",
+        "publishedAt": "2026-11-09T18:10:31Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.8.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116268348,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.4/Duotone-Setup.exe",
-          "downloads": 4
+          "size": 116270383,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.5/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.4/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.5/Duotone-Setup.exe"
       }
     }
   }
