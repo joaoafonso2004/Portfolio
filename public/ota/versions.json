@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T18:11:16.167Z",
+  "generatedAt": "2026-11-10T06:01:27.204Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 15990702,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.3/Duotone.ipa",
-          "downloads": 5
+          "downloads": 6
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.3/Duotone.ipa"
       },
       "windows": {
-        "version": "5.8.5",
-        "tag": "win-v5.8.5",
-        "notes": "Duotone para Windows 5.8.5 — a janela sem barras\n\nMudado:\n- A app deixou de viver dentro de uma moldura. A lateral, a página e o leitor encostam às bordas da janela, com o mesmo fundo, e saíram os fios que separavam as zonas: por baixo da barra do título, entre a lateral e a página, por cima do leitor, por baixo do Social e à esquerda da fila.\n- A barra do título é agora só a faixa por cima da página, onde se arrasta a janela. O nome Duotone passou para o topo da lateral.\n- A lista desvanece antes de chegar ao leitor, e a cor no topo das páginas (Liked Songs, playlists) desfaz-se nas pontas em vez de acabar numa borda reta.\n- As barras de rolar só aparecem com o rato por cima.\n- Na tabela das músicas, o artista fica mais afastado do título: com a fila aberta, um título comprido já não cola ao artista.\n\nSó para Windows. O iPhone fica na 5.8.3.\n\nComparar com Windows 5.8.4: https://github.com/joaoafonso2004/duotone/compare/win-v5.8.4...win-v5.8.5",
-        "publishedAt": "2026-11-09T18:10:31Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.8.5",
+        "version": "5.8.6",
+        "tag": "win-v5.8.6",
+        "notes": "- Importar: menos Not found de musicas que existem\n- PC: importar do Spotify pela conta, sem registar contas no painel\n- iPhone: o ecrã bloqueado a dois tons e os botões do Duotone para o iOS 18\n- Maquete: a Live Activity do iPhone (sempre, ou só com Jam, temporizador e AutoMix)\n- Definições: desligar a atualização sozinha das playlists importadas\n- PC: uma só caixa para todos os menus, e o equalizador em curva\n- Versões clean: as regras, a memória do aparelho e a troca (base, a meio)\n- Maquete: os menus do PC ao nível do resto da app\n- Voltar à fila que se deixou: \"Back to …\" na fila do PC e do iPhone\n- iPhone: procurar à mão no Library check e na lista \"Not found\"\n- Escolher várias no PC, procurar à mão as indisponíveis, e playlists importadas a atualizar-se sozinhas\n- Maquete: três melhorias de uso, com opções\n- PC: procurar ali mesmo as músicas que a importação não encontrou\n\nComparar com win-v5.8.5: https://github.com/joaoafonso2004/duotone/compare/win-v5.8.5...win-v5.8.6",
+        "publishedAt": "2026-11-10T06:01:12Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.8.6",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116270383,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.5/Duotone-Setup.exe",
+          "size": 116285474,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.6/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.5/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.6/Duotone-Setup.exe"
       }
     }
   }
