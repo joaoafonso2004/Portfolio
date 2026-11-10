@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-10T06:01:27.204Z",
+  "generatedAt": "2026-11-10T06:19:37.400Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.8.3",
-        "tag": "ios-v5.8.3",
-        "notes": "Duotone para iPhone 5.8.3 — segurar abre sempre um menu\n\nCorrigido:\n- Segurar uma música dentro de um álbum abre o menu dela, o mesmo das Liked Songs. Não fazia nada. Vale para os álbuns do artista, os da pesquisa e as playlists recomendadas.\n- Segurar um álbum, um single ou o último lançamento na página de um artista abre o menu do disco, com a capa e o nome por cima: Open, Play, Shuffle, Add to queue e Save as playlist. Também não fazia nada.\n\nComparar com iPhone 5.8.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.2...ios-v5.8.3",
-        "publishedAt": "2026-11-08T19:57:14Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.8.3",
+        "version": "5.8.6",
+        "tag": "ios-v5.8.6",
+        "notes": "- CI iOS: validate before applying release version\n- Importar: menos Not found de musicas que existem\n- PC: importar do Spotify pela conta, sem registar contas no painel\n- iPhone: o ecrã bloqueado a dois tons e os botões do Duotone para o iOS 18\n- Maquete: a Live Activity do iPhone (sempre, ou só com Jam, temporizador e AutoMix)\n- Definições: desligar a atualização sozinha das playlists importadas\n- PC: uma só caixa para todos os menus, e o equalizador em curva\n- Versões clean: as regras, a memória do aparelho e a troca (base, a meio)\n- Maquete: os menus do PC ao nível do resto da app\n- Voltar à fila que se deixou: \"Back to …\" na fila do PC e do iPhone\n- iPhone: procurar à mão no Library check e na lista \"Not found\"\n- Escolher várias no PC, procurar à mão as indisponíveis, e playlists importadas a atualizar-se sozinhas\n- Maquete: três melhorias de uso, com opções\n- PC: procurar ali mesmo as músicas que a importação não encontrou\n- PC: a janela sem moldura e sem fios (opção A da maquete)\n- Maquete das barras: sem JavaScript, para abrir no visualizador de ficheiros\n- Maquete: a janela do PC sem a moldura e sem os fios entre as zonas\n- PC: os botões de ícone sem quadrado\n\nComparar com ios-v5.8.3: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.3...ios-v5.8.6",
+        "publishedAt": "2026-11-10T06:19:20Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.8.6",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 15990702,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.3/Duotone.ipa",
-          "downloads": 6
+          "size": 16031847,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.6/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.3/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.6/Duotone.ipa"
       },
       "windows": {
         "version": "5.8.6",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 116285474,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.6/Duotone-Setup.exe",
-          "downloads": 0
+          "downloads": 2
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.6/Duotone-Setup.exe"
       }
