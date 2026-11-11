@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T03:05:07.975Z",
+  "generatedAt": "2026-11-11T03:29:58.981Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16032963,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.8/Duotone.ipa",
-          "downloads": 0
+          "downloads": 3
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.8/Duotone.ipa"
       },
       "windows": {
-        "version": "5.8.8",
-        "tag": "win-v5.8.8",
-        "notes": "Duotone for Windows 5.8.8\n\nNew\n- Duotone shows up in the Windows media controls (Win+A, lock screen, headphone buttons), with the cover and a progress bar.\n- Profiles of people who aren't your friends show their listening stats, never what they listen to. You can hide yours in Edit profile › Privacy.\n- Import music shows your Spotify account at the top. It's also in Settings.\n- Updates are also checked when you come back to the app. Some future updates may be required.\n\nImproved\n- Artist pages show more albums.\n- Fewer requests when you return to the app: stats and per-song settings load only what changed.\n\nFixed\n- The 3D cover no longer keeps turning after a drag released outside it, and the lyrics stay clickable.\n- The sound effect on the 3D cover starts without a click first.\n- A song titled with another artist's name is credited to the right artist.\n\nPlease update: older versions will stop being supported.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v5.8.6...win-v5.8.8",
-        "publishedAt": "2026-11-11T02:57:06Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.8.8",
+        "version": "5.8.9",
+        "tag": "win-v5.8.9",
+        "notes": "Duotone for Windows 5.8.9\n\nImproved\n- Updates install by themselves while Duotone sits in the tray and nothing is playing. No need to restart the app.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v5.8.8...win-v5.8.9",
+        "publishedAt": "2026-11-11T03:29:44Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.8.9",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116292702,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.8/Duotone-Setup.exe",
+          "size": 116294353,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.9/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.8/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.9/Duotone-Setup.exe"
       }
     }
   }
