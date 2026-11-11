@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-11T05:39:11.562Z",
+  "generatedAt": "2026-11-11T06:12:33.571Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.9.1",
-        "tag": "ios-v5.9.1",
-        "notes": "Duotone for iPhone 5.9.1\n\nImproved\n- Lighter on the server: artist and song details are kept on your phone, and Duotone sends far fewer requests while you listen. This keeps the app free for everyone.\n\nMinimum version: 5.9.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.0...ios-v5.9.1",
-        "publishedAt": "2026-11-11T05:38:53Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.9.1",
+        "version": "5.9.2",
+        "tag": "ios-v5.9.2",
+        "notes": "Duotone for iPhone 5.9.2\n\nFixed\n- Tapping the player on the lock screen or in the Dynamic Island opens Duotone.\n\nMinimum version: 5.9.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.1...ios-v5.9.2",
+        "publishedAt": "2026-11-11T06:12:16Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.9.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 16037099,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.1/Duotone.ipa",
+          "size": 16037890,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.2/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.1/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.2/Duotone.ipa"
       },
       "windows": {
         "version": "5.9.1",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 116296686,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.9.1/Duotone-Setup.exe",
-          "downloads": 0
+          "downloads": 8
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.9.1/Duotone-Setup.exe"
       }

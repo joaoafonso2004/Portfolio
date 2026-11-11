@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.9.2",
+          "date": "2026-11-11T06:12:16Z",
+          "localizedDescription": "Duotone for iPhone 5.9.2\n\nFixed\n- Tapping the player on the lock screen or in the Dynamic Island opens Duotone.\n\nMinimum version: 5.9.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.1...ios-v5.9.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.2/Duotone.ipa",
+          "size": 16037890,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.9.1",
           "date": "2026-11-11T05:38:53Z",
           "localizedDescription": "Duotone for iPhone 5.9.1\n\nImproved\n- Lighter on the server: artist and song details are kept on your phone, and Duotone sends far fewer requests while you listen. This keeps the app free for everyone.\n\nMinimum version: 5.9.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.0...ios-v5.9.1",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.2/Duotone.ipa",
           "size": 16131338,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.7.0",
-          "date": "2026-11-01T16:41:16Z",
-          "localizedDescription": "Duotone iOS 5.7.0 — as Duas luas: a passagem a ver-se, as barrinhas no andamento da música e uma só luz\n\nNovo:\n- As Duas luas: com o leitor aberto, numa passagem do AutoMix ou do crossfade, a capa da música que entra nasce por trás da que sai, as duas cruzam-se como o volume, e no fim a velha sai para a esquerda. Fora de uma passagem a capa é a de sempre.\n- Com o AutoMix há mais: um anel em cada batida (só nas passagens na batida), um reflexo na troca dos graves, e por baixo da capa, durante 3 s, o andamento e a tonalidade (\"124 → 128 BPM · 8A → 9A\").\n- As barrinhas da música que toca andam no andamento dela, com o AutoMix ligado. Sem andamento conhecido, fica o ciclo de sempre.\n- Os avisos acendem com uma luz que passa: para a direita no que se juntou, para a esquerda no que saiu com \"Undo\", de cima numa informação. Um erro não acende.\n- O carregamento: as páginas carregam com as formas do que vem e um só reflexo a passar por todas, em vez de cada barra a piscar sozinha ou de uma roda. Aos 4 s a luz pára e diz \"Still loading…\", com \"Try again\" onde dá.\n- Os vazios mostram os dois discos do símbolo, numa pose por estado, em vez de um ícone num círculo.\n- O teu mês, refeito: seis páginas em vez de três (o mês com as capas num leque, o tempo com um calendário dos dias, o artista, a música com \"Play your top 5\", o ritmo num relógio de 24 horas e o cartaz). \"Your October\" nas estatísticas volta a abri-lo.\n- Um só preto e um só branco: o iPhone passa ao preto e ao branco do PC, e o arranque, a espera e a app são o mesmo preto. O texto subiu um pouco, para continuar a ler-se igual. A letra continua a do sistema.\n\nCorrigido:\n- A música já não aparece com o nome e a capa de outra versão dela: a original \"Fuera Del Planeta\" aparecia como o remix, com \"Remix\" no lugar do artista e outra capa.\n- No teu mês, um toque à esquerda em cima de um texto volta para trás, em vez de avançar.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.7.0/docs/VERIFICAR-5.7.0.md\nComparar com iOS 5.6.0: https://github.com/joaoafonso2004/duotone/compare/ios-v5.6.0...ios-v5.7.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.0/Duotone.ipa",
-          "size": 16120305,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.9.1",
-      "versionDate": "2026-11-11T05:38:53Z",
-      "versionDescription": "Duotone for iPhone 5.9.1\n\nImproved\n- Lighter on the server: artist and song details are kept on your phone, and Duotone sends far fewer requests while you listen. This keeps the app free for everyone.\n\nMinimum version: 5.9.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.0...ios-v5.9.1",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.1/Duotone.ipa",
-      "size": 16037099
+      "version": "5.9.2",
+      "versionDate": "2026-11-11T06:12:16Z",
+      "versionDescription": "Duotone for iPhone 5.9.2\n\nFixed\n- Tapping the player on the lock screen or in the Dynamic Island opens Duotone.\n\nMinimum version: 5.9.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.1...ios-v5.9.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.2/Duotone.ipa",
+      "size": 16037890
     }
   ],
   "news": []
