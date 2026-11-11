@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.8.8",
+          "date": "2026-11-11T03:04:46Z",
+          "localizedDescription": "Duotone for iPhone 5.8.8\n\nNew\n- Profiles of people who aren't your friends show their listening stats, never what they listen to. You can hide yours in Edit profile › Privacy.\n- Spotify sign-in works with any account.\n- Updates are also checked when you come back to the app. Some future updates may be required.\n\nImproved\n- Without internet, Home, your profile and Social stay on screen, with a \"No internet connection\" bar. A message you were typing is kept.\n- Playing a song from a chat plays the rest of the chat after it, shown as \"From chat with …\". Tapping a song in a chat opens the usual song menu.\n- \"Import a playlist\" in Playlists takes links from anywhere.\n- Artist pages show more albums.\n- Fewer requests when you return to the app: stats and per-song settings load only what changed.\n\nFixed\n- Song covers in chats now show.\n- A song titled with another artist's name is credited to the right artist.\n\nPlease update: older versions will stop being supported.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.6...ios-v5.8.8",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.8/Duotone.ipa",
+          "size": 16032963,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.8.6",
           "date": "2026-11-10T06:19:20Z",
           "localizedDescription": "- CI iOS: validate before applying release version\n- Importar: menos Not found de musicas que existem\n- PC: importar do Spotify pela conta, sem registar contas no painel\n- iPhone: o ecrã bloqueado a dois tons e os botões do Duotone para o iOS 18\n- Maquete: a Live Activity do iPhone (sempre, ou só com Jam, temporizador e AutoMix)\n- Definições: desligar a atualização sozinha das playlists importadas\n- PC: uma só caixa para todos os menus, e o equalizador em curva\n- Versões clean: as regras, a memória do aparelho e a troca (base, a meio)\n- Maquete: os menus do PC ao nível do resto da app\n- Voltar à fila que se deixou: \"Back to …\" na fila do PC e do iPhone\n- iPhone: procurar à mão no Library check e na lista \"Not found\"\n- Escolher várias no PC, procurar à mão as indisponíveis, e playlists importadas a atualizar-se sozinhas\n- Maquete: três melhorias de uso, com opções\n- PC: procurar ali mesmo as músicas que a importação não encontrou\n- PC: a janela sem moldura e sem fios (opção A da maquete)\n- Maquete das barras: sem JavaScript, para abrir no visualizador de ficheiros\n- Maquete: a janela do PC sem a moldura e sem os fios entre as zonas\n- PC: os botões de ícone sem quadrado\n\nComparar com ios-v5.8.3: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.3...ios-v5.8.6",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.5.0/Duotone.ipa",
           "size": 16074356,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.4.5",
-          "date": "2026-10-27T03:46:49Z",
-          "localizedDescription": "Duotone iOS 5.4.5 — atualizar os teus presets\n\nNovo:\n- No equalizador, escolhe um preset teu, ajusta as bandas e toca em Update “<nome>” para o substituir. O botão só aparece quando há alterações.\n- O preset mantém o nome e a ligação aos teus aparelhos. Save as preset continua a guardar uma cópia.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.4.5/docs/VERIFICAR-5.4.5.md\nComparar com iOS 5.4.4: https://github.com/joaoafonso2004/duotone/compare/ios-v5.4.4...ios-v5.4.5",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.4.5/Duotone.ipa",
-          "size": 16070730,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.8.6",
-      "versionDate": "2026-11-10T06:19:20Z",
-      "versionDescription": "- CI iOS: validate before applying release version\n- Importar: menos Not found de musicas que existem\n- PC: importar do Spotify pela conta, sem registar contas no painel\n- iPhone: o ecrã bloqueado a dois tons e os botões do Duotone para o iOS 18\n- Maquete: a Live Activity do iPhone (sempre, ou só com Jam, temporizador e AutoMix)\n- Definições: desligar a atualização sozinha das playlists importadas\n- PC: uma só caixa para todos os menus, e o equalizador em curva\n- Versões clean: as regras, a memória do aparelho e a troca (base, a meio)\n- Maquete: os menus do PC ao nível do resto da app\n- Voltar à fila que se deixou: \"Back to …\" na fila do PC e do iPhone\n- iPhone: procurar à mão no Library check e na lista \"Not found\"\n- Escolher várias no PC, procurar à mão as indisponíveis, e playlists importadas a atualizar-se sozinhas\n- Maquete: três melhorias de uso, com opções\n- PC: procurar ali mesmo as músicas que a importação não encontrou\n- PC: a janela sem moldura e sem fios (opção A da maquete)\n- Maquete das barras: sem JavaScript, para abrir no visualizador de ficheiros\n- Maquete: a janela do PC sem a moldura e sem os fios entre as zonas\n- PC: os botões de ícone sem quadrado\n\nComparar com ios-v5.8.3: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.3...ios-v5.8.6",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.6/Duotone.ipa",
-      "size": 16031847
+      "version": "5.8.8",
+      "versionDate": "2026-11-11T03:04:46Z",
+      "versionDescription": "Duotone for iPhone 5.8.8\n\nNew\n- Profiles of people who aren't your friends show their listening stats, never what they listen to. You can hide yours in Edit profile › Privacy.\n- Spotify sign-in works with any account.\n- Updates are also checked when you come back to the app. Some future updates may be required.\n\nImproved\n- Without internet, Home, your profile and Social stay on screen, with a \"No internet connection\" bar. A message you were typing is kept.\n- Playing a song from a chat plays the rest of the chat after it, shown as \"From chat with …\". Tapping a song in a chat opens the usual song menu.\n- \"Import a playlist\" in Playlists takes links from anywhere.\n- Artist pages show more albums.\n- Fewer requests when you return to the app: stats and per-song settings load only what changed.\n\nFixed\n- Song covers in chats now show.\n- A song titled with another artist's name is credited to the right artist.\n\nPlease update: older versions will stop being supported.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.6...ios-v5.8.8",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.8/Duotone.ipa",
+      "size": 16032963
     }
   ],
   "news": []
