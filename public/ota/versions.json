@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T03:29:58.981Z",
+  "generatedAt": "2026-11-11T04:53:57.533Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16032963,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.8/Duotone.ipa",
-          "downloads": 3
+          "downloads": 31
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.8/Duotone.ipa"
       },
       "windows": {
-        "version": "5.8.9",
-        "tag": "win-v5.8.9",
-        "notes": "Duotone for Windows 5.8.9\n\nImproved\n- Updates install by themselves while Duotone sits in the tray and nothing is playing. No need to restart the app.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v5.8.8...win-v5.8.9",
-        "publishedAt": "2026-11-11T03:29:44Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.8.9",
+        "version": "5.9.0",
+        "tag": "win-v5.9.0",
+        "notes": "Duotone for Windows 5.9.0\n\nNew\n- Support Duotone in Settings › About. Donations keep the server running.\n- Privacy & terms in Settings › About and on the sign-in screen.\n\nImproved\n- Settings › About explains when updates install.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v5.8.9...win-v5.9.0",
+        "publishedAt": "2026-11-11T04:53:44Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.9.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116294353,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.9/Duotone-Setup.exe",
+          "size": 116295574,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.9.0/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.8.9/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.9.0/Duotone-Setup.exe"
       }
     }
   }
