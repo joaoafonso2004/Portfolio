@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T13:21:47.350Z",
+  "generatedAt": "2026-11-11T19:17:41.481Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16037890,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.2/Duotone.ipa",
-          "downloads": 48
+          "downloads": 93
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.2/Duotone.ipa"
       },
       "windows": {
-        "version": "5.9.1",
-        "tag": "win-v5.9.1",
-        "notes": "Duotone for Windows 5.9.1\n\nImproved\n- Lighter on the server: artist and song details are kept on your computer, and Duotone sends far fewer requests while you listen. This keeps the app free for everyone.\n\nMinimum version: 5.9.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v5.9.0...win-v5.9.1",
-        "publishedAt": "2026-11-11T05:34:41Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.9.1",
+        "version": "5.9.3",
+        "tag": "win-v5.9.3",
+        "notes": "Duotone for Windows 5.9.3\n\nImproved\n- Much lighter on the server: what you listen to is sent in one small batch every few minutes, and friends' online status no longer writes to the database. This keeps Duotone free for everyone.\n- Friends' status and what they're playing arrive live.\n\nMinimum version: 5.9.3\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v5.9.1...win-v5.9.3",
+        "publishedAt": "2026-11-11T19:17:26Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v5.9.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116296686,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.9.1/Duotone-Setup.exe",
-          "downloads": 16
+          "size": 116299947,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.9.3/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.9.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.9.3/Duotone-Setup.exe"
       }
     }
   }
