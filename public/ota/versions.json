@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-11T04:53:57.533Z",
+  "generatedAt": "2026-11-11T05:03:08.696Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.8.8",
-        "tag": "ios-v5.8.8",
-        "notes": "Duotone for iPhone 5.8.8\n\nNew\n- Profiles of people who aren't your friends show their listening stats, never what they listen to. You can hide yours in Edit profile › Privacy.\n- Spotify sign-in works with any account.\n- Updates are also checked when you come back to the app. Some future updates may be required.\n\nImproved\n- Without internet, Home, your profile and Social stay on screen, with a \"No internet connection\" bar. A message you were typing is kept.\n- Playing a song from a chat plays the rest of the chat after it, shown as \"From chat with …\". Tapping a song in a chat opens the usual song menu.\n- \"Import a playlist\" in Playlists takes links from anywhere.\n- Artist pages show more albums.\n- Fewer requests when you return to the app: stats and per-song settings load only what changed.\n\nFixed\n- Song covers in chats now show.\n- A song titled with another artist's name is credited to the right artist.\n\nPlease update: older versions will stop being supported.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.6...ios-v5.8.8",
-        "publishedAt": "2026-11-11T03:04:46Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.8.8",
+        "version": "5.9.0",
+        "tag": "ios-v5.9.0",
+        "notes": "Duotone for iPhone 5.9.0\n\nNew\n- Support Duotone in Settings › About. Donations keep the server running.\n- Privacy & terms in Settings › About and on the sign-in screen.\n\nImproved\n- Duotone always opens on Home.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.8...ios-v5.9.0",
+        "publishedAt": "2026-11-11T05:02:50Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.9.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 16032963,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.8/Duotone.ipa",
-          "downloads": 31
+          "size": 16033247,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.0/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.8/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.0/Duotone.ipa"
       },
       "windows": {
         "version": "5.9.0",

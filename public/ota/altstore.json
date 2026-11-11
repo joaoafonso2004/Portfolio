@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.9.0",
+          "date": "2026-11-11T05:02:50Z",
+          "localizedDescription": "Duotone for iPhone 5.9.0\n\nNew\n- Support Duotone in Settings › About. Donations keep the server running.\n- Privacy & terms in Settings › About and on the sign-in screen.\n\nImproved\n- Duotone always opens on Home.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.8...ios-v5.9.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.0/Duotone.ipa",
+          "size": 16033247,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.8.8",
           "date": "2026-11-11T03:04:46Z",
           "localizedDescription": "Duotone for iPhone 5.8.8\n\nNew\n- Profiles of people who aren't your friends show their listening stats, never what they listen to. You can hide yours in Edit profile › Privacy.\n- Spotify sign-in works with any account.\n- Updates are also checked when you come back to the app. Some future updates may be required.\n\nImproved\n- Without internet, Home, your profile and Social stay on screen, with a \"No internet connection\" bar. A message you were typing is kept.\n- Playing a song from a chat plays the rest of the chat after it, shown as \"From chat with …\". Tapping a song in a chat opens the usual song menu.\n- \"Import a playlist\" in Playlists takes links from anywhere.\n- Artist pages show more albums.\n- Fewer requests when you return to the app: stats and per-song settings load only what changed.\n\nFixed\n- Song covers in chats now show.\n- A song titled with another artist's name is credited to the right artist.\n\nPlease update: older versions will stop being supported.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.6...ios-v5.8.8",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.6.0/Duotone.ipa",
           "size": 16085231,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.5.0",
-          "date": "2026-10-30T19:13:33Z",
-          "localizedDescription": "Duotone iOS 5.5.0 — o AutoMix já não dá um degrau de velocidade\n\nCorrigido:\n- AutoMix na batida: a faixa que entra voltava à velocidade dela de uma vez no fim da passagem, num degrau que podia chegar a 4 %. Agora volta aos poucos.\n- O relatório de reprodução já mede quanto o JavaScript aloca por minuto (MB, recolhas e tempo de recolha) mesmo quando vais e voltas entre apps. Antes, essa linha ficava em branco (vinha da 5.4.6, que não chegou a sair).\n- Nada muda no motor de áudio, no Swift nem na interface do iPhone.\n\nVerificações recomendadas: https://github.com/joaoafonso2004/duotone/blob/ios-v5.5.0/docs/VERIFICAR-5.5.0.md\nComparar com iOS 5.4.5: https://github.com/joaoafonso2004/duotone/compare/ios-v5.4.5...ios-v5.5.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.5.0/Duotone.ipa",
-          "size": 16074356,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.8.8",
-      "versionDate": "2026-11-11T03:04:46Z",
-      "versionDescription": "Duotone for iPhone 5.8.8\n\nNew\n- Profiles of people who aren't your friends show their listening stats, never what they listen to. You can hide yours in Edit profile › Privacy.\n- Spotify sign-in works with any account.\n- Updates are also checked when you come back to the app. Some future updates may be required.\n\nImproved\n- Without internet, Home, your profile and Social stay on screen, with a \"No internet connection\" bar. A message you were typing is kept.\n- Playing a song from a chat plays the rest of the chat after it, shown as \"From chat with …\". Tapping a song in a chat opens the usual song menu.\n- \"Import a playlist\" in Playlists takes links from anywhere.\n- Artist pages show more albums.\n- Fewer requests when you return to the app: stats and per-song settings load only what changed.\n\nFixed\n- Song covers in chats now show.\n- A song titled with another artist's name is credited to the right artist.\n\nPlease update: older versions will stop being supported.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.6...ios-v5.8.8",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.8/Duotone.ipa",
-      "size": 16032963
+      "version": "5.9.0",
+      "versionDate": "2026-11-11T05:02:50Z",
+      "versionDescription": "Duotone for iPhone 5.9.0\n\nNew\n- Support Duotone in Settings › About. Donations keep the server running.\n- Privacy & terms in Settings › About and on the sign-in screen.\n\nImproved\n- Duotone always opens on Home.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.8...ios-v5.9.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.0/Duotone.ipa",
+      "size": 16033247
     }
   ],
   "news": []
