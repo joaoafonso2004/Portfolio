@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-11T19:17:41.481Z",
+  "generatedAt": "2026-11-11T19:39:59.569Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.9.2",
-        "tag": "ios-v5.9.2",
-        "notes": "Duotone for iPhone 5.9.2\n\nFixed\n- Tapping the player on the lock screen or in the Dynamic Island opens Duotone.\n\nMinimum version: 5.9.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.1...ios-v5.9.2",
-        "publishedAt": "2026-11-11T06:12:16Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.9.2",
+        "version": "5.9.3",
+        "tag": "ios-v5.9.3",
+        "notes": "Duotone for iPhone 5.9.3\n\nNew\n- Choose how much space saved songs can use, from 10 MB to unlimited, in Settings › Storage.\n- Download the IPA straight from the update notice, then open it in SideStore or AltStore.\n\nFixed\n- On your profile, your name in the top bar no longer runs into the buttons when you scroll.\n\nImproved\n- Much lighter on the server: what you listen to is sent in one small batch every few minutes, and friends' online status no longer writes to the database. This keeps Duotone free for everyone.\n- Friends' status and what they're playing arrive live.\n- The like button in the player answers instantly.\n\nMinimum version: 5.9.3\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.2...ios-v5.9.3",
+        "publishedAt": "2026-11-11T19:39:41Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.9.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 16037890,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.2/Duotone.ipa",
-          "downloads": 93
+          "size": 16054716,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.3/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.2/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.3/Duotone.ipa"
       },
       "windows": {
         "version": "5.9.3",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 116299947,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.9.3/Duotone-Setup.exe",
-          "downloads": 0
+          "downloads": 10
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.9.3/Duotone-Setup.exe"
       }
