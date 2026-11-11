@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-11T05:34:52.888Z",
+  "generatedAt": "2026-11-11T05:39:11.562Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.9.0",
-        "tag": "ios-v5.9.0",
-        "notes": "Duotone for iPhone 5.9.0\n\nNew\n- Support Duotone in Settings › About. Donations keep the server running.\n- Privacy & terms in Settings › About and on the sign-in screen.\n\nImproved\n- Duotone always opens on Home.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.8...ios-v5.9.0",
-        "publishedAt": "2026-11-11T05:02:50Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.9.0",
+        "version": "5.9.1",
+        "tag": "ios-v5.9.1",
+        "notes": "Duotone for iPhone 5.9.1\n\nImproved\n- Lighter on the server: artist and song details are kept on your phone, and Duotone sends far fewer requests while you listen. This keeps the app free for everyone.\n\nMinimum version: 5.9.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.0...ios-v5.9.1",
+        "publishedAt": "2026-11-11T05:38:53Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.9.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 16033247,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.0/Duotone.ipa",
-          "downloads": 4
+          "size": 16037099,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.1/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.1/Duotone.ipa"
       },
       "windows": {
         "version": "5.9.1",
