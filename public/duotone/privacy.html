@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duotone — Privacy &amp; Terms</title>
+  <meta name="description" content="What Duotone stores, who can see it, and the rules for using the app." />
+  <meta name="theme-color" content="#090A0C" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" />
+  <style>
+    :root { --ink: #090A0C; --coal: #141516; --paper: #F2EFE8; --muted: #8B8D91; --accent: #C8A96B; }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; background: var(--ink); color: var(--paper);
+      font: 400 17px/1.65 Satoshi, system-ui, -apple-system, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 56px 20px 96px; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    .eyebrow { color: var(--muted); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 12px; }
+    h1 { font-size: clamp(32px, 6vw, 48px); line-height: 1.1; font-weight: 700; margin: 0 0 16px; letter-spacing: -.01em; }
+    h2 { font-size: 26px; line-height: 1.2; margin: 56px 0 8px; padding-top: 24px; border-top: 1px solid var(--coal); }
+    h3 { font-size: 18px; margin: 28px 0 6px; }
+    p, ul { margin: 0 0 14px; }
+    ul { padding-left: 20px; }
+    li { margin: 4px 0; }
+    .lead { color: #cfccc5; font-size: 18px; }
+    .muted { color: var(--muted); }
+    nav.toc { display: flex; gap: 16px; flex-wrap: wrap; margin: 24px 0 0; }
+    footer { margin-top: 64px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Duotone</p>
+  <h1>Privacy &amp; Terms</h1>
+  <p class="lead">Duotone is a free music app for iPhone and Windows, made by one person as a personal project. It isn't on the App Store, has no ads and sells nothing. This page explains what it stores, who can see it, and the rules for using it.</p>
+  <p class="muted">Last updated: 11 November 2026</p>
+  <nav class="toc"><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#contact">Contact</a></nav>
+
+  <h2 id="privacy">Privacy</h2>
+
+  <h3>Who is responsible</h3>
+  <p>João Afonso, Viana do Castelo, Portugal. For anything about your data, write to <a href="mailto:joaorsafonsoapple@gmail.com">joaorsafonsoapple@gmail.com</a>.</p>
+
+  <h3>What Duotone stores</h3>
+  <p>When you have an account, these are kept in Duotone's database (hosted by Supabase):</p>
+  <ul>
+    <li><strong>Your account:</strong> email, username, display name, profile picture and profile look, and when you joined. Your password is stored only as a secure hash.</li>
+    <li><strong>Your music:</strong> Liked Songs, playlists (including shared ones and the ones you import), what you play and when, play counts, settings per song, equaliser presets, preferences, recent searches and feedback on recommendations.</li>
+    <li><strong>Social:</strong> friends, the messages and songs you send in chats and groups, reactions and read receipts, what you're listening to and when you were last online, and listening sessions you join.</li>
+    <li><strong>Your devices:</strong> a random device ID, the device's name and type, and what's playing on it (song, queue, position), so you can continue on another device.</li>
+    <li><strong>Diagnostics:</strong> when the app opens and when something breaks (errors, crashes, a song that won't play), with the app version and platform. These are kept for 30 days.</li>
+    <li><strong>Sign-in protection:</strong> a count of failed sign-in attempts, to slow down password guessing.</li>
+  </ul>
+  <p>Downloaded songs, caches and some settings stay only on your device.</p>
+  <p>There are no ads, no advertising or analytics trackers, and your data is never sold.</p>
+
+  <h3>Who can see what</h3>
+  <ul>
+    <li><strong>Friends</strong> see your profile, what you're listening to, when you're online and the messages you send them.</li>
+    <li><strong>Other people</strong> see your name and picture and, unless you hide them in Edit profile › Privacy, how much you've listened, how many songs, your last listen and since when you use Duotone. Never what you listen to.</li>
+    <li><strong>Collaborators</strong> on a playlist see that playlist.</li>
+  </ul>
+
+  <h3>Services the app talks to</h3>
+  <p>To work, the app connects to these services. Each one receives your IP address and the request it needs:</p>
+  <ul>
+    <li><strong>Supabase:</strong> accounts, the database and live updates.</li>
+    <li><strong>YouTube:</strong> the music catalogue, playback and artwork.</li>
+    <li><strong>Spotify, Deezer and Apple Music:</strong> only when you import a playlist link or connect your Spotify account. Spotify sign-in happens on Spotify's own page; Duotone reads your playlists and Liked Songs to import them and never sees your Spotify password.</li>
+    <li><strong>LRCLIB:</strong> lyrics.</li>
+    <li><strong>GitHub and this site:</strong> checking for and downloading updates.</li>
+    <li><strong>Discord</strong> (Windows): only if you turn on the Discord option, to show what you're playing on your Discord profile.</li>
+    <li><strong>QR Server:</strong> only when you show a playlist's QR code.</li>
+  </ul>
+
+  <h3>Why</h3>
+  <p>Your account, music and social data are used to provide the app you asked for. Diagnostics are used, in Duotone's legitimate interest, to find and fix what breaks.</p>
+
+  <h3>How long, and how to delete it</h3>
+  <p>Your data is kept while you have an account. <strong>Settings › Delete account</strong> removes your account and the data linked to it from the database. Diagnostics are deleted after 30 days anyway.</p>
+
+  <h3>Your rights</h3>
+  <p>You can ask for a copy of your data, to correct it, to delete it, or object to how it's used, by writing to the email above. You can also complain to the Portuguese data protection authority, the <a href="https://www.cnpd.pt/">CNPD</a>.</p>
+
+  <h3>Age</h3>
+  <p>You need to be at least 13 to use Duotone.</p>
+
+  <h2 id="terms">Terms</h2>
+  <ul>
+    <li><strong>As is.</strong> Duotone is free and provided as is, without any warranty. It can change or stop at any time.</li>
+    <li><strong>The music isn't Duotone's.</strong> Duotone doesn't host music. Songs, artwork and lyrics belong to their owners and come from other services. Use Duotone for personal, non-commercial listening.</li>
+    <li><strong>Be decent.</strong> No spam, harassment or illegal content in chats, profiles or playlists. Accounts that break this can be removed.</li>
+    <li><strong>Your account.</strong> Keep your password safe; you're responsible for what's done with your account.</li>
+    <li><strong>Removal requests.</strong> If you own rights to something and want it removed, write to the email below and it will be handled promptly.</li>
+    <li><strong>Not affiliated.</strong> Duotone isn't affiliated with or endorsed by YouTube, Google, Spotify, Deezer, Apple or Discord.</li>
+  </ul>
+  <p>If these terms change, this page is updated and the date at the top changes.</p>
+
+  <h2 id="contact">Contact</h2>
+  <p><a href="mailto:joaorsafonsoapple@gmail.com">joaorsafonsoapple@gmail.com</a></p>
+
+  <footer><a href="/#apps">← Duotone downloads</a></footer>
+</main>
+</body>
+</html>
