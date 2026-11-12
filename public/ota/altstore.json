@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "5.9.4",
+          "date": "2026-11-12T03:29:24Z",
+          "localizedDescription": "Duotone for iPhone 5.9.4\n\nFixed\n- Messages, friends' status and what they're playing keep arriving live when Duotone has been open for a long time. If the server drops the live connection, Duotone reconnects by itself.\n\nMinimum version: 5.9.4\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.3...ios-v5.9.4",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.4/Duotone.ipa",
+          "size": 16056162,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.9.3",
           "date": "2026-11-11T19:39:41Z",
           "localizedDescription": "Duotone for iPhone 5.9.3\n\nNew\n- Choose how much space saved songs can use, from 10 MB to unlimited, in Settings › Storage.\n- Download the IPA straight from the update notice, then open it in SideStore or AltStore.\n\nFixed\n- On your profile, your name in the top bar no longer runs into the buttons when you scroll.\n\nImproved\n- Much lighter on the server: what you listen to is sent in one small batch every few minutes, and friends' online status no longer writes to the database. This keeps Duotone free for everyone.\n- Friends' status and what they're playing arrive live.\n- The like button in the player answers instantly.\n\nMinimum version: 5.9.3\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.2...ios-v5.9.3",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.8/Duotone.ipa",
           "size": 15986806,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.7.5",
-          "date": "2026-11-03T04:59:20Z",
-          "localizedDescription": "- Permite ao dono partilhar o equalizador ao vivo na Jam\n- Evita reconstruir a capa e sobrepor animacoes ao abrir o leitor iOS\n- Preserva o preset EQ quando o sistema prepara novamente o tap\n- Executa a regressao Swift antes dos restantes testes iOS\n- Tolera a precisao Float na protecao da velocidade nativa\n- Evita escritas repetidas e reavaliacao do buffer na velocidade iOS\n\nComparar com ios-v5.7.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.7.2...ios-v5.7.5",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.5/Duotone.ipa",
-          "size": 15968209,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.9.3",
-      "versionDate": "2026-11-11T19:39:41Z",
-      "versionDescription": "Duotone for iPhone 5.9.3\n\nNew\n- Choose how much space saved songs can use, from 10 MB to unlimited, in Settings › Storage.\n- Download the IPA straight from the update notice, then open it in SideStore or AltStore.\n\nFixed\n- On your profile, your name in the top bar no longer runs into the buttons when you scroll.\n\nImproved\n- Much lighter on the server: what you listen to is sent in one small batch every few minutes, and friends' online status no longer writes to the database. This keeps Duotone free for everyone.\n- Friends' status and what they're playing arrive live.\n- The like button in the player answers instantly.\n\nMinimum version: 5.9.3\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.2...ios-v5.9.3",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.3/Duotone.ipa",
-      "size": 16054716
+      "version": "5.9.4",
+      "versionDate": "2026-11-12T03:29:24Z",
+      "versionDescription": "Duotone for iPhone 5.9.4\n\nFixed\n- Messages, friends' status and what they're playing keep arriving live when Duotone has been open for a long time. If the server drops the live connection, Duotone reconnects by itself.\n\nMinimum version: 5.9.4\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.3...ios-v5.9.4",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.4/Duotone.ipa",
+      "size": 16056162
     }
   ],
   "news": []
