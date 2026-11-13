@@ -3,6 +3,7 @@ import type { Project } from '../data/projects';
 import type { AppConfig } from '../data/apps';
 import { Image } from 'astro:assets';
 import AppDownloads from './AppDownloads.astro';
+import DuotoneUsers from './DuotoneUsers.astro';
 import DuotoneScreen from './DuotoneScreen.astro';
 import DuotoneDemo from './DuotoneDemo.astro';
 import { duotoneDemos } from '../data/duotone-demos';
@@ -40,6 +41,7 @@ const highlights = [
         <a href="#duotone-download" class="duo-button primary">Get Duotone <span aria-hidden="true">↓</span></a>
         <a href="#duotone-player" class="quiet-link">See it in motion <span aria-hidden="true">↘</span></a>
       </div>
+      <DuotoneUsers />
     </div>
     <div class="hero-stage" data-morph-target>
       <div class="stage-orbit orbit-one" aria-hidden="true"></div>

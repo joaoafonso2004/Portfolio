@@ -1,0 +1,51 @@
+name: Contar os utilizadores do Duotone
+
+# Uma vez por dia, um pedido ao Auth do Supabase, e o número fica em
+# src/data/duotone-users.json (ver scripts/contar-utilizadores.mjs). A página
+# do Duotone lê-o ao compilar: as visitas não perguntam nada ao Supabase.
+#
+# Segredos deste repositório (Settings → Secrets and variables → Actions):
+#  - DUOTONE_SUPABASE_URL: o endereço do projeto (https://….supabase.co)
+#  - DUOTONE_SUPABASE_SERVICE_ROLE_KEY: a chave service_role (ou uma secret key)
+on:
+  schedule:
+    # Uma hora antes do sync-releases (6:00), para os dois não empurrarem juntos.
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contar-utilizadores
+  cancel-in-progress: false
+
+jobs:
+  contar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Contar as contas
+        run: node scripts/contar-utilizadores.mjs
+        env:
+          SUPABASE_URL: ${{ secrets.DUOTONE_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.DUOTONE_SUPABASE_SERVICE_ROLE_KEY }}
+
+      - name: Commit se o número mudou
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/duotone-users.json
+          if git diff --staged --quiet; then
+            echo "Sem alterações."
+          else
+            git commit -m "chore: contar os utilizadores do Duotone"
+            # O sync-releases também empurra para o main: apanhar o que entrou entretanto.
+            git pull --rebase origin main
+            git push
+          fi

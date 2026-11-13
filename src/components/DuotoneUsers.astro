@@ -1,0 +1,106 @@
+---
+/**
+ * Quantas contas tem o Duotone, no topo da página dele.
+ *
+ * O número vem de `src/data/duotone-users.json`, que o workflow
+ * `contar-utilizadores.yml` reescreve uma vez por dia com UM pedido ao Auth do
+ * Supabase. Entra no HTML ao compilar: uma visita não pergunta nada ao
+ * Supabase (no plano grátis, cada pedido é uma linha de log). Sem JavaScript,
+ * o número está lá na mesma; com ele, conta de 0 até ao total ao aparecer.
+ */
+import stats from '../data/duotone-users.json';
+
+const total = Math.max(0, Math.floor(Number(stats.users) || 0));
+const texto = new Intl.NumberFormat('en-US').format(total);
+---
+
+{total > 0 && (
+  <p class="users-count" data-users-count={total}>
+    <span class="dot" aria-hidden="true"></span>
+    <span><strong data-users-number>{texto}</strong> listeners and counting</span>
+  </p>
+)}
+
+<style>
+  .users-count {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+    color: #a2a1ab;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    line-height: 1.7;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  strong {
+    display: inline-block;
+    color: #f2efe8;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+  .dot {
+    position: relative;
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #c4b5df;
+  }
+  .dot::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: inherit;
+    animation: pulso 2.4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+  }
+  @keyframes pulso {
+    from { transform: scale(1); opacity: 0.6; }
+    to { transform: scale(3.2); opacity: 0; }
+  }
+  @media (max-width: 767px) {
+    .users-count { margin-top: 22px; font-size: 9px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .dot::after { animation: none; }
+  }
+</style>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    const caixa = document.querySelector<HTMLElement>('[data-users-count]');
+    const numero = caixa?.querySelector<HTMLElement>('[data-users-number]');
+    // `astro:page-load` corre a cada navegação: conta-se uma vez por página.
+    if (!caixa || !numero || caixa.dataset.contado) return;
+    caixa.dataset.contado = 'true';
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const alvo = Number(caixa.dataset.usersCount);
+    if (!Number.isFinite(alvo) || alvo <= 0) return;
+
+    const formato = new Intl.NumberFormat('en-US');
+    const DURACAO_MS = 1400;
+    // A largura do número final fica presa: o texto ao lado não anda enquanto conta.
+    numero.style.minWidth = `${numero.offsetWidth}px`;
+
+    const contar = () => {
+      const inicio = performance.now();
+      const passo = (agora: number) => {
+        const t = Math.min(1, (agora - inicio) / DURACAO_MS);
+        numero.textContent = formato.format(Math.round(alvo * (1 - Math.pow(1 - t, 3))));
+        if (t < 1) requestAnimationFrame(passo);
+      };
+      numero.textContent = formato.format(0);
+      requestAnimationFrame(passo);
+    };
+
+    const vista = new IntersectionObserver((entradas) => {
+      if (!entradas.some((e) => e.isIntersecting)) return;
+      vista.disconnect();
+      contar();
+    });
+    vista.observe(caixa);
+  });
+</script>
