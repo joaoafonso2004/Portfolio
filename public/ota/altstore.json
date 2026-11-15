@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "6.0.4",
+          "date": "2026-11-15T22:40:46Z",
+          "localizedDescription": "Your own drawer on Home: swipe from the left edge, or tap the new button next to Home.\nFill it with artists, playlists, friends, controls and shortcuts. Hold any tile to edit your drawer.\nScenes change several settings in one tap, like Night: private listening and a 30 min sleep timer. Tap it again and everything goes back.\nIt starts with what you play most, so it's ready the first time you open it.\n\nDuotone for iPhone 6.0.4\n\nNew\n- The drawer on Home: spaces (Everyday and up to four more), and tiles for what's playing, your PC, artists, playlists, albums, friends, the sleep timer, private listening, speed, shuffle, radio and the places you go to most.\n- Scenes: Night, Focus, Gym and Drive are ready to add, and the scene editor makes your own.\n\nImproved\n- The update notice shows what's new, instead of the version title.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.3...ios-v6.0.4",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.4/Duotone.ipa",
+          "size": 16206528,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "6.0.3",
           "date": "2026-11-15T15:57:51Z",
           "localizedDescription": "Duotone for iPhone 6.0.3\n\nImproved\n- Skipping is smooth: the cover's move to the next song now runs in iOS itself, so changing song can't make it stutter.\n- The cover no longer dims for a moment on every skip. It only pulses when a song takes a while to load.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.2...ios-v6.0.3",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.8/Duotone.ipa",
           "size": 16032963,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.8.6",
-          "date": "2026-11-10T06:19:20Z",
-          "localizedDescription": "- CI iOS: validate before applying release version\n- Importar: menos Not found de musicas que existem\n- PC: importar do Spotify pela conta, sem registar contas no painel\n- iPhone: o ecrã bloqueado a dois tons e os botões do Duotone para o iOS 18\n- Maquete: a Live Activity do iPhone (sempre, ou só com Jam, temporizador e AutoMix)\n- Definições: desligar a atualização sozinha das playlists importadas\n- PC: uma só caixa para todos os menus, e o equalizador em curva\n- Versões clean: as regras, a memória do aparelho e a troca (base, a meio)\n- Maquete: os menus do PC ao nível do resto da app\n- Voltar à fila que se deixou: \"Back to …\" na fila do PC e do iPhone\n- iPhone: procurar à mão no Library check e na lista \"Not found\"\n- Escolher várias no PC, procurar à mão as indisponíveis, e playlists importadas a atualizar-se sozinhas\n- Maquete: três melhorias de uso, com opções\n- PC: procurar ali mesmo as músicas que a importação não encontrou\n- PC: a janela sem moldura e sem fios (opção A da maquete)\n- Maquete das barras: sem JavaScript, para abrir no visualizador de ficheiros\n- Maquete: a janela do PC sem a moldura e sem os fios entre as zonas\n- PC: os botões de ícone sem quadrado\n\nComparar com ios-v5.8.3: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.3...ios-v5.8.6",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.6/Duotone.ipa",
-          "size": 16031847,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "6.0.3",
-      "versionDate": "2026-11-15T15:57:51Z",
-      "versionDescription": "Duotone for iPhone 6.0.3\n\nImproved\n- Skipping is smooth: the cover's move to the next song now runs in iOS itself, so changing song can't make it stutter.\n- The cover no longer dims for a moment on every skip. It only pulses when a song takes a while to load.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.2...ios-v6.0.3",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.3/Duotone.ipa",
-      "size": 16164522
+      "version": "6.0.4",
+      "versionDate": "2026-11-15T22:40:46Z",
+      "versionDescription": "Your own drawer on Home: swipe from the left edge, or tap the new button next to Home.\nFill it with artists, playlists, friends, controls and shortcuts. Hold any tile to edit your drawer.\nScenes change several settings in one tap, like Night: private listening and a 30 min sleep timer. Tap it again and everything goes back.\nIt starts with what you play most, so it's ready the first time you open it.\n\nDuotone for iPhone 6.0.4\n\nNew\n- The drawer on Home: spaces (Everyday and up to four more), and tiles for what's playing, your PC, artists, playlists, albums, friends, the sleep timer, private listening, speed, shuffle, radio and the places you go to most.\n- Scenes: Night, Focus, Gym and Drive are ready to add, and the scene editor makes your own.\n\nImproved\n- The update notice shows what's new, instead of the version title.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.3...ios-v6.0.4",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.4/Duotone.ipa",
+      "size": 16206528
     }
   ],
   "news": []

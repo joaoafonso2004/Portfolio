@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-15T15:58:05.637Z",
+  "generatedAt": "2026-11-15T22:41:01.743Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "6.0.3",
-        "tag": "ios-v6.0.3",
-        "notes": "Duotone for iPhone 6.0.3\n\nImproved\n- Skipping is smooth: the cover's move to the next song now runs in iOS itself, so changing song can't make it stutter.\n- The cover no longer dims for a moment on every skip. It only pulses when a song takes a while to load.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.2...ios-v6.0.3",
-        "publishedAt": "2026-11-15T15:57:51Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v6.0.3",
+        "version": "6.0.4",
+        "tag": "ios-v6.0.4",
+        "notes": "Your own drawer on Home: swipe from the left edge, or tap the new button next to Home.\nFill it with artists, playlists, friends, controls and shortcuts. Hold any tile to edit your drawer.\nScenes change several settings in one tap, like Night: private listening and a 30 min sleep timer. Tap it again and everything goes back.\nIt starts with what you play most, so it's ready the first time you open it.\n\nDuotone for iPhone 6.0.4\n\nNew\n- The drawer on Home: spaces (Everyday and up to four more), and tiles for what's playing, your PC, artists, playlists, albums, friends, the sleep timer, private listening, speed, shuffle, radio and the places you go to most.\n- Scenes: Night, Focus, Gym and Drive are ready to add, and the scene editor makes your own.\n\nImproved\n- The update notice shows what's new, instead of the version title.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.3...ios-v6.0.4",
+        "publishedAt": "2026-11-15T22:40:46Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v6.0.4",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 16164522,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.3/Duotone.ipa",
+          "size": 16206528,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.4/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.3/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.4/Duotone.ipa"
       },
       "windows": {
         "version": "6.0.2",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 116344398,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.0.2/Duotone-Setup.exe",
-          "downloads": 24
+          "downloads": 33
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.0.2/Duotone-Setup.exe"
       }
