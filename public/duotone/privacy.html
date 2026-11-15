@@ -37,8 +37,8 @@
   <p class="eyebrow">Duotone</p>
   <h1>Privacy &amp; Terms</h1>
   <p class="lead">Duotone is a free music app for iPhone and Windows, made by one person as a personal project. It isn't on the App Store, has no ads and sells nothing. This page explains what it stores, who can see it, and the rules for using it.</p>
-  <p class="muted">Last updated: 11 November 2026</p>
-  <nav class="toc"><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#contact">Contact</a></nav>
+  <p class="muted">Last updated: 15 November 2026</p>
+  <nav class="toc"><a href="#privacy">Privacy</a><a href="#delete">Delete your account</a><a href="#rights">Your rights</a><a href="#terms">Terms</a><a href="#contact">Contact</a></nav>
 
   <h2 id="privacy">Privacy</h2>
 
@@ -48,46 +48,68 @@
   <h3>What Duotone stores</h3>
   <p>When you have an account, these are kept in Duotone's database (hosted by Supabase):</p>
   <ul>
-    <li><strong>Your account:</strong> email, username, display name, profile picture and profile look, and when you joined. Your password is stored only as a secure hash.</li>
-    <li><strong>Your music:</strong> Liked Songs, playlists (including shared ones and the ones you import), what you play and when, play counts, settings per song, equaliser presets, preferences, recent searches and feedback on recommendations.</li>
-    <li><strong>Social:</strong> friends, the messages and songs you send in chats and groups, reactions and read receipts, what you're listening to and when you were last online, and listening sessions you join.</li>
+    <li><strong>Your account:</strong> email, username, display name, profile picture and profile look, and when you joined. Your password is stored only as a secure hash, never in readable form.</li>
+    <li><strong>Your music:</strong> Liked Songs, saved albums, playlists (including shared ones and the ones you import), what you play and when, play counts, settings per song, equaliser presets, preferences, recent searches and feedback on recommendations. This is what follows you from your iPhone to your PC.</li>
+    <li><strong>Social:</strong> friends, the messages and songs you send in chats and groups, reactions and read receipts, what you're listening to and when you were last online, and the listening sessions (Jams) you join.</li>
     <li><strong>Your devices:</strong> a random device ID, the device's name and type, and what's playing on it (song, queue, position), so you can continue on another device.</li>
-    <li><strong>Diagnostics:</strong> when the app opens and when something breaks (errors, crashes, a song that won't play), with the app version and platform. These are kept for 30 days.</li>
+    <li><strong>Diagnostics:</strong> when the app opens and when something breaks (errors, crashes, a song that won't play), with the app version and platform. Kept for 30 days.</li>
+    <li><strong>Problem reports:</strong> when you use <em>Report a problem</em>, what you write and, if you choose to include it, the playback report (app version, device, what the player did recently, the songs involved and the errors). Kept for 90 days.</li>
     <li><strong>Sign-in protection:</strong> a count of failed sign-in attempts, to slow down password guessing.</li>
   </ul>
-  <p>Downloaded songs, caches and some settings stay only on your device.</p>
+  <p><strong>Server logs.</strong> Like any website, Duotone's server records each request it receives, with your IP address, your device type and the time. These logs are used to keep the service running and to stop abuse, and are kept for about a day.</p>
+  <p><strong>Only on your device:</strong> downloaded songs, caches, the copy of your library that lets the app open without internet, and some settings.</p>
   <p>There are no ads, no advertising or analytics trackers, and your data is never sold.</p>
 
   <h3>Who can see what</h3>
   <ul>
-    <li><strong>Friends</strong> see your profile, what you're listening to, when you're online and the messages you send them.</li>
+    <li><strong>Friends</strong> see your profile, what you're listening to, when you're online and the messages you send them. Friends who use <em>Listen along</em> follow what you play.</li>
+    <li><strong>People in a Jam</strong> you start or join see what's playing and who's in it, while it lasts.</li>
     <li><strong>Other people</strong> see your name and picture and, unless you hide them in Edit profile › Privacy, how much you've listened, how many songs, your last listen and since when you use Duotone. Never what you listen to.</li>
     <li><strong>Collaborators</strong> on a playlist see that playlist.</li>
   </ul>
+  <p>Turn on <strong>Private listening</strong> and your friends (and Discord, if you use it) don't see what you're playing.</p>
 
   <h3>Services the app talks to</h3>
-  <p>To work, the app connects to these services. Each one receives your IP address and the request it needs:</p>
+  <p>To work, the app connects to these services. Each one receives your IP address and the request it needs, and handles it under its own privacy policy:</p>
   <ul>
     <li><strong>Supabase:</strong> accounts, the database and live updates.</li>
-    <li><strong>YouTube:</strong> the music catalogue, playback and artwork.</li>
-    <li><strong>Spotify, Deezer and Apple Music:</strong> only when you import a playlist link or connect your Spotify account. Spotify sign-in happens on Spotify's own page; Duotone reads your playlists and Liked Songs to import them and never sees your Spotify password.</li>
-    <li><strong>LRCLIB:</strong> lyrics.</li>
+    <li><strong>YouTube:</strong> the music catalogue, playback, artwork and some lyrics. Music plays from YouTube's servers, so Google receives your IP address and device information, under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+    <li><strong>Deezer:</strong> public artist information used to recommend similar music, and the Deezer playlist links you import. Duotone sends artist and song names, never your account.</li>
+    <li><strong>Spotify and Apple Music:</strong> only when you import a playlist link or connect your Spotify account. Spotify sign-in happens on Spotify's own page; Duotone reads your playlists and Liked Songs to import them and never sees your Spotify password.</li>
+    <li><strong>LRCLIB:</strong> lyrics, by song name and artist.</li>
     <li><strong>GitHub and this site:</strong> checking for and downloading updates.</li>
     <li><strong>Discord</strong> (Windows): only if you turn on the Discord option, to show what you're playing on your Discord profile.</li>
     <li><strong>QR Server:</strong> only when you show a playlist's QR code.</li>
   </ul>
+  <p>Some of these companies are outside the European Economic Area (Google and GitHub, for example, are in the United States). Those transfers rely on the EU–US Data Privacy Framework or on the Standard Contractual Clauses those companies offer.</p>
 
   <h3>Why</h3>
-  <p>Your account, music and social data are used to provide the app you asked for. Diagnostics are used, in Duotone's legitimate interest, to find and fix what breaks.</p>
+  <ul>
+    <li><strong>To give you the app you asked for</strong> (performing our agreement with you): your account, your music, syncing between devices, and the social features.</li>
+    <li><strong>In Duotone's legitimate interest:</strong> keeping the service secure, stopping abuse, and finding and fixing what breaks (diagnostics, problem reports, server logs).</li>
+  </ul>
 
-  <h3>How long, and how to delete it</h3>
-  <p>Your data is kept while you have an account. <strong>Settings › Delete account</strong> removes your account and the data linked to it from the database. Diagnostics are deleted after 30 days anyway.</p>
+  <h3>Security</h3>
+  <p>Everything between the app and the server is encrypted in transit. The database only lets each account read its own private data: that's a rule enforced by the database itself, not just by the app. Passwords are stored as secure hashes. No system is perfectly safe, so use a password you don't use anywhere else, and sign out on devices you share.</p>
 
-  <h3>Your rights</h3>
-  <p>You can ask for a copy of your data, to correct it, to delete it, or object to how it's used, by writing to the email above. You can also complain to the Portuguese data protection authority, the <a href="https://www.cnpd.pt/">CNPD</a>.</p>
+  <h3>How long</h3>
+  <p>Your data is kept while you have an account, and erased when you delete it. Diagnostics are deleted after 30 days, problem reports after 90 days, and server logs after about a day, whatever you do.</p>
 
-  <h3>Age</h3>
-  <p>You need to be at least 13 to use Duotone.</p>
+  <h3 id="delete">Deleting your account</h3>
+  <ul>
+    <li><strong>In the app:</strong> Settings › Delete account, on iPhone or Windows. You don't need to write to anyone.</li>
+    <li><strong>By email:</strong> if you no longer have the app, write to the address below from the email your account uses. If it comes from another address, you'll be asked to confirm the account is yours first. Never send your password.</li>
+  </ul>
+  <p>Deleting is permanent. Your account, profile and picture, library, playlists, saved albums, listening history, preferences, problem reports and diagnostics are erased. The messages you sent are erased too, so they disappear from your friends' chats. Songs downloaded to your devices stay there until you remove the app. If you want a copy of your data, ask for it before you delete the account.</p>
+
+  <h3 id="rights">Your rights</h3>
+  <p>You can ask for a copy of your data (in a portable format), to correct it, to delete it, or to object to or limit how it's used, by writing to the email above. You'll get an answer within one month. You can also complain to the Portuguese data protection authority, the <a href="https://www.cnpd.pt/">CNPD</a>.</p>
+
+  <h3>Children</h3>
+  <p>You need to be at least 13 to use Duotone. If you're a parent or guardian and think your child under 13 has an account, write to the email above and it will be deleted.</p>
+
+  <h3>Changes to this page</h3>
+  <p>When this page changes, the date at the top changes too. Important changes are also announced in the app.</p>
 
   <h2 id="terms">Terms</h2>
   <ul>
