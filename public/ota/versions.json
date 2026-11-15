@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-14T12:48:40.394Z",
+  "generatedAt": "2026-11-15T05:41:16.682Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "5.9.4",
-        "tag": "ios-v5.9.4",
-        "notes": "Duotone for iPhone 5.9.4\n\nFixed\n- Messages, friends' status and what they're playing keep arriving live when Duotone has been open for a long time. If the server drops the live connection, Duotone reconnects by itself.\n\nMinimum version: 5.9.4\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.3...ios-v5.9.4",
-        "publishedAt": "2026-11-12T03:29:24Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v5.9.4",
+        "version": "6.0.1",
+        "tag": "ios-v6.0.1",
+        "notes": "Duotone for iPhone 6.0.1\n\nNew\n- Save albums to your library. They live in an Albums folder at the top of Playlists: tap ♡ on an album, or hold it and choose Save album.\n- Download a whole playlist at once from its ⋯ menu. On mobile data it waits for Wi-Fi, unless you tap Use mobile data.\n- Report a problem in Settings: tell the developer what happened, with the playback report if you want.\n\nImproved\n- If sign-ups are closed for a while, Duotone says so clearly.\n\nFixed\n- Some imported songs played the music video instead of the song, which put the lyrics out of time.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.4...ios-v6.0.1",
+        "publishedAt": "2026-11-15T05:41:01Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v6.0.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 16056162,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.4/Duotone.ipa",
-          "downloads": 199
+          "size": 16079949,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.1/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.4/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.1/Duotone.ipa"
       },
       "windows": {
         "version": "5.9.4",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 116300279,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.9.4/Duotone-Setup.exe",
-          "downloads": 63
+          "downloads": 73
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v5.9.4/Duotone-Setup.exe"
       }

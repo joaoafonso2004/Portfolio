@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "6.0.1",
+          "date": "2026-11-15T05:41:01Z",
+          "localizedDescription": "Duotone for iPhone 6.0.1\n\nNew\n- Save albums to your library. They live in an Albums folder at the top of Playlists: tap ♡ on an album, or hold it and choose Save album.\n- Download a whole playlist at once from its ⋯ menu. On mobile data it waits for Wi-Fi, unless you tap Use mobile data.\n- Report a problem in Settings: tell the developer what happened, with the playback report if you want.\n\nImproved\n- If sign-ups are closed for a while, Duotone says so clearly.\n\nFixed\n- Some imported songs played the music video instead of the song, which put the lyrics out of time.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.4...ios-v6.0.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.1/Duotone.ipa",
+          "size": 16079949,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "5.9.4",
           "date": "2026-11-12T03:29:24Z",
           "localizedDescription": "Duotone for iPhone 5.9.4\n\nFixed\n- Messages, friends' status and what they're playing keep arriving live when Duotone has been open for a long time. If the server drops the live connection, Duotone reconnects by itself.\n\nMinimum version: 5.9.4\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.3...ios-v5.9.4",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.2/Duotone.ipa",
           "size": 15986966,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.7.8",
-          "date": "2026-11-05T23:36:08Z",
-          "localizedDescription": "Duotone iOS 5.7.8 — as músicas do chat, importar de qualquer sítio e o shuffle na Jam\n\nNovo:\n- No chat, com um amigo ou num grupo, aparecem \"Play all\" e \"Save as playlist\" no topo, quando a conversa tem duas ou mais músicas. Play all põe na fila as músicas que os dois mandaram (num grupo, as de todos), da mais antiga para a mais nova e sem repetidas, e o leitor diz \"From chat with …\". Save as playlist guarda-as numa playlist tua, com um nome sugerido que podes mudar. A playlist é uma fotografia: as músicas que chegarem depois não entram sozinhas.\n- Importar passa a ser uma caixa só. Cola-se um link do Spotify, do YouTube, do Deezer ou do Apple Music, ou uma lista de músicas (uma por linha, ou um CSV colado), e a app percebe o que é. O link lê-se logo, para mostrar o nome da lista e quantas músicas tem. Depois vai tudo para uma playlist nova ou para as Liked Songs.\n- No fim de uma importação, a barra diz quais músicas não se encontraram (\"See the songs not found\").\n- A importação pela conta do Spotify continua lá, por baixo da caixa.\n\nCorrigido:\n- Na Jam com o shuffle aceso, tocar numa música manda o resto da lista baralhado para a fila partilhada. Antes ia pela ordem, e outro toque na mesma música dava sempre a mesma fila.\n\nLimites:\n- Um link do Tidal, do Amazon Music ou do SoundCloud não se lê sem conta. A app diz-te que entra por lista.\n- No máximo 1000 músicas por importação. Do Apple Music leem-se só as primeiras 50, e do Spotify, pelo link, até 100.\n- No iPhone não se escolhem ficheiros. Um CSV colado entra na mesma.\n\nComparar com iOS 5.7.5: https://github.com/joaoafonso2004/duotone/compare/ios-v5.7.5...ios-v5.7.8",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.7.8/Duotone.ipa",
-          "size": 15986806,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "5.9.4",
-      "versionDate": "2026-11-12T03:29:24Z",
-      "versionDescription": "Duotone for iPhone 5.9.4\n\nFixed\n- Messages, friends' status and what they're playing keep arriving live when Duotone has been open for a long time. If the server drops the live connection, Duotone reconnects by itself.\n\nMinimum version: 5.9.4\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.3...ios-v5.9.4",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.4/Duotone.ipa",
-      "size": 16056162
+      "version": "6.0.1",
+      "versionDate": "2026-11-15T05:41:01Z",
+      "versionDescription": "Duotone for iPhone 6.0.1\n\nNew\n- Save albums to your library. They live in an Albums folder at the top of Playlists: tap ♡ on an album, or hold it and choose Save album.\n- Download a whole playlist at once from its ⋯ menu. On mobile data it waits for Wi-Fi, unless you tap Use mobile data.\n- Report a problem in Settings: tell the developer what happened, with the playback report if you want.\n\nImproved\n- If sign-ups are closed for a while, Duotone says so clearly.\n\nFixed\n- Some imported songs played the music video instead of the song, which put the lyrics out of time.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.4...ios-v6.0.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.1/Duotone.ipa",
+      "size": 16079949
     }
   ],
   "news": []
