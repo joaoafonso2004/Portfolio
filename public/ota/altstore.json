@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "6.0.3",
+          "date": "2026-11-15T15:57:51Z",
+          "localizedDescription": "Duotone for iPhone 6.0.3\n\nImproved\n- Skipping is smooth: the cover's move to the next song now runs in iOS itself, so changing song can't make it stutter.\n- The cover no longer dims for a moment on every skip. It only pulses when a song takes a while to load.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.2...ios-v6.0.3",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.3/Duotone.ipa",
+          "size": 16164522,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "6.0.2",
           "date": "2026-11-15T07:06:32Z",
           "localizedDescription": "Duotone for iPhone 6.0.2\n\nNew\n- Duotone in French: Settings › Appearance › Language. English stays the default, and the new language shows the next time you open Duotone.\n- Download Liked Songs in Settings › Storage: all of them, and the ones you like later. On mobile data it waits for Wi-Fi.\n- Start Radio in a song's menu: it plays the song and fills Up next with music like it.\n- Show what your PC is playing, in Settings › General: turn it off and your PC's music stops showing up here.\n- More buttons for below the player, in Settings › Customise › Buttons below: Sleep timer, Start Radio, Add to playlist, Download and Car mode. The sleep timer shows the time left.\n\nImproved\n- The buttons below the player fit their names on one line.\n- The equaliser is now separate on iPhone and PC: each song's EQ and speed, and your default EQ, stay on the platform where you set them. Your presets are still the same on both.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.1...ios-v6.0.2",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.6/Duotone.ipa",
           "size": 16031847,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.8.3",
-          "date": "2026-11-08T19:57:14Z",
-          "localizedDescription": "Duotone para iPhone 5.8.3 — segurar abre sempre um menu\n\nCorrigido:\n- Segurar uma música dentro de um álbum abre o menu dela, o mesmo das Liked Songs. Não fazia nada. Vale para os álbuns do artista, os da pesquisa e as playlists recomendadas.\n- Segurar um álbum, um single ou o último lançamento na página de um artista abre o menu do disco, com a capa e o nome por cima: Open, Play, Shuffle, Add to queue e Save as playlist. Também não fazia nada.\n\nComparar com iPhone 5.8.2: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.2...ios-v5.8.3",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.3/Duotone.ipa",
-          "size": 15990702,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "6.0.2",
-      "versionDate": "2026-11-15T07:06:32Z",
-      "versionDescription": "Duotone for iPhone 6.0.2\n\nNew\n- Duotone in French: Settings › Appearance › Language. English stays the default, and the new language shows the next time you open Duotone.\n- Download Liked Songs in Settings › Storage: all of them, and the ones you like later. On mobile data it waits for Wi-Fi.\n- Start Radio in a song's menu: it plays the song and fills Up next with music like it.\n- Show what your PC is playing, in Settings › General: turn it off and your PC's music stops showing up here.\n- More buttons for below the player, in Settings › Customise › Buttons below: Sleep timer, Start Radio, Add to playlist, Download and Car mode. The sleep timer shows the time left.\n\nImproved\n- The buttons below the player fit their names on one line.\n- The equaliser is now separate on iPhone and PC: each song's EQ and speed, and your default EQ, stay on the platform where you set them. Your presets are still the same on both.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.1...ios-v6.0.2",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.2/Duotone.ipa",
-      "size": 16156532
+      "version": "6.0.3",
+      "versionDate": "2026-11-15T15:57:51Z",
+      "versionDescription": "Duotone for iPhone 6.0.3\n\nImproved\n- Skipping is smooth: the cover's move to the next song now runs in iOS itself, so changing song can't make it stutter.\n- The cover no longer dims for a moment on every skip. It only pulses when a song takes a while to load.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.2...ios-v6.0.3",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.3/Duotone.ipa",
+      "size": 16164522
     }
   ],
   "news": []
