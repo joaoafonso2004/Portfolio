@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T05:42:30.155Z",
+  "generatedAt": "2026-11-15T06:59:20.994Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 16079949,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.1/Duotone.ipa",
-          "downloads": 0
+          "downloads": 8
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.1/Duotone.ipa"
       },
       "windows": {
-        "version": "6.0.1",
-        "tag": "win-v6.0.1",
-        "notes": "Duotone for Windows 6.0.1\n\nNew\n- Save albums to your library. They live in an Albums folder at the top of Playlists: use ♡ in an album, or right-click it and choose Save album.\n- Report a problem in Settings: tell the developer what happened, with the playback report if you want.\n\nImproved\n- The artist photo now reaches the top of the window.\n- If sign-ups are closed for a while, Duotone says so clearly.\n\nFixed\n- Some imported songs played the music video instead of the song, which put the lyrics out of time.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v5.9.4...win-v6.0.1",
-        "publishedAt": "2026-11-15T05:42:19Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v6.0.1",
+        "version": "6.0.2",
+        "tag": "win-v6.0.2",
+        "notes": "Duotone for Windows 6.0.2\n\nNew\n- Duotone in French: Settings › Appearance › Language. English stays the default, and Duotone reloads to switch.\n- Start Radio in a song's menu (right-click, or the menu in the player bar): it plays the song and fills Up next with music like it.\n- Show what your iPhone is playing, in Settings › Windows: turn it off and your iPhone's music stops showing up here.\n\nImproved\n- The equaliser is now separate on PC and iPhone: each song's EQ and speed, and your default EQ, stay on the platform where you set them. Your presets are still the same on both.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v6.0.1...win-v6.0.2",
+        "publishedAt": "2026-11-15T06:59:01Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v6.0.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116303862,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.0.1/Duotone-Setup.exe",
+          "size": 116344398,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.0.2/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.0.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.0.2/Duotone-Setup.exe"
       }
     }
   }
