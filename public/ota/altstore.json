@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "6.1.0",
+          "date": "2026-11-16T03:55:38Z",
+          "localizedDescription": "Playlist folders: keep your playlists together, and move, rename or undo a folder whenever you like.\nThe queue: shuffle what's next again, or select several songs to play next or remove, with Undo.\nRadio never gives you the same queue twice for the same song.\nYour drawer works like the Home Screen: hold a tile to lift it, drag it anywhere, and pull its corner to resize it.\n\nDuotone for iPhone 6.1.0\n\nNew\n- Playlist folders, in Playlists.\n- Shuffle again and select several songs in the queue.\n- Share an album with a friend from the album's menu.\n- Export your library in Settings: Liked Songs, playlists and albums, as JSON or CSV.\n- ListenBrainz scrobbling in Settings: paste your token and your listens go straight from your phone. Private listening sends nothing.\n\nImproved\n- The drawer: drag tiles to move them, pull the corner to resize, tap an empty spot to finish. Only your spaces sit on top, friends who aren't playing open their profile, and the now-playing cover has no black bars.\n- In edit mode, the space name shows in your language.\n- An artist's songs are in one list, in the order you choose.\n- Liked Songs and playlists scroll faster, and the app keeps its data in faster storage.\n- The keyboard in conversations moves smoothly with the text.\n- Closing the player no longer zooms out the app behind it.\n\nFixed\n- The menus in the queue and Radio now open next to the button, not at the top of the screen.\n- The Home keeps its rounded corners when the drawer is open.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.5...ios-v6.1.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.0/Duotone.ipa",
+          "size": 17610332,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "6.0.5",
           "date": "2026-11-16T00:06:01Z",
           "localizedDescription": "The drawer opens with a swipe anywhere on Home, not just from the edge.\nIt takes on the colours of what's playing, and no longer flickers when it opens.\nHold any tile to edit your drawer. The Edit button is gone.\nNew drawers start with the Night scene, and yours gets it once if it has no scene yet.\n\nDuotone for iPhone 6.0.5\n\nImproved\n- Swipe right anywhere on Home to open your drawer. Swiping left still takes you to Songs, and the shelves keep their own scrolling.\n- The drawer's background follows the colours of the song that's playing, and the tiles let them through.\n- Holding a tile is now the way to edit; Done appears while you edit. An empty space shows Add.\n- The drawer starts with the Night scene.\n\nFixed\n- The tiles no longer blink when the drawer opens: they appear in order as it slides in.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.4...ios-v6.0.5",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.1/Duotone.ipa",
           "size": 16037099,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.9.0",
-          "date": "2026-11-11T05:02:50Z",
-          "localizedDescription": "Duotone for iPhone 5.9.0\n\nNew\n- Support Duotone in Settings › About. Donations keep the server running.\n- Privacy & terms in Settings › About and on the sign-in screen.\n\nImproved\n- Duotone always opens on Home.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.8...ios-v5.9.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.0/Duotone.ipa",
-          "size": 16033247,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "6.0.5",
-      "versionDate": "2026-11-16T00:06:01Z",
-      "versionDescription": "The drawer opens with a swipe anywhere on Home, not just from the edge.\nIt takes on the colours of what's playing, and no longer flickers when it opens.\nHold any tile to edit your drawer. The Edit button is gone.\nNew drawers start with the Night scene, and yours gets it once if it has no scene yet.\n\nDuotone for iPhone 6.0.5\n\nImproved\n- Swipe right anywhere on Home to open your drawer. Swiping left still takes you to Songs, and the shelves keep their own scrolling.\n- The drawer's background follows the colours of the song that's playing, and the tiles let them through.\n- Holding a tile is now the way to edit; Done appears while you edit. An empty space shows Add.\n- The drawer starts with the Night scene.\n\nFixed\n- The tiles no longer blink when the drawer opens: they appear in order as it slides in.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.4...ios-v6.0.5",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.5/Duotone.ipa",
-      "size": 16206947
+      "version": "6.1.0",
+      "versionDate": "2026-11-16T03:55:38Z",
+      "versionDescription": "Playlist folders: keep your playlists together, and move, rename or undo a folder whenever you like.\nThe queue: shuffle what's next again, or select several songs to play next or remove, with Undo.\nRadio never gives you the same queue twice for the same song.\nYour drawer works like the Home Screen: hold a tile to lift it, drag it anywhere, and pull its corner to resize it.\n\nDuotone for iPhone 6.1.0\n\nNew\n- Playlist folders, in Playlists.\n- Shuffle again and select several songs in the queue.\n- Share an album with a friend from the album's menu.\n- Export your library in Settings: Liked Songs, playlists and albums, as JSON or CSV.\n- ListenBrainz scrobbling in Settings: paste your token and your listens go straight from your phone. Private listening sends nothing.\n\nImproved\n- The drawer: drag tiles to move them, pull the corner to resize, tap an empty spot to finish. Only your spaces sit on top, friends who aren't playing open their profile, and the now-playing cover has no black bars.\n- In edit mode, the space name shows in your language.\n- An artist's songs are in one list, in the order you choose.\n- Liked Songs and playlists scroll faster, and the app keeps its data in faster storage.\n- The keyboard in conversations moves smoothly with the text.\n- Closing the player no longer zooms out the app behind it.\n\nFixed\n- The menus in the queue and Radio now open next to the button, not at the top of the screen.\n- The Home keeps its rounded corners when the drawer is open.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.5...ios-v6.1.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.0/Duotone.ipa",
+      "size": 17610332
     }
   ],
   "news": []

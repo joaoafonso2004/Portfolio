@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-11-16T00:06:32.153Z",
+  "generatedAt": "2026-11-16T03:55:49.800Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "6.0.5",
-        "tag": "ios-v6.0.5",
-        "notes": "The drawer opens with a swipe anywhere on Home, not just from the edge.\nIt takes on the colours of what's playing, and no longer flickers when it opens.\nHold any tile to edit your drawer. The Edit button is gone.\nNew drawers start with the Night scene, and yours gets it once if it has no scene yet.\n\nDuotone for iPhone 6.0.5\n\nImproved\n- Swipe right anywhere on Home to open your drawer. Swiping left still takes you to Songs, and the shelves keep their own scrolling.\n- The drawer's background follows the colours of the song that's playing, and the tiles let them through.\n- Holding a tile is now the way to edit; Done appears while you edit. An empty space shows Add.\n- The drawer starts with the Night scene.\n\nFixed\n- The tiles no longer blink when the drawer opens: they appear in order as it slides in.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.4...ios-v6.0.5",
-        "publishedAt": "2026-11-16T00:06:01Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v6.0.5",
+        "version": "6.1.0",
+        "tag": "ios-v6.1.0",
+        "notes": "Playlist folders: keep your playlists together, and move, rename or undo a folder whenever you like.\nThe queue: shuffle what's next again, or select several songs to play next or remove, with Undo.\nRadio never gives you the same queue twice for the same song.\nYour drawer works like the Home Screen: hold a tile to lift it, drag it anywhere, and pull its corner to resize it.\n\nDuotone for iPhone 6.1.0\n\nNew\n- Playlist folders, in Playlists.\n- Shuffle again and select several songs in the queue.\n- Share an album with a friend from the album's menu.\n- Export your library in Settings: Liked Songs, playlists and albums, as JSON or CSV.\n- ListenBrainz scrobbling in Settings: paste your token and your listens go straight from your phone. Private listening sends nothing.\n\nImproved\n- The drawer: drag tiles to move them, pull the corner to resize, tap an empty spot to finish. Only your spaces sit on top, friends who aren't playing open their profile, and the now-playing cover has no black bars.\n- In edit mode, the space name shows in your language.\n- An artist's songs are in one list, in the order you choose.\n- Liked Songs and playlists scroll faster, and the app keeps its data in faster storage.\n- The keyboard in conversations moves smoothly with the text.\n- Closing the player no longer zooms out the app behind it.\n\nFixed\n- The menus in the queue and Radio now open next to the button, not at the top of the screen.\n- The Home keeps its rounded corners when the drawer is open.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.5...ios-v6.1.0",
+        "publishedAt": "2026-11-16T03:55:38Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v6.1.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 16206947,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.5/Duotone.ipa",
+          "size": 17610332,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.0/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.5/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.0/Duotone.ipa"
       },
       "windows": {
-        "version": "6.0.2",
-        "tag": "win-v6.0.2",
-        "notes": "Duotone for Windows 6.0.2\n\nNew\n- Duotone in French: Settings › Appearance › Language. English stays the default, and Duotone reloads to switch.\n- Start Radio in a song's menu (right-click, or the menu in the player bar): it plays the song and fills Up next with music like it.\n- Show what your iPhone is playing, in Settings › Windows: turn it off and your iPhone's music stops showing up here.\n\nImproved\n- The equaliser is now separate on PC and iPhone: each song's EQ and speed, and your default EQ, stay on the platform where you set them. Your presets are still the same on both.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v6.0.1...win-v6.0.2",
-        "publishedAt": "2026-11-15T06:59:01Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v6.0.2",
+        "version": "6.1.0",
+        "tag": "win-v6.1.0",
+        "notes": "Playlist folders: drag a playlist onto a folder to move it, or onto another playlist to make a folder or merge them.\nThe queue: shuffle what's next again, or select several songs with Ctrl or Shift+click to play next or remove, with Undo.\nRadio never gives you the same queue twice for the same song.\nExport your library and scrobble to ListenBrainz, both in Settings.\n\nDuotone for Windows 6.1.0\n\nNew\n- Playlist folders, in Playlists: drag a playlist onto a folder, or onto another playlist to make a folder or merge the two.\n- Shuffle again and select several songs in the queue (Ctrl or Shift+click; Esc lets go).\n- Share an album with a friend from the album's menu.\n- Export your library in Settings: Liked Songs, playlists and albums, as JSON or CSV.\n- ListenBrainz scrobbling in Settings: paste your token and your listens go straight from your PC. Private listening sends nothing.\n\nImproved\n- An artist's songs are in one list, in the order you choose.\n- The update notice shows what's new instead of the version title.\n- Fewer requests when Duotone opens.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v6.0.2...win-v6.1.0",
+        "publishedAt": "2026-11-16T03:55:35Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v6.1.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116344398,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.0.2/Duotone-Setup.exe",
-          "downloads": 34
+          "size": 116489691,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.1.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.0.2/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.1.0/Duotone-Setup.exe"
       }
     }
   }
