@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-16T03:55:49.800Z",
+  "generatedAt": "2026-11-16T06:05:54.346Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "6.1.0",
-        "tag": "ios-v6.1.0",
-        "notes": "Playlist folders: keep your playlists together, and move, rename or undo a folder whenever you like.\nThe queue: shuffle what's next again, or select several songs to play next or remove, with Undo.\nRadio never gives you the same queue twice for the same song.\nYour drawer works like the Home Screen: hold a tile to lift it, drag it anywhere, and pull its corner to resize it.\n\nDuotone for iPhone 6.1.0\n\nNew\n- Playlist folders, in Playlists.\n- Shuffle again and select several songs in the queue.\n- Share an album with a friend from the album's menu.\n- Export your library in Settings: Liked Songs, playlists and albums, as JSON or CSV.\n- ListenBrainz scrobbling in Settings: paste your token and your listens go straight from your phone. Private listening sends nothing.\n\nImproved\n- The drawer: drag tiles to move them, pull the corner to resize, tap an empty spot to finish. Only your spaces sit on top, friends who aren't playing open their profile, and the now-playing cover has no black bars.\n- In edit mode, the space name shows in your language.\n- An artist's songs are in one list, in the order you choose.\n- Liked Songs and playlists scroll faster, and the app keeps its data in faster storage.\n- The keyboard in conversations moves smoothly with the text.\n- Closing the player no longer zooms out the app behind it.\n\nFixed\n- The menus in the queue and Radio now open next to the button, not at the top of the screen.\n- The Home keeps its rounded corners when the drawer is open.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.5...ios-v6.1.0",
-        "publishedAt": "2026-11-16T03:55:38Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v6.1.0",
+        "version": "6.1.1",
+        "tag": "ios-v6.1.1",
+        "notes": "Poster: a photo of the artist fills Now Playing, a different one for each song.\nBlack and white with grain, or in colour, fading into the photo's own colour at the top and bottom.\nPick it in Customise, or the new Poster theme does it all in one tap.\nControls, in Customise: keep the heart and the play ring white, with the colour only in the background.\n\nDuotone for iPhone 6.1.1\n\nNew\n- Poster, in Customise → Artwork: a photo of the artist behind the top, the title and the controls. Each song gets its own photo while the artist has photos; without them, the artwork. The lyrics still turn in the square.\n- Poster image: artist photos or the artwork. Black and white: the Poster with grain, like a printed photo.\n- The Poster theme: artist photos in black and white, \"Playing from\", the ring play button and white controls in one tap.\n- Controls, in Customise → Now Playing: Accent colour or White for the heart, the play ring, the dots, shuffle and repeat.\n\nImproved\n- The preview in Customise shows the progress bar in white, as in Now Playing.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.1.0...ios-v6.1.1",
+        "publishedAt": "2026-11-16T06:05:40Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v6.1.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 17610332,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.0/Duotone.ipa",
+          "size": 17708784,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.1/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.1/Duotone.ipa"
       },
       "windows": {
         "version": "6.1.0",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 116489691,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.1.0/Duotone-Setup.exe",
-          "downloads": 0
+          "downloads": 10
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.1.0/Duotone-Setup.exe"
       }
