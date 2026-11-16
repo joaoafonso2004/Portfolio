@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "6.0.5",
+          "date": "2026-11-16T00:06:01Z",
+          "localizedDescription": "The drawer opens with a swipe anywhere on Home, not just from the edge.\nIt takes on the colours of what's playing, and no longer flickers when it opens.\nHold any tile to edit your drawer. The Edit button is gone.\nNew drawers start with the Night scene, and yours gets it once if it has no scene yet.\n\nDuotone for iPhone 6.0.5\n\nImproved\n- Swipe right anywhere on Home to open your drawer. Swiping left still takes you to Songs, and the shelves keep their own scrolling.\n- The drawer's background follows the colours of the song that's playing, and the tiles let them through.\n- Holding a tile is now the way to edit; Done appears while you edit. An empty space shows Add.\n- The drawer starts with the Night scene.\n\nFixed\n- The tiles no longer blink when the drawer opens: they appear in order as it slides in.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.4...ios-v6.0.5",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.5/Duotone.ipa",
+          "size": 16206947,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "6.0.4",
           "date": "2026-11-15T22:40:46Z",
           "localizedDescription": "Your own drawer on Home: swipe from the left edge, or tap the new button next to Home.\nFill it with artists, playlists, friends, controls and shortcuts. Hold any tile to edit your drawer.\nScenes change several settings in one tap, like Night: private listening and a 30 min sleep timer. Tap it again and everything goes back.\nIt starts with what you play most, so it's ready the first time you open it.\n\nDuotone for iPhone 6.0.4\n\nNew\n- The drawer on Home: spaces (Everyday and up to four more), and tiles for what's playing, your PC, artists, playlists, albums, friends, the sleep timer, private listening, speed, shuffle, radio and the places you go to most.\n- Scenes: Night, Focus, Gym and Drive are ready to add, and the scene editor makes your own.\n\nImproved\n- The update notice shows what's new, instead of the version title.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.3...ios-v6.0.4",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.0/Duotone.ipa",
           "size": 16033247,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.8.8",
-          "date": "2026-11-11T03:04:46Z",
-          "localizedDescription": "Duotone for iPhone 5.8.8\n\nNew\n- Profiles of people who aren't your friends show their listening stats, never what they listen to. You can hide yours in Edit profile › Privacy.\n- Spotify sign-in works with any account.\n- Updates are also checked when you come back to the app. Some future updates may be required.\n\nImproved\n- Without internet, Home, your profile and Social stay on screen, with a \"No internet connection\" bar. A message you were typing is kept.\n- Playing a song from a chat plays the rest of the chat after it, shown as \"From chat with …\". Tapping a song in a chat opens the usual song menu.\n- \"Import a playlist\" in Playlists takes links from anywhere.\n- Artist pages show more albums.\n- Fewer requests when you return to the app: stats and per-song settings load only what changed.\n\nFixed\n- Song covers in chats now show.\n- A song titled with another artist's name is credited to the right artist.\n\nPlease update: older versions will stop being supported.\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.8.6...ios-v5.8.8",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.8.8/Duotone.ipa",
-          "size": 16032963,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "6.0.4",
-      "versionDate": "2026-11-15T22:40:46Z",
-      "versionDescription": "Your own drawer on Home: swipe from the left edge, or tap the new button next to Home.\nFill it with artists, playlists, friends, controls and shortcuts. Hold any tile to edit your drawer.\nScenes change several settings in one tap, like Night: private listening and a 30 min sleep timer. Tap it again and everything goes back.\nIt starts with what you play most, so it's ready the first time you open it.\n\nDuotone for iPhone 6.0.4\n\nNew\n- The drawer on Home: spaces (Everyday and up to four more), and tiles for what's playing, your PC, artists, playlists, albums, friends, the sleep timer, private listening, speed, shuffle, radio and the places you go to most.\n- Scenes: Night, Focus, Gym and Drive are ready to add, and the scene editor makes your own.\n\nImproved\n- The update notice shows what's new, instead of the version title.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.3...ios-v6.0.4",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.4/Duotone.ipa",
-      "size": 16206528
+      "version": "6.0.5",
+      "versionDate": "2026-11-16T00:06:01Z",
+      "versionDescription": "The drawer opens with a swipe anywhere on Home, not just from the edge.\nIt takes on the colours of what's playing, and no longer flickers when it opens.\nHold any tile to edit your drawer. The Edit button is gone.\nNew drawers start with the Night scene, and yours gets it once if it has no scene yet.\n\nDuotone for iPhone 6.0.5\n\nImproved\n- Swipe right anywhere on Home to open your drawer. Swiping left still takes you to Songs, and the shelves keep their own scrolling.\n- The drawer's background follows the colours of the song that's playing, and the tiles let them through.\n- Holding a tile is now the way to edit; Done appears while you edit. An empty space shows Add.\n- The drawer starts with the Night scene.\n\nFixed\n- The tiles no longer blink when the drawer opens: they appear in order as it slides in.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.4...ios-v6.0.5",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.5/Duotone.ipa",
+      "size": 16206947
     }
   ],
   "news": []
