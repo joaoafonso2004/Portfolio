@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T15:00:28.148Z",
+  "generatedAt": "2026-11-20T04:38:19.783Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17708784,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.1/Duotone.ipa",
-          "downloads": 140
+          "downloads": 152
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.1/Duotone.ipa"
       },
       "windows": {
-        "version": "6.1.0",
-        "tag": "win-v6.1.0",
-        "notes": "Playlist folders: drag a playlist onto a folder to move it, or onto another playlist to make a folder or merge them.\nThe queue: shuffle what's next again, or select several songs with Ctrl or Shift+click to play next or remove, with Undo.\nRadio never gives you the same queue twice for the same song.\nExport your library and scrobble to ListenBrainz, both in Settings.\n\nDuotone for Windows 6.1.0\n\nNew\n- Playlist folders, in Playlists: drag a playlist onto a folder, or onto another playlist to make a folder or merge the two.\n- Shuffle again and select several songs in the queue (Ctrl or Shift+click; Esc lets go).\n- Share an album with a friend from the album's menu.\n- Export your library in Settings: Liked Songs, playlists and albums, as JSON or CSV.\n- ListenBrainz scrobbling in Settings: paste your token and your listens go straight from your PC. Private listening sends nothing.\n\nImproved\n- An artist's songs are in one list, in the order you choose.\n- The update notice shows what's new instead of the version title.\n- Fewer requests when Duotone opens.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v6.0.2...win-v6.1.0",
-        "publishedAt": "2026-11-16T03:55:35Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v6.1.0",
+        "version": "6.1.1",
+        "tag": "win-v6.1.1",
+        "notes": "Spotify playlist links now bring the whole playlist, up to 1000 songs, not just the first 100.\nPlaylists you imported before that stopped at 100 get the missing songs the next time you open them.\n\nDuotone for Windows 6.1.1\n\nFixed\n- A Spotify playlist link brought only its first 100 songs. Duotone now reads the rest too, up to 1000 per import, with or without your Spotify account connected. If Spotify doesn't allow it, you get the first 100, as before.\n- Playlists imported from a Spotify link that stopped at 100 get the missing songs the next time you open them, with Undo. This needs \"Update imported playlists\" on in Settings.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v6.1.0...win-v6.1.1",
+        "publishedAt": "2026-11-20T04:38:03Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v6.1.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116489691,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.1.0/Duotone-Setup.exe",
-          "downloads": 47
+          "size": 116489578,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.1.1/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.1.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.1.1/Duotone-Setup.exe"
       }
     }
   }
