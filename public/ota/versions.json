@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T14:43:10.783Z",
+  "generatedAt": "2026-11-20T16:44:29.603Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17708784,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.1/Duotone.ipa",
-          "downloads": 161
+          "downloads": 162
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.1/Duotone.ipa"
       },
       "windows": {
-        "version": "6.1.1",
-        "tag": "win-v6.1.1",
-        "notes": "Spotify playlist links now bring the whole playlist, up to 1000 songs, not just the first 100.\nPlaylists you imported before that stopped at 100 get the missing songs the next time you open them.\n\nDuotone for Windows 6.1.1\n\nFixed\n- A Spotify playlist link brought only its first 100 songs. Duotone now reads the rest too, up to 1000 per import, with or without your Spotify account connected. If Spotify doesn't allow it, you get the first 100, as before.\n- Playlists imported from a Spotify link that stopped at 100 get the missing songs the next time you open them, with Undo. This needs \"Update imported playlists\" on in Settings.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v6.1.0...win-v6.1.1",
-        "publishedAt": "2026-11-20T04:38:03Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v6.1.1",
+        "version": "6.1.2",
+        "tag": "win-v6.1.2",
+        "notes": "With lots of friends online, Pinned no longer gets pushed out of the sidebar.\nDrag the line between Friends and Pinned to choose how much room each one gets.\n\nDuotone for Windows 6.1.2\n\nFixed\n- With many friends online, the Friends list in the sidebar grew until Pinned almost disappeared. Friends now take at most 45% of that space and scroll under their title, and Pinned keeps the rest.\n\nNew\n- Drag the line between Friends and Pinned to resize them, like the sidebar and the queue panel. Double-click it to go back to the default. Your choice is remembered, and it follows the window when you resize it.\n- In the collapsed sidebar, friends and pinned items stay lined up with the icons when the list scrolls.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v6.1.1...win-v6.1.2",
+        "publishedAt": "2026-11-20T16:44:16Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v6.1.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116489578,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.1.1/Duotone-Setup.exe",
-          "downloads": 18
+          "size": 116491463,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.1.2/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.1.1/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.1.2/Duotone-Setup.exe"
       }
     }
   }
