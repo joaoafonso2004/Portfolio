@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T17:15:46.263Z",
+  "generatedAt": "2026-11-22T17:52:00.095Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17708784,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.1/Duotone.ipa",
-          "downloads": 207
+          "downloads": 208
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.1/Duotone.ipa"
       },
       "windows": {
-        "version": "6.2.0",
-        "tag": "win-v6.2.0",
-        "notes": "Duotone opens a little faster.\nThis update also gets your PC ready for the next Duotone for Windows.\n\nDuotone for Windows 6.2.0\n\nImproved\n- Duotone opens a little faster: the app is kept ready between launches instead of being prepared again every time.\n- Fewer requests in the background.\n- Gets your PC ready for the next Duotone for Windows: when it arrives, your account and your settings come along by themselves.\n\nMinimum version: 6.2.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v6.1.2...win-v6.2.0",
-        "publishedAt": "2026-11-22T04:46:23Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v6.2.0",
+        "version": "7.0.0",
+        "tag": "win-v7.0.0",
+        "notes": "A new Duotone for Windows: lighter, and smoother everywhere.\nIf you were on 6.2.0, your account and your settings come along by themselves.\n\nDuotone for Windows 7.0.0\n\nNew\n- A new engine under the hood: Duotone uses less memory and less processor while it plays.\n- A new Social page: see what a friend is playing in a panel beside your chat, with what comes up next and Listen along. Drag its edge to make it wider or narrower.\n- Smoother everywhere: dialogs, menus, notices, panels and the player bar now slide in and out instead of popping.\n\nFixed\n- Friends in a Jam show the song they're listening to again, instead of just \"Online\".\n\nChanged\n- If you use Spotify, sign in to Spotify again once.\n- Discord no longer shows what you're listening to.\n- Keyboard shortcuts that worked outside Duotone are gone. Your keyboard's media keys still work.\n\nMinimum version: 7.0.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v6.2.0...win-v7.0.0",
+        "publishedAt": "2026-11-22T17:51:44Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.0.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 116501028,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.2.0/Duotone-Setup.exe",
-          "downloads": 30
+          "size": 7708825,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.0/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.2.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.0/Duotone-Setup.exe"
       },
       "windowsPreview": {
         "version": "0.2.0",
@@ -43,7 +43,7 @@
           "name": "Duotone-Preview-Setup.exe",
           "size": 7690739,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-preview-v0.2.0/Duotone-Preview-Setup.exe",
-          "downloads": 0
+          "downloads": 1
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-preview-v0.2.0/Duotone-Preview-Setup.exe"
       }
