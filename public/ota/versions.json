@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T17:04:05.406Z",
+  "generatedAt": "2026-11-22T17:15:46.263Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -28,11 +28,25 @@
           "name": "Duotone-Setup.exe",
           "size": 116501028,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.2.0/Duotone-Setup.exe",
-          "downloads": 28
+          "downloads": 30
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v6.2.0/Duotone-Setup.exe"
       },
-      "windowsPreview": null
+      "windowsPreview": {
+        "version": "0.2.0",
+        "tag": "win-preview-v0.2.0",
+        "notes": "Duotone Preview 0.2.0\n\nNew\n- Social redesigned: conversations without a frame, the friend you're listening with in a resizable panel on the right, the window takes their cover's colour, and messages, rows and panels animate in and out.\n- The Preview now updates itself (installed copy only).\n\nImproved\n- Panels, dialogs, notices, menus and the selection bar slide in and out instead of popping.\n\nFixed\n- Settings restored from your account after launch (3D cover, two-tone covers, layout, colour) now apply right away.\n- The Preview no longer asks you to install the Duotone update.\n- Friend lists could jump far off screen while reordering.",
+        "publishedAt": "2026-11-22T17:15:32Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-preview-v0.2.0",
+        "prerelease": false,
+        "asset": {
+          "name": "Duotone-Preview-Setup.exe",
+          "size": 7690739,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-preview-v0.2.0/Duotone-Preview-Setup.exe",
+          "downloads": 0
+        },
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-preview-v0.2.0/Duotone-Preview-Setup.exe"
+      }
     }
   }
 }
