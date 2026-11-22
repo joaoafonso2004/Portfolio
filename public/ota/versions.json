@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T17:52:00.095Z",
+  "generatedAt": "2026-11-22T19:08:10.246Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17708784,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.1/Duotone.ipa",
-          "downloads": 208
+          "downloads": 210
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.1/Duotone.ipa"
       },
       "windows": {
-        "version": "7.0.0",
-        "tag": "win-v7.0.0",
-        "notes": "A new Duotone for Windows: lighter, and smoother everywhere.\nIf you were on 6.2.0, your account and your settings come along by themselves.\n\nDuotone for Windows 7.0.0\n\nNew\n- A new engine under the hood: Duotone uses less memory and less processor while it plays.\n- A new Social page: see what a friend is playing in a panel beside your chat, with what comes up next and Listen along. Drag its edge to make it wider or narrower.\n- Smoother everywhere: dialogs, menus, notices, panels and the player bar now slide in and out instead of popping.\n\nFixed\n- Friends in a Jam show the song they're listening to again, instead of just \"Online\".\n\nChanged\n- If you use Spotify, sign in to Spotify again once.\n- Discord no longer shows what you're listening to.\n- Keyboard shortcuts that worked outside Duotone are gone. Your keyboard's media keys still work.\n\nMinimum version: 7.0.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v6.2.0...win-v7.0.0",
-        "publishedAt": "2026-11-22T17:51:44Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.0.0",
+        "version": "7.0.1",
+        "tag": "win-v7.0.1",
+        "notes": "Duotone shows up as Duotone in the Windows volume mixer again.\nIt also remembers where you left its window.\n\nDuotone for Windows 7.0.1\n\nFixed\n- The Windows volume mixer shows Duotone, with its icon, instead of \"Microsoft Edge WebView2\".\n- Duotone opens at the size and in the place you left it, and maximized if it was.\n- Uses less processor while music plays: the little playing bars no longer keep the screen redrawing all the time.\n\nMinimum version: 7.0.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.0.0...win-v7.0.1",
+        "publishedAt": "2026-11-22T19:07:53Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.0.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 7708825,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.0/Duotone-Setup.exe",
+          "size": 7699370,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.1/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.0/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.1/Duotone-Setup.exe"
       },
       "windowsPreview": {
         "version": "0.2.0",
