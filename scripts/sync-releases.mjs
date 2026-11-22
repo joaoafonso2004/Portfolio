@@ -235,6 +235,18 @@ for (const app of apps) {
     }
   }
 
+  // Os canais escondidos (`canais` no apps.json): entram no versions.json para a
+  // app que os lê, mas o site só desenha `platforms`. A Duotone Preview atualiza-se
+  // pelo dela (`windowsPreview`, tags win-preview-v).
+  for (const [canalId, canal] of Object.entries(app.canais ?? {})) {
+    if (app.platforms[canalId]) throw new Error(`O canal "${canalId}" tem o nome de uma plataforma.`);
+    const built = buildPlatform(app, canalId, canal, pickRelease(releases, canal));
+    out.apps[app.id][canalId] = built;
+    if (!built) console.log(`  · ${canalId} (canal): sem releases com prefixo "${canal.tagPrefix}"`);
+    else if (!built.asset) console.warn(`  ! ${canalId} (canal): ${built.tag} não tem o ficheiro "${canal.asset}" anexado`);
+    else console.log(`  ✓ ${canalId} (canal): ${built.version} (${built.asset.name})`);
+  }
+
   // Só se gera manifest quando há de facto um .ipa para instalar; um manifest
   // a apontar para o vazio dá "Unable to Install" sem explicação no iPhone.
   const ios = out.apps[app.id].ios;

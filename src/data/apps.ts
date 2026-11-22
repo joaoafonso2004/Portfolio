@@ -36,6 +36,12 @@ export interface AppConfig {
   projectSlug?: string;
   tags: string[];
   platforms: Record<PlatformId, Platform>;
+  /**
+   * Canais de atualização que o site NÃO mostra (sem coluna nem botão): só o
+   * `sync-releases.mjs` os lê e escreve no versions.json, ao lado das plataformas.
+   * A Duotone Preview (`windowsPreview`, tags `win-preview-v`) lê o dela.
+   */
+  canais?: Record<string, Pick<Platform, 'tagPrefix' | 'asset'>>;
 }
 
 export const SITE_URL: string = config.siteUrl;

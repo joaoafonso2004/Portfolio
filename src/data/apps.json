@@ -24,6 +24,12 @@
           "tagPrefix": "win-v",
           "asset": "Duotone-Setup.exe"
         }
+      },
+      "canais": {
+        "windowsPreview": {
+          "tagPrefix": "win-preview-v",
+          "asset": "Duotone-Preview-Setup.exe"
+        }
       }
     }
   ]
