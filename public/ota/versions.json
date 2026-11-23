@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T05:32:41.773Z",
+  "generatedAt": "2026-11-23T16:18:56.460Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17773027,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.2/Duotone.ipa",
-          "downloads": 0
+          "downloads": 27
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.2/Duotone.ipa"
       },
       "windows": {
-        "version": "7.0.3",
-        "tag": "win-v7.0.3",
-        "notes": "Forgot your password? You can now reset it from Duotone with a code we email you.\nThe queue panel, Now Playing and the player bar now open and close in one smooth motion.\n\nDuotone for Windows 7.0.3\n\nNew\n- \"Forgot password?\" on the sign-in screen, and \"Reset password\" in Settings: we email you a code, and you choose the new password right there.\n\nImproved\n- The colour of artist, playlist and Liked Songs pages now carries on behind the queue and lyrics panel, instead of stopping at its edge.\n- The queue and lyrics panel opens with the page making room in the same movement, and closes without a flash.\n- Opening Now Playing, the cover flies up from the player bar to its place (already as the 3D cover if you use it), and the rest follows it in. Closing sends it back.\n- The player bar slides up when music starts, song titles slide when you skip, and closing the player slides it down.\n\nFixed\n- The artist photo goes all the way to the top and to the right edge, and the latest release card no longer gets cut off.\n- Names on profiles and artist pages no longer sit in a dark box.\n\nMinimum version: 7.0.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.0.1...win-v7.0.3",
-        "publishedAt": "2026-11-23T04:17:46Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.0.3",
+        "version": "7.0.4",
+        "tag": "win-v7.0.4",
+        "notes": "The cover that flies into Now Playing no longer turns black on the way in or out.\n\nDuotone for Windows 7.0.4\n\nFixed\n- Opening Now Playing, the cover that flies up from the player bar showed black until it landed, and closing sent it back black. It now shows the album art the whole way, also as the 3D cover.\n\nMinimum version: 7.0.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.0.3...win-v7.0.4",
+        "publishedAt": "2026-11-23T16:18:37Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.0.4",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 7704852,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.3/Duotone-Setup.exe",
-          "downloads": 12
+          "size": 7703576,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.4/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.3/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.4/Duotone-Setup.exe"
       },
       "windowsPreview": {
         "version": "0.2.0",
