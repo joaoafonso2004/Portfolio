@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T04:18:00.278Z",
+  "generatedAt": "2026-11-23T04:19:52.077Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -20,7 +20,7 @@
       "windows": {
         "version": "7.0.3",
         "tag": "win-v7.0.3",
-        "notes": "Forgot your password? You can now reset it from Duotone with a code we email you.\nThe queue panel, Now Playing and the player bar now open and close in one smooth motion.\n\nDuotone for Windows 7.0.3\n\nNew\n- \"Forgot password?\" on the sign-in screen, and \"Reset password\" in Settings: we email you a code, and you choose the new password right there.\n\nImproved\n- The colour of artist, playlist and Liked Songs pages now carries on behind the queue and lyrics panel, instead of stopping at its edge.\n- The queue and lyrics panel opens with the page making room in the same movement, and closes without a flash.\n- Opening Now Playing, the cover flies up from the player bar to its place (turning into the 3D cover if you use it), and the rest follows it in. Closing sends it back.\n- The player bar slides up when music starts, song titles slide when you skip, and closing the player slides it down.\n\nFixed\n- The artist photo goes all the way to the top and to the right edge, and the latest release card no longer gets cut off.\n- Names on profiles and artist pages no longer sit in a dark box.\n\nMinimum version: 7.0.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.0.1...win-v7.0.3",
+        "notes": "Forgot your password? You can now reset it from Duotone with a code we email you.\nThe queue panel, Now Playing and the player bar now open and close in one smooth motion.\n\nDuotone for Windows 7.0.3\n\nNew\n- \"Forgot password?\" on the sign-in screen, and \"Reset password\" in Settings: we email you a code, and you choose the new password right there.\n\nImproved\n- The colour of artist, playlist and Liked Songs pages now carries on behind the queue and lyrics panel, instead of stopping at its edge.\n- The queue and lyrics panel opens with the page making room in the same movement, and closes without a flash.\n- Opening Now Playing, the cover flies up from the player bar to its place (already as the 3D cover if you use it), and the rest follows it in. Closing sends it back.\n- The player bar slides up when music starts, song titles slide when you skip, and closing the player slides it down.\n\nFixed\n- The artist photo goes all the way to the top and to the right edge, and the latest release card no longer gets cut off.\n- Names on profiles and artist pages no longer sit in a dark box.\n\nMinimum version: 7.0.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.0.1...win-v7.0.3",
         "publishedAt": "2026-11-23T04:17:46Z",
         "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.0.3",
         "prerelease": false,
