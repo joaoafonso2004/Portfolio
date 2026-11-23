@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "6.1.2",
+          "date": "2026-11-23T05:32:22Z",
+          "localizedDescription": "The play button is now brushed metal, with a ring of light that turns when you play or pause.\nForgot your password? You can now reset it from Duotone with a code we email you.\n\nDuotone for iPhone 6.1.2\n\nNew\n- The metal play button, as on the PC: a brushed-metal disc with a ring of light that spins up when you press play and brakes like a turntable when you pause. It's the new default in Now Playing and the mini player; pick another style in Customise → Play button.\n- \"Forgot password?\" on the sign-in screen, and \"Reset password\" in Settings: we email you a code, and you choose the new password right there.\n\nImproved\n- Spotify playlist links with more than 100 songs now bring the rest too, up to 1000.\n- Fewer requests in the background: the heart no longer asks the server about every song you play.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.1.1...ios-v6.1.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.2/Duotone.ipa",
+          "size": 17773027,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "6.1.1",
           "date": "2026-11-16T06:05:40Z",
           "localizedDescription": "Poster: a photo of the artist fills Now Playing, a different one for each song.\nBlack and white with grain, or in colour, fading into the photo's own colour at the top and bottom.\nPick it in Customise, or the new Poster theme does it all in one tap.\nControls, in Customise: keep the heart and the play ring white, with the colour only in the background.\n\nDuotone for iPhone 6.1.1\n\nNew\n- Poster, in Customise → Artwork: a photo of the artist behind the top, the title and the controls. Each song gets its own photo while the artist has photos; without them, the artwork. The lyrics still turn in the square.\n- Poster image: artist photos or the artwork. Black and white: the Poster with grain, like a printed photo.\n- The Poster theme: artist photos in black and white, \"Playing from\", the ring play button and white controls in one tap.\n- Controls, in Customise → Now Playing: Accent colour or White for the heart, the play ring, the dots, shuffle and repeat.\n\nImproved\n- The preview in Customise shows the progress bar in white, as in Now Playing.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.1.0...ios-v6.1.1",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.3/Duotone.ipa",
           "size": 16054716,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "5.9.2",
-          "date": "2026-11-11T06:12:16Z",
-          "localizedDescription": "Duotone for iPhone 5.9.2\n\nFixed\n- Tapping the player on the lock screen or in the Dynamic Island opens Duotone.\n\nMinimum version: 5.9.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v5.9.1...ios-v5.9.2",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v5.9.2/Duotone.ipa",
-          "size": 16037890,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "6.1.1",
-      "versionDate": "2026-11-16T06:05:40Z",
-      "versionDescription": "Poster: a photo of the artist fills Now Playing, a different one for each song.\nBlack and white with grain, or in colour, fading into the photo's own colour at the top and bottom.\nPick it in Customise, or the new Poster theme does it all in one tap.\nControls, in Customise: keep the heart and the play ring white, with the colour only in the background.\n\nDuotone for iPhone 6.1.1\n\nNew\n- Poster, in Customise → Artwork: a photo of the artist behind the top, the title and the controls. Each song gets its own photo while the artist has photos; without them, the artwork. The lyrics still turn in the square.\n- Poster image: artist photos or the artwork. Black and white: the Poster with grain, like a printed photo.\n- The Poster theme: artist photos in black and white, \"Playing from\", the ring play button and white controls in one tap.\n- Controls, in Customise → Now Playing: Accent colour or White for the heart, the play ring, the dots, shuffle and repeat.\n\nImproved\n- The preview in Customise shows the progress bar in white, as in Now Playing.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.1.0...ios-v6.1.1",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.1/Duotone.ipa",
-      "size": 17708784
+      "version": "6.1.2",
+      "versionDate": "2026-11-23T05:32:22Z",
+      "versionDescription": "The play button is now brushed metal, with a ring of light that turns when you play or pause.\nForgot your password? You can now reset it from Duotone with a code we email you.\n\nDuotone for iPhone 6.1.2\n\nNew\n- The metal play button, as on the PC: a brushed-metal disc with a ring of light that spins up when you press play and brakes like a turntable when you pause. It's the new default in Now Playing and the mini player; pick another style in Customise → Play button.\n- \"Forgot password?\" on the sign-in screen, and \"Reset password\" in Settings: we email you a code, and you choose the new password right there.\n\nImproved\n- Spotify playlist links with more than 100 songs now bring the rest too, up to 1000.\n- Fewer requests in the background: the heart no longer asks the server about every song you play.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.1.1...ios-v6.1.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.2/Duotone.ipa",
+      "size": 17773027
     }
   ],
   "news": []
