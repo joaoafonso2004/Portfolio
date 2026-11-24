@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T17:01:19.337Z",
+  "generatedAt": "2026-11-24T02:37:31.610Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17773027,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.2/Duotone.ipa",
-          "downloads": 29
+          "downloads": 45
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.2/Duotone.ipa"
       },
       "windows": {
-        "version": "7.0.4",
-        "tag": "win-v7.0.4",
-        "notes": "The cover that flies into Now Playing no longer turns black on the way in or out.\n\nDuotone for Windows 7.0.4\n\nFixed\n- Opening Now Playing, the cover that flies up from the player bar showed black until it landed, and closing sent it back black. It now shows the album art the whole way, also as the 3D cover.\n\nMinimum version: 7.0.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.0.3...win-v7.0.4",
-        "publishedAt": "2026-11-23T16:18:37Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.0.4",
+        "version": "7.0.5",
+        "tag": "win-v7.0.5",
+        "notes": "The cover that flies into Now Playing turns from flat to 3D on the way, lands without a blink, and already leans toward your mouse.\n\nDuotone for Windows 7.0.5\n\nImproved\n- Opening Now Playing, the cover leaves the player bar flat, like the thumbnail, and becomes the 3D cover halfway there. Closing, it flattens back before it reaches the bar.\n- The cover lands at the exact size of the one on the page, so it no longer arrives small and then jumps bigger.\n- With the 3D cover, it arrives already tilted toward the mouse, instead of resting and then snapping when the mouse moves.\n- Without the 3D cover, the flat cover's corners now match the thumbnail in the player bar.\n\nMinimum version: 7.0.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.0.4...win-v7.0.5",
+        "publishedAt": "2026-11-24T02:37:08Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.0.5",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 7703576,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.4/Duotone-Setup.exe",
-          "downloads": 15
+          "size": 7708748,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.5/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.4/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.5/Duotone-Setup.exe"
       },
       "windowsPreview": {
         "version": "0.2.0",
