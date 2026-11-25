@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T16:49:07.766Z",
+  "generatedAt": "2026-11-25T16:29:05.611Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17810889,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.2.0/Duotone.ipa",
-          "downloads": 18
+          "downloads": 41
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.2.0/Duotone.ipa"
       },
       "windows": {
-        "version": "7.0.6",
-        "tag": "win-v7.0.6",
-        "notes": "Clicking a lyric line with the 3D cover jumps there again, and switches, menus and shelves feel more at home on Windows.\n\nDuotone for Windows 7.0.6\n\nImproved\n- The Albums folder opens up on hover, and the tiles of a playlist mosaic lift apart.\n- One metal switch everywhere: the Jam, Settings and the EQ presets. Changing section in Settings slides the new card in.\n- Shelf arrows and dragging stop at the start of a card, and so do the trackpad and the wheel.\n- Recommendations and Edit profile open in the PC's own dialog.\n- The song of the moment on a profile has the metal play button, and its menu has \"Remove from profile\" on your own profile.\n- \"Play now\" from a profile or a chat menu shows where the song is playing from.\n\nFixed\n- With the 3D cover turned to the lyrics, clicking a line jumps there instead of doing nothing most of the time.\n- Closing a menu opened with the mouse no longer leaves a keyboard outline on the card.\n- The Spotify import choices respond to the mouse.\n\nMinimum version: 7.0.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.0.5...win-v7.0.6",
-        "publishedAt": "2026-11-24T07:28:21Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.0.6",
+        "version": "7.0.7",
+        "tag": "win-v7.0.7",
+        "notes": "Download songs to listen offline, a full screen that follows the music, and the mini player is back and tidier.\n\nDuotone for Windows 7.0.7\n\nNew\n- Download a song or a whole playlist from its menu. Without a connection, the queue plays what is on the computer.\n- Ambient full screen: when music is playing and you leave Duotone alone for a minute, it fills its screen. Move the mouse over it to come back. It never takes the keyboard from the window you are working in. You can turn it off in Settings › Windows.\n- Clean mode (F11) shows the lyrics next to the cover, the cover reacts to the music, and changing song is an eclipse in the colour of the next cover.\n\nImproved\n- The mini player takes the colour of the cover, always shows the artist, keeps the window buttons in a strip at the top, and shows the time at both ends of the bar. Hover Next to see what comes up.\n- The queue card and About in the right panel are cleaner: plain tabs, a Now playing block with its progress, how long the queue lasts, and About in two columns when there is room.\n- More places say where a song is playing from: right-click menus on shelves, search, Liked Songs, mixes, artists, albums and playlists, and the songs you play from stats, Year in review and chats.\n\nFixed\n- The mini player opens again from the player bar and the tray.\n\nMinimum version: 7.0.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.0.6...win-v7.0.7",
+        "publishedAt": "2026-11-25T16:28:50Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.0.7",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 7789657,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.6/Duotone-Setup.exe",
-          "downloads": 22
+          "size": 7839328,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.7/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.6/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.7/Duotone-Setup.exe"
       },
       "windowsPreview": {
         "version": "0.2.0",
