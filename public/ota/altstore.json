@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "7.2.2",
+          "date": "2026-11-26T12:43:33Z",
+          "localizedDescription": "Fixes the app getting stuck on \"Offline\" with a working connection, on Wi-Fi and mobile data.\n\nDuotone for iPhone 7.2.2\n\nFixed\n- The app no longer gets stuck on \"Offline · downloaded liked songs only\" while you have internet, including with DNS profiles that block Google: your session and full library come back as soon as the connection answers.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.0...ios-v7.2.2",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.2/Duotone.ipa",
+          "size": 20448390,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "7.2.0",
           "date": "2026-11-26T05:31:36Z",
           "localizedDescription": "Save your Customise looks as presets, and pages now open the moment you tap them.\nArtists open straight into their photo, the original app icon can be chosen again, and long-press menus never cover the song.\n\nDuotone for iPhone 7.2.0\n\nNew\n- Presets in Customise: save the look you have now with a name, apply it with a tap, and hold it to rename, update or delete it.\n\nImproved\n- Playlists, albums and artists open right away: the page appears under the cover while it is still flying, with no wait on a black screen.\n- Opening an artist turns their circle straight into the full-width photo, with no swap at the end.\n- Swiping back shrinks the page into its card's cover instead of a dark box.\n- Long-pressing a song lifts it with rounded corners, and its menu opens below or above it, never on top.\n- Albums save as a playlist from a + button in the top corner.\n- Flowing lyrics are now off by default; turn them on in Customise › Lyrics.\n\nFixed\n- The Original app icon can be selected again after choosing another one.\n- The back arrow no longer shows a page slide behind the cover.\n- The 3D cover's sides no longer switch to the next song before the eclipse covers the front.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.1.0...ios-v7.2.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.3/Duotone.ipa",
           "size": 16164522,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "6.0.2",
-          "date": "2026-11-15T07:06:32Z",
-          "localizedDescription": "Duotone for iPhone 6.0.2\n\nNew\n- Duotone in French: Settings › Appearance › Language. English stays the default, and the new language shows the next time you open Duotone.\n- Download Liked Songs in Settings › Storage: all of them, and the ones you like later. On mobile data it waits for Wi-Fi.\n- Start Radio in a song's menu: it plays the song and fills Up next with music like it.\n- Show what your PC is playing, in Settings › General: turn it off and your PC's music stops showing up here.\n- More buttons for below the player, in Settings › Customise › Buttons below: Sleep timer, Start Radio, Add to playlist, Download and Car mode. The sleep timer shows the time left.\n\nImproved\n- The buttons below the player fit their names on one line.\n- The equaliser is now separate on iPhone and PC: each song's EQ and speed, and your default EQ, stay on the platform where you set them. Your presets are still the same on both.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.1...ios-v6.0.2",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.2/Duotone.ipa",
-          "size": 16156532,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "7.2.0",
-      "versionDate": "2026-11-26T05:31:36Z",
-      "versionDescription": "Save your Customise looks as presets, and pages now open the moment you tap them.\nArtists open straight into their photo, the original app icon can be chosen again, and long-press menus never cover the song.\n\nDuotone for iPhone 7.2.0\n\nNew\n- Presets in Customise: save the look you have now with a name, apply it with a tap, and hold it to rename, update or delete it.\n\nImproved\n- Playlists, albums and artists open right away: the page appears under the cover while it is still flying, with no wait on a black screen.\n- Opening an artist turns their circle straight into the full-width photo, with no swap at the end.\n- Swiping back shrinks the page into its card's cover instead of a dark box.\n- Long-pressing a song lifts it with rounded corners, and its menu opens below or above it, never on top.\n- Albums save as a playlist from a + button in the top corner.\n- Flowing lyrics are now off by default; turn them on in Customise › Lyrics.\n\nFixed\n- The Original app icon can be selected again after choosing another one.\n- The back arrow no longer shows a page slide behind the cover.\n- The 3D cover's sides no longer switch to the next song before the eclipse covers the front.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.1.0...ios-v7.2.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.0/Duotone.ipa",
-      "size": 20445667
+      "version": "7.2.2",
+      "versionDate": "2026-11-26T12:43:33Z",
+      "versionDescription": "Fixes the app getting stuck on \"Offline\" with a working connection, on Wi-Fi and mobile data.\n\nDuotone for iPhone 7.2.2\n\nFixed\n- The app no longer gets stuck on \"Offline · downloaded liked songs only\" while you have internet, including with DNS profiles that block Google: your session and full library come back as soon as the connection answers.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.0...ios-v7.2.2",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.2/Duotone.ipa",
+      "size": 20448390
     }
   ],
   "news": []
