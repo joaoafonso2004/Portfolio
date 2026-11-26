@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T16:37:04.636Z",
+  "generatedAt": "2026-11-26T04:03:51.436Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 17810889,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.2.0/Duotone.ipa",
-          "downloads": 41
+          "downloads": 51
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.2.0/Duotone.ipa"
       },
       "windows": {
-        "version": "7.0.7",
-        "tag": "win-v7.0.7",
-        "notes": "Download songs to listen offline, a full screen that follows the music, and the mini player is back and tidier.\n\nDuotone for Windows 7.0.7\n\nNew\n- Download a song or a whole playlist from its menu. Without a connection, the queue plays what is on the computer.\n- Ambient full screen: when music is playing and you leave Duotone alone for a minute, it fills its screen. Move the mouse over it to come back. It never takes the keyboard from the window you are working in. You can turn it off in Settings › Windows.\n- Clean mode (F11) shows the lyrics next to the cover, the cover reacts to the music, and changing song is an eclipse in the colour of the next cover.\n\nImproved\n- The mini player takes the colour of the cover, always shows the artist, keeps the window buttons in a strip at the top, and shows the time at both ends of the bar. Hover Next to see what comes up.\n- The queue card and About in the right panel are cleaner: plain tabs, a Now playing block with its progress, how long the queue lasts, and About in two columns when there is room.\n- More places say where a song is playing from: right-click menus on shelves, search, Liked Songs, mixes, artists, albums and playlists, and the songs you play from stats, Year in review and chats.\n\nFixed\n- The mini player opens again from the player bar and the tray.\n\nMinimum version: 7.0.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.0.6...win-v7.0.7",
-        "publishedAt": "2026-11-25T16:28:50Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.0.7",
+        "version": "7.1.0",
+        "tag": "win-v7.1.0",
+        "notes": "Press Ctrl+F anywhere to search your library and run quick actions, and download all your Liked Songs to listen offline.\n\nDuotone for Windows 7.1.0\n\nNew\n- Command palette (Ctrl+F): opens over everything to search your songs, artists and playlists as you type, jump to recent searches, run quick actions or set a sleep timer. Choose \"See all results\" for server search.\n- Download Liked Songs for offline listening, and see how many songs are saved on your PC, the disk space used and \"Remove all downloads\" in Settings › Windows.\n\nFixed\n- Lyrics with per-word timing no longer show raw timing tags in the text.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.0.7...win-v7.1.0",
+        "publishedAt": "2026-11-26T04:03:37Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.1.0",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 7839328,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.7/Duotone-Setup.exe",
+          "size": 7858131,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.1.0/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.0.7/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.1.0/Duotone-Setup.exe"
       },
       "windowsPreview": {
         "version": "0.2.0",
