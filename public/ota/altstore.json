@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "7.2.3",
+          "date": "2026-11-26T16:13:12Z",
+          "localizedDescription": "Faster skips, and a way to switch Spotify accounts when importing.\n\nDuotone for iPhone 7.2.3\n\nImproved\n- Skipping to a song that hasn't finished preloading (several skips in a row, or right after a song starts) gets it playing sooner: the download now fetches its pieces in parallel.\n\nFixed\n- Importing from your Spotify account now shows which account you're signed in with, and \"Use another account\" lets you sign out and log in with a different one.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.2...ios-v7.2.3",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.3/Duotone.ipa",
+          "size": 20448826,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "7.2.2",
           "date": "2026-11-26T12:43:33Z",
           "localizedDescription": "Fixes the app getting stuck on \"Offline\" with a working connection, on Wi-Fi and mobile data.\n\nDuotone for iPhone 7.2.2\n\nFixed\n- The app no longer gets stuck on \"Offline · downloaded liked songs only\" while you have internet, including with DNS profiles that block Google: your session and full library come back as soon as the connection answers.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.0...ios-v7.2.2",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.4/Duotone.ipa",
           "size": 16206528,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "6.0.3",
-          "date": "2026-11-15T15:57:51Z",
-          "localizedDescription": "Duotone for iPhone 6.0.3\n\nImproved\n- Skipping is smooth: the cover's move to the next song now runs in iOS itself, so changing song can't make it stutter.\n- The cover no longer dims for a moment on every skip. It only pulses when a song takes a while to load.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.2...ios-v6.0.3",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.3/Duotone.ipa",
-          "size": 16164522,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "7.2.2",
-      "versionDate": "2026-11-26T12:43:33Z",
-      "versionDescription": "Fixes the app getting stuck on \"Offline\" with a working connection, on Wi-Fi and mobile data.\n\nDuotone for iPhone 7.2.2\n\nFixed\n- The app no longer gets stuck on \"Offline · downloaded liked songs only\" while you have internet, including with DNS profiles that block Google: your session and full library come back as soon as the connection answers.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.0...ios-v7.2.2",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.2/Duotone.ipa",
-      "size": 20448390
+      "version": "7.2.3",
+      "versionDate": "2026-11-26T16:13:12Z",
+      "versionDescription": "Faster skips, and a way to switch Spotify accounts when importing.\n\nDuotone for iPhone 7.2.3\n\nImproved\n- Skipping to a song that hasn't finished preloading (several skips in a row, or right after a song starts) gets it playing sooner: the download now fetches its pieces in parallel.\n\nFixed\n- Importing from your Spotify account now shows which account you're signed in with, and \"Use another account\" lets you sign out and log in with a different one.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.2...ios-v7.2.3",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.3/Duotone.ipa",
+      "size": 20448826
     }
   ],
   "news": []
