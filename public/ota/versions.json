@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-27T02:37:08.384Z",
+  "generatedAt": "2026-11-27T05:05:57.455Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "7.2.6",
-        "tag": "ios-v7.2.6",
-        "notes": "The 3D cover's sides now change with the Eclipse, and your friends see what you're playing without the delay.\n\nDuotone for iPhone 7.2.6\n\nFixed\n- On the 3D cover, the sides now change when the Eclipse covers the front, instead of showing the next song's cover first.\n- What you're playing reaches your friends right away again after a dropped connection. Before, it could stay on an old song for minutes.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.5...ios-v7.2.6",
-        "publishedAt": "2026-11-27T02:36:51Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v7.2.6",
+        "version": "7.2.7",
+        "tag": "ios-v7.2.7",
+        "notes": "Playlists and artists now open without the page changing under you, and going back no longer blows up the cover.\n\nDuotone for iPhone 7.2.7\n\nImproved\n- Opening a playlist shows its cover, name and buttons right away. Only the songs wait, in their place.\n- Opening an artist shows the songs once, already complete and in the right order. Before, the list changed several times while it loaded.\n- Coming back to an artist's page no longer reloads it.\n\nFixed\n- Swiping back from a playlist or an artist: the cover shrinks from where it is on the page to its card, instead of growing to the size of the screen.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.6...ios-v7.2.7",
+        "publishedAt": "2026-11-27T05:05:34Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v7.2.7",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 20462582,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.6/Duotone.ipa",
+          "size": 20464507,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.7/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.6/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.7/Duotone.ipa"
       },
       "windows": {
         "version": "7.2.5",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 7859205,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.2.5/Duotone-Setup.exe",
-          "downloads": 11
+          "downloads": 13
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.2.5/Duotone-Setup.exe"
       },

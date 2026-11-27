@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "7.2.7",
+          "date": "2026-11-27T05:05:34Z",
+          "localizedDescription": "Playlists and artists now open without the page changing under you, and going back no longer blows up the cover.\n\nDuotone for iPhone 7.2.7\n\nImproved\n- Opening a playlist shows its cover, name and buttons right away. Only the songs wait, in their place.\n- Opening an artist shows the songs once, already complete and in the right order. Before, the list changed several times while it loaded.\n- Coming back to an artist's page no longer reloads it.\n\nFixed\n- Swiping back from a playlist or an artist: the cover shrinks from where it is on the page to its card, instead of growing to the size of the screen.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.6...ios-v7.2.7",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.7/Duotone.ipa",
+          "size": 20464507,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "7.2.6",
           "date": "2026-11-27T02:36:51Z",
           "localizedDescription": "The 3D cover's sides now change with the Eclipse, and your friends see what you're playing without the delay.\n\nDuotone for iPhone 7.2.6\n\nFixed\n- On the 3D cover, the sides now change when the Eclipse covers the front, instead of showing the next song's cover first.\n- What you're playing reaches your friends right away again after a dropped connection. Before, it could stay on an old song for minutes.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.5...ios-v7.2.6",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.1/Duotone.ipa",
           "size": 17708784,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "6.1.0",
-          "date": "2026-11-16T03:55:38Z",
-          "localizedDescription": "Playlist folders: keep your playlists together, and move, rename or undo a folder whenever you like.\nThe queue: shuffle what's next again, or select several songs to play next or remove, with Undo.\nRadio never gives you the same queue twice for the same song.\nYour drawer works like the Home Screen: hold a tile to lift it, drag it anywhere, and pull its corner to resize it.\n\nDuotone for iPhone 6.1.0\n\nNew\n- Playlist folders, in Playlists.\n- Shuffle again and select several songs in the queue.\n- Share an album with a friend from the album's menu.\n- Export your library in Settings: Liked Songs, playlists and albums, as JSON or CSV.\n- ListenBrainz scrobbling in Settings: paste your token and your listens go straight from your phone. Private listening sends nothing.\n\nImproved\n- The drawer: drag tiles to move them, pull the corner to resize, tap an empty spot to finish. Only your spaces sit on top, friends who aren't playing open their profile, and the now-playing cover has no black bars.\n- In edit mode, the space name shows in your language.\n- An artist's songs are in one list, in the order you choose.\n- Liked Songs and playlists scroll faster, and the app keeps its data in faster storage.\n- The keyboard in conversations moves smoothly with the text.\n- Closing the player no longer zooms out the app behind it.\n\nFixed\n- The menus in the queue and Radio now open next to the button, not at the top of the screen.\n- The Home keeps its rounded corners when the drawer is open.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.5...ios-v6.1.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.0/Duotone.ipa",
-          "size": 17610332,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "7.2.6",
-      "versionDate": "2026-11-27T02:36:51Z",
-      "versionDescription": "The 3D cover's sides now change with the Eclipse, and your friends see what you're playing without the delay.\n\nDuotone for iPhone 7.2.6\n\nFixed\n- On the 3D cover, the sides now change when the Eclipse covers the front, instead of showing the next song's cover first.\n- What you're playing reaches your friends right away again after a dropped connection. Before, it could stay on an old song for minutes.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.5...ios-v7.2.6",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.6/Duotone.ipa",
-      "size": 20462582
+      "version": "7.2.7",
+      "versionDate": "2026-11-27T05:05:34Z",
+      "versionDescription": "Playlists and artists now open without the page changing under you, and going back no longer blows up the cover.\n\nDuotone for iPhone 7.2.7\n\nImproved\n- Opening a playlist shows its cover, name and buttons right away. Only the songs wait, in their place.\n- Opening an artist shows the songs once, already complete and in the right order. Before, the list changed several times while it loaded.\n- Coming back to an artist's page no longer reloads it.\n\nFixed\n- Swiping back from a playlist or an artist: the cover shrinks from where it is on the page to its card, instead of growing to the size of the screen.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.6...ios-v7.2.7",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.7/Duotone.ipa",
+      "size": 20464507
     }
   ],
   "news": []
