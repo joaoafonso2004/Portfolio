@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T15:56:27.520Z",
+  "generatedAt": "2026-11-27T18:33:45.472Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 20464507,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.7/Duotone.ipa",
-          "downloads": 30
+          "downloads": 34
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.7/Duotone.ipa"
       },
       "windows": {
-        "version": "7.2.5",
-        "tag": "win-v7.2.5",
-        "notes": "Choose your own playlist cover, and see what your friends are playing without the delay.\n\nDuotone for Windows 7.2.5\n\nNew\n- Playlist covers: right-click one of your playlists and choose \"Choose cover…\" to use any picture. \"Change cover…\" and \"Remove cover\" are in the same menu. The cover shows everywhere, on your iPhone too.\n\nFixed\n- What a friend is playing shows up right away again. After a dropped connection (the PC waking from sleep, a network blip), friends could stay on \"Online\" or an old song for minutes.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.1.0...win-v7.2.5",
-        "publishedAt": "2026-11-27T01:18:29Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.2.5",
+        "version": "7.2.8",
+        "tag": "win-v7.2.8",
+        "notes": "Find any setting in seconds, a cleaner Up next, and a shuffle that goes through everything.\n\nDuotone for Windows 7.2.8\n\nNew\n- Search in Settings: type a name or what it does (\"fullscreen\", \"tray\"), and it opens the right section and lights up the setting.\n\nImproved\n- Up next shows just the queue. The Now playing row above it repeated the player bar.\n- Shuffle goes through the whole list before repeating, even when you shuffle again or restart Duotone.\n\nFixed\n- The glow under the selected tab (Up next, Radio) and the dark shadow under a friend's cover are gone.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.2.5...win-v7.2.8",
+        "publishedAt": "2026-11-27T18:33:31Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.2.8",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 7859205,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.2.5/Duotone-Setup.exe",
-          "downloads": 30
+          "size": 7863892,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.2.8/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.2.5/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.2.8/Duotone-Setup.exe"
       },
       "windowsPreview": {
         "version": "0.2.0",
