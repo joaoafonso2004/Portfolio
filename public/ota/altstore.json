@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "7.2.6",
+          "date": "2026-11-27T02:36:51Z",
+          "localizedDescription": "The 3D cover's sides now change with the Eclipse, and your friends see what you're playing without the delay.\n\nDuotone for iPhone 7.2.6\n\nFixed\n- On the 3D cover, the sides now change when the Eclipse covers the front, instead of showing the next song's cover first.\n- What you're playing reaches your friends right away again after a dropped connection. Before, it could stay on an old song for minutes.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.5...ios-v7.2.6",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.6/Duotone.ipa",
+          "size": 20462582,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "7.2.5",
           "date": "2026-11-26T19:17:41Z",
           "localizedDescription": "Choose your own playlist cover, signing in works again, and a smoother Eclipse skip.\n\nDuotone for iPhone 7.2.5\n\nNew\n- Choose your own playlist cover: open a playlist's menu and pick \"Choose cover…\" to use any photo. \"Change cover…\" and \"Remove cover\" are there once it has one. Friends who can see the playlist see the cover too.\n\nFixed\n- Signing in works again. On 7.2.3, signing in failed with \"Cannot read property 'removeItem' of undefined\", and you could be signed out when your session renewed.\n- The Eclipse skip animation passes smoothly again on the 3D cover.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.3...ios-v7.2.5",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.0/Duotone.ipa",
           "size": 17610332,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "6.0.5",
-          "date": "2026-11-16T00:06:01Z",
-          "localizedDescription": "The drawer opens with a swipe anywhere on Home, not just from the edge.\nIt takes on the colours of what's playing, and no longer flickers when it opens.\nHold any tile to edit your drawer. The Edit button is gone.\nNew drawers start with the Night scene, and yours gets it once if it has no scene yet.\n\nDuotone for iPhone 6.0.5\n\nImproved\n- Swipe right anywhere on Home to open your drawer. Swiping left still takes you to Songs, and the shelves keep their own scrolling.\n- The drawer's background follows the colours of the song that's playing, and the tiles let them through.\n- Holding a tile is now the way to edit; Done appears while you edit. An empty space shows Add.\n- The drawer starts with the Night scene.\n\nFixed\n- The tiles no longer blink when the drawer opens: they appear in order as it slides in.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.0.4...ios-v6.0.5",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.0.5/Duotone.ipa",
-          "size": 16206947,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "7.2.5",
-      "versionDate": "2026-11-26T19:17:41Z",
-      "versionDescription": "Choose your own playlist cover, signing in works again, and a smoother Eclipse skip.\n\nDuotone for iPhone 7.2.5\n\nNew\n- Choose your own playlist cover: open a playlist's menu and pick \"Choose cover…\" to use any photo. \"Change cover…\" and \"Remove cover\" are there once it has one. Friends who can see the playlist see the cover too.\n\nFixed\n- Signing in works again. On 7.2.3, signing in failed with \"Cannot read property 'removeItem' of undefined\", and you could be signed out when your session renewed.\n- The Eclipse skip animation passes smoothly again on the 3D cover.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.3...ios-v7.2.5",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.5/Duotone.ipa",
-      "size": 20461773
+      "version": "7.2.6",
+      "versionDate": "2026-11-27T02:36:51Z",
+      "versionDescription": "The 3D cover's sides now change with the Eclipse, and your friends see what you're playing without the delay.\n\nDuotone for iPhone 7.2.6\n\nFixed\n- On the 3D cover, the sides now change when the Eclipse covers the front, instead of showing the next song's cover first.\n- What you're playing reaches your friends right away again after a dropped connection. Before, it could stay on an old song for minutes.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.5...ios-v7.2.6",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.6/Duotone.ipa",
+      "size": 20462582
     }
   ],
   "news": []
