@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "7.2.8",
+          "date": "2026-11-27T18:40:07Z",
+          "localizedDescription": "See your look change as you customise, try Liquid Glass, and find any setting in seconds.\n\nDuotone for iPhone 7.2.8\n\nNew\n- Customise shows the app live: Now Playing next to Home or a playlist, changing as you adjust. \"Next song\" previews the colours of what's coming up.\n- Liquid Glass: on iOS 26, turn it on in Customise for the tab bar, the mini player and the player's buttons in glass. Off by default.\n- Background follows the song: the artwork's colour washes the top of every page and changes with the music. Off by default, in Customise.\n- Search in Settings: type a name or what it does, and it opens the right section and lights up the setting.\n\nImproved\n- Settings show the one or two options you use most in each section. \"More\" opens the rest right there.\n- Shuffle goes through the whole list before repeating, even when you shuffle again or reopen the app.\n\nFixed\n- Opening a playlist: the cover lands in its place, without jumping up when the songs arrive.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.7...ios-v7.2.8",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.8/Duotone.ipa",
+          "size": 20496910,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "7.2.7",
           "date": "2026-11-27T05:05:34Z",
           "localizedDescription": "Playlists and artists now open without the page changing under you, and going back no longer blows up the cover.\n\nDuotone for iPhone 7.2.7\n\nImproved\n- Opening a playlist shows its cover, name and buttons right away. Only the songs wait, in their place.\n- Opening an artist shows the songs once, already complete and in the right order. Before, the list changed several times while it loaded.\n- Coming back to an artist's page no longer reloads it.\n\nFixed\n- Swiping back from a playlist or an artist: the cover shrinks from where it is on the page to its card, instead of growing to the size of the screen.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.6...ios-v7.2.7",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.2/Duotone.ipa",
           "size": 17773027,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "6.1.1",
-          "date": "2026-11-16T06:05:40Z",
-          "localizedDescription": "Poster: a photo of the artist fills Now Playing, a different one for each song.\nBlack and white with grain, or in colour, fading into the photo's own colour at the top and bottom.\nPick it in Customise, or the new Poster theme does it all in one tap.\nControls, in Customise: keep the heart and the play ring white, with the colour only in the background.\n\nDuotone for iPhone 6.1.1\n\nNew\n- Poster, in Customise → Artwork: a photo of the artist behind the top, the title and the controls. Each song gets its own photo while the artist has photos; without them, the artwork. The lyrics still turn in the square.\n- Poster image: artist photos or the artwork. Black and white: the Poster with grain, like a printed photo.\n- The Poster theme: artist photos in black and white, \"Playing from\", the ring play button and white controls in one tap.\n- Controls, in Customise → Now Playing: Accent colour or White for the heart, the play ring, the dots, shuffle and repeat.\n\nImproved\n- The preview in Customise shows the progress bar in white, as in Now Playing.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.1.0...ios-v6.1.1",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.1/Duotone.ipa",
-          "size": 17708784,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "7.2.7",
-      "versionDate": "2026-11-27T05:05:34Z",
-      "versionDescription": "Playlists and artists now open without the page changing under you, and going back no longer blows up the cover.\n\nDuotone for iPhone 7.2.7\n\nImproved\n- Opening a playlist shows its cover, name and buttons right away. Only the songs wait, in their place.\n- Opening an artist shows the songs once, already complete and in the right order. Before, the list changed several times while it loaded.\n- Coming back to an artist's page no longer reloads it.\n\nFixed\n- Swiping back from a playlist or an artist: the cover shrinks from where it is on the page to its card, instead of growing to the size of the screen.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.6...ios-v7.2.7",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.7/Duotone.ipa",
-      "size": 20464507
+      "version": "7.2.8",
+      "versionDate": "2026-11-27T18:40:07Z",
+      "versionDescription": "See your look change as you customise, try Liquid Glass, and find any setting in seconds.\n\nDuotone for iPhone 7.2.8\n\nNew\n- Customise shows the app live: Now Playing next to Home or a playlist, changing as you adjust. \"Next song\" previews the colours of what's coming up.\n- Liquid Glass: on iOS 26, turn it on in Customise for the tab bar, the mini player and the player's buttons in glass. Off by default.\n- Background follows the song: the artwork's colour washes the top of every page and changes with the music. Off by default, in Customise.\n- Search in Settings: type a name or what it does, and it opens the right section and lights up the setting.\n\nImproved\n- Settings show the one or two options you use most in each section. \"More\" opens the rest right there.\n- Shuffle goes through the whole list before repeating, even when you shuffle again or reopen the app.\n\nFixed\n- Opening a playlist: the cover lands in its place, without jumping up when the songs arrive.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.7...ios-v7.2.8",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.8/Duotone.ipa",
+      "size": 20496910
     }
   ],
   "news": []
