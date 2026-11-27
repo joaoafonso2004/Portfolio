@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "7.3.0",
+          "date": "2026-11-27T23:44:15Z",
+          "localizedDescription": "Liquid Glass done properly, presets you can edit again, and playlists that open without a jump.\n\nDuotone for iPhone 7.3.0\n\nImproved\n- Liquid Glass, redone: the tabs and the mini player float in two separate glass capsules, as in iOS 26, and a highlight follows your finger as you swipe between tabs. Turn it on in Customise.\n\nFixed\n- Holding a preset in Customise no longer closes the app. Rename, Update to current look and Delete are back.\n- Opening a playlist: the cover lands in its place, without landing low and jumping up.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.8...ios-v7.3.0",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.0/Duotone.ipa",
+          "size": 20500083,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "7.2.8",
           "date": "2026-11-27T18:40:07Z",
           "localizedDescription": "See your look change as you customise, try Liquid Glass, and find any setting in seconds.\n\nDuotone for iPhone 7.2.8\n\nNew\n- Customise shows the app live: Now Playing next to Home or a playlist, changing as you adjust. \"Next song\" previews the colours of what's coming up.\n- Liquid Glass: on iOS 26, turn it on in Customise for the tab bar, the mini player and the player's buttons in glass. Off by default.\n- Background follows the song: the artwork's colour washes the top of every page and changes with the music. Off by default, in Customise.\n- Search in Settings: type a name or what it does, and it opens the right section and lights up the setting.\n\nImproved\n- Settings show the one or two options you use most in each section. \"More\" opens the rest right there.\n- Shuffle goes through the whole list before repeating, even when you shuffle again or reopen the app.\n\nFixed\n- Opening a playlist: the cover lands in its place, without jumping up when the songs arrive.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.7...ios-v7.2.8",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.2.0/Duotone.ipa",
           "size": 17810889,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "6.1.2",
-          "date": "2026-11-23T05:32:22Z",
-          "localizedDescription": "The play button is now brushed metal, with a ring of light that turns when you play or pause.\nForgot your password? You can now reset it from Duotone with a code we email you.\n\nDuotone for iPhone 6.1.2\n\nNew\n- The metal play button, as on the PC: a brushed-metal disc with a ring of light that spins up when you press play and brakes like a turntable when you pause. It's the new default in Now Playing and the mini player; pick another style in Customise → Play button.\n- \"Forgot password?\" on the sign-in screen, and \"Reset password\" in Settings: we email you a code, and you choose the new password right there.\n\nImproved\n- Spotify playlist links with more than 100 songs now bring the rest too, up to 1000.\n- Fewer requests in the background: the heart no longer asks the server about every song you play.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.1.1...ios-v6.1.2",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.1.2/Duotone.ipa",
-          "size": 17773027,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "7.2.8",
-      "versionDate": "2026-11-27T18:40:07Z",
-      "versionDescription": "See your look change as you customise, try Liquid Glass, and find any setting in seconds.\n\nDuotone for iPhone 7.2.8\n\nNew\n- Customise shows the app live: Now Playing next to Home or a playlist, changing as you adjust. \"Next song\" previews the colours of what's coming up.\n- Liquid Glass: on iOS 26, turn it on in Customise for the tab bar, the mini player and the player's buttons in glass. Off by default.\n- Background follows the song: the artwork's colour washes the top of every page and changes with the music. Off by default, in Customise.\n- Search in Settings: type a name or what it does, and it opens the right section and lights up the setting.\n\nImproved\n- Settings show the one or two options you use most in each section. \"More\" opens the rest right there.\n- Shuffle goes through the whole list before repeating, even when you shuffle again or reopen the app.\n\nFixed\n- Opening a playlist: the cover lands in its place, without jumping up when the songs arrive.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.7...ios-v7.2.8",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.8/Duotone.ipa",
-      "size": 20496910
+      "version": "7.3.0",
+      "versionDate": "2026-11-27T23:44:15Z",
+      "versionDescription": "Liquid Glass done properly, presets you can edit again, and playlists that open without a jump.\n\nDuotone for iPhone 7.3.0\n\nImproved\n- Liquid Glass, redone: the tabs and the mini player float in two separate glass capsules, as in iOS 26, and a highlight follows your finger as you swipe between tabs. Turn it on in Customise.\n\nFixed\n- Holding a preset in Customise no longer closes the app. Rename, Update to current look and Delete are back.\n- Opening a playlist: the cover lands in its place, without landing low and jumping up.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.8...ios-v7.3.0",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.0/Duotone.ipa",
+      "size": 20500083
     }
   ],
   "news": []
