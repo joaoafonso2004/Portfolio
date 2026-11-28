@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T06:21:21.597Z",
+  "generatedAt": "2026-11-28T14:52:23.822Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,7 +13,7 @@
           "name": "Duotone.ipa",
           "size": 20521857,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.3/Duotone.ipa",
-          "downloads": 0
+          "downloads": 26
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.3/Duotone.ipa"
       },
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 7815175,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.3.3/Duotone-Setup.exe",
-          "downloads": 0
+          "downloads": 19
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.3.3/Duotone-Setup.exe"
       },
