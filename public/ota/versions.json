@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-27T23:44:35.687Z",
+  "generatedAt": "2026-11-28T03:11:11.616Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "7.3.0",
-        "tag": "ios-v7.3.0",
-        "notes": "Liquid Glass done properly, presets you can edit again, and playlists that open without a jump.\n\nDuotone for iPhone 7.3.0\n\nImproved\n- Liquid Glass, redone: the tabs and the mini player float in two separate glass capsules, as in iOS 26, and a highlight follows your finger as you swipe between tabs. Turn it on in Customise.\n\nFixed\n- Holding a preset in Customise no longer closes the app. Rename, Update to current look and Delete are back.\n- Opening a playlist: the cover lands in its place, without landing low and jumping up.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.8...ios-v7.3.0",
-        "publishedAt": "2026-11-27T23:44:15Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v7.3.0",
+        "version": "7.3.1",
+        "tag": "ios-v7.3.1",
+        "notes": "Liquid Glass you can see through.\n\nDuotone for iPhone 7.3.1\n\nFixed\n- Liquid Glass: the tab bar and the mini player are now clear glass, so what scrolls underneath shows through. In 7.3.0 they came out dark and opaque.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.3.0...ios-v7.3.1",
+        "publishedAt": "2026-11-28T03:10:52Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v7.3.1",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 20500083,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.0/Duotone.ipa",
+          "size": 20500098,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.1/Duotone.ipa",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.0/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.1/Duotone.ipa"
       },
       "windows": {
         "version": "7.2.8",
@@ -28,7 +28,7 @@
           "name": "Duotone-Setup.exe",
           "size": 7863892,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.2.8/Duotone-Setup.exe",
-          "downloads": 19
+          "downloads": 23
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.2.8/Duotone-Setup.exe"
       },

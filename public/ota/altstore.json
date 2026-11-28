@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "7.3.1",
+          "date": "2026-11-28T03:10:52Z",
+          "localizedDescription": "Liquid Glass you can see through.\n\nDuotone for iPhone 7.3.1\n\nFixed\n- Liquid Glass: the tab bar and the mini player are now clear glass, so what scrolls underneath shows through. In 7.3.0 they came out dark and opaque.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.3.0...ios-v7.3.1",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.1/Duotone.ipa",
+          "size": 20500098,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "7.3.0",
           "date": "2026-11-27T23:44:15Z",
           "localizedDescription": "Liquid Glass done properly, presets you can edit again, and playlists that open without a jump.\n\nDuotone for iPhone 7.3.0\n\nImproved\n- Liquid Glass, redone: the tabs and the mini player float in two separate glass capsules, as in iOS 26, and a highlight follows your finger as you swipe between tabs. Turn it on in Customise.\n\nFixed\n- Holding a preset in Customise no longer closes the app. Rename, Update to current look and Delete are back.\n- Opening a playlist: the cover lands in its place, without landing low and jumping up.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.8...ios-v7.3.0",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.1.0/Duotone.ipa",
           "size": 19135124,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "6.2.0",
-          "date": "2026-11-24T07:37:05Z",
-          "localizedDescription": "Tap a playlist, folder, mix or artist and the page opens out of the cover you tapped.\nEvery round play button is now the metal one, and the QR code moved into Send to friends.\n\nDuotone for iPhone 6.2.0\n\nNew\n- Opening a playlist, folder, mix or artist grows the page out of the cover you tapped, and the cover lands at the top of the page. Back shrinks it into the same spot.\n- QR code in Send to friends: tap the QR next to the playlist, and a friend's iPhone camera opens it in Duotone. It's drawn on your iPhone.\n- Lists on Home (mixes and See all) now have Play and Shuffle.\n\nImproved\n- Every round play button is the metal one: the song of the moment, artist pages, playlists, the Daily mix and songs in chats. It follows Customise → Play button.\n- \"Playing from\" at the top of the player now says where the song came from: profiles, Home shelves, search, a friend's song, Downloads, stats, Year in review, You two, albums and \"Play now\" in menus. In a Jam it says Jam and opens it.\n- Songs on profiles and in chats open the same menu as everywhere else, and holding a song opens it. \"Remove from profile\" is there for your song of the moment.\n\nFixed\n- Swiping a message to reply no longer loses to the chat scrolling.\n\nMinimum version: 6.0.1\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v6.1.2...ios-v6.2.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v6.2.0/Duotone.ipa",
-          "size": 17810889,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "7.3.0",
-      "versionDate": "2026-11-27T23:44:15Z",
-      "versionDescription": "Liquid Glass done properly, presets you can edit again, and playlists that open without a jump.\n\nDuotone for iPhone 7.3.0\n\nImproved\n- Liquid Glass, redone: the tabs and the mini player float in two separate glass capsules, as in iOS 26, and a highlight follows your finger as you swipe between tabs. Turn it on in Customise.\n\nFixed\n- Holding a preset in Customise no longer closes the app. Rename, Update to current look and Delete are back.\n- Opening a playlist: the cover lands in its place, without landing low and jumping up.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.2.8...ios-v7.3.0",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.0/Duotone.ipa",
-      "size": 20500083
+      "version": "7.3.1",
+      "versionDate": "2026-11-28T03:10:52Z",
+      "versionDescription": "Liquid Glass you can see through.\n\nDuotone for iPhone 7.3.1\n\nFixed\n- Liquid Glass: the tab bar and the mini player are now clear glass, so what scrolls underneath shows through. In 7.3.0 they came out dark and opaque.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.3.0...ios-v7.3.1",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.1/Duotone.ipa",
+      "size": 20500098
     }
   ],
   "news": []
