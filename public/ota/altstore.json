@@ -18,6 +18,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "7.3.3",
+          "date": "2026-11-28T06:21:03Z",
+          "localizedDescription": "A fuller About this song, a solid top bar, and a mini player that lands cleanly.\n\nDuotone for iPhone 7.3.3\n\nNew\n- About this song now shows what the Windows app shows: the artist (photo, fans, a way to their page and the favourite star), how often you play them, their latest release, your most played of theirs, who fans also like, and the chorus.\n\nImproved\n- The bar at the top of Home, Liked Songs, Artists and Playlists is now solid when you scroll, instead of showing the list through it.\n- Liquid Glass: the glass no longer looks grey and muddy, and Glass opacity now really goes from clear to dark.\n\nFixed\n- Closing the player no longer makes the mini player artwork flash black after it lands.\n- With Liquid Glass, the artwork's corners round off as it shrinks into the mini player. Without it, the mini player artwork has its almost square corners back.\n\nMinimum version: 7.3.3\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.3.2...ios-v7.3.3",
+          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.3/Duotone.ipa",
+          "size": 20521857,
+          "minOSVersion": "16.4"
+        },
+        {
           "version": "7.3.2",
           "date": "2026-11-28T04:25:53Z",
           "localizedDescription": "The real iOS 26 tab bar, glass opacity you can set, and a tidier mini player.\n\nDuotone for iPhone 7.3.2\n\nNew\n- Liquid Glass: the tabs are now the system tab bar, so you can hold the selected tab and drag the glass lens from tab to tab.\n- Customise: a Glass opacity slider under Liquid Glass, from clear glass to a dark capsule.\n- Up next: an X on the \"Back to …\" row hides it.\n\nImproved\n- Liquid Glass: the mini player capsule is now smaller than the tab bar, and its artwork has rounded corners and sits centred.\n\nFixed\n- The mini player artwork had almost square corners; they are rounded again.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.3.1...ios-v7.3.2",
@@ -88,21 +96,13 @@
           "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.2/Duotone.ipa",
           "size": 20448390,
           "minOSVersion": "16.4"
-        },
-        {
-          "version": "7.2.0",
-          "date": "2026-11-26T05:31:36Z",
-          "localizedDescription": "Save your Customise looks as presets, and pages now open the moment you tap them.\nArtists open straight into their photo, the original app icon can be chosen again, and long-press menus never cover the song.\n\nDuotone for iPhone 7.2.0\n\nNew\n- Presets in Customise: save the look you have now with a name, apply it with a tap, and hold it to rename, update or delete it.\n\nImproved\n- Playlists, albums and artists open right away: the page appears under the cover while it is still flying, with no wait on a black screen.\n- Opening an artist turns their circle straight into the full-width photo, with no swap at the end.\n- Swiping back shrinks the page into its card's cover instead of a dark box.\n- Long-pressing a song lifts it with rounded corners, and its menu opens below or above it, never on top.\n- Albums save as a playlist from a + button in the top corner.\n- Flowing lyrics are now off by default; turn them on in Customise › Lyrics.\n\nFixed\n- The Original app icon can be selected again after choosing another one.\n- The back arrow no longer shows a page slide behind the cover.\n- The 3D cover's sides no longer switch to the next song before the eclipse covers the front.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.1.0...ios-v7.2.0",
-          "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.2.0/Duotone.ipa",
-          "size": 20445667,
-          "minOSVersion": "16.4"
         }
       ],
-      "version": "7.3.2",
-      "versionDate": "2026-11-28T04:25:53Z",
-      "versionDescription": "The real iOS 26 tab bar, glass opacity you can set, and a tidier mini player.\n\nDuotone for iPhone 7.3.2\n\nNew\n- Liquid Glass: the tabs are now the system tab bar, so you can hold the selected tab and drag the glass lens from tab to tab.\n- Customise: a Glass opacity slider under Liquid Glass, from clear glass to a dark capsule.\n- Up next: an X on the \"Back to …\" row hides it.\n\nImproved\n- Liquid Glass: the mini player capsule is now smaller than the tab bar, and its artwork has rounded corners and sits centred.\n\nFixed\n- The mini player artwork had almost square corners; they are rounded again.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.3.1...ios-v7.3.2",
-      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.2/Duotone.ipa",
-      "size": 20511786
+      "version": "7.3.3",
+      "versionDate": "2026-11-28T06:21:03Z",
+      "versionDescription": "A fuller About this song, a solid top bar, and a mini player that lands cleanly.\n\nDuotone for iPhone 7.3.3\n\nNew\n- About this song now shows what the Windows app shows: the artist (photo, fans, a way to their page and the favourite star), how often you play them, their latest release, your most played of theirs, who fans also like, and the chorus.\n\nImproved\n- The bar at the top of Home, Liked Songs, Artists and Playlists is now solid when you scroll, instead of showing the list through it.\n- Liquid Glass: the glass no longer looks grey and muddy, and Glass opacity now really goes from clear to dark.\n\nFixed\n- Closing the player no longer makes the mini player artwork flash black after it lands.\n- With Liquid Glass, the artwork's corners round off as it shrinks into the mini player. Without it, the mini player artwork has its almost square corners back.\n\nMinimum version: 7.3.3\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.3.2...ios-v7.3.3",
+      "downloadURL": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.3/Duotone.ipa",
+      "size": 20521857
     }
   ],
   "news": []

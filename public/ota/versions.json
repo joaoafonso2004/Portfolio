@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-28T06:18:29.034Z",
+  "generatedAt": "2026-11-28T06:21:21.597Z",
   "apps": {
     "duotone": {
       "ios": {
-        "version": "7.3.2",
-        "tag": "ios-v7.3.2",
-        "notes": "The real iOS 26 tab bar, glass opacity you can set, and a tidier mini player.\n\nDuotone for iPhone 7.3.2\n\nNew\n- Liquid Glass: the tabs are now the system tab bar, so you can hold the selected tab and drag the glass lens from tab to tab.\n- Customise: a Glass opacity slider under Liquid Glass, from clear glass to a dark capsule.\n- Up next: an X on the \"Back to …\" row hides it.\n\nImproved\n- Liquid Glass: the mini player capsule is now smaller than the tab bar, and its artwork has rounded corners and sits centred.\n\nFixed\n- The mini player artwork had almost square corners; they are rounded again.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.3.1...ios-v7.3.2",
-        "publishedAt": "2026-11-28T04:25:53Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v7.3.2",
+        "version": "7.3.3",
+        "tag": "ios-v7.3.3",
+        "notes": "A fuller About this song, a solid top bar, and a mini player that lands cleanly.\n\nDuotone for iPhone 7.3.3\n\nNew\n- About this song now shows what the Windows app shows: the artist (photo, fans, a way to their page and the favourite star), how often you play them, their latest release, your most played of theirs, who fans also like, and the chorus.\n\nImproved\n- The bar at the top of Home, Liked Songs, Artists and Playlists is now solid when you scroll, instead of showing the list through it.\n- Liquid Glass: the glass no longer looks grey and muddy, and Glass opacity now really goes from clear to dark.\n\nFixed\n- Closing the player no longer makes the mini player artwork flash black after it lands.\n- With Liquid Glass, the artwork's corners round off as it shrinks into the mini player. Without it, the mini player artwork has its almost square corners back.\n\nMinimum version: 7.3.3\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/ios-v7.3.2...ios-v7.3.3",
+        "publishedAt": "2026-11-28T06:21:03Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/ios-v7.3.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone.ipa",
-          "size": 20511786,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.2/Duotone.ipa",
-          "downloads": 5
+          "size": 20521857,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.3/Duotone.ipa",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.2/Duotone.ipa"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.3/Duotone.ipa"
       },
       "windows": {
         "version": "7.3.3",
