@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T04:26:09.211Z",
+  "generatedAt": "2026-11-28T04:31:02.782Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -18,19 +18,19 @@
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.2/Duotone.ipa"
       },
       "windows": {
-        "version": "7.2.8",
-        "tag": "win-v7.2.8",
-        "notes": "Find any setting in seconds, a cleaner Up next, and a shuffle that goes through everything.\n\nDuotone for Windows 7.2.8\n\nNew\n- Search in Settings: type a name or what it does (\"fullscreen\", \"tray\"), and it opens the right section and lights up the setting.\n\nImproved\n- Up next shows just the queue. The Now playing row above it repeated the player bar.\n- Shuffle goes through the whole list before repeating, even when you shuffle again or restart Duotone.\n\nFixed\n- The glow under the selected tab (Up next, Radio) and the dark shadow under a friend's cover are gone.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.2.5...win-v7.2.8",
-        "publishedAt": "2026-11-27T18:33:31Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.2.8",
+        "version": "7.3.2",
+        "tag": "win-v7.3.2",
+        "notes": "A cleaner typeface for numbers and labels, and a way to dismiss \"Back to\".\n\nDuotone for Windows 7.3.2\n\nNew\n- Up next: an X on the \"Back to …\" row hides it.\n\nImproved\n- Numbers and small labels (durations, counts, \"Next · 81 songs\", \"Library\") use the same typeface as the rest of the app, with figures that line up in columns. The monospaced font is gone.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.2.8...win-v7.3.2",
+        "publishedAt": "2026-11-28T04:30:42Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.3.2",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 7863892,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.2.8/Duotone-Setup.exe",
-          "downloads": 23
+          "size": 7818662,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.3.2/Duotone-Setup.exe",
+          "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.2.8/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.3.2/Duotone-Setup.exe"
       },
       "windowsPreview": {
         "version": "0.2.0",
