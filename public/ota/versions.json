@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T04:31:02.782Z",
+  "generatedAt": "2026-11-28T06:18:29.034Z",
   "apps": {
     "duotone": {
       "ios": {
@@ -13,24 +13,24 @@
           "name": "Duotone.ipa",
           "size": 20511786,
           "url": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.2/Duotone.ipa",
-          "downloads": 0
+          "downloads": 5
         },
         "install": "https://github.com/joaoafonso2004/duotone/releases/download/ios-v7.3.2/Duotone.ipa"
       },
       "windows": {
-        "version": "7.3.2",
-        "tag": "win-v7.3.2",
-        "notes": "A cleaner typeface for numbers and labels, and a way to dismiss \"Back to\".\n\nDuotone for Windows 7.3.2\n\nNew\n- Up next: an X on the \"Back to …\" row hides it.\n\nImproved\n- Numbers and small labels (durations, counts, \"Next · 81 songs\", \"Library\") use the same typeface as the rest of the app, with figures that line up in columns. The monospaced font is gone.\n\nMinimum version: 7.1.0\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.2.8...win-v7.3.2",
-        "publishedAt": "2026-11-28T04:30:42Z",
-        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.3.2",
+        "version": "7.3.3",
+        "tag": "win-v7.3.3",
+        "notes": "Playlists open with the cover flying into place, every time.\n\nDuotone for Windows 7.3.3\n\nFixed\n- The first time you open a playlist after starting the app, its cover now flies into the page, as it does afterwards, instead of fading out and back in.\n\nMinimum version: 7.3.3\n\nFull changelog: https://github.com/joaoafonso2004/duotone/compare/win-v7.3.2...win-v7.3.3",
+        "publishedAt": "2026-11-28T06:18:16Z",
+        "releaseUrl": "https://github.com/joaoafonso2004/duotone/releases/tag/win-v7.3.3",
         "prerelease": false,
         "asset": {
           "name": "Duotone-Setup.exe",
-          "size": 7818662,
-          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.3.2/Duotone-Setup.exe",
+          "size": 7815175,
+          "url": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.3.3/Duotone-Setup.exe",
           "downloads": 0
         },
-        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.3.2/Duotone-Setup.exe"
+        "install": "https://github.com/joaoafonso2004/duotone/releases/download/win-v7.3.3/Duotone-Setup.exe"
       },
       "windowsPreview": {
         "version": "0.2.0",
